@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "editorial_language": "British English",
+  "total_items": 1115,
+  "answer_slots": 1479,
+  "excluded_non_publishable": 62,
+  "levels": {
+    "A2": 499,
+    "B1": 326,
+    "B1+": 137,
+    "B2": 102,
+    "C1": 45,
+    "C2": 6
+  },
+  "types": {
+    "context_cloze": 10,
+    "discourse_choice": 6,
+    "error_correction": 24,
+    "meaning_choice": 8,
+    "multiple_choice": 24,
+    "open_brackets": 991,
+    "transformation": 12,
+    "translation_ru_en": 40
+  },
+  "parts": [
+    {
+      "file": "data/exercises/part-01.json",
+      "count": 100,
+      "levels": {
+        "A2": 54,
+        "B1": 13,
+        "B1+": 20,
+        "B2": 13
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-02.json",
+      "count": 100,
+      "levels": {
+        "A2": 44,
+        "B1": 29,
+        "B1+": 15,
+        "B2": 12
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-03.json",
+      "count": 100,
+      "levels": {
+        "A2": 55,
+        "B1": 21,
+        "B1+": 16,
+        "B2": 8
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-04.json",
+      "count": 100,
+      "levels": {
+        "A2": 50,
+        "B1": 30,
+        "B1+": 12,
+        "B2": 8
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-05.json",
+      "count": 100,
+      "levels": {
+        "A2": 53,
+        "B1": 31,
+        "B1+": 13,
+        "B2": 1,
+        "C1": 2
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-06.json",
+      "count": 100,
+      "levels": {
+        "A2": 48,
+        "B1": 41,
+        "B1+": 8,
+        "B2": 3
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-07.json",
+      "count": 100,
+      "levels": {
+        "A2": 50,
+        "B1": 23,
+        "B1+": 16,
+        "B2": 8,
+        "C1": 3
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-08.json",
+      "count": 100,
+      "levels": {
+        "A2": 51,
+        "B1": 33,
+        "B1+": 6,
+        "B2": 5,
+        "C1": 5
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-09.json",
+      "count": 100,
+      "levels": {
+        "A2": 43,
+        "B1": 39,
+        "B1+": 10,
+        "B2": 3,
+        "C1": 5
+      },
+      "types": {
+        "open_brackets": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-10.json",
+      "count": 100,
+      "levels": {
+        "A2": 44,
+        "B1": 42,
+        "B1+": 9,
+        "B2": 3,
+        "C1": 2
+      },
+      "types": {
+        "open_brackets": 91,
+        "translation_ru_en": 9
+      }
+    },
+    {
+      "file": "data/exercises/part-11.json",
+      "count": 100,
+      "levels": {
+        "A2": 7,
+        "B1": 24,
+        "B1+": 12,
+        "B2": 36,
+        "C1": 20,
+        "C2": 1
+      },
+      "types": {
+        "context_cloze": 4,
+        "error_correction": 21,
+        "meaning_choice": 8,
+        "multiple_choice": 24,
+        "transformation": 12,
+        "translation_ru_en": 31
+      }
+    },
+    {
+      "file": "data/exercises/part-12.json",
+      "count": 15,
+      "levels": {
+        "B2": 2,
+        "C1": 8,
+        "C2": 5
+      },
+      "types": {
+        "context_cloze": 6,
+        "discourse_choice": 6,
+        "error_correction": 3
+      }
+    }
+  ]
+}
