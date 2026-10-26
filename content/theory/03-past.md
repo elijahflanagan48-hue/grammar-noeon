@@ -299,7 +299,3 @@ The streets were shining because it had been raining. Lena had left the office l
 4. Длительность или деятельность до прошлой точки? → Past Perfect Continuous.
 5. Порядок и так ясен? Проверить, нужен ли Past Perfect для смыслового акцента.
 
-## Редакторская база
-
-Раздел сверялся с Cambridge English Grammar Today по Past Simple, Past Continuous, Past Perfect и сопоставлениям между ними, а также с British Council LearnEnglish. Полные ссылки приведены в [SOURCES.md](SOURCES.md).
-

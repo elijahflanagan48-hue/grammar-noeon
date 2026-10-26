@@ -313,7 +313,3 @@ I’ve been working from the library while the office is closed.
 5. Глагол состояния? Сначала проверить Simple/Perfect Simple.
 6. Указано законченное прошлое? Вероятно, нужен Past, а не Present Perfect.
 
-## Редакторская база
-
-Раздел сверялся с Cambridge English Grammar Today по Present Simple/Continuous, Present Perfect и сравнению Perfect Simple/Continuous, а также с British Council LearnEnglish. Полные ссылки приведены в [SOURCES.md](SOURCES.md).
-

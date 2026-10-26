@@ -289,7 +289,3 @@ When I will finish, I will call → When I finish, I will call.
 - Формулы V2 и V3 должны быть строго разделены.
 - Все примеры проходят языковую редактуру: орфография, артикли, предлоги, естественность и регистр.
 
-## Редакторская база
-
-Сопоставления сверялись с Cambridge English Grammar Today, British Council LearnEnglish, BBC Learning English и современными справочными грамматиками. Полные ссылки и библиография приведены в [SOURCES.md](SOURCES.md).
-

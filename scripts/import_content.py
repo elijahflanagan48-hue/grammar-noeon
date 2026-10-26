@@ -17,7 +17,6 @@ THEORY_FILES = [
     ("past", "03-past.md", "Прошедшее время"),
     ("future", "04-future.md", "Будущее время"),
     ("contrasts", "05-contrasts-and-pitfalls.md", "Сопоставления и подводные камни"),
-    ("sources", "SOURCES.md", "Источники и редакционные принципы"),
 ]
 
 EXERCISE_FILES = [

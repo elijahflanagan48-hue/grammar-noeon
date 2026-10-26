@@ -51,11 +51,13 @@ def main() -> None:
             assert item.get("answer") is not None, item["id"]
 
     theory = json.loads((ROOT / "data/theory.json").read_text(encoding="utf-8"))
-    assert len(theory) == 6
+    assert len(theory) == 5
+    assert all(entry["id"] != "sources" for entry in theory)
+    assert not (ROOT / "content/theory/SOURCES.md").exists()
     for entry in theory:
         assert (ROOT / entry["file"]).is_file()
 
-    print("Content validation passed: 1,115 exercises, 1,479 answer slots, 6 theory sections.")
+    print("Content validation passed: 1,115 exercises, 1,479 answer slots, 5 theory sections.")
 
 
 if __name__ == "__main__":

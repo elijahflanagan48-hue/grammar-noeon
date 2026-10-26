@@ -323,7 +323,3 @@ If you will wait here, the manager will see you. — если вы соглас�
 7. Важна длительность деятельности к моменту? → Future Perfect Continuous.
 8. Это придаточное после when/if? Обычно нужна present-форма.
 
-## Редакторская база
-
-Раздел сверялся с Cambridge English Grammar Today по способам выражения будущего, will/shall, going to, Future Continuous, Future Perfect и Future Perfect Continuous, а также с British Council и BBC Learning English. Полные ссылки приведены в [SOURCES.md](SOURCES.md).
-

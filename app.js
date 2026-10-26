@@ -17,7 +17,6 @@ const THEORY_ROUTE_BY_FILE = {
   "03-past.md": "past",
   "04-future.md": "future",
   "05-contrasts-and-pitfalls.md": "contrasts",
-  "SOURCES.md": "sources",
 };
 
 const TENSE_MAP = [
@@ -169,7 +168,7 @@ function setNav(section) {
 }
 
 function theoryCards() {
-  return state.theory.filter((x) => x.id !== "sources").map((entry, index) => `
+  return state.theory.map((entry, index) => `
     <a class="card" href="#theory/${entry.id}">
       <span class="eyebrow">Раздел ${String(index + 1).padStart(2, "0")}</span>
       <h3>${escapeHtml(entry.title)}</h3>
