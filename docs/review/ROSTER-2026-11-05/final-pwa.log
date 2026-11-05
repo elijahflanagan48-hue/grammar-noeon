@@ -1,0 +1,85 @@
+PASS index.html 200
+PASS index.html matches local
+PASS index.html no-cache
+PASS sw.js 200
+PASS sw.js matches local
+PASS sw.js no-cache
+PASS pwa.js 200
+PASS pwa.js matches local
+PASS app.js 200
+PASS app.js matches local
+PASS accounts.js 200
+PASS accounts.js matches local
+PASS styles.css 200
+PASS styles.css matches local
+PASS Guest 200 user:null
+PASS Bank protected from guests
+PASS Live SW installed and controlling
+PASS Cold offline installed shell
+PASS Live offline #home
+PASS Live offline #grammar
+PASS Live offline #theory/foundations
+PASS Live offline #theory/present
+PASS Live offline #theory/past
+PASS Live offline #theory/future
+PASS Live offline #theory/contrasts
+PASS Live offline #theory/comparison
+PASS Live offline #theory/passive
+PASS Live offline #theory/modals
+PASS Live offline #theory/reported
+PASS Neutral offline practice
+PASS grammar-v44 present
+PASS No API or exercise parts in Cache Storage
+PASS No JavaScript errors
+{
+  "checks": 33,
+  "errors": [],
+  "cache": [
+    {
+      "key": "grammar-v44",
+      "urls": [
+        "https://grammar-noeon.grammar-noeon.workers.dev/",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/08-modals.html",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/07-passive.md",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/08-reported.md",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/reported-full.html",
+        "https://grammar-noeon.grammar-noeon.workers.dev/apple-touch-icon.png",
+        "https://grammar-noeon.grammar-noeon.workers.dev/manifest.webmanifest",
+        "https://grammar-noeon.grammar-noeon.workers.dev/icons/icon-192.png",
+        "https://grammar-noeon.grammar-noeon.workers.dev/icons/favicon-32.png",
+        "https://grammar-noeon.grammar-noeon.workers.dev/icons/app-icon.svg",
+        "https://grammar-noeon.grammar-noeon.workers.dev/icons/icon-maskable-512.png",
+        "https://grammar-noeon.grammar-noeon.workers.dev/icons/icon-512.png",
+        "https://grammar-noeon.grammar-noeon.workers.dev/data/theory.json",
+        "https://grammar-noeon.grammar-noeon.workers.dev/data/exercises/index.json",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/03-past.md",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/05-contrasts-and-pitfalls.md",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/06-comparison.md",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/01-foundations.md",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/04-future.md",
+        "https://grammar-noeon.grammar-noeon.workers.dev/content/theory/02-present.md",
+        "https://grammar-noeon.grammar-noeon.workers.dev/theme-boot.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/styles.css",
+        "https://grammar-noeon.grammar-noeon.workers.dev/passive.css",
+        "https://grammar-noeon.grammar-noeon.workers.dev/modal-verbs.css",
+        "https://grammar-noeon.grammar-noeon.workers.dev/students-roster.css",
+        "https://grammar-noeon.grammar-noeon.workers.dev/accounts.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/students-roster.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/notifications.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/practice-report.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/assessments.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/pwa.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/passive.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/teacher-library.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/task-issues.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/modal-verbs.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/app.js",
+        "https://grammar-noeon.grammar-noeon.workers.dev/wixt-cyr.woff2",
+        "https://grammar-noeon.grammar-noeon.workers.dev/wixt-lat.woff2",
+        "https://grammar-noeon.grammar-noeon.workers.dev/wixd-cyr.woff2",
+        "https://grammar-noeon.grammar-noeon.workers.dev/wixd-lat.woff2",
+        "https://grammar-noeon.grammar-noeon.workers.dev/favicon.svg"
+      ]
+    }
+  ]
+}

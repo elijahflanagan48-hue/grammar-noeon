@@ -1,0 +1,4 @@
+PASS no-cache /
+PASS no-cache /index.html
+PASS no-cache /sw.js
+PASS guest auth/me 200 user:null

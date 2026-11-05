@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {grade} from '../cloudflare/generated/checker.mjs';
+const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url)));
+const m=read('data/exercises/index.json'),bank=m.parts.flatMap(p=>read(p.file));
+const item=bank.find(i=>i.id==='ext-20261030-future-perfect-continuous-ob-046');
+assert.match(item.prompt,/Tomorrow's training session runs from one to five/);
+assert.match(item.prompt,/By the end/);assert.match(item.prompt,/since one o'clock/);
+assert.equal(item.blanks[0].base_verb,'train');
+assert.deepEqual(item.blanks[0].accepted_answers,['will have been training','will have trained']);
+for(const a of item.blanks[0].accepted_answers)assert(grade(item,[a]).correct,a);
+for(const a of ['will be playing','will have been playing','will play','will be training','have been training','had been training','will has been training'])assert(!grade(item,[a]).correct,a);
+const old=read('docs/review/TRAINING-CONTEXT-2026-10-31/before-records.json')[0];
+for(const a of old.blanks[0].accepted_answers)assert(grade(old,[a]).correct,'Historical snapshot: '+a);
+assert(!grade(old,['will be playing']).correct,'The screenshot used a different verb, even in the original context');
+assert.equal(item.answer_text,item.prompt.replace('(to train)','will have been training'));
+console.log('Training context: explicit future interval, two perfect keys, wrong-verb/time rejection and historical keys passed.');

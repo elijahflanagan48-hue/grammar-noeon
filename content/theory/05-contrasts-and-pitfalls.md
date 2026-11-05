@@ -44,6 +44,8 @@ Past Perfect нужен не потому, что событие очень да
 
 Если временная связь очевидна, Past Perfect часто факультативен. Он используется для ясности или акцента, а не механически в каждом предложении.
 
+After she checked the figures, she sent the report и After she had checked the figures, she sent the report могут описывать одинаковую последовательность. Во втором случае раньше завершённая проверка выделена явно. Поэтому нельзя объявлять первый вариант ошибкой только из-за союза after. Но When I arrived, she left и When I arrived, she had left обычно задают разное расположение ухода относительно приезда.
+
 ## 5. Future: значение важнее даты
 
 Все следующие предложения могут относиться к завтра:
@@ -56,6 +58,8 @@ Past Perfect нужен не потому, что событие очень да
 - I’ll have called Mia by noon. Результат к сроку.
 
 Нельзя выбрать форму только по tomorrow.
+
+By Friday само по себе тоже не требует Future Perfect: I will finish the report by Friday — обещание уложиться в срок; By Friday, I will have finished the report — взгляд из будущей точки на готовый результат. Оба высказывания могут описывать один план. Если упражнение проверяет именно перспективу, она должна быть указана в условии, а не угадываться по одному маркеру.
 
 ## 6. Since и for
 
@@ -123,6 +127,8 @@ She is still working. She still hasn’t replied.
 ### just
 
 В британском варианте для недавнего события часто используется Present Perfect: I’ve just arrived. В американской разговорной речи распространён Past Simple: I just arrived.
+
+Различие не ограничивается just: AmE допускает I already sent it и I lost my keys, so I cannot get in там, где BrE чаще выбирает I have already sent it и I have lost my keys. Нынешнее последствие не делает Past Simple автоматически ошибочным. Это не относится ко всем употреблениям Perfect: I have known her since 2020 описывает продолжающееся знакомство; I knew her since 2020 не служит равнозначной заменой в нейтральной норме.
 
 ## 10. Ago, before, previously
 

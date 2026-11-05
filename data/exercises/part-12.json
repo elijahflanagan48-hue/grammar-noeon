@@ -1,1 +1,1047 @@
-[{"id":"adv-edit-010","type":"error_correction","prompt":"The soup is tasting too salty today.","answer":"The soup tastes too salty today.","explanation_ru":"Taste описывает свойство супа и потому используется в Simple; Continuous означал бы намеренное пробование человеком.","rule_refs":["content/tenses/05-contrasts-and-pitfalls.md#11-stative-verbs-категории-и-исключения"],"cefr_estimate":"B2"},{"id":"adv-edit-011","type":"error_correction","prompt":"Until 5 p.m. tomorrow, the panel will have reached a decision.","answer":"By 5 p.m. tomorrow, the panel will have reached a decision.","explanation_ru":"By задаёт крайний срок достижения результата; until описывало бы продолжение процесса до момента.","rule_refs":["content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"],"cefr_estimate":"B2"},{"id":"adv-edit-012","type":"error_correction","prompt":"Rarely I have seen an argument collapse so quickly under scrutiny.","answer":"Rarely have I seen an argument collapse so quickly under scrutiny.","explanation_ru":"После вынесенного в начало rarely требуется инверсия; Present Perfect сохраняет связь опыта с настоящим.","rule_refs":["content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/02-present.md#present-perfect-simple"],"cefr_estimate":"C1"},{"id":"adv-discourse-001","type":"discourse_choice","prompt":"Choose the ending that keeps the narrator inside the past scene: The corridor was empty. Somewhere below, a door slammed. Lena checked her watch. She realised that ...","answer":"she had less than a minute left","explanation_ru":"Точка отсчёта рассказа остаётся в прошлом, поэтому состояние, осознанное Леной тогда, оформляется Past Simple.","rule_refs":["content/tenses/03-past.md#повествовательная-схема","content/tenses/05-contrasts-and-pitfalls.md#19-как-разбирать-неоднозначное-предложение"],"cefr_estimate":"C1","options":["she has less than a minute left","she had less than a minute left","she will have less than a minute left"],"correct_option_index":1,"review_note_ru":"Past forms maintain the deictic centre inside the remembered scene; has would abruptly return to the speaker's present."},{"id":"adv-discourse-002","type":"discourse_choice","prompt":"Which version presents the research as ongoing rather than as a completed body of work?","answer":"For the past decade, the lab has been mapping coastal erosion in the region.","explanation_ru":"Обе формы возможны, но Continuous сильнее удерживает внимание на продолжающемся процессе.","rule_refs":["content/tenses/05-contrasts-and-pitfalls.md#3-perfect-simple-и-perfect-continuous-результат-или-деятельность","content/tenses/05-contrasts-and-pitfalls.md#19-как-разбирать-неоднозначное-предложение"],"cefr_estimate":"C1","options":["For the past decade, the lab has mapped coastal erosion in the region.","For the past decade, the lab has been mapping coastal erosion in the region."],"correct_option_index":1,"review_note_ru":"The Continuous version foregrounds the continuing activity; the Simple version packages the work more readily as an achieved record."},{"id":"adv-discourse-003","type":"discourse_choice","prompt":"A biography is being edited in 2026. Which sentence unambiguously says that the subject no longer lives in Paris?","answer":"She lived in Paris for twenty years.","explanation_ru":"Задача проверяет не маркер for, а открытую или закрытую временную рамку.","rule_refs":["content/tenses/05-contrasts-and-pitfalls.md#2-perfect-и-past-до-сейчас-или-законченное-прошлое","content/tenses/05-contrasts-and-pitfalls.md#19-как-разбирать-неоднозначное-предложение"],"cefr_estimate":"C1","options":["She has lived in Paris for twenty years.","She lived in Paris for twenty years.","She has been living in Paris for twenty years."],"correct_option_index":1,"review_note_ru":"Past Simple closes the period. Both Present Perfect options normally connect the residence to the present."},{"id":"adv-discourse-004","type":"discourse_choice","prompt":"Which sentence most naturally reports an expected event that was later cancelled?","answer":"The minister was to address the conference, but the visit was cancelled.","explanation_ru":"Was to ясно представляет официально запланированное будущее из прошлого; продолжение отменяет реализацию плана.","rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/05-contrasts-and-pitfalls.md#19-как-разбирать-неоднозначное-предложение"],"cefr_estimate":"C1","options":["The minister would address the conference, but the visit was cancelled.","The minister was to address the conference, but the visit was cancelled.","The minister addressed the conference, but the visit was cancelled."],"correct_option_index":1,"review_note_ru":"Was to is suited to an official arrangement viewed from the past and does not itself assert fulfilment."},{"id":"adv-discourse-005","type":"discourse_choice","prompt":"Which version is best for a formal written review that shifts into a vivid scene-by-scene summary?","answer":"The narrator enters the archive and finds the ledger.","explanation_ru":"Настоящее время здесь не датирует событие настоящим, а меняет повествовательную перспективу.","rule_refs":["content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"],"cefr_estimate":"C2","options":["The narrator had entered the archive and had found the ledger.","The narrator enters the archive and finds the ledger.","The narrator has entered the archive and found the ledger yesterday."],"correct_option_index":1,"review_note_ru":"The historical present is a conventional marked choice for vivid summaries; the third option conflicts with yesterday."},{"id":"adv-discourse-006","type":"discourse_choice","prompt":"The evidence is indirect but strong. Which sentence uses Future Perfect epistemically rather than temporally?","answer":"The courier will have delivered the parcel by now; the tracking page shows it at the local depot.","explanation_ru":"Future Perfect может выражать уверенное предположение о прошлом относительно настоящего, а не только завершение к будущему сроку.","rule_refs":["content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"],"cefr_estimate":"C2","options":["By Friday, the courier will have delivered the parcel.","The courier will have delivered the parcel by now; the tracking page shows it at the local depot.","The courier will be delivering the parcel at noon."],"correct_option_index":1,"review_note_ru":"By now plus supporting evidence makes will have delivered an inference about a probably completed event."},{"id":"adv-cloze-001","type":"context_cloze","prompt":"When the product team {{1:meet}} on Monday morning, they discovered that the supplier {{2:not deliver}} a critical component. They {{3:expect}} it the previous Friday and {{4:plan}} to begin testing over the weekend. By then, the engineers {{5:work}} on the release for six months. The director said the company {{6:postpone}} the launch if the part did not arrive by noon. It finally {{7:turn up}} at eleven, just as the team {{8:prepare}} the delay notice.","answer":["met","had not delivered","had expected","had planned","had been working","would postpone","turned up","was preparing"],"explanation_ru":"Past Simple ведёт события, Perfect-формы восстанавливают предысторию, would задаёт будущее из прошлой точки, Past Continuous показывает прерванный процесс.","rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"],"cefr_estimate":"C1","title":"The delayed launch","blanks":[{"id":"adv-cloze-001-b1","answer":"met","accepted_answers":["met"],"rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-001-b2","answer":"had not delivered","accepted_answers":["had not delivered"],"rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-001-b3","answer":"had expected","accepted_answers":["had expected"],"rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-001-b4","answer":"had planned","accepted_answers":["had planned"],"rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-001-b5","answer":"had been working","accepted_answers":["had been working"],"rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-001-b6","answer":"would postpone","accepted_answers":["would postpone"],"rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-001-b7","answer":"turned up","accepted_answers":["turned up"],"rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-001-b8","answer":"was preparing","accepted_answers":["was preparing"],"rule_refs":["content/tenses/03-past.md#past-simple","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-perfect-continuous","content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#повествовательная-схема"]}]},{"id":"adv-cloze-002","type":"context_cloze","prompt":"The observatory {{1:open}} its new wing next April according to the official programme. By then, researchers {{2:collect}} atmospheric data at the site for twenty-five years and {{3:complete}} the first full regional model. At this time next May, visiting scientists {{4:use}} the new instruments. The director {{5:meet}} the first group on 3 May; the appointment is already fixed. As soon as they {{6:arrive}}, technicians {{7:give}} them a safety briefing. The project team believes the expansion {{8:transform}} the centre's work.","answer":["opens","will have been collecting","will have completed","will be using","is meeting","arrive","will give","will transform"],"explanation_ru":"Текст требует различить расписание, договорённость, процесс и результат к будущей точке, а также форму в придаточном времени.","rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"],"cefr_estimate":"C1","title":"A long-term forecast","blanks":[{"id":"adv-cloze-002-b1","answer":"opens","accepted_answers":["opens"],"rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"]},{"id":"adv-cloze-002-b2","answer":"will have been collecting","accepted_answers":["will have been collecting"],"rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"]},{"id":"adv-cloze-002-b3","answer":"will have completed","accepted_answers":["will have completed"],"rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"]},{"id":"adv-cloze-002-b4","answer":"will be using","accepted_answers":["will be using"],"rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"]},{"id":"adv-cloze-002-b5","answer":"is meeting","accepted_answers":["is meeting"],"rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"]},{"id":"adv-cloze-002-b6","answer":"arrive","accepted_answers":["arrive"],"rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"]},{"id":"adv-cloze-002-b7","answer":"will give","accepted_answers":["will give"],"rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"]},{"id":"adv-cloze-002-b8","answer":"will transform","accepted_answers":["will transform"],"rule_refs":["content/tenses/04-future.md#present-simple-для-будущего","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/04-future.md#future-continuous-will-be--v-ing","content/tenses/04-future.md#present-continuous-для-будущего","content/tenses/04-future.md#future-time-clauses"]}]},{"id":"adv-cloze-003","type":"context_cloze","prompt":"I {{1:search}} the municipal archive for weeks when I finally found the missing register. At first I thought someone {{2:remove}} the relevant pages, because the numbering {{3:jump}} from 184 to 197. Then the archivist {{4:notice}} a second volume that nobody {{5:catalogue}}. We {{6:open}} it, and there the entries were. Only later {{7:I/realise}} that several historians {{8:look}} in the wrong collection for decades.","answer":["had been searching","had removed","jumped","noticed","had catalogued","opened","did I realise","had been looking"],"explanation_ru":"Связный рассказ переключается между основной линией Past Simple, более ранними процессами и результатами, а также инверсией после Only later.","rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"],"cefr_estimate":"C2","title":"The archival discovery","blanks":[{"id":"adv-cloze-003-b1","answer":"had been searching","accepted_answers":["had been searching"],"rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-003-b2","answer":"had removed","accepted_answers":["had removed"],"rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-003-b3","answer":"jumped","accepted_answers":["jumped"],"rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-003-b4","answer":"noticed","accepted_answers":["noticed"],"rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-003-b5","answer":"had catalogued","accepted_answers":["had catalogued"],"rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-003-b6","answer":"opened","accepted_answers":["opened"],"rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-003-b7","answer":"did I realise","accepted_answers":["did I realise"],"rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"]},{"id":"adv-cloze-003-b8","answer":"had been looking","accepted_answers":["had been looking"],"rule_refs":["content/tenses/03-past.md#past-perfect-continuous","content/tenses/03-past.md#past-perfect-simple","content/tenses/03-past.md#past-simple","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления","content/tenses/03-past.md#повествовательная-схема"]}]},{"id":"adv-cloze-004","type":"context_cloze","prompt":"The documentary {{1:begin}} with a claim the audience already knows to be misleading. The narrator then {{2:present}} three interviews as if they were independent, although all three witnesses {{3:work}} for the same organisation since 2021. By the midpoint, the film {{4:repeat}} the central allegation four times but {{5:not provide}} new evidence. In the final sequence, a researcher {{6:open}} the raw dataset and {{7:show}} that the producers {{8:omit}} a crucial variable.","answer":["begins","presents","have been working","has repeated","has not provided","opens","shows","have omitted"],"explanation_ru":"Историческое настоящее организует пересказ; Present Perfect отмечает накопленный к текущей точке сюжета результат и продолжающуюся связь.","rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"],"cefr_estimate":"C2","title":"A critical review","blanks":[{"id":"adv-cloze-004-b1","answer":"begins","accepted_answers":["begins"],"rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"]},{"id":"adv-cloze-004-b2","answer":"presents","accepted_answers":["presents"],"rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"]},{"id":"adv-cloze-004-b3","answer":"have been working","accepted_answers":["have been working"],"rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"]},{"id":"adv-cloze-004-b4","answer":"has repeated","accepted_answers":["has repeated"],"rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"]},{"id":"adv-cloze-004-b5","answer":"has not provided","accepted_answers":["has not provided"],"rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"]},{"id":"adv-cloze-004-b6","answer":"opens","accepted_answers":["opens"],"rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"]},{"id":"adv-cloze-004-b7","answer":"shows","accepted_answers":["shows"],"rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"]},{"id":"adv-cloze-004-b8","answer":"have omitted","accepted_answers":["have omitted"],"rule_refs":["content/tenses/02-present.md#present-simple","content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления"]}]},{"id":"adv-cloze-005","type":"context_cloze","prompt":"In January, the council announced that the bridge {{1:close}} for repairs in June. Engineers {{2:begin}} preliminary surveys the following week, and the main contractor {{3:start}} work on 2 June. The mayor {{4:visit}} the site on opening day, while local buses {{5:use}} a temporary route. However, two days before the closure, inspectors found damage that nobody {{6:anticipate}}. The council {{7:be about to}} issue the final notice when it decided the bridge {{8:remain}} closed for a full year instead.","answer":["would close","were to begin","was due to start","was visiting","would be using","had anticipated","was about to","would remain"],"explanation_ru":"Все планы показаны из прошлой точки разными средствами future in the past; Past Perfect отмечает более раннее отсутствовавшее ожидание.","rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"],"cefr_estimate":"C1","title":"Plans viewed from the past","blanks":[{"id":"adv-cloze-005-b1","answer":"would close","accepted_answers":["would close"],"rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"]},{"id":"adv-cloze-005-b2","answer":"were to begin","accepted_answers":["were to begin"],"rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"]},{"id":"adv-cloze-005-b3","answer":"was due to start","accepted_answers":["was due to start"],"rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"]},{"id":"adv-cloze-005-b4","answer":"was visiting","accepted_answers":["was visiting"],"rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"]},{"id":"adv-cloze-005-b5","answer":"would be using","accepted_answers":["would be using"],"rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"]},{"id":"adv-cloze-005-b6","answer":"had anticipated","accepted_answers":["had anticipated"],"rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"]},{"id":"adv-cloze-005-b7","answer":"was about to","accepted_answers":["was about to"],"rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"]},{"id":"adv-cloze-005-b8","answer":"would remain","accepted_answers":["would remain"],"rule_refs":["content/tenses/04-future.md#future-in-the-past","content/tenses/03-past.md#past-perfect-simple"]}]},{"id":"adv-cloze-006","type":"context_cloze","prompt":"This quarter, the support team {{1:resolve}} 840 tickets and {{2:reduce}} the median response time by twelve per cent. It {{3:test}} a new triage system since early September, but the trial is not over. Several managers {{4:argue}} that the improvement proves the system works; others say seasonal demand {{5:fall}} sharply last month. By the time the board reviews the trial in December, the team {{6:use}} the system for fourteen weeks and {{7:process}} enough cases for a reliable comparison. Until then, analysts {{8:continue}} checking whether the change is causal.","answer":["has resolved","has reduced","has been testing","have argued","fell","will have been using","will have processed","will continue"],"explanation_ru":"Количество результатов требует Perfect Simple, незавершённый эксперимент — Continuous, законченный прошлый месяц — Past Simple; будущие формы разводят длительность, объём и продолжение до границы.","rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"],"cefr_estimate":"C2","title":"What the numbers mean","blanks":[{"id":"adv-cloze-006-b1","answer":"has resolved","accepted_answers":["has resolved"],"rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"]},{"id":"adv-cloze-006-b2","answer":"has reduced","accepted_answers":["has reduced"],"rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"]},{"id":"adv-cloze-006-b3","answer":"has been testing","accepted_answers":["has been testing"],"rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"]},{"id":"adv-cloze-006-b4","answer":"have argued","accepted_answers":["have argued"],"rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"]},{"id":"adv-cloze-006-b5","answer":"fell","accepted_answers":["fell"],"rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"]},{"id":"adv-cloze-006-b6","answer":"will have been using","accepted_answers":["will have been using"],"rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"]},{"id":"adv-cloze-006-b7","answer":"will have processed","accepted_answers":["will have processed"],"rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"]},{"id":"adv-cloze-006-b8","answer":"will continue","accepted_answers":["will continue"],"rule_refs":["content/tenses/02-present.md#present-perfect-simple","content/tenses/02-present.md#present-perfect-continuous","content/tenses/03-past.md#past-simple","content/tenses/04-future.md#future-perfect-continuous-will-have-been--v-ing","content/tenses/04-future.md#future-perfect-simple-will-have--v3","content/tenses/05-contrasts-and-pitfalls.md#7-by-и-untiltill"]}]}]
+[
+  {
+    "id": "adv-edit-010",
+    "type": "multiple_choice",
+    "prompt": "Выберите грамматически корректное предложение.",
+    "answer": "The soup tastes too salty today.",
+    "explanation_ru": "Taste описывает свойство супа и потому используется в Simple; Continuous означал бы намеренное пробование человеком. Проверяется выбор среди показанных вариантов; писать или перефразировать предложение не требуется.",
+    "rule_refs": [
+      "content/tenses/05-contrasts-and-pitfalls.md#11-stative-verbs-категории-и-исключения"
+    ],
+    "cefr_estimate": "B2",
+    "content_version": "tenses-2026-10-29.1",
+    "practice_tenses": [
+      "present_simple"
+    ],
+    "options": [
+      "The soup taste too salty today.",
+      "The soup tastes too salty today.",
+      "The soup is taste too salty today."
+    ],
+    "correct_option_index": 1,
+    "response_contract": "bounded-v1",
+    "summary": "The soup tastes too salty today.",
+    "level": "basic"
+  },
+  {
+    "id": "adv-edit-011",
+    "type": "multiple_choice",
+    "prompt": "Комиссия достигнет решения не позднее 17:00 завтра. Выберите предложение, передающее именно этот крайний срок.",
+    "answer": "By 5 p.m. tomorrow, the panel will have reached a decision.",
+    "explanation_ru": "By задаёт крайний срок достижения результата; until описывало бы продолжение процесса до момента. Проверяется выбор среди показанных вариантов; писать или перефразировать предложение не требуется.",
+    "rule_refs": [
+      "content/tenses/05-contrasts-and-pitfalls.md#7-by-и-until-till"
+    ],
+    "cefr_estimate": "B2",
+    "content_version": "tenses-2026-10-29.1",
+    "practice_tenses": [
+      "future_perfect"
+    ],
+    "options": [
+      "By 5 p.m. tomorrow, the panel will have reach a decision.",
+      "By 5 p.m. tomorrow, the panel will have reached a decision.",
+      "Until 5 p.m. tomorrow, the panel will have reached a decision."
+    ],
+    "correct_option_index": 1,
+    "response_contract": "bounded-v1",
+    "level": "basic"
+  },
+  {
+    "id": "adv-edit-012",
+    "type": "multiple_choice",
+    "prompt": "Выберите грамматически корректное предложение.",
+    "answer": "Rarely have I seen an argument collapse so quickly under scrutiny.",
+    "explanation_ru": "После вынесенного в начало rarely требуется инверсия; Present Perfect сохраняет связь опыта с настоящим. Проверяется выбор среди показанных вариантов; писать или перефразировать предложение не требуется.",
+    "rule_refs": [
+      "content/tenses/05-contrasts-and-pitfalls.md#18-маркированные-и-продвинутые-употребления",
+      "content/tenses/02-present.md#present-perfect-simple"
+    ],
+    "cefr_estimate": "C1",
+    "content_version": "tenses-2026-10-30.9",
+    "practice_tenses": [
+      "present_perfect"
+    ],
+    "options": [
+      "Rarely have I saw an argument collapse so quickly under scrutiny.",
+      "Rarely I have seen an argument collapse so quickly under scrutiny.",
+      "Rarely have I seen an argument collapse so quickly under scrutiny."
+    ],
+    "correct_option_index": 2,
+    "response_contract": "bounded-v1",
+    "summary": "Rarely have I seen an argument collapse so quickly under scrutiny.",
+    "level": "advanced"
+  },
+  {
+    "id": "adv-cloze-001",
+    "type": "context_cloze",
+    "prompt": "When the team {{1:meet}} last Monday, the supplier {{2:not deliver}} a critical part yet. By then the engineers {{3:work}} on the release for six months. They {{4:prepare}} a delay notice when the part finally arrived. Since Monday they {{5:complete}} every test, and the product is ready now. The company normally {{6:release}} software on Fridays. At noon this Friday engineers {{7:monitor}} the launch; their shift runs from ten until four. By four they {{8:check}} every customer account.",
+    "answer": [
+      "met",
+      "had not delivered",
+      "had expected",
+      "had planned",
+      "had been working",
+      "would postpone",
+      "turned up",
+      "was preparing"
+    ],
+    "explanation_ru": "1) Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: met. 2) Событие уже произошло до указанной прошлой границы. Форма: had + V3. Основной ответ: had not delivered. 3) К указанной прошлой границе процесс уже длился названный период. Форма: had been + V-ing. Основной ответ: had been working. Также принимается: had worked. 4) Процесс шёл в указанный прошлый момент или служил фоном событию. Форма: was/were + V-ing. Основной ответ: were preparing. 5) Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: have completed. 6) Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: releases. 7) В названный будущий момент процесс будет в ходе выполнения. Форма: will be + V-ing. Основной ответ: will be monitoring. 8) К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have checked. Также принимается: will check.",
+    "rule_refs": [
+      "content/tenses/03-past.md#past-simple",
+      "content/tenses/03-past.md#past-perfect-simple",
+      "content/tenses/03-past.md#past-perfect-continuous",
+      "content/tenses/03-past.md#past-continuous",
+      "content/tenses/02-present.md#present-perfect-simple",
+      "content/tenses/02-present.md#present-simple",
+      "content/tenses/04-future.md#future-continuous-will-be-v-ing",
+      "content/tenses/04-future.md#future-perfect-simple-will-have-v3"
+    ],
+    "cefr_estimate": "C1",
+    "title": "The delayed launch",
+    "blanks": [
+      {
+        "id": "adv-cloze-001-b1",
+        "answer": "met",
+        "accepted_answers": [
+          "met"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-simple"
+        ],
+        "tense_or_construction": "past_simple",
+        "explanation_ru": "Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: met.",
+        "base_verb": "meet"
+      },
+      {
+        "id": "adv-cloze-001-b2",
+        "answer": "had not delivered",
+        "accepted_answers": [
+          "had not delivered"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-perfect-simple"
+        ],
+        "explanation_ru": "Событие уже произошло до указанной прошлой границы. Форма: had + V3. Основной ответ: had not delivered.",
+        "tense_or_construction": "past_perfect",
+        "base_verb": "deliver"
+      },
+      {
+        "id": "adv-cloze-001-b3",
+        "answer": "had been working",
+        "accepted_answers": [
+          "had been working",
+          "had worked"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-perfect-continuous"
+        ],
+        "explanation_ru": "К указанной прошлой границе процесс уже длился названный период. Форма: had been + V-ing. Основной ответ: had been working. Также принимается: had worked.",
+        "tense_or_construction": "past_perfect_continuous",
+        "base_verb": "work"
+      },
+      {
+        "id": "adv-cloze-001-b4",
+        "answer": "were preparing",
+        "accepted_answers": [
+          "were preparing"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-continuous"
+        ],
+        "explanation_ru": "Процесс шёл в указанный прошлый момент или служил фоном событию. Форма: was/were + V-ing. Основной ответ: were preparing.",
+        "tense_or_construction": "past_continuous",
+        "base_verb": "prepare"
+      },
+      {
+        "id": "adv-cloze-001-b5",
+        "answer": "have completed",
+        "accepted_answers": [
+          "have completed"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-simple"
+        ],
+        "explanation_ru": "Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: have completed.",
+        "tense_or_construction": "present_perfect",
+        "base_verb": "complete"
+      },
+      {
+        "id": "adv-cloze-001-b6",
+        "answer": "releases",
+        "accepted_answers": [
+          "releases"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-simple"
+        ],
+        "explanation_ru": "Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: releases.",
+        "tense_or_construction": "present_simple",
+        "base_verb": "release"
+      },
+      {
+        "id": "adv-cloze-001-b7",
+        "answer": "will be monitoring",
+        "accepted_answers": [
+          "will be monitoring"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-continuous-will-be-v-ing"
+        ],
+        "tense_or_construction": "future_continuous",
+        "explanation_ru": "В названный будущий момент процесс будет в ходе выполнения. Форма: will be + V-ing. Основной ответ: will be monitoring.",
+        "base_verb": "monitor"
+      },
+      {
+        "id": "adv-cloze-001-b8",
+        "answer": "will have checked",
+        "accepted_answers": [
+          "will have checked",
+          "will check"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-perfect-simple-will-have-v3"
+        ],
+        "explanation_ru": "К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have checked. Также принимается: will check.",
+        "tense_or_construction": "future_perfect",
+        "base_verb": "check"
+      }
+    ],
+    "content_version": "tenses-2026-10-31.6",
+    "answer_text": "When the team met last Monday, the supplier had not delivered a critical part yet. By then the engineers had been working on the release for six months. They were preparing a delay notice when the part finally arrived. Since Monday they have completed every test, and the product is ready now. The company normally releases software on Fridays. At noon this Friday engineers will be monitoring the launch; their shift runs from ten until four. By four they will have checked every customer account.",
+    "response_contract": "bounded-v1",
+    "level": "medium",
+    "review_note_ru": "Вводите форму глагола и все слова, указанные в скобках. Слова, уже напечатанные вне пропуска, повторять не нужно. Можно использовать полную или сокращённую форму.",
+    "practice_tenses": [
+      "past_simple",
+      "past_perfect",
+      "past_perfect_continuous",
+      "past_continuous",
+      "present_perfect",
+      "present_simple",
+      "future_continuous",
+      "future_perfect"
+    ],
+    "tags": [
+      "past_simple",
+      "past_perfect",
+      "past_perfect_continuous",
+      "past_continuous",
+      "present_perfect",
+      "present_simple",
+      "future_continuous",
+      "future_perfect"
+    ]
+  },
+  {
+    "id": "adv-cloze-002",
+    "type": "context_cloze",
+    "prompt": "The observatory {{1:open}} its new wing next April according to the programme. By then researchers {{2:collect}} data here for twenty-five years and {{3:complete}} a regional model. At noon on opening day scientists {{4:demonstrate}} the instruments; the demonstration runs from eleven until one. The director {{5:meet}} donors afterwards; that appointment is confirmed. The team {{6:already print}} every visitor's badge, so those are ready now. Yesterday a technician {{7:repair}} the entrance scanner. The director promises everyone {{8:receive}} a safety briefing before entering.",
+    "answer": [
+      "opens",
+      "will have been collecting",
+      "will have completed",
+      "will be using",
+      "is meeting",
+      "arrive",
+      "will give",
+      "will transform"
+    ],
+    "explanation_ru": "1) Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: opens. Также принимается: is opening. 2) К явно названной будущей границе процесс будет длиться указанный период. Форма: will have been + V-ing. Основной ответ: will have been collecting. Также принимается: will have collected. 3) К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have completed. Также принимается: will complete. 4) В названный будущий момент процесс будет в ходе выполнения. Форма: will be + V-ing. Основной ответ: will be demonstrating. 5) Текущий процесс или явно подтверждённая договорённость. Форма: am/is/are + V-ing. Основной ответ: is meeting. Также принимается: will be meeting. 6) Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: has already printed. Также принимается: have already printed. 7) Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: repaired. 8) Обещание, решение или прогноз на будущее. Форма: will + V1. Основной ответ: will receive.",
+    "rule_refs": [
+      "content/tenses/02-present.md#present-simple",
+      "content/tenses/04-future.md#future-perfect-continuous-will-have-been-v-ing",
+      "content/tenses/04-future.md#future-perfect-simple-will-have-v3",
+      "content/tenses/04-future.md#future-continuous-will-be-v-ing",
+      "content/tenses/02-present.md#present-continuous",
+      "content/tenses/02-present.md#present-perfect-simple",
+      "content/tenses/03-past.md#past-simple",
+      "content/tenses/04-future.md#future-simple-will-v1"
+    ],
+    "cefr_estimate": "C1",
+    "title": "A long-term forecast",
+    "blanks": [
+      {
+        "id": "adv-cloze-002-b1",
+        "answer": "opens",
+        "accepted_answers": [
+          "opens",
+          "is opening"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-simple"
+        ],
+        "tense_or_construction": "present_simple",
+        "explanation_ru": "Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: opens. Также принимается: is opening.",
+        "base_verb": "open"
+      },
+      {
+        "id": "adv-cloze-002-b2",
+        "answer": "will have been collecting",
+        "accepted_answers": [
+          "will have been collecting",
+          "will have collected"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-perfect-continuous-will-have-been-v-ing"
+        ],
+        "explanation_ru": "К явно названной будущей границе процесс будет длиться указанный период. Форма: will have been + V-ing. Основной ответ: will have been collecting. Также принимается: will have collected.",
+        "tense_or_construction": "future_perfect_continuous",
+        "base_verb": "collect"
+      },
+      {
+        "id": "adv-cloze-002-b3",
+        "answer": "will have completed",
+        "accepted_answers": [
+          "will have completed",
+          "will complete"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-perfect-simple-will-have-v3"
+        ],
+        "explanation_ru": "К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have completed. Также принимается: will complete.",
+        "tense_or_construction": "future_perfect",
+        "base_verb": "complete"
+      },
+      {
+        "id": "adv-cloze-002-b4",
+        "answer": "will be demonstrating",
+        "accepted_answers": [
+          "will be demonstrating"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-continuous-will-be-v-ing"
+        ],
+        "explanation_ru": "В названный будущий момент процесс будет в ходе выполнения. Форма: will be + V-ing. Основной ответ: will be demonstrating.",
+        "tense_or_construction": "future_continuous",
+        "base_verb": "demonstrate"
+      },
+      {
+        "id": "adv-cloze-002-b5",
+        "answer": "is meeting",
+        "accepted_answers": [
+          "is meeting",
+          "will be meeting"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-continuous"
+        ],
+        "explanation_ru": "Текущий процесс или явно подтверждённая договорённость. Форма: am/is/are + V-ing. Основной ответ: is meeting. Также принимается: will be meeting.",
+        "tense_or_construction": "present_continuous",
+        "base_verb": "meet"
+      },
+      {
+        "id": "adv-cloze-002-b6",
+        "answer": "has already printed",
+        "accepted_answers": [
+          "has already printed",
+          "have already printed"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-simple"
+        ],
+        "tense_or_construction": "present_perfect",
+        "explanation_ru": "Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: has already printed. Также принимается: have already printed.",
+        "base_verb": "already print"
+      },
+      {
+        "id": "adv-cloze-002-b7",
+        "answer": "repaired",
+        "accepted_answers": [
+          "repaired"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-simple"
+        ],
+        "explanation_ru": "Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: repaired.",
+        "tense_or_construction": "past_simple",
+        "base_verb": "repair"
+      },
+      {
+        "id": "adv-cloze-002-b8",
+        "answer": "will receive",
+        "accepted_answers": [
+          "will receive"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-simple-will-v1"
+        ],
+        "explanation_ru": "Обещание, решение или прогноз на будущее. Форма: will + V1. Основной ответ: will receive.",
+        "tense_or_construction": "future_simple",
+        "base_verb": "receive"
+      }
+    ],
+    "content_version": "tenses-2026-10-31.6",
+    "answer_text": "The observatory opens its new wing next April according to the programme. By then researchers will have been collecting data here for twenty-five years and will have completed a regional model. At noon on opening day scientists will be demonstrating the instruments; the demonstration runs from eleven until one. The director is meeting donors afterwards; that appointment is confirmed. The team has already printed every visitor's badge, so those are ready now. Yesterday a technician repaired the entrance scanner. The director promises everyone will receive a safety briefing before entering.",
+    "response_contract": "bounded-v1",
+    "level": "medium",
+    "review_note_ru": "Вводите форму глагола и все слова, указанные в скобках. Слова, уже напечатанные вне пропуска, повторять не нужно. Можно использовать полную или сокращённую форму.",
+    "practice_tenses": [
+      "present_simple",
+      "future_perfect_continuous",
+      "future_perfect",
+      "future_continuous",
+      "present_continuous",
+      "present_perfect",
+      "past_simple",
+      "future_simple"
+    ],
+    "tags": [
+      "present_simple",
+      "future_perfect_continuous",
+      "future_perfect",
+      "future_continuous",
+      "present_continuous",
+      "present_perfect",
+      "past_simple",
+      "future_simple"
+    ]
+  },
+  {
+    "id": "adv-cloze-003",
+    "type": "context_cloze",
+    "prompt": "I {{1:search}} the archive for weeks when I found the register yesterday. Someone {{2:remove}} several pages before depositing it there. The archivist {{3:notice}} a second volume at noon. While I {{4:examine}} it, she brought a magnifying glass. Since then we {{5:identify}} all the missing entries, so the record is complete now. This archive {{6:hold}} records dating back to 1500. At noon tomorrow I {{7:photograph}} the register; my booking runs from ten until two. By two I {{8:copy}} every page.",
+    "answer": [
+      "had been searching",
+      "had removed",
+      "jumped",
+      "noticed",
+      "had catalogued",
+      "opened",
+      "did",
+      "had been looking"
+    ],
+    "explanation_ru": "1) К указанной прошлой границе процесс уже длился названный период. Форма: had been + V-ing. Основной ответ: had been searching. Также принимается: had searched. 2) Событие уже произошло до указанной прошлой границы. Форма: had + V3. Основной ответ: had removed. Также принимается: removed. 3) Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: noticed. 4) Процесс шёл в указанный прошлый момент или служил фоном событию. Форма: was/were + V-ing. Основной ответ: was examining. 5) Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: have identified. 6) Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: holds. 7) В названный будущий момент процесс будет в ходе выполнения. Форма: will be + V-ing. Основной ответ: will be photographing. 8) К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have copied. Также принимается: will copy.",
+    "rule_refs": [
+      "content/tenses/03-past.md#past-perfect-continuous",
+      "content/tenses/03-past.md#past-perfect-simple",
+      "content/tenses/03-past.md#past-simple",
+      "content/tenses/03-past.md#past-continuous",
+      "content/tenses/02-present.md#present-perfect-simple",
+      "content/tenses/02-present.md#present-simple",
+      "content/tenses/04-future.md#future-continuous-will-be-v-ing",
+      "content/tenses/04-future.md#future-perfect-simple-will-have-v3"
+    ],
+    "cefr_estimate": "C2",
+    "title": "The archival discovery",
+    "blanks": [
+      {
+        "id": "adv-cloze-003-b1",
+        "answer": "had been searching",
+        "accepted_answers": [
+          "had been searching",
+          "had searched"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-perfect-continuous"
+        ],
+        "explanation_ru": "К указанной прошлой границе процесс уже длился названный период. Форма: had been + V-ing. Основной ответ: had been searching. Также принимается: had searched.",
+        "tense_or_construction": "past_perfect_continuous",
+        "base_verb": "search"
+      },
+      {
+        "id": "adv-cloze-003-b2",
+        "answer": "had removed",
+        "accepted_answers": [
+          "had removed",
+          "removed"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-perfect-simple"
+        ],
+        "explanation_ru": "Событие уже произошло до указанной прошлой границы. Форма: had + V3. Основной ответ: had removed. Также принимается: removed.",
+        "tense_or_construction": "past_perfect",
+        "base_verb": "remove"
+      },
+      {
+        "id": "adv-cloze-003-b3",
+        "answer": "noticed",
+        "accepted_answers": [
+          "noticed"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-simple"
+        ],
+        "tense_or_construction": "past_simple",
+        "explanation_ru": "Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: noticed.",
+        "base_verb": "notice"
+      },
+      {
+        "id": "adv-cloze-003-b4",
+        "answer": "was examining",
+        "accepted_answers": [
+          "was examining"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-continuous"
+        ],
+        "tense_or_construction": "past_continuous",
+        "explanation_ru": "Процесс шёл в указанный прошлый момент или служил фоном событию. Форма: was/were + V-ing. Основной ответ: was examining.",
+        "base_verb": "examine"
+      },
+      {
+        "id": "adv-cloze-003-b5",
+        "answer": "have identified",
+        "accepted_answers": [
+          "have identified"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-simple"
+        ],
+        "explanation_ru": "Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: have identified.",
+        "tense_or_construction": "present_perfect",
+        "base_verb": "identify"
+      },
+      {
+        "id": "adv-cloze-003-b6",
+        "answer": "holds",
+        "accepted_answers": [
+          "holds"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-simple"
+        ],
+        "tense_or_construction": "present_simple",
+        "explanation_ru": "Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: holds.",
+        "base_verb": "hold"
+      },
+      {
+        "id": "adv-cloze-003-b7",
+        "answer": "will be photographing",
+        "accepted_answers": [
+          "will be photographing"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-continuous-will-be-v-ing"
+        ],
+        "tense_or_construction": "future_continuous",
+        "explanation_ru": "В названный будущий момент процесс будет в ходе выполнения. Форма: will be + V-ing. Основной ответ: will be photographing.",
+        "base_verb": "photograph"
+      },
+      {
+        "id": "adv-cloze-003-b8",
+        "answer": "will have copied",
+        "accepted_answers": [
+          "will have copied",
+          "will copy"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-perfect-simple-will-have-v3"
+        ],
+        "explanation_ru": "К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have copied. Также принимается: will copy.",
+        "tense_or_construction": "future_perfect",
+        "base_verb": "copy"
+      }
+    ],
+    "content_version": "tenses-2026-10-31.6",
+    "answer_text": "I had been searching the archive for weeks when I found the register yesterday. Someone had removed several pages before depositing it there. The archivist noticed a second volume at noon. While I was examining it, she brought a magnifying glass. Since then we have identified all the missing entries, so the record is complete now. This archive holds records dating back to 1500. At noon tomorrow I will be photographing the register; my booking runs from ten until two. By two I will have copied every page.",
+    "response_contract": "bounded-v1",
+    "level": "medium",
+    "review_note_ru": "Вводите форму глагола и все слова, указанные в скобках. Слова, уже напечатанные вне пропуска, повторять не нужно. Можно использовать полную или сокращённую форму.",
+    "practice_tenses": [
+      "past_perfect_continuous",
+      "past_perfect",
+      "past_simple",
+      "past_continuous",
+      "present_perfect",
+      "present_simple",
+      "future_continuous",
+      "future_perfect"
+    ],
+    "tags": [
+      "past_perfect_continuous",
+      "past_perfect",
+      "past_simple",
+      "past_continuous",
+      "present_perfect",
+      "present_simple",
+      "future_continuous",
+      "future_perfect"
+    ]
+  },
+  {
+    "id": "adv-cloze-004",
+    "type": "context_cloze",
+    "prompt": "The documentary {{1:begin}} with a misleading claim. Right now our tutor {{2:show}} us its opening sequence. We {{3:analyse}} this film since Monday and the discussion is still continuing. So far we {{4:find}} four unsupported claims. Yesterday a researcher {{5:send}} us the raw data. Before contacting her, we {{6:never see}} those figures. At noon tomorrow we {{7:compare}} them with the film's graphs; our workshop runs from eleven until one. By one we {{8:review}} every graph.",
+    "answer": [
+      "begins",
+      "presents",
+      "have been working",
+      "has repeated",
+      "has not provided",
+      "opens",
+      "shows",
+      "have omitted"
+    ],
+    "explanation_ru": "1) Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: begins. 2) Текущий процесс или явно подтверждённая договорённость. Форма: am/is/are + V-ing. Основной ответ: is showing. 3) Процесс начался раньше и продолжается до настоящего. Форма: have/has been + V-ing. Основной ответ: have been analysing. Также принимается: have been analyzing. 4) Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: have found. 5) Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: sent. 6) Событие уже произошло до указанной прошлой границы. Форма: had + V3. Основной ответ: had never seen. 7) В названный будущий момент процесс будет в ходе выполнения. Форма: will be + V-ing. Основной ответ: will be comparing. 8) К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have reviewed. Также принимается: will review.",
+    "rule_refs": [
+      "content/tenses/02-present.md#present-simple",
+      "content/tenses/02-present.md#present-continuous",
+      "content/tenses/02-present.md#present-perfect-continuous",
+      "content/tenses/02-present.md#present-perfect-simple",
+      "content/tenses/03-past.md#past-simple",
+      "content/tenses/03-past.md#past-perfect-simple",
+      "content/tenses/04-future.md#future-continuous-will-be-v-ing",
+      "content/tenses/04-future.md#future-perfect-simple-will-have-v3"
+    ],
+    "cefr_estimate": "C2",
+    "title": "A critical review",
+    "blanks": [
+      {
+        "id": "adv-cloze-004-b1",
+        "answer": "begins",
+        "accepted_answers": [
+          "begins"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-simple"
+        ],
+        "tense_or_construction": "present_simple",
+        "explanation_ru": "Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: begins.",
+        "base_verb": "begin"
+      },
+      {
+        "id": "adv-cloze-004-b2",
+        "answer": "is showing",
+        "accepted_answers": [
+          "is showing"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-continuous"
+        ],
+        "tense_or_construction": "present_continuous",
+        "explanation_ru": "Текущий процесс или явно подтверждённая договорённость. Форма: am/is/are + V-ing. Основной ответ: is showing.",
+        "base_verb": "show"
+      },
+      {
+        "id": "adv-cloze-004-b3",
+        "answer": "have been analysing",
+        "accepted_answers": [
+          "have been analysing",
+          "have been analyzing"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-continuous"
+        ],
+        "explanation_ru": "Процесс начался раньше и продолжается до настоящего. Форма: have/has been + V-ing. Основной ответ: have been analysing. Также принимается: have been analyzing.",
+        "tense_or_construction": "present_perfect_continuous",
+        "base_verb": "analyse"
+      },
+      {
+        "id": "adv-cloze-004-b4",
+        "answer": "have found",
+        "accepted_answers": [
+          "have found"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-simple"
+        ],
+        "explanation_ru": "Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: have found.",
+        "tense_or_construction": "present_perfect",
+        "base_verb": "find"
+      },
+      {
+        "id": "adv-cloze-004-b5",
+        "answer": "sent",
+        "accepted_answers": [
+          "sent"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-simple"
+        ],
+        "explanation_ru": "Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: sent.",
+        "tense_or_construction": "past_simple",
+        "base_verb": "send"
+      },
+      {
+        "id": "adv-cloze-004-b6",
+        "answer": "had never seen",
+        "accepted_answers": [
+          "had never seen"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-perfect-simple"
+        ],
+        "tense_or_construction": "past_perfect",
+        "explanation_ru": "Событие уже произошло до указанной прошлой границы. Форма: had + V3. Основной ответ: had never seen.",
+        "base_verb": "never see"
+      },
+      {
+        "id": "adv-cloze-004-b7",
+        "answer": "will be comparing",
+        "accepted_answers": [
+          "will be comparing"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-continuous-will-be-v-ing"
+        ],
+        "tense_or_construction": "future_continuous",
+        "explanation_ru": "В названный будущий момент процесс будет в ходе выполнения. Форма: will be + V-ing. Основной ответ: will be comparing.",
+        "base_verb": "compare"
+      },
+      {
+        "id": "adv-cloze-004-b8",
+        "answer": "will have reviewed",
+        "accepted_answers": [
+          "will have reviewed",
+          "will review"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-perfect-simple-will-have-v3"
+        ],
+        "explanation_ru": "К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have reviewed. Также принимается: will review.",
+        "tense_or_construction": "future_perfect",
+        "base_verb": "review"
+      }
+    ],
+    "content_version": "tenses-2026-10-31.6",
+    "answer_text": "The documentary begins with a misleading claim. Right now our tutor is showing us its opening sequence. We have been analysing this film since Monday and the discussion is still continuing. So far we have found four unsupported claims. Yesterday a researcher sent us the raw data. Before contacting her, we had never seen those figures. At noon tomorrow we will be comparing them with the film's graphs; our workshop runs from eleven until one. By one we will have reviewed every graph.",
+    "response_contract": "bounded-v1",
+    "level": "advanced",
+    "review_note_ru": "Вводите форму глагола и все слова, указанные в скобках. Слова, уже напечатанные вне пропуска, повторять не нужно. Можно использовать полную или сокращённую форму.",
+    "practice_tenses": [
+      "present_simple",
+      "present_continuous",
+      "present_perfect_continuous",
+      "present_perfect",
+      "past_simple",
+      "past_perfect",
+      "future_continuous",
+      "future_perfect"
+    ],
+    "tags": [
+      "present_simple",
+      "present_continuous",
+      "present_perfect_continuous",
+      "present_perfect",
+      "past_simple",
+      "past_perfect",
+      "future_continuous",
+      "future_perfect"
+    ]
+  },
+  {
+    "id": "adv-cloze-005",
+    "type": "context_cloze",
+    "prompt": "In January the council announced that the bridge {{1:close}} in June. Engineers {{2:complete}} their surveys the previous November. Inspectors {{3:discover}} unexpected damage last Friday while the mayor {{4:tour}} the site. Since Friday engineers {{5:assess}} that damage continuously; the assessment is still underway. The council {{6:already publish}} a diversion map, so drivers can download it now. The bridge normally {{7:carry}} ten thousand vehicles daily. The mayor promises the council {{8:provide}} a temporary ferry next month.",
+    "answer": [
+      "would close",
+      "were to begin",
+      "was due to start",
+      "was visiting",
+      "would be using",
+      "had anticipated",
+      "was about to",
+      "would remain"
+    ],
+    "explanation_ru": "1) Будущее из прошлой точки может выражаться would, was/were going to, was/were to или was/were due to — в зависимости от смысла плана. Основной ответ: would close. Также принимается: was due to close. 2) Событие уже произошло до указанной прошлой границы. Форма: had + V3. Основной ответ: had completed. Также принимается: completed. 3) Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: discovered. 4) Процесс шёл в указанный прошлый момент или служил фоном событию. Форма: was/were + V-ing. Основной ответ: was touring. 5) Процесс начался раньше и продолжается до настоящего. Форма: have/has been + V-ing. Основной ответ: have been assessing. 6) Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: has already published. Также принимается: have already published. 7) Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: carries. 8) Обещание, решение или прогноз на будущее. Форма: will + V1. Основной ответ: will provide.",
+    "rule_refs": [
+      "content/tenses/04-future.md#future-in-the-past",
+      "content/tenses/03-past.md#past-perfect-simple",
+      "content/tenses/03-past.md#past-simple",
+      "content/tenses/03-past.md#past-continuous",
+      "content/tenses/02-present.md#present-perfect-continuous",
+      "content/tenses/02-present.md#present-perfect-simple",
+      "content/tenses/02-present.md#present-simple",
+      "content/tenses/04-future.md#future-simple-will-v1"
+    ],
+    "cefr_estimate": "C1",
+    "title": "Plans viewed from the past",
+    "blanks": [
+      {
+        "id": "adv-cloze-005-b1",
+        "answer": "would close",
+        "accepted_answers": [
+          "would close",
+          "was due to close"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-in-the-past"
+        ],
+        "explanation_ru": "Будущее из прошлой точки может выражаться would, was/were going to, was/were to или was/were due to — в зависимости от смысла плана. Основной ответ: would close. Также принимается: was due to close.",
+        "tense_or_construction": "future_in_past",
+        "base_verb": "close"
+      },
+      {
+        "id": "adv-cloze-005-b2",
+        "answer": "had completed",
+        "accepted_answers": [
+          "had completed",
+          "completed"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-perfect-simple"
+        ],
+        "explanation_ru": "Событие уже произошло до указанной прошлой границы. Форма: had + V3. Основной ответ: had completed. Также принимается: completed.",
+        "tense_or_construction": "past_perfect",
+        "base_verb": "complete"
+      },
+      {
+        "id": "adv-cloze-005-b3",
+        "answer": "discovered",
+        "accepted_answers": [
+          "discovered"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-simple"
+        ],
+        "explanation_ru": "Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: discovered.",
+        "tense_or_construction": "past_simple",
+        "base_verb": "discover"
+      },
+      {
+        "id": "adv-cloze-005-b4",
+        "answer": "was touring",
+        "accepted_answers": [
+          "was touring"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-continuous"
+        ],
+        "explanation_ru": "Процесс шёл в указанный прошлый момент или служил фоном событию. Форма: was/were + V-ing. Основной ответ: was touring.",
+        "tense_or_construction": "past_continuous",
+        "base_verb": "tour"
+      },
+      {
+        "id": "adv-cloze-005-b5",
+        "answer": "have been assessing",
+        "accepted_answers": [
+          "have been assessing"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-continuous"
+        ],
+        "explanation_ru": "Процесс начался раньше и продолжается до настоящего. Форма: have/has been + V-ing. Основной ответ: have been assessing.",
+        "tense_or_construction": "present_perfect_continuous",
+        "base_verb": "assess"
+      },
+      {
+        "id": "adv-cloze-005-b6",
+        "answer": "has already published",
+        "accepted_answers": [
+          "has already published",
+          "have already published"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-simple"
+        ],
+        "explanation_ru": "Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: has already published. Также принимается: have already published.",
+        "tense_or_construction": "present_perfect",
+        "base_verb": "already publish"
+      },
+      {
+        "id": "adv-cloze-005-b7",
+        "answer": "carries",
+        "accepted_answers": [
+          "carries"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-simple"
+        ],
+        "tense_or_construction": "present_simple",
+        "explanation_ru": "Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: carries.",
+        "base_verb": "carry"
+      },
+      {
+        "id": "adv-cloze-005-b8",
+        "answer": "will provide",
+        "accepted_answers": [
+          "will provide"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-simple-will-v1"
+        ],
+        "explanation_ru": "Обещание, решение или прогноз на будущее. Форма: will + V1. Основной ответ: will provide.",
+        "tense_or_construction": "future_simple",
+        "base_verb": "provide"
+      }
+    ],
+    "content_version": "tenses-2026-10-31.6",
+    "answer_text": "In January the council announced that the bridge would close in June. Engineers had completed their surveys the previous November. Inspectors discovered unexpected damage last Friday while the mayor was touring the site. Since Friday engineers have been assessing that damage continuously; the assessment is still underway. The council has already published a diversion map, so drivers can download it now. The bridge normally carries ten thousand vehicles daily. The mayor promises the council will provide a temporary ferry next month.",
+    "response_contract": "bounded-v1",
+    "level": "advanced",
+    "review_note_ru": "Вводите форму глагола и все слова, указанные в скобках. Слова, уже напечатанные вне пропуска, повторять не нужно. Можно использовать полную или сокращённую форму.",
+    "practice_tenses": [
+      "future_in_past",
+      "past_perfect",
+      "past_simple",
+      "past_continuous",
+      "present_perfect_continuous",
+      "present_perfect",
+      "present_simple",
+      "future_simple"
+    ],
+    "tags": [
+      "future_in_past",
+      "past_perfect",
+      "past_simple",
+      "past_continuous",
+      "present_perfect_continuous",
+      "present_perfect",
+      "present_simple",
+      "future_simple"
+    ]
+  },
+  {
+    "id": "adv-cloze-006",
+    "type": "context_cloze",
+    "prompt": "This quarter the support team {{1:resolve}} 840 tickets so far. Last month it {{2:reduce}} its response time by twelve per cent. It {{3:test}} a triage system since early September and the trial is not over. The system {{4:assign}} urgent cases automatically whenever they arrive. Right now analysts {{5:compare}} its results with the old process. Before the trial began, managers {{6:wait}} for a replacement system for two years. By the board's review next December, the team {{7:process}} enough cases for a reliable comparison. The director promises analysts {{8:continue}} monitoring results afterwards.",
+    "answer": [
+      "has resolved",
+      "has reduced",
+      "has been testing",
+      "have argued",
+      "fell",
+      "will have been using",
+      "will have processed",
+      "will continue"
+    ],
+    "explanation_ru": "1) Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: has resolved. Также принимается: have resolved. 2) Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: reduced. 3) Процесс начался раньше и продолжается до настоящего. Форма: have/has been + V-ing. Основной ответ: has been testing. Также принимается: has tested. 4) Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: assigns. 5) Текущий процесс или явно подтверждённая договорённость. Форма: am/is/are + V-ing. Основной ответ: are comparing. 6) К указанной прошлой границе процесс уже длился названный период. Форма: had been + V-ing. Основной ответ: had been waiting. Также принимается: had waited. 7) К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have processed. Также принимается: will process. 8) Обещание, решение или прогноз на будущее. Форма: will + V1. Основной ответ: will continue.",
+    "rule_refs": [
+      "content/tenses/02-present.md#present-perfect-simple",
+      "content/tenses/03-past.md#past-simple",
+      "content/tenses/02-present.md#present-perfect-continuous",
+      "content/tenses/02-present.md#present-simple",
+      "content/tenses/02-present.md#present-continuous",
+      "content/tenses/03-past.md#past-perfect-continuous",
+      "content/tenses/04-future.md#future-perfect-simple-will-have-v3",
+      "content/tenses/04-future.md#future-simple-will-v1"
+    ],
+    "cefr_estimate": "C2",
+    "title": "What the numbers mean",
+    "blanks": [
+      {
+        "id": "adv-cloze-006-b1",
+        "answer": "has resolved",
+        "accepted_answers": [
+          "has resolved",
+          "have resolved"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-simple"
+        ],
+        "explanation_ru": "Результат к настоящему или период, продолжающийся до настоящего. Форма: have/has + V3. Основной ответ: has resolved. Также принимается: have resolved.",
+        "tense_or_construction": "present_perfect",
+        "base_verb": "resolve"
+      },
+      {
+        "id": "adv-cloze-006-b2",
+        "answer": "reduced",
+        "accepted_answers": [
+          "reduced"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-simple"
+        ],
+        "explanation_ru": "Отдельное событие в указанном законченном прошлом периоде. Форма: V2. Основной ответ: reduced.",
+        "tense_or_construction": "past_simple",
+        "base_verb": "reduce"
+      },
+      {
+        "id": "adv-cloze-006-b3",
+        "answer": "has been testing",
+        "accepted_answers": [
+          "has been testing",
+          "has tested"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-continuous"
+        ],
+        "explanation_ru": "Процесс начался раньше и продолжается до настоящего. Форма: have/has been + V-ing. Основной ответ: has been testing. Также принимается: has tested.",
+        "tense_or_construction": "present_perfect_continuous",
+        "base_verb": "test"
+      },
+      {
+        "id": "adv-cloze-006-b4",
+        "answer": "assigns",
+        "accepted_answers": [
+          "assigns"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-simple"
+        ],
+        "explanation_ru": "Настоящее состояние, привычка или опубликованное расписание. Форма: V1 / V-s. Основной ответ: assigns.",
+        "tense_or_construction": "present_simple",
+        "base_verb": "assign"
+      },
+      {
+        "id": "adv-cloze-006-b5",
+        "answer": "are comparing",
+        "accepted_answers": [
+          "are comparing"
+        ],
+        "rule_refs": [
+          "content/tenses/02-present.md#present-continuous"
+        ],
+        "tense_or_construction": "present_continuous",
+        "explanation_ru": "Текущий процесс или явно подтверждённая договорённость. Форма: am/is/are + V-ing. Основной ответ: are comparing.",
+        "base_verb": "compare"
+      },
+      {
+        "id": "adv-cloze-006-b6",
+        "answer": "had been waiting",
+        "accepted_answers": [
+          "had been waiting",
+          "had waited"
+        ],
+        "rule_refs": [
+          "content/tenses/03-past.md#past-perfect-continuous"
+        ],
+        "explanation_ru": "К указанной прошлой границе процесс уже длился названный период. Форма: had been + V-ing. Основной ответ: had been waiting. Также принимается: had waited.",
+        "tense_or_construction": "past_perfect_continuous",
+        "base_verb": "wait"
+      },
+      {
+        "id": "adv-cloze-006-b7",
+        "answer": "will have processed",
+        "accepted_answers": [
+          "will have processed",
+          "will process"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-perfect-simple-will-have-v3"
+        ],
+        "explanation_ru": "К явно названной будущей границе результат будет достигнут. Форма: will have + V3. Основной ответ: will have processed. Также принимается: will process.",
+        "tense_or_construction": "future_perfect",
+        "base_verb": "process"
+      },
+      {
+        "id": "adv-cloze-006-b8",
+        "answer": "will continue",
+        "accepted_answers": [
+          "will continue"
+        ],
+        "rule_refs": [
+          "content/tenses/04-future.md#future-simple-will-v1"
+        ],
+        "explanation_ru": "Обещание, решение или прогноз на будущее. Форма: will + V1. Основной ответ: will continue.",
+        "tense_or_construction": "future_simple",
+        "base_verb": "continue"
+      }
+    ],
+    "content_version": "tenses-2026-10-31.6",
+    "answer_text": "This quarter the support team has resolved 840 tickets so far. Last month it reduced its response time by twelve per cent. It has been testing a triage system since early September and the trial is not over. The system assigns urgent cases automatically whenever they arrive. Right now analysts are comparing its results with the old process. Before the trial began, managers had been waiting for a replacement system for two years. By the board's review next December, the team will have processed enough cases for a reliable comparison. The director promises analysts will continue monitoring results afterwards.",
+    "response_contract": "bounded-v1",
+    "level": "advanced",
+    "review_note_ru": "Вводите форму глагола и все слова, указанные в скобках. Слова, уже напечатанные вне пропуска, повторять не нужно. Можно использовать полную или сокращённую форму.",
+    "practice_tenses": [
+      "present_perfect",
+      "past_simple",
+      "present_perfect_continuous",
+      "present_simple",
+      "present_continuous",
+      "past_perfect_continuous",
+      "future_perfect",
+      "future_simple"
+    ],
+    "tags": [
+      "present_perfect",
+      "past_simple",
+      "present_perfect_continuous",
+      "present_simple",
+      "present_continuous",
+      "past_perfect_continuous",
+      "future_perfect",
+      "future_simple"
+    ]
+  }
+]

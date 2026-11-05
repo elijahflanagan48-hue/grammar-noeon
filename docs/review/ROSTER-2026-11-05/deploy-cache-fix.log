@@ -1,0 +1,28 @@
+
+ ⛅️ wrangler 4.153.0
+────────────────────
+🌀 Building list of assets...
+✨ Read 134 files from the assets directory /Users/ilya/Library/Mobile Documents/com~apple~CloudDocs/AI/OpenAI/grammar-noeon/workspaces/grammar-noeon-roster-release/cloudflare/public
+🌀 Starting asset upload...
+🌀 Found 2 new or modified static assets to upload. Proceeding with upload...
++ /sw.js
++ /index.html
+Uploaded 1 of 2 assets
+Uploaded 2 of 2 assets
+✨ Success! Uploaded 2 files (126 already uploaded) (2.03 sec)
+
+Total Upload: 27162.94 KiB / gzip: 1281.91 KiB
+Worker Startup Time: 480 ms
+Your Worker has access to the following bindings:
+Binding                                                                  Resource                  
+env.DB (grammar-noeon)                                                   D1 Database               
+env.ASSETS                                                               Assets                    
+env.PUBLIC_ORIGIN ("https://grammar-noeon.grammar-noeon.w...")           Environment Variable      
+env.ADDITIONAL_ORIGINS ("https://grammar.noeon.org")                     Environment Variable      
+
+Uploaded grammar-noeon (51.44 sec)
+Deployed grammar-noeon triggers (4.50 sec)
+  https://grammar-noeon.grammar-noeon.workers.dev
+  grammar.noeon.org (custom domain)
+  schedule: 17 3 * * *
+Current Version ID: ad8e3329-3a94-4427-af38-5c1151fb4664

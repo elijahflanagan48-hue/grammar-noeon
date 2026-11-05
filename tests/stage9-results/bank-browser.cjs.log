@@ -1,0 +1,87 @@
+PASS First installation controls page
+PASS Network timeout falls back to cache after 3 seconds
+PASS src-u01-011 visible summary
+PASS src-u01-044 visible summary
+PASS src-u01-096 visible summary
+PASS src-u01-098 visible summary
+PASS src-u03-051 visible summary
+PASS src-u03-070 visible summary
+PASS src-u07-026 visible summary
+PASS new-error-001 visible summary
+PASS new-error-002 visible summary
+PASS new-error-003 visible summary
+PASS new-error-004 visible summary
+PASS new-error-007 visible summary
+PASS new-error-008 visible summary
+PASS new-error-009 visible summary
+PASS new-error-010 visible summary
+PASS new-error-011 visible summary
+PASS new-error-012 visible summary
+PASS adv-edit-001 visible summary
+PASS adv-edit-002 visible summary
+PASS adv-edit-003 visible summary
+PASS adv-edit-005 visible summary
+PASS adv-edit-006 visible summary
+PASS adv-edit-008 visible summary
+PASS adv-edit-009 visible summary
+PASS adv-edit-010 visible summary
+PASS adv-edit-012 visible summary
+PASS cmp-0145 visible summary
+PASS cmp-0146 visible summary
+PASS cmp-0157 visible summary
+PASS Summary escaped in report
+PASS Cold offline home
+theory shape [ '0', '1', '2', '3', '4', '5' ]
+PASS Offline #home
+PASS Offline #grammar
+PASS Offline #theory/foundations
+PASS Offline #theory/present
+PASS Offline #theory/past
+PASS Offline #theory/future
+PASS Offline #theory/contrasts
+PASS Offline #theory/comparison
+PASS Offline practice neutral message
+PASS Cache excludes ALL exercises and API
+PASS All theory precached
+PASS New CACHE version shows update toast
+PASS Draft survives accepted update and reload
+PASS Old grammar cache removed
+PASS No JavaScript errors
+{
+  "checks": 48,
+  "errors": [],
+  "cached": [
+    {
+      "k": "grammar-v9",
+      "urls": [
+        "http://localhost:8798/",
+        "http://localhost:8798/practice-report.js",
+        "http://localhost:8798/accounts.js",
+        "http://localhost:8798/theme-boot.js",
+        "http://localhost:8798/notifications.js",
+        "http://localhost:8798/app.js",
+        "http://localhost:8798/pwa.js",
+        "http://localhost:8798/wixt-lat.woff2",
+        "http://localhost:8798/wixd-cyr.woff2",
+        "http://localhost:8798/wixt-cyr.woff2",
+        "http://localhost:8798/wixd-lat.woff2",
+        "http://localhost:8798/apple-touch-icon.png",
+        "http://localhost:8798/manifest.webmanifest",
+        "http://localhost:8798/icons/icon-192.png",
+        "http://localhost:8798/icons/app-icon.svg",
+        "http://localhost:8798/icons/icon-maskable-512.png",
+        "http://localhost:8798/icons/icon-512.png",
+        "http://localhost:8798/data/theory.json",
+        "http://localhost:8798/content/theory/03-past.md",
+        "http://localhost:8798/content/theory/05-contrasts-and-pitfalls.md",
+        "http://localhost:8798/content/theory/06-comparison.md",
+        "http://localhost:8798/content/theory/01-foundations.md",
+        "http://localhost:8798/content/theory/04-future.md",
+        "http://localhost:8798/content/theory/02-present.md",
+        "http://localhost:8798/favicon.svg",
+        "http://localhost:8798/icons/favicon-32.png",
+        "http://localhost:8798/styles.css"
+      ]
+    }
+  ]
+}

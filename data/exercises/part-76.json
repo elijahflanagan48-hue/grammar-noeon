@@ -1,0 +1,4164 @@
+[
+  {
+    "id": "MV-S00-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S00",
+    "modal_rule": "R11",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Class 9B is going on a trip to an old castle. Their teacher says: “Remember, you ___ bring your phones into the castle. It is a rule. You ___ buy lunch, because we are taking sandwiches for everyone. And if it is cold, you should wear a warm jacket.”",
+    "answer": "mustn't | don't have to",
+    "accept": [],
+    "accepted_answers": [
+      "mustn't | don't have to"
+    ],
+    "explanation_ru": "Запрет по правилу и отсутствие необходимости.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "tags": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r11"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S00-T01-b1",
+        "answer": "mustn't",
+        "accepted_answers": [
+          "mustn't",
+          "must not"
+        ],
+        "explanation_ru": "Запрет по правилу и отсутствие необходимости.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "needn't",
+          "may",
+          "could",
+          "mustn't"
+        ]
+      },
+      {
+        "id": "MV-S00-T01-b2",
+        "answer": "don't have to",
+        "accepted_answers": [
+          "don't have to",
+          "do not have to"
+        ],
+        "explanation_ru": "Запрет по правилу и отсутствие необходимости.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "mustn't",
+          "could",
+          "may",
+          "don't have to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Class 9B is going on a trip to an old castle. Their teacher says: “Remember, you mustn't bring your phones into the castle. It is a rule. You don't have to buy lunch, because we are taking sandwiches for everyone. And if it is cold, you should wear a warm jacket.”"
+  },
+  {
+    "id": "MV-S00-T02",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S00",
+    "modal_rule": "R11",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Kate is waiting at the airport for her friend Lena. Lena's flight landed an hour ago, but she is not answering her phone. “She ___ be waiting for her luggage,” Kate thinks. “It often takes a long time.” Then a message arrives: “Sorry, I have lost my bag!” “Oh no! You ___ report it to the airline right now,” Kate writes. “Shall I come to the desk with you?” “No, you ___ come. I can manage.”",
+    "answer": "might | should | needn't",
+    "accept": [],
+    "accepted_answers": [
+      "might | should | needn't"
+    ],
+    "explanation_ru": "Предположение, совет и «не нужно».",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "tags": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r11"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S00-T02-b1",
+        "answer": "might",
+        "accepted_answers": [
+          "might"
+        ],
+        "explanation_ru": "Предположение, совет и «не нужно».",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "can't",
+          "mustn't",
+          "needn't",
+          "might"
+        ]
+      },
+      {
+        "id": "MV-S00-T02-b2",
+        "answer": "should",
+        "accepted_answers": [
+          "should"
+        ],
+        "explanation_ru": "Предположение, совет и «не нужно».",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "can't",
+          "may not",
+          "should",
+          "mustn't"
+        ]
+      },
+      {
+        "id": "MV-S00-T02-b3",
+        "answer": "needn't",
+        "accepted_answers": [
+          "needn't",
+          "need not"
+        ],
+        "explanation_ru": "Предположение, совет и «не нужно».",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "should",
+          "must",
+          "might",
+          "needn't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Kate is waiting at the airport for her friend Lena. Lena's flight landed an hour ago, but she is not answering her phone. “She might be waiting for her luggage,” Kate thinks. “It often takes a long time.” Then a message arrives: “Sorry, I have lost my bag!” “Oh no! You should report it to the airline right now,” Kate writes. “Shall I come to the desk with you?” “No, you needn't come. I can manage.”"
+  },
+  {
+    "id": "MV-S10-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S10",
+    "modal_rule": "R4",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "When Mum came home, the chocolate cake was gone. “Dad was at work all day, so he ___ eaten it,” she said. “The door was locked, so a stranger ___ come in. It ___ been one of the children, or perhaps the dog.” Then she saw chocolate on her son's face. “Max! It ___ been you!”",
+    "answer": "can't have | can't have | might have | must have",
+    "accept": [],
+    "accepted_answers": [
+      "can't have | can't have | might have | must have"
+    ],
+    "explanation_ru": "Вывод о прошлом по фактам: невозможно, возможно, уверен.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S10",
+      "mv_R4"
+    ],
+    "tags": [
+      "mv_S10",
+      "mv_R4"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r4"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S10-T01-b1",
+        "answer": "can't have",
+        "accepted_answers": [
+          "can't have",
+          "can not have",
+          "cannot have",
+          "couldn't have"
+        ],
+        "explanation_ru": "Вывод о прошлом по фактам: невозможно, возможно, уверен.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S10",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S10",
+        "modal_options": [
+          "can't have",
+          "might have",
+          "must have",
+          "should have"
+        ]
+      },
+      {
+        "id": "MV-S10-T01-b2",
+        "answer": "can't have",
+        "accepted_answers": [
+          "can't have",
+          "can not have",
+          "cannot have",
+          "couldn't have"
+        ],
+        "explanation_ru": "Вывод о прошлом по фактам: невозможно, возможно, уверен.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S10",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S10",
+        "modal_options": [
+          "must have",
+          "should have",
+          "might have",
+          "can't have"
+        ]
+      },
+      {
+        "id": "MV-S10-T01-b3",
+        "answer": "might have",
+        "accepted_answers": [
+          "might have",
+          "could have",
+          "may have",
+          "might've"
+        ],
+        "explanation_ru": "Вывод о прошлом по фактам: невозможно, возможно, уверен.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S10",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S10",
+        "modal_options": [
+          "should have",
+          "might have",
+          "can't have",
+          "must have"
+        ]
+      },
+      {
+        "id": "MV-S10-T01-b4",
+        "answer": "must have",
+        "accepted_answers": [
+          "must have",
+          "must've"
+        ],
+        "explanation_ru": "Вывод о прошлом по фактам: невозможно, возможно, уверен.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S10",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S10",
+        "modal_options": [
+          "must have",
+          "can't have",
+          "should have"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "When Mum came home, the chocolate cake was gone. “Dad was at work all day, so he can't have eaten it,” she said. “The door was locked, so a stranger can't have come in. It might have been one of the children, or perhaps the dog.” Then she saw chocolate on her son's face. “Max! It must have been you!”"
+  },
+  {
+    "id": "MV-S12-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S12",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Anna starts her new job in a bank on Monday. In her old shop she ___ wear a uniform, but in the bank she ___ wear a suit every day. She is learning to drive now, and in a year she ___ drive to work. Until then, she will take the bus.",
+    "answer": "had to | will have to | will be able to",
+    "accept": [],
+    "accepted_answers": [
+      "had to | will have to | will be able to"
+    ],
+    "explanation_ru": "Прошлое: had to. Будущее: will have to, will be able to.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S12",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S12",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S12-T01-b1",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "Прошлое: had to. Будущее: will have to, will be able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S12",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S12",
+        "modal_options": [
+          "was able to",
+          "mustn't",
+          "had to",
+          "will have to"
+        ]
+      },
+      {
+        "id": "MV-S12-T01-b2",
+        "answer": "will have to",
+        "accepted_answers": [
+          "will have to",
+          "'ll have to"
+        ],
+        "explanation_ru": "Прошлое: had to. Будущее: will have to, will be able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S12",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S12",
+        "modal_options": [
+          "had to",
+          "mustn't",
+          "will have to",
+          "was able to"
+        ]
+      },
+      {
+        "id": "MV-S12-T01-b3",
+        "answer": "will be able to",
+        "accepted_answers": [
+          "will be able to",
+          "'ll be able to"
+        ],
+        "explanation_ru": "Прошлое: had to. Будущее: will have to, will be able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S12",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S12",
+        "modal_options": [
+          "had to",
+          "mustn't",
+          "was able to",
+          "will be able to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Anna starts her new job in a bank on Monday. In her old shop she had to wear a uniform, but in the bank she will have to wear a suit every day. She is learning to drive now, and in a year she will be able to drive to work. Until then, she will take the bus."
+  },
+  {
+    "id": "MV-S19-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S19",
+    "modal_rule": "R7",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Rules at the Sunny Hotel: guests ___ smoke in the rooms. It is strictly forbidden. Breakfast is served from seven to ten, but you ___ get up early if you do not want it. Staff will carry your bags, so you ___ carry them yourself. Sorry, but pets ___ stay here.",
+    "answer": "mustn't | needn't | don't have to | can't",
+    "accept": [],
+    "accepted_answers": [
+      "mustn't | needn't | don't have to | can't"
+    ],
+    "explanation_ru": "Запрет и «не нужно» в правилах отеля.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S19",
+      "mv_R7"
+    ],
+    "tags": [
+      "mv_S19",
+      "mv_R7"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r7"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S19-T01-b1",
+        "answer": "mustn't",
+        "accepted_answers": [
+          "mustn't",
+          "must not"
+        ],
+        "explanation_ru": "Запрет и «не нужно» в правилах отеля.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S19",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S19",
+        "modal_options": [
+          "doesn't have to",
+          "needn't",
+          "don't have to",
+          "mustn't"
+        ]
+      },
+      {
+        "id": "MV-S19-T01-b2",
+        "answer": "needn't",
+        "accepted_answers": [
+          "needn't",
+          "need not"
+        ],
+        "explanation_ru": "Запрет и «не нужно» в правилах отеля.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S19",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S19",
+        "modal_options": [
+          "can't",
+          "may not",
+          "needn't",
+          "mustn't"
+        ]
+      },
+      {
+        "id": "MV-S19-T01-b3",
+        "answer": "don't have to",
+        "accepted_answers": [
+          "don't have to",
+          "do not have to"
+        ],
+        "explanation_ru": "Запрет и «не нужно» в правилах отеля.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S19",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S19",
+        "modal_options": [
+          "mustn't",
+          "can't",
+          "don't have to",
+          "may not"
+        ]
+      },
+      {
+        "id": "MV-S19-T01-b4",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Запрет и «не нужно» в правилах отеля.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S19",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S19",
+        "modal_options": [
+          "don't have to",
+          "needn't",
+          "doesn't have to",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Rules at the Sunny Hotel: guests mustn't smoke in the rooms. It is strictly forbidden. Breakfast is served from seven to ten, but you needn't get up early if you do not want it. Staff will carry your bags, so you don't have to carry them yourself. Sorry, but pets can't stay here."
+  },
+  {
+    "id": "MV-S13-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S13",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Dan failed his driving test. “I ___ practised more,” he told his father. “I ___ driven so fast near the school. And I ___ asked the instructor for help, but I was too shy.” His father smiled. “You can try again next month.”",
+    "answer": "should have | shouldn't have | could have",
+    "accept": [],
+    "accepted_answers": [
+      "should have | shouldn't have | could have"
+    ],
+    "explanation_ru": "Сожаление и упрёк о прошлом, упущенная возможность.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S13",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S13",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S13-T01-b1",
+        "answer": "should have",
+        "accepted_answers": [
+          "should have",
+          "should've"
+        ],
+        "explanation_ru": "Сожаление и упрёк о прошлом, упущенная возможность.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S13",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S13",
+        "modal_options": [
+          "must have",
+          "should have",
+          "needn't have",
+          "shouldn't have"
+        ]
+      },
+      {
+        "id": "MV-S13-T01-b2",
+        "answer": "shouldn't have",
+        "accepted_answers": [
+          "shouldn't have",
+          "should not have"
+        ],
+        "explanation_ru": "Сожаление и упрёк о прошлом, упущенная возможность.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S13",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S13",
+        "modal_options": [
+          "shouldn't have",
+          "must have",
+          "should have",
+          "could have"
+        ]
+      },
+      {
+        "id": "MV-S13-T01-b3",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Сожаление и упрёк о прошлом, упущенная возможность.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S13",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S13",
+        "modal_options": [
+          "must have",
+          "shouldn't have",
+          "needn't have",
+          "could have"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Dan failed his driving test. “I should have practised more,” he told his father. “I shouldn't have driven so fast near the school. And I could have asked the instructor for help, but I was too shy.” His father smiled. “You can try again next month.”"
+  },
+  {
+    "id": "MV-S00-T03",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S00",
+    "modal_rule": "R11",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Max's phone buzzes at 3 a.m. “Who ___ be texting me now?” he groans. It is the cat-sitter: “Your cat ate a sock again, but he is fine, so you ___ come home early.” Max smiles. “Thanks! I ___ bring you a coffee tomorrow.”",
+    "answer": "might | needn't | will",
+    "accept": [],
+    "accepted_answers": [
+      "might | needn't | will"
+    ],
+    "explanation_ru": "Предположение, «не нужно», обещание.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "tags": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r11"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S00-T03-b1",
+        "answer": "might",
+        "accepted_answers": [
+          "might"
+        ],
+        "explanation_ru": "Предположение, «не нужно», обещание.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "shan't",
+          "might",
+          "mustn't",
+          "needn't"
+        ]
+      },
+      {
+        "id": "MV-S00-T03-b2",
+        "answer": "needn't",
+        "accepted_answers": [
+          "needn't",
+          "need not"
+        ],
+        "explanation_ru": "Предположение, «не нужно», обещание.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "shan't",
+          "needn't",
+          "can't",
+          "mustn't"
+        ]
+      },
+      {
+        "id": "MV-S00-T03-b3",
+        "answer": "will",
+        "accepted_answers": [
+          "will",
+          "'ll"
+        ],
+        "explanation_ru": "Предположение, «не нужно», обещание.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "needn't",
+          "mustn't",
+          "will",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Max's phone buzzes at 3 a.m. “Who might be texting me now?” he groans. It is the cat-sitter: “Your cat ate a sock again, but he is fine, so you needn't come home early.” Max smiles. “Thanks! I will bring you a coffee tomorrow.”"
+  },
+  {
+    "id": "MV-S00-T04",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S00",
+    "modal_rule": "R11",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Zoe finds her yoghurt gone. “It ___ have been Tom,” she thinks. “He is in Spain.” “It ___ have been Anna. She was in the kitchen all night.” Anna admits it. “I ___ have asked first, sorry.”",
+    "answer": "can't | must | should",
+    "accept": [],
+    "accepted_answers": [
+      "can't | must | should"
+    ],
+    "explanation_ru": "Вывод о прошлом и сожаление.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "tags": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r11"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S00-T04-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Вывод о прошлом и сожаление.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "should",
+          "must",
+          "needn't",
+          "can't"
+        ]
+      },
+      {
+        "id": "MV-S00-T04-b2",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Вывод о прошлом и сожаление.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "must",
+          "needn't",
+          "can't",
+          "shouldn't"
+        ]
+      },
+      {
+        "id": "MV-S00-T04-b3",
+        "answer": "should",
+        "accepted_answers": [
+          "should"
+        ],
+        "explanation_ru": "Вывод о прошлом и сожаление.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "can",
+          "needn't",
+          "should",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Zoe finds her yoghurt gone. “It can't have been Tom,” she thinks. “He is in Spain.” “It must have been Anna. She was in the kitchen all night.” Anna admits it. “I should have asked first, sorry.”"
+  },
+  {
+    "id": "MV-S00-T05",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S00",
+    "modal_rule": "R11",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "The office has a new rule: no animals. Employees ___ bring pets to work. Greg's dog, Biscuit, didn't read the rule. Yesterday he ___ be taken home after eating the boss's lunch. “I ___ left him with my mum,” Greg says.",
+    "answer": "mustn't | had to | should have",
+    "accept": [],
+    "accepted_answers": [
+      "mustn't | had to | should have"
+    ],
+    "explanation_ru": "Запрет, прошлое от have to, сожаление.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "tags": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r11"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S00-T05-b1",
+        "answer": "mustn't",
+        "accepted_answers": [
+          "mustn't",
+          "must not"
+        ],
+        "explanation_ru": "Запрет, прошлое от have to, сожаление.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "don't have to",
+          "mustn't",
+          "needn't",
+          "may"
+        ]
+      },
+      {
+        "id": "MV-S00-T05-b2",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "Запрет, прошлое от have to, сожаление.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "must",
+          "had to",
+          "will have to",
+          "should"
+        ]
+      },
+      {
+        "id": "MV-S00-T05-b3",
+        "answer": "should have",
+        "accepted_answers": [
+          "should have",
+          "should've"
+        ],
+        "explanation_ru": "Запрет, прошлое от have to, сожаление.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "needn't have",
+          "should have",
+          "can't have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "The office has a new rule: no animals. Employees mustn't bring pets to work. Greg's dog, Biscuit, didn't read the rule. Yesterday he had to be taken home after eating the boss's lunch. “I should have left him with my mum,” Greg says."
+  },
+  {
+    "id": "MV-S00-T06",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S00",
+    "modal_rule": "R11",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Priya's team lost the quiz night by one point. “We ___ won if I had remembered the capital of Australia,” she sighs. “It is Canberra!” “You ___ be serious,” says Dan. “Everyone knows it is Sydney.” “And that is why we ___ have let you answer,” Priya laughs.",
+    "answer": "could have | can't | shouldn't",
+    "accept": [],
+    "accepted_answers": [
+      "could have | can't | shouldn't"
+    ],
+    "explanation_ru": "Упущенная возможность, эмоция, критика.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "tags": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r11"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S00-T06-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Упущенная возможность, эмоция, критика.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "needn't have",
+          "can't have",
+          "must have",
+          "could have"
+        ]
+      },
+      {
+        "id": "MV-S00-T06-b2",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Упущенная возможность, эмоция, критика.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "needn't",
+          "should",
+          "can't",
+          "must"
+        ]
+      },
+      {
+        "id": "MV-S00-T06-b3",
+        "answer": "shouldn't",
+        "accepted_answers": [
+          "shouldn't",
+          "should not"
+        ],
+        "explanation_ru": "Упущенная возможность, эмоция, критика.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "needn't",
+          "shouldn't",
+          "can't",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Priya's team lost the quiz night by one point. “We could have won if I had remembered the capital of Australia,” she sighs. “It is Canberra!” “You can't be serious,” says Dan. “Everyone knows it is Sydney.” “And that is why we shouldn't have let you answer,” Priya laughs."
+  },
+  {
+    "id": "MV-S00-T07",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S00",
+    "modal_rule": "R11",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Mia is on a video call when her cat jumps on the keyboard. Her colleagues try to look serious, but they ___ stop laughing. “Sorry, I ___ have shut the door,” she says. “You ___ apologise,” says the boss. “Mr Whiskers is the best thing that has happened to this meeting.”",
+    "answer": "can't | ought to | needn't",
+    "accept": [],
+    "accepted_answers": [
+      "can't | ought to | needn't"
+    ],
+    "explanation_ru": "Невозможность, упрёк себе, «не нужно».",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "tags": [
+      "mv_S00",
+      "mv_R11"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r11"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S00-T07-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Невозможность, упрёк себе, «не нужно».",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "shan't",
+          "can't",
+          "mustn't",
+          "needn't"
+        ]
+      },
+      {
+        "id": "MV-S00-T07-b2",
+        "answer": "ought to",
+        "accepted_answers": [
+          "ought to"
+        ],
+        "explanation_ru": "Невозможность, упрёк себе, «не нужно».",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "must",
+          "ought to",
+          "can",
+          "shall"
+        ]
+      },
+      {
+        "id": "MV-S00-T07-b3",
+        "answer": "needn't",
+        "accepted_answers": [
+          "needn't",
+          "need not"
+        ],
+        "explanation_ru": "Невозможность, упрёк себе, «не нужно».",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r11"
+        ],
+        "practice_tenses": [
+          "mv_S00",
+          "mv_R11"
+        ],
+        "tense_or_construction": "mv_S00",
+        "modal_options": [
+          "shan't",
+          "needn't",
+          "can't",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Mia is on a video call when her cat jumps on the keyboard. Her colleagues try to look serious, but they can't stop laughing. “Sorry, I ought to have shut the door,” she says. “You needn't apologise,” says the boss. “Mr Whiskers is the best thing that has happened to this meeting.”"
+  },
+  {
+    "id": "MV-S03-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S03",
+    "modal_rule": "R1",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Leo's car broke down on the motorway. “I ___ call a tow truck,” he sighs. “And I ___ get to work today.” His boss texts: “Don't worry. You ___ work from the garage, then.”",
+    "answer": "will have to | won't be able to | may have to",
+    "accept": [],
+    "accepted_answers": [
+      "will have to | won't be able to | may have to"
+    ],
+    "explanation_ru": "Два модальных подряд нельзя: заменяем.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S03",
+      "mv_R1"
+    ],
+    "tags": [
+      "mv_S03",
+      "mv_R1"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r1"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S03-T01-b1",
+        "answer": "will have to",
+        "accepted_answers": [
+          "will have to",
+          "'ll have to"
+        ],
+        "explanation_ru": "Два модальных подряд нельзя: заменяем.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r1"
+        ],
+        "practice_tenses": [
+          "mv_S03",
+          "mv_R1"
+        ],
+        "tense_or_construction": "mv_S03",
+        "modal_options": [
+          "will must",
+          "may must",
+          "will have to",
+          "will can"
+        ]
+      },
+      {
+        "id": "MV-S03-T01-b2",
+        "answer": "won't be able to",
+        "accepted_answers": [
+          "won't be able to",
+          "will not be able to"
+        ],
+        "explanation_ru": "Два модальных подряд нельзя: заменяем.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r1"
+        ],
+        "practice_tenses": [
+          "mv_S03",
+          "mv_R1"
+        ],
+        "tense_or_construction": "mv_S03",
+        "modal_options": [
+          "might must",
+          "will can",
+          "will must",
+          "won't be able to"
+        ]
+      },
+      {
+        "id": "MV-S03-T01-b3",
+        "answer": "may have to",
+        "accepted_answers": [
+          "may have to"
+        ],
+        "explanation_ru": "Два модальных подряд нельзя: заменяем.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r1"
+        ],
+        "practice_tenses": [
+          "mv_S03",
+          "mv_R1"
+        ],
+        "tense_or_construction": "mv_S03",
+        "modal_options": [
+          "may have to",
+          "might must",
+          "will can",
+          "may must"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Leo's car broke down on the motorway. “I will have to call a tow truck,” he sighs. “And I won't be able to get to work today.” His boss texts: “Don't worry. You may have to work from the garage, then.”"
+  },
+  {
+    "id": "MV-S03-T02",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S03",
+    "modal_rule": "R1",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Nina has a cold. “I ___ go to the party on Saturday if I feel better,” she says. “But if I feel bad, I ___ stay in bed.” “If you don't come, we ___ eat the whole cake ourselves,” says her friend.",
+    "answer": "will be able to | may have to | will have to",
+    "accept": [],
+    "accepted_answers": [
+      "will be able to | may have to | will have to"
+    ],
+    "explanation_ru": "Замены вместо двух модальных подряд.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S03",
+      "mv_R1"
+    ],
+    "tags": [
+      "mv_S03",
+      "mv_R1"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r1"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S03-T02-b1",
+        "answer": "will be able to",
+        "accepted_answers": [
+          "will be able to",
+          "'ll be able to"
+        ],
+        "explanation_ru": "Замены вместо двух модальных подряд.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r1"
+        ],
+        "practice_tenses": [
+          "mv_S03",
+          "mv_R1"
+        ],
+        "tense_or_construction": "mv_S03",
+        "modal_options": [
+          "will must",
+          "may must",
+          "will be able to",
+          "will can"
+        ]
+      },
+      {
+        "id": "MV-S03-T02-b2",
+        "answer": "may have to",
+        "accepted_answers": [
+          "may have to"
+        ],
+        "explanation_ru": "Замены вместо двух модальных подряд.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r1"
+        ],
+        "practice_tenses": [
+          "mv_S03",
+          "mv_R1"
+        ],
+        "tense_or_construction": "mv_S03",
+        "modal_options": [
+          "will can",
+          "might must",
+          "may have to",
+          "may must"
+        ]
+      },
+      {
+        "id": "MV-S03-T02-b3",
+        "answer": "will have to",
+        "accepted_answers": [
+          "will have to",
+          "'ll have to"
+        ],
+        "explanation_ru": "Замены вместо двух модальных подряд.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r1"
+        ],
+        "practice_tenses": [
+          "mv_S03",
+          "mv_R1"
+        ],
+        "tense_or_construction": "mv_S03",
+        "modal_options": [
+          "will have to",
+          "might must",
+          "will can",
+          "will must"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Nina has a cold. “I will be able to go to the party on Saturday if I feel better,” she says. “But if I feel bad, I may have to stay in bed.” “If you don't come, we will have to eat the whole cake ourselves,” says her friend."
+  },
+  {
+    "id": "MV-S04-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "My little brother is three, but he ___ already count to twenty. He ___ tie his shoes yet, though. He wants ___ swim like me.",
+    "answer": "can | can't | to be able to",
+    "accept": [],
+    "accepted_answers": [
+      "can | can't | to be able to"
+    ],
+    "explanation_ru": "Умение сейчас: can, can't, to be able to.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-T01-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Умение сейчас: can, can't, to be able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "to be able to",
+          "to can",
+          "can",
+          "can't"
+        ]
+      },
+      {
+        "id": "MV-S04-T01-b2",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Умение сейчас: can, can't, to be able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can't",
+          "to can",
+          "could",
+          "can"
+        ]
+      },
+      {
+        "id": "MV-S04-T01-b3",
+        "answer": "to be able to",
+        "accepted_answers": [
+          "to be able to"
+        ],
+        "explanation_ru": "Умение сейчас: can, can't, to be able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "to be able to",
+          "to can",
+          "being able to",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "My little brother is three, but he can already count to twenty. He can't tie his shoes yet, though. He wants to be able to swim like me."
+  },
+  {
+    "id": "MV-S05-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "At the cinema, a boy asks the usher: “___ I sit here?” “Sorry, you ___. Those seats are for the VIP guests,” says the usher. “Then ___ we sit at the back?” “Of course.”",
+    "answer": "May | can't | can",
+    "accept": [],
+    "accepted_answers": [
+      "May | can't | can"
+    ],
+    "explanation_ru": "Просим и запрещаем разрешение.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-T01-b1",
+        "answer": "May",
+        "accepted_answers": [
+          "May",
+          "may"
+        ],
+        "explanation_ru": "Просим и запрещаем разрешение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "May not",
+          "Mustn't",
+          "May"
+        ]
+      },
+      {
+        "id": "MV-S05-T01-b2",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Просим и запрещаем разрешение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may",
+          "could",
+          "can't",
+          "can"
+        ]
+      },
+      {
+        "id": "MV-S05-T01-b3",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Просим и запрещаем разрешение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "mustn't",
+          "couldn't",
+          "can",
+          "may not"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "At the cinema, a boy asks the usher: “May I sit here?” “Sorry, you can't. Those seats are for the VIP guests,” says the usher. “Then can we sit at the back?” “Of course.”"
+  },
+  {
+    "id": "MV-S05-T02",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "When I was little, we ___ stay up until midnight on New Year's Eve. These days my daughter ___ stay up that late. School starts at eight. She asks: “___ I stay up just once, please?” “No.”",
+    "answer": "could | can't | Could",
+    "accept": [],
+    "accepted_answers": [
+      "could | can't | Could"
+    ],
+    "explanation_ru": "Разрешение: прошлое, сейчас, просьба.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-T02-b1",
+        "answer": "could",
+        "accepted_answers": [
+          "could"
+        ],
+        "explanation_ru": "Разрешение: прошлое, сейчас, просьба.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can",
+          "may",
+          "may not",
+          "could"
+        ]
+      },
+      {
+        "id": "MV-S05-T02-b2",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Разрешение: прошлое, сейчас, просьба.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can't",
+          "couldn't",
+          "could",
+          "may"
+        ]
+      },
+      {
+        "id": "MV-S05-T02-b3",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could",
+          "could"
+        ],
+        "explanation_ru": "Разрешение: прошлое, сейчас, просьба.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "Could",
+          "Couldn't",
+          "May not",
+          "Mustn't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "When I was little, we could stay up until midnight on New Year's Eve. These days my daughter can't stay up that late. School starts at eight. She asks: “Could I stay up just once, please?” “No.”"
+  },
+  {
+    "id": "MV-S06-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "In a café, Sam says to the waiter: “___ I have a coffee, please?” The waiter answers: “Of course. ___ I bring you some water too?” “Yes, please. And ___ you mind turning the music down?”",
+    "answer": "Could | Shall | would",
+    "accept": [],
+    "accepted_answers": [
+      "Could | Shall | would"
+    ],
+    "explanation_ru": "Вежливая просьба и предложение.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-T01-b1",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could",
+          "could"
+        ],
+        "explanation_ru": "Вежливая просьба и предложение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Must",
+          "Needn't",
+          "Could",
+          "Ought"
+        ]
+      },
+      {
+        "id": "MV-S06-T01-b2",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall",
+          "shall"
+        ],
+        "explanation_ru": "Вежливая просьба и предложение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "Mustn't",
+          "Must",
+          "Ought"
+        ]
+      },
+      {
+        "id": "MV-S06-T01-b3",
+        "answer": "would",
+        "accepted_answers": [
+          "would",
+          "'d"
+        ],
+        "explanation_ru": "Вежливая просьба и предложение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "ought",
+          "needn't",
+          "would",
+          "must"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "In a café, Sam says to the waiter: “Could I have a coffee, please?” The waiter answers: “Of course. Shall I bring you some water too?” “Yes, please. And would you mind turning the music down?”"
+  },
+  {
+    "id": "MV-S07-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S07",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Friends plan Saturday. “We ___ go to the lake,” says Ana. “Or we ___ stay home and watch a film.” “___ we ask Ben what he thinks?” asks Dina.",
+    "answer": "could | might | Shall",
+    "accept": [],
+    "accepted_answers": [
+      "could | might | Shall"
+    ],
+    "explanation_ru": "Предложения: could, might, Shall we?",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S07",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S07",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S07-T01-b1",
+        "answer": "could",
+        "accepted_answers": [
+          "could"
+        ],
+        "explanation_ru": "Предложения: could, might, Shall we?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S07",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S07",
+        "modal_options": [
+          "must",
+          "mustn't",
+          "can't",
+          "could"
+        ]
+      },
+      {
+        "id": "MV-S07-T01-b2",
+        "answer": "might",
+        "accepted_answers": [
+          "might"
+        ],
+        "explanation_ru": "Предложения: could, might, Shall we?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S07",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S07",
+        "modal_options": [
+          "mustn't",
+          "can't",
+          "needn't",
+          "might"
+        ]
+      },
+      {
+        "id": "MV-S07-T01-b3",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall",
+          "shall"
+        ],
+        "explanation_ru": "Предложения: could, might, Shall we?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S07",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S07",
+        "modal_options": [
+          "Shall",
+          "Must",
+          "Mustn't",
+          "Can't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Friends plan Saturday. “We could go to the lake,” says Ana. “Or we might stay home and watch a film.” “Shall we ask Ben what he thinks?” asks Dina."
+  },
+  {
+    "id": "MV-S08-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S08",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Kim cannot sleep. Her friend says: “You ___ drink coffee after six. And you ___ put your phone away an hour before bed.” “I know,” says Kim. “But I ___ resist one last video of dancing cats.”",
+    "answer": "shouldn't | ought to | can't",
+    "accept": [],
+    "accepted_answers": [
+      "shouldn't | ought to | can't"
+    ],
+    "explanation_ru": "Советы: shouldn't, ought to.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S08",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S08",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S08-T01-b1",
+        "answer": "shouldn't",
+        "accepted_answers": [
+          "shouldn't",
+          "should not"
+        ],
+        "explanation_ru": "Советы: shouldn't, ought to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S08",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S08",
+        "modal_options": [
+          "shouldn't",
+          "ought to",
+          "should",
+          "must"
+        ]
+      },
+      {
+        "id": "MV-S08-T01-b2",
+        "answer": "ought to",
+        "accepted_answers": [
+          "ought to"
+        ],
+        "explanation_ru": "Советы: shouldn't, ought to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S08",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S08",
+        "modal_options": [
+          "ought not to",
+          "ought to",
+          "needn't",
+          "mustn't"
+        ]
+      },
+      {
+        "id": "MV-S08-T01-b3",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Советы: shouldn't, ought to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S08",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S08",
+        "modal_options": [
+          "must",
+          "can't",
+          "should",
+          "ought to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Kim cannot sleep. Her friend says: “You shouldn't drink coffee after six. And you ought to put your phone away an hour before bed.” “I know,” says Kim. “But I can't resist one last video of dancing cats.”"
+  },
+  {
+    "id": "MV-S09-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S09",
+    "modal_rule": "R4",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "The lights are off and the car is gone. “They ___ be at home,” says Dad. “They ___ be at the cinema, but I am not sure,” says Mum. “They always go out on Fridays. It ___ be Friday today.”",
+    "answer": "can't | might | must",
+    "accept": [],
+    "accepted_answers": [
+      "can't | might | must"
+    ],
+    "explanation_ru": "Вывод о настоящем по признакам.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S09",
+      "mv_R4"
+    ],
+    "tags": [
+      "mv_S09",
+      "mv_R4"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r4"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S09-T01-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Вывод о настоящем по признакам.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S09",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S09",
+        "modal_options": [
+          "mustn't",
+          "can't",
+          "needn't",
+          "must"
+        ]
+      },
+      {
+        "id": "MV-S09-T01-b2",
+        "answer": "might",
+        "accepted_answers": [
+          "might"
+        ],
+        "explanation_ru": "Вывод о настоящем по признакам.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S09",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S09",
+        "modal_options": [
+          "might",
+          "mustn't",
+          "can't",
+          "must"
+        ]
+      },
+      {
+        "id": "MV-S09-T01-b3",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Вывод о настоящем по признакам.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S09",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S09",
+        "modal_options": [
+          "must",
+          "mustn't",
+          "needn't",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "The lights are off and the car is gone. “They can't be at home,” says Dad. “They might be at the cinema, but I am not sure,” says Mum. “They always go out on Fridays. It must be Friday today.”"
+  },
+  {
+    "id": "MV-S10-T02",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S10",
+    "modal_rule": "R4",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Someone has eaten the last slice of cake. “It ___ been Dad,” says Eva. “He is on a diet.” “It ___ been the dog,” says Tom. “Look at the crumbs on his nose!” “It ___ been me,” sighs Granny. “I can't remember.”",
+    "answer": "can't have | must have | might have",
+    "accept": [],
+    "accepted_answers": [
+      "can't have | must have | might have"
+    ],
+    "explanation_ru": "Вывод о прошлом: can't have, must have, might have.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S10",
+      "mv_R4"
+    ],
+    "tags": [
+      "mv_S10",
+      "mv_R4"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r4"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S10-T02-b1",
+        "answer": "can't have",
+        "accepted_answers": [
+          "can't have",
+          "can not have",
+          "cannot have"
+        ],
+        "explanation_ru": "Вывод о прошлом: can't have, must have, might have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S10",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S10",
+        "modal_options": [
+          "must have",
+          "needn't have",
+          "mustn't have",
+          "can't have"
+        ]
+      },
+      {
+        "id": "MV-S10-T02-b2",
+        "answer": "must have",
+        "accepted_answers": [
+          "must have",
+          "must've"
+        ],
+        "explanation_ru": "Вывод о прошлом: can't have, must have, might have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S10",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S10",
+        "modal_options": [
+          "mustn't have",
+          "needn't have",
+          "can't have",
+          "must have"
+        ]
+      },
+      {
+        "id": "MV-S10-T02-b3",
+        "answer": "might have",
+        "accepted_answers": [
+          "might have",
+          "might've"
+        ],
+        "explanation_ru": "Вывод о прошлом: can't have, must have, might have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r4"
+        ],
+        "practice_tenses": [
+          "mv_S10",
+          "mv_R4"
+        ],
+        "tense_or_construction": "mv_S10",
+        "modal_options": [
+          "needn't have",
+          "mustn't have",
+          "can't have",
+          "might have"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Someone has eaten the last slice of cake. “It can't have been Dad,” says Eva. “He is on a diet.” “It must have been the dog,” says Tom. “Look at the crumbs on his nose!” “It might have been me,” sighs Granny. “I can't remember.”"
+  },
+  {
+    "id": "MV-S11-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S11",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "When I was five, I ___ swim like a fish, but I couldn't ride a bike. Last week I finally ___ ride my sister's bike for a whole minute. Sadly, I ___ stop, so I rode into a bush.",
+    "answer": "could | managed to | didn't manage to",
+    "accept": [],
+    "accepted_answers": [
+      "could | managed to | didn't manage to"
+    ],
+    "explanation_ru": "Общая способность и разовый случай.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S11",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S11",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S11-T01-b1",
+        "answer": "could",
+        "accepted_answers": [
+          "could"
+        ],
+        "explanation_ru": "Общая способность и разовый случай.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S11",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S11",
+        "modal_options": [
+          "couldn't",
+          "could",
+          "didn't manage to",
+          "managed to"
+        ]
+      },
+      {
+        "id": "MV-S11-T01-b2",
+        "answer": "managed to",
+        "accepted_answers": [
+          "managed to"
+        ],
+        "explanation_ru": "Общая способность и разовый случай.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S11",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S11",
+        "modal_options": [
+          "didn't manage to",
+          "weren't able to",
+          "couldn't",
+          "managed to"
+        ]
+      },
+      {
+        "id": "MV-S11-T01-b3",
+        "answer": "didn't manage to",
+        "accepted_answers": [
+          "didn't manage to",
+          "did not manage to"
+        ],
+        "explanation_ru": "Общая способность и разовый случай.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S11",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S11",
+        "modal_options": [
+          "managed to",
+          "didn't manage to",
+          "were able to",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "When I was five, I could swim like a fish, but I couldn't ride a bike. Last week I finally managed to ride my sister's bike for a whole minute. Sadly, I didn't manage to stop, so I rode into a bush."
+  },
+  {
+    "id": "MV-S12-T02",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S12",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Next week Dan ___ take the train because his car is in the garage. Last week he ___ take a taxi. The good news: next month he ___ drive again.",
+    "answer": "will have to | had to | will be able to",
+    "accept": [],
+    "accepted_answers": [
+      "will have to | had to | will be able to"
+    ],
+    "explanation_ru": "Прошлое и будущее вместо must / can.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S12",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S12",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S12-T02-b1",
+        "answer": "will have to",
+        "accepted_answers": [
+          "will have to",
+          "'ll have to"
+        ],
+        "explanation_ru": "Прошлое и будущее вместо must / can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S12",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S12",
+        "modal_options": [
+          "couldn't",
+          "wasn't able to",
+          "had to",
+          "will have to"
+        ]
+      },
+      {
+        "id": "MV-S12-T02-b2",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "Прошлое и будущее вместо must / can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S12",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S12",
+        "modal_options": [
+          "will have to",
+          "had to",
+          "mustn't",
+          "have to"
+        ]
+      },
+      {
+        "id": "MV-S12-T02-b3",
+        "answer": "will be able to",
+        "accepted_answers": [
+          "will be able to",
+          "'ll be able to"
+        ],
+        "explanation_ru": "Прошлое и будущее вместо must / can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S12",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S12",
+        "modal_options": [
+          "was able to",
+          "mustn't",
+          "wasn't able to",
+          "will be able to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Next week Dan will have to take the train because his car is in the garage. Last week he had to take a taxi. The good news: next month he will be able to drive again."
+  },
+  {
+    "id": "MV-S13-T02",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S13",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Zac ate three burgers before the concert and now he feels sick. “I ___ eaten so much,” he groans. “You ___ listened to me,” says his sister. “I told you to stop at one. You ___ had a salad, like me.”",
+    "answer": "shouldn't have | ought to have | could have",
+    "accept": [],
+    "accepted_answers": [
+      "shouldn't have | ought to have | could have"
+    ],
+    "explanation_ru": "Критика и сожаление о прошлом.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S13",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S13",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S13-T02-b1",
+        "answer": "shouldn't have",
+        "accepted_answers": [
+          "shouldn't have",
+          "should not have"
+        ],
+        "explanation_ru": "Критика и сожаление о прошлом.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S13",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S13",
+        "modal_options": [
+          "ought to have",
+          "shouldn't have",
+          "should have",
+          "could have"
+        ]
+      },
+      {
+        "id": "MV-S13-T02-b2",
+        "answer": "ought to have",
+        "accepted_answers": [
+          "ought to have"
+        ],
+        "explanation_ru": "Критика и сожаление о прошлом.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S13",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S13",
+        "modal_options": [
+          "ought not to have",
+          "needn't have",
+          "must have",
+          "ought to have"
+        ]
+      },
+      {
+        "id": "MV-S13-T02-b3",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Критика и сожаление о прошлом.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S13",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S13",
+        "modal_options": [
+          "could have",
+          "must have",
+          "ought not to have",
+          "needn't have"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Zac ate three burgers before the concert and now he feels sick. “I shouldn't have eaten so much,” he groans. “You ought to have listened to me,” says his sister. “I told you to stop at one. You could have had a salad, like me.”"
+  },
+  {
+    "id": "MV-S14-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S14",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Yesterday Carl hurried to the station, but his train was late. “I ___ rushed,” he sighed. Ola checked the app and stayed in bed. She ___ hurry at all.",
+    "answer": "needn't have | didn't need to",
+    "accept": [],
+    "accepted_answers": [
+      "needn't have | didn't need to"
+    ],
+    "explanation_ru": "needn't have и didn't need to.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S14-T01-b1",
+        "answer": "needn't have",
+        "accepted_answers": [
+          "needn't have",
+          "need not have"
+        ],
+        "explanation_ru": "needn't have и didn't need to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S14",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S14",
+        "modal_options": [
+          "must have",
+          "could have",
+          "needn't have",
+          "didn't need to"
+        ]
+      },
+      {
+        "id": "MV-S14-T01-b2",
+        "answer": "didn't need to",
+        "accepted_answers": [
+          "didn't need to",
+          "did not need to"
+        ],
+        "explanation_ru": "needn't have и didn't need to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S14",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S14",
+        "modal_options": [
+          "must have",
+          "needn't have",
+          "didn't need to",
+          "shouldn't have"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Yesterday Carl hurried to the station, but his train was late. “I needn't have rushed,” he sighed. Ola checked the app and stayed in bed. She didn't need to hurry at all."
+  },
+  {
+    "id": "MV-S15-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Rita missed the bus by ten seconds. “If I had left earlier, I ___ caught it,” she thinks. The driver ___ waited, but he didn't. “He ___ seen me running,” she says. “Or maybe not.”",
+    "answer": "could have | could have | might have",
+    "accept": [],
+    "accepted_answers": [
+      "could have | could have | might have"
+    ],
+    "explanation_ru": "Неиспользованная возможность.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-T01-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Неиспользованная возможность.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "must have",
+          "could have",
+          "couldn't have",
+          "can't have"
+        ]
+      },
+      {
+        "id": "MV-S15-T01-b2",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Неиспользованная возможность.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "shouldn't have",
+          "must have",
+          "could have",
+          "can't have"
+        ]
+      },
+      {
+        "id": "MV-S15-T01-b3",
+        "answer": "might have",
+        "accepted_answers": [
+          "might have",
+          "might've"
+        ],
+        "explanation_ru": "Неиспользованная возможность.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "shouldn't have",
+          "might have",
+          "can't have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Rita missed the bus by ten seconds. “If I had left earlier, I could have caught it,” she thinks. The driver could have waited, but he didn't. “He might have seen me running,” she says. “Or maybe not.”"
+  },
+  {
+    "id": "MV-S16-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If Tom had set his alarm, he ___ arrived on time. If the traffic had been lighter, he ___ even been early. If he hadn't spilled his coffee, he ___ needed to change his shirt.",
+    "answer": "would have | could have | wouldn't have",
+    "accept": [],
+    "accepted_answers": [
+      "would have | could have | wouldn't have"
+    ],
+    "explanation_ru": "Нереальное прошлое: would/could have.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-T01-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would/could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "must have",
+          "would have",
+          "will have"
+        ]
+      },
+      {
+        "id": "MV-S16-T01-b2",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would/could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "must have",
+          "will have",
+          "could have"
+        ]
+      },
+      {
+        "id": "MV-S16-T01-b3",
+        "answer": "wouldn't have",
+        "accepted_answers": [
+          "wouldn't have",
+          "would not have"
+        ],
+        "explanation_ru": "Нереальное прошлое: would/could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "wouldn't have",
+          "must have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "If Tom had set his alarm, he would have arrived on time. If the traffic had been lighter, he could have even been early. If he hadn't spilled his coffee, he wouldn't have needed to change his shirt."
+  },
+  {
+    "id": "MV-S17-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Today is Monday, and Dan ___ get up at six because his job starts early. Last Monday he ___ stay late. Tomorrow he ___ stay late again. “I ___ find a new job,” he says.",
+    "answer": "has to | had to | will have to | must",
+    "accept": [],
+    "accepted_answers": [
+      "has to | had to | will have to | must"
+    ],
+    "explanation_ru": "must и have to в разных временах.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-T01-b1",
+        "answer": "has to",
+        "accepted_answers": [
+          "has to"
+        ],
+        "explanation_ru": "must и have to в разных временах.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "mustn't",
+          "has to",
+          "had to",
+          "have to"
+        ]
+      },
+      {
+        "id": "MV-S17-T01-b2",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "must и have to в разных временах.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "will have to",
+          "doesn't have to",
+          "had to"
+        ]
+      },
+      {
+        "id": "MV-S17-T01-b3",
+        "answer": "will have to",
+        "accepted_answers": [
+          "will have to",
+          "'ll have to"
+        ],
+        "explanation_ru": "must и have to в разных временах.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "mustn't",
+          "had to",
+          "doesn't have to",
+          "will have to"
+        ]
+      },
+      {
+        "id": "MV-S17-T01-b4",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "must и have to в разных временах.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "doesn't have to",
+          "must",
+          "had to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Today is Monday, and Dan has to get up at six because his job starts early. Last Monday he had to stay late. Tomorrow he will have to stay late again. “I must find a new job,” he says."
+  },
+  {
+    "id": "MV-S18-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Your flight is in two hours and you haven't packed. A friend says: “You ___ hurry! You ___ be at the airport by eight, the airline said so. And you ___ forget your passport!”",
+    "answer": "had better | have to | mustn't",
+    "accept": [],
+    "accepted_answers": [
+      "had better | have to | mustn't"
+    ],
+    "explanation_ru": "Сила обязательства.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-T01-b1",
+        "answer": "had better",
+        "accepted_answers": [
+          "had better",
+          "'d better"
+        ],
+        "explanation_ru": "Сила обязательства.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "could",
+          "shouldn't",
+          "had better",
+          "needn't"
+        ]
+      },
+      {
+        "id": "MV-S18-T01-b2",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "Сила обязательства.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "shouldn't",
+          "needn't",
+          "could",
+          "have to"
+        ]
+      },
+      {
+        "id": "MV-S18-T01-b3",
+        "answer": "mustn't",
+        "accepted_answers": [
+          "mustn't",
+          "must not"
+        ],
+        "explanation_ru": "Сила обязательства.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "should",
+          "mustn't",
+          "could",
+          "ought to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Your flight is in two hours and you haven't packed. A friend says: “You had better hurry! You have to be at the airport by eight, the airline said so. And you mustn't forget your passport!”"
+  },
+  {
+    "id": "MV-S19-T02",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S19",
+    "modal_rule": "R7",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Gym rules: members ___ book a locker, so just come and use one. But everyone ___ leave valuables in the changing room. A trainer ___ wear the uniform on Fridays.",
+    "answer": "don't have to | mustn't | doesn't have to",
+    "accept": [],
+    "accepted_answers": [
+      "don't have to | mustn't | doesn't have to"
+    ],
+    "explanation_ru": "mustn't — нельзя, don't have to — не нужно.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S19",
+      "mv_R7"
+    ],
+    "tags": [
+      "mv_S19",
+      "mv_R7"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r7"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S19-T02-b1",
+        "answer": "don't have to",
+        "accepted_answers": [
+          "don't have to",
+          "do not have to"
+        ],
+        "explanation_ru": "mustn't — нельзя, don't have to — не нужно.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S19",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S19",
+        "modal_options": [
+          "can't",
+          "mustn't",
+          "may not",
+          "don't have to"
+        ]
+      },
+      {
+        "id": "MV-S19-T02-b2",
+        "answer": "mustn't",
+        "accepted_answers": [
+          "mustn't",
+          "must not"
+        ],
+        "explanation_ru": "mustn't — нельзя, don't have to — не нужно.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S19",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S19",
+        "modal_options": [
+          "doesn't have to",
+          "mustn't",
+          "needn't",
+          "don't have to"
+        ]
+      },
+      {
+        "id": "MV-S19-T02-b3",
+        "answer": "doesn't have to",
+        "accepted_answers": [
+          "doesn't have to",
+          "does not have to"
+        ],
+        "explanation_ru": "mustn't — нельзя, don't have to — не нужно.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S19",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S19",
+        "modal_options": [
+          "mustn't",
+          "don't have to",
+          "doesn't have to",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Gym rules: members don't have to book a locker, so just come and use one. But everyone mustn't leave valuables in the changing room. A trainer doesn't have to wear the uniform on Fridays."
+  },
+  {
+    "id": "MV-S20-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S20",
+    "modal_rule": "R7",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Mum says: “You ___ wash up, I will do it tonight.” Dad says: “She ___ do it, I can help too.” But the plates are already clean. “Oh! You ___ cleaned them!”",
+    "answer": "needn't | doesn't need to | needn't have",
+    "accept": [],
+    "accepted_answers": [
+      "needn't | doesn't need to | needn't have"
+    ],
+    "explanation_ru": "Формы needn't / don't need to.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S20",
+      "mv_R7"
+    ],
+    "tags": [
+      "mv_S20",
+      "mv_R7"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r7"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S20-T01-b1",
+        "answer": "needn't",
+        "accepted_answers": [
+          "needn't",
+          "need not"
+        ],
+        "explanation_ru": "Формы needn't / don't need to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S20",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S20",
+        "modal_options": [
+          "needn't",
+          "needn't have",
+          "doesn't need to",
+          "didn't need to"
+        ]
+      },
+      {
+        "id": "MV-S20-T01-b2",
+        "answer": "doesn't need to",
+        "accepted_answers": [
+          "doesn't need to",
+          "does not need to"
+        ],
+        "explanation_ru": "Формы needn't / don't need to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S20",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S20",
+        "modal_options": [
+          "didn't need to",
+          "doesn't need to",
+          "needn't have",
+          "don't need to"
+        ]
+      },
+      {
+        "id": "MV-S20-T01-b3",
+        "answer": "needn't have",
+        "accepted_answers": [
+          "needn't have",
+          "need not have"
+        ],
+        "explanation_ru": "Формы needn't / don't need to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S20",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S20",
+        "modal_options": [
+          "doesn't need to",
+          "needn't have",
+          "didn't need to",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Mum says: “You needn't wash up, I will do it tonight.” Dad says: “She doesn't need to do it, I can help too.” But the plates are already clean. “Oh! You needn't have cleaned them!”"
+  },
+  {
+    "id": "MV-S21-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S21",
+    "modal_rule": "R7",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Museum rules: visitors ___ touch the paintings. You ___ take photos with a flash. Children ___ run in the halls.",
+    "answer": "mustn't | can't | aren't allowed to",
+    "accept": [],
+    "accepted_answers": [
+      "mustn't | can't | aren't allowed to"
+    ],
+    "explanation_ru": "Способы выразить запрет.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S21",
+      "mv_R7"
+    ],
+    "tags": [
+      "mv_S21",
+      "mv_R7"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r7"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S21-T01-b1",
+        "answer": "mustn't",
+        "accepted_answers": [
+          "mustn't",
+          "must not"
+        ],
+        "explanation_ru": "Способы выразить запрет.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S21",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S21",
+        "modal_options": [
+          "can",
+          "mustn't",
+          "needn't",
+          "don't have to"
+        ]
+      },
+      {
+        "id": "MV-S21-T01-b2",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Способы выразить запрет.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S21",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S21",
+        "modal_options": [
+          "may",
+          "don't have to",
+          "can't",
+          "needn't"
+        ]
+      },
+      {
+        "id": "MV-S21-T01-b3",
+        "answer": "aren't allowed to",
+        "accepted_answers": [
+          "aren't allowed to",
+          "are not allowed to"
+        ],
+        "explanation_ru": "Способы выразить запрет.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r7"
+        ],
+        "practice_tenses": [
+          "mv_S21",
+          "mv_R7"
+        ],
+        "tense_or_construction": "mv_S21",
+        "modal_options": [
+          "isn't allowed to",
+          "needn't",
+          "don't have to",
+          "aren't allowed to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Museum rules: visitors mustn't touch the paintings. You can't take photos with a flash. Children aren't allowed to run in the halls."
+  },
+  {
+    "id": "MV-S22-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S22",
+    "modal_rule": "R8",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "My sister ___ wake up at five because she is a baker. I ___ get up so early. Yesterday she ___ work on Sunday as well.",
+    "answer": "has to | don't have to | had to",
+    "accept": [],
+    "accepted_answers": [
+      "has to | don't have to | had to"
+    ],
+    "explanation_ru": "have to: формы лица и времени.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S22",
+      "mv_R8"
+    ],
+    "tags": [
+      "mv_S22",
+      "mv_R8"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r8"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S22-T01-b1",
+        "answer": "has to",
+        "accepted_answers": [
+          "has to"
+        ],
+        "explanation_ru": "have to: формы лица и времени.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S22",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S22",
+        "modal_options": [
+          "has to",
+          "need to",
+          "have to",
+          "don't have to"
+        ]
+      },
+      {
+        "id": "MV-S22-T01-b2",
+        "answer": "don't have to",
+        "accepted_answers": [
+          "don't have to",
+          "do not have to"
+        ],
+        "explanation_ru": "have to: формы лица и времени.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S22",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S22",
+        "modal_options": [
+          "has to",
+          "needs to",
+          "doesn't have to",
+          "don't have to"
+        ]
+      },
+      {
+        "id": "MV-S22-T01-b3",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "have to: формы лица и времени.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S22",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S22",
+        "modal_options": [
+          "had to",
+          "has to",
+          "needs to",
+          "doesn't need to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "My sister has to wake up at five because she is a baker. I don't have to get up so early. Yesterday she had to work on Sunday as well."
+  },
+  {
+    "id": "MV-S23-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S23",
+    "modal_rule": "R8",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "At my old school, we ___ use phones. Now the new rules say we ___ bring them, and I ___ use mine at lunch. Next year, in Year 10, we ___ leave school for lunch.",
+    "answer": "weren't allowed to | are allowed to | am allowed to | will be allowed to",
+    "accept": [],
+    "accepted_answers": [
+      "weren't allowed to | are allowed to | am allowed to | will be allowed to"
+    ],
+    "explanation_ru": "be allowed to: формы времён.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S23",
+      "mv_R8"
+    ],
+    "tags": [
+      "mv_S23",
+      "mv_R8"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r8"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S23-T01-b1",
+        "answer": "weren't allowed to",
+        "accepted_answers": [
+          "weren't allowed to",
+          "were not allowed to"
+        ],
+        "explanation_ru": "be allowed to: формы времён.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S23",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S23",
+        "modal_options": [
+          "aren't allowed to",
+          "weren't allowed to",
+          "will be allowed to",
+          "wasn't allowed to"
+        ]
+      },
+      {
+        "id": "MV-S23-T01-b2",
+        "answer": "are allowed to",
+        "accepted_answers": [
+          "are allowed to",
+          "'re allowed to"
+        ],
+        "explanation_ru": "be allowed to: формы времён.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S23",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S23",
+        "modal_options": [
+          "were allowed to",
+          "are allowed to",
+          "is allowed to",
+          "wasn't allowed to"
+        ]
+      },
+      {
+        "id": "MV-S23-T01-b3",
+        "answer": "am allowed to",
+        "accepted_answers": [
+          "am allowed to",
+          "'m allowed to"
+        ],
+        "explanation_ru": "be allowed to: формы времён.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S23",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S23",
+        "modal_options": [
+          "wasn't allowed to",
+          "mustn't",
+          "am allowed to",
+          "is allowed to"
+        ]
+      },
+      {
+        "id": "MV-S23-T01-b4",
+        "answer": "will be allowed to",
+        "accepted_answers": [
+          "will be allowed to"
+        ],
+        "explanation_ru": "be allowed to: формы времён.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S23",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S23",
+        "modal_options": [
+          "will be allowed to",
+          "were allowed to",
+          "wasn't allowed to",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "At my old school, we weren't allowed to use phones. Now the new rules say we are allowed to bring them, and I am allowed to use mine at lunch. Next year, in Year 10, we will be allowed to leave school for lunch."
+  },
+  {
+    "id": "MV-S24-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S24",
+    "modal_rule": "R8",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Our flight ___ leave at nine, but it was delayed. At the gate, a sign says: “Passengers ___ leave their luggage alone.” I ___ meet my aunt at arrivals, but she doesn't know about the delay.",
+    "answer": "was supposed to | aren't supposed to | am supposed to",
+    "accept": [],
+    "accepted_answers": [
+      "was supposed to | aren't supposed to | am supposed to"
+    ],
+    "explanation_ru": "be supposed to: формы.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S24",
+      "mv_R8"
+    ],
+    "tags": [
+      "mv_S24",
+      "mv_R8"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r8"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S24-T01-b1",
+        "answer": "was supposed to",
+        "accepted_answers": [
+          "was supposed to"
+        ],
+        "explanation_ru": "be supposed to: формы.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S24",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S24",
+        "modal_options": [
+          "was supposed to",
+          "were supposed to",
+          "is supposed to",
+          "isn't supposed to"
+        ]
+      },
+      {
+        "id": "MV-S24-T01-b2",
+        "answer": "aren't supposed to",
+        "accepted_answers": [
+          "aren't supposed to",
+          "are not supposed to"
+        ],
+        "explanation_ru": "be supposed to: формы.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S24",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S24",
+        "modal_options": [
+          "isn't supposed to",
+          "aren't supposed to",
+          "is supposed to",
+          "am supposed to"
+        ]
+      },
+      {
+        "id": "MV-S24-T01-b3",
+        "answer": "am supposed to",
+        "accepted_answers": [
+          "am supposed to",
+          "'m supposed to"
+        ],
+        "explanation_ru": "be supposed to: формы.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S24",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S24",
+        "modal_options": [
+          "am supposed to",
+          "is supposed to",
+          "were supposed to",
+          "aren't supposed to"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Our flight was supposed to leave at nine, but it was delayed. At the gate, a sign says: “Passengers aren't supposed to leave their luggage alone.” I am supposed to meet my aunt at arrivals, but she doesn't know about the delay."
+  },
+  {
+    "id": "MV-S26-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S26",
+    "modal_rule": "R8",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "“Do you want to go out tonight?” asks Mia. “I ___ stay in,” says Joe. “Honestly, I ___ see anyone today.” “OK, but you ___ answer your phone tomorrow, or Mum will call the police.”",
+    "answer": "would rather | would rather not | had better",
+    "accept": [],
+    "accepted_answers": [
+      "would rather | would rather not | had better"
+    ],
+    "explanation_ru": "would rather и had better.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S26",
+      "mv_R8"
+    ],
+    "tags": [
+      "mv_S26",
+      "mv_R8"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r8"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S26-T01-b1",
+        "answer": "would rather",
+        "accepted_answers": [
+          "would rather",
+          "'d rather"
+        ],
+        "explanation_ru": "would rather и had better.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S26",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S26",
+        "modal_options": [
+          "would prefer",
+          "would rather",
+          "prefer",
+          "rather than"
+        ]
+      },
+      {
+        "id": "MV-S26-T01-b2",
+        "answer": "would rather not",
+        "accepted_answers": [
+          "would rather not",
+          "'d rather not"
+        ],
+        "explanation_ru": "would rather и had better.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S26",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S26",
+        "modal_options": [
+          "rather than",
+          "would prefer",
+          "would rather not",
+          "had better"
+        ]
+      },
+      {
+        "id": "MV-S26-T01-b3",
+        "answer": "had better",
+        "accepted_answers": [
+          "had better",
+          "'d better"
+        ],
+        "explanation_ru": "would rather и had better.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r8"
+        ],
+        "practice_tenses": [
+          "mv_S26",
+          "mv_R8"
+        ],
+        "tense_or_construction": "mv_S26",
+        "modal_options": [
+          "prefer",
+          "had better",
+          "would rather",
+          "would rather not"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "“Do you want to go out tonight?” asks Mia. “I would rather stay in,” says Joe. “Honestly, I would rather not see anyone today.” “OK, but you had better answer your phone tomorrow, or Mum will call the police.”"
+  },
+  {
+    "id": "MV-S27-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S27",
+    "modal_rule": "R9",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Weather forecast: “Tomorrow it ___ be sunny in the south, but it ___ be warm in the north.” Pete packs his bag. “I ___ wear shorts and bring a jumper too.”",
+    "answer": "will | won't | will",
+    "accept": [],
+    "accepted_answers": [
+      "will | won't | will"
+    ],
+    "explanation_ru": "will и won't: прогноз и решение.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S27",
+      "mv_R9"
+    ],
+    "tags": [
+      "mv_S27",
+      "mv_R9"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r9"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S27-T01-b1",
+        "answer": "will",
+        "accepted_answers": [
+          "will",
+          "'ll"
+        ],
+        "explanation_ru": "will и won't: прогноз и решение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S27",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S27",
+        "modal_options": [
+          "will",
+          "mustn't",
+          "would",
+          "shall"
+        ]
+      },
+      {
+        "id": "MV-S27-T01-b2",
+        "answer": "won't",
+        "accepted_answers": [
+          "won't",
+          "will not"
+        ],
+        "explanation_ru": "will и won't: прогноз и решение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S27",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S27",
+        "modal_options": [
+          "will",
+          "won't",
+          "shall",
+          "would"
+        ]
+      },
+      {
+        "id": "MV-S27-T01-b3",
+        "answer": "will",
+        "accepted_answers": [
+          "will",
+          "'ll"
+        ],
+        "explanation_ru": "will и won't: прогноз и решение.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S27",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S27",
+        "modal_options": [
+          "would",
+          "mustn't",
+          "shouldn't",
+          "will"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Weather forecast: “Tomorrow it will be sunny in the south, but it won't be warm in the north.” Pete packs his bag. “I will wear shorts and bring a jumper too.”"
+  },
+  {
+    "id": "MV-S28-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S28",
+    "modal_rule": "R9",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "My laptop is acting up. It ___ start now. Last week it ___ connect to the Wi-Fi either. The repair man says it is a serious problem.",
+    "answer": "won't | wouldn't",
+    "accept": [],
+    "accepted_answers": [
+      "won't | wouldn't"
+    ],
+    "explanation_ru": "won't — сейчас, wouldn't — прошлое.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S28",
+      "mv_R9"
+    ],
+    "tags": [
+      "mv_S28",
+      "mv_R9"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r9"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S28-T01-b1",
+        "answer": "won't",
+        "accepted_answers": [
+          "won't",
+          "will not"
+        ],
+        "explanation_ru": "won't — сейчас, wouldn't — прошлое.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S28",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S28",
+        "modal_options": [
+          "don't",
+          "wouldn't",
+          "mustn't",
+          "won't"
+        ]
+      },
+      {
+        "id": "MV-S28-T01-b2",
+        "answer": "wouldn't",
+        "accepted_answers": [
+          "wouldn't",
+          "would not"
+        ],
+        "explanation_ru": "won't — сейчас, wouldn't — прошлое.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S28",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S28",
+        "modal_options": [
+          "don't",
+          "wouldn't",
+          "won't",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "My laptop is acting up. It won't start now. Last week it wouldn't connect to the Wi-Fi either. The repair man says it is a serious problem."
+  },
+  {
+    "id": "MV-S29-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S29",
+    "modal_rule": "R9",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "When I was a kid, my grandfather ___ tell us a story every night. He ___ let us go to bed until we said thank you. If I met him now, I ___ ask him for one more story.",
+    "answer": "would | wouldn't | would",
+    "accept": [],
+    "accepted_answers": [
+      "would | wouldn't | would"
+    ],
+    "explanation_ru": "would: привычка, отказ, условие.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S29",
+      "mv_R9"
+    ],
+    "tags": [
+      "mv_S29",
+      "mv_R9"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r9"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S29-T01-b1",
+        "answer": "would",
+        "accepted_answers": [
+          "would",
+          "'d"
+        ],
+        "explanation_ru": "would: привычка, отказ, условие.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S29",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S29",
+        "modal_options": [
+          "should",
+          "will",
+          "would",
+          "can"
+        ]
+      },
+      {
+        "id": "MV-S29-T01-b2",
+        "answer": "wouldn't",
+        "accepted_answers": [
+          "wouldn't",
+          "would not"
+        ],
+        "explanation_ru": "would: привычка, отказ, условие.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S29",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S29",
+        "modal_options": [
+          "will",
+          "can't",
+          "wouldn't",
+          "might"
+        ]
+      },
+      {
+        "id": "MV-S29-T01-b3",
+        "answer": "would",
+        "accepted_answers": [
+          "would",
+          "'d"
+        ],
+        "explanation_ru": "would: привычка, отказ, условие.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S29",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S29",
+        "modal_options": [
+          "will",
+          "would",
+          "should",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "When I was a kid, my grandfather would tell us a story every night. He wouldn't let us go to bed until we said thank you. If I met him now, I would ask him for one more story."
+  },
+  {
+    "id": "MV-S30-T01",
+    "topic": "modals",
+    "type": "context_cloze",
+    "modal_type": "text",
+    "modal_sub": "S30",
+    "modal_rule": "R9",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Jake asks: “What ___ we eat tonight?” Eve says: “___ I make my famous omelette?” “No! We ___ be eating that again. Last time the smoke alarm cried.”",
+    "answer": "shall | Shall | shan't",
+    "accept": [],
+    "accepted_answers": [
+      "shall | Shall | shan't"
+    ],
+    "explanation_ru": "shall в вопросах-предложениях.",
+    "instruction_ru": "Заполните каждый пропуск в тексте.",
+    "practice_tenses": [
+      "mv_S30",
+      "mv_R9"
+    ],
+    "tags": [
+      "mv_S30",
+      "mv_R9"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r9"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S30-T01-b1",
+        "answer": "shall",
+        "accepted_answers": [
+          "shall"
+        ],
+        "explanation_ru": "shall в вопросах-предложениях.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S30",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S30",
+        "modal_options": [
+          "shan't",
+          "shall",
+          "would",
+          "may"
+        ]
+      },
+      {
+        "id": "MV-S30-T01-b2",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall",
+          "shall"
+        ],
+        "explanation_ru": "shall в вопросах-предложениях.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S30",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S30",
+        "modal_options": [
+          "Would",
+          "Shall",
+          "Do"
+        ]
+      },
+      {
+        "id": "MV-S30-T01-b3",
+        "answer": "shan't",
+        "accepted_answers": [
+          "shan't",
+          "shall not"
+        ],
+        "explanation_ru": "shall в вопросах-предложениях.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r9"
+        ],
+        "practice_tenses": [
+          "mv_S30",
+          "mv_R9"
+        ],
+        "tense_or_construction": "mv_S30",
+        "modal_options": [
+          "shall",
+          "shan't",
+          "may",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Jake asks: “What shall we eat tonight?” Eve says: “Shall I make my famous omelette?” “No! We shan't be eating that again. Last time the smoke alarm cried.”"
+  }
+]

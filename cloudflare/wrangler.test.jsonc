@@ -1,0 +1,24 @@
+{
+  "name": "grammar-noeon-test",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-26",
+  "workers_dev": true,
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "vars": {
+    "PUBLIC_ORIGIN": "https://grammar-noeon-test.grammar-noeon.workers.dev"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "grammar-noeon-test",
+      "database_id": "8ca108b3-eceb-45a2-9152-5f8419b184b6"
+    }
+  ],
+  "account_id": "3e5b485d1cf838357990c85422ef1c77",
+  "triggers": { "crons": ["17 3 * * *"] },
+  "preview_urls": false
+}

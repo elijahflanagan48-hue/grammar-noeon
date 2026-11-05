@@ -1,0 +1,1 @@
+import fs from 'node:fs';const files=JSON.parse(fs.readFileSync('sw.js','utf8').match(/const FILES = (\[[\s\S]*?\]);/)[1]);await Promise.all(files.map(async f=>{try{const r=await fetch(new URL(f,'https://grammar.noeon.org/'),{signal:AbortSignal.timeout(15000)});await r.arrayBuffer();console.log(r.status,f)}catch(e){console.log('FAILED',f,e.message)}}));

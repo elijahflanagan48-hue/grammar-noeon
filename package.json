@@ -1,0 +1,26 @@
+{
+  "name": "grammar-noeon",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test:practice": "node tests/practice-selection.mjs",
+    "build:cloudflare": "python3 -B scripts/build_cloudflare.py",
+    "test:cloudflare": "node tests/cloudflare-check.mjs",
+    "pretest:cloudflare": "python3 -B scripts/build_cloudflare.py",
+    "test": "node scripts/check-all.mjs",
+    "test:live": "node scripts/check-all.mjs --live",
+    "test:browser": "node scripts/check-all.mjs --browser",
+    "dev": "python3 -B scripts/build_cloudflare.py && node scripts/local-worker.mjs",
+    "docs:update": "python3 -B scripts/update_docs.py",
+    "docs:check": "python3 -B scripts/update_docs.py --check"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "esbuild": "0.28.2",
+    "miniflare": "5.20261023.0-beta",
+    "playwright": "1.58.2",
+    "wrangler": "4.153.0"
+  }
+}

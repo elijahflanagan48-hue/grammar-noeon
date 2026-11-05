@@ -9,6 +9,9 @@ import re
 import shutil
 from collections import Counter
 from pathlib import Path
+from content_repairs import repair_item
+from practice_targets import add_practice_targets
+from editorial_review import VERSION
 
 
 THEORY_FILES = [
@@ -78,7 +81,7 @@ def public_item(item: dict) -> dict:
     allowed = {
         "id", "type", "prompt", "answer", "answer_text", "accepted_answers",
         "explanation_ru", "review_note_ru", "rule_refs", "cefr_estimate",
-        "options", "correct_option_index", "title", "blanks", "tags",
+        "options", "correct_option_index", "accepted_option_indices", "title", "blanks", "tags",
     }
     clean = {key: value for key, value in item.items() if key in allowed}
     if "blanks" in clean:
@@ -131,7 +134,7 @@ def public_item(item: dict) -> dict:
         explanation = f"Future Perfect Continuous подчёркивает длительность процесса к будущей точке. Маркер контекста: «{marker}»."
         clean["explanation_ru"] = explanation
         clean["blanks"][0]["explanation_ru"] = explanation
-    return clean
+    return add_practice_targets(repair_item(clean))
 
 
 def main() -> None:
@@ -202,7 +205,8 @@ def main() -> None:
 
     answer_slots = sum(len(item.get("blanks", [])) or 1 for item in items)
     manifest = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
+        "content_version": VERSION,
         "editorial_language": "British English",
         "total_items": len(items),
         "answer_slots": answer_slots,
@@ -216,6 +220,12 @@ def main() -> None:
         encoding="utf-8",
     )
     print(f"Built {len(items)} public items / {answer_slots} answer slots; excluded {excluded} items.")
+    # Preserve the independent module when rebuilding the original tense bank.
+    from build_comparisons import build as build_comparisons
+    comparison_theory = Path(__file__).resolve().parents[1] / "content/theory/06-comparison.md"
+    if comparison_theory.resolve() != (theory_out / comparison_theory.name).resolve():
+        shutil.copyfile(comparison_theory, theory_out / comparison_theory.name)
+    build_comparisons(output)
 
 
 if __name__ == "__main__":

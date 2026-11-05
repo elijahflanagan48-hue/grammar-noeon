@@ -1,0 +1,15 @@
+Guest roster protected
+{
+  serviceWorker: true,
+  registrations: [
+    {
+      scope: 'https://grammar.noeon.org/',
+      active: undefined,
+      installing: 'installing'
+    }
+  ]
+}
+page.waitForFunction: Timeout 30000ms exceeded.
+    at /Users/ilya/Library/Mobile Documents/com~apple~CloudDocs/AI/OpenAI/grammar-noeon/workspaces/grammar-noeon-roster-release/docs/review/ROSTER-2026-11-05/check-shell.cjs:1:744 {
+  name: 'TimeoutError'
+}

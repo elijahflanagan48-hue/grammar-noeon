@@ -18,6 +18,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - run: python3 scripts/validate_content.py
-      - run: node --check app.js
-      - run: node tests/frontend-check.mjs
+      - run: npm ci
+      - run: npm test

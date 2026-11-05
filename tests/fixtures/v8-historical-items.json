@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ext-20261030-present-simple-mc-020",
+    "type": "multiple_choice",
+    "title": "Выберите правильный вариант.",
+    "prompt": "The price ___ breakfast and a city tour.",
+    "options": [
+      "including",
+      "is include",
+      "includes",
+      "include"
+    ],
+    "correct_option_index": 2,
+    "answer": "The price includes breakfast and a city tour.",
+    "summary": "The price includes breakfast and a city tour.",
+    "explanation_ru": "Речь об общеизвестном факте, постоянном свойстве или состоянии. Форма: основа глагола; с he/she/it — окончание -s/-es. Вопрос и отрицание — с do/does. Остальные варианты неверны по форме или не подходят к контексту.",
+    "cefr_estimate": "B2",
+    "tags": [
+      "present_simple"
+    ],
+    "practice_tenses": [
+      "present_simple"
+    ],
+    "rule_refs": [
+      "content/tenses/02-present.md#present-simple"
+    ],
+    "content_version": "tenses-2026-10-30.4",
+    "response_contract": "bounded-v1"
+  },
+  {
+    "id": "src-u03-092",
+    "type": "open_brackets",
+    "prompt": "I (to choose) this playlist for our upcoming road trip. I will share it with Bill before we set off.",
+    "answer_text": "I have chosen this playlist for our upcoming road trip. I will share it with Bill before we set off.",
+    "blanks": [
+      {
+        "id": "src-u03-092-b1",
+        "base_verb": "choose",
+        "answer": "has chosen",
+        "accepted_answers": [
+          "has chosen"
+        ],
+        "tense_or_construction": "present_perfect",
+        "rule_refs": [
+          "content/tenses/02-present.md#present-perfect-simple"
+        ],
+        "explanation_ru": "Present Perfect связывает прошлое действие с настоящим: важны текущий результат, опыт или период до настоящего."
+      }
+    ],
+    "explanation_ru": "Present Perfect связывает прошлое действие с настоящим: важны текущий результат, опыт или период до настоящего.",
+    "review_note_ru": "Вводите форму глагола. Наречия already, just, still и другие слова, уже явно данные в условии этого поля, можно повторить или опустить, если они отмечены как необязательные. Отрицание и остальные части формы сохраняйте.",
+    "cefr_estimate": "B1",
+    "tags": [
+      "present_perfect"
+    ],
+    "rule_refs": [
+      "content/tenses/02-present.md#present-perfect-simple"
+    ],
+    "content_version": "historical-fixture",
+    "response_contract": "bounded-v1"
+  }
+]

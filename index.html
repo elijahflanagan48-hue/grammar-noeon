@@ -2,19 +2,42 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Grammar NOEON — подробный справочник по английским временам и интерактивная практика с объяснениями.">
-  <meta name="theme-color" content="#ffffff">
-  <title>Grammar NOEON — английские времена</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=6">
-  <script src="app.js?v=6" defer></script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Grammar NOEON">
+  <meta name="theme-color" content="#f3f6fb">
+  <title>Grammar NOEON — английская грамматика</title>
+  <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest?v=20261105-roster3">
+  <script src="theme-boot.js?v=20261105-roster3"></script>
+  <link rel="stylesheet" href="styles.css?v=20261105-roster3">
+  <script src="accounts.js?v=20261105-roster3" defer></script>
+  <script src="notifications.js?v=20261105-roster3" defer></script>
+  <script src="practice-report.js?v=20261105-roster3" defer></script>
+  <script src="assessments.js?v=20261105-roster3" defer></script>
+  <script src="pwa.js?v=20261105-roster3" defer></script>
+  <link rel="stylesheet" href="passive.css?v=20261105-roster3">
+  <script src="passive.js?v=20261105-roster3" defer></script>
+  <script src="teacher-library.js?v=20261105-roster3" defer></script>
+  <script src="task-issues.js?v=20261105-roster3" defer></script>
+  <link rel="stylesheet" href="modal-verbs.css?v=20261105-roster3">
+  <script src="modal-verbs.js?v=20261105-roster3" defer></script>
+  <script src="students-roster.js?v=20261105-roster3" defer></script>
+  <script src="app.js?v=20261105-roster3" defer></script>
+  <link rel="stylesheet" href="students-roster.css?v=20261105-roster3">
 </head>
 <body>
   <a class="skip-link" href="#app">Перейти к содержанию</a>
-  <div class="demo-strip">NOEON Grammar · интерактивный справочник по временам</div>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Grammar NOEON — главная"><span class="brand-mark">N</span><strong>NOEON</strong><small>Grammar</small></a>
+    <button class="header-icon header-back" id="screen-back" type="button" aria-label="Назад" hidden>←</button>
+    <div id="screen-title" class="screen-title"></div>
+    <div class="header-actions"><a id="notification-link" class="notification-link" href="#notifications" aria-label="Уведомления" hidden><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 17h14l-2-3V9a5 5 0 0 0-10 0v5zM10 20h4"/></svg></a>
+    <button class="header-icon" id="theme-toggle" type="button" aria-label="Сменить тему">◐</button></div>
+    <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">N</span><strong>NOEON</strong><small>Grammar</small></a>
   </header>
   <main id="app" class="app-shell" tabindex="-1">
     <div class="loading-card" role="status">Загружаем справочник…</div>
@@ -24,7 +47,7 @@
   </footer>
   <nav id="main-nav" class="main-nav" aria-label="Основная навигация">
     <a href="#home" data-nav="home"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg><span>Сегодня</span></a>
-    <a href="#theory/foundations" data-nav="theory"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5c3-1 5-.4 8 1.5v13c-3-2-5-2.5-8-1.5zM20 5.5c-3-1-5-.4-8 1.5v13c3-2 5-2.5 8-1.5z"/></svg><span>Грамматика</span></a>
+    <a href="#grammar" data-nav="theory"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5c3-1 5-.4 8 1.5v13c-3-2-5-2.5-8-1.5zM20 5.5c-3-1-5-.4-8 1.5v13c3-2 5-2.5 8-1.5z"/></svg><span>Грамматика</span></a>
     <a href="#results" data-nav="results"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 20V11M12 20V4M19 20V8"/></svg><span>Результаты</span></a>
     <a href="#profile" data-nav="profile"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c.4-4 2.8-6 6.5-6s6.1 2 6.5 6"/></svg><span>Профиль</span></a>
   </nav>

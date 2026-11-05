@@ -1,0 +1,38 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const ctx={};
+vm.createContext(ctx);
+vm.runInContext(fs.readFileSync(new URL('../notifications.js',import.meta.url),'utf8'),ctx);
+await ctx.syncAppBadge(4); // No navigator: no error.
+assert.ok(ctx.appBadgeHint().includes('экран «Домой»'));
+const calls=[];
+ctx.navigator={setAppBadge:async n=>calls.push(['set',n]),clearAppBadge:async()=>calls.push(['clear'])};
+await ctx.syncAppBadge(7);
+await ctx.syncAppBadge(0);
+await ctx.syncAppBadge(-3);
+await ctx.syncAppBadge(NaN);
+assert.deepEqual(calls,[['set',7],['clear'],['clear'],['clear']]);
+delete ctx.navigator.clearAppBadge;
+await ctx.syncAppBadge(0);
+assert.deepEqual(calls.at(-1),['set',0],'zero fallback');
+ctx.navigator.setAppBadge=async()=>{throw new Error('NotAllowedError');};
+await ctx.syncAppBadge(5); // Permission refusal does not reject the caller.
+ctx.Notification={permission:'default'};
+assert.ok(ctx.appBadgeHint().includes('id="enable-app-badge"'));
+ctx.Notification.permission='denied';
+assert.ok(!ctx.appBadgeHint().includes('id="enable-app-badge"'));
+assert.ok(ctx.appBadgeHint().includes('настройках устройства'));
+assert.ok(ctx.appBadgeHint().includes('фоновая push-доставка ещё не подключена'));
+let finishSet,started;
+const begin=new Promise(resolve=>started=resolve),order=[];
+ctx.navigator.setAppBadge=()=>{order.push('set-start');started();return new Promise(resolve=>finishSet=()=>{order.push('set-end');resolve();});};
+ctx.navigator.clearAppBadge=async()=>order.push('clear');
+const setting=ctx.syncAppBadge(8);
+const clearing=ctx.syncAppBadge(0);
+await begin;
+assert.deepEqual(order,['set-start']);
+finishSet();
+await Promise.all([setting,clearing]);
+assert.deepEqual(order,['set-start','set-end','clear'],'logout/read-all wins over delayed set');
+console.log('App icon badge: counts, clearing, zero fallback, unsupported/denied APIs, explicit permission UI and serial update races passed.');

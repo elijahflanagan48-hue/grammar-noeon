@@ -1,0 +1,16 @@
+PASS index.html 200
+PASS index.html matches local
+PASS index.html no-cache
+PASS sw.js 200
+PASS sw.js matches local
+PASS sw.js no-cache
+PASS pwa.js 200
+PASS pwa.js matches local
+PASS app.js 200
+PASS app.js matches local
+PASS accounts.js 200
+PASS accounts.js matches local
+PASS styles.css 200
+PASS styles.css matches local
+PASS Guest 200 user:null
+PASS Bank protected from guests

@@ -1,0 +1,15 @@
+import {beforeAdjectiveClarity} from '../scripts/review-snapshots.mjs';
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {grade} from '../cloudflare/generated/checker.mjs';import {createRequire}from'node:module';
+const {evaluate}=createRequire(import.meta.url)('../app.js');const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url)));
+const d='docs/review/ADJECTIVES-MIXED-2026-11-01/',m=read('data/exercises/index.json'),before=read(d+'baseline-bank.json'),patch=read(d+'patch-records.json');
+const bank=beforeAdjectiveClarity(m.parts.flatMap(p=>read(p.file))),by=new Map(bank.map(i=>[i.id,i])),changed=new Map(patch.map(i=>[i.id,i]));
+assert.equal(m.answer_slots,9646);assert.equal(bank.length,7419);assert.equal(patch.length,420);assert.equal(m.content_versions.comparison,'comparison-2026-11-01.5');
+for(const [level,n]of [['basic',300],['medium',400],['advanced',300]])assert.equal(bank.filter(i=>i.topic==='comparison'&&i.level===level).length,n);
+for(const old of before){const i=by.get(old.id);assert(i);assert.equal(i.level,old.level);assert.equal(i.type,old.type);if(!changed.has(old.id))assert.deepEqual(i,old);else{assert.deepEqual(i,changed.get(old.id));assert(grade(old,old.blanks.map(b=>b.answer)).correct,old.id+' historical');}}
+for(const i of patch){assert.equal(i.content_version,'comparison-2026-11-01.4');const keys=i.blanks.map(b=>b.answer);assert(grade(i,keys).correct&&evaluate(i,keys),i.id);for(const[n,b]of i.blanks.entries()){for(const a of b.accepted_answers){const v=keys.slice();v[n]=a;assert(grade(i,v).correct&&evaluate(i,v),i.id+': '+a);}const v=keys.slice();v[n]='most '+b.answer;assert(!grade(i,v).correct&&!evaluate(i,v),i.id+': duplicate degree');}}
+const examples=[['cmp-pro-20261101-001',['too heavy','safer'],['heavier','safer']],['cmp-pro-20261101-177',['The more extensive the survey, the less defensible a one-cause account becomes'],['The more extensive the survey, the more defensible a one-cause account becomes']],['cmp-construct-20261101-b053',['stronger and stronger'],['stronger']],['cmp-construct-20261101-b043',['twice as long as'],['twice longer than']]];
+for(const[id,right,wrong]of examples){assert(grade(by.get(id),right).correct,id);assert(!grade(by.get(id),wrong).correct,id+': partial/direction');}
+const comp=bank.filter(i=>i.topic==='comparison');assert.equal(comp.filter(i=>i.title).length,413);
+const norm=s=>s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim(),oldBy=new Map(before.map(i=>[i.id,i])),prompts=new Map();for(const i of comp){const s=norm(i.prompt);if(prompts.has(s)){const other=prompts.get(s);assert.equal(norm(oldBy.get(other).prompt),norm(oldBy.get(i.id).prompt),i.id+' introduced duplicate');}prompts.set(s,i.id);}
+assert(!fs.existsSync(new URL('../cloudflare/public/docs/review',import.meta.url)));console.log('Adjective mix: 420 versioned rewrites, 413 whole-structure tasks, 300/400/300, every key and historical snapshot, untouched bank, partial/incorrect-direction negatives passed.');

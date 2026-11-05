@@ -3,3 +3,17 @@ __pycache__/
 *.pyc
 .idea/
 .vscode/
+
+private/
+.env
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Generated Cloudflare bundle and local emulator state
+cloudflare/public/
+cloudflare/generated/
+.wrangler/
+node_modules/
+.dev.vars
+.dev.vars.*

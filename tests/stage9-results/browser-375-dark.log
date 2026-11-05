@@ -1,0 +1,132 @@
+Worker grader: 1424 items; 3936 accepted variants and negative regressions passed.
+PASS Additive migration preserves old snapshots, answers and grades
+PASS Migration grants nobody permission
+PASS Guest cannot start
+PASS Default deny
+PASS Disabled student cannot start
+PASS Student cannot grant permission
+PASS Permission requires CSRF
+PASS Boolean permission enforced
+PASS Teacher cannot enable unrelated learner
+PASS Preview only aggregate metadata
+PASS Invalid/forged filters rejected
+PASS Invalid/forged filters rejected
+PASS Invalid/forged filters rejected
+PASS Invalid/forged filters rejected
+PASS Invalid/forged filters rejected
+PASS Invalid/forged filters rejected
+PASS Bounded session
+PASS Session marked self
+PASS No answer keys before checking, recursively
+PASS Other learner cannot read session
+PASS Cannot skip forward to obtain keys
+PASS Self draft saved on server
+PASS Draft restored
+PASS Revocation blocks new starts
+PASS Revocation preserves existing progress
+PASS Server grades independently of forged client score
+PASS Replay safe
+PASS Teacher history identifies independent session
+PASS Teacher report marked self
+PASS Comparison filters honoured
+PASS Choice keys and answer-derived summary withheld
+PASS Learner denied data/exercises/part-01.json
+PASS Learner denied data/exercises/part-02.json
+PASS Learner denied data/exercises/part-03.json
+PASS Learner denied data/exercises/part-04.json
+PASS Learner denied data/exercises/part-05.json
+PASS Learner denied data/exercises/part-06.json
+PASS Learner denied data/exercises/part-07.json
+PASS Learner denied data/exercises/part-08.json
+PASS Learner denied data/exercises/part-09.json
+PASS Learner denied data/exercises/part-10.json
+PASS Learner denied data/exercises/part-11.json
+PASS Learner denied data/exercises/part-12.json
+PASS Learner denied data/exercises/part-13.json
+PASS Guest browser has no private form
+PASS Disabled learner sees permission message
+PASS Teacher enables permission via UI
+PASS Learner UI receives only sanitized selected item
+PASS Rendered input count
+PASS Learner UI server check succeeds
+PASS Checked feedback survives reload
+PASS Teacher sees self marker in history
+PASS Permission revocation reflected in learner browser
+PASS Teacher original practice still starts
+PASS Teacher bank cleared on logout
+PASS Switching same browser to learner keeps bank absent
+PASS Learner browser never requests the full bank
+PASS No browser JavaScript errors
+{
+  "checks": 58,
+  "errors": [],
+  "studentRequests": [
+    "/api/account",
+    "/favicon.svg",
+    "/api/notifications",
+    "/icons/favicon-32.png",
+    "/",
+    "/theme-boot.js",
+    "/styles.css",
+    "/accounts.js",
+    "/notifications.js",
+    "/practice-report.js",
+    "/pwa.js",
+    "/app.js",
+    "/wixt-cyr.woff2",
+    "/wixt-lat.woff2",
+    "/data/exercises/index.json",
+    "/data/theory.json",
+    "/favicon.svg",
+    "/icons/favicon-32.png",
+    "/api/auth/info",
+    "/api/auth/me",
+    "/api/notifications",
+    "/api/account",
+    "/api/practice/preview",
+    "/wixd-lat.woff2",
+    "/wixd-cyr.woff2",
+    "/api/notifications",
+    "/api/practice/preview",
+    "/api/practice/preview",
+    "/api/practice/preview",
+    "/api/practice/preview",
+    "/api/practice/preview",
+    "/api/practice/preview",
+    "/api/practice/start",
+    "/api/practice/4cf9618a5a33df65741392d9c28decccbf76ed32fc7f88664d78b13fceb052a0",
+    "/api/practice/4cf9618a5a33df65741392d9c28decccbf76ed32fc7f88664d78b13fceb052a0",
+    "/favicon.svg",
+    "/api/notifications",
+    "/icons/favicon-32.png",
+    "/api/practice/4cf9618a5a33df65741392d9c28decccbf76ed32fc7f88664d78b13fceb052a0/draft",
+    "/api/practice/4cf9618a5a33df65741392d9c28decccbf76ed32fc7f88664d78b13fceb052a0/check",
+    "/content/theory/02-present.md",
+    "/",
+    "/theme-boot.js",
+    "/styles.css",
+    "/accounts.js",
+    "/notifications.js",
+    "/practice-report.js",
+    "/pwa.js",
+    "/app.js",
+    "/wixt-cyr.woff2",
+    "/wixt-lat.woff2",
+    "/data/exercises/index.json",
+    "/data/theory.json",
+    "/favicon.svg",
+    "/api/auth/info",
+    "/icons/favicon-32.png",
+    "/api/auth/me",
+    "/api/notifications",
+    "/api/practice/4cf9618a5a33df65741392d9c28decccbf76ed32fc7f88664d78b13fceb052a0",
+    "/content/theory/02-present.md",
+    "/wixd-cyr.woff2",
+    "/wixd-lat.woff2",
+    "/api/notifications",
+    "/api/account",
+    "/favicon.svg",
+    "/api/notifications",
+    "/icons/favicon-32.png"
+  ]
+}

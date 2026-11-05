@@ -1,0 +1,5747 @@
+[
+  {
+    "id": "MV-S14-026",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S14",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "They didn't need to change the plan.",
+    "accept": [],
+    "accepted_answers": [
+      "They didn't need to change the plan."
+    ],
+    "explanation_ru": "Форма: didn't need to + V1.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "They needn't to change the plan.",
+      "They didn't needed to change the plan.",
+      "They needn't changed the plan.",
+      "They didn't need to change the plan."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "They didn't need to change the plan."
+  },
+  {
+    "id": "MV-S14-027",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S14",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You needn't to have waited.",
+    "answer": "You needn't have waited.",
+    "accept": [
+      "You need not have waited."
+    ],
+    "accepted_answers": [
+      "You needn't have waited.",
+      "You need not have waited."
+    ],
+    "explanation_ru": "После needn't нет to.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S14-027-b1",
+        "answer": "You needn't have waited.",
+        "accepted_answers": [
+          "You needn't have waited.",
+          "You need not have waited."
+        ],
+        "explanation_ru": "После needn't нет to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S14",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S14",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "You needn't have waited."
+  },
+  {
+    "id": "MV-S14-028",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S14",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She didn't need to went there.",
+    "answer": "She didn't need to go there.",
+    "accept": [
+      "She did not need to go there."
+    ],
+    "accepted_answers": [
+      "She didn't need to go there.",
+      "She did not need to go there."
+    ],
+    "explanation_ru": "После didn't need to глагол в начальной форме.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S14-028-b1",
+        "answer": "She didn't need to go there.",
+        "accepted_answers": [
+          "She didn't need to go there.",
+          "She did not need to go there."
+        ],
+        "explanation_ru": "После didn't need to глагол в начальной форме.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S14",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S14",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "She didn't need to go there."
+  },
+  {
+    "id": "MV-S14-029",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S14",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You took a coat, but the weather was warm all day. Which sentence fits?",
+    "answer": "I needn't have taken a coat.",
+    "accept": [],
+    "accepted_answers": [
+      "I needn't have taken a coat."
+    ],
+    "explanation_ru": "Взяли зря: needn't have + V3.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "I mustn't have taken a coat.",
+      "I should have taken a coat.",
+      "I needn't have taken a coat.",
+      "I couldn't have taken a coat."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "I needn't have taken a coat."
+  },
+  {
+    "id": "MV-S14-030",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S14",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "The exam was cancelled before you had started studying, so you did nothing. Which sentence fits?",
+    "answer": "I didn't need to study.",
+    "accept": [],
+    "accepted_answers": [
+      "I didn't need to study."
+    ],
+    "explanation_ru": "Готовиться не пришлось: didn't need to + V1.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S14",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "I shouldn't have studied.",
+      "I couldn't have studied.",
+      "I needn't have studied.",
+      "I didn't need to study."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "I didn't need to study."
+  },
+  {
+    "id": "MV-S15-001",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "That was dangerous! You ___ been hurt.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была, но не случилась: could have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-001-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была, но не случилась: could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "can't have",
+          "must have",
+          "could have",
+          "should have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't have",
+      "must have",
+      "could have",
+      "should have"
+    ],
+    "answer_text": "That was dangerous! You could have been hurt."
+  },
+  {
+    "id": "MV-S15-002",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I had no plans on Saturday. I ___ come to your party, but nobody invited me.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была, но не использована.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-002-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была, но не использована.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "must have",
+          "should have",
+          "can't have",
+          "could have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "should have",
+      "can't have",
+      "could have"
+    ],
+    "answer_text": "I had no plans on Saturday. I could have come to your party, but nobody invited me."
+  },
+  {
+    "id": "MV-S15-003",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She was good at maths. She ___ been a teacher, but she chose to be a pilot.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была, но не использована.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-003-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была, но не использована.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "can't have",
+          "could have",
+          "should have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't have",
+      "could have",
+      "should have",
+      "must have"
+    ],
+    "answer_text": "She was good at maths. She could have been a teacher, but she chose to be a pilot."
+  },
+  {
+    "id": "MV-S15-004",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "The car stopped just in time. We ___ crashed!",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Опасность была возможна: could have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-004-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Опасность была возможна: could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "could have",
+          "should have",
+          "can't have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "could have",
+      "should have",
+      "can't have",
+      "must have"
+    ],
+    "answer_text": "The car stopped just in time. We could have crashed!"
+  },
+  {
+    "id": "MV-S15-005",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "He ran fast. He ___ won the race, but he tripped.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Мог выиграть, но не выиграл.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-005-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Мог выиграть, но не выиграл.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "should have",
+          "can't have",
+          "must have",
+          "could have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "should have",
+      "can't have",
+      "must have",
+      "could have"
+    ],
+    "answer_text": "He ran fast. He could have won the race, but he tripped."
+  },
+  {
+    "id": "MV-S15-006",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "The weather was perfect, so we ___ gone to the beach, but we stayed at home.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была, но не использована.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-006-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была, но не использована.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "couldn't have",
+          "must have",
+          "could have",
+          "can't have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "couldn't have",
+      "must have",
+      "could have",
+      "can't have"
+    ],
+    "answer_text": "The weather was perfect, so we could have gone to the beach, but we stayed at home."
+  },
+  {
+    "id": "MV-S15-007",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "He had enough money to buy the house, but he did not. He ___ bought it.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была: could have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-007-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была: could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "can't have",
+          "must have",
+          "couldn't have",
+          "could have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't have",
+      "must have",
+      "couldn't have",
+      "could have"
+    ],
+    "answer_text": "He had enough money to buy the house, but he did not. He could have bought it."
+  },
+  {
+    "id": "MV-S15-008",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "That was a close call! The ball ___ hit the baby.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Едва не случилось: could have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-008-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Едва не случилось: could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "must have",
+          "should have",
+          "could have",
+          "can't have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "should have",
+      "could have",
+      "can't have"
+    ],
+    "answer_text": "That was a close call! The ball could have hit the baby."
+  },
+  {
+    "id": "MV-S15-009",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She had a great voice. She ___ become a singer if she had wanted to.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была: could have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-009-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была: could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "must have",
+          "can't have",
+          "could have",
+          "should have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "can't have",
+      "could have",
+      "should have"
+    ],
+    "answer_text": "She had a great voice. She could have become a singer if she had wanted to."
+  },
+  {
+    "id": "MV-S15-010",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I was in the area yesterday. I ___ dropped by, but I was too busy.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была, но не использована.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-010-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была, но не использована.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "couldn't have",
+          "could have",
+          "can't have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "couldn't have",
+      "could have",
+      "can't have",
+      "must have"
+    ],
+    "answer_text": "I was in the area yesterday. I could have dropped by, but I was too busy."
+  },
+  {
+    "id": "MV-S15-011",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Considering the speed of the car, the accident ___ been much worse.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Могло быть хуже: could have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-011-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Могло быть хуже: could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "can't have",
+          "should have",
+          "could have",
+          "shouldn't have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't have",
+      "should have",
+      "could have",
+      "shouldn't have"
+    ],
+    "answer_text": "Considering the speed of the car, the accident could have been much worse."
+  },
+  {
+    "id": "MV-S15-012",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If he had applied, he ___ got the job. He was by far the best candidate.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была: could have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-012-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была: could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "must have",
+          "can't have",
+          "shouldn't have",
+          "could have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "can't have",
+      "shouldn't have",
+      "could have"
+    ],
+    "answer_text": "If he had applied, he could have got the job. He was by far the best candidate."
+  },
+  {
+    "id": "MV-S15-013",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "The storm was so strong that the whole village ___ been destroyed, but luckily it changed course.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Едва не случилось: could have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-013-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Едва не случилось: could have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "must have",
+          "should have",
+          "could have",
+          "can't have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "should have",
+      "could have",
+      "can't have"
+    ],
+    "answer_text": "The storm was so strong that the whole village could have been destroyed, but luckily it changed course."
+  },
+  {
+    "id": "MV-S15-014",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I ___ taken the earlier train, but I decided to stay for lunch.",
+    "answer": "could have",
+    "accept": [
+      "could've"
+    ],
+    "accepted_answers": [
+      "could have",
+      "could've"
+    ],
+    "explanation_ru": "Возможность была, но не использована.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-014-b1",
+        "answer": "could have",
+        "accepted_answers": [
+          "could have",
+          "could've"
+        ],
+        "explanation_ru": "Возможность была, но не использована.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": [
+          "must have",
+          "could have",
+          "shouldn't have",
+          "can't have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "could have",
+      "shouldn't have",
+      "can't have"
+    ],
+    "answer_text": "I could have taken the earlier train, but I decided to stay for lunch."
+  },
+  {
+    "id": "MV-S15-015",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "You could have been hurt.",
+    "accept": [],
+    "accepted_answers": [
+      "You could have been hurt."
+    ],
+    "explanation_ru": "Форма: could have + V3.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "You could has been hurt.",
+      "You could been hurt.",
+      "You could have being hurt.",
+      "You could have been hurt."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "You could have been hurt."
+  },
+  {
+    "id": "MV-S15-016",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "I could have helped you.",
+    "accept": [],
+    "accepted_answers": [
+      "I could have helped you."
+    ],
+    "explanation_ru": "Форма: could have + V3.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "I could have help you.",
+      "I could of helped you.",
+      "I could have helped you.",
+      "I could helped you."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "I could have helped you."
+  },
+  {
+    "id": "MV-S15-017",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "She could have become a pilot.",
+    "accept": [],
+    "accepted_answers": [
+      "She could have become a pilot."
+    ],
+    "explanation_ru": "После could have нужна V3.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "She could have became a pilot.",
+      "She could of become a pilot.",
+      "She could have become a pilot.",
+      "She could has become a pilot."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "She could have become a pilot."
+  },
+  {
+    "id": "MV-S15-018",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "We could have won if we had played better.",
+    "accept": [],
+    "accepted_answers": [
+      "We could have won if we had played better."
+    ],
+    "explanation_ru": "Форма: could have + V3.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "We could have won if we would have played better.",
+      "We could have win if we had played better.",
+      "We could have won if we had played better.",
+      "We could have won if we had play better."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "We could have won if we had played better."
+  },
+  {
+    "id": "MV-S15-019",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She could has won the prize.",
+    "answer": "She could have won the prize.",
+    "accept": [
+      "She could've won the prize."
+    ],
+    "accepted_answers": [
+      "She could have won the prize.",
+      "She could've won the prize."
+    ],
+    "explanation_ru": "Нужно have, а не has.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S15-019-b1",
+        "answer": "She could have won the prize.",
+        "accepted_answers": [
+          "She could have won the prize.",
+          "She could've won the prize."
+        ],
+        "explanation_ru": "Нужно have, а не has.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S15",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S15",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "She could have won the prize."
+  },
+  {
+    "id": "MV-S15-020",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S15",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You had a free evening and enough money, but you stayed at home and did nothing. Which sentence fits?",
+    "answer": "I could have gone to the cinema.",
+    "accept": [],
+    "accepted_answers": [
+      "I could have gone to the cinema."
+    ],
+    "explanation_ru": "Возможность была, но не использована.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S15",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "I must have gone to the cinema.",
+      "I couldn't have gone to the cinema.",
+      "I can't have gone to the cinema.",
+      "I could have gone to the cinema."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "I could have gone to the cinema."
+  },
+  {
+    "id": "MV-S16-001",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If I had known about the party, I ___ come.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have + V3.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-001-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have + V3.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "would have",
+          "must have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "would have",
+      "must have",
+      "will have"
+    ],
+    "answer_text": "If I had known about the party, I would have come."
+  },
+  {
+    "id": "MV-S16-002",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If it had rained, we ___ stayed at home.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Результат нереального условия: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-002-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Результат нереального условия: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "must have",
+          "would have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "would have",
+      "will have"
+    ],
+    "answer_text": "If it had rained, we would have stayed at home."
+  },
+  {
+    "id": "MV-S16-003",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If she had studied, she ___ passed the test.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-003-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "would have",
+          "must have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "would have",
+      "must have",
+      "will have"
+    ],
+    "answer_text": "If she had studied, she would have passed the test."
+  },
+  {
+    "id": "MV-S16-004",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If he had been tired, he ___ gone to the gym. But he went.",
+    "answer": "wouldn't have",
+    "accept": [
+      "would not have"
+    ],
+    "accepted_answers": [
+      "wouldn't have",
+      "would not have"
+    ],
+    "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-004-b1",
+        "answer": "wouldn't have",
+        "accepted_answers": [
+          "wouldn't have",
+          "would not have"
+        ],
+        "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "wouldn't have",
+          "will have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "wouldn't have",
+      "will have",
+      "must have"
+    ],
+    "answer_text": "If he had been tired, he wouldn't have gone to the gym. But he went."
+  },
+  {
+    "id": "MV-S16-005",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If we had missed the bus, we ___ been late.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-005-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "must have",
+          "would have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "would have",
+      "will have"
+    ],
+    "answer_text": "If we had missed the bus, we would have been late."
+  },
+  {
+    "id": "MV-S16-006",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If you had told me the truth, I ___ been angry.",
+    "answer": "wouldn't have",
+    "accept": [
+      "would not have"
+    ],
+    "accepted_answers": [
+      "wouldn't have",
+      "would not have"
+    ],
+    "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-006-b1",
+        "answer": "wouldn't have",
+        "accepted_answers": [
+          "wouldn't have",
+          "would not have"
+        ],
+        "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "wouldn't have",
+          "must have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "wouldn't have",
+      "must have",
+      "will have"
+    ],
+    "answer_text": "If you had told me the truth, I wouldn't have been angry."
+  },
+  {
+    "id": "MV-S16-007",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If he had not broken his leg, he ___ played in the final.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-007-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "would have",
+          "will have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "would have",
+      "will have",
+      "must have"
+    ],
+    "answer_text": "If he had not broken his leg, he would have played in the final."
+  },
+  {
+    "id": "MV-S16-008",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If they had known the road was closed, they ___ taken another route.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-008-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "would have",
+          "will have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "would have",
+      "will have",
+      "must have"
+    ],
+    "answer_text": "If they had known the road was closed, they would have taken another route."
+  },
+  {
+    "id": "MV-S16-009",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She ___ bought the dress if it had been cheaper.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-009-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "will have",
+          "would have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "will have",
+      "would have",
+      "must have"
+    ],
+    "answer_text": "She would have bought the dress if it had been cheaper."
+  },
+  {
+    "id": "MV-S16-010",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If I had had a car, I ___ driven you to the airport.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-010-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "will have",
+          "would have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "will have",
+      "would have",
+      "must have"
+    ],
+    "answer_text": "If I had had a car, I would have driven you to the airport."
+  },
+  {
+    "id": "MV-S16-011",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "We ___ never met if I had not gone to that party.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-011-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "must have",
+          "would have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "would have",
+      "will have"
+    ],
+    "answer_text": "We would have never met if I had not gone to that party."
+  },
+  {
+    "id": "MV-S16-012",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If the weather had been bad, the match ___ been cancelled.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-012-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "would have",
+          "must have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "would have",
+      "must have",
+      "will have"
+    ],
+    "answer_text": "If the weather had been bad, the match would have been cancelled."
+  },
+  {
+    "id": "MV-S16-013",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If the manager had listened to the team, the project ___ failed.",
+    "answer": "wouldn't have",
+    "accept": [
+      "would not have"
+    ],
+    "accepted_answers": [
+      "wouldn't have",
+      "would not have"
+    ],
+    "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-013-b1",
+        "answer": "wouldn't have",
+        "accepted_answers": [
+          "wouldn't have",
+          "would not have"
+        ],
+        "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "wouldn't have",
+          "must have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "wouldn't have",
+      "must have",
+      "will have"
+    ],
+    "answer_text": "If the manager had listened to the team, the project wouldn't have failed."
+  },
+  {
+    "id": "MV-S16-014",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I ___ accepted the job if they had offered a higher salary.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-014-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "must have",
+          "would have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "would have",
+      "will have"
+    ],
+    "answer_text": "I would have accepted the job if they had offered a higher salary."
+  },
+  {
+    "id": "MV-S16-015",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Had she known how difficult it would be, she ___ ever agreed.",
+    "answer": "wouldn't have",
+    "accept": [
+      "would not have"
+    ],
+    "accepted_answers": [
+      "wouldn't have",
+      "would not have"
+    ],
+    "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-015-b1",
+        "answer": "wouldn't have",
+        "accepted_answers": [
+          "wouldn't have",
+          "would not have"
+        ],
+        "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "wouldn't have",
+          "must have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "wouldn't have",
+      "must have",
+      "will have"
+    ],
+    "answer_text": "Had she known how difficult it would be, she wouldn't have ever agreed."
+  },
+  {
+    "id": "MV-S16-016",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If the rescue team had arrived an hour later, the climbers ___ survived.",
+    "answer": "wouldn't have",
+    "accept": [
+      "would not have"
+    ],
+    "accepted_answers": [
+      "wouldn't have",
+      "would not have"
+    ],
+    "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-016-b1",
+        "answer": "wouldn't have",
+        "accepted_answers": [
+          "wouldn't have",
+          "would not have"
+        ],
+        "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "will have",
+          "must have",
+          "wouldn't have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "will have",
+      "must have",
+      "wouldn't have"
+    ],
+    "answer_text": "If the rescue team had arrived an hour later, the climbers wouldn't have survived."
+  },
+  {
+    "id": "MV-S16-017",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "They ___ won the match if their goalkeeper had not been injured.",
+    "answer": "would have",
+    "accept": [
+      "would've"
+    ],
+    "accepted_answers": [
+      "would have",
+      "would've"
+    ],
+    "explanation_ru": "Нереальное прошлое: would have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-017-b1",
+        "answer": "would have",
+        "accepted_answers": [
+          "would have",
+          "would've"
+        ],
+        "explanation_ru": "Нереальное прошлое: would have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "will have",
+          "would have",
+          "must have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "will have",
+      "would have",
+      "must have"
+    ],
+    "answer_text": "They would have won the match if their goalkeeper had not been injured."
+  },
+  {
+    "id": "MV-S16-018",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Without your help, I ___ finished the project on time.",
+    "answer": "wouldn't have",
+    "accept": [
+      "would not have"
+    ],
+    "accepted_answers": [
+      "wouldn't have",
+      "would not have"
+    ],
+    "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-018-b1",
+        "answer": "wouldn't have",
+        "accepted_answers": [
+          "wouldn't have",
+          "would not have"
+        ],
+        "explanation_ru": "Нереальное прошлое, отрицание: wouldn't have.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": [
+          "must have",
+          "wouldn't have",
+          "will have"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must have",
+      "wouldn't have",
+      "will have"
+    ],
+    "answer_text": "Without your help, I wouldn't have finished the project on time."
+  },
+  {
+    "id": "MV-S16-019",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "If I had known, I would have called you.",
+    "accept": [],
+    "accepted_answers": [
+      "If I had known, I would have called you."
+    ],
+    "explanation_ru": "Третий тип: had + V3, would have + V3.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "If I had known, I would have called you.",
+      "If I would have known, I would have called you.",
+      "If I had knew, I would have called you.",
+      "If I had known, I will have called you."
+    ],
+    "correct_option_index": 0,
+    "answer_text": "If I had known, I would have called you."
+  },
+  {
+    "id": "MV-S16-020",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "If she had left earlier, she would have caught the train.",
+    "accept": [],
+    "accepted_answers": [
+      "If she had left earlier, she would have caught the train."
+    ],
+    "explanation_ru": "Третий тип: had + V3, would have + V3.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "If she had leave earlier, she would have caught the train.",
+      "If she had left earlier, she would have caught the train.",
+      "If she would have left earlier, she would have caught the train.",
+      "If she had left earlier, she would have catch the train."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "If she had left earlier, she would have caught the train."
+  },
+  {
+    "id": "MV-S16-021",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "We wouldn't have won without you.",
+    "accept": [],
+    "accepted_answers": [
+      "We wouldn't have won without you."
+    ],
+    "explanation_ru": "Форма: wouldn't have + V3.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "We wouldn't has won without you.",
+      "We wouldn't have win without you.",
+      "We wouldn't have won without you.",
+      "We wouldn't of won without you."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "We wouldn't have won without you."
+  },
+  {
+    "id": "MV-S16-022",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "If he hadn't lied, she would have forgiven him.",
+    "accept": [],
+    "accepted_answers": [
+      "If he hadn't lied, she would have forgiven him."
+    ],
+    "explanation_ru": "Третий тип: hadn't + V3, would have + V3.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "If he wouldn't have lied, she would have forgiven him.",
+      "If he hadn't lied, she would have forgiven him.",
+      "If he hadn't lied, she would have forgive him.",
+      "If he hadn't lied, she would has forgiven him."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "If he hadn't lied, she would have forgiven him."
+  },
+  {
+    "id": "MV-S16-023",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "I would have helped if you had asked me.",
+    "accept": [],
+    "accepted_answers": [
+      "I would have helped if you had asked me."
+    ],
+    "explanation_ru": "После would have нужна V3; в условии had asked.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "I would have helped if you would have asked me.",
+      "I would of helped if you had asked me.",
+      "I would have helped if you had asked me.",
+      "I would helped if you had asked me."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "I would have helped if you had asked me."
+  },
+  {
+    "id": "MV-S16-024",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If I had known, I would have went.",
+    "answer": "If I had known, I would have gone.",
+    "accept": [
+      "If I had known, I would've gone.",
+      "If I had known, I'd have gone.",
+      "If I'd known, I would have gone.",
+      "If I'd known, I would've gone.",
+      "If I'd known, I'd have gone."
+    ],
+    "accepted_answers": [
+      "If I had known, I would have gone.",
+      "If I had known, I would've gone.",
+      "If I had known, I'd have gone.",
+      "If I'd known, I would have gone.",
+      "If I'd known, I would've gone.",
+      "If I'd known, I'd have gone."
+    ],
+    "explanation_ru": "После would have нужна V3: gone.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S16-024-b1",
+        "answer": "If I had known, I would have gone.",
+        "accepted_answers": [
+          "If I had known, I would have gone.",
+          "If I had known, I would've gone.",
+          "If I had known, I'd have gone.",
+          "If I'd known, I would have gone.",
+          "If I'd known, I would've gone.",
+          "If I'd known, I'd have gone."
+        ],
+        "explanation_ru": "После would have нужна V3: gone.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r5"
+        ],
+        "practice_tenses": [
+          "mv_S16",
+          "mv_R5"
+        ],
+        "tense_or_construction": "mv_S16",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "If I had known, I would have gone."
+  },
+  {
+    "id": "MV-S16-025",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S16",
+    "modal_rule": "R5",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You did not know about the exam, so you did not study and failed. Now you think about it. Which sentence fits?",
+    "answer": "If I had known, I would have studied.",
+    "accept": [],
+    "accepted_answers": [
+      "If I had known, I would have studied."
+    ],
+    "explanation_ru": "Нереальное прошлое: would have + V3.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "tags": [
+      "mv_S16",
+      "mv_R5"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r5"
+    ],
+    "options": [
+      "If I had known, I would have studied.",
+      "If I know, I would have studied.",
+      "If I had known, I would studied.",
+      "If I had known, I will have studied."
+    ],
+    "correct_option_index": 0,
+    "answer_text": "If I had known, I would have studied."
+  },
+  {
+    "id": "MV-S17-001",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Yesterday my brother ___ clean his room.",
+    "answer": "had to",
+    "accept": [],
+    "accepted_answers": [
+      "had to"
+    ],
+    "explanation_ru": "Прошлое: had to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-001-b1",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "Прошлое: had to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "must",
+          "has to",
+          "had to",
+          "will have to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must",
+      "has to",
+      "had to",
+      "will have to"
+    ],
+    "answer_text": "Yesterday my brother had to clean his room."
+  },
+  {
+    "id": "MV-S17-002",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Do we ___ wear a uniform at your school?",
+    "answer": "have to",
+    "accept": [],
+    "accepted_answers": [
+      "have to"
+    ],
+    "explanation_ru": "Вопрос с do: have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-002-b1",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "Вопрос с do: have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "have to",
+          "has to",
+          "must",
+          "had to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "have to",
+      "has to",
+      "must",
+      "had to"
+    ],
+    "answer_text": "Do we have to wear a uniform at your school?"
+  },
+  {
+    "id": "MV-S17-003",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She ___ get up at five every day. Her train leaves early.",
+    "answer": "has to",
+    "accept": [],
+    "accepted_answers": [
+      "has to"
+    ],
+    "explanation_ru": "С she: has to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-003-b1",
+        "answer": "has to",
+        "accepted_answers": [
+          "has to"
+        ],
+        "explanation_ru": "С she: has to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "will have to",
+          "have to",
+          "had to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "has to",
+      "will have to",
+      "have to",
+      "had to"
+    ],
+    "answer_text": "She has to get up at five every day. Her train leaves early."
+  },
+  {
+    "id": "MV-S17-004",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Tomorrow I ___ go to the dentist.",
+    "answer": "will have to",
+    "accept": [
+      "'ll have to"
+    ],
+    "accepted_answers": [
+      "will have to",
+      "'ll have to"
+    ],
+    "explanation_ru": "Будущее: will have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-004-b1",
+        "answer": "will have to",
+        "accepted_answers": [
+          "will have to",
+          "'ll have to"
+        ],
+        "explanation_ru": "Будущее: will have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "had to",
+          "mustn't",
+          "will have to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "has to",
+      "had to",
+      "mustn't",
+      "will have to"
+    ],
+    "answer_text": "Tomorrow I will have to go to the dentist."
+  },
+  {
+    "id": "MV-S17-005",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Students ___ not use phones in class.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Правило: must not.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-005-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Правило: must not.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "had to",
+          "will have to",
+          "must",
+          "has to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "had to",
+      "will have to",
+      "must",
+      "has to"
+    ],
+    "answer_text": "Students must not use phones in class."
+  },
+  {
+    "id": "MV-S17-006",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "My parents ___ work on Saturdays, so I stay with my grandma.",
+    "answer": "have to",
+    "accept": [],
+    "accepted_answers": [
+      "have to"
+    ],
+    "explanation_ru": "С parents: have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-006-b1",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "С parents: have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "have to",
+          "had to",
+          "will have to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "has to",
+      "have to",
+      "had to",
+      "will have to"
+    ],
+    "answer_text": "My parents have to work on Saturdays, so I stay with my grandma."
+  },
+  {
+    "id": "MV-S17-007",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Did you ___ stay late yesterday?",
+    "answer": "have to",
+    "accept": [],
+    "accepted_answers": [
+      "have to"
+    ],
+    "explanation_ru": "Вопрос в прошлом: Did you have to...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-007-b1",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "Вопрос в прошлом: Did you have to...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "have to",
+          "has to",
+          "had to",
+          "must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "have to",
+      "has to",
+      "had to",
+      "must"
+    ],
+    "answer_text": "Did you have to stay late yesterday?"
+  },
+  {
+    "id": "MV-S17-008",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I am sorry, but I really ___ go now. The bus leaves in five minutes.",
+    "answer": "have to",
+    "accept": [],
+    "accepted_answers": [
+      "have to"
+    ],
+    "explanation_ru": "С I: have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-008-b1",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "С I: have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "mustn't",
+          "had to",
+          "has to",
+          "have to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "mustn't",
+      "had to",
+      "has to",
+      "have to"
+    ],
+    "answer_text": "I am sorry, but I really have to go now. The bus leaves in five minutes."
+  },
+  {
+    "id": "MV-S17-009",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Last winter the pipes froze and we ___ call a plumber.",
+    "answer": "had to",
+    "accept": [],
+    "accepted_answers": [
+      "had to"
+    ],
+    "explanation_ru": "Прошлое: had to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-009-b1",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "Прошлое: had to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "had to",
+          "must",
+          "have to",
+          "has to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "had to",
+      "must",
+      "have to",
+      "has to"
+    ],
+    "answer_text": "Last winter the pipes froze and we had to call a plumber."
+  },
+  {
+    "id": "MV-S17-010",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You ___ not tell anyone. It is a secret.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Запрет: must not.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-010-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Запрет: must not.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "will have to",
+          "has to",
+          "must",
+          "had to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "will have to",
+      "has to",
+      "must",
+      "had to"
+    ],
+    "answer_text": "You must not tell anyone. It is a secret."
+  },
+  {
+    "id": "MV-S17-011",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Does he ___ pay for parking here?",
+    "answer": "have to",
+    "accept": [],
+    "accepted_answers": [
+      "have to"
+    ],
+    "explanation_ru": "Вопрос с does: have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-011-b1",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "Вопрос с does: have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "must",
+          "have to",
+          "had to",
+          "has to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must",
+      "have to",
+      "had to",
+      "has to"
+    ],
+    "answer_text": "Does he have to pay for parking here?"
+  },
+  {
+    "id": "MV-S17-012",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Nowadays, all drivers in my country ___ carry a first-aid kit by law.",
+    "answer": "have to",
+    "accept": [],
+    "accepted_answers": [
+      "have to"
+    ],
+    "explanation_ru": "С drivers: have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-012-b1",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "С drivers: have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "have to",
+          "had to",
+          "doesn't have to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "has to",
+      "have to",
+      "had to",
+      "doesn't have to"
+    ],
+    "answer_text": "Nowadays, all drivers in my country have to carry a first-aid kit by law."
+  },
+  {
+    "id": "MV-S17-013",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "My sister ___ practise the violin for two hours every day.",
+    "answer": "has to",
+    "accept": [],
+    "accepted_answers": [
+      "has to"
+    ],
+    "explanation_ru": "С sister: has to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-013-b1",
+        "answer": "has to",
+        "accepted_answers": [
+          "has to"
+        ],
+        "explanation_ru": "С sister: has to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "have to",
+          "will have to",
+          "had to",
+          "has to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "have to",
+      "will have to",
+      "had to",
+      "has to"
+    ],
+    "answer_text": "My sister has to practise the violin for two hours every day."
+  },
+  {
+    "id": "MV-S17-014",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If you miss the deadline, you ___ pay a fine.",
+    "answer": "will have to",
+    "accept": [
+      "'ll have to"
+    ],
+    "accepted_answers": [
+      "will have to",
+      "'ll have to"
+    ],
+    "explanation_ru": "Будущее: will have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-014-b1",
+        "answer": "will have to",
+        "accepted_answers": [
+          "will have to",
+          "'ll have to"
+        ],
+        "explanation_ru": "Будущее: will have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "had to",
+          "has to",
+          "will have to",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "had to",
+      "has to",
+      "will have to",
+      "mustn't"
+    ],
+    "answer_text": "If you miss the deadline, you will have to pay a fine."
+  },
+  {
+    "id": "MV-S17-015",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Why did she ___ leave so early?",
+    "answer": "have to",
+    "accept": [],
+    "accepted_answers": [
+      "have to"
+    ],
+    "explanation_ru": "Вопрос с did: have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-015-b1",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "Вопрос с did: have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "had to",
+          "must",
+          "has to",
+          "have to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "had to",
+      "must",
+      "has to",
+      "have to"
+    ],
+    "answer_text": "Why did she have to leave so early?"
+  },
+  {
+    "id": "MV-S17-016",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "When I was a child, I ___ eat everything on my plate.",
+    "answer": "had to",
+    "accept": [],
+    "accepted_answers": [
+      "had to"
+    ],
+    "explanation_ru": "Прошлое: had to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-016-b1",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "Прошлое: had to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "had to",
+          "must",
+          "have to",
+          "has to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "had to",
+      "must",
+      "have to",
+      "has to"
+    ],
+    "answer_text": "When I was a child, I had to eat everything on my plate."
+  },
+  {
+    "id": "MV-S17-017",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "They ___ not park here. It is private property.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Запрет: must not.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-017-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Запрет: must not.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "must",
+          "will have to",
+          "had to",
+          "has to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must",
+      "will have to",
+      "had to",
+      "has to"
+    ],
+    "answer_text": "They must not park here. It is private property."
+  },
+  {
+    "id": "MV-S17-018",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "All visitors ___ show their ID at the entrance. It is the company's policy.",
+    "answer": "have to",
+    "accept": [],
+    "accepted_answers": [
+      "have to"
+    ],
+    "explanation_ru": "С visitors: have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-018-b1",
+        "answer": "have to",
+        "accepted_answers": [
+          "have to"
+        ],
+        "explanation_ru": "С visitors: have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "had to",
+          "will have to",
+          "have to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "has to",
+      "had to",
+      "will have to",
+      "have to"
+    ],
+    "answer_text": "All visitors have to show their ID at the entrance. It is the company's policy."
+  },
+  {
+    "id": "MV-S17-019",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I am afraid the manager ___ approve every expense over a hundred pounds.",
+    "answer": "has to",
+    "accept": [],
+    "accepted_answers": [
+      "has to"
+    ],
+    "explanation_ru": "С manager: has to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-019-b1",
+        "answer": "has to",
+        "accepted_answers": [
+          "has to"
+        ],
+        "explanation_ru": "С manager: has to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "doesn't have to",
+          "have to",
+          "has to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "doesn't have to",
+      "have to",
+      "has to"
+    ],
+    "answer_text": "I am afraid the manager has to approve every expense over a hundred pounds."
+  },
+  {
+    "id": "MV-S17-020",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Applicants ___ submit their forms before midnight.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Формальное требование: must.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-020-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Формальное требование: must.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "must",
+          "doesn't have to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "has to",
+      "must",
+      "doesn't have to"
+    ],
+    "answer_text": "Applicants must submit their forms before midnight."
+  },
+  {
+    "id": "MV-S17-021",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "We ___ leave the hotel by noon yesterday, so we had no time for a swim.",
+    "answer": "had to",
+    "accept": [],
+    "accepted_answers": [
+      "had to"
+    ],
+    "explanation_ru": "Прошлое: had to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-021-b1",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "Прошлое: had to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "must",
+          "have to",
+          "has to",
+          "had to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must",
+      "have to",
+      "has to",
+      "had to"
+    ],
+    "answer_text": "We had to leave the hotel by noon yesterday, so we had no time for a swim."
+  },
+  {
+    "id": "MV-S17-022",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If prices keep rising, many families ___ cut their spending.",
+    "answer": "will have to",
+    "accept": [
+      "'ll have to"
+    ],
+    "accepted_answers": [
+      "will have to",
+      "'ll have to"
+    ],
+    "explanation_ru": "Будущее: will have to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-022-b1",
+        "answer": "will have to",
+        "accepted_answers": [
+          "will have to",
+          "'ll have to"
+        ],
+        "explanation_ru": "Будущее: will have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "mustn't",
+          "will have to",
+          "had to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "has to",
+      "mustn't",
+      "will have to",
+      "had to"
+    ],
+    "answer_text": "If prices keep rising, many families will have to cut their spending."
+  },
+  {
+    "id": "MV-S17-023",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You ___ be very careful with this equipment. It is extremely expensive.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Сильное предупреждение: must.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-023-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Сильное предупреждение: must.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "has to",
+          "doesn't have to",
+          "must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "has to",
+      "doesn't have to",
+      "must"
+    ],
+    "answer_text": "You must be very careful with this equipment. It is extremely expensive."
+  },
+  {
+    "id": "MV-S17-024",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Do you know why the director ___ resign last week?",
+    "answer": "had to",
+    "accept": [],
+    "accepted_answers": [
+      "had to"
+    ],
+    "explanation_ru": "Прошлое: had to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-024-b1",
+        "answer": "had to",
+        "accepted_answers": [
+          "had to"
+        ],
+        "explanation_ru": "Прошлое: had to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": [
+          "had to",
+          "have to",
+          "has to",
+          "must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "had to",
+      "have to",
+      "has to",
+      "must"
+    ],
+    "answer_text": "Do you know why the director had to resign last week?"
+  },
+  {
+    "id": "MV-S17-025",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "Do you have to wear a uniform?",
+    "accept": [],
+    "accepted_answers": [
+      "Do you have to wear a uniform?"
+    ],
+    "explanation_ru": "Вопрос: Do you have to...?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "Do you has to wear a uniform?",
+      "Do you must wear a uniform?",
+      "Do you have to wear a uniform?",
+      "Does you have to wear a uniform?"
+    ],
+    "correct_option_index": 2,
+    "answer_text": "Do you have to wear a uniform?"
+  },
+  {
+    "id": "MV-S17-026",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "She has to leave early.",
+    "accept": [],
+    "accepted_answers": [
+      "She has to leave early."
+    ],
+    "explanation_ru": "С she: has to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "She has leave early.",
+      "She haves to leave early.",
+      "She has to leave early.",
+      "She have to leave early."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "She has to leave early."
+  },
+  {
+    "id": "MV-S17-027",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "Yesterday we had to wait.",
+    "accept": [],
+    "accepted_answers": [
+      "Yesterday we had to wait."
+    ],
+    "explanation_ru": "Прошлое: had to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "Yesterday we had to wait.",
+      "Yesterday we musted wait.",
+      "Yesterday we had wait.",
+      "Yesterday we must wait."
+    ],
+    "correct_option_index": 0,
+    "answer_text": "Yesterday we had to wait."
+  },
+  {
+    "id": "MV-S17-028",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "Did he have to pay?",
+    "accept": [],
+    "accepted_answers": [
+      "Did he have to pay?"
+    ],
+    "explanation_ru": "Вопрос в прошлом: Did he have to...?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "Did he has to pay?",
+      "Did he must pay?",
+      "Did he have to pay?",
+      "Did he had to pay?"
+    ],
+    "correct_option_index": 2,
+    "answer_text": "Did he have to pay?"
+  },
+  {
+    "id": "MV-S17-029",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "You mustn't be late.",
+    "accept": [],
+    "accepted_answers": [
+      "You mustn't be late."
+    ],
+    "explanation_ru": "Отрицание: mustn't + глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "You mustn't be late.",
+      "You don't must be late.",
+      "You must be not late.",
+      "You mustn't to be late."
+    ],
+    "correct_option_index": 0,
+    "answer_text": "You mustn't be late."
+  },
+  {
+    "id": "MV-S17-030",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Choose the sentence with no mistake.",
+    "answer": "We will have to take a taxi if the bus does not come.",
+    "accept": [],
+    "accepted_answers": [
+      "We will have to take a taxi if the bus does not come."
+    ],
+    "explanation_ru": "Будущее: will have to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "We will to have take a taxi if the bus does not come.",
+      "We will have to take a taxi if the bus does not come.",
+      "We will must take a taxi if the bus does not come.",
+      "We will has to take a taxi if the bus does not come."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "We will have to take a taxi if the bus does not come."
+  },
+  {
+    "id": "MV-S17-031",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "Why did they have to leave so suddenly?",
+    "accept": [],
+    "accepted_answers": [
+      "Why did they have to leave so suddenly?"
+    ],
+    "explanation_ru": "Вопрос в прошлом: did + have to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "Why did they must leave so suddenly?",
+      "Why did they have to leave so suddenly?",
+      "Why they had to leave so suddenly?",
+      "Why did they had to leave so suddenly?"
+    ],
+    "correct_option_index": 1,
+    "answer_text": "Why did they have to leave so suddenly?"
+  },
+  {
+    "id": "MV-S17-032",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Do we must wear a uniform?",
+    "answer": "Do we have to wear a uniform?",
+    "accept": [
+      "Must we wear a uniform?"
+    ],
+    "accepted_answers": [
+      "Do we have to wear a uniform?",
+      "Must we wear a uniform?"
+    ],
+    "explanation_ru": "Вопрос с do: have to.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-032-b1",
+        "answer": "Do we have to wear a uniform?",
+        "accepted_answers": [
+          "Do we have to wear a uniform?",
+          "Must we wear a uniform?"
+        ],
+        "explanation_ru": "Вопрос с do: have to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Do we have to wear a uniform?"
+  },
+  {
+    "id": "MV-S17-033",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She have to work late tonight.",
+    "answer": "She has to work late tonight.",
+    "accept": [
+      "She must work late tonight."
+    ],
+    "accepted_answers": [
+      "She has to work late tonight.",
+      "She must work late tonight."
+    ],
+    "explanation_ru": "С she: has to.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S17-033-b1",
+        "answer": "She has to work late tonight.",
+        "accepted_answers": [
+          "She has to work late tonight.",
+          "She must work late tonight."
+        ],
+        "explanation_ru": "С she: has to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S17",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S17",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "She has to work late tonight."
+  },
+  {
+    "id": "MV-S17-034",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Your sister works every Saturday, and she does not like it. You explain her situation. Which sentence fits?",
+    "answer": "She has to work every Saturday.",
+    "accept": [],
+    "accepted_answers": [
+      "She has to work every Saturday."
+    ],
+    "explanation_ru": "С she: has to.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "She has work every Saturday.",
+      "She must to work every Saturday.",
+      "She have to work every Saturday.",
+      "She has to work every Saturday."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "She has to work every Saturday."
+  },
+  {
+    "id": "MV-S17-035",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S17",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Last month you needed to renew your passport. You describe the obligation in the past. Which sentence fits?",
+    "answer": "I had to renew my passport.",
+    "accept": [],
+    "accepted_answers": [
+      "I had to renew my passport."
+    ],
+    "explanation_ru": "Прошлое: had to.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S17",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "options": [
+      "I musted renew my passport.",
+      "I had to renew my passport.",
+      "I must renew my passport.",
+      "I have to renew my passport."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "I had to renew my passport."
+  },
+  {
+    "id": "MV-S18-001",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Stop! The bridge is closed. You ___ turn back.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Нет выбора: must.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-001-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Нет выбора: must.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "mustn't",
+          "can't",
+          "needn't",
+          "must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "mustn't",
+      "can't",
+      "needn't",
+      "must"
+    ],
+    "answer_text": "Stop! The bridge is closed. You must turn back."
+  },
+  {
+    "id": "MV-S18-002",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You look very tired. You ___ go to bed early tonight.",
+    "answer": "should",
+    "accept": [],
+    "accepted_answers": [
+      "should"
+    ],
+    "explanation_ru": "Совет: should.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-002-b1",
+        "answer": "should",
+        "accepted_answers": [
+          "should"
+        ],
+        "explanation_ru": "Совет: should.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "can't",
+          "mustn't",
+          "should",
+          "needn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "mustn't",
+      "should",
+      "needn't"
+    ],
+    "answer_text": "You look very tired. You should go to bed early tonight."
+  },
+  {
+    "id": "MV-S18-003",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "We have run out of milk. I ___ buy some on the way home.",
+    "answer": "need to",
+    "accept": [],
+    "accepted_answers": [
+      "need to"
+    ],
+    "explanation_ru": "Личная необходимость: need to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-003-b1",
+        "answer": "need to",
+        "accepted_answers": [
+          "need to"
+        ],
+        "explanation_ru": "Личная необходимость: need to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "need to",
+          "can't",
+          "mustn't",
+          "needn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "need to",
+      "can't",
+      "mustn't",
+      "needn't"
+    ],
+    "answer_text": "We have run out of milk. I need to buy some on the way home."
+  },
+  {
+    "id": "MV-S18-004",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Soldiers ___ obey orders. That is how the army works.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Строгое требование: must.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-004-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Строгое требование: must.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "can't",
+          "needn't",
+          "must",
+          "shouldn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "needn't",
+      "must",
+      "shouldn't"
+    ],
+    "answer_text": "Soldiers must obey orders. That is how the army works."
+  },
+  {
+    "id": "MV-S18-005",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "It is only a suggestion, but I think you ___ try the fish.",
+    "answer": "should",
+    "accept": [],
+    "accepted_answers": [
+      "should"
+    ],
+    "explanation_ru": "Совет: should.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-005-b1",
+        "answer": "should",
+        "accepted_answers": [
+          "should"
+        ],
+        "explanation_ru": "Совет: should.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "can't",
+          "needn't",
+          "should",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "needn't",
+      "should",
+      "mustn't"
+    ],
+    "answer_text": "It is only a suggestion, but I think you should try the fish."
+  },
+  {
+    "id": "MV-S18-006",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You ___ do your homework before you play. Mum's rule!",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Правило: must.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-006-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Правило: must.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "shouldn't",
+          "can't",
+          "must",
+          "needn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "shouldn't",
+      "can't",
+      "must",
+      "needn't"
+    ],
+    "answer_text": "You must do your homework before you play. Mum's rule!"
+  },
+  {
+    "id": "MV-S18-007",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I ___ wash my hair. It is really dirty.",
+    "answer": "need to",
+    "accept": [],
+    "accepted_answers": [
+      "need to"
+    ],
+    "explanation_ru": "Личная необходимость: need to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-007-b1",
+        "answer": "need to",
+        "accepted_answers": [
+          "need to"
+        ],
+        "explanation_ru": "Личная необходимость: need to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "needn't",
+          "mustn't",
+          "can't",
+          "need to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "needn't",
+      "mustn't",
+      "can't",
+      "need to"
+    ],
+    "answer_text": "I need to wash my hair. It is really dirty."
+  },
+  {
+    "id": "MV-S18-008",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "In my opinion, the government ___ spend more on schools, but it is up to them.",
+    "answer": "ought to",
+    "accept": [],
+    "accepted_answers": [
+      "ought to"
+    ],
+    "explanation_ru": "Мнение, не приказ: ought to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-008-b1",
+        "answer": "ought to",
+        "accepted_answers": [
+          "ought to"
+        ],
+        "explanation_ru": "Мнение, не приказ: ought to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "ought to",
+          "can't",
+          "mustn't",
+          "needn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "ought to",
+      "can't",
+      "mustn't",
+      "needn't"
+    ],
+    "answer_text": "In my opinion, the government ought to spend more on schools, but it is up to them."
+  },
+  {
+    "id": "MV-S18-009",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Doctor's orders: you ___ stay in bed for a week. There is no other option.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Строгое требование: must.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-009-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Строгое требование: must.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "needn't",
+          "mustn't",
+          "must",
+          "should"
+        ]
+      }
+    ],
+    "modal_options": [
+      "needn't",
+      "mustn't",
+      "must",
+      "should"
+    ],
+    "answer_text": "Doctor's orders: you must stay in bed for a week. There is no other option."
+  },
+  {
+    "id": "MV-S18-010",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You ___ be more careful with money, but of course it is your decision.",
+    "answer": "should",
+    "accept": [],
+    "accepted_answers": [
+      "should"
+    ],
+    "explanation_ru": "Совет, решать вам: should.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-010-b1",
+        "answer": "should",
+        "accepted_answers": [
+          "should"
+        ],
+        "explanation_ru": "Совет, решать вам: should.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "must",
+          "mustn't",
+          "needn't",
+          "should"
+        ]
+      }
+    ],
+    "modal_options": [
+      "must",
+      "mustn't",
+      "needn't",
+      "should"
+    ],
+    "answer_text": "You should be more careful with money, but of course it is your decision."
+  },
+  {
+    "id": "MV-S18-011",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I ___ finish this report today, or my boss will be angry.",
+    "answer": "need to",
+    "accept": [],
+    "accepted_answers": [
+      "need to"
+    ],
+    "explanation_ru": "Необходимость: need to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-011-b1",
+        "answer": "need to",
+        "accepted_answers": [
+          "need to"
+        ],
+        "explanation_ru": "Необходимость: need to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "needn't",
+          "mustn't",
+          "can't",
+          "need to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "needn't",
+      "mustn't",
+      "can't",
+      "need to"
+    ],
+    "answer_text": "I need to finish this report today, or my boss will be angry."
+  },
+  {
+    "id": "MV-S18-012",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Visitors ___ not touch the exhibits. This is strictly forbidden.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Строгий запрет: must not.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-012-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Строгий запрет: must not.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "need to",
+          "have to",
+          "must",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "need to",
+      "have to",
+      "must",
+      "could"
+    ],
+    "answer_text": "Visitors must not touch the exhibits. This is strictly forbidden."
+  },
+  {
+    "id": "MV-S18-013",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If you want to lose weight, you ___ eat less sugar. It really helps.",
+    "answer": "ought to",
+    "accept": [],
+    "accepted_answers": [
+      "ought to"
+    ],
+    "explanation_ru": "Рекомендация: ought to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-013-b1",
+        "answer": "ought to",
+        "accepted_answers": [
+          "ought to"
+        ],
+        "explanation_ru": "Рекомендация: ought to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "can't",
+          "needn't",
+          "mustn't",
+          "ought to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "needn't",
+      "mustn't",
+      "ought to"
+    ],
+    "answer_text": "If you want to lose weight, you ought to eat less sugar. It really helps."
+  },
+  {
+    "id": "MV-S18-014",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You ___ be 18 to enter the club. It is the rule.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Правило: must.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-014-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Правило: must.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "ought to",
+          "needn't",
+          "must",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "ought to",
+      "needn't",
+      "must",
+      "could"
+    ],
+    "answer_text": "You must be 18 to enter the club. It is the rule."
+  },
+  {
+    "id": "MV-S18-015",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S18",
+    "modal_rule": "R6",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Strictly speaking, you ___ report any accident to the authorities within 24 hours. It is a legal requirement.",
+    "answer": "must",
+    "accept": [],
+    "accepted_answers": [
+      "must"
+    ],
+    "explanation_ru": "Закон: must.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "tags": [
+      "mv_S18",
+      "mv_R6"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r6"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S18-015-b1",
+        "answer": "must",
+        "accepted_answers": [
+          "must"
+        ],
+        "explanation_ru": "Закон: must.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r6"
+        ],
+        "practice_tenses": [
+          "mv_S18",
+          "mv_R6"
+        ],
+        "tense_or_construction": "mv_S18",
+        "modal_options": [
+          "needn't",
+          "could",
+          "ought to",
+          "must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "needn't",
+      "could",
+      "ought to",
+      "must"
+    ],
+    "answer_text": "Strictly speaking, you must report any accident to the authorities within 24 hours. It is a legal requirement."
+  }
+]

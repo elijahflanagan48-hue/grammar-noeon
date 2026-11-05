@@ -1,0 +1,5798 @@
+[
+  {
+    "id": "MV-S04-001",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "My little sister ___ read already. She is only four!",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Умение сейчас: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-001-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Умение сейчас: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can",
+          "to be able to",
+          "can't",
+          "couldn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "to be able to",
+      "can't",
+      "couldn't"
+    ],
+    "answer_text": "My little sister can read already. She is only four!"
+  },
+  {
+    "id": "MV-S04-002",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I ___ lift this box. It is too heavy.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "Не получается поднять: can't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-002-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Не получается поднять: can't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can't",
+          "to be able to",
+          "can",
+          "being able to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "to be able to",
+      "can",
+      "being able to"
+    ],
+    "answer_text": "I can't lift this box. It is too heavy."
+  },
+  {
+    "id": "MV-S04-003",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Most birds ___ fly, but penguins cannot.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Общая способность сейчас: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-003-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Общая способность сейчас: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "to be able to",
+          "can",
+          "can't",
+          "couldn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "to be able to",
+      "can",
+      "can't",
+      "couldn't"
+    ],
+    "answer_text": "Most birds can fly, but penguins cannot."
+  },
+  {
+    "id": "MV-S04-004",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Sorry, I ___ hear you. The music is too loud.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "Из-за шума не слышно: can't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-004-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Из-за шума не слышно: can't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can",
+          "to be able to",
+          "can't",
+          "being able to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "to be able to",
+      "can't",
+      "being able to"
+    ],
+    "answer_text": "Sorry, I can't hear you. The music is too loud."
+  },
+  {
+    "id": "MV-S04-005",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "He ___ ride a bike without help now. He learned last week.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Теперь умеет: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-005-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Теперь умеет: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can",
+          "couldn't",
+          "can't",
+          "been"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "couldn't",
+      "can't",
+      "been"
+    ],
+    "answer_text": "He can ride a bike without help now. He learned last week."
+  },
+  {
+    "id": "MV-S04-006",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Look! The baby ___ stand up all by herself.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Умение сейчас: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-006-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Умение сейчас: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "couldn't",
+          "can't",
+          "can",
+          "to be able to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "couldn't",
+      "can't",
+      "can",
+      "to be able to"
+    ],
+    "answer_text": "Look! The baby can stand up all by herself."
+  },
+  {
+    "id": "MV-S04-007",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Dolphins ___ talk to each other with sounds.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Общая способность: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-007-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Общая способность: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can",
+          "can't",
+          "being able to",
+          "couldn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "can't",
+      "being able to",
+      "couldn't"
+    ],
+    "answer_text": "Dolphins can talk to each other with sounds."
+  },
+  {
+    "id": "MV-S04-008",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I would love ___ speak Chinese.",
+    "answer": "to be able to",
+    "accept": [],
+    "accepted_answers": [
+      "to be able to"
+    ],
+    "explanation_ru": "После would love нужна форма to be able to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-008-b1",
+        "answer": "to be able to",
+        "accepted_answers": [
+          "to be able to"
+        ],
+        "explanation_ru": "После would love нужна форма to be able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "to can",
+          "being able to",
+          "to be able to",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "to can",
+      "being able to",
+      "to be able to",
+      "can"
+    ],
+    "answer_text": "I would love to be able to speak Chinese."
+  },
+  {
+    "id": "MV-S04-009",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I haven't ___ able to reach him all day.",
+    "answer": "been",
+    "accept": [],
+    "accepted_answers": [
+      "been"
+    ],
+    "explanation_ru": "С haven't нужна форма been able to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-009-b1",
+        "answer": "been",
+        "accepted_answers": [
+          "been"
+        ],
+        "explanation_ru": "С haven't нужна форма been able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "being",
+          "be",
+          "been",
+          "was"
+        ]
+      }
+    ],
+    "modal_options": [
+      "being",
+      "be",
+      "been",
+      "was"
+    ],
+    "answer_text": "I haven't been able to reach him all day."
+  },
+  {
+    "id": "MV-S04-010",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She is a pilot, so she ___ fly a plane.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Профессиональное умение: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-010-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Профессиональное умение: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can't",
+          "can",
+          "to be able to",
+          "being able to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "can",
+      "to be able to",
+      "being able to"
+    ],
+    "answer_text": "She is a pilot, so she can fly a plane."
+  },
+  {
+    "id": "MV-S04-011",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "After the accident, he ___ walk without a stick for a long time.",
+    "answer": "couldn't",
+    "accept": [
+      "could not"
+    ],
+    "accepted_answers": [
+      "couldn't",
+      "could not"
+    ],
+    "explanation_ru": "Прошлое время: couldn't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-011-b1",
+        "answer": "couldn't",
+        "accepted_answers": [
+          "couldn't",
+          "could not"
+        ],
+        "explanation_ru": "Прошлое время: couldn't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "couldn't",
+          "to be able to",
+          "can't",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "couldn't",
+      "to be able to",
+      "can't",
+      "can"
+    ],
+    "answer_text": "After the accident, he couldn't walk without a stick for a long time."
+  },
+  {
+    "id": "MV-S04-012",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Tom is shy, but he ___ speak in front of a crowd when he has to.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Умение сейчас: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-012-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Умение сейчас: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "being able to",
+          "can",
+          "can't",
+          "couldn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "being able to",
+      "can",
+      "can't",
+      "couldn't"
+    ],
+    "answer_text": "Tom is shy, but he can speak in front of a crowd when he has to."
+  },
+  {
+    "id": "MV-S04-013",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "My phone is very old, so it ___ take good photos.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "Старый телефон не умеет: can't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-013-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Старый телефон не умеет: can't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can",
+          "being able to",
+          "to be able to",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "being able to",
+      "to be able to",
+      "can't"
+    ],
+    "answer_text": "My phone is very old, so it can't take good photos."
+  },
+  {
+    "id": "MV-S04-014",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She speaks Spanish well, but she ___ write it.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "Противопоставление: не умеет писать.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-014-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Противопоставление: не умеет писать.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can't",
+          "can",
+          "being able to",
+          "to be able to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "can",
+      "being able to",
+      "to be able to"
+    ],
+    "answer_text": "She speaks Spanish well, but she can't write it."
+  },
+  {
+    "id": "MV-S04-015",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Are you able ___ help me with this bag?",
+    "answer": "to",
+    "accept": [],
+    "accepted_answers": [
+      "to"
+    ],
+    "explanation_ru": "После able нужно to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-015-b1",
+        "answer": "to",
+        "accepted_answers": [
+          "to"
+        ],
+        "explanation_ru": "После able нужно to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can",
+          "be",
+          "been",
+          "to"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "be",
+      "been",
+      "to"
+    ],
+    "answer_text": "Are you able to help me with this bag?"
+  },
+  {
+    "id": "MV-S04-016",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Only a few people in the world ___ solve this puzzle.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Мало кто умеет: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-016-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Мало кто умеет: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "couldn't",
+          "being able to",
+          "can't",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "couldn't",
+      "being able to",
+      "can't",
+      "can"
+    ],
+    "answer_text": "Only a few people in the world can solve this puzzle."
+  },
+  {
+    "id": "MV-S04-017",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Joe is not able ___ come to the party.",
+    "answer": "to",
+    "accept": [],
+    "accepted_answers": [
+      "to"
+    ],
+    "explanation_ru": "После able нужно to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-017-b1",
+        "answer": "to",
+        "accepted_answers": [
+          "to"
+        ],
+        "explanation_ru": "После able нужно to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "been",
+          "to",
+          "being",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "been",
+      "to",
+      "being",
+      "can"
+    ],
+    "answer_text": "Joe is not able to come to the party."
+  },
+  {
+    "id": "MV-S04-018",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Being able ___ drive gave her a new sense of freedom.",
+    "answer": "to",
+    "accept": [],
+    "accepted_answers": [
+      "to"
+    ],
+    "explanation_ru": "После being able нужно to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-018-b1",
+        "answer": "to",
+        "accepted_answers": [
+          "to"
+        ],
+        "explanation_ru": "После being able нужно to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "to",
+          "been",
+          "be",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "to",
+      "been",
+      "be",
+      "can"
+    ],
+    "answer_text": "Being able to drive gave her a new sense of freedom."
+  },
+  {
+    "id": "MV-S04-019",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I would rather ___ able to speak three languages than own a villa.",
+    "answer": "be",
+    "accept": [],
+    "accepted_answers": [
+      "be"
+    ],
+    "explanation_ru": "После would rather голая форма be.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-019-b1",
+        "answer": "be",
+        "accepted_answers": [
+          "be"
+        ],
+        "explanation_ru": "После would rather голая форма be.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "be",
+          "to be",
+          "being",
+          "been"
+        ]
+      }
+    ],
+    "modal_options": [
+      "be",
+      "to be",
+      "being",
+      "been"
+    ],
+    "answer_text": "I would rather be able to speak three languages than own a villa."
+  },
+  {
+    "id": "MV-S04-020",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Although the trail is steep, even young children ___ walk it with some help.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Общая способность: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-020-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Общая способность: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "can",
+          "can't",
+          "being able to",
+          "couldn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "can't",
+      "being able to",
+      "couldn't"
+    ],
+    "answer_text": "Although the trail is steep, even young children can walk it with some help."
+  },
+  {
+    "id": "MV-S04-021",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "It is frustrating not ___ able to find the file after spending an hour on it.",
+    "answer": "being",
+    "accept": [],
+    "accepted_answers": [
+      "being"
+    ],
+    "explanation_ru": "После not нужна форма being able to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-021-b1",
+        "answer": "being",
+        "accepted_answers": [
+          "being"
+        ],
+        "explanation_ru": "После not нужна форма being able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "was",
+          "be",
+          "being",
+          "been"
+        ]
+      }
+    ],
+    "modal_options": [
+      "was",
+      "be",
+      "being",
+      "been"
+    ],
+    "answer_text": "It is frustrating not being able to find the file after spending an hour on it."
+  },
+  {
+    "id": "MV-S04-022",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I do not know why the app ___ open on my old phone. It worked yesterday.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "Не открывается: can't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-022-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Не открывается: can't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "being",
+          "been",
+          "can't",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "being",
+      "been",
+      "can't",
+      "can"
+    ],
+    "answer_text": "I do not know why the app can't open on my old phone. It worked yesterday."
+  },
+  {
+    "id": "MV-S04-023",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "The new software means that doctors ___ now check test results from home.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Теперь могут: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-023-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Теперь могут: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "being able to",
+          "couldn't",
+          "can't",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "being able to",
+      "couldn't",
+      "can't",
+      "can"
+    ],
+    "answer_text": "The new software means that doctors can now check test results from home."
+  },
+  {
+    "id": "MV-S04-024",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She was thrilled to have finally ___ able to buy her own flat.",
+    "answer": "been",
+    "accept": [],
+    "accepted_answers": [
+      "been"
+    ],
+    "explanation_ru": "После have finally нужна форма been able to.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-024-b1",
+        "answer": "been",
+        "accepted_answers": [
+          "been"
+        ],
+        "explanation_ru": "После have finally нужна форма been able to.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": [
+          "being",
+          "was",
+          "been",
+          "be"
+        ]
+      }
+    ],
+    "modal_options": [
+      "being",
+      "was",
+      "been",
+      "be"
+    ],
+    "answer_text": "She was thrilled to have finally been able to buy her own flat."
+  },
+  {
+    "id": "MV-S04-025",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "My sister can play the violin.",
+    "accept": [],
+    "accepted_answers": [
+      "My sister can play the violin."
+    ],
+    "explanation_ru": "У can нет -s, и после него голый глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "My sister is can play the violin.",
+      "My sister can plays the violin.",
+      "My sister can play the violin.",
+      "My sister cans play the violin."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "My sister can play the violin."
+  },
+  {
+    "id": "MV-S04-026",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "I can't speak French.",
+    "accept": [],
+    "accepted_answers": [
+      "I can't speak French."
+    ],
+    "explanation_ru": "Отрицание образует сам can't.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "I not can speak French.",
+      "I can't to speak French.",
+      "I can't speak French.",
+      "I don't can speak French."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "I can't speak French."
+  },
+  {
+    "id": "MV-S04-027",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Choose the correct sentence.",
+    "answer": "I would love to be able to fly.",
+    "accept": [],
+    "accepted_answers": [
+      "I would love to be able to fly."
+    ],
+    "explanation_ru": "После to нужна форма be able to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "I would love to being able to fly.",
+      "I would love to be able to fly.",
+      "I would love can fly.",
+      "I would love to can fly."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "I would love to be able to fly."
+  },
+  {
+    "id": "MV-S04-028",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "He hasn't been able to sleep for days.",
+    "accept": [],
+    "accepted_answers": [
+      "He hasn't been able to sleep for days."
+    ],
+    "explanation_ru": "С hasn't нужно been able to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "He hasn't been able to sleep for days.",
+      "He hasn't can sleep for days.",
+      "He hasn't be able to sleep for days.",
+      "He doesn't been able to sleep for days."
+    ],
+    "correct_option_index": 0,
+    "answer_text": "He hasn't been able to sleep for days."
+  },
+  {
+    "id": "MV-S04-029",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "Are you able to swim?",
+    "accept": [],
+    "accepted_answers": [
+      "Are you able to swim?"
+    ],
+    "explanation_ru": "Вопрос: Are you able to + глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Do you able to swim?",
+      "Are you can swim?",
+      "Are you able swim?",
+      "Are you able to swim?"
+    ],
+    "correct_option_index": 3,
+    "answer_text": "Are you able to swim?"
+  },
+  {
+    "id": "MV-S04-030",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Choose the sentence with no mistake.",
+    "answer": "Being able to speak English has helped her career.",
+    "accept": [],
+    "accepted_answers": [
+      "Being able to speak English has helped her career."
+    ],
+    "explanation_ru": "После being нужно able to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Being can speak English has helped her career.",
+      "Being able to speak English has helped her career.",
+      "Be able to speak English has helped her career.",
+      "To can speak English has helped her career."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "Being able to speak English has helped her career."
+  },
+  {
+    "id": "MV-S04-031",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "Not being able to see the board, he moved closer.",
+    "accept": [],
+    "accepted_answers": [
+      "Not being able to see the board, he moved closer."
+    ],
+    "explanation_ru": "Причастная форма: not being able to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Not being able to see the board, he moved closer.",
+      "Not can see the board, he moved closer.",
+      "Not to can see the board, he moved closer.",
+      "Not be able to see the board, he moved closer."
+    ],
+    "correct_option_index": 0,
+    "answer_text": "Not being able to see the board, he moved closer."
+  },
+  {
+    "id": "MV-S04-032",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I am not can to find my keys.",
+    "answer": "I can't find my keys.",
+    "accept": [
+      "I am not able to find my keys.",
+      "I can not find my keys.",
+      "I cannot find my keys."
+    ],
+    "accepted_answers": [
+      "I can't find my keys.",
+      "I am not able to find my keys.",
+      "I can not find my keys.",
+      "I cannot find my keys."
+    ],
+    "explanation_ru": "Правильно: can't + глагол.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-032-b1",
+        "answer": "I can't find my keys.",
+        "accepted_answers": [
+          "I can't find my keys.",
+          "I am not able to find my keys.",
+          "I can not find my keys.",
+          "I cannot find my keys."
+        ],
+        "explanation_ru": "Правильно: can't + глагол.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "I can't find my keys."
+  },
+  {
+    "id": "MV-S04-033",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Being can to drive made her feel free.",
+    "answer": "Being able to drive made her feel free.",
+    "accept": [],
+    "accepted_answers": [
+      "Being able to drive made her feel free."
+    ],
+    "explanation_ru": "После being нужно able to, не can.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S04-033-b1",
+        "answer": "Being able to drive made her feel free.",
+        "accepted_answers": [
+          "Being able to drive made her feel free."
+        ],
+        "explanation_ru": "После being нужно able to, не can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S04",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S04",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Being able to drive made her feel free."
+  },
+  {
+    "id": "MV-S04-034",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "A friend asks you to carry a very heavy box. You try, but it is too heavy. Which sentence fits?",
+    "answer": "Sorry, I can't lift it.",
+    "accept": [],
+    "accepted_answers": [
+      "Sorry, I can't lift it."
+    ],
+    "explanation_ru": "Отрицание: can't + глагол.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Sorry, I am not can lift it.",
+      "Sorry, I can't lift it.",
+      "Sorry, I can't to lift it.",
+      "Sorry, I don't can lift it."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "Sorry, I can't lift it."
+  },
+  {
+    "id": "MV-S04-035",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S04",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Your cousin is five and has just learned to ride a bike. Describe her ability now. Which sentence fits?",
+    "answer": "She can ride a bike now.",
+    "accept": [],
+    "accepted_answers": [
+      "She can ride a bike now."
+    ],
+    "explanation_ru": "У can нет -s, после него голый глагол.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S04",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "She is can ride a bike now.",
+      "She can rides a bike now.",
+      "She cans ride a bike now.",
+      "She can ride a bike now."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "She can ride a bike now."
+  },
+  {
+    "id": "MV-S05-001",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Sorry, you ___ park here. This place is for staff only.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "Парковка не разрешена: can't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-001-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Парковка не разрешена: can't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may",
+          "can",
+          "could",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may",
+      "can",
+      "could",
+      "can't"
+    ],
+    "answer_text": "Sorry, you can't park here. This place is for staff only."
+  },
+  {
+    "id": "MV-S05-002",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Students ___ use dictionaries in the exam. The teacher has allowed it.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Разрешено: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-002-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Разрешено: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may not",
+          "can",
+          "mustn't",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may not",
+      "can",
+      "mustn't",
+      "can't"
+    ],
+    "answer_text": "Students can use dictionaries in the exam. The teacher has allowed it."
+  },
+  {
+    "id": "MV-S05-003",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "When I was a child, I ___ stay up late only on Fridays.",
+    "answer": "could",
+    "accept": [],
+    "accepted_answers": [
+      "could"
+    ],
+    "explanation_ru": "Разрешение в прошлом: could.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-003-b1",
+        "answer": "could",
+        "accepted_answers": [
+          "could"
+        ],
+        "explanation_ru": "Разрешение в прошлом: could.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "mustn't",
+          "could",
+          "can",
+          "may"
+        ]
+      }
+    ],
+    "modal_options": [
+      "mustn't",
+      "could",
+      "can",
+      "may"
+    ],
+    "answer_text": "When I was a child, I could stay up late only on Fridays."
+  },
+  {
+    "id": "MV-S05-004",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence asks for permission correctly?",
+    "answer": "May I come in?",
+    "accept": [],
+    "accepted_answers": [
+      "May I come in?"
+    ],
+    "explanation_ru": "Вопрос с may: May I + глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "I may to come in?",
+      "Do I may come in?",
+      "You may I come in?",
+      "May I come in?"
+    ],
+    "correct_option_index": 3,
+    "answer_text": "May I come in?"
+  },
+  {
+    "id": "MV-S05-005",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "A teacher tells her students they are free to leave the room during the break. Which sentence fits?",
+    "answer": "You can leave the room during the break.",
+    "accept": [],
+    "accepted_answers": [
+      "You can leave the room during the break."
+    ],
+    "explanation_ru": "Разрешено выйти: can.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "You can't leave the room during the break.",
+      "You may not leave the room during the break.",
+      "You can leave the room during the break.",
+      "You mustn't leave the room during the break."
+    ],
+    "correct_option_index": 2,
+    "answer_text": "You can leave the room during the break."
+  },
+  {
+    "id": "MV-S05-006",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Is it OK if I sit here? A: Yes, you ___.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Разрешение дают через can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-006-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Разрешение дают через can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can",
+          "may not",
+          "mustn't",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "may not",
+      "mustn't",
+      "can't"
+    ],
+    "answer_text": "Is it OK if I sit here? A: Yes, you can."
+  },
+  {
+    "id": "MV-S05-007",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Dad says I ___ watch TV after I finish my homework.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Папа разрешает: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-007-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Папа разрешает: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may not",
+          "can",
+          "couldn't",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may not",
+      "can",
+      "couldn't",
+      "mustn't"
+    ],
+    "answer_text": "Dad says I can watch TV after I finish my homework."
+  },
+  {
+    "id": "MV-S05-008",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Sorry, you ___ take photos in the museum. It is not allowed.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "Запрещено: can't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-008-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Запрещено: can't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can't",
+          "can",
+          "may",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "can",
+      "may",
+      "could"
+    ],
+    "answer_text": "Sorry, you can't take photos in the museum. It is not allowed."
+  },
+  {
+    "id": "MV-S05-009",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Children under twelve ___ enter the cinema without an adult. It is the rule.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "По правилу не разрешено: can't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-009-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "По правилу не разрешено: can't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may",
+          "can't",
+          "can",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may",
+      "can't",
+      "can",
+      "could"
+    ],
+    "answer_text": "Children under twelve can't enter the cinema without an adult. It is the rule."
+  },
+  {
+    "id": "MV-S05-010",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You ___ use my laptop, but please be careful.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Разрешаю пользоваться: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-010-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Разрешаю пользоваться: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can",
+          "mustn't",
+          "may not",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "mustn't",
+      "may not",
+      "can't"
+    ],
+    "answer_text": "You can use my laptop, but please be careful."
+  },
+  {
+    "id": "MV-S05-011",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "No, you ___ go out tonight. You have homework.",
+    "answer": "can't",
+    "accept": [
+      "can not",
+      "cannot"
+    ],
+    "accepted_answers": [
+      "can't",
+      "can not",
+      "cannot"
+    ],
+    "explanation_ru": "Не разрешаю: can't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-011-b1",
+        "answer": "can't",
+        "accepted_answers": [
+          "can't",
+          "can not",
+          "cannot"
+        ],
+        "explanation_ru": "Не разрешаю: can't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can",
+          "may",
+          "can't",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "may",
+      "can't",
+      "could"
+    ],
+    "answer_text": "No, you can't go out tonight. You have homework."
+  },
+  {
+    "id": "MV-S05-012",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "My teacher says we ___ use dictionaries in the test, so I will bring mine.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Разрешено пользоваться словарём: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-012-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Разрешено пользоваться словарём: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may not",
+          "mustn't",
+          "can",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may not",
+      "mustn't",
+      "can",
+      "can't"
+    ],
+    "answer_text": "My teacher says we can use dictionaries in the test, so I will bring mine."
+  },
+  {
+    "id": "MV-S05-013",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "When I was at school, we ___ wear jewellery. It was forbidden.",
+    "answer": "couldn't",
+    "accept": [
+      "could not"
+    ],
+    "accepted_answers": [
+      "couldn't",
+      "could not"
+    ],
+    "explanation_ru": "Запрет в прошлом: couldn't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-013-b1",
+        "answer": "couldn't",
+        "accepted_answers": [
+          "couldn't",
+          "could not"
+        ],
+        "explanation_ru": "Запрет в прошлом: couldn't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "could",
+          "couldn't",
+          "may",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "could",
+      "couldn't",
+      "may",
+      "can"
+    ],
+    "answer_text": "When I was at school, we couldn't wear jewellery. It was forbidden."
+  },
+  {
+    "id": "MV-S05-014",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "In my grandmother's house, we ___ play outside only after dinner.",
+    "answer": "could",
+    "accept": [],
+    "accepted_answers": [
+      "could"
+    ],
+    "explanation_ru": "Разрешение в прошлом: could.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-014-b1",
+        "answer": "could",
+        "accepted_answers": [
+          "could"
+        ],
+        "explanation_ru": "Разрешение в прошлом: could.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "couldn't",
+          "can",
+          "may",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "couldn't",
+      "can",
+      "may",
+      "could"
+    ],
+    "answer_text": "In my grandmother's house, we could play outside only after dinner."
+  },
+  {
+    "id": "MV-S05-015",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Passengers ___ use their phones during take-off. Please switch them off.",
+    "answer": "may not",
+    "accept": [],
+    "accepted_answers": [
+      "may not"
+    ],
+    "explanation_ru": "Формальный запрет: may not.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-015-b1",
+        "answer": "may not",
+        "accepted_answers": [
+          "may not"
+        ],
+        "explanation_ru": "Формальный запрет: may not.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can",
+          "may",
+          "may not",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "may",
+      "may not",
+      "could"
+    ],
+    "answer_text": "Passengers may not use their phones during take-off. Please switch them off."
+  },
+  {
+    "id": "MV-S05-016",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Visitors ___ park in the staff car park, but only on Sundays.",
+    "answer": "may",
+    "accept": [],
+    "accepted_answers": [
+      "may"
+    ],
+    "explanation_ru": "Формальное разрешение: may.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-016-b1",
+        "answer": "may",
+        "accepted_answers": [
+          "may"
+        ],
+        "explanation_ru": "Формальное разрешение: may.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may not",
+          "mustn't",
+          "can't",
+          "may"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may not",
+      "mustn't",
+      "can't",
+      "may"
+    ],
+    "answer_text": "Visitors may park in the staff car park, but only on Sundays."
+  },
+  {
+    "id": "MV-S05-017",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I am sorry, but you ___ leave before the lesson ends.",
+    "answer": "may not",
+    "accept": [],
+    "accepted_answers": [
+      "may not"
+    ],
+    "explanation_ru": "Формальный отказ: may not.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-017-b1",
+        "answer": "may not",
+        "accepted_answers": [
+          "may not"
+        ],
+        "explanation_ru": "Формальный отказ: may not.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may not",
+          "could",
+          "may",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may not",
+      "could",
+      "may",
+      "can"
+    ],
+    "answer_text": "I am sorry, but you may not leave before the lesson ends."
+  },
+  {
+    "id": "MV-S05-018",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "She asked if she ___ borrow my notes.",
+    "answer": "could",
+    "accept": [],
+    "accepted_answers": [
+      "could"
+    ],
+    "explanation_ru": "Косвенная речь о просьбе: could.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-018-b1",
+        "answer": "could",
+        "accepted_answers": [
+          "could"
+        ],
+        "explanation_ru": "Косвенная речь о просьбе: could.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can't",
+          "may not",
+          "could",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can't",
+      "may not",
+      "could",
+      "mustn't"
+    ],
+    "answer_text": "She asked if she could borrow my notes."
+  },
+  {
+    "id": "MV-S05-019",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Students over eighteen ___ vote in the school election, but younger ones cannot.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Старшие имеют право голосовать: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-019-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Старшие имеют право голосовать: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can",
+          "mustn't",
+          "can't",
+          "may not"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "mustn't",
+      "can't",
+      "may not"
+    ],
+    "answer_text": "Students over eighteen can vote in the school election, but younger ones cannot."
+  },
+  {
+    "id": "MV-S05-020",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "A: Is it all right if I take a break? B: Of course you ___.",
+    "answer": "may",
+    "accept": [],
+    "accepted_answers": [
+      "may"
+    ],
+    "explanation_ru": "Вежливое разрешение: may.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-020-b1",
+        "answer": "may",
+        "accepted_answers": [
+          "may"
+        ],
+        "explanation_ru": "Вежливое разрешение: may.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may not",
+          "can't",
+          "may",
+          "mustn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may not",
+      "can't",
+      "may",
+      "mustn't"
+    ],
+    "answer_text": "A: Is it all right if I take a break? B: Of course you may."
+  },
+  {
+    "id": "MV-S05-021",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "In 1900, women ___ vote in this country, but things have changed.",
+    "answer": "couldn't",
+    "accept": [
+      "could not"
+    ],
+    "accepted_answers": [
+      "couldn't",
+      "could not"
+    ],
+    "explanation_ru": "Запрет в прошлом: couldn't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-021-b1",
+        "answer": "couldn't",
+        "accepted_answers": [
+          "couldn't",
+          "could not"
+        ],
+        "explanation_ru": "Запрет в прошлом: couldn't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may",
+          "couldn't",
+          "can",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may",
+      "couldn't",
+      "can",
+      "can't"
+    ],
+    "answer_text": "In 1900, women couldn't vote in this country, but things have changed."
+  },
+  {
+    "id": "MV-S05-022",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "The terms state that tenants ___ keep pets without the landlord's written consent.",
+    "answer": "may not",
+    "accept": [],
+    "accepted_answers": [
+      "may not"
+    ],
+    "explanation_ru": "Формальное правило: may not.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-022-b1",
+        "answer": "may not",
+        "accepted_answers": [
+          "may not"
+        ],
+        "explanation_ru": "Формальное правило: may not.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may not",
+          "could",
+          "may",
+          "can"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may not",
+      "could",
+      "may",
+      "can"
+    ],
+    "answer_text": "The terms state that tenants may not keep pets without the landlord's written consent."
+  },
+  {
+    "id": "MV-S05-023",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Because it was a private party, only invited guests ___ enter.",
+    "answer": "could",
+    "accept": [],
+    "accepted_answers": [
+      "could"
+    ],
+    "explanation_ru": "Разрешение в прошлом: could.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-023-b1",
+        "answer": "could",
+        "accepted_answers": [
+          "could"
+        ],
+        "explanation_ru": "Разрешение в прошлом: could.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may",
+          "couldn't",
+          "can",
+          "could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may",
+      "couldn't",
+      "can",
+      "could"
+    ],
+    "answer_text": "Because it was a private party, only invited guests could enter."
+  },
+  {
+    "id": "MV-S05-024",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If you have finished your work, you ___ leave early today.",
+    "answer": "may",
+    "accept": [],
+    "accepted_answers": [
+      "may"
+    ],
+    "explanation_ru": "Формальное разрешение: may.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-024-b1",
+        "answer": "may",
+        "accepted_answers": [
+          "may"
+        ],
+        "explanation_ru": "Формальное разрешение: may.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may not",
+          "may",
+          "mustn't",
+          "can't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may not",
+      "may",
+      "mustn't",
+      "can't"
+    ],
+    "answer_text": "If you have finished your work, you may leave early today."
+  },
+  {
+    "id": "MV-S05-025",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Employees who have worked here for a year ___ take an extra day off.",
+    "answer": "can",
+    "accept": [],
+    "accepted_answers": [
+      "can"
+    ],
+    "explanation_ru": "Право сотрудников: can.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-025-b1",
+        "answer": "can",
+        "accepted_answers": [
+          "can"
+        ],
+        "explanation_ru": "Право сотрудников: can.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "can",
+          "mustn't",
+          "can't",
+          "may not"
+        ]
+      }
+    ],
+    "modal_options": [
+      "can",
+      "mustn't",
+      "can't",
+      "may not"
+    ],
+    "answer_text": "Employees who have worked here for a year can take an extra day off."
+  },
+  {
+    "id": "MV-S05-026",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "When I was a teenager, my parents said I ___ stay out after ten. It was a strict rule.",
+    "answer": "couldn't",
+    "accept": [
+      "could not"
+    ],
+    "accepted_answers": [
+      "couldn't",
+      "could not"
+    ],
+    "explanation_ru": "Правило запрещало: couldn't.",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-026-b1",
+        "answer": "couldn't",
+        "accepted_answers": [
+          "couldn't",
+          "could not"
+        ],
+        "explanation_ru": "Правило запрещало: couldn't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": [
+          "may",
+          "can",
+          "could",
+          "couldn't"
+        ]
+      }
+    ],
+    "modal_options": [
+      "may",
+      "can",
+      "could",
+      "couldn't"
+    ],
+    "answer_text": "When I was a teenager, my parents said I couldn't stay out after ten. It was a strict rule."
+  },
+  {
+    "id": "MV-S05-027",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "Can I use your pen?",
+    "accept": [],
+    "accepted_answers": [
+      "Can I use your pen?"
+    ],
+    "explanation_ru": "Вопрос с can без do и без to.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Can I to use your pen?",
+      "Do I can use your pen?",
+      "I can use your pen?",
+      "Can I use your pen?"
+    ],
+    "correct_option_index": 3,
+    "answer_text": "Can I use your pen?"
+  },
+  {
+    "id": "MV-S05-028",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "You can't enter this room.",
+    "accept": [],
+    "accepted_answers": [
+      "You can't enter this room."
+    ],
+    "explanation_ru": "После can't голый глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "You can not to enter this room.",
+      "You don't can enter this room.",
+      "You can't to enter this room.",
+      "You can't enter this room."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "You can't enter this room."
+  },
+  {
+    "id": "MV-S05-029",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence asks for permission politely?",
+    "answer": "Could I open the window, please?",
+    "accept": [],
+    "accepted_answers": [
+      "Could I open the window, please?"
+    ],
+    "explanation_ru": "Вежливая просьба: Could I + глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Could I to open the window, please?",
+      "Do I could open the window, please?",
+      "Could I opening the window, please?",
+      "Could I open the window, please?"
+    ],
+    "correct_option_index": 3,
+    "answer_text": "Could I open the window, please?"
+  },
+  {
+    "id": "MV-S05-030",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "Passengers may not use phones during take-off.",
+    "accept": [],
+    "accepted_answers": [
+      "Passengers may not use phones during take-off."
+    ],
+    "explanation_ru": "Отрицание: may not + глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Passengers may not to use phones during take-off.",
+      "Passengers may not use phones during take-off.",
+      "Passengers do not may use phones during take-off.",
+      "Passengers not may use phones during take-off."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "Passengers may not use phones during take-off."
+  },
+  {
+    "id": "MV-S05-031",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Choose the sentence with no mistake.",
+    "answer": "When I was little, I could stay up late only at weekends.",
+    "accept": [],
+    "accepted_answers": [
+      "When I was little, I could stay up late only at weekends."
+    ],
+    "explanation_ru": "Прошлое: could.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "When I was little, I could to stay up late only at weekends.",
+      "When I was little, I could stay up late only at weekends.",
+      "When I was little, I may stay up late only at weekends.",
+      "When I was little, I can stay up late only at weekends."
+    ],
+    "correct_option_index": 1,
+    "answer_text": "When I was little, I could stay up late only at weekends."
+  },
+  {
+    "id": "MV-S05-032",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is correct?",
+    "answer": "She asked whether she could borrow my notes.",
+    "accept": [],
+    "accepted_answers": [
+      "She asked whether she could borrow my notes."
+    ],
+    "explanation_ru": "После could голый глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "She asked whether she could to borrow my notes.",
+      "She asked whether she can to borrow my notes.",
+      "She asked whether she borrow could my notes.",
+      "She asked whether she could borrow my notes."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "She asked whether she could borrow my notes."
+  },
+  {
+    "id": "MV-S05-033",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "You not may use your phone here.",
+    "answer": "You may not use your phone here.",
+    "accept": [],
+    "accepted_answers": [
+      "You may not use your phone here."
+    ],
+    "explanation_ru": "Отрицание ставится после may: may not.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-033-b1",
+        "answer": "You may not use your phone here.",
+        "accepted_answers": [
+          "You may not use your phone here."
+        ],
+        "explanation_ru": "Отрицание ставится после may: may not.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "You may not use your phone here."
+  },
+  {
+    "id": "MV-S05-034",
+    "topic": "modals",
+    "type": "modal_fix",
+    "modal_type": "fix",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Ten years ago, we can't use the library on Sundays.",
+    "answer": "Ten years ago, we couldn't use the library on Sundays.",
+    "accept": [
+      "Ten years ago, we could not use the library on Sundays.",
+      "Ten years ago, we weren't allowed to use the library on Sundays."
+    ],
+    "accepted_answers": [
+      "Ten years ago, we couldn't use the library on Sundays.",
+      "Ten years ago, we could not use the library on Sundays.",
+      "Ten years ago, we weren't allowed to use the library on Sundays."
+    ],
+    "explanation_ru": "Прошлое: couldn't.",
+    "instruction_ru": "Перепишите предложение, исправив ошибку.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S05-034-b1",
+        "answer": "Ten years ago, we couldn't use the library on Sundays.",
+        "accepted_answers": [
+          "Ten years ago, we couldn't use the library on Sundays.",
+          "Ten years ago, we could not use the library on Sundays.",
+          "Ten years ago, we weren't allowed to use the library on Sundays."
+        ],
+        "explanation_ru": "Прошлое: couldn't.",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S05",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S05",
+        "modal_options": []
+      }
+    ],
+    "modal_options": [],
+    "answer_text": "Ten years ago, we couldn't use the library on Sundays."
+  },
+  {
+    "id": "MV-S05-035",
+    "topic": "modals",
+    "type": "modal_meaning",
+    "modal_type": "meaning",
+    "modal_sub": "S05",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "A guard stops you at the museum entrance: photography is not allowed. Which sentence fits?",
+    "answer": "Sorry, you can't take photos here.",
+    "accept": [],
+    "accepted_answers": [
+      "Sorry, you can't take photos here."
+    ],
+    "explanation_ru": "Фотографировать нельзя: can't.",
+    "instruction_ru": "Выберите предложение, которое подходит к контексту.",
+    "practice_tenses": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S05",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Sorry, you may take photos here.",
+      "Sorry, you can take photos here.",
+      "Sorry, you could take photos here.",
+      "Sorry, you can't take photos here."
+    ],
+    "correct_option_index": 3,
+    "answer_text": "Sorry, you can't take photos here."
+  },
+  {
+    "id": "MV-S06-001",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you open the window, please? It is hot.",
+    "answer": "Could",
+    "accept": [],
+    "accepted_answers": [
+      "Could"
+    ],
+    "explanation_ru": "Вежливая просьба к собеседнику: Could you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-001-b1",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could"
+        ],
+        "explanation_ru": "Вежливая просьба к собеседнику: Could you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "May",
+          "Must",
+          "Could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Shall",
+      "May",
+      "Must",
+      "Could"
+    ],
+    "answer_text": "Could you open the window, please? It is hot."
+  },
+  {
+    "id": "MV-S06-002",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ I help you with your bags?",
+    "answer": "Shall",
+    "accept": [],
+    "accepted_answers": [
+      "Shall"
+    ],
+    "explanation_ru": "Предложение помощи: Shall I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-002-b1",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall"
+        ],
+        "explanation_ru": "Предложение помощи: Shall I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Must",
+          "Will",
+          "Would",
+          "Shall"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Must",
+      "Will",
+      "Would",
+      "Shall"
+    ],
+    "answer_text": "Shall I help you with your bags?"
+  },
+  {
+    "id": "MV-S06-003",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you like some tea?",
+    "answer": "Would",
+    "accept": [],
+    "accepted_answers": [
+      "Would"
+    ],
+    "explanation_ru": "Предложение: Would you like...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-003-b1",
+        "answer": "Would",
+        "accepted_answers": [
+          "Would"
+        ],
+        "explanation_ru": "Предложение: Would you like...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Would",
+          "Shall",
+          "May",
+          "Could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Would",
+      "Shall",
+      "May",
+      "Could"
+    ],
+    "answer_text": "Would you like some tea?"
+  },
+  {
+    "id": "MV-S06-004",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "It is nine o'clock. ___ we start the lesson now?",
+    "answer": "Shall",
+    "accept": [],
+    "accepted_answers": [
+      "Shall"
+    ],
+    "explanation_ru": "Предложение «давайте»: Shall we...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-004-b1",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall"
+        ],
+        "explanation_ru": "Предложение «давайте»: Shall we...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "Ought",
+          "Needn't",
+          "Would"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Shall",
+      "Ought",
+      "Needn't",
+      "Would"
+    ],
+    "answer_text": "It is nine o'clock. Shall we start the lesson now?"
+  },
+  {
+    "id": "MV-S06-005",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you pass me the salt, please?",
+    "answer": "Could",
+    "accept": [],
+    "accepted_answers": [
+      "Could"
+    ],
+    "explanation_ru": "Просьба: Could you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-005-b1",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could"
+        ],
+        "explanation_ru": "Просьба: Could you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "May",
+          "Could",
+          "Must",
+          "Shall"
+        ]
+      }
+    ],
+    "modal_options": [
+      "May",
+      "Could",
+      "Must",
+      "Shall"
+    ],
+    "answer_text": "Could you pass me the salt, please?"
+  },
+  {
+    "id": "MV-S06-006",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "It is dark in here. ___ I turn on the light?",
+    "answer": "Shall",
+    "accept": [],
+    "accepted_answers": [
+      "Shall"
+    ],
+    "explanation_ru": "Предложение сделать: Shall I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-006-b1",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall"
+        ],
+        "explanation_ru": "Предложение сделать: Shall I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Must",
+          "Shall",
+          "Would",
+          "Will"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Must",
+      "Shall",
+      "Would",
+      "Will"
+    ],
+    "answer_text": "It is dark in here. Shall I turn on the light?"
+  },
+  {
+    "id": "MV-S06-007",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you like to try this cake?",
+    "answer": "Would",
+    "accept": [],
+    "accepted_answers": [
+      "Would"
+    ],
+    "explanation_ru": "Предложение: Would you like to...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-007-b1",
+        "answer": "Would",
+        "accepted_answers": [
+          "Would"
+        ],
+        "explanation_ru": "Предложение: Would you like to...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Could",
+          "Shall",
+          "Would",
+          "May"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Could",
+      "Shall",
+      "Would",
+      "May"
+    ],
+    "answer_text": "Would you like to try this cake?"
+  },
+  {
+    "id": "MV-S06-008",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you lend me your pen, please?",
+    "answer": "Would",
+    "accept": [],
+    "accepted_answers": [
+      "Would"
+    ],
+    "explanation_ru": "Вежливая просьба: Would you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-008-b1",
+        "answer": "Would",
+        "accepted_answers": [
+          "Would"
+        ],
+        "explanation_ru": "Вежливая просьба: Would you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "May",
+          "Would",
+          "Must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Shall",
+      "May",
+      "Would",
+      "Must"
+    ],
+    "answer_text": "Would you lend me your pen, please?"
+  },
+  {
+    "id": "MV-S06-009",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you help me with this exercise, please? I do not understand it.",
+    "answer": "Can",
+    "accept": [],
+    "accepted_answers": [
+      "Can"
+    ],
+    "explanation_ru": "Просьба в повседневной речи: Can you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-009-b1",
+        "answer": "Can",
+        "accepted_answers": [
+          "Can"
+        ],
+        "explanation_ru": "Просьба в повседневной речи: Can you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Can",
+          "Shall",
+          "May",
+          "Must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Can",
+      "Shall",
+      "May",
+      "Must"
+    ],
+    "answer_text": "Can you help me with this exercise, please? I do not understand it."
+  },
+  {
+    "id": "MV-S06-010",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I am cold. ___ you close the door, please?",
+    "answer": "Will",
+    "accept": [],
+    "accepted_answers": [
+      "Will"
+    ],
+    "explanation_ru": "Просьба: Will you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-010-b1",
+        "answer": "Will",
+        "accepted_answers": [
+          "Will"
+        ],
+        "explanation_ru": "Просьба: Will you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "Will",
+          "May",
+          "Must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Shall",
+      "Will",
+      "May",
+      "Must"
+    ],
+    "answer_text": "I am cold. Will you close the door, please?"
+  },
+  {
+    "id": "MV-S06-011",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "It is Saturday. ___ we have lunch together tomorrow?",
+    "answer": "Shall",
+    "accept": [],
+    "accepted_answers": [
+      "Shall"
+    ],
+    "explanation_ru": "Предложение: Shall we...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-011-b1",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall"
+        ],
+        "explanation_ru": "Предложение: Shall we...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Must",
+          "Would",
+          "Shall",
+          "Ought"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Must",
+      "Would",
+      "Shall",
+      "Ought"
+    ],
+    "answer_text": "It is Saturday. Shall we have lunch together tomorrow?"
+  },
+  {
+    "id": "MV-S06-012",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Excuse me, ___ you tell me the way to the station?",
+    "answer": "Could",
+    "accept": [],
+    "accepted_answers": [
+      "Could"
+    ],
+    "explanation_ru": "Вежливая просьба: Could you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-012-b1",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could"
+        ],
+        "explanation_ru": "Вежливая просьба: Could you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Must",
+          "Shall",
+          "May",
+          "Could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Must",
+      "Shall",
+      "May",
+      "Could"
+    ],
+    "answer_text": "Excuse me, Could you tell me the way to the station?"
+  },
+  {
+    "id": "MV-S06-013",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you like me to wait outside?",
+    "answer": "Would",
+    "accept": [],
+    "accepted_answers": [
+      "Would"
+    ],
+    "explanation_ru": "Предложение: Would you like me to...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-013-b1",
+        "answer": "Would",
+        "accepted_answers": [
+          "Would"
+        ],
+        "explanation_ru": "Предложение: Would you like me to...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "Would",
+          "May",
+          "Could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Shall",
+      "Would",
+      "May",
+      "Could"
+    ],
+    "answer_text": "Would you like me to wait outside?"
+  },
+  {
+    "id": "MV-S06-014",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "What a mess! ___ I help you clean it up?",
+    "answer": "Shall",
+    "accept": [],
+    "accepted_answers": [
+      "Shall"
+    ],
+    "explanation_ru": "Предложение помощи: Shall I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-014-b1",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall"
+        ],
+        "explanation_ru": "Предложение помощи: Shall I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "Must",
+          "Would",
+          "Will"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Shall",
+      "Must",
+      "Would",
+      "Will"
+    ],
+    "answer_text": "What a mess! Shall I help you clean it up?"
+  },
+  {
+    "id": "MV-S06-015",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I have not got a pen. ___ I borrow yours?",
+    "answer": "Could",
+    "accept": [],
+    "accepted_answers": [
+      "Could"
+    ],
+    "explanation_ru": "Просьба о разрешении: Could I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-015-b1",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could"
+        ],
+        "explanation_ru": "Просьба о разрешении: Could I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Would",
+          "Must",
+          "Shall",
+          "Could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Would",
+      "Must",
+      "Shall",
+      "Could"
+    ],
+    "answer_text": "I have not got a pen. Could I borrow yours?"
+  },
+  {
+    "id": "MV-S06-016",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ I speak to Mr Brown, please? (on the phone)",
+    "answer": "Could",
+    "accept": [],
+    "accepted_answers": [
+      "Could"
+    ],
+    "explanation_ru": "Вежливая просьба по телефону: Could I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-016-b1",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could"
+        ],
+        "explanation_ru": "Вежливая просьба по телефону: Could I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Must",
+          "Shall",
+          "Would",
+          "Could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Must",
+      "Shall",
+      "Would",
+      "Could"
+    ],
+    "answer_text": "Could I speak to Mr Brown, please? (on the phone)"
+  },
+  {
+    "id": "MV-S06-017",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I am free tonight. ___ we go to the cinema?",
+    "answer": "Shall",
+    "accept": [],
+    "accepted_answers": [
+      "Shall"
+    ],
+    "explanation_ru": "Предложение: Shall we...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-017-b1",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall"
+        ],
+        "explanation_ru": "Предложение: Shall we...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Must",
+          "Shall",
+          "Will",
+          "Would"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Must",
+      "Shall",
+      "Will",
+      "Would"
+    ],
+    "answer_text": "I am free tonight. Shall we go to the cinema?"
+  },
+  {
+    "id": "MV-S06-018",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you mind passing me that book?",
+    "answer": "Would",
+    "accept": [],
+    "accepted_answers": [
+      "Would"
+    ],
+    "explanation_ru": "Устойчивое Would you mind...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-018-b1",
+        "answer": "Would",
+        "accepted_answers": [
+          "Would"
+        ],
+        "explanation_ru": "Устойчивое Would you mind...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Would",
+          "Shall",
+          "May",
+          "Could"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Would",
+      "Shall",
+      "May",
+      "Could"
+    ],
+    "answer_text": "Would you mind passing me that book?"
+  },
+  {
+    "id": "MV-S06-019",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "medium",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "It is too noisy. ___ you turn the music down, please?",
+    "answer": "Would",
+    "accept": [],
+    "accepted_answers": [
+      "Would"
+    ],
+    "explanation_ru": "Вежливая просьба: Would you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-019-b1",
+        "answer": "Would",
+        "accepted_answers": [
+          "Would"
+        ],
+        "explanation_ru": "Вежливая просьба: Would you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "May",
+          "Shall",
+          "Must",
+          "Would"
+        ]
+      }
+    ],
+    "modal_options": [
+      "May",
+      "Shall",
+      "Must",
+      "Would"
+    ],
+    "answer_text": "It is too noisy. Would you turn the music down, please?"
+  },
+  {
+    "id": "MV-S06-020",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "I am afraid I cannot attend the meeting. ___ you please send me the notes afterwards?",
+    "answer": "Could",
+    "accept": [],
+    "accepted_answers": [
+      "Could"
+    ],
+    "explanation_ru": "Вежливая просьба: Could you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-020-b1",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could"
+        ],
+        "explanation_ru": "Вежливая просьба: Could you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "May",
+          "Could",
+          "Must"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Shall",
+      "May",
+      "Could",
+      "Must"
+    ],
+    "answer_text": "I am afraid I cannot attend the meeting. Could you please send me the notes afterwards?"
+  },
+  {
+    "id": "MV-S06-021",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ I have your attention for a moment, please? (a speaker at a conference)",
+    "answer": "May",
+    "accept": [],
+    "accepted_answers": [
+      "May"
+    ],
+    "explanation_ru": "Формальная просьба: May I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-021-b1",
+        "answer": "May",
+        "accepted_answers": [
+          "May"
+        ],
+        "explanation_ru": "Формальная просьба: May I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Would",
+          "Must",
+          "May",
+          "Shall"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Would",
+      "Must",
+      "May",
+      "Shall"
+    ],
+    "answer_text": "May I have your attention for a moment, please? (a speaker at a conference)"
+  },
+  {
+    "id": "MV-S06-022",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "If you are tired, ___ I call a taxi for you?",
+    "answer": "Shall",
+    "accept": [],
+    "accepted_answers": [
+      "Shall"
+    ],
+    "explanation_ru": "Предложение: Shall I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-022-b1",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall"
+        ],
+        "explanation_ru": "Предложение: Shall I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Shall",
+          "Must",
+          "Will",
+          "Would"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Shall",
+      "Must",
+      "Will",
+      "Would"
+    ],
+    "answer_text": "If you are tired, Shall I call a taxi for you?"
+  },
+  {
+    "id": "MV-S06-023",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ you be so kind as to hold the door for a moment?",
+    "answer": "Would",
+    "accept": [],
+    "accepted_answers": [
+      "Would"
+    ],
+    "explanation_ru": "Очень вежливая просьба: Would you be so kind...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-023-b1",
+        "answer": "Would",
+        "accepted_answers": [
+          "Would"
+        ],
+        "explanation_ru": "Очень вежливая просьба: Would you be so kind...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Must",
+          "Shall",
+          "Would",
+          "May"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Must",
+      "Shall",
+      "Would",
+      "May"
+    ],
+    "answer_text": "Would you be so kind as to hold the door for a moment?"
+  },
+  {
+    "id": "MV-S06-024",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Good evening. ___ I take your coat, sir?",
+    "answer": "May",
+    "accept": [],
+    "accepted_answers": [
+      "May"
+    ],
+    "explanation_ru": "Формальное предложение: May I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-024-b1",
+        "answer": "May",
+        "accepted_answers": [
+          "May"
+        ],
+        "explanation_ru": "Формальное предложение: May I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Ought",
+          "Must",
+          "May",
+          "Would"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Ought",
+      "Must",
+      "May",
+      "Would"
+    ],
+    "answer_text": "Good evening. May I take your coat, sir?"
+  },
+  {
+    "id": "MV-S06-025",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "We are running late. ___ we ask the driver to speed up?",
+    "answer": "Shall",
+    "accept": [],
+    "accepted_answers": [
+      "Shall"
+    ],
+    "explanation_ru": "Предложение: Shall we...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-025-b1",
+        "answer": "Shall",
+        "accepted_answers": [
+          "Shall"
+        ],
+        "explanation_ru": "Предложение: Shall we...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Ought",
+          "Needn't",
+          "Would",
+          "Shall"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Ought",
+      "Needn't",
+      "Would",
+      "Shall"
+    ],
+    "answer_text": "We are running late. Shall we ask the driver to speed up?"
+  },
+  {
+    "id": "MV-S06-026",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Excuse me, ___ I use your phone? Mine has run out of battery.",
+    "answer": "Could",
+    "accept": [],
+    "accepted_answers": [
+      "Could"
+    ],
+    "explanation_ru": "Вежливая просьба: Could I...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-026-b1",
+        "answer": "Could",
+        "accepted_answers": [
+          "Could"
+        ],
+        "explanation_ru": "Вежливая просьба: Could I...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Could",
+          "Shall",
+          "Must",
+          "Would"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Could",
+      "Shall",
+      "Must",
+      "Would"
+    ],
+    "answer_text": "Excuse me, Could I use your phone? Mine has run out of battery."
+  },
+  {
+    "id": "MV-S06-027",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "___ I suggest that we postpone the decision until next week?",
+    "answer": "May",
+    "accept": [],
+    "accepted_answers": [
+      "May"
+    ],
+    "explanation_ru": "Формальное вступление: May I suggest...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-027-b1",
+        "answer": "May",
+        "accepted_answers": [
+          "May"
+        ],
+        "explanation_ru": "Формальное вступление: May I suggest...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "Would",
+          "Shall",
+          "Must",
+          "May"
+        ]
+      }
+    ],
+    "modal_options": [
+      "Would",
+      "Shall",
+      "Must",
+      "May"
+    ],
+    "answer_text": "May I suggest that we postpone the decision until next week?"
+  },
+  {
+    "id": "MV-S06-028",
+    "topic": "modals",
+    "type": "modal_gap",
+    "modal_type": "gap",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "advanced",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Mum, ___ you give me a hand with the shopping?",
+    "answer": "Will",
+    "accept": [],
+    "accepted_answers": [
+      "Will"
+    ],
+    "explanation_ru": "Просьба к близкому: Will you...?",
+    "instruction_ru": "Впишите подходящую форму в пропуск.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "blanks": [
+      {
+        "id": "MV-S06-028-b1",
+        "answer": "Will",
+        "accepted_answers": [
+          "Will"
+        ],
+        "explanation_ru": "Просьба к близкому: Will you...?",
+        "rule_refs": [
+          "content/modals/08-modals.html#mv-r3"
+        ],
+        "practice_tenses": [
+          "mv_S06",
+          "mv_R3"
+        ],
+        "tense_or_construction": "mv_S06",
+        "modal_options": [
+          "May",
+          "Must",
+          "Shall",
+          "Will"
+        ]
+      }
+    ],
+    "modal_options": [
+      "May",
+      "Must",
+      "Shall",
+      "Will"
+    ],
+    "answer_text": "Mum, Will you give me a hand with the shopping?"
+  },
+  {
+    "id": "MV-S06-029",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is a polite request?",
+    "answer": "Could you help me, please?",
+    "accept": [],
+    "accepted_answers": [
+      "Could you help me, please?"
+    ],
+    "explanation_ru": "Просьба: Could you + глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Could you to help me, please?",
+      "Could you help me, please?",
+      "Do you could help me, please?",
+      "Could you helping me, please?"
+    ],
+    "correct_option_index": 1,
+    "answer_text": "Could you help me, please?"
+  },
+  {
+    "id": "MV-S06-030",
+    "topic": "modals",
+    "type": "multiple_choice",
+    "modal_type": "mc",
+    "modal_sub": "S06",
+    "modal_rule": "R3",
+    "level": "basic",
+    "content_version": "modals-2026-11-05.1",
+    "answer_profile": "modal-exact-v1",
+    "response_contract": "bounded-v1",
+    "prompt": "Which sentence is a correct offer?",
+    "answer": "Shall I open the window?",
+    "accept": [],
+    "accepted_answers": [
+      "Shall I open the window?"
+    ],
+    "explanation_ru": "Предложение: Shall I + глагол.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "practice_tenses": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "tags": [
+      "mv_S06",
+      "mv_R3"
+    ],
+    "rule_refs": [
+      "content/modals/08-modals.html#mv-r3"
+    ],
+    "options": [
+      "Shall I to open the window?",
+      "Shall I opening the window?",
+      "Shall I open the window?",
+      "Do I shall open the window?"
+    ],
+    "correct_option_index": 2,
+    "answer_text": "Shall I open the window?"
+  }
+]

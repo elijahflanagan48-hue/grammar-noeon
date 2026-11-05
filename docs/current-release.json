@@ -1,0 +1,88 @@
+{
+  "published_at": "2026-11-05T18:05:31.338616Z",
+  "version": "ad8e3329-3a94-4427-af38-5c1151fb4664",
+  "previous_version": "35cafc90-df60-47e1-9af6-ff980e1d804a",
+  "traffic_percentage": 100,
+  "url": "https://grammar.noeon.org",
+  "legacy_url": "https://grammar-noeon.grammar-noeon.workers.dev",
+  "cache": "grammar-v44",
+  "assets": "20261105-roster2",
+  "content_versions": {
+    "tenses": "tenses-2026-10-31.6",
+    "comparison": "comparison-2026-11-01.5",
+    "passive": "passive-2026-11-03.3",
+    "modals": "modals-2026-11-05.1",
+    "reported": "reported-2026-11-05.1"
+  },
+  "total_items": 8419,
+  "answer_slots": 10686,
+  "parts": 86,
+  "sections": {
+    "comparison": 1000,
+    "tenses": 4379,
+    "passive": 1000,
+    "modals": 1040,
+    "reported": 1000
+  },
+  "assessments": {
+    "tenses": {
+      "version": "assessment-tenses-2026-11-01.1",
+      "tests": 5,
+      "questions_per_test": 25,
+      "open_brackets": 20,
+      "multiple_choice": 5
+    },
+    "comparison": {
+      "version": "assessment-comparison-2026-11-01.1",
+      "tests": 5,
+      "questions_per_test": 25,
+      "open_brackets": 15,
+      "multiple_choice": 10
+    },
+    "passive": {
+      "version": "assessment-passive-2026-11-03.1",
+      "tests": 5,
+      "questions_per_test": 25,
+      "open_brackets": 20,
+      "multiple_choice": 5
+    }
+  },
+  "description": "Обновлён раздел «Ученики»: компактный список, поиск с исправлением раскладки и транслитерацией, фильтры, сортировка, копирование и окно приглашений. Исправлен конфликт пустой статистики с общей карточкой и удалены дубли офлайн-ресурсов. Сервер, банк и данные учеников сохранены.",
+  "report": "docs/review/ROSTER-2026-11-05/REPORT.md",
+  "published_public_http_checks": 18,
+  "verified_origins": [
+    "https://grammar.noeon.org",
+    "https://grammar-noeon.grammar-noeon.workers.dev"
+  ],
+  "schema_migrations": [],
+  "agent_production_user_data_writes": false,
+  "git_commit_or_push": false,
+  "isolated_release": true,
+  "published_pwa_checks": 33,
+  "modal_browser_checks": 451,
+  "modal_accessibility_scans": 20,
+  "modal_api_checks": 91,
+  "local_unpublished_features": [
+    "teacher-own-practice-delete"
+  ],
+  "self_practice_browser_checks": 892,
+  "student_management_browser_checks": 88,
+  "today_browser_checks": 158,
+  "today_accessibility_scans": 28,
+  "all_initial_browser_failures_resolved": true,
+  "release_count_for_this_task": 1,
+  "reported_release_checks": {
+    "python_tests": 36,
+    "reported_release_test": true,
+    "modal_workflow_checks": 91,
+    "reported_browser_checks": 29,
+    "public_assets_exact_match": 4,
+    "public_private_bank_status": 401,
+    "schema_migrations": 0,
+    "previous_bank_items_preserved": 7419
+  },
+  "base_version": "dc89012b-6f44-4216-b55c-1edd1582de50",
+  "roster_browser_checks": 70,
+  "roster_accessibility_scans": 4,
+  "local_pwa_checks": 23
+}

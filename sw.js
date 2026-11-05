@@ -1,0 +1,81 @@
+"use strict";
+const CACHE = 'grammar-v45';
+const FILES = [
+  "./",
+  "styles.css",
+  "practice-report.js",
+  "assessments.js",
+  "accounts.js",
+  "students-roster.js",
+  "students-roster.css",
+  "teacher-library.js",
+  "task-issues.js",
+  "theme-boot.js",
+  "notifications.js",
+  "app.js",
+  "passive.js",
+  "passive.css",
+  "modal-verbs.js",
+  "modal-verbs.css",
+  "content/theory/08-modals.html",
+  "content/theory/07-passive.md",
+  "content/theory/08-reported.md",
+  "content/theory/reported-full.html",
+  "pwa.js",
+  "wixt-lat.woff2",
+  "wixd-cyr.woff2",
+  "wixt-cyr.woff2",
+  "wixd-lat.woff2",
+  "favicon.svg",
+  "apple-touch-icon.png",
+  "manifest.webmanifest",
+  "icons/icon-192.png",
+  "icons/favicon-32.png",
+  "icons/app-icon.svg",
+  "icons/icon-maskable-512.png",
+  "icons/icon-512.png",
+  "data/theory.json",
+  "data/exercises/index.json",
+  "content/theory/03-past.md",
+  "content/theory/05-contrasts-and-pitfalls.md",
+  "content/theory/06-comparison.md",
+  "content/theory/01-foundations.md",
+  "content/theory/04-future.md",
+  "content/theory/02-present.md"
+];
+const WAIT_MS = 3000;
+const allowed = new Set(FILES.map(file => new URL(file, self.location.href).pathname));
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES.map(file => new Request(file, {cache:'reload'})))));
+});
+self.addEventListener('message', event => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
+});
+self.addEventListener('activate', event => {
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('grammar-') && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim()));
+});
+self.addEventListener('fetch', event => {
+  const request = event.request, url = new URL(request.url);
+  if (request.method !== 'GET' || url.origin !== self.location.origin || url.pathname.startsWith('/api/') || (url.pathname.startsWith('/data/exercises/') && url.pathname !== '/data/exercises/index.json')) return;
+  if (!allowed.has(url.pathname) && request.mode !== 'navigate') return;
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE);
+    const key = request.mode === 'navigate' ? '/' : url.pathname;
+    const fallback = () => cache.match(key);
+    const network = fetch(request).then(async response => {
+      if (response.ok && !response.redirected && (allowed.has(url.pathname) || request.mode === 'navigate')) await cache.put(key, response.clone());
+      return response;
+    });
+    event.waitUntil(network.catch(() => {}));
+    let timer;
+    const timeout = new Promise(resolve => { timer = setTimeout(() => resolve(null), WAIT_MS); });
+    try {
+      const response = await Promise.race([network, timeout]);
+      if (response && response.status < 500) return response;
+      const saved = await fallback();
+      if (saved) return saved;
+      return response || await network;
+    } catch { return await fallback() || Response.error(); }
+    finally { clearTimeout(timer); }
+  })());
+});

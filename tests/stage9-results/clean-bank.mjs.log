@@ -1,0 +1,8 @@
+PASS rejects duplicate id
+PASS rejects wrong official option
+PASS rejects missing heading
+PASS rejects cloze marker count
+PASS rejects bracket count
+PASS rejects manifest counts
+PASS rejects stale version
+PASS 1424 items, deterministic idempotence, all 29 summaries and legacy/light history

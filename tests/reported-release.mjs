@@ -1,0 +1,19 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import vm from 'node:vm';import {createHash} from 'node:crypto';
+import {grade} from '../cloudflare/generated/checker.mjs';import {exerciseSection,exerciseTenses,targetSection,balancedPractice,supportedResponseContract} from '../cloudflare/generated/selection.mjs';
+const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url))),index=read('data/exercises/index.json'),all=index.parts.flatMap(p=>read(p.file)),reported=all.filter(x=>x.topic==='reported'),by=new Map(reported.map(x=>[x.id,x]));
+assert.equal(all.length,8419);assert.equal(reported.length,1000);assert.equal(all.filter(x=>x.topic==='modals').length,1040);assert.equal(all.reduce((n,x)=>n+(x.blanks?.length||1),0),10686);
+let variants=0,manual=0,fields=0;
+for(const x of reported){assert.equal(exerciseSection(x),'reported');assert(supportedResponseContract(x));assert(x.context_ru&&x.instruction_ru);assert(exerciseTenses(x).every(t=>targetSection(t)==='reported'));const values=x.blanks.map(b=>b.answer),r=grade(x,values);fields+=values.length;
+ if(x.grading_mode==='teacher'){manual++;assert(!r.correct);assert(r.fields.every(f=>!f.verified));continue}
+ assert(r.correct,x.id);for(let n=0;n<values.length;n++)for(const a of x.blanks[n].accepted_answers){const v=values.slice();v[n]=a;assert(grade(x,v).fields[n].correct,x.id+': '+a);variants++}
+}
+assert.equal(manual,100);assert.equal(fields,1040);
+for(let n=1;n<=20;n++){const t='rs'+String(n).padStart(2,'0'),pool=reported.filter(x=>exerciseTenses(x).includes(t));assert.equal(pool.length,40);const selected=balancedPractice(pool,17);assert.equal(selected.length,17);assert(selected.every(x=>x.practice_tenses[0]===t));assert.equal(new Set(selected.map(x=>x.id)).size,17)}
+for(const [id,wrong]of [['rs-RS08-015',"Nina said that she'd to wear safety goggles."],['rs-RS05-011',"Nina says that he's her phone number."],['rs-RS09-001','Anna asked Leo did he keep a spare umbrella.'],['rs-RS10-001','Maya asked Leo where did he buy his coffee.'],['rs-RS18-033','Nora suggested that Ben checks the spare tyre.'],['rs-RS08-031','Nora said that Ben might use her desk.']])assert(!grade(by.get(id),[wrong]).fields[0].correct,id);
+const ctx={module:{exports:{}},document:{querySelector(){}},localStorage:{getItem(){return null}}};vm.createContext(ctx);vm.runInContext(fs.readFileSync(new URL('../app.js',import.meta.url),'utf8'),ctx);
+const html=ctx.reportedRuleHtml(fs.readFileSync(new URL('../content/theory/08-reported.md',import.meta.url),'utf8'));assert.equal((html.match(/<table>/g)||[]).length,8);assert.equal((html.match(/<h2/g)||[]).length,7);assert(!html.includes('REPORTEDFRAGMENT'));assert(html.includes('href="content/theory/reported-full.html'));assert(!html.includes('<details open'));
+for(let n=1;n<=20;n++){const a='rs'+String(n).padStart(2,'0');assert(html.includes('id="'+a+'"'));assert.equal(ctx.ruleLink('content/reported-speech/08-reported.md#'+a),'#theory/reported/'+a)}
+const full=fs.readFileSync(new URL('../content/theory/reported-full.html',import.meta.url),'utf8');assert.equal((full.match(/<table>/g)||[]).length,38);for(const bad of ['accepted_answers','rs-data','rs-RS01-001','application/json'])assert(!full.includes(bad),bad);
+const base=read('docs/review/REPORTED-RELEASE-2026-11-05/baseline.json');let oldparts=0;for(const [p,digest]of Object.entries(base.files).filter(([p])=>/^data\/exercises\/part-|^cloudflare\/(schema.sql|wrangler.jsonc)$/.test(p))){assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../'+p,import.meta.url))).digest('hex'),digest,p);if(p.startsWith('data/'))oldparts++}
+assert.equal(oldparts,76);assert(!fs.readFileSync(new URL('../cloudflare/worker.mjs',import.meta.url),'utf8').includes('const deleteOwn='));
+console.log(JSON.stringify({all:8419,reported:1000,fields,autoVariants:variants,manual,targets:20,oldPartsPreserved:oldparts,compactTables:8,fullTables:38,publicKeysInFullReference:0}));

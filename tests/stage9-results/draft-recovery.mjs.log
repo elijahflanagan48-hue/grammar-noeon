@@ -1,0 +1,13 @@
+PASS legacy unsynced draft recovered
+PASS marked unsynced draft recovered after reload
+PASS explicit empty field preserved
+PASS radio index zero preserved
+PASS new remote draft preserved with local recovery choice
+PASS conflict survives another reload
+PASS already acknowledged write clears dirty marker
+PASS synced old draft does not compete with newer server draft
+PASS new question never receives stale draft
+PASS another session never receives draft
+PASS checked result wins over draft
+PASS invalid/corrupt draft ignored
+12 reconciliation checks passed.
