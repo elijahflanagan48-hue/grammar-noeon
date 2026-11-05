@@ -219,25 +219,6 @@ function comparisonRuleHtml(markdown) {
 }
 
 
-function reportedRuleHtml(markdown) {
-  const fragments=[];
-  const hold=value=>{const token='REPORTEDFRAGMENT'+fragments.length+'END';fragments.push(value);return token;};
-  let source=markdown.replace(/<a\s+id="([a-z0-9_-]+)"\s*><\/a>/g,(_,id)=>hold('<span id="'+id+'" class="reported-anchor"></span>'));
-  source=source.replace(/\[([^\]]+)\]\(#(practice\/(?:RS\d{2}|MIX)|rs[a-z0-9-]*)\)/g,(_,label,route)=>{
-    const target=route.startsWith('practice/')?'#practice/reported/'+(route.endsWith('MIX')?'rs_mixed':route.split('/')[1].toLowerCase()):'#theory/reported/'+route;
-    return hold('<a href="'+target+'">'+escapeHtml(label)+'</a>');
-  });
-  source=source.replace(/\[([^\]]+)\]\(full-theory\.html(?:#([^)]*))?\)/g,(_,label,anchor)=>hold('<a class="reported-more" href="content/theory/reported-full.html'+(anchor?'#'+anchor:'')+'">'+escapeHtml(label)+'</a>'));
-  source=source.replace(/<details[^>]*>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g,(_,title,body)=>hold('<details class="comparison-note"><summary>'+escapeHtml(title.trim())+'</summary>'+markdownToHtml(body.trim())+'</details>'));
-  let html=markdownToHtml(source).replaceAll('<div class="table-wrap">','<div class="table-wrap" tabindex="0" role="region" aria-label="Таблица косвенной речи">');
-  html=html.replace(/<table>[\s\S]*?<\/table>/g,table=>{
-    const heads=[...table.matchAll(/<th>([\s\S]*?)<\/th>/g)].map(m=>m[1].replace(/<[^>]+>/g,'').trim());
-    return table.replace(/<tr>[\s\S]*?<\/tr>/g,row=>{let i=0;return row.replace(/<td>/g,()=>'<td data-label="'+escapeHtml(heads[i++]||'')+'">');});
-  });
-  for(let pass=0;pass<4&&html.includes('REPORTEDFRAGMENT');pass++)fragments.forEach((value,i)=>{const token='REPORTEDFRAGMENT'+i+'END';html=html.replace('<p>'+token+'</p>',value).replaceAll(token,value);});
-  return '<div class="reported-rule comparison-rule">'+html+'</div>';
-}
-
 async function fetchJson(url) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Не удалось загрузить ${url}`);
@@ -624,6 +605,13 @@ async function renderTheory(parts) {
     if(parts[2])requestAnimationFrame(()=>revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
     return;
   }
+  if(slug==='reported') {
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${reportedRuleHtml()}<a class="button primary theory-practice" href="#practice/reported">Перейти к практике →</a></section></div>`;
+    initialiseReportedRule(document.querySelector('.theory-content'));
+    document.title='Reported Speech — Grammar NOEON';openedTheory=slug;
+    if(parts[2])requestAnimationFrame(()=>revealReportedAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
+    return;
+  }
   if(slug==='passive') {
     app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content"><h1>Passive Voice</h1>${passiveRuleHtml()}<a class="button primary theory-practice" href="#practice/passive">Перейти к практике →</a></section></div>`;
     initialisePassiveRule(document.querySelector('.theory-content'));
@@ -636,7 +624,7 @@ async function renderTheory(parts) {
   const response = await fetch(entry.file);
   if (!response.ok) throw new Error("Не удалось загрузить теорию");
   const markdown = await response.text();
-  document.querySelector(".theory-content").innerHTML = `${slug === "foundations" ? tenseMapHtml() : ""}<article>${slug === "reported" ? reportedRuleHtml(markdown) : slug === "comparison" ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article><a class="button theory-practice" href="#practice/${grammarSectionForTheory(slug)}">Перейти к практике →</a>`;
+  document.querySelector(".theory-content").innerHTML = `${slug === "foundations" ? tenseMapHtml() : ""}<article>${slug === "comparison" ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article><a class="button theory-practice" href="#practice/${grammarSectionForTheory(slug)}">Перейти к практике →</a>`;
   if (slug === "foundations") initialiseTenseMap();
   document.title = `${entry.title} — Grammar NOEON`;
   openedTheory = slug;
@@ -711,11 +699,15 @@ async function openRule(ref) {
       content.innerHTML=modalRuleHtml('modal-modals-');initialiseModalRule(content);content.scrollTop=0;
       revealModalAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
     }
+    if(entry.id==='reported') {
+      content.innerHTML=reportedRuleHtml('modal-reported-');initialiseReportedRule(content);content.scrollTop=0;
+      revealReportedAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
+    }
     if(entry.id==='passive') {
       content.innerHTML=passiveRuleHtml('modal-passive-');initialisePassiveRule(content);content.scrollTop=0;
       revealPassiveAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
     }
-    content.innerHTML = `<article>${entry.id === "reported" ? reportedRuleHtml(markdown) : entry.id === "comparison" ? comparisonRuleHtml(ruleSection(markdown, decodeAnchor(parts.slice(2).join("/")))) : markdownToHtml(ruleSection(markdown, decodeAnchor(parts.slice(2).join("/"))))}</article>`;
+    content.innerHTML = `<article>${entry.id === "comparison" ? comparisonRuleHtml(ruleSection(markdown, decodeAnchor(parts.slice(2).join("/")))) : markdownToHtml(ruleSection(markdown, decodeAnchor(parts.slice(2).join("/"))))}</article>`;
     content.scrollTop = 0;
   } catch (error) {
     if (controller.signal.aborted) return;
@@ -794,6 +786,11 @@ function mountPracticeReference(session) {
         initialiseModalRule(reader);reader.scrollTop=positions.get(id)||0;
         if(anchor)revealModalAnchor(reader,anchor);return;
       }
+      if(id==='reported') {
+        reader.innerHTML='<article data-reference-chapter="reported">'+reportedRuleHtml('reference-reported-')+'</article>';
+        initialiseReportedRule(reader);reader.scrollTop=positions.get(id)||0;
+        if(anchor)revealReportedAnchor(reader,anchor);return;
+      }
       if(id==='passive') {
         reader.innerHTML='<article data-reference-chapter="passive">'+passiveRuleHtml('reference-passive-')+'</article>';
         initialisePassiveRule(reader);reader.scrollTop=positions.get(id)||0;
@@ -815,7 +812,7 @@ function mountPracticeReference(session) {
           const target = `reference-${entry.id}-${h.id}`;
           return `<a href="#${escapeHtml(target)}" data-reference-anchor="${escapeHtml(target)}">${escapeHtml(markdown.split(/\r?\n/)[h.index].replace(/^#+\s+/, ''))}</a>`;
         }).join('')}`).join('');
-        reader.innerHTML = `<details class="reference-contents"><summary>Содержание темы</summary><nav aria-label="Содержание правила">${id === 'tenses' ? '<a href="#reference-map" data-reference-anchor="reference-map">Карта 12 времён</a>' : ''}${contents}</nav></details>${id === 'tenses' ? `<div id="reference-map">${tenseMapHtml()}</div>` : ''}${chapters.map(({entry,markdown}) => `<article data-reference-chapter="${escapeHtml(entry.id)}">${entry.id === "reported" ? reportedRuleHtml(markdown) : entry.id === "comparison" ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>`).join('')}`;
+        reader.innerHTML = `<details class="reference-contents"><summary>Содержание темы</summary><nav aria-label="Содержание правила">${id === 'tenses' ? '<a href="#reference-map" data-reference-anchor="reference-map">Карта 12 времён</a>' : ''}${contents}</nav></details>${id === 'tenses' ? `<div id="reference-map">${tenseMapHtml()}</div>` : ''}${chapters.map(({entry,markdown}) => `<article data-reference-chapter="${escapeHtml(entry.id)}">${entry.id === "comparison" ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>`).join('')}`;
         reader.querySelectorAll('[data-reference-chapter]').forEach(chapter => {
           chapter.querySelectorAll('[id]').forEach(node => { node.id = `reference-${chapter.dataset.referenceChapter}-${node.id}`; });
         });

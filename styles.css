@@ -913,29 +913,22 @@ input[type=checkbox],input[type=radio],progress { accent-color:var(--pri); }
   .reported-rule .table-wrap:has(th:nth-child(3))::before{content:'Листайте таблицу вправо →';display:block;text-align:right;color:var(--mut);font-size:12px;padding:3px 0 7px}
 }
 
-/* Reported Speech: короткое правило — аккуратные карточки */
-.reported-rule{max-width:860px}
-.reported-rule>h2{margin:36px 0 12px;padding-top:0;border-top:0;font-size:clamp(22px,4vw,27px);letter-spacing:-.6px;line-height:1.2}
-.reported-rule .table-wrap{margin:10px 0;border:1px solid var(--line);border-radius:14px;background:var(--surf);overflow:hidden}
-.reported-rule table{width:100%;min-width:0;border-collapse:collapse;font-size:15px;line-height:1.5}
-.reported-rule th{background:var(--surf2);color:var(--mut);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;text-align:left;padding:10px 14px}
-.reported-rule td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}
-.reported-rule td:nth-child(2){color:var(--tx)}
-.reported-rule blockquote{margin:12px 0;padding:12px 16px;border:0;border-left:3px solid var(--pri);border-radius:0 12px 12px 0;background:var(--pri-soft);color:var(--tx);font-size:15px;line-height:1.6}
-.reported-rule .reported-more{display:inline-block;margin:6px 0 0;font-size:14px;font-weight:650;text-decoration:none}
-.reported-rule .reported-more:hover{text-decoration:underline}
-.reported-rule>p{margin:6px 0}
-@media(max-width:600px){
-  .reported-rule .table-wrap{border:0;background:transparent;overflow:visible}
-  .reported-rule .table-wrap::before{display:none!important}
-  .reported-rule table,.reported-rule tbody,.reported-rule tr,.reported-rule td{display:block;width:100%}
-  .reported-rule thead{display:none}
-  .reported-rule tr{background:var(--surf);border:1px solid var(--line);border-radius:12px;margin:0 0 8px;padding:6px 0}
-  .reported-rule tr{padding:10px 0}
-  .reported-rule td{border:0;padding:2px 14px;font-size:14.5px}
-  .reported-rule td::before{display:none}
-  .reported-rule td:first-child{font-weight:700;font-size:15px;padding-bottom:4px}
-  .reported-rule td:nth-child(2){color:var(--pri);font-weight:600}
-  .reported-rule td:nth-child(n+3){color:var(--mut);padding-top:4px}
+/* Reported Speech: правило в стиле Modal Verbs (.mv) */
+.rsp .rsp-more{color:var(--mv-accent);font-weight:650;font-size:14px;text-decoration:none}
+.rsp .rsp-more:hover{text-decoration:underline}
+.rsp .rsp-hero-link{margin-top:14px}
+.rsp .rsp-demo{margin-top:18px;max-width:640px}
+.rsp .mv-card .mv-ex{margin-top:8px;font-size:14px}
+.rsp .mv-foot{margin-top:14px}
+.rsp .mv-flow{margin:8px 0}
+.rsp .rsp-g4{grid-template-columns:1fr}
+@media(min-width:560px){.rsp .rsp-g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){
+  .rsp .mv-scroll{overflow:visible}
+  .rsp .mv-table{min-width:0}
+  .rsp .mv-table thead{display:none}
+  .rsp .mv-table,.rsp .mv-table tbody,.rsp .mv-table tr,.rsp .mv-table td{display:block;width:100%}
+  .rsp .mv-table tr{border:1px solid var(--mv-line);border-radius:12px;margin:0 0 8px;padding:8px 0}
+  .mv.rsp .mv-table td,.mv.rsp .mv-table td:first-child{border:0;padding:3px 12px;min-width:0}
+  .mv.rsp .mv-table td::before{content:attr(data-label);display:block;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mv-muted)}
 }
-.reported-rule table,.rs-full table{margin:0}

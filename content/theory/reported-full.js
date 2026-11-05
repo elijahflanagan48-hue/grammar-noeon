@@ -1,10 +1,10 @@
 (() => {
-  const secs = () => [...document.querySelectorAll('details.rs-sec')];
+  const secs = () => [...document.querySelectorAll('details.rsf-sec')];
   const openFromHash = () => {
     const id = decodeURIComponent(location.hash.slice(1));
     if (!id) return false;
     const el = document.getElementById(id);
-    const sec = el && (el.matches('details.rs-sec') ? el : el.closest('details.rs-sec'));
+    const sec = el && (el.matches('details.rsf-sec') ? el : el.closest('details.rsf-sec'));
     if (!sec) return false;
     sec.open = true;
     requestAnimationFrame(() => sec.scrollIntoView({ block: 'start' }));
@@ -16,7 +16,7 @@
     const link = event.target.closest('a[href^="#rs"]');
     if (link) {
       const target = document.getElementById(link.getAttribute('href').slice(1));
-      const sec = target && (target.matches('details.rs-sec') ? target : target.closest('details.rs-sec'));
+      const sec = target && (target.matches('details.rsf-sec') ? target : target.closest('details.rsf-sec'));
       if (sec) { sec.open = true; event.preventDefault(); history.replaceState(null, '', link.getAttribute('href')); sec.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
     }
   });
