@@ -4,7 +4,7 @@
 |---|---|
 | Maya: “**I am** ready.” | Maya said **she was** ready. |
 
-[Полный справочник: подробности, исключения и все 20 подтем →](full-theory.html)
+[Полный справочник: 20 подтем, исключения и примеры →](full-theory.html)
 
 <a id="rs01"></a>
 <a id="rs02"></a>
@@ -15,8 +15,10 @@
 |---|---|---|
 | Сообщение | **said (that)** + сообщение | She said she was ready. |
 | Сообщение адресату | **told someone (that)** + сообщение | She told me she was ready. |
-| Вопрос | **asked** + if / whether / wh-word + сообщение | She asked where I lived. |
+| Вопрос | **asked** + if / whether / wh-word | She asked where I lived. |
 | Просьбу / команду | **asked / told someone to** + глагол | She asked me to wait. |
+
+[Подробнее: say, tell, ask →](full-theory.html#rs01)
 
 <a id="rs03"></a>
 <a id="rs04"></a>
@@ -24,25 +26,16 @@
 
 ## 2. Проверьте время
 
-**При пересказе в прошлом со сдвигом времён:**
-
 | Было | Становится | Пример |
 |---|---|---|
-| Present → Past | work → **worked**; am working → **was working** | “I work here.” → She said she worked there. |
-| Past / Present Perfect → Past Perfect | worked / have worked → **had worked** | “I have finished.” → She said she had finished. |
-| will / can / may | **would / could / might** | “I can help.” → She said she could help. |
-| Past Perfect; would / could / should / might | Обычно **без дальнейшего сдвига** | “I had left.” → She said she had left. |
+| Present | **Past** | “I work here.” → She said she **worked** there. |
+| Past / Present Perfect | **Past Perfect** | “I have finished.” → She said she **had finished**. |
+| will / can / may | **would / could / might** | “I can help.” → She said she **could** help. |
+| Past Perfect, would, could, should, might | **без сдвига** | “I had left.” → She said she **had left**. |
 
-<details>
-<summary>Когда сдвиг не нужен? Что делать с must?</summary>
+> Сдвиг нужен, когда пересказ идёт в прошлом. Если сообщение всё ещё актуально или глагол сообщения в настоящем (she says), время можно сохранить.
 
-При настоящем глаголе сообщения сдвиг обычно не нужен. Актуальная информация и общие истины могут сохранять время и после said. Сдвиг не означает, что сообщение стало ложным. В упражнениях требование сдвига указывается отдельно.
-
-Must зависит от смысла: обязанность часто передают had to, вывод обычно сохраняет must. May в таблице выражает возможность; разрешение может передаваться could. Continuous и Perfect сохраняют смысл процесса и предшествования.
-
-[Полная таблица времён и модальных значений →](full-theory.html#rs03)
-
-</details>
+[Подробнее: сдвиг, must, may и актуальные сообщения →](full-theory.html#rs03)
 
 <a id="rs05"></a>
 <a id="rs06"></a>
@@ -50,61 +43,46 @@ Must зависит от смысла: обязанность часто пер�
 
 ## 3. Смените точку зрения
 
-| Что проверить | Ориентир | Пример |
+| Что проверить | Как меняется | Пример |
 |---|---|---|
-| **Кто говорит и кому?** | I / you / we и my / your / our зависят от участников | Maya: “I lost my key.” → Maya said she had lost her key. |
-| **Когда пересказываем?** | today → that day; tomorrow → the next day; yesterday → the day before | В другой день: “today” → that day |
-| **Где пересказываем?** | here → there; this / these → that / those | В другом месте: “here” → there |
+| **Кто говорит и кому?** | I / you / we, my / your / our | Maya: “I lost **my** key.” → Maya said she had lost **her** key. |
+| **Когда пересказываем?** | today → that day; tomorrow → the next day; yesterday → the day before | “I leave tomorrow.” → She said she would leave **the next day**. |
+| **Где пересказываем?** | here → there; this → that | “I work here.” → She said she worked **there**. |
 
-<details>
-<summary>Это не автоматические замены</summary>
+> Это не автозамена. Если день, место и участники те же, today, here и I остаются.
 
-Если день, место или участники те же, today, here, this, I или we могут сохраняться. Сначала определите ситуацию, затем выбирайте слова.
-
-[Участники, время и место с примерами →](full-theory.html#rs05)
-
-</details>
+[Подробнее: участники, время и место →](full-theory.html#rs05)
 
 <a id="rs09"></a>
 <a id="rs10"></a>
 
 ## 4. Вопрос → прямой порядок слов
 
-| Тип | Модель | Direct → Reported |
+| Тип | Модель | Пример |
 |---|---|---|
-| **Общий** | asked + **if / whether + S + V** | “Do you work?” → She asked if I worked. |
-| **Специальный** | asked + **wh-word + S + V** | “Where do you work?” → She asked where I worked. |
-| **Who — подлежащее** | asked + **who + V** | “Who called?” → She asked who had called. |
+| **Общий** | asked + **if / whether** + S + V | “Do you work?” → She asked **if I worked**. |
+| **Специальный** | asked + **wh-word** + S + V | “Where do you work?” → She asked **where I worked**. |
+| **Who — подлежащее** | asked + **who** + V | “Who called?” → She asked **who had called**. |
 
-<details>
-<summary>Главная ловушка вопросов</summary>
+> Ловушка: в косвенном вопросе нет инверсии и do / does / did. Не where did I work, а where I worked.
 
-Внутри косвенного вопроса нет вопросительной инверсии и вспомогательного do/does/did из прямого вопроса. Не where did I work, а where I worked. Примеры выше используют сдвиг; в актуальном контексте возможны другие формы времени. If и whether не взаимозаменяемы во всех конструкциях.
-
-[Общие вопросы →](full-theory.html#rs09) · [Специальные вопросы →](full-theory.html#rs10)
-
-</details>
+[Подробнее: общие и специальные вопросы →](full-theory.html#rs09)
 
 <a id="rs11"></a>
 <a id="rs12"></a>
 <a id="rs13"></a>
 
-## 5. Просьба / команда → to
+## 5. Просьба или команда → to
 
 | Что передаём | Модель | Пример |
 |---|---|---|
-| **Сделать** | asked / told + адресат + **to do** | “Please wait.” → She asked me to wait. |
-| **Не делать** | asked / told + адресат + **not to do** | “Don’t leave.” → She told me not to leave. |
-| **Вежливую просьбу** | asked + адресат + **to do** | “Could you help me?” → She asked me to help her. |
+| **Сделать** | asked / told + кто + **to do** | “Please wait.” → She asked me **to wait**. |
+| **Не делать** | asked / told + кто + **not to do** | “Don’t leave.” → She told me **not to leave**. |
+| **Вежливую просьбу** | asked + кто + **to do** | “Could you help me?” → She asked me **to help** her. |
 
-<details>
-<summary>Вопрос или просьба?</summary>
+> Конструкция зависит от смысла: “Can you swim?” — вопрос об умении, “Can you open the door?” — просьба.
 
-“Can you swim?” может выяснять умение, а “Can you open the door, please?” — просить о действии. Конструкция выбирается по функции реплики.
-
-[Просьбы, команды и запреты →](full-theory.html#rs11)
-
-</details>
+[Подробнее: просьбы, команды и запреты →](full-theory.html#rs11)
 
 <a id="rs14"></a>
 <a id="rs15"></a>
@@ -115,37 +93,28 @@ Must зависит от смысла: обязанность часто пер�
 
 ## 6. Reporting verbs: смотрите на управление
 
-| После глагола | Частые глаголы | Образец |
+| После глагола | Частые глаголы | Пример |
 |---|---|---|
 | **to do** | promise, offer, agree, refuse | She promised **to help**. |
-| **someone + to do** | advise, remind, encourage, warn | She advised **me to wait**. |
+| **someone + to do** | advise, remind, warn | She advised **me to wait**. |
 | **doing** | suggest, admit, deny | She suggested **waiting**. |
-| **предлог + doing** | apologise for, insist on, object to | She apologised **for being late**. |
+| **предлог + doing** | apologise for, insist on | She apologised **for being late**. |
 | **that + S + V** | explain, confirm, announce | She explained **that she was late**. |
 
-<details>
-<summary>У одного глагола может быть несколько моделей</summary>
+> У многих глаголов несколько моделей: She suggested waiting / suggested that we wait. Проверяйте модель по конкретному глаголу.
 
-She admitted leaving / admitted that she had left. She suggested waiting / suggested that we wait / suggested that we should wait. Модели проверяются по конкретному глаголу: suggest me to wait не соответствует стандартной модели предложения. В рекомендательной that-clause возможна базовая форма: suggested that he wait, не автоматическое waits.
-
-[Все модели и их различия →](full-theory.html#rs14)
-
-</details>
+[Подробнее: все модели reporting verbs →](full-theory.html#rs14)
 
 <a id="rs20"></a>
 <a id="rs-check"></a>
 
-## 7. Соберите пересказ
+## 7. Проверьте пересказ
 
-| ① Реплика | ② Конструкция | ③ Контекст | ④ Проверка |
-|---|---|---|---|
-| Сообщение / вопрос / просьба | said / asked / told / reporting verb | Время → участники → день и место | Порядок слов → управление → отрицание → смысл |
+| Шаг | Что проверяем |
+|---|---|
+| **1. Тип** | сообщение, вопрос или просьба |
+| **2. Конструкция** | said / asked / told или reporting verb |
+| **3. Контекст** | время → участники → день и место |
+| **4. Итог** | порядок слов, отрицание, смысл |
 
-<details>
-<summary>Продвинутые случаи и источники</summary>
-
-Условные, wish, составные будущие формы и сложные модальные значения требуют проверки смысла; их нельзя преобразовывать одним списком замен.
-
-[Открыть полный справочник →](full-theory.html#rs20)
-
-</details>
+[Условные, wish и сложные случаи →](full-theory.html#rs20)

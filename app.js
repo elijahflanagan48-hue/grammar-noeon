@@ -221,24 +221,20 @@ function comparisonRuleHtml(markdown) {
 
 function reportedRuleHtml(markdown) {
   const fragments=[];
-  let source=markdown.replace(/<details[^>]*>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g,(_,title,body)=>{
-    const token='REPORTEDFRAGMENT'+fragments.length+'END';
-    fragments.push('<details class="comparison-note"><summary>'+escapeHtml(title.trim())+'</summary>'+markdownToHtml(body.trim())+'</details>');return token;
-  });
-  source=source.replace(/<a\s+id="([a-z0-9_-]+)"\s*><\/a>/g,(_,id)=>{
-    const token='REPORTEDFRAGMENT'+fragments.length+'END';fragments.push('<span id="'+id+'" class="reported-anchor"></span>');return token;
-  });
+  const hold=value=>{const token='REPORTEDFRAGMENT'+fragments.length+'END';fragments.push(value);return token;};
+  let source=markdown.replace(/<a\s+id="([a-z0-9_-]+)"\s*><\/a>/g,(_,id)=>hold('<span id="'+id+'" class="reported-anchor"></span>'));
   source=source.replace(/\[([^\]]+)\]\(#(practice\/(?:RS\d{2}|MIX)|rs[a-z0-9-]*)\)/g,(_,label,route)=>{
-    const token='REPORTEDFRAGMENT'+fragments.length+'END';
     const target=route.startsWith('practice/')?'#practice/reported/'+(route.endsWith('MIX')?'rs_mixed':route.split('/')[1].toLowerCase()):'#theory/reported/'+route;
-    fragments.push('<a href="'+target+'">'+escapeHtml(label)+'</a>');return token;
+    return hold('<a href="'+target+'">'+escapeHtml(label)+'</a>');
   });
-  source=source.replace(/\[([^\]]+)\]\(full-theory\.html(?:#([^)]*))?\)/g,(_,label,anchor)=>{
-    const token='REPORTEDFRAGMENT'+fragments.length+'END';fragments.push('<a href="content/theory/reported-full.html'+(anchor?'#'+anchor:'')+'">'+escapeHtml(label)+'</a>');return token;
-  });
+  source=source.replace(/\[([^\]]+)\]\(full-theory\.html(?:#([^)]*))?\)/g,(_,label,anchor)=>hold('<a class="reported-more" href="content/theory/reported-full.html'+(anchor?'#'+anchor:'')+'">'+escapeHtml(label)+'</a>'));
+  source=source.replace(/<details[^>]*>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g,(_,title,body)=>hold('<details class="comparison-note"><summary>'+escapeHtml(title.trim())+'</summary>'+markdownToHtml(body.trim())+'</details>'));
   let html=markdownToHtml(source).replaceAll('<div class="table-wrap">','<div class="table-wrap" tabindex="0" role="region" aria-label="Таблица косвенной речи">');
-  fragments.forEach((value,i)=>{html=html.replace('<p>REPORTEDFRAGMENT'+i+'END</p>',value).replaceAll('REPORTEDFRAGMENT'+i+'END',value);});
-  html=html.replace(/(<h2[^>]*>[\s\S]*?<\/h2>)/g,'$1');
+  html=html.replace(/<table>[\s\S]*?<\/table>/g,table=>{
+    const heads=[...table.matchAll(/<th>([\s\S]*?)<\/th>/g)].map(m=>m[1].replace(/<[^>]+>/g,'').trim());
+    return table.replace(/<tr>[\s\S]*?<\/tr>/g,row=>{let i=0;return row.replace(/<td>/g,()=>'<td data-label="'+escapeHtml(heads[i++]||'')+'">');});
+  });
+  for(let pass=0;pass<4&&html.includes('REPORTEDFRAGMENT');pass++)fragments.forEach((value,i)=>{const token='REPORTEDFRAGMENT'+i+'END';html=html.replace('<p>'+token+'</p>',value).replaceAll(token,value);});
   return '<div class="reported-rule comparison-rule">'+html+'</div>';
 }
 

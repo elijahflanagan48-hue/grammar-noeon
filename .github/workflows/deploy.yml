@@ -1,8 +1,10 @@
 name: Deploy to Cloudflare
 
-# Запускается вручную: GitHub → Actions → Deploy to Cloudflare → Run workflow.
+# Деплой запускается автоматически при каждом push в main, а также вручную (Actions → Run workflow).
 # Нужен секрет репозитория CLOUDFLARE_API_TOKEN (шаблон «Edit Cloudflare Workers»).
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:

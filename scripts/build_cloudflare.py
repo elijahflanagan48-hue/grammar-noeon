@@ -18,7 +18,8 @@ def build():
         shutil.copy2(ROOT / name, PUBLIC / name)
     allowed = [*sorted((ROOT / 'icons').glob('*.png')), ROOT / 'icons/app-icon.svg', ROOT / 'data/theory.json', ROOT / 'data/exercises/index.json',
                *sorted((ROOT / 'data/exercises').glob('part-*.json')),
-               *sorted((ROOT / 'content/theory').glob('*.md')), *sorted((ROOT / 'content/theory').glob('*.html'))]
+               *sorted((ROOT / 'content/theory').glob('*.md')), *sorted((ROOT / 'content/theory').glob('*.html')),
+               *sorted((ROOT / 'content/theory').glob('reported-full.*'))]
     for file in allowed:
         destination = PUBLIC / file.relative_to(ROOT)
         destination.parent.mkdir(parents=True, exist_ok=True)

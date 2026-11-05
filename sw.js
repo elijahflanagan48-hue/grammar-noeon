@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v45';
+const CACHE = 'grammar-v46';
 const FILES = [
   "./",
   "styles.css",
@@ -21,6 +21,8 @@ const FILES = [
   "content/theory/07-passive.md",
   "content/theory/08-reported.md",
   "content/theory/reported-full.html",
+  "content/theory/reported-full.css",
+  "content/theory/reported-full.js",
   "pwa.js",
   "wixt-lat.woff2",
   "wixd-cyr.woff2",
