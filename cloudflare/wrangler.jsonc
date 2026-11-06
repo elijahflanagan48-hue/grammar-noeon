@@ -2,7 +2,7 @@
   "name": "grammar-noeon",
   "main": "worker.mjs",
   "compatibility_date": "2026-10-26",
-  "workers_dev": true,
+  "workers_dev": false,
   "routes": [{ "pattern": "grammar.noeon.org", "custom_domain": true }],
   "assets": {
     "directory": "public",
@@ -10,8 +10,7 @@
     "run_worker_first": true
   },
   "vars": {
-    "PUBLIC_ORIGIN": "https://grammar-noeon.grammar-noeon.workers.dev",
-    "ADDITIONAL_ORIGINS": "https://grammar.noeon.org"
+    "PUBLIC_ORIGIN": "https://grammar.noeon.org"
   },
   "d1_databases": [
     {
