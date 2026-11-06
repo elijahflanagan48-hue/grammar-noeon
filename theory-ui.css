@@ -1,0 +1,22 @@
+.tui{border:1px solid var(--line);background:var(--surf);border-radius:18px;padding:18px;margin:22px 0;box-shadow:var(--sh-sm)}
+.tui-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.tui-head h2{margin:0;font-size:1.2rem}.tui-head span{color:var(--mut);font-size:.88rem}
+.tui-score{font-weight:800;color:var(--pri)!important}
+.tui-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.tui-row label{display:grid;gap:4px;font-size:.78rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+.tui-row select{font:inherit;font-size:.95rem;font-weight:500;text-transform:none;letter-spacing:0;color:var(--tx);background:var(--surf2);border:1px solid var(--line2);border-radius:10px;padding:9px 10px}
+.tui-out{display:grid;gap:8px;margin-top:14px}
+.tui-out>div{display:flex;gap:12px;align-items:center;background:var(--pri-soft);border-radius:12px;padding:10px 14px;font-size:1.05rem}
+.tui-out b{min-width:3.6em;color:var(--pri)}
+.tui-steps{margin:12px 2px 0;color:var(--mut);font-size:.9rem;line-height:1.6}
+.tui-q{padding:12px 0;border-top:1px solid var(--line)}.tui-q p{margin:0 0 8px}
+.tui-opts{display:flex;flex-wrap:wrap;gap:8px}
+.tui-opts button{font:inherit;cursor:pointer;color:var(--tx);background:var(--surf2);border:1px solid var(--line2);border-radius:999px;padding:7px 14px}
+.tui-opts button:hover{border-color:var(--pri)}
+.tui-opts button.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.tui-opts button.bad{background:var(--bad);border-color:var(--bad);color:#fff}
+.tui-why{display:block;margin-top:8px;color:var(--mut)}
+.tui-outline{position:sticky;top:0;z-index:5;display:flex;gap:6px;overflow-x:auto;align-items:center;padding:8px 10px;margin:12px 0;background:var(--surf);border:1px solid var(--line);border-radius:14px;scrollbar-width:thin}
+.tui-outline b{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);white-space:nowrap;margin-right:4px}
+.tui-outline a{white-space:nowrap;font-size:.86rem;padding:5px 11px;border-radius:999px;background:var(--surf2);color:var(--tx);text-decoration:none}
+.tui-outline a.on,.tui-outline a:hover{background:var(--pri);color:var(--on-pri)}

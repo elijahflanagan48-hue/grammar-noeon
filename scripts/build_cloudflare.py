@@ -14,7 +14,7 @@ def build():
         shutil.rmtree(PUBLIC)
     PUBLIC.mkdir(exist_ok=True)
     GENERATED.mkdir(exist_ok=True)
-    for name in ('sw.js', 'pwa.js', 'index.html', 'app.js', 'accounts.js', 'students-roster.js', 'students-roster.css', 'teacher-library.js', 'task-issues.js', 'notifications.js', 'practice-report.js', 'assessments.js', 'styles.css', 'passive.js', 'passive.css', 'modal-verbs.js', 'modal-verbs.css', 'reported-speech.js', 'tense-map.js', 'tense-map.css', 'home-design.js', 'home-design.css', 'theme-boot.js', 'wixt-lat.woff2', 'wixt-cyr.woff2', 'wixd-lat.woff2', 'wixd-cyr.woff2', 'favicon.svg', 'apple-touch-icon.png', 'manifest.webmanifest'):
+    for name in ('sw.js', 'pwa.js', 'index.html', 'app.js', 'accounts.js', 'students-roster.js', 'students-roster.css', 'teacher-library.js', 'task-issues.js', 'notifications.js', 'practice-report.js', 'assessments.js', 'styles.css', 'passive.js', 'passive.css', 'modal-verbs.js', 'modal-verbs.css', 'reported-speech.js', 'tense-map.js', 'theory-ui.js', 'theory-ui.css', 'tense-map.css', 'home-design.js', 'home-design.css', 'theme-boot.js', 'wixt-lat.woff2', 'wixt-cyr.woff2', 'wixd-lat.woff2', 'wixd-cyr.woff2', 'favicon.svg', 'apple-touch-icon.png', 'manifest.webmanifest'):
         shutil.copy2(ROOT / name, PUBLIC / name)
     allowed = [*sorted((ROOT / 'icons').glob('*.png')), ROOT / 'icons/app-icon.svg', ROOT / 'data/theory.json', ROOT / 'data/exercises/index.json',
                *sorted((ROOT / 'data/exercises').glob('part-*.json')),

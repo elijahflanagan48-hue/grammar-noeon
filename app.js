@@ -414,8 +414,8 @@ async function renderTheory(parts) {
     return;
   }
   if(slug==='passive') {
-    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content"><h1>Passive Voice</h1>${passiveRuleHtml()}<a class="button primary theory-practice" href="#practice/passive">Перейти к практике →</a></section></div>`;
-    initialisePassiveRule(document.querySelector('.theory-content'));
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content"><h1>Passive Voice</h1>${passiveToolsHtml()}${passiveRuleHtml()}<a class="button primary theory-practice" href="#practice/passive">Перейти к практике →</a></section></div>`;
+    initialisePassiveRule(document.querySelector('.theory-content'));initialisePassiveTools(document.querySelector('.theory-content'));
     document.title='Passive Voice — Grammar NOEON';openedTheory=slug;
     if(parts[2])requestAnimationFrame(()=>revealPassiveAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
     return;
@@ -425,8 +425,8 @@ async function renderTheory(parts) {
   const response = await fetch(entry.file);
   if (!response.ok) throw new Error("Не удалось загрузить теорию");
   const markdown = await response.text();
-  document.querySelector(".theory-content").innerHTML = `${slug === "foundations" ? tenseMapHtml() : ""}<article>${slug === "comparison" ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article><a class="button theory-practice" href="#practice/${grammarSectionForTheory(slug)}">Перейти к практике →</a>`;
-  if (slug === "foundations") initialiseTenseMap();
+  document.querySelector(".theory-content").innerHTML = `${slug === "foundations" ? tenseMapHtml() : ""}<article>${slug === "comparison" ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>${slug === "foundations" ? tenseToolsHtml() : ""}<a class="button theory-practice" href="#practice/${grammarSectionForTheory(slug)}">Перейти к практике →</a>`;
+  if (slug === "foundations") { initialiseTenseMap(); initialiseTenseTools(document.querySelector(".theory-content")); }
   document.title = `${entry.title} — Grammar NOEON`;
   openedTheory = slug;
   if (parts[2]) requestAnimationFrame(() => scrollTheory(parts));
