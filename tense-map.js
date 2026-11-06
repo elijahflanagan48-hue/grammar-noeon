@@ -98,8 +98,8 @@ function tenseMapHtml() {
       <div><span class="eyebrow">Наглядная схема</span><h2 id="tense-map-title">Карта 12 времён</h2></div>
       <p>Строки — когда происходит действие, столбцы — как мы на него смотрим. Нажмите на карточку, чтобы увидеть формы, диаграмму, примеры и сравнение с похожим временем.</p>
     </header>
-    <div class="tm-views" role="tablist" aria-label="Вид карты"><button type="button" role="tab" class="tm-view" data-tm-view="cards" aria-selected="true">▦ Карточки</button><button type="button" role="tab" class="tm-view" data-tm-view="map" aria-selected="false">🧭 Карта-навигатор</button></div>
-    <div class="tm-nav" hidden>${tenseNavHtml()}</div>
+    <div class="tm-views" role="tablist" aria-label="Вид карты"><button type="button" role="tab" class="tm-view" data-tm-view="cards" aria-selected="true">▦ Карточки</button><button type="button" role="tab" class="tm-view" data-tm-view="map" aria-selected="false">🗺 Большая карта</button></div>
+    <div class="tm-nav" hidden>${tenseCanvasHtml()}</div>
     <div class="tm-bar" role="group" aria-label="Фильтры карты">
       <label class="tm-search"><span class="tm-sr">Найти время по слову-маркеру</span><input type="search" class="tm-q" placeholder="Слово-маркер: yesterday, already, for, by…" autocomplete="off" spellcheck="false"></label>
       <div class="tm-filters">
@@ -156,50 +156,6 @@ function tenseSheetHtml(row, item, mode = 'card') {
       <a class="button" href="#theory/${row.route}/${item.anchor}" data-tm-link>Полное правило →</a>
       <a class="button primary" href="#practice/tenses" data-tm-link>Практика →</a>
     </div>`;
-}
-
-function tenseNavHtml() {
-  const cols = TENSE_ASPECTS.map(a => `<span class="tn-col">${a.label}</span>`).join('');
-  const rows = TENSE_MAP.map(r => `<span class="tn-row tn-${r.time.toLowerCase()}">${r.time}<small>${TENSE_TIME_LABEL[r.time]}</small></span>` +
-    r.items.map((it, i) => `<button type="button" class="tn-cell tn-${r.time.toLowerCase()}" data-tn="${TENSE_MAP.indexOf(r) * 4 + i}" aria-label="${escapeHtml(it.name)}"><b>${escapeHtml(it.name.replace(/^(Present|Past|Future) /, ''))}</b>${tenseTimelineSvg(r.time, TENSE_ASPECTS[i].key)}<code>${escapeHtml(it.formula)}</code></button>`).join('')).join('');
-  return `<div class="tn-wrap"><div class="tn-map" role="group" aria-label="Карта времён: стрелки ← ↑ → ↓ перемещают по карте"><span class="tn-corner"></span>${cols}${rows}<i class="tn-cursor" aria-hidden="true"></i></div>
-    <p class="tn-hint">Выберите клетку или двигайтесь стрелками ← ↑ → ↓ на клавиатуре, на телефоне — свайпом по описанию.</p></div>
-    <article class="tn-panel" tabindex="-1" aria-live="polite"></article>`;
-}
-
-function initialiseTenseNav(root, signal) {
-  const nav = root.querySelector('.tm-nav'), panel = nav.querySelector('.tn-panel'), map = nav.querySelector('.tn-map'), cursor = nav.querySelector('.tn-cursor');
-  const cells = [...nav.querySelectorAll('.tn-cell')], all = TENSE_MAP.flatMap(row => row.items.map(item => ({ row, item })));
-  let cur = 0, mode = 'card', first = true;
-  const place = () => { const c = cells[cur]; cursor.style.cssText = `width:${c.offsetWidth}px;height:${c.offsetHeight}px;transform:translate(${c.offsetLeft}px,${c.offsetTop}px)`; };
-  const draw = (dir = 0) => {
-    const { row, item } = all[cur];
-    cells.forEach((c, i) => { c.classList.toggle('is-on', i === cur); c.setAttribute('aria-pressed', String(i === cur)); });
-    panel.classList.remove('tn-in-l', 'tn-in-r'); void panel.offsetWidth;
-    panel.innerHTML = tenseSheetHtml(row, item, mode).replace(/<div class="tm-sheet-nav">/, '<div class="tm-sheet-nav tn-sheet-nav">');
-    if (dir) panel.classList.add(dir > 0 ? 'tn-in-r' : 'tn-in-l');
-    place();
-  };
-  const go = (i, dir) => { cur = (i + 12) % 12; mode = 'card'; draw(dir === undefined ? Math.sign(cur - cells.findIndex(c => c.classList.contains('is-on'))) : dir); };
-  const move = (dr, dc) => { const r = Math.floor(cur / 4), c = cur % 4; go(((r + dr + 3) % 3) * 4 + ((c + dc + 4) % 4)); };
-  nav.addEventListener('click', e => {
-    const t = e.target, cell = t.closest('.tn-cell'); if (cell) { go(+cell.dataset.tn); return; }
-    const step = t.closest('[data-tm-step]'); if (step) { go(cur + Number(step.dataset.tmStep), Number(step.dataset.tmStep)); return; }
-    if (t.closest('[data-tm-compare]')) { mode = 'compare'; draw(); return; }
-    if (t.closest('[data-tm-back]')) { mode = 'card'; draw(); return; }
-    const tab = t.closest('[data-tm-form]'); if (tab) { panel.querySelectorAll('.tm-form-tab').forEach(b => b.setAttribute('aria-selected', String(b === tab))); panel.querySelectorAll('[data-tm-form-panel]').forEach(p => { p.hidden = p.dataset.tmFormPanel !== tab.dataset.tmForm; }); }
-  }, { signal });
-  document.addEventListener('keydown', e => {
-    if (nav.hidden || !root.isConnected || e.target.closest('input,select,textarea') || e.metaKey || e.ctrlKey) return;
-    const k = { ArrowRight: [0, 1], ArrowLeft: [0, -1], ArrowDown: [1, 0], ArrowUp: [-1, 0] }[e.key];
-    if (k) { e.preventDefault(); e.stopPropagation(); move(...k); }
-  }, { signal, capture: true });
-  let x0 = null, y0 = 0;
-  panel.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { signal, passive: true });
-  panel.addEventListener('touchend', e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null; if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(cur + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1); }, { signal, passive: true });
-  window.addEventListener('resize', place, { signal });
-  nav._show = () => { draw(0); };
-  draw(0);
 }
 
 function initialiseTenseMap() {
@@ -280,14 +236,14 @@ function initialiseTenseMap() {
     }
   }, { signal, capture: true });
   window.addEventListener('hashchange', () => { if (!sheet.hidden) close(); }, { signal });
-  initialiseTenseNav(root, signal);
+  const canvasApi = initialiseTenseCanvas(root, signal);
   root.addEventListener('click', event => {
     const v = event.target.closest('[data-tm-view]'); if (!v) return;
     const map = v.dataset.tmView === 'map';
     root.querySelectorAll('.tm-view').forEach(b => b.setAttribute('aria-selected', String(b === v)));
     root.querySelector('.tm-nav').hidden = !map;
     root.querySelector('.tm-bar').hidden = map; root.querySelector('.tm-aspects').hidden = map; root.querySelector('.tm-grid').hidden = map;
-    root.classList.toggle('is-map', map); if (map) { close(); root.querySelector('.tm-nav')._show(); }
+    root.classList.toggle('is-map', map); if (map) { close(); canvasApi.show(); }
     try { sessionStorage.setItem('tmView', v.dataset.tmView); } catch {}
   }, { signal });
   try { if (sessionStorage.getItem('tmView') === 'map') root.querySelector('[data-tm-view="map"]').click(); } catch {}
