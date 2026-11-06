@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v51';
+const CACHE = 'grammar-v52';
 const FILES = [
   "./",
   "styles.css",
@@ -55,7 +55,7 @@ const FILES = [
 const WAIT_MS = 3000;
 const allowed = new Set(FILES.map(file => new URL(file, self.location.href).pathname));
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES.map(file => new Request(file, {cache:'reload'})))));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES.map(file => new Request(file, {cache:'reload'})))).then(() => self.skipWaiting()));
 });
 self.addEventListener('message', event => {
   if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
