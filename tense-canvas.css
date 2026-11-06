@@ -1,7 +1,7 @@
 html.tc-lock{overflow:hidden}
 .tc{position:relative;height:min(78vh,820px);min-height:480px;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--surf2);background-image:radial-gradient(var(--line2) 1.2px,transparent 1.2px);background-size:26px 26px;cursor:grab;touch-action:none;user-select:none;outline:0}
 .tc.is-drag{cursor:grabbing}
-.tc.is-full{position:fixed;inset:0;z-index:200;height:auto;min-height:0;border-radius:0}
+.tc.is-full{position:fixed;inset:0;z-index:99999;width:100vw;height:100vh;height:100dvh;min-height:0;border-radius:0;border:0}
 .tc-world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
 .tc-world.tc-anim{transition:transform .4s cubic-bezier(.3,.8,.3,1)}
 .tc-links{position:absolute;left:0;top:0;pointer-events:none;color:var(--pri)}
@@ -30,7 +30,7 @@ html.tc-lock{overflow:hidden}
 .tc-link{margin-top:6px;font-weight:700;color:var(--pri);text-decoration:none}
 .tc-body{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}.tc-left,.tc-right{display:grid;gap:8px;align-content:start;min-width:0}
 .tc-ui{position:absolute;z-index:3;cursor:default}
-.tc-tools{right:12px;top:12px;display:flex;gap:6px;align-items:center;padding:5px;background:var(--surf);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-sm)}
+.tc-tools{right:12px;top:max(12px,env(safe-area-inset-top));display:flex;gap:6px;align-items:center;padding:5px;background:var(--surf);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-sm)}
 .tc-tools button{width:36px;height:36px;font:inherit;font-size:18px;cursor:pointer;color:var(--tx);background:var(--surf2);border:1px solid var(--line);border-radius:10px}
 .tc-tools button:hover{border-color:var(--pri);color:var(--pri)}
 .tc-pct{min-width:3.2em;text-align:center;font-size:13px;font-weight:700;color:var(--mut)}

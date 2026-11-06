@@ -76,7 +76,7 @@ function initialiseTenseCanvas(root, signal) {
   };
   // pointers: pan + pinch
   const ptrs = new Map(); let moved = 0, last = null, pinch = 0;
-  box.addEventListener('pointerdown', e => { if (e.target.closest('.tc-ui,a,button')) return; ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved = 0; last = { x: e.clientX, y: e.clientY }; if (ptrs.size === 2) pinch = 0; }, { signal });
+  box.addEventListener('pointerdown', e => { moved = 0; if (e.target.closest('.tc-ui,a,button')) return; ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved = 0; last = { x: e.clientX, y: e.clientY }; if (ptrs.size === 2) pinch = 0; }, { signal });
   box.addEventListener('pointermove', e => {
     if (!ptrs.has(e.pointerId)) return; const prev = ptrs.get(e.pointerId); ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
     if (ptrs.size === 2) { const [a, b] = [...ptrs.values()], d = Math.hypot(a.x - b.x, a.y - b.y), r = box.getBoundingClientRect(); if (pinch) zoomAt((a.x + b.x) / 2 - r.left, (a.y + b.y) / 2 - r.top, v.k * d / pinch); pinch = d; moved = 99; return; }
