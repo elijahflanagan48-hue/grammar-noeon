@@ -64,6 +64,15 @@ function initialiseTenseCanvas(root, signal) {
     P.forEach((p, i) => { const d = document.createElement('b'); d.className = 'tc-mb'; d.style.cssText = `left:${p.x * m}px;top:${p.y * m}px;width:${p.w * m}px;height:${p.h * m}px`; d.dataset.i = i; mini.insertBefore(d, viewEl); });
     built = true;
   };
+  // Fullscreen: the map section is a CSS container (it traps position:fixed), so move the canvas to <body>.
+  const home = document.createComment('tc-home');
+  const setFull = on => {
+    if (on === box.classList.contains('is-full')) return;
+    if (on) { box.before(home); document.body.append(box); } else if (home.parentNode) { home.replaceWith(box); }
+    box.classList.toggle('is-full', on); document.documentElement.classList.toggle('tc-lock', on);
+    box.querySelector('[data-tc-full]').textContent = on ? '✕' : '⛶';
+    setTimeout(() => { build(); smooth(fit); box.focus({ preventScroll: true }); }, 30);
+  };
   // pointers: pan + pinch
   const ptrs = new Map(); let moved = 0, last = null, pinch = 0;
   box.addEventListener('pointerdown', e => { if (e.target.closest('.tc-ui,a,button')) return; ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved = 0; last = { x: e.clientX, y: e.clientY }; if (ptrs.size === 2) pinch = 0; }, { signal });
@@ -78,7 +87,7 @@ function initialiseTenseCanvas(root, signal) {
   box.addEventListener('click', e => { if (moved > 6) { e.preventDefault(); e.stopPropagation(); return; }
     const z = e.target.closest('[data-tc-z]'); if (z) { const r = box.getBoundingClientRect(); smooth(() => zoomAt(r.width / 2, r.height / 2, v.k * (z.dataset.tcZ > 0 ? 1.3 : 1 / 1.3))); return; }
     if (e.target.closest('[data-tc-fit]')) { smooth(fit); return; }
-    if (e.target.closest('[data-tc-full]')) { box.classList.toggle('is-full'); document.documentElement.classList.toggle('tc-lock', box.classList.contains('is-full')); setTimeout(() => smooth(fit), 30); return; }
+    if (e.target.closest('[data-tc-full]')) { setFull(!box.classList.contains('is-full')); return; }
     const mb = e.target.closest('.tc-mb'); if (mb) { smooth(() => focusCard(cards[+mb.dataset.i])); return; }
     if (e.target.closest('.tc-mini')) { const r = mini.getBoundingClientRect(), m = mini.clientWidth / W; v.x = box.clientWidth / 2 - ((e.clientX - r.left) / m) * v.k; v.y = box.clientHeight / 2 - ((e.clientY - r.top) / m) * v.k; smooth(apply); return; }
     const c = e.target.closest('.tc-card'); if (c && !e.target.closest('a')) { if (v.k < 0.85 || !c.classList.contains('is-on')) smooth(() => focusCard(c)); else cards.forEach(x => x.classList.toggle('is-on', x === c)); }
@@ -90,8 +99,8 @@ function initialiseTenseCanvas(root, signal) {
     if (K) { e.preventDefault(); e.stopPropagation(); smooth(() => { v.x += K[0]; v.y += K[1]; apply(); }); }
     else if (e.key === '+' || e.key === '=') smooth(() => zoomAt(box.clientWidth / 2, box.clientHeight / 2, v.k * 1.25));
     else if (e.key === '-') smooth(() => zoomAt(box.clientWidth / 2, box.clientHeight / 2, v.k / 1.25));
-    else if (e.key === '0') smooth(fit); else if (e.key === 'Escape' && box.classList.contains('is-full')) { box.classList.remove('is-full'); document.documentElement.classList.remove('tc-lock'); smooth(fit); } }, { signal, capture: true });
+    else if (e.key === '0') smooth(fit); else if (e.key === 'Escape' && box.classList.contains('is-full')) { setFull(false); } }, { signal, capture: true });
   window.addEventListener('resize', () => { if (!box.closest('[hidden]')) { build(); apply(); } }, { signal });
-  signal.addEventListener('abort', () => document.documentElement.classList.remove('tc-lock'));
+  signal.addEventListener('abort', () => { document.documentElement.classList.remove('tc-lock'); if (box.classList.contains('is-full')) { box.classList.remove('is-full'); if (home.parentNode) home.replaceWith(box); box.remove(); } });
   return { show() { requestAnimationFrame(() => { build(); fit(); box.focus({ preventScroll: true }); }); } };
 }

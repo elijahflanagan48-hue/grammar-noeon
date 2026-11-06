@@ -4,7 +4,9 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', async () => {
     let applying = false;
     navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (applying) location.reload();
+      if (applying) { location.reload(); return; }
+      // New worker took over on its own (skipWaiting): refresh once, but never during practice.
+      try { if (!sessionStorage.getItem('swAutoReload') && !location.hash.startsWith('#practice')) { sessionStorage.setItem('swAutoReload', '1'); location.reload(); } } catch {}
     });
     function offerUpdate(registration) {
       if (!registration.waiting || !navigator.serviceWorker.controller) return;
