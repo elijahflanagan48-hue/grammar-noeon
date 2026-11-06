@@ -76,7 +76,7 @@ function initialiseTenseCanvas(root, signal) {
   };
   // pointers: pan + pinch
   const ptrs = new Map(); let moved = 0, last = null, pinch = 0;
-  box.addEventListener('pointerdown', e => { moved = 0; if (e.target.closest('.tc-ui,a,button')) return; ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved = 0; last = { x: e.clientX, y: e.clientY }; if (ptrs.size === 2) pinch = 0; }, { signal });
+  box.addEventListener('pointerdown', e => { moved = 0; if (e.target.closest('.tc-ui')) return; ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved = 0; last = { x: e.clientX, y: e.clientY }; if (ptrs.size === 2) pinch = 0; }, { signal });
   box.addEventListener('pointermove', e => {
     if (!ptrs.has(e.pointerId)) return; const prev = ptrs.get(e.pointerId); ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
     if (ptrs.size === 2) { const [a, b] = [...ptrs.values()], d = Math.hypot(a.x - b.x, a.y - b.y), r = box.getBoundingClientRect(); if (pinch) zoomAt((a.x + b.x) / 2 - r.left, (a.y + b.y) / 2 - r.top, v.k * d / pinch); pinch = d; moved = 99; return; }
@@ -93,6 +93,9 @@ function initialiseTenseCanvas(root, signal) {
     if (e.target.closest('.tc-mini')) { const r = mini.getBoundingClientRect(), m = mini.clientWidth / W; v.x = box.clientWidth / 2 - ((e.clientX - r.left) / m) * v.k; v.y = box.clientHeight / 2 - ((e.clientY - r.top) / m) * v.k; smooth(apply); return; }
     const c = e.target.closest('.tc-card'); if (c && !e.target.closest('a')) { if (v.k < 0.85 || !c.classList.contains('is-on')) smooth(() => focusCard(c)); else cards.forEach(x => x.classList.toggle('is-on', x === c)); }
   }, { signal, capture: true });
+  // Block the browser's own page scroll / pinch-zoom while touching the canvas (iOS ignores touch-action in places).
+  box.addEventListener('touchmove', e => { if (!e.target.closest('.tc-ui')) e.preventDefault(); }, { signal, passive: false });
+  ['gesturestart', 'gesturechange', 'gestureend'].forEach(n => box.addEventListener(n, e => e.preventDefault(), { signal }));
   box.addEventListener('wheel', e => { e.preventDefault(); const r = box.getBoundingClientRect();
     if (e.ctrlKey || e.metaKey) zoomAt(e.clientX - r.left, e.clientY - r.top, v.k * Math.exp(-e.deltaY * 0.01)); else { v.x -= e.deltaX; v.y -= e.deltaY; apply(); } }, { signal, passive: false });
   box.addEventListener('dblclick', e => { if (e.target.closest('.tc-card,.tc-ui')) return; const r = box.getBoundingClientRect(); smooth(() => zoomAt(e.clientX - r.left, e.clientY - r.top, v.k * 1.5)); }, { signal });
