@@ -44,6 +44,21 @@ const tmKey = name => name.toLowerCase().replaceAll(' ', '_');
 const tmNorm = value => String(value || '').toLowerCase().replace(/ё/g, 'е');
 
 /* Временна́я диаграмма. big=true — с подписями. */
+const TENSE_TIP = {
+  'Present Simple': 'Вопрос «как часто?» → Simple. В 3-м лице не забывайте -s: she works.',
+  'Present Continuous': 'Вопрос «что происходит сейчас?». Глаголы состояния (know, like, want) — не в Continuous.',
+  'Present Perfect': 'Нет точного времени, важен результат. Со словами yesterday, ago, last — только Past Simple.',
+  'Present Perfect Continuous': 'Важен процесс и «как долго». Если нужен результат или число — Present Perfect.',
+  'Past Simple': 'Факт в прошлом с названным временем. Цепочка событий: сначала одно, потом другое.',
+  'Past Continuous': 'Фон и процесс в момент в прошлом; на него «падает» короткое действие в Past Simple.',
+  'Past Perfect': 'Это «прошлое в прошлом»: то, что произошло раньше другого прошлого момента.',
+  'Past Perfect Continuous': 'Длительность до момента в прошлом: он устал, потому что долго работал.',
+  'Future Simple': 'Решение в момент речи, прогноз, обещание. Не ставится после if, when, as soon as.',
+  'Future Continuous': 'Процесс в конкретный момент будущего: This time tomorrow I’ll be flying.',
+  'Future Perfect': 'Итог к сроку: by Friday, by 2030 — к этому времени будет сделано.',
+  'Future Perfect Continuous': 'Сколько всего будет длиться действие к моменту в будущем (for + срок).'
+};
+
 function tenseTimelineSvg(time, aspect, big = false) {
   const W = big ? 440 : 220, H = big ? 104 : 56, k = W / 220, y = big ? 58 : 32;
   const NOW = 110 * k, R = (time === 'Present' ? 110 : time === 'Past' ? 80 : 158) * k;
@@ -71,7 +86,11 @@ function tenseMapHtml() {
           <strong>${escapeHtml(item.name)}</strong>
           <span class="tm-focus">${escapeHtml(item.focus)}</span>
           ${tenseTimelineSvg(row.time, asp.key)}
-          <em lang="en">${escapeHtml(item.examples[0])}</em>
+          <span class="tm-mini" lang="en">${[['＋',(TENSE_EXTRA[item.name]||{}).aff],['−',(TENSE_EXTRA[item.name]||{}).neg],['?',(TENSE_EXTRA[item.name]||{}).q]].filter(f=>f[1]).map(f=>`<span><b>${f[0]}</b>${escapeHtml(f[1].split(' · ')[0])}</span>`).join('')}</span>
+          <span class="tm-uses-mini">${item.uses.slice(0,3).map(u=>`<span>${escapeHtml(u)}</span>`).join('')}</span>
+          <span class="tm-markers tm-markers-mini">${item.markers.slice(0,6).map(m=>`<span>${escapeHtml(m)}</span>`).join('')}</span>
+          <em lang="en">${escapeHtml(item.examples[0])}<small>${escapeHtml(((TENSE_EXTRA[item.name]||{}).ru||[])[0]||'')}</small></em>
+          <span class="tm-tip">💡 ${escapeHtml(TENSE_TIP[item.name]||'')}</span>
         </button>`;
       }).join('')}</div></section>`).join('');
   return `<section class="tense-map tm" id="tenses-map" aria-labelledby="tense-map-title">
@@ -128,6 +147,7 @@ function tenseSheetHtml(row, item, mode = 'card') {
     ${extra.more && extra.more.length ? `<h4>Ещё пример</h4>${extra.more.map(m => `<p class="tm-ex" lang="en">${escapeHtml(m)}</p>`).join('')}` : ''}
     <h4>Слова-маркеры</h4>
     <p class="tm-markers">${item.markers.map(m => `<span>${escapeHtml(m)}</span>`).join('')}</p>
+    <p class="tm-tip tm-tip-big">💡 ${escapeHtml(TENSE_TIP[item.name]||'')}</p>
     <p class="tm-trap"><strong>Обратите внимание.</strong> ${escapeHtml(item.trap)}</p>
     <div class="tm-actions">
       ${extra.vs ? `<button type="button" class="button" data-tm-compare>Сравнить с ${escapeHtml(extra.vs[0])}</button>` : ''}
