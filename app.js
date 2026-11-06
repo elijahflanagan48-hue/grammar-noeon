@@ -263,7 +263,7 @@ function grammarSectionForTheory(id) { return ["comparison","passive","modals","
 function renderGrammar(topic = "", practice = false, student = null) {
   syncRouteNav();
   const sections = GRAMMAR_SECTIONS[topic] ? [[topic, GRAMMAR_SECTIONS[topic]]] : Object.entries(GRAMMAR_SECTIONS);
-  app.innerHTML = `<div class="reading"><div class="eyebrow">${practice ? "Выберите раздел практики" : "Самостоятельные разделы"}</div><h1>${GRAMMAR_SECTIONS[topic]?.title || (practice ? "Практика" : "Грамматика")}</h1><p class="lead">${student ? "Выберите раздел для назначения ученику " + escapeHtml(student.name) + "." : "У каждого раздела — своя теория, темы и отдельные настройки практики."}</p><div class="grammar-sections">${sections.map(([id, section]) => `<article class="card grammar-section" data-grammar-section="${id}"><span class="eyebrow">${escapeHtml(section.subtitle)}</span><h2>${section.title}</h2><p>${section.description}</p><div class="comparison-shortcuts">${practice ? "" : `<a class="button" href="#theory/${section.theory}">Теория${id === "tenses" ? " и карта времён" : ""} →</a>`}<a class="button primary" href="${student ? "#assign/" + encodeURIComponent(student.id) + "/" + id : "#practice/" + id}">${student ? "Настроить задание" : "Практика"} →</a>${account.user?.role==="teacher"&&typeof ASSESSMENT_SECTIONS!=="undefined"&&ASSESSMENT_SECTIONS[id]?`<a class="button" href="#tests/${id}">Проверочные тесты →</a>`:""}</div></article>`).join("")}</div></div>`;
+  app.innerHTML = `<div class="reading"><div class="eyebrow">${practice ? "Выберите раздел практики" : "Самостоятельные разделы"}</div><h1>${GRAMMAR_SECTIONS[topic]?.title || (practice ? "Практика" : "Грамматика")}</h1><p class="lead">${student ? "Выберите раздел для назначения ученику " + escapeHtml(student.name) + "." : "У каждого раздела — своя теория, темы и отдельные настройки практики."}</p><div class="grammar-sections gs-grid">${grammarSectionsHtml(sections, { practice, student })}</div></div>`;
   document.title = `${student ? "Назначить задание" : practice ? "Практика" : GRAMMAR_SECTIONS[topic]?.title || "Грамматика"} — Grammar NOEON`;
 }
 function theoryCards() {
@@ -307,7 +307,7 @@ function todayTeacherMarkup(data) {
 async function renderHome() {
   syncRouteNav();
   if(!account.user) {
-    app.innerHTML=`<section class="today-guest"><p class="eyebrow">Grammar NOEON · A1–C2</p><h1>Английская грамматика — шаг за шагом</h1><p>Правила, понятные объяснения и практика, которая помогает замечать смысл за формой. Учебные примеры — British English.</p><div class="today-actions"><a class="button primary library-link today-theory-link" href="#grammar">Теория</a><a class="button" href="#theory/foundations">Карта времён</a><a class="button" href="#profile">Войти</a></div><p class="subtle">Практика доступна после входа. Ученики выполняют назначения; свободную тренировку разрешает учитель.</p></section>`;
+    app.innerHTML=guestHomeHtml();initialiseHomeDemo();
     return;
   }
   const owner=account.user.id,routeAtStart=location.hash;
