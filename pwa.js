@@ -29,7 +29,7 @@ if ('serviceWorker' in navigator) {
           toast('Не удалось сохранить тренировку. Обновите приложение после её завершения.');
           return;
         }
-        if (!registration.waiting) return;
+        if (!registration.waiting) { notice.remove(); location.reload(); return; }
         applying = true;
         registration.waiting.postMessage({type:'SKIP_WAITING'});
       });
