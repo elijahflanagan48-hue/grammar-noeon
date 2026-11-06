@@ -47,6 +47,7 @@ function initialiseTenseCanvas(root, signal) {
   const clampK = k => Math.min(MAX, Math.max(MIN, k));
   const zoomAt = (cx, cy, k2) => { k2 = clampK(k2); v.x = cx - (cx - v.x) * (k2 / v.k); v.y = cy - (cy - v.y) * (k2 / v.k); v.k = k2; apply(); };
   const fit = () => { const bw = box.clientWidth, bh = box.clientHeight, k = clampK(Math.min(bw / W, bh / H) * 0.96); v.k = k; v.x = (bw - W * k) / 2; v.y = (bh - H * k) / 2; apply(); };
+  const fitWidth = () => { const bw = box.clientWidth, k = clampK(bw / W * 1.02); v.k = k; v.x = (bw - W * k) / 2; v.y = 8; apply(); };
   const focusCard = c => { const bw = box.clientWidth, bh = box.clientHeight, w = c.offsetWidth, h = c.offsetHeight, k = clampK(Math.min(bw / (w + 80), bh / (h + 80), 1)); v.k = k; v.x = bw / 2 - (c.offsetLeft + w / 2) * k; v.y = bh / 2 - (c.offsetTop + h / 2) * k; apply(); cards.forEach(x => x.classList.toggle('is-on', x === c)); };
   const build = () => {
     const grid = box.querySelector('.tc-grid'); W = grid.offsetWidth + 80; H = grid.offsetHeight + 80;
@@ -102,5 +103,5 @@ function initialiseTenseCanvas(root, signal) {
     else if (e.key === '0') smooth(fit); else if (e.key === 'Escape' && box.classList.contains('is-full')) { setFull(false); } }, { signal, capture: true });
   window.addEventListener('resize', () => { if (!box.closest('[hidden]')) { build(); apply(); } }, { signal });
   signal.addEventListener('abort', () => { document.documentElement.classList.remove('tc-lock'); if (box.classList.contains('is-full')) { box.classList.remove('is-full'); if (home.parentNode) home.replaceWith(box); box.remove(); } });
-  return { show() { requestAnimationFrame(() => { build(); fit(); box.focus({ preventScroll: true }); }); } };
+  return { show() { requestAnimationFrame(() => { build(); fitWidth(); box.focus({ preventScroll: true }); }); } };
 }

@@ -29,8 +29,6 @@ html.tc-lock{overflow:hidden}
 .tc-trap{background:color-mix(in srgb,var(--warn) 14%,var(--surf));}.tc-tip{background:var(--surf2);color:var(--mut)}.tc-vs{border:1px dashed var(--line2);color:var(--mut)}
 .tc-link{margin-top:6px;font-weight:700;color:var(--pri);text-decoration:none}
 .tc-body{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}.tc-left,.tc-right{display:grid;gap:8px;align-content:start;min-width:0}
-.tc-x,.tc-right{transition:opacity .25s}.tc.lod-low .tc-x,.tc.lod-low .tc-right{opacity:0}
-.tc.lod-low .tc-card h3{font-size:44px}.tc.lod-low .tc-focus{font-size:22px}.tc.lod-low .tc-card{background:color-mix(in srgb,var(--pri-soft) 40%,var(--surf))}
 .tc-ui{position:absolute;z-index:3;cursor:default}
 .tc-tools{right:12px;top:12px;display:flex;gap:6px;align-items:center;padding:5px;background:var(--surf);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-sm)}
 .tc-tools button{width:36px;height:36px;font:inherit;font-size:18px;cursor:pointer;color:var(--tx);background:var(--surf2);border:1px solid var(--line);border-radius:10px}
