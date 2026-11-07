@@ -65,7 +65,7 @@ try {
  let resolve;ctx.accountRequest=()=>new Promise(r=>resolve=r);
  vm.runInContext("account.user={id:'anna',role:'student'};initialiseResultTopics([],true)",ctx);
  resolve(empty);await new Promise(r=>setImmediate(r));
- assert.equal((container.innerHTML.match(/<details class="statistics-section"/g)||[]).length,4);
+ assert.equal((container.innerHTML.match(/<details class="statistics-section"/g)||[]).length,5);
  assert(!container.innerHTML.includes('data-statistics-section="tenses" open'));
  assert(!container.innerHTML.includes('data-topic-id='),'A new learner has four groups, no empty topic cells');
  assert(container.innerHTML.includes('Открыть задания и практику'));

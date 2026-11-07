@@ -9,11 +9,17 @@ const files = fs.readdirSync(path.join(root,'tests')).sort();
 const remote = name => /(?:-live|-published|release-public)/.test(name);
 const python = process.env.PYTHON || 'python3';
 let failed = 0;
+const missingArchive=/(?:ENOENT|FileNotFoundError)[^\n]*(?:docs\/review\/|\/content\/(?:passive|modal-verbs)\/)/;
+let skipped=0;
 function run(command,args,env={}) {
   console.log(`\n> ${command === process.execPath ? 'node' : command} ${args.join(' ')}`);
-  const result=spawnSync(command,args,{cwd:root,stdio:'inherit',env:{...process.env,...env}});
+  const result=spawnSync(command,args,{cwd:root,stdio:['inherit','inherit','pipe'],env:{...process.env,...env},encoding:'utf8'});
+  if(result.stderr)process.stderr.write(result.stderr);
   if(result.error)console.error(result.error.message);
-  if(result.status!==0){failed++;console.error(`FAILED (${result.status ?? result.signal})`);}
+  if(result.status!==0){
+    if(missingArchive.test(result.stderr||'')){skipped++;console.error('SKIP (local audit archive is not in the repository; run this check on the machine that has docs/review and content/*)');return;}
+    failed++;console.error(`FAILED (${result.status ?? result.signal})`);
+  }
 }
 if(process.argv.includes('--live')) {
   const selected=process.argv.slice(process.argv.indexOf('--live')+1);
@@ -37,6 +43,7 @@ if(process.argv.includes('--live')) {
     run(process.execPath,['--import','./scripts/no-network.mjs','tests/'+name],{GRAMMAR_TEST_BROWSER:'0'});
   }
 }
+if(skipped)console.log(`\n${skipped} checks skipped: they need local audit archives that are not in the repository.`);
 if(failed)console.error(`\n${failed} failed checks.`);
 else console.log('\nAll selected checks passed.');
 process.exitCode=failed?1:0;

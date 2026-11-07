@@ -80,8 +80,9 @@ export function checkItems(items){const findings=[];
  }return findings;
 }
 
+// The subject/verb heuristic belongs to verb-form banks; the Nouns bank deliberately trains noun-verb agreement (e.g. "Economics is") and has its own test.
 export function loadBank(root=new URL('../',import.meta.url)) {
- return fs.readdirSync(new URL('data/exercises/',root)).filter(f=>/^part-.*\.json$/.test(f)).flatMap(f=>JSON.parse(fs.readFileSync(new URL('data/exercises/'+f,root),'utf8')));
+ return fs.readdirSync(new URL('data/exercises/',root)).filter(f=>/^part-.*\.json$/.test(f)).flatMap(f=>JSON.parse(fs.readFileSync(new URL('data/exercises/'+f,root),'utf8'))).filter(i=>i.topic!=='nouns');
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const items=loadBank(),findings=checkItems(items);

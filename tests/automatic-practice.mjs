@@ -15,12 +15,12 @@ assert.equal(bank.length,manifest.total_items);
 for(const item of bank) {
   assert.equal(item.response_contract,item.type==='translation_ru_en'?'manual-review-v1':'bounded-v1',item.id);
   assert.ok(item.options?.length||item.blanks?.length,item.id);
-  assert.ok(item.topic==='passive'||!['translation_ru_en','transformation','error_correction'].includes(item.type),item.id);
+  assert.ok(['passive','reported','nouns'].includes(item.topic)||!['translation_ru_en','transformation','error_correction'].includes(item.type),item.id);
   const cases=item.options?item.options.map((_,n)=>n):[item.blanks.map(b=>b.answer),item.blanks.map(()=>'not a grammatical answer')];
   if(item.blanks)for(const [n,b] of item.blanks.entries())for(const accepted of b.accepted_answers||[]){const values=item.blanks.map(x=>x.answer);values[n]=accepted;cases.push(values);}
   for(const [n,submitted] of cases.entries()){
     const result=grade(item,submitted);
-    assert.equal(result.correct,item.grading_mode==='teacher'?false:item.options?submitted===item.correct_option_index:n!==1,item.id+': expected positive/negative key');
+    assert.equal(result.correct,item.grading_mode==='teacher'?false:item.options?(item.accepted_option_indices||[item.correct_option_index]).includes(submitted):n!==1,item.id+': expected positive/negative key');
     const verified=item.grading_mode!=='teacher'&&(item.type!=='translation_ru_en'||n!==1);
     assert.ok(result.fields.every(f=>f.verified===verified),item.id+': closed answers graded, unknown translations pending');
     assert.equal(ctx.evaluate(item,submitted),result.correct,item.id+': browser parity');

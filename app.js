@@ -280,6 +280,8 @@ function theoryCards() {
 function todayRuleLink(topicId) {
   for(const row of TENSE_MAP)for(const item of row.items)if(item.name.toLowerCase().replaceAll(' ','_')===topicId)return '#theory/'+row.route+'/'+item.anchor;
   const comparisons={cmp_forms:'формы-и-орфография',cmp_superlatives:'превосходная-степень-и-группа',cmp_equality:'равенство-и-неравенство',cmp_development:'насколько-велика-разница',cmp_precision:'точность-сравнения-и-пропуски'};
+  const nouns={noun_count_uncount:'исчисляемые-и-неисчисляемые-существительные',noun_plural_regular:'регулярное-образование-множественного-числа',noun_plural_irregular:'неправильное-множественное-число',noun_number_only:'только-единственное-или-только-множественное-число',noun_partitives:'как-посчитать-неисчисляемое-партитивы',noun_dual_meaning:'слова-с-двумя-значениями-исчисляемое-неисчисляемое',noun_possessive:'притяжательный-падеж-s-и-of',noun_compound:'составные-существительные-compound-nouns',noun_attributive:'существительное-в-роли-определения-noun-noun',noun_collective:'собирательные-существительные-collective-nouns',noun_articles:'артикли-и-определители-с-существительными',noun_quantifiers:'количественные-определители-quantifiers',noun_mixed:'проверка-перед-ответом',noun_text:'карта-раздела'};
+  if(topicId.startsWith('noun_'))return '#theory/nouns/'+nouns[topicId];
   if(topicId.startsWith('mv_'))return '#theory/modals';
   if(/^rs(?:\d|_)/.test(topicId))return '#theory/reported/'+(topicId==='rs_mixed'?'rs-check':topicId);
   if(topicId.startsWith('pv_'))return '#theory/passive';

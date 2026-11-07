@@ -6,7 +6,7 @@ const cached=new Map();
 const cache={async addAll(requests){for(const request of requests)cached.set(new URL(request.url).pathname,new Response('cached'));},async match(key){return cached.get(key)?.clone();},async put(key,response){cached.set(key,response);}};
 const origin='https://grammar.test/';
 const context={URL,Response,Request:class extends Request{constructor(url,init){super(new URL(url,origin),init);}},setTimeout,clearTimeout,
- self:{location:{href:origin+'sw.js',origin:new URL(origin).origin},addEventListener(name,fn){handlers[name]=fn;},clients:{claim(){}}},
+ self:{location:{href:origin+'sw.js',origin:new URL(origin).origin},addEventListener(name,fn){handlers[name]=fn;},clients:{claim(){}},skipWaiting(){}},
  caches:{async open(){return cache;},async keys(){return ['grammar-test'];}},
  fetch:async()=>{if(!network)throw Error('offline');return Response.json({total_items:17,answer_slots:23});}};
 vm.createContext(context);vm.runInContext(fs.readFileSync(new URL('../sw.js',import.meta.url),'utf8'),context);

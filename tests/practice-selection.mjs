@@ -13,7 +13,7 @@ context.bank=bank;
 const targets=get('exerciseTenses');
 const select=get('balancedPractice');
 const ids=get('PRACTICE_TENSES.map(tense=>tense.id).filter(id=>bank.some(item=>exerciseSection(item)==="tenses"&&exerciseTenses(item).includes(id)))');
-assert.equal(bank.filter(item=>item.topic!=='passive'&&item.topic!=='modals'&&!item.id.startsWith('cmp-')).length,manifest.sections.tenses);
+assert.equal(bank.filter(item=>!['passive','modals','reported','nouns'].includes(item.topic)&&!item.id.startsWith('cmp-')).length,manifest.sections.tenses);
 assert.equal(bank.filter(item=>item.id.startsWith('cmp-')).length,manifest.sections.comparison);
 for(const item of bank) assert.ok(targets(item).length,`Missing reviewed targets: ${item.id}`);
 assert.deepEqual(Array.from(targets(bank.find(i=>i.id==='new-translation-016'))),['future_simple','present_simple']);

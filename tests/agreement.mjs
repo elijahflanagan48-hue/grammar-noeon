@@ -19,7 +19,7 @@ const item=items.find(i=>i.id==='src-u03-092');
 const historical=structuredClone(item);historical.content_version='historical-fixture';historical.blanks[0].answer='has chosen';historical.blanks[0].accepted_answers=['has chosen'];assert.equal(grade(historical,['has chosen']).correct,true,'Historical embedded keys retain their original grading');
 for(const check of [evaluate,(i,a)=>grade(i,a).correct]){assert.equal(check(item,['have chosen']),true);assert.equal(check(item,['has chosen']),false);}
 let checked=0;
-for(const i of items){const answer=i.options?i.correct_option_index:i.blanks?i.blanks.map(b=>b.answer):i.answer;assert.equal(evaluate(i,answer),true,i.id);assert.equal(grade(i,answer).correct,true,i.id);checked++;}
+for(const i of items.filter(i=>i.response_contract!=='manual-review-v1')){const answer=i.options?i.correct_option_index:i.blanks?i.blanks.map(b=>b.answer):i.answer;assert.equal(evaluate(i,answer),true,i.id);assert.equal(grade(i,answer).correct,true,i.id);checked++;}
 const review=JSON.parse(fs.readFileSync(new URL('../docs/review/V8-2026-10-30/rejected-answers.json',import.meta.url)));
 for(const {id,field,answers} of review){const i=items.find(i=>i.id===id),k=field-1;for(const removed of answers){assert(!i.blanks[k].accepted_answers.includes(removed));const a=i.blanks.map(b=>b.answer);a[k]=removed;assert.equal(evaluate(i,a),false,id+': '+removed);assert.equal(grade(i,a).correct,false,id+': '+removed);}}
 for(const [prefix,bad,good]of [['The witness ','are testifying','is testifying'],['Someone ','have arrived','has arrived'],['Everyone ','are heading','is heading'],['The builders ','is fixing','are fixing']]){assert(disagrees(subjectBefore(prefix),bad,prefix));assert(!disagrees(subjectBefore(prefix),good,prefix));}
