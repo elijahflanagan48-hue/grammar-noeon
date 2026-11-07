@@ -6,7 +6,9 @@ const html=ctx.nounsRuleHtml('ref-');
 assert(html.startsWith('<div class="mv nr"'));
 assert.equal((html.match(/<section class="mv-sec"/g)||[]).length,11);
 assert(!/\]\(|accepted_answers/.test(html),'no raw markdown or answers');
-assert((html.match(/<table/g)||[]).length>=30,'tables carry the content');
+assert(!/<table/.test(html),'no wide tables: mobile first');
+assert((html.match(/class="nr-row"/g)||[]).length>=60,'accordion rows');
+assert((html.match(/class="nr-tiles"/g)||[]).length>=5,'tile groups');
 assert((html.match(/<details class="nr-more"/g)||[]).length>=8,'details on demand');
 assert((html.match(/class="nr-quiz"/g)||[]).length>=4,'self-checks');
 // every heading of the markdown reference must stay reachable as an anchor of the page
