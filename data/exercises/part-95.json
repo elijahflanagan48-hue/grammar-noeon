@@ -1,0 +1,3902 @@
+[
+  {
+    "id": "n-0801",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I need ___ information about trains to Oxford.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#артикли-и-определители-с-существительными"
+    ],
+    "options": [
+      "an",
+      "a",
+      "the",
+      "no article"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "no article",
+    "summary": "I need no article information about trains to Oxford.",
+    "explanation_ru": "information — неисчисляемое: без a. Правильный вариант: no article.",
+    "practice_tenses": [
+      "noun_articles"
+    ],
+    "tags": [
+      "noun_articles"
+    ]
+  },
+  {
+    "id": "n-0802",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "They live in ___ small village near the sea.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#артикли-и-определители-с-существительными"
+    ],
+    "options": [
+      "an",
+      "a",
+      "no article",
+      "the"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "a",
+    "summary": "They live in a small village near the sea.",
+    "explanation_ru": "Неопределённый: a. Правильный вариант: a.",
+    "practice_tenses": [
+      "noun_articles"
+    ],
+    "tags": [
+      "noun_articles"
+    ]
+  },
+  {
+    "id": "n-0803",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My parents have ___ house in the country.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#артикли-и-определители-с-существительными"
+    ],
+    "options": [
+      "the",
+      "an",
+      "a",
+      "no article"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "a",
+    "summary": "My parents have a house in the country.",
+    "explanation_ru": "Неопределённый: a. Правильный вариант: a.",
+    "practice_tenses": [
+      "noun_articles"
+    ],
+    "tags": [
+      "noun_articles"
+    ]
+  },
+  {
+    "id": "n-0804",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "He has ___ cold and cannot come to work.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#артикли-и-определители-с-существительными"
+    ],
+    "options": [
+      "the",
+      "an",
+      "a",
+      "no article"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "a",
+    "summary": "He has a cold and cannot come to work.",
+    "explanation_ru": "have a cold: a. Правильный вариант: a.",
+    "practice_tenses": [
+      "noun_articles"
+    ],
+    "tags": [
+      "noun_articles"
+    ]
+  },
+  {
+    "id": "n-0805",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We have very (quantifier) time left, so we must hurry.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0805-b1",
+        "answer": "little",
+        "accepted_answers": [
+          "little"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "time неисчисляемое; смысл «почти нет»: little. Основной ответ: little.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "We have very little time left, so we must hurry.",
+    "explanation_ru": "time неисчисляемое; смысл «почти нет»: little. Основной ответ: little.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0806",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We have (quantifier) time left, so let's have a coffee.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0806-b1",
+        "answer": "a little",
+        "accepted_answers": [
+          "a little",
+          "some"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Смысл «немного есть»: a little. Основной ответ: a little. Также принимается: some.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "We have a little time left, so let's have a coffee.",
+    "explanation_ru": "Смысл «немного есть»: a little. Основной ответ: a little. Также принимается: some.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0807",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "He has (quantifier) friends in this town, so he often feels lonely.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0807-b1",
+        "answer": "few",
+        "accepted_answers": [
+          "few",
+          "very few"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "friends исчисляемое; смысл «почти нет»: few. Основной ответ: few. Также принимается: very few.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "He has few friends in this town, so he often feels lonely.",
+    "explanation_ru": "friends исчисляемое; смысл «почти нет»: few. Основной ответ: few. Также принимается: very few.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0808",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "She has (quantifier) friends in this town and sees them every weekend.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0808-b1",
+        "answer": "a few",
+        "accepted_answers": [
+          "a few",
+          "some"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Смысл «несколько есть»: a few. Основной ответ: a few. Также принимается: some.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "She has a few friends in this town and sees them every weekend.",
+    "explanation_ru": "Смысл «несколько есть»: a few. Основной ответ: a few. Также принимается: some.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0809",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There isn't (quantifier) milk in the fridge, so I cannot make pancakes.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0809-b1",
+        "answer": "much",
+        "accepted_answers": [
+          "much",
+          "any",
+          "a lot of"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "В отрицании с неисчисляемым: much / any. Основной ответ: much. Также принимается: any, a lot of.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There isn't much milk in the fridge, so I cannot make pancakes.",
+    "explanation_ru": "В отрицании с неисчисляемым: much / any. Основной ответ: much. Также принимается: any, a lot of.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0810",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There aren't (quantifier) chairs in the room, so some of us have to stand.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0810-b1",
+        "answer": "many",
+        "accepted_answers": [
+          "many",
+          "enough",
+          "any",
+          "a lot of"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "В отрицании с исчисляемым: many / any. Основной ответ: many. Также принимается: enough, any, a lot of.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There aren't many chairs in the room, so some of us have to stand.",
+    "explanation_ru": "В отрицании с исчисляемым: many / any. Основной ответ: many. Также принимается: enough, any, a lot of.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0811",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "How (quantifier) money do you need for the trip?",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0811-b1",
+        "answer": "much",
+        "accepted_answers": [
+          "much"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "money неисчисляемое: How much. Основной ответ: much.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "How much money do you need for the trip?",
+    "explanation_ru": "money неисчисляемое: How much. Основной ответ: much.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0812",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "How (quantifier) students are there in your group?",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0812-b1",
+        "answer": "many",
+        "accepted_answers": [
+          "many"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "students исчисляемое: How many. Основной ответ: many.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "How many students are there in your group?",
+    "explanation_ru": "students исчисляемое: How many. Основной ответ: many.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0813",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Did you buy (quantifier) apples at the market?",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0813-b1",
+        "answer": "any",
+        "accepted_answers": [
+          "any",
+          "some"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Вопрос: any (some допустимо при ожидании «да»). Основной ответ: any. Также принимается: some.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Did you buy any apples at the market?",
+    "explanation_ru": "Вопрос: any (some допустимо при ожидании «да»). Основной ответ: any. Также принимается: some.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0814",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I would like (quantifier) tea, please.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0814-b1",
+        "answer": "some",
+        "accepted_answers": [
+          "some"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Предложение в вежливой просьбе: some. Основной ответ: some.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "I would like some tea, please.",
+    "explanation_ru": "Предложение в вежливой просьбе: some. Основной ответ: some.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0815",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There are (quantifier) people in the park today; it is crowded.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0815-b1",
+        "answer": "a lot of",
+        "accepted_answers": [
+          "a lot of",
+          "lots of",
+          "many"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Много людей: a lot of / many. Основной ответ: a lot of. Также принимается: lots of, many.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There are a lot of people in the park today; it is crowded.",
+    "explanation_ru": "Много людей: a lot of / many. Основной ответ: a lot of. Также принимается: lots of, many.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0816",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We spent (quantifier) money on the holiday, so we have nothing left.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0816-b1",
+        "answer": "a lot of",
+        "accepted_answers": [
+          "a lot of",
+          "too much",
+          "so much"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Смысл «много»: a lot of. Основной ответ: a lot of. Также принимается: too much, so much.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "We spent a lot of money on the holiday, so we have nothing left.",
+    "explanation_ru": "Смысл «много»: a lot of. Основной ответ: a lot of. Также принимается: too much, so much.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0817",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There is (quantifier) traffic on the road today, and we are late.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0817-b1",
+        "answer": "a lot of",
+        "accepted_answers": [
+          "a lot of",
+          "too much",
+          "so much"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "traffic неисчисляемое. Основной ответ: a lot of. Также принимается: too much, so much.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There is a lot of traffic on the road today, and we are late.",
+    "explanation_ru": "traffic неисчисляемое. Основной ответ: a lot of. Также принимается: too much, so much.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0818",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "You should eat (quantifier) vegetables, not just meat.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0818-b1",
+        "answer": "more",
+        "accepted_answers": [
+          "more",
+          "some",
+          "many",
+          "a lot of"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Совет: more / some. Основной ответ: more. Также принимается: some, many, a lot of.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "You should eat more vegetables, not just meat.",
+    "explanation_ru": "Совет: more / some. Основной ответ: more. Также принимается: some, many, a lot of.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0819",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There is (quantifier) bread left. We must go shopping.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0819-b1",
+        "answer": "no",
+        "accepted_answers": [
+          "no",
+          "not any"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "no / not any. Основной ответ: no. Также принимается: not any.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There is no bread left. We must go shopping.",
+    "explanation_ru": "no / not any. Основной ответ: no. Также принимается: not any.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0820",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Do you have (quantifier) brothers or sisters?",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0820-b1",
+        "answer": "any",
+        "accepted_answers": [
+          "any"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Вопрос: any. Основной ответ: any.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Do you have any brothers or sisters?",
+    "explanation_ru": "Вопрос: any. Основной ответ: any.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0821",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I don't have (quantifier) brothers or sisters.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0821-b1",
+        "answer": "any",
+        "accepted_answers": [
+          "any"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Отрицание: any. Основной ответ: any.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "I don't have any brothers or sisters.",
+    "explanation_ru": "Отрицание: any. Основной ответ: any.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0822",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We have (quantifier) bread for breakfast, so we don't need to buy more.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0822-b1",
+        "answer": "enough",
+        "accepted_answers": [
+          "enough",
+          "some"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Достаточно: enough. Основной ответ: enough. Также принимается: some.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "We have enough bread for breakfast, so we don't need to buy more.",
+    "explanation_ru": "Достаточно: enough. Основной ответ: enough. Также принимается: some.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0823",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There are not (quantifier) seats for everyone, so some people are standing.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0823-b1",
+        "answer": "enough",
+        "accepted_answers": [
+          "enough",
+          "many"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Недостаточно: enough. Основной ответ: enough. Также принимается: many.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There are not enough seats for everyone, so some people are standing.",
+    "explanation_ru": "Недостаточно: enough. Основной ответ: enough. Также принимается: many.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0824",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "He ate (quantifier) cake that he felt ill.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0824-b1",
+        "answer": "so much",
+        "accepted_answers": [
+          "so much",
+          "too much"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "so much … that. Основной ответ: so much. Также принимается: too much.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "He ate so much cake that he felt ill.",
+    "explanation_ru": "so much … that. Основной ответ: so much. Также принимается: too much.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0825",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There were (quantifier) cars on the road that we could not move.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0825-b1",
+        "answer": "so many",
+        "accepted_answers": [
+          "so many",
+          "too many"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "so many … that. Основной ответ: so many. Также принимается: too many.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There were so many cars on the road that we could not move.",
+    "explanation_ru": "so many … that. Основной ответ: so many. Также принимается: too many.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0826",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "She has (quantifier) experience, so they hired her immediately.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0826-b1",
+        "answer": "a lot of",
+        "accepted_answers": [
+          "a lot of",
+          "lots of",
+          "much",
+          "plenty of"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Много опыта: a lot of / plenty of. Основной ответ: a lot of. Также принимается: lots of, much, plenty of.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "She has a lot of experience, so they hired her immediately.",
+    "explanation_ru": "Много опыта: a lot of / plenty of. Основной ответ: a lot of. Также принимается: lots of, much, plenty of.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0827",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "(quantifier) of my friends live abroad; only two live in this city.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0827-b1",
+        "answer": "Most",
+        "accepted_answers": [
+          "Most",
+          "Many",
+          "Some"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Большинство: Most / Many. Основной ответ: Most. Также принимается: Many, Some.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Most of my friends live abroad; only two live in this city.",
+    "explanation_ru": "Большинство: Most / Many. Основной ответ: Most. Также принимается: Many, Some.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0828",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "(quantifier) of the students passed the exam; the other three failed.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0828-b1",
+        "answer": "Most",
+        "accepted_answers": [
+          "Most",
+          "Many"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Большинство сдали: Most. Основной ответ: Most. Также принимается: Many.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Most of the students passed the exam; the other three failed.",
+    "explanation_ru": "Большинство сдали: Most. Основной ответ: Most. Также принимается: Many.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0829",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I have two sisters. (quantifier) of them lives in Spain.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0829-b1",
+        "answer": "One",
+        "accepted_answers": [
+          "One",
+          "Each"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Одна из двух: One / Each. Основной ответ: One. Также принимается: Each.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "I have two sisters. One of them lives in Spain.",
+    "explanation_ru": "Одна из двух: One / Each. Основной ответ: One. Также принимается: Each.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0830",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I looked at both shirts, but (quantifier) of them fitted me.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0830-b1",
+        "answer": "neither",
+        "accepted_answers": [
+          "neither",
+          "none"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Ни одна из двух: neither. Основной ответ: neither. Также принимается: none.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "I looked at both shirts, but neither of them fitted me.",
+    "explanation_ru": "Ни одна из двух: neither. Основной ответ: neither. Также принимается: none.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0831",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We have five rooms, and (quantifier) of them has a view of the sea.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0831-b1",
+        "answer": "none",
+        "accepted_answers": [
+          "none",
+          "not one"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Ни одна из пяти: none. Основной ответ: none. Также принимается: not one.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "We have five rooms, and none of them has a view of the sea.",
+    "explanation_ru": "Ни одна из пяти: none. Основной ответ: none. Также принимается: not one.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0832",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "(quantifier) student in the class has a laptop.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0832-b1",
+        "answer": "Every",
+        "accepted_answers": [
+          "Every",
+          "Each"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Каждый + ед. ч.: Every / Each. Основной ответ: Every. Также принимается: Each.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Every student in the class has a laptop.",
+    "explanation_ru": "Каждый + ед. ч.: Every / Each. Основной ответ: Every. Также принимается: Each.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0833",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "(quantifier) day I walk to work.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0833-b1",
+        "answer": "Every",
+        "accepted_answers": [
+          "Every",
+          "Each"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Каждый день: Every. Основной ответ: Every. Также принимается: Each.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Every day I walk to work.",
+    "explanation_ru": "Каждый день: Every. Основной ответ: Every. Также принимается: Each.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0834",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There are two parks in the city, and I like (quantifier) of them.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0834-b1",
+        "answer": "both",
+        "accepted_answers": [
+          "both"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Оба: both of them. Основной ответ: both.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There are two parks in the city, and I like both of them.",
+    "explanation_ru": "Оба: both of them. Основной ответ: both.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0835",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There were (quantifier) cookies on the plate; somebody had eaten them all.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0835-b1",
+        "answer": "no",
+        "accepted_answers": [
+          "no",
+          "not any"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "«Не осталось»: no / not any. Основной ответ: no. Также принимается: not any.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There were no cookies on the plate; somebody had eaten them all.",
+    "explanation_ru": "«Не осталось»: no / not any. Основной ответ: no. Также принимается: not any.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0836",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "He drinks (quantifier) coffee: five cups a day.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0836-b1",
+        "answer": "a lot of",
+        "accepted_answers": [
+          "a lot of",
+          "lots of",
+          "too much",
+          "so much"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "coffee неисчисляемое: a lot of. Основной ответ: a lot of. Также принимается: lots of, too much, so much.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "He drinks a lot of coffee: five cups a day.",
+    "explanation_ru": "coffee неисчисляемое: a lot of. Основной ответ: a lot of. Также принимается: lots of, too much, so much.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0837",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I have (quantifier) homework tonight, so I can go to the cinema.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0837-b1",
+        "answer": "little",
+        "accepted_answers": [
+          "little",
+          "not much",
+          "no"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Мало: not much. Основной ответ: little. Также принимается: not much, no.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "I have little homework tonight, so I can go to the cinema.",
+    "explanation_ru": "Мало: not much. Основной ответ: little. Также принимается: not much, no.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0838",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There is only (quantifier) sugar in the jar. We need to buy more.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0838-b1",
+        "answer": "a little",
+        "accepted_answers": [
+          "a little",
+          "a bit of"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "only + немного: a little. Основной ответ: a little. Также принимается: a bit of.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "There is only a little sugar in the jar. We need to buy more.",
+    "explanation_ru": "only + немного: a little. Основной ответ: a little. Также принимается: a bit of.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0839",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "(quantifier) number of people have complained about the noise.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0839-b1",
+        "answer": "A",
+        "accepted_answers": [
+          "A"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "a number of + мн. ч. глагол. Основной ответ: A.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "A number of people have complained about the noise.",
+    "explanation_ru": "a number of + мн. ч. глагол. Основной ответ: A.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0840",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The number of complaints (be) growing every year.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0840-b1",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "The number of + сказуемое в ед. ч. Основной ответ: is.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "The number of complaints is growing every year.",
+    "explanation_ru": "The number of + сказуемое в ед. ч. Основной ответ: is.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0841",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A number of problems (need) to be solved before we start.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0841-b1",
+        "answer": "need",
+        "accepted_answers": [
+          "need"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "a number of + мн. ч. сказуемое. Основной ответ: need.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "A number of problems need to be solved before we start.",
+    "explanation_ru": "a number of + мн. ч. сказуемое. Основной ответ: need.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0842",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A lot of people (be) waiting outside the station.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0842-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "are"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "a lot of people + мн. ч. Основной ответ: were. Также принимается: are.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "A lot of people were waiting outside the station.",
+    "explanation_ru": "a lot of people + мн. ч. Основной ответ: were. Также принимается: are.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0843",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A lot of work (have) to be done before the guests arrive.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0843-b1",
+        "answer": "has",
+        "accepted_answers": [
+          "has"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "a lot of + неисчисляемое: ед. ч. Основной ответ: has.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "A lot of work has to be done before the guests arrive.",
+    "explanation_ru": "a lot of + неисчисляемое: ед. ч. Основной ответ: has.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0844",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Plenty of milk (be) left, so we do not need to go shopping.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0844-b1",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "plenty of + неисчисляемое: is. Основной ответ: is.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Plenty of milk is left, so we do not need to go shopping.",
+    "explanation_ru": "plenty of + неисчисляемое: is. Основной ответ: is.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0845",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Plenty of tickets (be) still available.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0845-b1",
+        "answer": "are",
+        "accepted_answers": [
+          "are"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "plenty of + мн. ч.: are. Основной ответ: are.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Plenty of tickets are still available.",
+    "explanation_ru": "plenty of + мн. ч.: are. Основной ответ: are.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0846",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Each of the players (receive) a medal after the match.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0846-b1",
+        "answer": "received",
+        "accepted_answers": [
+          "received",
+          "receives"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Each + ед. ч. Основной ответ: received. Также принимается: receives.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Each of the players received a medal after the match.",
+    "explanation_ru": "Each + ед. ч. Основной ответ: received. Также принимается: receives.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0847",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Most of the money (be) spent on repairs.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0847-b1",
+        "answer": "was",
+        "accepted_answers": [
+          "was"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "most of + неисчисляемое: ед. ч. Основной ответ: was.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Most of the money was spent on repairs.",
+    "explanation_ru": "most of + неисчисляемое: ед. ч. Основной ответ: was.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0848",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Most of the people (be) very friendly.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "blanks": [
+      {
+        "id": "n-0848-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "are"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "most of + мн. ч. Основной ответ: were. Также принимается: are.",
+        "tense_or_construction": "noun_quantifiers"
+      }
+    ],
+    "answer_text": "Most of the people were very friendly.",
+    "explanation_ru": "most of + мн. ч. Основной ответ: were. Также принимается: are.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0849",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There are only ___ chairs, so some people have to stand.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "a few",
+      "little",
+      "a little",
+      "few"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0,
+      3
+    ],
+    "answer": "a few",
+    "summary": "There are only a few chairs, so some people have to stand.",
+    "explanation_ru": "chairs исчисляемое. Правильный вариант: a few. Также верно: few.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0850",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I'm afraid there is ___ milk left; we need to buy some.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "many",
+      "little",
+      "a few",
+      "few"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "little",
+    "summary": "I'm afraid there is little milk left; we need to buy some.",
+    "explanation_ru": "Почти не осталось, неисчисляемое. Правильный вариант: little.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0851",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "He has ___ friends, so he is never alone.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "little",
+      "much",
+      "a little",
+      "a lot of"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "a lot of",
+    "summary": "He has a lot of friends, so he is never alone.",
+    "explanation_ru": "friends исчисляемое. Правильный вариант: a lot of.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0852",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We don't have ___ time. Hurry up!",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "few",
+      "a few",
+      "much",
+      "many"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "much",
+    "summary": "We don't have much time. Hurry up!",
+    "explanation_ru": "time неисчисляемое, отрицание. Правильный вариант: much.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0853",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "How ___ homework did you have yesterday?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "few",
+      "many",
+      "a few",
+      "much"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "much",
+    "summary": "How much homework did you have yesterday?",
+    "explanation_ru": "homework неисчисляемое. Правильный вариант: much.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0854",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There were ___ people at the party; I knew almost no one.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "little",
+      "a lot of",
+      "a little",
+      "much"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "a lot of",
+    "summary": "There were a lot of people at the party; I knew almost no one.",
+    "explanation_ru": "people мн. ч., исчисляемое. Правильный вариант: a lot of.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0855",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "She puts ___ sugar in her tea, because she likes it sweet.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "a lot of",
+      "a few",
+      "few",
+      "many"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "a lot of",
+    "summary": "She puts a lot of sugar in her tea, because she likes it sweet.",
+    "explanation_ru": "sugar неисчисляемое. Правильный вариант: a lot of.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0856",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We have ___ rice, so we can make dinner for everyone.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "few",
+      "enough",
+      "many",
+      "a few"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "enough",
+    "summary": "We have enough rice, so we can make dinner for everyone.",
+    "explanation_ru": "rice неисчисляемое. Правильный вариант: enough.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0857",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There is ___ butter in the fridge. We can't bake a cake.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "no",
+      "few",
+      "any",
+      "many"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "no",
+    "summary": "There is no butter in the fridge. We can't bake a cake.",
+    "explanation_ru": "butter неисчисляемое: no. Правильный вариант: no.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0858",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There are ___ clouds in the sky today; it's a perfect day for a picnic.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "a little",
+      "much",
+      "no",
+      "little"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "no",
+    "summary": "There are no clouds in the sky today; it's a perfect day for a picnic.",
+    "explanation_ru": "clouds исчисляемое. Правильный вариант: no.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0859",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There were ___ people in the shop, so we did not have to wait.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "a little",
+      "much",
+      "little",
+      "few"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "few",
+    "summary": "There were few people in the shop, so we did not have to wait.",
+    "explanation_ru": "people исчисляемое: few. Правильный вариант: few.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0860",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Can I have ___ more water, please?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "many",
+      "some",
+      "few",
+      "a few"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "some",
+    "summary": "Can I have some more water, please?",
+    "explanation_ru": "water неисчисляемое: some. Правильный вариант: some.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0861",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We saw ___ interesting places during our trip.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "little",
+      "much",
+      "several",
+      "a little"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "several",
+    "summary": "We saw several interesting places during our trip.",
+    "explanation_ru": "places исчисляемое: several. Правильный вариант: several.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0862",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I think there are ___ mistakes in this text; I can see about ten.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "many",
+      "much",
+      "a little",
+      "little"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "many",
+    "summary": "I think there are many mistakes in this text; I can see about ten.",
+    "explanation_ru": "mistakes исчисляемое. Правильный вариант: many.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0863",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There isn't ___ information about the accident yet.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "many",
+      "few",
+      "a few",
+      "much"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "much",
+    "summary": "There isn't much information about the accident yet.",
+    "explanation_ru": "information неисчисляемое. Правильный вариант: much.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0864",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There are ___ cars in this street than in the centre.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "fewer",
+      "much",
+      "little",
+      "less"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "fewer",
+    "summary": "There are fewer cars in this street than in the centre.",
+    "explanation_ru": "cars исчисляемое: fewer. Правильный вариант: fewer.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0865",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "You make ___ noise than you used to; thank you.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "fewer",
+      "less",
+      "few",
+      "many"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "less",
+    "summary": "You make less noise than you used to; thank you.",
+    "explanation_ru": "noise неисчисляемое: less. Правильный вариант: less.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0866",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The ___ of students in this class is twenty-five.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "lot",
+      "piece",
+      "amount",
+      "number"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "number",
+    "summary": "The number of students in this class is twenty-five.",
+    "explanation_ru": "the number of + мн. ч. Правильный вариант: number.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0867",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "basic",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A ___ of tourists visit this museum every year.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "little",
+      "piece",
+      "number",
+      "much"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "number",
+    "summary": "A number of tourists visit this museum every year.",
+    "explanation_ru": "a number of + мн. ч. Правильный вариант: number.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0868",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There is a large ___ of water in the tank.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "many",
+      "amount",
+      "number",
+      "few"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "amount",
+    "summary": "There is a large amount of water in the tank.",
+    "explanation_ru": "amount of + неисчисляемое. Правильный вариант: amount.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0869",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "He has ___ of money, so he can buy anything.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "few",
+      "several",
+      "plenty",
+      "many"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "plenty",
+    "summary": "He has plenty of money, so he can buy anything.",
+    "explanation_ru": "plenty of + неисчисляемое. Правильный вариант: plenty.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0870",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "___ student has to hand in the work on Friday.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "Many",
+      "Few",
+      "Several",
+      "Every"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "Every",
+    "summary": "Every student has to hand in the work on Friday.",
+    "explanation_ru": "Every + ед. ч. Правильный вариант: Every.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0871",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I have read ___ of these books, but not the others.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "some",
+      "every",
+      "much",
+      "each other"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "some",
+    "summary": "I have read some of these books, but not the others.",
+    "explanation_ru": "some of + мн. ч. Правильный вариант: some.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0872",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "He lost his keys and looked for them in ___ room, but could not find them.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "every",
+      "most",
+      "few",
+      "many"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "every",
+    "summary": "He lost his keys and looked for them in every room, but could not find them.",
+    "explanation_ru": "Каждая комната: every + ед. ч. Правильный вариант: every.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0873",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There are two books on the table. ___ of them is mine.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "Few",
+      "Every",
+      "Much",
+      "Neither"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "Neither",
+    "summary": "There are two books on the table. Neither of them is mine.",
+    "explanation_ru": "Ни одна из двух: neither of. Правильный вариант: Neither.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0874",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I have three phones, but ___ of them works.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "either",
+      "every",
+      "none",
+      "each"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "none",
+    "summary": "I have three phones, but none of them works.",
+    "explanation_ru": "Ни один из трёх: none of. Правильный вариант: none.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0875",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "They gave me two keys, and ___ of them opens the door.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "much",
+      "neither",
+      "every",
+      "none"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "neither",
+    "summary": "They gave me two keys, and neither of them opens the door.",
+    "explanation_ru": "Ни один из двух: neither of. Правильный вариант: neither.",
+    "practice_tenses": [
+      "noun_quantifiers"
+    ],
+    "tags": [
+      "noun_quantifiers"
+    ]
+  },
+  {
+    "id": "n-0876",
+    "type": "context_cloze",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Yesterday {{1:article}} old man gave me {{2:article}} piece of {{3:advice}}. He said that two {{4:man}} had left their {{5:luggage}} on the train.",
+    "title": "Заполните пропуски в тексте.",
+    "instruction_ru": "Заполните пропуски в тексте.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#артикли-и-определители-с-существительными",
+      "content/nouns/09-nouns.md#исчисляемые-и-неисчисляемые-существительные",
+      "content/nouns/09-nouns.md#как-посчитать-неисчисляемое-партитивы",
+      "content/nouns/09-nouns.md#неправильное-множественное-число"
+    ],
+    "blanks": [
+      {
+        "id": "n-0876-b1",
+        "answer": "an",
+        "accepted_answers": [
+          "an"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#артикли-и-определители-с-существительными"
+        ],
+        "explanation_ru": "Гласный звук: an. Основной ответ: an.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0876-b2",
+        "answer": "a",
+        "accepted_answers": [
+          "a"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#артикли-и-определители-с-существительными"
+        ],
+        "explanation_ru": "a piece of. Основной ответ: a.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0876-b3",
+        "answer": "advice",
+        "accepted_answers": [
+          "advice"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#как-посчитать-неисчисляемое-партитивы"
+        ],
+        "explanation_ru": "advice неисчисляемое: форма не меняется. Основной ответ: advice.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0876-b4",
+        "answer": "men",
+        "accepted_answers": [
+          "men"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#неправильное-множественное-число"
+        ],
+        "explanation_ru": "man → men. Основной ответ: men.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0876-b5",
+        "answer": "luggage",
+        "accepted_answers": [
+          "luggage"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#исчисляемые-и-неисчисляемые-существительные"
+        ],
+        "explanation_ru": "luggage неисчисляемое. Основной ответ: luggage.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer": [
+      "an",
+      "a",
+      "advice",
+      "men",
+      "luggage"
+    ],
+    "answer_text": "Yesterday an old man gave me a piece of advice. He said that two men had left their luggage on the train.",
+    "explanation_ru": "1) Гласный звук: an. Основной ответ: an. 2) a piece of. Основной ответ: a. 3) advice неисчисляемое: форма не меняется. Основной ответ: advice. 4) man → men. Основной ответ: men. 5) luggage неисчисляемое. Основной ответ: luggage.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0877",
+    "type": "context_cloze",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There were two {{1:woman}} and three {{2:child}} in the waiting room, and each of them {{3:be}} reading a magazine.",
+    "title": "Заполните пропуски в тексте.",
+    "instruction_ru": "Заполните пропуски в тексте.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers",
+      "content/nouns/09-nouns.md#неправильное-множественное-число"
+    ],
+    "blanks": [
+      {
+        "id": "n-0877-b1",
+        "answer": "women",
+        "accepted_answers": [
+          "women"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#неправильное-множественное-число"
+        ],
+        "explanation_ru": "woman → women. Основной ответ: women.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0877-b2",
+        "answer": "children",
+        "accepted_answers": [
+          "children"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#неправильное-множественное-число"
+        ],
+        "explanation_ru": "child → children. Основной ответ: children.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0877-b3",
+        "answer": "was",
+        "accepted_answers": [
+          "was"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+        ],
+        "explanation_ru": "Each + ед. ч. Основной ответ: was.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer": [
+      "women",
+      "children",
+      "was"
+    ],
+    "answer_text": "There were two women and three children in the waiting room, and each of them was reading a magazine.",
+    "explanation_ru": "1) woman → women. Основной ответ: women. 2) child → children. Основной ответ: children. 3) Each + ед. ч. Основной ответ: was.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0878",
+    "type": "context_cloze",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My {{1:brother}} house is near the sea. On Sundays he takes many {{2:photo}} of the {{3:sheep}} that graze on the hill.",
+    "title": "Заполните пропуски в тексте.",
+    "instruction_ru": "Заполните пропуски в тексте.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#одна-форма-для-обоих-чисел",
+      "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of",
+      "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+    ],
+    "blanks": [
+      {
+        "id": "n-0878-b1",
+        "answer": "brother's",
+        "accepted_answers": [
+          "brother's"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+        ],
+        "explanation_ru": "Притяжательный падеж. Основной ответ: brother's.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0878-b2",
+        "answer": "photos",
+        "accepted_answers": [
+          "photos"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+        ],
+        "explanation_ru": "photo → photos. Основной ответ: photos.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0878-b3",
+        "answer": "sheep",
+        "accepted_answers": [
+          "sheep"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#одна-форма-для-обоих-чисел"
+        ],
+        "explanation_ru": "sheep — одна форма для обоих чисел. Основной ответ: sheep.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer": [
+      "brother's",
+      "photos",
+      "sheep"
+    ],
+    "answer_text": "My brother's house is near the sea. On Sundays he takes many photos of the sheep that graze on the hill.",
+    "explanation_ru": "1) Притяжательный падеж. Основной ответ: brother's. 2) photo → photos. Основной ответ: photos. 3) sheep — одна форма для обоих чисел. Основной ответ: sheep.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0879",
+    "type": "context_cloze",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The {{1:police}} {{2:be}} outside the bank, and the {{3:news}} {{4:be}} already on every channel.",
+    "title": "Заполните пропуски в тексте.",
+    "instruction_ru": "Заполните пропуски в тексте.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#только-единственное-число",
+      "content/nouns/09-nouns.md#только-множественное-число"
+    ],
+    "blanks": [
+      {
+        "id": "n-0879-b1",
+        "answer": "police",
+        "accepted_answers": [
+          "police"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-множественное-число"
+        ],
+        "explanation_ru": "police. Основной ответ: police.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0879-b2",
+        "answer": "were",
+        "accepted_answers": [
+          "were"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-множественное-число"
+        ],
+        "explanation_ru": "police — мн. ч. Основной ответ: were.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0879-b3",
+        "answer": "news",
+        "accepted_answers": [
+          "news"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-единственное-число"
+        ],
+        "explanation_ru": "news. Основной ответ: news.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0879-b4",
+        "answer": "was",
+        "accepted_answers": [
+          "was"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-единственное-число"
+        ],
+        "explanation_ru": "news — ед. ч. Основной ответ: was.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer": [
+      "police",
+      "were",
+      "news",
+      "was"
+    ],
+    "answer_text": "The police were outside the bank, and the news was already on every channel.",
+    "explanation_ru": "1) police. Основной ответ: police. 2) police — мн. ч. Основной ответ: were. 3) news. Основной ответ: news. 4) news — ед. ч. Основной ответ: was.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0880",
+    "type": "context_cloze",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Three {{1:knife}}, two {{2:box}} and a few {{3:potato}} were on the kitchen table when the {{4:thief}} came in.",
+    "title": "Заполните пропуски в тексте.",
+    "instruction_ru": "Заполните пропуски в тексте.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+    ],
+    "blanks": [
+      {
+        "id": "n-0880-b1",
+        "answer": "knives",
+        "accepted_answers": [
+          "knives"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+        ],
+        "explanation_ru": "knife → knives. Основной ответ: knives.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0880-b2",
+        "answer": "boxes",
+        "accepted_answers": [
+          "boxes"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+        ],
+        "explanation_ru": "box → boxes. Основной ответ: boxes.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0880-b3",
+        "answer": "potatoes",
+        "accepted_answers": [
+          "potatoes"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+        ],
+        "explanation_ru": "potato → potatoes. Основной ответ: potatoes.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0880-b4",
+        "answer": "thief",
+        "accepted_answers": [
+          "thief"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+        ],
+        "explanation_ru": "the thief — ед. ч., глагол came. Основной ответ: thief.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer": [
+      "knives",
+      "boxes",
+      "potatoes",
+      "thief"
+    ],
+    "answer_text": "Three knives, two boxes and a few potatoes were on the kitchen table when the thief came in.",
+    "explanation_ru": "1) knife → knives. Основной ответ: knives. 2) box → boxes. Основной ответ: boxes. 3) potato → potatoes. Основной ответ: potatoes. 4) the thief — ед. ч., глагол came. Основной ответ: thief.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0881",
+    "type": "context_cloze",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "{{1:article}} Browns live in {{2:article}} United States, and their daughter works as {{3:article}} engineer.",
+    "title": "Заполните пропуски в тексте.",
+    "instruction_ru": "Заполните пропуски в тексте.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#a-an",
+      "content/nouns/09-nouns.md#the"
+    ],
+    "blanks": [
+      {
+        "id": "n-0881-b1",
+        "answer": "The",
+        "accepted_answers": [
+          "The"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#the"
+        ],
+        "explanation_ru": "the + фамилия во мн. ч. Основной ответ: The.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0881-b2",
+        "answer": "the",
+        "accepted_answers": [
+          "the"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#the"
+        ],
+        "explanation_ru": "the United States. Основной ответ: the.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0881-b3",
+        "answer": "an",
+        "accepted_answers": [
+          "an"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#a-an"
+        ],
+        "explanation_ru": "профессия, гласный звук. Основной ответ: an.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer": [
+      "The",
+      "the",
+      "an"
+    ],
+    "answer_text": "The Browns live in the United States, and their daughter works as an engineer.",
+    "explanation_ru": "1) the + фамилия во мн. ч. Основной ответ: The. 2) the United States. Основной ответ: the. 3) профессия, гласный звук. Основной ответ: an.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0882",
+    "type": "context_cloze",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Her {{1:father-in-law}} car was parked outside, and her two {{2:sister-in-law}} were waiting in it.",
+    "title": "Заполните пропуски в тексте.",
+    "instruction_ru": "Заполните пропуски в тексте.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#составные-существительные-compound-nouns"
+    ],
+    "blanks": [
+      {
+        "id": "n-0882-b1",
+        "answer": "father-in-law's",
+        "accepted_answers": [
+          "father-in-law's"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#составные-существительные-compound-nouns"
+        ],
+        "explanation_ru": "Притяжательный падеж на последнем слове. Основной ответ: father-in-law's.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0882-b2",
+        "answer": "sisters-in-law",
+        "accepted_answers": [
+          "sisters-in-law"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#составные-существительные-compound-nouns"
+        ],
+        "explanation_ru": "мн. ч. у главного слова. Основной ответ: sisters-in-law.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer": [
+      "father-in-law's",
+      "sisters-in-law"
+    ],
+    "answer_text": "Her father-in-law's car was parked outside, and her two sisters-in-law were waiting in it.",
+    "explanation_ru": "1) Притяжательный падеж на последнем слове. Основной ответ: father-in-law's. 2) мн. ч. у главного слова. Основной ответ: sisters-in-law.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0883",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Both of her (sister-in-law) work in the same hospital, but neither of them has a car.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#составные-существительные-compound-nouns"
+    ],
+    "blanks": [
+      {
+        "id": "n-0883-b1",
+        "answer": "sisters-in-law",
+        "accepted_answers": [
+          "sisters-in-law"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#составные-существительные-compound-nouns"
+        ],
+        "explanation_ru": "Мн. ч. у главного слова. Основной ответ: sisters-in-law.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "Both of her sisters-in-law work in the same hospital, but neither of them has a car.",
+    "explanation_ru": "Мн. ч. у главного слова. Основной ответ: sisters-in-law.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0884",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The (child) toys were all over the floor when their mother came home.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+    ],
+    "blanks": [
+      {
+        "id": "n-0884-b1",
+        "answer": "children's",
+        "accepted_answers": [
+          "children's"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+        ],
+        "explanation_ru": "Притяжательный падеж неправильного мн. ч. Основной ответ: children's.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "The children's toys were all over the floor when their mother came home.",
+    "explanation_ru": "Притяжательный падеж неправильного мн. ч. Основной ответ: children's.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0885",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Three (woman) from our office went to a conference in Berlin last week.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#неправильное-множественное-число"
+    ],
+    "blanks": [
+      {
+        "id": "n-0885-b1",
+        "answer": "women",
+        "accepted_answers": [
+          "women"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#неправильное-множественное-число"
+        ],
+        "explanation_ru": "woman → women. Основной ответ: women.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "Three women from our office went to a conference in Berlin last week.",
+    "explanation_ru": "woman → women. Основной ответ: women.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0886",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The (headmaster) office is at the end of the corridor, and the (teacher) room is next to it.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+    ],
+    "blanks": [
+      {
+        "id": "n-0886-b1",
+        "answer": "headmaster's",
+        "accepted_answers": [
+          "headmaster's"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+        ],
+        "explanation_ru": "Ед. ч. headmaster's, мн. ч. teachers' (по смыслу: комната для учителей). Основной ответ: headmaster's.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0886-b2",
+        "answer": "teachers'",
+        "accepted_answers": [
+          "teachers'"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+        ],
+        "explanation_ru": "Ед. ч. headmaster's, мн. ч. teachers' (по смыслу: комната для учителей). Основной ответ: teachers'.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "The headmaster's office is at the end of the corridor, and the teachers' room is next to it.",
+    "explanation_ru": "1) Ед. ч. headmaster's, мн. ч. teachers' (по смыслу: комната для учителей). Основной ответ: headmaster's. 2) Ед. ч. headmaster's, мн. ч. teachers' (по смыслу: комната для учителей). Основной ответ: teachers'.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0887",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We need two (loaf) of bread and a few (tomato) for the sandwiches.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+    ],
+    "blanks": [
+      {
+        "id": "n-0887-b1",
+        "answer": "loaves",
+        "accepted_answers": [
+          "loaves"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+        ],
+        "explanation_ru": "loaf → loaves; tomato → tomatoes. Основной ответ: loaves.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0887-b2",
+        "answer": "tomatoes",
+        "accepted_answers": [
+          "tomatoes"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#регулярное-образование-множественного-числа"
+        ],
+        "explanation_ru": "loaf → loaves; tomato → tomatoes. Основной ответ: tomatoes.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "We need two loaves of bread and a few tomatoes for the sandwiches.",
+    "explanation_ru": "1) loaf → loaves; tomato → tomatoes. Основной ответ: loaves. 2) loaf → loaves; tomato → tomatoes. Основной ответ: tomatoes.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0888",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "He gave me some good advice and two (piece) of useful information.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#как-посчитать-неисчисляемое-партитивы"
+    ],
+    "blanks": [
+      {
+        "id": "n-0888-b1",
+        "answer": "pieces",
+        "accepted_answers": [
+          "pieces"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#как-посчитать-неисчисляемое-партитивы"
+        ],
+        "explanation_ru": "Неисчисляемое считаем через piece of. Основной ответ: pieces.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "He gave me some good advice and two pieces of useful information.",
+    "explanation_ru": "Неисчисляемое считаем через piece of. Основной ответ: pieces.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0889",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The (people) in the village (be) friendly, and the police seldom (have) serious problems there.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#только-множественное-число"
+    ],
+    "blanks": [
+      {
+        "id": "n-0889-b1",
+        "answer": "people",
+        "accepted_answers": [
+          "people"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-множественное-число"
+        ],
+        "explanation_ru": "people и police — мн. ч. Основной ответ: people.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0889-b2",
+        "answer": "are",
+        "accepted_answers": [
+          "are"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-множественное-число"
+        ],
+        "explanation_ru": "people и police — мн. ч. Основной ответ: are.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0889-b3",
+        "answer": "have",
+        "accepted_answers": [
+          "have"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-множественное-число"
+        ],
+        "explanation_ru": "people и police — мн. ч. Основной ответ: have.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "The people in the village are friendly, and the police seldom have serious problems there.",
+    "explanation_ru": "1) people и police — мн. ч. Основной ответ: people. 2) people и police — мн. ч. Основной ответ: are. 3) people и police — мн. ч. Основной ответ: have.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0890",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A (student) of mine has just won a prize for his essay.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#двойной-родительный"
+    ],
+    "blanks": [
+      {
+        "id": "n-0890-b1",
+        "answer": "student",
+        "accepted_answers": [
+          "student"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#двойной-родительный"
+        ],
+        "explanation_ru": "Двойной родительный: a student of mine. Основной ответ: student.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "A student of mine has just won a prize for his essay.",
+    "explanation_ru": "Двойной родительный: a student of mine. Основной ответ: student.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0891",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "There (be) a lot of furniture in the room, but there (be) not enough chairs.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#исчисляемые-и-неисчисляемые-существительные"
+    ],
+    "blanks": [
+      {
+        "id": "n-0891-b1",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#исчисляемые-и-неисчисляемые-существительные"
+        ],
+        "explanation_ru": "furniture неисчисляемое: is; chairs мн. ч.: are. Основной ответ: is.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0891-b2",
+        "answer": "are",
+        "accepted_answers": [
+          "are"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#исчисляемые-и-неисчисляемые-существительные"
+        ],
+        "explanation_ru": "furniture неисчисляемое: is; chairs мн. ч.: are. Основной ответ: are.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "There is a lot of furniture in the room, but there are not enough chairs.",
+    "explanation_ru": "1) furniture неисчисляемое: is; chairs мн. ч.: are. Основной ответ: is. 2) furniture неисчисляемое: is; chairs мн. ч.: are. Основной ответ: are.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0892",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The (scissors) on the desk (be) mine, and the trousers on the chair (be) Tom's.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#слова-с-двумя-значениями-исчисляемое-неисчисляемое"
+    ],
+    "blanks": [
+      {
+        "id": "n-0892-b1",
+        "answer": "scissors",
+        "accepted_answers": [
+          "scissors"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#слова-с-двумя-значениями-исчисляемое-неисчисляемое"
+        ],
+        "explanation_ru": "scissors и trousers — только мн. ч. Основной ответ: scissors.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0892-b2",
+        "answer": "are",
+        "accepted_answers": [
+          "are"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#слова-с-двумя-значениями-исчисляемое-неисчисляемое"
+        ],
+        "explanation_ru": "scissors и trousers — только мн. ч. Основной ответ: are.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0892-b3",
+        "answer": "are",
+        "accepted_answers": [
+          "are"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#слова-с-двумя-значениями-исчисляемое-неисчисляемое"
+        ],
+        "explanation_ru": "scissors и trousers — только мн. ч. Основной ответ: are.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "The scissors on the desk are mine, and the trousers on the chair are Tom's.",
+    "explanation_ru": "1) scissors и trousers — только мн. ч. Основной ответ: scissors. 2) scissors и trousers — только мн. ч. Основной ответ: are. 3) scissors и trousers — только мн. ч. Основной ответ: are.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0893",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Mathematics (be) my favourite subject, but physics (be) harder.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#только-единственное-число"
+    ],
+    "blanks": [
+      {
+        "id": "n-0893-b1",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-единственное-число"
+        ],
+        "explanation_ru": "Названия наук на -ics — ед. ч. Основной ответ: is.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0893-b2",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#только-единственное-число"
+        ],
+        "explanation_ru": "Названия наук на -ics — ед. ч. Основной ответ: is.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "Mathematics is my favourite subject, but physics is harder.",
+    "explanation_ru": "1) Названия наук на -ics — ед. ч. Основной ответ: is. 2) Названия наук на -ics — ед. ч. Основной ответ: is.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0894",
+    "type": "open_brackets",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My (grandparents) house is full of old (photo) of my uncle and aunt.",
+    "instruction_ru": "Раскройте скобки.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+    ],
+    "blanks": [
+      {
+        "id": "n-0894-b1",
+        "answer": "grandparents'",
+        "accepted_answers": [
+          "grandparents'"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+        ],
+        "explanation_ru": "grandparents' (мн. ч., s после ') ;; photo → photos. Основной ответ: grandparents'.",
+        "tense_or_construction": "noun_mixed"
+      },
+      {
+        "id": "n-0894-b2",
+        "answer": "photos",
+        "accepted_answers": [
+          "photos"
+        ],
+        "rule_refs": [
+          "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+        ],
+        "explanation_ru": "grandparents' (мн. ч., s после ') ;; photo → photos. Основной ответ: photos.",
+        "tense_or_construction": "noun_mixed"
+      }
+    ],
+    "answer_text": "My grandparents' house is full of old photos of my uncle and aunt.",
+    "explanation_ru": "1) grandparents' (мн. ч., s после ') ;; photo → photos. Основной ответ: grandparents'. 2) grandparents' (мн. ч., s после ') ;; photo → photos. Основной ответ: photos.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0895",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Her ___ are both doctors, and they work in the same hospital.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#составные-существительные-compound-nouns"
+    ],
+    "options": [
+      "sisters-in-law",
+      "sister-in-law's",
+      "sister-in-laws",
+      "sisters-in-laws"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "sisters-in-law",
+    "summary": "Her sisters-in-law are both doctors, and they work in the same hospital.",
+    "explanation_ru": "У составного слова -s присоединяется к главному слову. Правильный вариант: sisters-in-law.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0896",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The ___ toys were scattered all over the carpet.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+    ],
+    "options": [
+      "childs'",
+      "children's",
+      "childrens'",
+      "childrens"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "children's",
+    "summary": "The children's toys were scattered all over the carpet.",
+    "explanation_ru": "Неправильное мн. ч. children + 's. Правильный вариант: children's.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0897",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A friend of ___ has just offered me a job in Madrid.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#двойной-родительный"
+    ],
+    "options": [
+      "me sister",
+      "my sisters",
+      "my sister",
+      "my sister's"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "my sister's",
+    "summary": "A friend of my sister's has just offered me a job in Madrid.",
+    "explanation_ru": "Двойной родительный: a friend of my sister's. Правильный вариант: my sister's.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0898",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The ___ is on the second floor, next to the lift.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#притяжательный-падеж-s-и-of"
+    ],
+    "options": [
+      "office manager's",
+      "manager office",
+      "manager's office",
+      "managers office"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "manager's office",
+    "summary": "The manager's office is on the second floor, next to the lift.",
+    "explanation_ru": "Притяжательный падеж: manager's office. Правильный вариант: manager's office.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0899",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "medium",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We stayed in a ___ hotel near the airport.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#существительное-в-роли-определения-noun-noun"
+    ],
+    "options": [
+      "four-star",
+      "four-stars",
+      "four stars",
+      "fours-star"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "four-star",
+    "summary": "We stayed in a four-star hotel near the airport.",
+    "explanation_ru": "Существительное в роли определения — ед. ч. с дефисом. Правильный вариант: four-star.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  },
+  {
+    "id": "n-0900",
+    "type": "multiple_choice",
+    "topic": "nouns",
+    "level": "advanced",
+    "content_version": "nouns-2026-11-07.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Neither ___ the answer to the last question.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "rule_refs": [
+      "content/nouns/09-nouns.md#количественные-определители-quantifiers"
+    ],
+    "options": [
+      "of the boys knows",
+      "of boys knew",
+      "of the boys knew",
+      "of the boy knew"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      0,
+      2
+    ],
+    "answer": "of the boys knew",
+    "summary": "Neither of the boys knew the answer to the last question.",
+    "explanation_ru": "Neither of + мн. ч.; глагол в прошедшем. Правильный вариант: of the boys knew. Также верно: of the boys knows.",
+    "practice_tenses": [
+      "noun_mixed"
+    ],
+    "tags": [
+      "noun_mixed"
+    ]
+  }
+]

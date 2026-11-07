@@ -1,7 +1,7 @@
 // Only trusted stored grades enter these totals. History pagination is unrelated.
-const sections = ['tenses', 'comparison', 'passive', 'modals', 'reported'];
+const sections = ['tenses', 'comparison', 'passive', 'modals', 'reported', 'nouns'];
 const kindSql = "CASE WHEN json_extract(p.items,'$[0].assessment_id') IS NOT NULL THEN 'assessment' ELSE 'practice' END";
-const answerSectionSql = "CASE WHEN json_extract(a.value,'$.item.topic')='reported' OR json_extract(a.value,'$.item.id') GLOB 'rs-*' THEN 'reported' WHEN json_extract(a.value,'$.item.topic')='modals' THEN 'modals' WHEN json_extract(a.value,'$.item.topic')='passive' OR json_extract(a.value,'$.item.id') GLOB 'pv-*' OR json_extract(a.value,'$.item.id') GLOB 'pv[0-9]-*' THEN 'passive' WHEN json_extract(a.value,'$.item.topic')='comparison' OR json_extract(a.value,'$.item.id') GLOB 'cmp-*' THEN 'comparison' ELSE 'tenses' END";
+const answerSectionSql = "CASE WHEN json_extract(a.value,'$.item.topic')='nouns' OR json_extract(a.value,'$.item.id') GLOB 'n-[0-9]*' THEN 'nouns' WHEN json_extract(a.value,'$.item.topic')='reported' OR json_extract(a.value,'$.item.id') GLOB 'rs-*' THEN 'reported' WHEN json_extract(a.value,'$.item.topic')='modals' THEN 'modals' WHEN json_extract(a.value,'$.item.topic')='passive' OR json_extract(a.value,'$.item.id') GLOB 'pv-*' OR json_extract(a.value,'$.item.id') GLOB 'pv[0-9]-*' THEN 'passive' WHEN json_extract(a.value,'$.item.topic')='comparison' OR json_extract(a.value,'$.item.id') GLOB 'cmp-*' THEN 'comparison' ELSE 'tenses' END";
 const iso = value => value === null || value === undefined ? null : new Date(value * 1000).toISOString();
 
 export async function statistics(db, ownerId, {all, materialize}) {
@@ -31,7 +31,7 @@ export async function statistics(db, ownerId, {all, materialize}) {
     for(const key of ['correct','checked','pending'])kind[key]+=counts[key];
   }
   for (const row of topicRows) {
-    const section=/^rs(?:\d|_)/.test(row.id)?'reported':row.id.startsWith('mv_')?'modals':row.id.startsWith('pv_')?'passive':row.id.startsWith('cmp_')?'comparison':'tenses';
+    const section=row.id.startsWith('noun_')?'nouns':/^rs(?:\d|_)/.test(row.id)?'reported':row.id.startsWith('mv_')?'modals':row.id.startsWith('pv_')?'passive':row.id.startsWith('cmp_')?'comparison':'tenses';
     kinds[row.kind].sections.find(value=>value.id===section).topics.push({id:row.id,correct:Number(row.correct),checked:Number(row.checked),lastWork:iso(row.lastWork)});
   }
   return {scope:'completed',kinds};

@@ -1,12 +1,13 @@
 "use strict";
 /* Главная для гостей и страница «Грамматика»: карточки разделов и мини-демо карты времён. */
-const SECTION_ORDER = ['tenses', 'passive', 'modals', 'reported', 'comparison'];
+const SECTION_ORDER = ['tenses', 'passive', 'modals', 'reported', 'comparison', 'nouns'];
 const SECTION_META = {
   tenses: { mono: 'T', hue: 'green', facts: ['12 времён', 'интерактивная карта', 'практика A1–C2'] },
   passive: { mono: 'P', hue: 'blue', facts: ['формы пассива', 'выбор фокуса', 'особые конструкции'] },
   modals: { mono: 'M', hue: 'violet', facts: ['31 подтема', 'мини-тексты'] },
   reported: { mono: 'R', hue: 'amber', facts: ['20 подтем', 'reporting verbs'] },
   comparison: { mono: 'C', hue: 'rose', facts: ['образование форм', 'равенство и разница'] },
+  nouns: { mono: 'N', hue: 'teal', facts: ['число и артикли', 'мини-тексты'] },
 };
 function grammarSectionCardHtml(id, section, { practice = false, student = null, compact = false } = {}) {
   const meta = SECTION_META[id] || { mono: id[0].toUpperCase(), hue: 'green', facts: [] };

@@ -12,5 +12,5 @@ def version_parts(value, section):
     return tuple(map(int, match.groups()))
 
 def validate_version(item, versions):
-    section = item['topic'] if item.get('topic') in {'passive', 'modals', 'reported'} else 'comparison' if item['id'].startswith('cmp-') else 'tenses'
+    section = item['topic'] if item.get('topic') in {'passive', 'modals', 'reported', 'nouns'} else 'comparison' if item['id'].startswith('cmp-') else 'tenses'
     assert version_parts(item['content_version'], section) <= version_parts(versions[section], section), item['id']

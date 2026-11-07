@@ -22,6 +22,7 @@ const THEORY_ROUTE_BY_FILE = {
   "06-comparison.md": "comparison",
   "07-passive.md": "passive",
   "08-reported.md": "reported",
+  "09-nouns.md": "nouns",
   "08-modals.html": "modals",
   "01-foundations.md": "foundations",
   "02-present.md": "present",
@@ -253,13 +254,14 @@ function scrollTheory(parts) {
 }
 
 const GRAMMAR_SECTIONS = {
+  nouns: { title: "Nouns", subtitle: "Существительные", description: "Исчисляемые и неисчисляемые, число, притяжательный падеж, составные слова, артикли и определители количества: правило и практика.", theory: "nouns" },
   reported: { title: "Reported Speech", subtitle: "Косвенная речь", description: "Сообщения, вопросы, просьбы и reporting verbs: отдельные подтемы и смешанная практика.", theory: "reported" },
   modals: { title: "Modal Verbs", subtitle: "Модальные глаголы", description: "Значения и формы модальных глаголов: 31 подтема, упражнения и мини-тексты.", theory: "modals" },
   tenses: { title: "Tenses", subtitle: "Временные формы", description: "12 временных форм, карта системы, употребление и сложные сопоставления.", theory: "foundations" },
   comparison: { title: "Degrees of Comparison", subtitle: "Степени сравнения прилагательных", description: "Образование форм, сравнение, равенство и точные смысловые различия.", theory: "comparison" },
   passive: { title: "Passive Voice", subtitle: "Пассивный залог", description: "Формы пассива, выбор фокуса и особые конструкции. Предложения, мини-тексты и преобразования.", theory: "passive" },
 };
-function grammarSectionForTheory(id) { return ["comparison","passive","modals","reported"].includes(id) ? id : "tenses"; }
+function grammarSectionForTheory(id) { return ["comparison","passive","modals","reported","nouns"].includes(id) ? id : "tenses"; }
 function renderGrammar(topic = "", practice = false, student = null) {
   syncRouteNav();
   const sections = GRAMMAR_SECTIONS[topic] ? [[topic, GRAMMAR_SECTIONS[topic]]] : Object.entries(GRAMMAR_SECTIONS);
@@ -348,6 +350,7 @@ function renderProfile() {
 }
 
 const THEORY_SECTION_LINKS = {
+  nouns: [["Счёт и число","nouns","исчисляемые-и-неисчисляемые-существительные"],["Партитивы и значения","nouns","как-посчитать-неисчисляемое-партитивы"],["Притяжательный","nouns","притяжательный-падеж-s-и-of"],["Составные и группы","nouns","составные-существительные-compound-nouns"],["Артикли и определители","nouns","артикли-и-определители-с-существительными"]],
   reported: [["Основа", "reported", "rs01"], ["Вопросы", "reported", "rs09"], ["Просьбы и команды", "reported", "rs11"], ["Reporting verbs", "reported", "rs14"], ["Сложные случаи", "reported", "rs20"]],
   modals: [['Обзор','modals','mv-r1'],['Значения','modals','mv-r3'],['Обязанность','modals','mv-r7'],['Конструкции','modals','mv-r8']],
   comparison: [
@@ -371,6 +374,7 @@ function theorySectionLinks(active) {
 function theorySectionIndex(active,anchor,links=theorySectionLinks(active)) {
   if(grammarSectionForTheory(active)==='tenses')return links.findIndex(link=>link[1]===active);
   if(active==='modals'){const n=Number(anchor.replace('mv-r',''));return n>=8?3:n===7?2:n>=3?1:0;}
+  if(active==='nouns')return nounsSectionIndex(anchor);
   if(active==='reported'){const n=Number(anchor.slice(2));return !n||n<9?0:n<11?1:n<14?2:n<20?3:4;}
   if(active==='passive'){
     if(['pv-focus','pv-flow','pv-agent'].includes(anchor))return 1;
@@ -380,6 +384,17 @@ function theorySectionIndex(active,anchor,links=theorySectionLinks(active)) {
   if(['равенство-и-неравенство','too-и-enough','less-и-least','насколько-велика-разница','модификаторы-равенства-и-кратность','постепенное-изменение','связанные-изменения'].includes(anchor))return 2;
   if(['точность-сравнения-и-пропуски','отрицание-и-логические-границы','пределы-шкалы-и-контекст','устойчивые-сравнения','проверка-перед-ответом'].includes(anchor))return 3;
   return 0;
+}
+function nounsSectionIndex(anchor) {
+  const groups=[
+    ['исчисляемые-и-неисчисляемые-существительные','регулярное-образование-множественного-числа','неправильное-множественное-число','смена-гласной-или-добавление-en','одна-форма-для-обоих-чисел','заимствованные-формы','только-единственное-или-только-множественное-число','только-единственное-число','только-множественное-число'],
+    ['как-посчитать-неисчисляемое-партитивы','слова-с-двумя-значениями-исчисляемое-неисчисляемое'],
+    ['притяжательный-падеж-s-и-of','двойной-родительный','совместное-владение'],
+    ['составные-существительные-compound-nouns','существительное-в-роли-определения-noun-noun','собирательные-существительные-collective-nouns'],
+    ['артикли-и-определители-с-существительными','a-an','the','нулевой-артикль','количественные-определители-quantifiers','род-и-нейтральность','частые-ошибки','проверка-перед-ответом']
+  ];
+  const index=groups.findIndex(group=>group.includes(anchor));
+  return index<0?0:index;
 }
 function theoryNav(active,anchor='') {
   const section=grammarSectionForTheory(active),title=GRAMMAR_SECTIONS[section].title;
@@ -425,7 +440,7 @@ async function renderTheory(parts) {
   const response = await fetch(entry.file);
   if (!response.ok) throw new Error("Не удалось загрузить теорию");
   const markdown = await response.text();
-  document.querySelector(".theory-content").innerHTML = `${slug === "foundations" ? tenseMapHtml() : ""}<article>${slug === "comparison" ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>${slug === "foundations" ? tenseToolsHtml() : ""}<a class="button theory-practice" href="#practice/${grammarSectionForTheory(slug)}">Перейти к практике →</a>`;
+  document.querySelector(".theory-content").innerHTML = `${slug === "foundations" ? tenseMapHtml() : ""}<article>${["comparison","nouns"].includes(slug) ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>${slug === "foundations" ? tenseToolsHtml() : ""}<a class="button theory-practice" href="#practice/${grammarSectionForTheory(slug)}">Перейти к практике →</a>`;
   if (slug === "foundations") { initialiseTenseMap(); initialiseTenseTools(document.querySelector(".theory-content")); }
   document.title = `${entry.title} — Grammar NOEON`;
   openedTheory = slug;
@@ -508,7 +523,7 @@ async function openRule(ref) {
       content.innerHTML=passiveRuleHtml('modal-passive-');initialisePassiveRule(content);content.scrollTop=0;
       revealPassiveAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
     }
-    content.innerHTML = `<article>${entry.id === "comparison" ? comparisonRuleHtml(ruleSection(markdown, decodeAnchor(parts.slice(2).join("/")))) : markdownToHtml(ruleSection(markdown, decodeAnchor(parts.slice(2).join("/"))))}</article>`;
+    content.innerHTML = `<article>${["comparison","nouns"].includes(entry.id) ? comparisonRuleHtml(ruleSection(markdown, decodeAnchor(parts.slice(2).join("/")))) : markdownToHtml(ruleSection(markdown, decodeAnchor(parts.slice(2).join("/"))))}</article>`;
     content.scrollTop = 0;
   } catch (error) {
     if (controller.signal.aborted) return;
@@ -534,7 +549,7 @@ function mountPracticeReference(session) {
     dialog.className = 'practice-reference';
     dialog.setAttribute('aria-labelledby', 'practice-reference-title');
     const initial = exerciseSection(session.items[0]);
-    dialog.innerHTML = `<header class="reference-header"><h2 id="practice-reference-title">Правило</h2><button class="button" type="button" data-reference-close><span class="reference-desktop-label">Свернуть</span><span class="reference-mobile-label">К заданию</span></button></header><div class="reference-picker"><label for="reference-section">Тема</label><select id="reference-section"><option value="tenses">Tenses</option><option value="comparison">Adjectives (Degrees of Comparison)</option><option value="passive">Passive Voice</option><option value="reported">Reported Speech</option><option value="modals">Modal Verbs</option></select></div><div class="reference-reader theory-content" tabindex="0" role="region" aria-label="Текст правила"></div>`;
+    dialog.innerHTML = `<header class="reference-header"><h2 id="practice-reference-title">Правило</h2><button class="button" type="button" data-reference-close><span class="reference-desktop-label">Свернуть</span><span class="reference-mobile-label">К заданию</span></button></header><div class="reference-picker"><label for="reference-section">Тема</label><select id="reference-section"><option value="tenses">Tenses</option><option value="comparison">Adjectives (Degrees of Comparison)</option><option value="passive">Passive Voice</option><option value="reported">Reported Speech</option><option value="nouns">Nouns</option><option value="modals">Modal Verbs</option></select></div><div class="reference-reader theory-content" tabindex="0" role="region" aria-label="Текст правила"></div>`;
     document.body.append(dialog);
     const reader = dialog.querySelector('.reference-reader');
     const select = dialog.querySelector('select');
@@ -613,7 +628,7 @@ function mountPracticeReference(session) {
           const target = `reference-${entry.id}-${h.id}`;
           return `<a href="#${escapeHtml(target)}" data-reference-anchor="${escapeHtml(target)}">${escapeHtml(markdown.split(/\r?\n/)[h.index].replace(/^#+\s+/, ''))}</a>`;
         }).join('')}`).join('');
-        reader.innerHTML = `<details class="reference-contents"><summary>Содержание темы</summary><nav aria-label="Содержание правила">${id === 'tenses' ? '<a href="#reference-map" data-reference-anchor="reference-map">Карта 12 времён</a>' : ''}${contents}</nav></details>${id === 'tenses' ? `<div id="reference-map">${tenseMapHtml()}</div>` : ''}${chapters.map(({entry,markdown}) => `<article data-reference-chapter="${escapeHtml(entry.id)}">${entry.id === "comparison" ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>`).join('')}`;
+        reader.innerHTML = `<details class="reference-contents"><summary>Содержание темы</summary><nav aria-label="Содержание правила">${id === 'tenses' ? '<a href="#reference-map" data-reference-anchor="reference-map">Карта 12 времён</a>' : ''}${contents}</nav></details>${id === 'tenses' ? `<div id="reference-map">${tenseMapHtml()}</div>` : ''}${chapters.map(({entry,markdown}) => `<article data-reference-chapter="${escapeHtml(entry.id)}">${["comparison","nouns"].includes(entry.id) ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>`).join('')}`;
         reader.querySelectorAll('[data-reference-chapter]').forEach(chapter => {
           chapter.querySelectorAll('[id]').forEach(node => { node.id = `reference-${chapter.dataset.referenceChapter}-${node.id}`; });
         });
@@ -690,18 +705,20 @@ const COMPARISON_TARGETS = [
 const MODAL_TARGETS = [{"id": "mv_S00", "label": "Смешанный выбор: все модальные", "rule": "R11"}, {"id": "mv_S01", "label": "Форма: без -s, без to", "rule": "R1"}, {"id": "mv_S02", "label": "Вопрос и отрицание без do", "rule": "R2"}, {"id": "mv_S03", "label": "Два модальных подряд нельзя", "rule": "R1"}, {"id": "mv_S04", "label": "Умение сейчас: can / be able to", "rule": "R3"}, {"id": "mv_S05", "label": "Разрешение: can / could / may", "rule": "R3"}, {"id": "mv_S06", "label": "Просьбы и предложения", "rule": "R3"}, {"id": "mv_S07", "label": "Предложение-идея: could / might", "rule": "R3"}, {"id": "mv_S08", "label": "Совет: should / ought to", "rule": "R3"}, {"id": "mv_S09", "label": "Вывод о настоящем", "rule": "R4"}, {"id": "mv_S10", "label": "Вывод о прошлом: modal + have V3", "rule": "R4"}, {"id": "mv_S11", "label": "Умение в прошлом", "rule": "R5"}, {"id": "mv_S12", "label": "Обязанность и умение в прошлом и будущем", "rule": "R5"}, {"id": "mv_S13", "label": "Упрёк и сожаление: should have V3", "rule": "R5"}, {"id": "mv_S14", "label": "Needn't have и didn't need to", "rule": "R5"}, {"id": "mv_S15", "label": "Не использованная возможность: could have V3", "rule": "R5"}, {"id": "mv_S16", "label": "Нереальное прошлое: would have V3", "rule": "R5"}, {"id": "mv_S17", "label": "Must и have to", "rule": "R6"}, {"id": "mv_S18", "label": "Сила обязанности: must / need to / should / ought to", "rule": "R6"}, {"id": "mv_S19", "label": "Mustn't и don't have to", "rule": "R7"}, {"id": "mv_S20", "label": "Needn't и don't need to", "rule": "R7"}, {"id": "mv_S21", "label": "Запрет: can't / mustn't / not allowed", "rule": "R7"}, {"id": "mv_S22", "label": "Have to и need to как обычные глаголы", "rule": "R8"}, {"id": "mv_S23", "label": "Be allowed to", "rule": "R8"}, {"id": "mv_S24", "label": "Be supposed to", "rule": "R8"}, {"id": "mv_S25", "label": "Had better", "rule": "R8"}, {"id": "mv_S26", "label": "Would rather", "rule": "R8"}, {"id": "mv_S27", "label": "Will: прогноз и решение", "rule": "R9"}, {"id": "mv_S28", "label": "Won't / wouldn't: отказ", "rule": "R9"}, {"id": "mv_S29", "label": "Would: вежливость и гипотеза", "rule": "R9"}, {"id": "mv_S30", "label": "Shall: предложения с I / we", "rule": "R9"}];
 const PASSIVE_LEGACY_TARGETS = [{"id": "pv_simple", "label": "Основные формы"}, {"id": "pv_process", "label": "Действие в процессе"}, {"id": "pv_perfect", "label": "Завершённость и предшествование"}, {"id": "pv_modals", "label": "Модальные и going to"}, {"id": "pv_questions", "label": "Вопросы и отрицания"}, {"id": "pv_patterns", "label": "Особые конструкции"}, {"id": "pv_nonfinite", "label": "Инфинитив, -ing и reporting passive"}];
 const PASSIVE_TARGETS = [{"id": "pv_present_simple", "label": "Present Simple"}, {"id": "pv_past_simple", "label": "Past Simple"}, {"id": "pv_future_simple", "label": "Future Simple"}, {"id": "pv_present_continuous", "label": "Present Continuous"}, {"id": "pv_present_perfect", "label": "Present Perfect"}, {"id": "pv_past_continuous", "label": "Past Continuous"}, {"id": "pv_past_perfect", "label": "Past Perfect"}, {"id": "pv_future_perfect", "label": "Future Perfect"}];
+const NOUN_TARGETS = [{"id":"noun_count_uncount","label":"Исчисляемые и неисчисляемые"},{"id":"noun_plural_regular","label":"Правильное множественное число"},{"id":"noun_plural_irregular","label":"Неправильное множественное число"},{"id":"noun_number_only","label":"Только единственное или только множественное"},{"id":"noun_partitives","label":"Партитивы: a piece of, a cup of"},{"id":"noun_dual_meaning","label":"Слова с двумя значениями"},{"id":"noun_possessive","label":"Притяжательный падеж и of"},{"id":"noun_compound","label":"Составные существительные"},{"id":"noun_attributive","label":"Существительное в роли определения"},{"id":"noun_collective","label":"Собирательные существительные"},{"id":"noun_articles","label":"Артикли"},{"id":"noun_quantifiers","label":"Определители количества"},{"id":"noun_mixed","label":"Смешанные задания"},{"id":"noun_text","label":"Мини-тексты"}];
 const REPORTED_TARGETS = [{"id": "rs01", "label": "Say / tell / ask"}, {"id": "rs02", "label": "Statements: Simple"}, {"id": "rs03", "label": "Statements: Continuous / Perfect"}, {"id": "rs04", "label": "Сохранение времени"}, {"id": "rs05", "label": "Местоимения и принадлежность"}, {"id": "rs06", "label": "Указатели времени"}, {"id": "rs07", "label": "Место и указательные слова"}, {"id": "rs08", "label": "Модальные значения"}, {"id": "rs09", "label": "Общие вопросы"}, {"id": "rs10", "label": "Специальные вопросы"}, {"id": "rs11", "label": "Утвердительные команды"}, {"id": "rs12", "label": "Запреты"}, {"id": "rs13", "label": "Просьбы"}, {"id": "rs14", "label": "Reporting verb + to"}, {"id": "rs15", "label": "Reporting verb + object + to"}, {"id": "rs16", "label": "Reporting verb + -ing"}, {"id": "rs17", "label": "Reporting verb + предлог + -ing"}, {"id": "rs18", "label": "Reporting verb + придаточная часть"}, {"id": "rs19", "label": "Выбор модели reporting verb"}, {"id": "rs20", "label": "Условные и продвинутые формы"}, {"id": "rs_mixed", "label": "Смешанные задания"}];
 function exerciseSection(item) {
+  if(item?.topic==='nouns'||/^n-\d/.test(item?.id||''))return 'nouns';
   if(item?.topic==='reported'||item?.id?.startsWith('rs-'))return 'reported';
   if(item?.topic==='modals'||item?.id?.startsWith('MV-'))return 'modals';
   if(item?.topic==='passive'||/^pv\d?-/.test(item?.id||''))return 'passive';
   return item?.id?.startsWith('cmp-')?'comparison':'tenses';
 }
-function targetSection(id) { return /^rs(?:\d|_)/.test(id)?'reported':id.startsWith('mv_')?'modals':id.startsWith('pv_')?'passive':id.startsWith('cmp_')?'comparison':'tenses'; }
+function targetSection(id) { return id.startsWith('noun_')?'nouns':/^rs(?:\d|_)/.test(id)?'reported':id.startsWith('mv_')?'modals':id.startsWith('pv_')?'passive':id.startsWith('cmp_')?'comparison':'tenses'; }
 function supportedResponseContract(item) {return item.response_contract==='bounded-v1'||(['equivalents-review-v1','manual-review-v1'].includes(item.response_contract)&&item.type==='translation_ru_en'&&item.blanks?.length===1);}
 const PRACTICE_TENSES = TENSE_MAP.flatMap(row => row.items.map(item => ({
   id: item.name.toLowerCase().replaceAll(" ", "_"), label: item.name,
-}))).concat({ id: "other_constructions", label: "Другие конструкции" }, COMPARISON_TARGETS, PASSIVE_LEGACY_TARGETS, PASSIVE_TARGETS, MODAL_TARGETS, REPORTED_TARGETS);
+}))).concat({ id: "other_constructions", label: "Другие конструкции" }, COMPARISON_TARGETS, PASSIVE_LEGACY_TARGETS, PASSIVE_TARGETS, MODAL_TARGETS, REPORTED_TARGETS, NOUN_TARGETS);
 
 function exerciseTenses(item) {
   const targets = item.practice_tenses || (item.blanks?.length
@@ -831,7 +848,7 @@ function practicePresets(topic) {
   if(topic==='modals')return [{id:'modals-short',title:'Смешанная тренировка',description:'Пять заданий на разные значения модальных глаголов.',tenses:MODAL_TARGETS.map(x=>x.id),levels:['basic','medium'],type:'modal_gap',count:5}];
   const common = {type:'open_brackets', levels:['basic','medium'], count:10};
   const simplePassive = ['pv_present_simple','pv_past_simple','pv_future_simple'];
-  const shortTopics = {tenses:['present_simple','past_simple','future_simple'], passive:simplePassive, comparison:['cmp_forms','cmp_superlatives']};
+  const shortTopics = {tenses:['present_simple','past_simple','future_simple'], passive:simplePassive, comparison:['cmp_forms','cmp_superlatives'], nouns:['noun_count_uncount','noun_plural_regular','noun_articles']};
   if (!shortTopics[topic]) return [];
   const presets = topic === 'tenses' ? [
     {...common,id:'present-pair',title:'Present Simple vs Present Continuous',description:'Привычки и факты или действие сейчас.',tenses:['present_simple','present_continuous']},
@@ -916,6 +933,7 @@ function renderPractice(student = null, topic = location.hash.split("/")[1], stu
       <fieldset class="practice-tenses" data-section="passive"><legend>Какие формы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${PASSIVE_TARGETS.map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${target.label}</span></label>`).join('')}</div><p>При выборе всех форматов: скобки — 80%, перевод — 10%, Active → Passive — 10%. Все переводы проверяет преподаватель.</p><a href="#theory/passive">Открыть правило Passive Voice →</a></fieldset>
       <fieldset class="practice-tenses" data-section="comparison" hidden><legend>Какие сравнения тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${COMPARISON_TARGETS.map(target => `<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${target.label}</span></label>`).join("")}</div><p>В заданиях со скобками вводите форму или сравнительное сочетание по условию задания. Уровни — учебные ориентиры. Все задания проверяются автоматически: конкретные пропуски и выбор вариантов.</p><a href="#theory/comparison">Открыть справочник по сравнениям →</a></fieldset>
       <fieldset class="practice-tenses" data-section="modals"><legend>Какие модальные глаголы тренировать</legend><p>Выберите весь раздел, группу правил или отдельные подтемы. Можно сочетать несколько подтем.</p><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Весь раздел</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="modal-targets">${[...new Set(MODAL_TARGETS.map(t=>t.rule))].sort((a,b)=>Number(a.slice(1))-Number(b.slice(1))).map(rule=>`<details><summary>${escapeHtml(typeof MODAL_RULE_TITLES!=='undefined'?MODAL_RULE_TITLES['mv-'+rule.toLowerCase()]||rule:rule)}</summary><button class="button" type="button" data-modal-rule="${rule}">Выбрать эту группу</button>${MODAL_TARGETS.filter(t=>t.rule===rule).map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${escapeHtml(target.label)}</span></label>`).join('')}</details>`).join('')}</div><a href="#theory/modals">Открыть правило Modal Verbs →</a></fieldset>
+      <fieldset class="practice-tenses" data-section="nouns"><legend>Какие темы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${NOUN_TARGETS.map(target => `<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${target.label}</span></label>`).join("")}</div><p>Задания со скобками, выбором и мини-тексты. Ответ определяется контекстом: подсказок в условии нет. Все допустимые варианты принимаются.</p><a href="#theory/nouns">Открыть правило Nouns →</a></fieldset>
       <fieldset class="practice-tenses" data-section="reported"><legend>Какие подтемы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все подтемы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${REPORTED_TARGETS.map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${escapeHtml(target.label)}</span></label>`).join('')}</div><p>Общие и специальные вопросы, модели reporting verbs выбираются отдельно. «Смешанные задания» — комплексные упражнения; при выборе всех подтем используется общий банк.</p><a href="#theory/reported">Открыть правило Reported Speech →</a></fieldset>
       <fieldset class="practice-levels"><legend>Уровни сложности</legend><div class="tense-actions"><button class="button" type="button" data-level-action="all">Все уровни</button><button class="button" type="button" data-level-action="none">Снять выбор уровней</button></div><div class="level-options">${levels.map(level => `<label><input type="checkbox" name="level" value="${escapeHtml(level)}" checked><span>${escapeHtml(levelLabel(level))}</span></label>`).join("")}</div></fieldset>
       <fieldset class="practice-formats"><legend>Форматы заданий</legend><p>Можно выбрать несколько.</p><div class="tense-actions"><button class="button" type="button" data-format-action="all">Все форматы</button><button class="button" type="button" data-format-action="none">Снять выбор форматов</button></div><div class="level-options">${Object.entries(state.manifest.section_types?.[topic] || state.manifest.types).map(([type,count])=>`<label><input type="checkbox" name="format" value="${escapeHtml(type)}" checked><span>${escapeHtml(TYPE_LABELS[type])}${account.user.role === "teacher" ? ` · ${count}` : ""}</span></label>`).join('')}</div></fieldset>
@@ -970,6 +988,7 @@ function renderPractice(student = null, topic = location.hash.split("/")[1], stu
   form.addEventListener("submit", startSession);
   if (student && !student.assignmentEdit && form.elements.topic.value === "comparison") form.elements.title.value = "Практика сравнений";
   if(student&&!student.assignmentEdit&&topic==="passive")form.elements.title.value="Практика пассива";
+  if(student&&!student.assignmentEdit&&topic==="nouns")form.elements.title.value="Практика существительных";
   if(student&&!student.assignmentEdit&&topic==="reported")form.elements.title.value="Косвенная речь";
   if(student&&!student.assignmentEdit&&topic==="modals")form.elements.title.value="Практика модальных глаголов";
   const requested=decodeAnchor(location.hash.split('/')[2]||'');
@@ -1239,7 +1258,7 @@ function ruleLink(ref) {
   const aliases = { "future-simple-will--v1":"future-simple-will-v1", "future-continuous-will-be--v-ing":"future-continuous-will-be-v-ing", "future-perfect-simple-will-have--v3":"future-perfect-simple-will-have-v3", "future-perfect-continuous-will-have-been--v-ing":"future-perfect-continuous-will-have-been-v-ing", "инверсия-после-ограничительных-и-отрицательных-выражений":"18-маркированные-и-продвинутые-употребления", "7-by-и-untiltill":"7-by-и-until-till" };
   const [file, anchor] = ref.split("#");
   if (anchor && aliases[anchor]) ref = `${file}#${aliases[anchor]}`;
-  const match = ref.match(/content\/(?:tenses|comparison|passive|modals|reported-speech)\/([^#]+?)(?:#(.+))?$/);
+  const match = ref.match(/content\/(?:tenses|comparison|passive|modals|reported-speech|nouns)\/([^#]+?)(?:#(.+))?$/);
   if (!match) return "#theory/foundations";
   const route = THEORY_ROUTE_BY_FILE[match[1]] || "foundations";
   return `#theory/${route}${match[2] ? `/${match[2]}` : ""}`;

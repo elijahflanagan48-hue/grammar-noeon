@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "content_version": "tenses-2026-10-31.6",
   "editorial_language": "British English",
-  "total_items": 8419,
-  "answer_slots": 10686,
+  "total_items": 9419,
+  "answer_slots": 12079,
   "excluded_non_publishable": 62,
   "levels": {
     "B1+": 442,
@@ -13,13 +13,13 @@
     "C1": 784,
     "C2": 311,
     "A1": 51,
-    "unrated": 3040
+    "unrated": 4040
   },
   "types": {
-    "open_brackets": 5806,
-    "multiple_choice": 505,
-    "context_cloze": 226,
-    "translation_ru_en": 200,
+    "open_brackets": 6422,
+    "multiple_choice": 755,
+    "context_cloze": 333,
+    "translation_ru_en": 227,
     "active_to_passive": 100,
     "modal_gap": 700,
     "modal_fix": 50,
@@ -1550,6 +1550,180 @@
       "levels": {
         "unrated": 100
       }
+    },
+    {
+      "file": "data/exercises/part-87.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "multiple_choice": 41,
+        "open_brackets": 53,
+        "translation_ru_en": 6
+      },
+      "levels3": {
+        "advanced": 30,
+        "medium": 46,
+        "basic": 24
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-88.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 88,
+        "multiple_choice": 12
+      },
+      "levels3": {
+        "basic": 59,
+        "medium": 28,
+        "advanced": 13
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-89.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 84,
+        "multiple_choice": 16
+      },
+      "levels3": {
+        "basic": 46,
+        "medium": 42,
+        "advanced": 12
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-90.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 84,
+        "multiple_choice": 16
+      },
+      "levels3": {
+        "basic": 43,
+        "medium": 47,
+        "advanced": 10
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-91.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "multiple_choice": 47,
+        "translation_ru_en": 10,
+        "open_brackets": 43
+      },
+      "levels3": {
+        "medium": 53,
+        "basic": 29,
+        "advanced": 18
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-92.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 75,
+        "multiple_choice": 19,
+        "translation_ru_en": 6
+      },
+      "levels3": {
+        "basic": 48,
+        "medium": 36,
+        "advanced": 16
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-93.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 76,
+        "multiple_choice": 19,
+        "translation_ru_en": 5
+      },
+      "levels3": {
+        "basic": 58,
+        "advanced": 11,
+        "medium": 31
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-94.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "multiple_choice": 43,
+        "open_brackets": 57
+      },
+      "levels3": {
+        "basic": 35,
+        "medium": 43,
+        "advanced": 22
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-95.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "multiple_choice": 37,
+        "open_brackets": 56,
+        "context_cloze": 7
+      },
+      "levels3": {
+        "medium": 34,
+        "advanced": 48,
+        "basic": 18
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-96.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "context_cloze": 100
+      },
+      "levels3": {
+        "basic": 45,
+        "medium": 43,
+        "advanced": 12
+      },
+      "levels": {
+        "unrated": 100
+      }
     }
   ],
   "sections": {
@@ -1557,19 +1731,21 @@
     "tenses": 4379,
     "passive": 1000,
     "modals": 1040,
-    "reported": 1000
+    "reported": 1000,
+    "nouns": 1000
   },
   "content_versions": {
     "tenses": "tenses-2026-10-31.6",
     "comparison": "comparison-2026-11-01.5",
     "passive": "passive-2026-11-03.3",
     "modals": "modals-2026-11-05.1",
-    "reported": "reported-2026-11-05.1"
+    "reported": "reported-2026-11-05.1",
+    "nouns": "nouns-2026-11-07.1"
   },
   "levels3": {
-    "advanced": 1681,
-    "medium": 3856,
-    "basic": 2882
+    "advanced": 1873,
+    "medium": 4259,
+    "basic": 3287
   },
   "section_types": {
     "comparison": {
@@ -1598,6 +1774,12 @@
       "direct_to_reported": 782,
       "translation_ru_en": 100,
       "open_brackets": 118
+    },
+    "nouns": {
+      "multiple_choice": 250,
+      "open_brackets": 616,
+      "translation_ru_en": 27,
+      "context_cloze": 107
     }
   }
 }

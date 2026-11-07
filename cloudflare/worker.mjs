@@ -141,7 +141,7 @@ async function freePracticeAllowed(db, id) {
 }
 function practiceFilters(data) {
   if (!data || Object.keys(data).some(key=>!['topic','tenses','levels','type','types','count'].includes(key))) throw new Problem('Некорректные фильтры практики.');
-  if (!['tenses','comparison','passive','modals','reported'].includes(data.topic) || !Number.isInteger(data.count) || data.count<1 || data.count>50) throw new Problem('Выберите раздел и размер от 1 до 50.');
+  if (!['tenses','comparison','passive','modals','reported','nouns'].includes(data.topic) || !Number.isInteger(data.count) || data.count<1 || data.count>50) throw new Problem('Выберите раздел и размер от 1 до 50.');
   const targets=PRACTICE_TENSES.filter(t=>targetSection(t.id)===data.topic).map(t=>t.id);
   const levels=[...new Set(exercises.map(item=>item.level))], types=[...new Set(exercises.filter(item=>exerciseSection(item)===data.topic&&supportedResponseContract(item)).map(item=>item.type))];
   for(const [key,allowed] of [['tenses',targets],['levels',levels]]) if(!Array.isArray(data[key])||!data[key].length||data[key].length>allowed.length||new Set(data[key]).size!==data[key].length||data[key].some(value=>!allowed.includes(value))) throw new Problem('Выберите доступные темы и уровни.');

@@ -9,7 +9,7 @@ const require = createRequire(import.meta.url);
 const {evaluate, fieldResults, answerForms, markdownHeadings, ruleLink} = require('../app.js');
 import {assertBankVersion} from './bank-versions.mjs';
 const prefix = /^\s*\d+\s*[.)]\s+/;
-const section = item => ['passive','modals','reported'].includes(item.topic) ? item.topic : item.id.startsWith('cmp-') ? 'comparison' : 'tenses';
+const section = item => ['passive','modals','reported','nouns'].includes(item.topic) ? item.topic : item.id.startsWith('cmp-') ? 'comparison' : 'tenses';
 const countBy = (items, key) => Object.fromEntries([...new Set(items.map(key))].sort().map(value => [value,items.filter(item => key(item) === value).length]));
 const slots = item => item.blanks?.length || 1;
 const bareRule = 'content/tenses/05-contrasts-and-pitfalls.md';

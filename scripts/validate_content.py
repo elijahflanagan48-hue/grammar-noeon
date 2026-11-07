@@ -23,7 +23,7 @@ def main() -> None:
         items.extend(chunk)
 
     passive = [item for item in items if item.get('topic')=='passive']
-    tenses = [item for item in items if not item['id'].startswith('cmp-') and item.get('topic') not in {'passive','modals','reported'}]
+    tenses = [item for item in items if not item['id'].startswith('cmp-') and item.get('topic') not in {'passive','modals','reported','nouns'}]
     modals = [item for item in items if item.get('topic') == 'modals']
     assert len(modals) == manifest['sections']['modals'] == 1040
     assert modals == [adapt(row) for row in read_source()], 'Modal adapter changed author content or ordering'
@@ -33,6 +33,8 @@ def main() -> None:
     assert len(reported)==manifest['sections']['reported']==1000
     reported=[i for i in items if i.get('topic')=='reported']
     assert len(reported)==manifest['sections']['reported']==1000
+    nouns=[i for i in items if i.get('topic')=='nouns']
+    assert len(nouns)==manifest['sections']['nouns']==1000
     comparisons = [item for item in items if item['id'].startswith('cmp-')]
     assert len(tenses) == manifest["sections"]["tenses"]
     assert len(comparisons) == manifest["sections"]["comparison"]
@@ -49,12 +51,12 @@ def main() -> None:
     }
     assert {x["type"] for x in items} == expected_types
 
-    for section in (tenses, comparisons, passive):
-        assert sum(i['type']=='open_brackets' for i in section)*5 >= len(section)*4
+    for section in (tenses, comparisons, passive, nouns):
+        assert sum(i['type']=='open_brackets' for i in section)*5 >= len(section)*(3 if section is nouns else 4)
 
     assert manifest["levels3"] == dict(__import__("collections").Counter(i["level"] for i in items))
     for item in items:
-        if item.get('topic') not in ('modals','reported'):
+        if item.get('topic') not in ('modals','reported','nouns'):
             assert not re.search(r"\bshall\b|\bshan[’']t\b", json.dumps(item, ensure_ascii=False), re.I), (item['id'], 'shall in current exercise')
         assert item.get("level") in {"basic", "medium", "advanced"}, item["id"]
         assert not forbidden.intersection(item), item["id"]
@@ -100,8 +102,8 @@ def main() -> None:
             assert item.get("answer") is not None, item["id"]
 
     theory = json.loads((ROOT / "data/theory.json").read_text(encoding="utf-8"))
-    assert len(theory) == 9
-    assert {entry['id'] for entry in theory} == {'foundations', 'present', 'past', 'future', 'contrasts', 'comparison', 'passive', 'modals', 'reported'}
+    assert len(theory) == 10
+    assert {entry['id'] for entry in theory} == {'foundations', 'present', 'past', 'future', 'contrasts', 'comparison', 'passive', 'modals', 'reported', 'nouns'}
     assert all(entry["id"] != "sources" for entry in theory)
     assert not (ROOT / "content/theory/SOURCES.md").exists()
     for entry in theory:
