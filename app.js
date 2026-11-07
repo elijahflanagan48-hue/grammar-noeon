@@ -423,6 +423,13 @@ async function renderTheory(parts) {
     if(parts[2])requestAnimationFrame(()=>revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
     return;
   }
+  if(slug==='nouns') {
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${nounsRuleHtml()}<a class="button primary theory-practice" href="#practice/nouns">Перейти к практике →</a></section></div>`;
+    initialiseNounsRule(document.querySelector('.theory-content'));
+    document.title='Nouns — Grammar NOEON';openedTheory=slug;
+    if(parts[2])requestAnimationFrame(()=>revealNounsAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
+    return;
+  }
   if(slug==='reported') {
     app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${reportedRuleHtml()}<a class="button primary theory-practice" href="#practice/reported">Перейти к практике →</a></section></div>`;
     initialiseReportedRule(document.querySelector('.theory-content'));
@@ -517,6 +524,10 @@ async function openRule(ref) {
       content.innerHTML=modalRuleHtml('modal-modals-');initialiseModalRule(content);content.scrollTop=0;
       revealModalAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
     }
+    if(entry.id==='nouns') {
+      content.innerHTML=nounsRuleHtml('modal-nouns-');initialiseNounsRule(content);content.scrollTop=0;
+      revealNounsAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
+    }
     if(entry.id==='reported') {
       content.innerHTML=reportedRuleHtml('modal-reported-');initialiseReportedRule(content);content.scrollTop=0;
       revealReportedAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
@@ -603,6 +614,11 @@ function mountPracticeReference(session) {
         reader.innerHTML='<article data-reference-chapter="modals">'+modalRuleHtml('reference-modals-')+'</article>';
         initialiseModalRule(reader);reader.scrollTop=positions.get(id)||0;
         if(anchor)revealModalAnchor(reader,anchor);return;
+      }
+      if(id==='nouns') {
+        reader.innerHTML='<article data-reference-chapter="nouns">'+nounsRuleHtml('reference-nouns-')+'</article>';
+        initialiseNounsRule(reader);reader.scrollTop=positions.get(id)||0;
+        if(anchor)revealNounsAnchor(reader,anchor);return;
       }
       if(id==='reported') {
         reader.innerHTML='<article data-reference-chapter="reported">'+reportedRuleHtml('reference-reported-')+'</article>';
@@ -1765,7 +1781,7 @@ async function route() {
   syncRouteNav();
   if (nextParts[0] === "theory" && nextParts[1] === openedTheory && document.querySelector(".theory-content")) {
     syncTheoryNavigation(nextParts);
-    if(restoreTop!==null)window.scrollTo({top:restoreTop,behavior:"instant"});else if(nextParts[1]==='modals')revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='passive')revealPassiveAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else scrollTheory(nextParts);
+    if(restoreTop!==null)window.scrollTo({top:restoreTop,behavior:"instant"});else if(nextParts[1]==='nouns')revealNounsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='modals')revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='passive')revealPassiveAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else scrollTheory(nextParts);
     syncScreenChrome();return;
   }
   openedTheory = null;
