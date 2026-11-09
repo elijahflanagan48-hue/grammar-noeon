@@ -25,7 +25,7 @@ const cases = [
   ['ext-20261030-past-simple-ob-019', "didn't believed", 'after-did'],
   ['ext-20261030-past-simple-ob-021', 'did the accident happened', 'after-did'],
   ['src-u07-012', 'has being known', 'been-being'],
-  ['pv5-s004', 'are been washed', 'been-being'],
+  ['pv5-s004', 'is been painted', 'been-being'],
   ['src-u07-043', 'reading', 'missing-auxiliary'],
   ['src-u07-092', 'waiting', 'missing-auxiliary'],
   ['src-u07-092', 'is waiting', 'agreement'],
@@ -35,7 +35,7 @@ const cases = [
   ['src-u07-092', 'were waiting', undefined],
   ['src-u08-010', '<img src=x onerror=alert(1)>', undefined],
   ['src-u07-071', 'combine', undefined],
-  ['pv5-s006', 'were folded', undefined],
+  ['pv5-s006', 'was being cooked', undefined],
 ];
 for (const [id, value, code] of cases) {
   const item = byId(id), submitted = item.blanks.map(b => b.answer); submitted[0] = value;
