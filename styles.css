@@ -778,3 +778,8 @@ input[type=checkbox],input[type=radio],progress { accent-color:var(--pri); }
   .mv.rsp .mv-table td,.mv.rsp .mv-table td:first-child{border:0;padding:3px 12px;min-width:0}
   .mv.rsp .mv-table td::before{content:attr(data-label);display:block;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mv-muted)}
 }
+
+#hard-refresh { font-size:20px; line-height:1; }
+#hard-refresh.is-spinning { animation:hard-refresh-spin .8s linear infinite; }
+@keyframes hard-refresh-spin { to { transform:rotate(360deg); } }
+@media (prefers-reduced-motion:reduce) { #hard-refresh.is-spinning { animation:none; opacity:.5; } }

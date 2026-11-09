@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v63';
+const CACHE = 'grammar-v64';
 const FILES = [
   "./",
   "styles.css",
@@ -78,7 +78,7 @@ self.addEventListener('fetch', event => {
     const cache = await caches.open(CACHE);
     const key = request.mode === 'navigate' ? '/' : url.pathname;
     const fallback = () => cache.match(key);
-    const network = fetch(request).then(async response => {
+    const network = fetch(request, {cache:'no-cache'}).then(async response => {
       if (response.ok && !response.redirected && (allowed.has(url.pathname) || request.mode === 'navigate')) await cache.put(key, response.clone());
       return response;
     });
@@ -89,7 +89,11 @@ self.addEventListener('fetch', event => {
       const response = await Promise.race([network, timeout]);
       if (response && response.status < 500) return response;
       const saved = await fallback();
-      if (saved) return saved;
+      if (saved) {
+        // Stale copy served (slow network): tell open pages when the fresh one has arrived.
+        network.then(fresh => { if (fresh && fresh.ok) return self.clients.matchAll?.().then(list => list.forEach(client => client.postMessage({type:'FRESH_AVAILABLE'}))); }).catch(() => {});
+        return saved;
+      }
       return response || await network;
     } catch { return await fallback() || Response.error(); }
     finally { clearTimeout(timer); }

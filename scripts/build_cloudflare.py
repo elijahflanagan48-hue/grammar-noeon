@@ -3,6 +3,8 @@ import json
 import shutil
 from pathlib import Path
 
+from stamp_versions import release_tag, stamp_index, stamp_service_worker
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'cloudflare'
 PUBLIC = OUT / 'public'
@@ -24,6 +26,8 @@ def build():
         destination = PUBLIC / file.relative_to(ROOT)
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(file, destination)
+    stamp_index(PUBLIC / 'index.html', ROOT)
+    stamp_service_worker(PUBLIC / 'sw.js', PUBLIC, release_tag(PUBLIC))
     source = (ROOT / 'app.js').read_text()
     (GENERATED / 'assignment-keys.mjs').write_text(source[source.index('function assignmentSentenceKeys('):source.index('\nfunction uniqueAssignmentPool(')] + '\nexport { assignmentSentenceKeys };\n')
     selection = source[source.index('const TENSE_MAP ='):source.index('const account =')] + source[source.index('const COMPARISON_TARGETS ='):source.index('function practiceSettings(')]
