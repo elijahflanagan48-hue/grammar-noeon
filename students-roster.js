@@ -255,7 +255,7 @@
   }
 
   const heatClass = (pct, checked) => !checked ? 'none' : checked < 5 ? 'thin' : pct < 50 ? 'bad' : pct < 70 ? 'warn' : pct < 85 ? 'mid' : 'good';
-  const SECTIONS = [['tenses', 'Tenses'], ['comparison', 'Comparison'], ['passive', 'Passive'], ['modals', 'Modal Verbs'], ['reported', 'Reported Speech'], ['nouns', 'Nouns']];
+  const SECTIONS = [['tenses', 'Tenses'], ['comparison', 'Comparison'], ['passive', 'Passive'], ['modals', 'Modal Verbs'], ['reported', 'Reported Speech'], ['nouns', 'Nouns'], ['speaking', 'Say/Tell/Speak/Talk']];
   const SECTION_IDS = SECTIONS.map(s => s[0]);
 
   function addCounts(target, part) {

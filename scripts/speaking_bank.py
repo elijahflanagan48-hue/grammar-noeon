@@ -15,7 +15,7 @@ import re
 import sys
 from pathlib import Path
 
-VERSION = 'speaking-2026-11-08.1'
+VERSION = 'speaking-2026-11-09.1'
 VERBS = ('say', 'tell', 'speak', 'talk')
 FORMS = {
     'say': {'say', 'says', 'said', 'saying'},
@@ -271,7 +271,7 @@ def site_item(i):
         for k, b in enumerate(i['blanks'], 1):
             txt = txt.replace('{{%d}}' % k, b['answer'], 1)
         refs = list(dict.fromkeys(ref(b['ref']) for b in i['blanks']))
-        return {**base, 'prompt': prompt, 'title': 'Заполните пропуски в тексте.', 'instruction_ru': 'Заполните пропуски в тексте.',
+        return {**base, 'prompt': prompt, 'instruction_ru': 'Заполните пропуски в тексте.',
                 'rule_refs': refs,
                 'blanks': [{'id': '%s-b%d' % (i['id'], k), 'answer': b['answer'], 'accepted_answers': b['accept'], 'rule_refs': [ref(b['ref'])],
                             'explanation_ru': b['why_ru'], 'tense_or_construction': i['target']} for k, b in enumerate(i['blanks'], 1)],

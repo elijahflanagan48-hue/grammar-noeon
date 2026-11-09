@@ -2,29 +2,29 @@
   "schema_version": "1.1.0",
   "content_version": "tenses-2026-11-09.1",
   "editorial_language": "British English",
-  "total_items": 9419,
-  "answer_slots": 11956,
+  "total_items": 9919,
+  "answer_slots": 12538,
   "excluded_non_publishable": 62,
   "levels": {
-    "B1+": 442,
+    "A1": 51,
     "A2": 925,
     "B1": 1165,
+    "B1+": 442,
     "B2": 1701,
     "C1": 784,
     "C2": 311,
-    "A1": 51,
-    "unrated": 4040
+    "unrated": 4540
   },
   "types": {
-    "open_brackets": 6422,
-    "multiple_choice": 755,
-    "context_cloze": 333,
-    "translation_ru_en": 227,
     "active_to_passive": 100,
-    "modal_gap": 700,
+    "context_cloze": 373,
+    "direct_to_reported": 782,
     "modal_fix": 50,
+    "modal_gap": 700,
     "modal_meaning": 50,
-    "direct_to_reported": 782
+    "multiple_choice": 905,
+    "open_brackets": 6712,
+    "translation_ru_en": 247
   },
   "parts": [
     {
@@ -1713,6 +1713,93 @@
       "levels": {
         "unrated": 100
       }
+    },
+    {
+      "file": "data/exercises/part-97.json",
+      "count": 100,
+      "section": "speaking",
+      "types": {
+        "multiple_choice": 30,
+        "open_brackets": 70
+      },
+      "levels3": {
+        "advanced": 23,
+        "basic": 36,
+        "medium": 41
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-98.json",
+      "count": 100,
+      "section": "speaking",
+      "types": {
+        "multiple_choice": 30,
+        "open_brackets": 70
+      },
+      "levels3": {
+        "advanced": 22,
+        "basic": 29,
+        "medium": 49
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-99.json",
+      "count": 100,
+      "section": "speaking",
+      "types": {
+        "multiple_choice": 40,
+        "open_brackets": 60
+      },
+      "levels3": {
+        "advanced": 31,
+        "basic": 24,
+        "medium": 45
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-100.json",
+      "count": 100,
+      "section": "speaking",
+      "types": {
+        "multiple_choice": 30,
+        "open_brackets": 70
+      },
+      "levels3": {
+        "advanced": 25,
+        "basic": 29,
+        "medium": 46
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-101.json",
+      "count": 100,
+      "section": "speaking",
+      "types": {
+        "context_cloze": 40,
+        "multiple_choice": 20,
+        "open_brackets": 20,
+        "translation_ru_en": 20
+      },
+      "levels3": {
+        "advanced": 20,
+        "basic": 31,
+        "medium": 49
+      },
+      "levels": {
+        "unrated": 100
+      }
     }
   ],
   "sections": {
@@ -1721,7 +1808,8 @@
     "passive": 1000,
     "modals": 1040,
     "reported": 1000,
-    "nouns": 1000
+    "nouns": 1000,
+    "speaking": 500
   },
   "content_versions": {
     "tenses": "tenses-2026-11-09.1",
@@ -1729,12 +1817,13 @@
     "passive": "passive-2026-11-09.1",
     "modals": "modals-2026-11-05.1",
     "reported": "reported-2026-11-05.1",
-    "nouns": "nouns-2026-11-07.1"
+    "nouns": "nouns-2026-11-07.1",
+    "speaking": "speaking-2026-11-09.1"
   },
   "levels3": {
-    "advanced": 1914,
-    "medium": 4234,
-    "basic": 3271
+    "advanced": 2035,
+    "basic": 3420,
+    "medium": 4464
   },
   "section_types": {
     "comparison": {
@@ -1761,14 +1850,20 @@
     },
     "reported": {
       "direct_to_reported": 782,
-      "translation_ru_en": 100,
-      "open_brackets": 118
+      "open_brackets": 118,
+      "translation_ru_en": 100
     },
     "nouns": {
+      "context_cloze": 107,
       "multiple_choice": 250,
       "open_brackets": 616,
-      "translation_ru_en": 27,
-      "context_cloze": 107
+      "translation_ru_en": 27
+    },
+    "speaking": {
+      "context_cloze": 40,
+      "multiple_choice": 150,
+      "open_brackets": 290,
+      "translation_ru_en": 20
     }
   }
 }

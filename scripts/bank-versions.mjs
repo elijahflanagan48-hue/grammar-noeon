@@ -7,7 +7,7 @@ export function versionParts(version, section) {
   return match.slice(1).map(Number);
 }
 export function assertBankVersion(item, index = manifest) {
-  const section = ['passive','modals','reported','nouns'].includes(item.topic) ? item.topic : item.id.startsWith('cmp-') ? 'comparison' : 'tenses';
+  const section = ['passive','modals','reported','nouns','speaking'].includes(item.topic) ? item.topic : item.id.startsWith('cmp-') ? 'comparison' : 'tenses';
   const current = versionParts(index.content_versions[section], section);
   const actual = versionParts(item.content_version, section);
   const difference = actual.map((n, k) => n - current[k]).find(n => n !== 0) || 0;

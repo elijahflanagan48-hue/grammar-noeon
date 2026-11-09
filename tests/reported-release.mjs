@@ -1,7 +1,7 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';import vm from 'node:vm';import {createHash} from 'node:crypto';
 import {grade} from '../cloudflare/generated/checker.mjs';import {exerciseSection,exerciseTenses,targetSection,balancedPractice,supportedResponseContract} from '../cloudflare/generated/selection.mjs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url))),index=read('data/exercises/index.json'),all=index.parts.flatMap(p=>read(p.file)),reported=all.filter(x=>x.topic==='reported'),by=new Map(reported.map(x=>[x.id,x]));
-assert.equal(all.length,9419);assert.equal(reported.length,1000);assert.equal(all.filter(x=>x.topic==='modals').length,1040);assert.equal(all.reduce((n,x)=>n+(x.blanks?.length||1),0),index.answer_slots);
+assert.equal(all.length,9919);assert.equal(reported.length,1000);assert.equal(all.filter(x=>x.topic==='modals').length,1040);assert.equal(all.reduce((n,x)=>n+(x.blanks?.length||1),0),index.answer_slots);
 let variants=0,manual=0,fields=0;
 for(const x of reported){assert.equal(exerciseSection(x),'reported');assert(supportedResponseContract(x));assert(x.context_ru&&x.instruction_ru);assert(exerciseTenses(x).every(t=>targetSection(t)==='reported'));const values=x.blanks.map(b=>b.answer),r=grade(x,values);fields+=values.length;
  if(x.grading_mode==='teacher'){manual++;assert(!r.correct);assert(r.fields.every(f=>!f.verified));continue}
