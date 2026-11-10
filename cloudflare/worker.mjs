@@ -139,7 +139,7 @@ function summaryView(row) {
 async function freePracticeAllowed(db, id) {
   return !!(await one(db,'SELECT allowed FROM student_practice_settings WHERE student_id=?',[id]))?.allowed;
 }
-function practiceFilters(data) {
+function practiceFilters(data, excluded = new Set()) {
   if (!data || Object.keys(data).some(key=>!['topic','tenses','levels','type','types','count'].includes(key))) throw new Problem('Некорректные фильтры практики.');
   if (!['tenses','comparison','passive','modals','reported','nouns','speaking'].includes(data.topic) || !Number.isInteger(data.count) || data.count<1 || data.count>50) throw new Problem('Выберите раздел и размер от 1 до 50.');
   const targets=PRACTICE_TENSES.filter(t=>targetSection(t.id)===data.topic).map(t=>t.id);
@@ -148,7 +148,7 @@ function practiceFilters(data) {
   if(data.types!==undefined&&data.type!==undefined)throw new Problem('Передайте один набор форматов.');
   const formats=data.types!==undefined?data.types:data.type==='all'?types:[data.type];
   if(!Array.isArray(formats)||!formats.length||formats.length>types.length||new Set(formats).size!==formats.length||formats.some(type=>!types.includes(type)))throw new Problem('Выберите доступные форматы.');
-  const pool=exercises.filter(item=>exerciseSection(item)===data.topic&&supportedResponseContract(item)&&data.levels.includes(item.level)&&formats.includes(item.type)&&exerciseTenses(item).length&&exerciseTenses(item).every(target=>data.tenses.includes(target)));
+  const pool=exercises.filter(item=>exerciseSection(item)===data.topic&&supportedResponseContract(item)&&data.levels.includes(item.level)&&formats.includes(item.type)&&exerciseTenses(item).length&&exerciseTenses(item).every(target=>data.tenses.includes(target))&&bankSentenceKeys.get(item.id).every(key=>!excluded.has(key)));
   const covered=new Set(pool.flatMap(exerciseTenses)),missing=data.tenses.filter(target=>!covered.has(target));
   const size=Math.min(pool.length,data.topic==='tenses'?Math.max(data.count,covered.size):data.count);
   return {pool,available:pool.length,size,missing,coverage:covered.size};
@@ -297,6 +297,21 @@ async function assignedSentences(db, studentId) {
       used.set(key,row.id); used.legacy.push({key,assignment:row.id});
     }
   }
+  return used;
+}
+
+// Sentences the student has already met in free practice. They must never be assigned later, just as
+// sentences ever assigned to the student must never appear in free practice.
+async function freePracticeSentences(db, studentId) {
+  const keys = new Set();
+  for (const row of await all(db,"SELECT items FROM practice WHERE user_id=? AND source='self'",[studentId]))
+    for (const item of JSON.parse(row.items)) assignmentSentenceKeys(item).forEach(key => keys.add(digest(key)));
+  return keys;
+}
+// Assigned sentences plus those already done in free practice (assigned ones keep their assignment id).
+async function unavailableSentences(db, studentId) {
+  const used = await assignedSentences(db, studentId);
+  for (const key of await freePracticeSentences(db, studentId)) if (!used.has(key)) used.set(key, 'free-practice');
   return used;
 }
 
@@ -449,7 +464,7 @@ async function route(db, env, request, url, data, responseHeaders) {
     const owner=statsMatch[1]?(await ownStudent(db,user,statsMatch[1])).id:user.id;
     return [await statistics(db,owner,{all,materialize}),{}];
   }
-  const libraryResult=await handleTeacherLibrary({db,user,path,method,data,helpers:{Problem,all,one,prepare,metadata,now,token,digest,bank,bankSentenceKeys,assignedSentences,ownStudent}});
+  const libraryResult=await handleTeacherLibrary({db,user,path,method,data,helpers:{Problem,all,one,prepare,metadata,now,token,digest,bank,bankSentenceKeys,assignedSentences:unavailableSentences,ownStudent}});
   if(libraryResult)return libraryResult;
   const issueResult=await handleTaskIssues({db,user,path,method,data,one,all,run,now,token,Problem,rateLimit});
   if(issueResult)return issueResult;
@@ -634,13 +649,13 @@ async function route(db, env, request, url, data, responseHeaders) {
   }
   if(path==='/api/practice/preview'&&method==='POST') {
     if(user.role!=='student'||!await freePracticeAllowed(db,user.id))throw new Problem('Учитель пока не разрешил свободную тренировку.',403);
-    const {available,size,missing,coverage}=practiceFilters(data);
+    const {available,size,missing,coverage}=practiceFilters(data,new Set((await assignedSentences(db,user.id)).keys()));
     return [{canStart:available>0,size,missing,coverage},{}];
   }
   const poolMatch = path.match(/^\/api\/teacher\/students\/([\w-]+)\/assignment-pool$/);
   if (poolMatch && method === 'GET') {
     const student = await ownStudent(db,user,poolMatch[1]);
-    const used = await assignedSentences(db,student.id);
+    const used = await unavailableSentences(db,student.id);
     return [{ availableIds: exercises.filter(item => bankSentenceKeys.get(item.id).every(key => !used.has(key))).map(item => item.id) }, {}];
   }
   const manageMatch = path.match(/^\/api\/teacher\/students\/([\w-]+)\/assignments\/([\w-]+)(?:\/(edit|cancel|restore))?$/);
@@ -653,7 +668,7 @@ async function route(db, env, request, url, data, responseHeaders) {
     const items = JSON.parse(row.items), currentKeys = new Set(items.flatMap(item=>assignmentSentenceKeys(item).map(digest)));
     if(items[0]?.assessment_id&&manageMatch[3]==='edit')throw new Problem('Состав проверочного теста не изменяется. Назначьте другой тест.',409);
     const editableContent = !items[0]?.assessment_id && !row.cancelled && !row.completed && !JSON.parse(row.answers).length && row.draft === null;
-    const used = await assignedSentences(db,student.id);
+    const used = await unavailableSentences(db,student.id);
     const allowed = key => !used.has(key) || (used.get(key)===row.assignment_id && currentKeys.has(key));
     if (method==='GET' && !manageMatch[3]) return [{id:row.assignment_id,title:row.title,version:row.version,assessmentId:items[0]?.assessment_id,editableContent,items,
       availableIds:exercises.filter(item=>bankSentenceKeys.get(item.id).every(allowed)).map(item=>item.id)},{}];
@@ -672,7 +687,7 @@ async function route(db, env, request, url, data, responseHeaders) {
         nextItems=ids.map(id=>current.get(id)||bank.get(id));
         if(data.itemVersions!==undefined&&(!Array.isArray(data.itemVersions)||data.itemVersions.length!==ids.length||nextItems.some((item,n)=>(item.content_version??null)!==data.itemVersions[n])))throw new Problem('Редакция заданий изменилась. Обновите страницу и проверьте набор заново.',409);
         for (const item of nextItems) for (const key of assignmentSentenceKeys(item).map(digest)) {
-          if (!allowed(key)||keys.has(key)) throw new Problem('Эти предложения уже назначались ученику или повторяются в подборке.',409);
+          if (!allowed(key)||keys.has(key)) throw new Problem('Эти предложения уже назначались ученику, пройдены им в свободной тренировке или повторяются в подборке.',409);
           keys.add(key);
         }
       }
@@ -709,9 +724,9 @@ async function route(db, env, request, url, data, responseHeaders) {
     const title = clean(data.title, 160), ids = data.ids;
     if (!Array.isArray(ids) || !ids.length || ids.length > 50 || ids.some(id => !bank.has(id)) || new Set(ids).size !== ids.length) throw new Problem('Некорректный набор упражнений.');
     if(data.itemVersions!==undefined&&(!Array.isArray(data.itemVersions)||data.itemVersions.length!==ids.length||ids.some((id,n)=>(bank.get(id).content_version??null)!==data.itemVersions[n])))throw new Problem('Редакция заданий изменилась. Обновите страницу и проверьте набор заново.',409);
-    const used = await assignedSentences(db,student.id), keys = new Set();
+    const used = await unavailableSentences(db,student.id), keys = new Set();
     for (const exerciseId of ids) for (const key of bankSentenceKeys.get(exerciseId)) {
-      if (used.has(key) || keys.has(key)) throw new Problem('Некоторые предложения уже назначены этому ученику или повторяются в подборке. Подберите новые задания.',409);
+      if (used.has(key) || keys.has(key)) throw new Problem('Некоторые предложения уже назначались этому ученику, пройдены им в свободной тренировке или повторяются в подборке. Подберите новые задания.',409);
       keys.add(key);
     }
     const id = token(), practiceId = token(), created = now();
@@ -731,8 +746,8 @@ async function route(db, env, request, url, data, responseHeaders) {
   if (path === '/api/practice/start' && method === 'POST') {
     if(user.role==='student') {
       if(!await freePracticeAllowed(db,user.id))throw new Problem('Учитель пока не разрешил свободную тренировку.',403);
-      const {pool,size,missing}=practiceFilters(data);
-      if(!pool.length||(data.topic==='tenses'&&missing.length))throw new Problem('Нет заданий для выбранных тем. Измените фильтры.');
+      const {pool,size,missing}=practiceFilters(data,new Set((await assignedSentences(db,user.id)).keys()));
+      if(!pool.length||(data.topic==='tenses'&&missing.length))throw new Problem('Нет новых заданий для выбранных тем: часть уже назначена вам учителем. Измените фильтры.');
       await rateLimit(db,'self-practice:'+user.id,30);
       const selected=balancedPractice(pool,size), id=token();
       const result=await run(db,"INSERT INTO practice(id,user_id,items,created,total_items,answered_count,topic_summary,levels_json,types_json,source) SELECT ?,?,?,?,?,?,?,?,?,'self' WHERE EXISTS(SELECT 1 FROM student_practice_settings WHERE student_id=? AND allowed=1)",[id,user.id,JSON.stringify(selected),now(),...metadata(selected,[]),user.id]);

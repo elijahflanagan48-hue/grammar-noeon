@@ -70,7 +70,7 @@ export async function handleTeacherLibrary(context) {
   for(const id of recipients){const pupil=await ownStudent(db,user,id);if(!pupil.active)throw new Problem('Один из кабинетов отключён. Снимите его выбор.',409);students.push(pupil);}
   const keys=[...new Set(items.flatMap(assignmentSentenceKeys).map(digest))];
   const reservations=[];
-  for(const pupil of students){const used=await assignedSentences(db,pupil.id);if(!data.allowRepeat&&keys.some(key=>used.has(key)))throw new Problem('Некоторым ученикам эти предложения уже назначены. Разрешите повтор явно или измените выбор учеников.',409);reservations.push(used);}
+  for(const pupil of students){const used=await assignedSentences(db,pupil.id);if(!data.allowRepeat&&keys.some(key=>used.has(key)))throw new Problem('Некоторым ученикам эти предложения уже назначены или пройдены в свободной тренировке. Разрешите повтор явно или измените выбор учеников.',409);reservations.push(used);}
   const deliveries=students.map(pupil=>({studentId:pupil.id,practiceId:digest(deliveryId+':practice:'+pupil.id),assignmentId:digest(deliveryId+':assignment:'+pupil.id)}));
   const result={setId:row.id,deliveries};
   const guardSql="(SELECT CASE WHEN COUNT(*)=? THEN 1 ELSE 0 END FROM users WHERE teacher_id=? AND role='student' AND active=1 AND id IN (SELECT value FROM json_each(?)))";
