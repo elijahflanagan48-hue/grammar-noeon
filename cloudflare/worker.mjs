@@ -251,7 +251,8 @@ async function today(db,user) {
       [`SELECT t.key AS topicId,SUM(json_extract(t.value,'$[0]')) AS correct,SUM(json_extract(t.value,'$[1]')) AS checked FROM practice p,json_each(p.topic_summary) t WHERE p.user_id=? GROUP BY t.key HAVING checked>=5 AND correct*1.0/checked<0.7 ORDER BY correct*1.0/checked,checked DESC,t.key LIMIT 3`,[user.id]],
       [`SELECT COUNT(*) AS sessions,COALESCE(SUM(score),0) AS score,COALESCE(SUM(max_score),0) AS maxScore,COALESCE(SUM(pending_count),0) AS pending FROM practice WHERE user_id=? AND completed>=?`,[user.id,weekStart]],
       [`SELECT COALESCE(SUM(completed IS NOT NULL),0) AS sessions,COALESCE(SUM(CASE WHEN completed IS NOT NULL THEN score ELSE 0 END),0) AS score,COALESCE(SUM(CASE WHEN completed IS NOT NULL THEN max_score ELSE 0 END),0) AS maxScore FROM practice WHERE user_id=?`,[user.id]],
-      ['SELECT allowed FROM student_practice_settings WHERE student_id=?',[user.id]]);
+      ['SELECT allowed FROM student_practice_settings WHERE student_id=?',[user.id]],
+      ['SELECT completed FROM practice WHERE user_id=? AND completed>=? ORDER BY completed DESC LIMIT 400',[user.id,time-30*86400]]);
   } else {
     queries.push([
       `SELECT a.id,a.title,a.student_id AS studentId,COALESCE(u.teacher_name,u.name) AS studentName,p.id AS practiceId,p.completed AS completed,p.score,p.max_score AS maxScore,p.pending_count AS pending,COUNT(*) OVER() AS matching_count
@@ -266,7 +267,7 @@ async function today(db,user) {
   const rows=(await db.batch(queries.map(([sql,values])=>prepare(db,sql,values)))).map(result=>result.results);
   const resume=rows[0][0]?{id:rows[0][0].id,title:rows[0][0].title,total:rows[0][0].total,index:rows[0][0].current_index}:null;
   const page=items=>({items:items.map(({matching_count,...row})=>row),total:items[0]?.matching_count||0});
-  if(user.role==='student')return {role:user.role,resume,newAssignments:page(rows[1]),weakTopics:rows[2],week:{...rows[3][0],since:new Date(weekStart*1000).toISOString()},stats:rows[4][0],freePracticeAllowed:!!rows[5][0]?.allowed};
+  if(user.role==='student')return {role:user.role,resume,newAssignments:page(rows[1]),weakTopics:rows[2],week:{...rows[3][0],since:new Date(weekStart*1000).toISOString()},stats:rows[4][0],freePracticeAllowed:!!rows[5][0]?.allowed,days:rows[6].map(row=>row.completed)};
   return {role:user.role,resume,completed:page(rows[1]),inactiveStudents:page(rows[2]),staleAssignments:page(rows[3]),reviews:await reviewQueue(db,user,null,5)};
 }
 
@@ -470,6 +471,15 @@ async function route(db, env, request, url, data, responseHeaders) {
   if(issueResult)return issueResult;
 
   if(path==='/api/today'&&method==='GET')return [await today(db,user),{}];
+  if(path==='/api/results'&&method==='GET') {
+    const time=now(),since=time-56*86400;
+    const [topics,weeks,days]=(await db.batch([
+      prepare(db,"SELECT t.key AS topicId,SUM(json_extract(t.value,'$[0]')) AS correct,SUM(json_extract(t.value,'$[1]')) AS checked FROM practice p,json_each(p.topic_summary) t WHERE p.user_id=? GROUP BY t.key",[user.id]),
+      prepare(db,'SELECT CAST((completed-?)/604800 AS INTEGER) AS week,SUM(score) AS score,SUM(max_score) AS maxScore,COUNT(*) AS sessions FROM practice WHERE user_id=? AND completed>=? GROUP BY week ORDER BY week',[since,user.id,since]),
+      prepare(db,'SELECT completed FROM practice WHERE user_id=? AND completed>=? ORDER BY completed DESC LIMIT 500',[user.id,time-90*86400])
+    ])).map(result=>result.results);
+    return [{topics,weeks,since:new Date(since*1000).toISOString(),days:days.map(row=>row.completed)},{}];
+  }
   if(path==='/api/teacher/reviews'&&method==='GET')return [await reviewQueue(db,user,url.searchParams.get('cursor')),{}];
   if(path==='/api/notifications'&&method==='GET') {
     const rows=await notificationRows(db,user);

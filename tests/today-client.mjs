@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 const values=new Map();
 const node={innerHTML:'',querySelectorAll(){return []}};
 const ctx={module:{exports:{}},document:{querySelector(){return node},querySelectorAll(){return []},getElementById(){return null}},localStorage:{getItem(k){return values.get(k)||null},setItem(k,v){values.set(k,v)}},location:{hash:'#home'}};
-vm.createContext(ctx);vm.runInContext(fs.readFileSync(new URL('../home-design.js',import.meta.url),'utf8'),ctx);vm.runInContext(fs.readFileSync(new URL('../app.js',import.meta.url),'utf8'),ctx);
+vm.createContext(ctx);vm.runInContext(fs.readFileSync(new URL('../home-design.js',import.meta.url),'utf8'),ctx);vm.runInContext(fs.readFileSync(new URL('../today-design.js',import.meta.url),'utf8'),ctx);vm.runInContext(fs.readFileSync(new URL('../app.js',import.meta.url),'utf8'),ctx);
 const item={id:'fixture',type:'open_brackets',prompt:'I (to work).',blanks:[{answer:'do',base_verb:'work'}]};
 const other=structuredClone(item);other.blanks[0].answer='a very very long hidden answer';
 assert.equal(ctx.blankControl(item,0,true),ctx.blankControl(other,0,true));

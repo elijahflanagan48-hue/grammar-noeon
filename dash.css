@@ -1,0 +1,48 @@
+.td-hero{background:linear-gradient(135deg,var(--pri),color-mix(in srgb,var(--pri) 65%,#000));color:var(--on-pri);border-radius:20px;padding:22px 20px;margin:0 0 16px;box-shadow:var(--sh)}
+.td-hero h2{margin:2px 0 4px;font-size:1.6rem;color:inherit}
+.td-eyebrow{margin:0;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;opacity:.85}
+.td-eyebrow.td-plain{color:var(--mut);opacity:1;margin-bottom:12px}
+.td-headline{margin:0 0 12px;font-size:1.05rem;color:inherit}
+.td-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.td-pills span{background:rgba(255,255,255,.18);border-radius:999px;padding:4px 12px;font-size:.82rem}
+.td-btn{display:inline-block;background:var(--surf);color:var(--pri);border:0;border-radius:12px;padding:12px 20px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+.td-grid{display:grid;gap:16px}
+@media(min-width:900px){.td-grid{grid-template-columns:1.4fr 1fr}}
+.td-col{display:flex;flex-direction:column;gap:16px;min-width:0}
+.td-review{margin-bottom:16px}
+.td-topic-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.td-topic-head h3{margin:0;font-size:1rem}
+.td-bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:6px 0 10px}
+.td-bar i{display:block;height:100%;border-radius:99px;background:var(--ok)}
+.td-bar i.warn{background:var(--warn)}.td-bar i.bad{background:var(--bad)}.td-bar i.ok{background:var(--ok)}
+.td-week{display:grid;gap:12px}
+.td-ring{position:relative;width:120px;height:120px;margin:0 auto}
+.td-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.td-ring circle{fill:none;stroke:var(--line);stroke-width:4}
+.td-ring .fg{stroke:var(--pri);stroke-linecap:round}
+.td-ring b{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:1.5rem}
+.td-ring small{font-size:.7rem;color:var(--mut);font-weight:400}
+.td-days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;align-items:end;height:90px}
+.td-day{display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;min-width:0}
+.td-day i{flex:1;width:100%;display:flex;align-items:flex-end;background:var(--pri-soft);border-radius:6px;overflow:hidden}
+.td-day u{display:block;width:100%;background:var(--pri);min-height:0}
+.td-day span{font-size:.7rem;color:var(--mut)}
+.rd-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:0 0 16px}
+.rd-tile{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--sh-sm)}
+.rd-tile strong{display:block;font-size:1.8rem;color:var(--pri)}.rd-tile span{color:var(--mut);font-size:.82rem}
+.rd-heat{display:grid;grid-template-columns:56px repeat(4,minmax(0,1fr));gap:6px;align-items:stretch}
+.rd-col{font-size:.68rem;color:var(--mut);text-align:center}.rd-row{font-size:.8rem;color:var(--mut);align-self:center}
+.rd-cell{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:10px;padding:10px 2px;text-decoration:none;color:var(--tx);min-height:58px}
+.rd-cell b{font-size:1rem}.rd-cell small{font-size:.65rem;opacity:.8}
+.rd-cell.ok,.rd-legend .ok{background:color-mix(in srgb,var(--ok) 28%,var(--surf))}
+.rd-cell.warn,.rd-legend .warn{background:color-mix(in srgb,var(--warn) 30%,var(--surf))}
+.rd-cell.bad,.rd-legend .bad{background:color-mix(in srgb,var(--bad) 28%,var(--surf))}
+.rd-cell.none,.rd-legend .none{background:var(--surf2);color:var(--mut)}
+.rd-legend{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:.75rem;color:var(--mut)}
+.rd-legend i{display:inline-block;width:12px;height:12px;border-radius:4px}
+.rd-trend{width:100%;height:auto;max-height:180px}
+.rd-trend polyline{fill:none;stroke:var(--pri);stroke-width:2.5;stroke-linejoin:round}
+.rd-trend circle{fill:var(--pri)}.rd-trend text{font-size:9px;fill:var(--mut)}
+.rd-weak{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--line)}
+.rd-weak>div{flex:1 1 140px;display:flex;flex-direction:column}.rd-weak small{color:var(--mut)}
+.rd-more{margin-top:16px}.rd-more summary{cursor:pointer;font-weight:600;padding:10px 0}

@@ -299,9 +299,10 @@ async function renderAccountResults() {
   const routeAtStart=location.hash, ownerAtStart=account.user?.id;
   syncRouteNav();
   app.innerHTML='<p role="status">Загружаем результаты…</p>';
-  const data=await accountRequest('account');
+  const [data,summary]=await Promise.all([accountRequest('account'),accountRequest('results').catch(()=>null)]);
   if(location.hash!==routeAtStart || account.user?.id!==ownerAtStart)return;
-  app.innerHTML=`<h1>Мои результаты</h1><section id="all-time-topics" class="account-section"></section><a class="button primary" href="#practice">${account.user?.role==="student"?"Задания от учителя":"Новая тренировка"}</a>${accountHistoryPages(data)}`;
+  const dashboard=summary&&typeof resultsDashboard==='function'?resultsDashboard(summary,account.user?.role!=='student'||!!data.freePracticeAllowed):'';
+  app.innerHTML=`<h1>Мои результаты</h1>${dashboard}<details class="rd-more"><summary>Подробно по темам и вся история</summary><section id="all-time-topics" class="account-section"></section></details><a class="button primary" href="#practice">${account.user?.role==="student"?"Задания от учителя":"Новая тренировка"}</a>${accountHistoryPages(data)}</details>`;
   initialiseResultTopics(data.history, !!data.nextCursor);
   if(typeof notificationEntry==='function')app.insertAdjacentHTML('afterbegin',notificationEntry());
   bindAccountHistory();
@@ -348,7 +349,7 @@ async function renderStudents() {
   app.innerHTML='<p role="status">Загружаем учеников…</p>';
   const data=await accountRequest('teacher/students');
   if(account.user?.id!==owner || location.hash!==routeAtStart)return;
-  app.innerHTML=`<h1>Ученики</h1><p><a class="button primary" href="#review-queue">Ожидают моей проверки →</a></p><section class="account-section"><div class="account-title"><h2>Мои ученики</h2><label for="student-sort">Сортировка <select id="student-sort"><option value="name">По имени</option><option value="activity">По активности</option><option value="accuracy">По точности</option></select></label></div><div id="active-students"></div><details class="student-archive"><summary>Архив</summary><div id="archived-students"></div></details><details class="invite-panel"><summary>Пригласить ученика</summary><form id="invite-form"><p>Создайте ссылку и отправьте ученику. Имя, почту и пароль он введёт сам. Одна ссылка — один ученик, срок действия — 7 дней.</p><button class="button primary">Создать ссылку приглашения</button><div id="invite-result" role="status"></div></form></details><section><h2>Действующие приглашения</h2><div id="active-invites" role="status">Загружаем приглашения…</div></section></section>`;
+  app.innerHTML=`<h1>Ученики</h1><p class="td-quick"><a class="button primary" href="#review-queue">Ожидают моей проверки →</a> <a class="button" href="#teacher-library">Библиотека наборов</a> <a class="button" href="#task-issues">Сообщения о заданиях</a></p><section class="account-section"><div class="account-title"><h2>Мои ученики</h2><label for="student-sort">Сортировка <select id="student-sort"><option value="name">По имени</option><option value="activity">По активности</option><option value="accuracy">По точности</option></select></label></div><div id="active-students"></div><details class="student-archive"><summary>Архив</summary><div id="archived-students"></div></details><details class="invite-panel"><summary>Пригласить ученика</summary><form id="invite-form"><p>Создайте ссылку и отправьте ученику. Имя, почту и пароль он введёт сам. Одна ссылка — один ученик, срок действия — 7 дней.</p><button class="button primary">Создать ссылку приглашения</button><div id="invite-result" role="status"></div></form></details><section><h2>Действующие приглашения</h2><div id="active-invites" role="status">Загружаем приглашения…</div></section></section>`;
   const render=()=>{app.querySelector('#active-students').innerHTML=studentCards(data.students.filter(s=>s.active))||'<p>Пригласите первого ученика.</p>';app.querySelector('#archived-students').innerHTML=studentCards(data.students.filter(s=>!s.active))||'<p>В архиве пока нет учеников.</p>';};
   const sort=app.querySelector('#student-sort');sort.value=studentListSort;sort.addEventListener('change',()=>{studentListSort=sort.value;render();});render();bindInviteForm();await renderActiveInvites();
 }
