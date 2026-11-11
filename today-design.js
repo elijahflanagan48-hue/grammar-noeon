@@ -36,7 +36,7 @@ function todayStudentMarkup(data) {
     action = `<a class="td-btn" href="${escapeHtml('#practice/' + weak.section + '/' + encodeURIComponent(weak.id))}">Тренировать тему</a>`;
   } else {
     headline = 'Заданий на сегодня нет';
-    action = '<a class="td-btn" href="#grammar">Открыть учёбу</a>';
+    action = '<a class="td-btn" href="#grammar">Открыть темы</a>';
   }
   const name = account.user?.name ? ', ' + escapeHtml(account.user.name) : '';
   const date = new Date().toLocaleDateString('ru-RU', { weekday: 'long', day: 'numeric', month: 'long' });

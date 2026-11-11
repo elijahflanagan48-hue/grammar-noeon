@@ -267,7 +267,7 @@ function grammarSectionForTheory(id) { return ["comparison","passive","modals","
 function renderGrammar(topic = "", practice = false, student = null) {
   syncRouteNav();
   const sections = GRAMMAR_SECTIONS[topic] ? [[topic, GRAMMAR_SECTIONS[topic]]] : Object.entries(GRAMMAR_SECTIONS);
-  app.innerHTML = `<div class="reading"><div class="eyebrow">${practice ? "Выберите раздел практики" : "Самостоятельные разделы"}</div><h1>${GRAMMAR_SECTIONS[topic]?.title || (practice ? "Практика" : "Грамматика")}</h1><p class="lead">${student ? "Выберите раздел для назначения ученику " + escapeHtml(student.name) + "." : "У каждого раздела — своя теория, темы и отдельные настройки практики."}</p><div class="grammar-sections gs-grid">${grammarSectionsHtml(sections, { practice, student })}</div></div>`;
+  app.innerHTML = `<div class="reading"><div class="eyebrow">${practice ? "Выберите раздел практики" : "Самостоятельные разделы"}</div><h1>${GRAMMAR_SECTIONS[topic]?.title || (practice ? "Практика" : "Темы")}</h1><p class="lead">${student ? "Выберите раздел для назначения ученику " + escapeHtml(student.name) + "." : "У каждого раздела — своя теория, темы и отдельные настройки практики."}</p><div class="grammar-sections gs-grid">${grammarSectionsHtml(sections, { practice, student })}</div></div>`;
   document.title = `${student ? "Назначить задание" : practice ? "Практика" : GRAMMAR_SECTIONS[topic]?.title || "Грамматика"} — Grammar NOEON`;
 }
 function theoryCards() {
@@ -397,7 +397,7 @@ function theoryNav(active,anchor='') {
   const section=grammarSectionForTheory(active),title=GRAMMAR_SECTIONS[section].title;
   const links=theorySectionLinks(active),selected=theorySectionIndex(active,anchor,links);
   const label=links[selected]?.[0]||'Обзор';
-  return `<div class="theory-section-nav"><nav class="grammar-breadcrumb" aria-label="Путь в грамматике"><a href="#grammar">Грамматика</a><span aria-hidden="true">›</span><a href="#theory/${GRAMMAR_SECTIONS[section].theory}">${escapeHtml(title)}</a><span aria-hidden="true">›</span><span aria-current="location">${escapeHtml(label)}</span></nav><nav class="theory-nav" aria-label="Темы раздела ${escapeHtml(title)}">${links.map(([name,slug,id],index)=>`<a class="${index===selected?'active':''}"${index===selected?' aria-current="location"':''} href="#theory/${slug}${id?'/'+id:''}">${escapeHtml(name)}</a>`).join('')}<a href="#practice/${section}">Практика →</a></nav></div>`;
+  return `<div class="theory-section-nav"><nav class="grammar-breadcrumb" aria-label="Путь в грамматике"><a href="#grammar">Темы</a><span aria-hidden="true">›</span><a href="#theory/${GRAMMAR_SECTIONS[section].theory}">${escapeHtml(title)}</a><span aria-hidden="true">›</span><span aria-current="location">${escapeHtml(label)}</span></nav><nav class="theory-nav" aria-label="Темы раздела ${escapeHtml(title)}">${links.map(([name,slug,id],index)=>`<a class="${index===selected?'active':''}"${index===selected?' aria-current="location"':''} href="#theory/${slug}${id?'/'+id:''}">${escapeHtml(name)}</a>`).join('')}<a href="#practice/${section}">Практика →</a></nav></div>`;
 }
 function syncTheoryNavigation(parts) {
   const node=document.querySelector('.theory-section-nav');
@@ -1808,7 +1808,7 @@ async function route() {
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   const parts = location.hash.replace(/^#/, "").split("/").filter(Boolean);
   const section = parts[0] || "home";
-  const titles = {"teacher-library":"Библиотека наборов","task-issues":"Сообщения о заданиях",tests:"Тесты","test-preview":"Просмотр теста","test-attempt":"Проверочный тест",home:"Сегодня",grammar:"Грамматика",practice:"Практика",session:"Задание",results:"Результаты",report:"Отчёт",student:"Ученик",notifications:"Уведомления","review-queue":"Проверка переводов",students:"Ученики",profile:"Профиль",join:"Приглашение",assign:"Назначить задание",edit:"Редактировать задание"};
+  const titles = {"teacher-library":"Библиотека наборов","task-issues":"Сообщения о заданиях",tests:"Тесты","test-preview":"Просмотр теста","test-attempt":"Проверочный тест",home:"Сегодня",grammar:"Темы",practice:"Практика",session:"Задание",results:"Результаты",report:"Отчёт",student:"Ученик",notifications:"Уведомления","review-queue":"Проверка переводов",students:"Ученики",profile:"Профиль",join:"Приглашение",assign:"Назначить задание",edit:"Редактировать задание"};
   document.title = `${titles[section] || "Grammar NOEON"} — Grammar NOEON`;
   try {
     if (section === "home") await renderHome();
@@ -1885,7 +1885,7 @@ function syncScreenChrome() {
   document.getElementById('screen-back').hidden=root;
   document.querySelector('.site-header .brand').hidden=route!=='home';
   title.hidden=route==='home';
-  const names={'teacher-library':'Библиотека наборов','task-issues':'Сообщения о заданиях',tests:'Тесты','test-preview':'Просмотр теста','test-attempt':'Проверочный тест',home:'Сегодня',grammar:'Грамматика',results:'Результаты',profile:'Профиль',students:'Ученики',student:'Ученик',theory:'Теория',practice:'Практика',report:'Отчёт',work:'Работа','student-work':'Работа ученика',notifications:'Уведомления','review-queue':'Проверка переводов',assign:'Назначить задание',edit:'Изменить задание',join:'Приглашение'};
+  const names={'teacher-library':'Библиотека наборов','task-issues':'Сообщения о заданиях',tests:'Тесты','test-preview':'Просмотр теста','test-attempt':'Проверочный тест',home:'Сегодня',grammar:'Темы',results:'Результаты',profile:'Профиль',students:'Ученики',student:'Ученик',theory:'Теория',practice:'Практика',report:'Отчёт',work:'Работа','student-work':'Работа ученика',notifications:'Уведомления','review-queue':'Проверка переводов',assign:'Назначить задание',edit:'Изменить задание',join:'Приглашение'};
   const short={reported:'Косвенная речь',foundations:'Основы',present:'Present',past:'Past',future:'Future',contrasts:'Сопоставления',comparison:'Сравнения',passive:'Пассив',modals:'Модальные глаголы'};
   const text=route==='session'?document.title.replace(' — Grammar NOEON',''):route==='theory'?short[parts[1]]||'Теория':route==='results'&&parts[1]?'Отчёт':route==='grammar'&&parts[1]?GRAMMAR_SECTIONS[parts[1]]?.title||'Грамматика':names[route]||'Grammar NOEON';
   if(title.textContent!==text)title.textContent=text;
