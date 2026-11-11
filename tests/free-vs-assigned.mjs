@@ -97,5 +97,10 @@ const run=async()=>{
     assert(items.every(i=>assignmentSentenceKeys(i).every(k=>!assignedKeys.has(k))),'free practice avoids assigned sentences');
   }
   console.log('PASS free practice and assignments never overlap');
+  const own=await b.ok('practice/start',filters),extra=await b.ok('practice/start',filters);
+  assert.equal((await b.ok('practice/cleanup',{})).removed>=2,true);
+  assert.equal((await b.ok('practice/'+own.id+'/delete',{}).catch(e=>({gone:true}))).gone,true,'cleaned practice is gone');
+  const keep=await b.ok('practice/start',filters);assert.equal((await b.ok('practice/'+keep.id+'/delete',{})).removed,1);
+  console.log('PASS own unfinished practices can be removed');
 };
 try{await run();}finally{await runtime.dispose();}

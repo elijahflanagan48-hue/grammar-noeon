@@ -770,6 +770,16 @@ async function route(db, env, request, url, data, responseHeaders) {
     await run(db, 'INSERT INTO practice(id,user_id,items,created,total_items,answered_count,topic_summary,levels_json,types_json) VALUES(?,?,?,?,?,?,?,?,?)', [id,user.id,JSON.stringify(ids.map(id=>bank.get(id))),now(),...metadata(ids.map(id=>bank.get(id)),[])]);
     return [{ id, revision: 0 }, {}];
   }
+  const removal=path.match(/^\/api\/practice\/([\w-]+)\/delete$/);
+  if((removal||path==='/api/practice/cleanup')&&method==='POST') {
+    // Only the owner's own free-practice sessions; anything assigned, assessed or reported stays.
+    const base="FROM practice p WHERE p.user_id=? AND p.source='self' AND NOT EXISTS(SELECT 1 FROM assignments a WHERE a.practice_id=p.id) AND NOT EXISTS(SELECT 1 FROM task_issues t WHERE t.practice_id=p.id)";
+    const rows=removal?await all(db,`SELECT p.id ${base} AND p.id=?`,[user.id,removal[1]]):await all(db,`SELECT p.id ${base} AND p.completed IS NULL`,[user.id]);
+    if(removal&&!rows.length)throw new Problem('Эту тренировку нельзя удалить.',404);
+    const ids=JSON.stringify(rows.map(row=>row.id));
+    if(rows.length)await db.batch([prepare(db,'DELETE FROM practice_format_events WHERE practice_id IN (SELECT value FROM json_each(?))',[ids]),prepare(db,'DELETE FROM practice WHERE id IN (SELECT value FROM json_each(?))',[ids])]);
+    return [{removed:rows.length},{}];
+  }
   const match = path.match(/^\/api\/practice\/([\w-]+)(?:\/(draft|check|automatic))?$/);
   if (match) {
     const load = () => one(db, 'SELECT * FROM practice WHERE id=? AND user_id=?', [match[1], user.id]);

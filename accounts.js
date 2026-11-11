@@ -38,10 +38,21 @@ function assignmentList(assignments = [], owner = false, studentId = "") {
   if (!assignments.length) return '<p class="subtle">Назначенных заданий пока нет.</p>';
   return assignments.map(item=>compactWorkCard({...item,date:item.created},studentId?`#student-work/${encodeURIComponent(studentId)}/${encodeURIComponent(item.practiceId)}`:`#work/${encodeURIComponent(item.practiceId)}`,item.title)).join('');
 }
-function compactWorkCard(attempt,href,title='Тренировка') {
-  const labels={assigned:'Назначено',started:'В процессе',draft:'В процессе',completed:'Выполнено',cancelled:'Снято'};
-  const status=labels[attempt.status]||'В процессе',date=new Date(attempt.date).toLocaleDateString('ru-RU');
-  return `<a class="work-card" href="${escapeHtml(href)}"><div class="work-card-main"><strong>${escapeHtml(title)}</strong>${attempt.source==='self'?'<span class="work-card-origin">самостоятельно</span>':''}<span class="work-card-meta"><span>${escapeHtml(date)}</span><span>Выполнено: ${attempt.index}/${attempt.total}</span>${attempt.maxScore?`<span>Баллы: ${attempt.score}/${attempt.maxScore}</span>`:''}</span></div><span class="work-card-status">${status}</span><span class="work-card-arrow">${attempt.status==='completed'?'Отчёт':'Открыть'}</span></a>`;
+function workCardTitle(attempt,title) {
+  if(title&&title!=='Тренировка')return title;
+  const entries=Object.entries(attempt.topic_summary||{}).sort((x,y)=>y[1][1]-x[1][1]);
+  if(!entries.length)return 'Тренировка без ответов';
+  const label=id=>(typeof PRACTICE_TENSES!=='undefined'&&PRACTICE_TENSES.find(t=>t.id===id)?.label)||id;
+  return entries.slice(0,2).map(([id])=>label(id)).join(' · ')+(entries.length>2?` +${entries.length-2}`:'');
+}
+function compactWorkCard(attempt,href,title='Тренировка',deletable=false) {
+  const labels={assigned:'Назначено',started:'В процессе',draft:'Не завершена',completed:'Завершена',cancelled:'Снято'};
+  const when=new Date(attempt.date),status=labels[attempt.status]||'Не завершена';
+  const date=when.toLocaleDateString('ru-RU',{day:'numeric',month:'short'})+', '+when.toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});
+  const percent=attempt.maxScore?Math.round(attempt.score/attempt.maxScore*100):null,tone=percent===null?'':percent>=85?'ok':percent>=65?'warn':'bad';
+  const kind=attempt.status==='completed'?'done':'open';
+  const card=`<a class="work-card" href="${escapeHtml(href)}"><div class="work-card-main"><strong>${escapeHtml(workCardTitle(attempt,title))}</strong>${attempt.source==='self'?'<span class="work-card-origin">самостоятельно</span>':''}<span class="work-card-meta"><span>${escapeHtml(date)}</span><span>Выполнено: ${attempt.index}/${attempt.total}</span></span></div>${percent===null?'':`<span class="wc-score ${tone}">${percent}%</span>`}<span class="work-card-status">${status}</span><span class="work-card-arrow">${attempt.status==='completed'?'Отчёт':'Открыть'}</span></a>`;
+  return `<div class="wc-wrap" data-wc-kind="${kind}">${card}${deletable&&attempt.source==='self'?`<button type="button" class="wc-del" data-wc-delete="${escapeHtml(attempt.id)}" aria-label="Удалить тренировку" title="Удалить">✕</button>`:''}</div>`;
 }
 async function renderStudentPractice(topic) {
   syncRouteNav();
@@ -157,7 +168,7 @@ function accountHistory(history, owner = true, endpoint = 'account', assignments
   const studentId=endpoint.split('/')[2];
   return history.map(a=>{
     const assigned=assignments.find(s=>s.practiceId===a.id),title=assigned?.title||a.title||'Тренировка';
-    const card=compactWorkCard(a,owner?`#work/${encodeURIComponent(a.id)}`:`#student-work/${encodeURIComponent(studentId)}/${encodeURIComponent(a.id)}`,title);
+    const card=compactWorkCard(a,owner?`#work/${encodeURIComponent(a.id)}`:`#student-work/${encodeURIComponent(studentId)}/${encodeURIComponent(a.id)}`,title,owner);
     return card;
   }).join('');
 }
@@ -167,7 +178,7 @@ function unassignedHistory(data) {
 }
 function accountHistoryPages(data, owner = true, endpoint = "account", unassignedOnly = false) {
   const history=unassignedOnly?unassignedHistory(data):data.history;
-  return `<div class="account-history-pages"><div class="account-history-list">${accountHistory(history,owner,endpoint,data.assignments)}</div>${data.nextCursor ? `<button class="button" data-history-more data-history-unassigned="${unassignedOnly?'yes':'no'}" data-history-owner="${owner ? "yes" : "no"}" data-history-endpoint="${escapeHtml(endpoint)}" data-history-cursor="${escapeHtml(data.nextCursor)}">Показать ещё</button>` : ""}</div>`;
+  return `<div class="account-history-pages">${owner&&endpoint==='account'?historyToolbar(history):''}<div class="account-history-list">${accountHistory(history,owner,endpoint,data.assignments)}</div>${data.nextCursor ? `<button class="button" data-history-more data-history-unassigned="${unassignedOnly?'yes':'no'}" data-history-owner="${owner ? "yes" : "no"}" data-history-endpoint="${escapeHtml(endpoint)}" data-history-cursor="${escapeHtml(data.nextCursor)}">Показать ещё</button>` : ""}</div>`;
 }
 function separateHistorySection(data,owner=true,endpoint='account') {
   if(!unassignedHistory(data).length&&!data.nextCursor)return '';
@@ -191,8 +202,30 @@ function bindAccountHistoryPages() {
     });
   });
 }
+function historyToolbar(history) {
+  const open=history.filter(a=>a.source==='self'&&a.status!=='completed').length;
+  return `<div class="wc-toolbar"><div class="wc-chips" role="group" aria-label="Фильтр"><button type="button" class="wc-chip on" data-wc-filter="all">Все</button><button type="button" class="wc-chip" data-wc-filter="done">Завершённые</button><button type="button" class="wc-chip" data-wc-filter="open">Не завершённые</button></div>${open?`<button type="button" class="button wc-clean" data-wc-cleanup>Убрать незавершённые самостоятельные (${open})</button>`:''}</div>`;
+}
+function bindHistoryTools() {
+  app.querySelectorAll('[data-wc-filter]:not([data-bound])').forEach(chip=>{chip.dataset.bound='yes';chip.addEventListener('click',()=>{
+    const scope=chip.closest('.account-history-pages');scope.dataset.wcShow=chip.dataset.wcFilter;
+    scope.querySelectorAll('[data-wc-filter]').forEach(c=>c.classList.toggle('on',c===chip));
+  });});
+  app.querySelectorAll('[data-wc-delete]:not([data-bound])').forEach(button=>{button.dataset.bound='yes';button.addEventListener('click',async()=>{
+    if(!button.dataset.armed){button.dataset.armed='yes';button.textContent='Удалить?';button.classList.add('armed');setTimeout(()=>{if(button.isConnected){delete button.dataset.armed;button.textContent='✕';button.classList.remove('armed');}},3500);return;}
+    button.disabled=true;
+    try{await accountRequest(`practice/${encodeURIComponent(button.dataset.wcDelete)}/delete`,{});button.closest('.wc-wrap').remove();toast('Тренировка удалена.');}
+    catch(error){button.disabled=false;toast(error.message);}
+  });});
+  app.querySelectorAll('[data-wc-cleanup]:not([data-bound])').forEach(button=>{button.dataset.bound='yes';button.addEventListener('click',async()=>{
+    if(!button.dataset.armed){button.dataset.armed='yes';button.textContent='Точно удалить? Нажмите ещё раз';return;}
+    button.disabled=true;
+    try{const result=await accountRequest('practice/cleanup',{});toast(`Удалено тренировок: ${result.removed}.`);renderAccountResults();}
+    catch(error){button.disabled=false;toast(error.message);}
+  });});
+}
 function bindAccountHistory() {
-  bindAccountHistoryPages();
+  bindAccountHistoryPages();bindHistoryTools();
   app.querySelectorAll("[data-resume]:not([data-resume-bound])").forEach(button=>{button.dataset.resumeBound="yes";button.addEventListener("click", async()=>{
     if (!navigator.onLine) { toast(OFFLINE_PRACTICE_MESSAGE); return; }
     button.disabled=true;
