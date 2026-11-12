@@ -27,7 +27,7 @@ def build():
     rows = SB.load(src)
     errs, _ = SB.check(rows)
     assert not errs, errs[:5]
-    assert len(rows) == 800 and len({r['id'] for r in rows}) == 800
+    assert len(rows) == 1000 and len({r['id'] for r in rows}) == 1000
     converted = [SB.site_item(r) for r in sorted(rows, key=lambda r: r['id'])]
     dest = ROOT / 'data/exercises'
     mpath = dest / 'index.json'

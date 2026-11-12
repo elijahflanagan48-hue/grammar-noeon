@@ -15,7 +15,7 @@ import re
 import sys
 from pathlib import Path
 
-VERSION = 'infinitive-2026-11-12.1'
+VERSION = 'infinitive-2026-11-13.1'
 TARGETS = {
     # цель: (план, разрешённые якоря правила)
     'ig_verb_to': (90, {'ig-verb-to', 'ig-want', 'ig-decide', 'ig-manage', 'ig-seem', 'ig-wh'}),

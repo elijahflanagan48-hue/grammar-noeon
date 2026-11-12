@@ -41,7 +41,7 @@ def main() -> None:
     speaking=[i for i in items if i.get('topic')=='speaking']
     assert len(speaking)==manifest['sections']['speaking']==500
     infinitive=[i for i in items if i.get('topic')=='infinitive']
-    assert len(infinitive)==manifest['sections']['infinitive']==800
+    assert len(infinitive)==manifest['sections']['infinitive']==1000
     comparisons = [item for item in items if item['id'].startswith('cmp-')]
     assert len(tenses) == manifest["sections"]["tenses"]
     assert len(comparisons) == manifest["sections"]["comparison"]

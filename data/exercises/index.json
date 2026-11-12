@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "content_version": "tenses-2026-11-09.1",
   "editorial_language": "British English",
-  "total_items": 10719,
-  "answer_slots": 13418,
+  "total_items": 10919,
+  "answer_slots": 13702,
   "excluded_non_publishable": 62,
   "levels": {
     "A1": 51,
@@ -13,17 +13,17 @@
     "B2": 1701,
     "C1": 784,
     "C2": 311,
-    "unrated": 5340
+    "unrated": 5540
   },
   "types": {
     "active_to_passive": 100,
-    "context_cloze": 413,
+    "context_cloze": 443,
     "direct_to_reported": 782,
     "modal_fix": 50,
     "modal_gap": 700,
     "modal_meaning": 50,
-    "multiple_choice": 1118,
-    "open_brackets": 7239,
+    "multiple_choice": 1172,
+    "open_brackets": 7355,
     "translation_ru_en": 267
   },
   "parts": [
@@ -1938,6 +1938,41 @@
       "levels": {
         "unrated": 100
       }
+    },
+    {
+      "file": "data/exercises/part-110.json",
+      "count": 100,
+      "section": "infinitive",
+      "types": {
+        "multiple_choice": 27,
+        "open_brackets": 73
+      },
+      "levels3": {
+        "advanced": 26,
+        "basic": 23,
+        "medium": 51
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-111.json",
+      "count": 100,
+      "section": "infinitive",
+      "types": {
+        "context_cloze": 30,
+        "multiple_choice": 27,
+        "open_brackets": 43
+      },
+      "levels3": {
+        "advanced": 30,
+        "basic": 27,
+        "medium": 43
+      },
+      "levels": {
+        "unrated": 100
+      }
     }
   ],
   "sections": {
@@ -1948,7 +1983,7 @@
     "reported": 1000,
     "nouns": 1000,
     "speaking": 500,
-    "infinitive": 800
+    "infinitive": 1000
   },
   "content_versions": {
     "tenses": "tenses-2026-11-09.1",
@@ -1958,12 +1993,12 @@
     "reported": "reported-2026-11-05.1",
     "nouns": "nouns-2026-11-07.1",
     "speaking": "speaking-2026-11-09.1",
-    "infinitive": "infinitive-2026-11-12.1"
+    "infinitive": "infinitive-2026-11-13.1"
   },
   "levels3": {
-    "advanced": 2233,
-    "basic": 3662,
-    "medium": 4824
+    "advanced": 2289,
+    "basic": 3712,
+    "medium": 4918
   },
   "section_types": {
     "comparison": {
@@ -2006,9 +2041,9 @@
       "translation_ru_en": 20
     },
     "infinitive": {
-      "context_cloze": 40,
-      "multiple_choice": 213,
-      "open_brackets": 527,
+      "context_cloze": 70,
+      "multiple_choice": 267,
+      "open_brackets": 643,
       "translation_ru_en": 20
     }
   }
