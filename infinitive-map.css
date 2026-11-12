@@ -58,12 +58,12 @@
 .nc.im-mode-time .im-t-p .im-dot{fill:#c46a1c;stroke:#c46a1c}
 .nc.im-mode-time .im-t-n .im-dot{fill:var(--line2);stroke:var(--mut)}
 .nc.im-mode-time .im-t-n .im-name{opacity:.45}
-.im-time-key{display:flex;flex-wrap:wrap;gap:14px;margin:8px 0 0;font-size:13px;color:var(--mut)}
-.im-time-key span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.im-ex-k{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--mut)}
+.im-ex-k span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px}
 .im-ta::before{background:var(--im-to)}.im-tp::before{background:#c46a1c}.im-tn::before{background:var(--line2);border:2px solid var(--mut)}
 /* панель инструментов */
 .im-search{position:relative;flex:1 1 200px;max-width:300px}
-.im-search input{width:100%;font:inherit;font-size:15px;min-height:44px;padding:8px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surf);color:var(--tx);box-shadow:var(--sh-sm)}
+.im-search input{width:100%;font:inherit;font-size:16px;min-height:44px;padding:8px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surf);color:var(--tx);box-shadow:var(--sh-sm)}
 .im-search input:focus{outline:2px solid var(--pri);outline-offset:1px}
 .im-results{position:absolute;left:0;right:0;top:calc(100% + 6px);display:grid;gap:2px;padding:6px;background:var(--surf);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh);max-height:320px;overflow:auto}
 .im-results[hidden]{display:none}
@@ -124,3 +124,9 @@
 }
 .nc-mini-art path{fill:none;stroke-linecap:round}
 .im-pairst{--c:var(--im-pair)}
+/* пояснение режима «Время» */
+.im-explain{left:50%;top:70px;transform:translateX(-50%);width:min(520px,calc(100% - 24px));background:var(--surf);border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:12px 40px 12px 14px;display:grid;gap:6px}
+.im-explain[hidden]{display:none}
+.im-explain p{margin:0}.im-ex-h{font-weight:800;font-size:15px}.im-ex-t{font-size:13.5px;color:var(--mut);line-height:1.45}.im-ex-t b{color:var(--tx)}
+.im-ex-x{position:absolute;right:8px;top:8px;width:30px;height:30px;font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:9px;background:var(--surf2);color:var(--tx)}
+@media(max-width:700px){.im-explain{top:auto;bottom:12px}}

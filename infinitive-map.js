@@ -325,13 +325,12 @@ function infinitiveMapSvg() {
   return `<svg class="im-svg" viewBox="0 0 ${IM_W} ${IM_H}" width="${IM_W}" height="${IM_H}" role="img" aria-label="Карта правила: инфинитив и герундий"><g transform="translate(${IM_OFF} 0)">${zones}${lines}${pairs}${stations}</g>${legend}${titles}</svg>`;
 }
 function infinitiveMapHtml() {
-  const modes = `<span class="im-modes" role="group" aria-label="Режим карты"><button type="button" data-im-mode="all" aria-pressed="true">Линии</button><button type="button" data-im-mode="pair" aria-pressed="false">Пересадки</button><button type="button" data-im-mode="time" aria-pressed="false">Время</button><button type="button" data-im-mode="game" aria-pressed="false">Игра</button></span>`;
+  const modes = `<span class="im-modes" role="group" aria-label="Режим карты"><button type="button" data-im-mode="all" aria-pressed="true">Линии</button><button type="button" data-im-mode="pair" aria-pressed="false">Пересадки</button><button type="button" data-im-mode="time" aria-pressed="false" title="Когда происходит действие: впереди или уже было">Когда?</button><button type="button" data-im-mode="game" aria-pressed="false">Игра</button></span>`;
   const search = `<label class="im-search"><span class="sr-only">Найти слово на карте</span><input type="search" placeholder="Найти: avoid, stop…" autocomplete="off" spellcheck="false"><span class="nc-results im-results" hidden></span></label>`;
   return `<section class="im-wrap" id="ig-metro" aria-labelledby="im-title">
     <div class="im-head"><div><p class="eyebrow">Карта правила</p><h2 id="im-title">Метро трёх форм</h2><p>Найдите слово, которое стоит перед глаголом, и посмотрите, на какой оно линии. Пересадки — глаголы, у которых обе формы меняют смысл.</p></div>
       <ul class="im-key"><li class="im-c-to">to do</li><li class="im-c-ing">doing</li><li class="im-c-bare">do</li><li class="im-c-ring">предлог + doing</li><li class="im-c-same">обе без разницы</li><li class="im-c-pair">пересадка</li></ul></div>
     ${noeonCanvasShell('im-canvas', 'Карта правила «Метро трёх форм». Перетаскивайте, масштабируйте колесом или щипком', search + modes, 'Тяните карту · колесо или щипок — масштаб · клик по станции — подробности · 0 — вся карта')}
-    <p class="im-time-key" hidden><span class="im-ta">впереди (план, цель)</span><span class="im-tp">уже было</span><span class="im-tn">вне времени</span></p>
   </section>`;
 }
 function imShuffle(a) { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; }
@@ -388,7 +387,7 @@ function initialiseInfinitiveMap(root) {
   const api = initialiseNoeonCanvas(box, {
     W: IM_W, H: IM_H, signal, minK: 0.1, maxK: 1.6,
     onZoom: k => { box.classList.toggle('lod-low', k < 0.32); box.classList.toggle('lod-mid', k >= 0.32 && k < 0.55); },
-    onTap: e => { const st = e.target.closest('[data-st]'); if (st) { if (gameState.on) return; open(st.dataset.st); } else if (!e.target.closest('.nc-panel') && !mobile()) close(); },
+    onTap: e => { const st = e.target?.closest?.('[data-st]'); if (st) { if (gameState.on) return; open(st.dataset.st); } else if (!panel.hidden) close(); },
     start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.4; v.x = 0; v.y = -40; apply(); } else fit(); },
   });
   // карточка
@@ -431,13 +430,16 @@ function initialiseInfinitiveMap(root) {
     game.querySelector('.im-g-o').innerHTML = `<p class="im-g-r ${ok ? 'ok' : 'bad'}">${ok ? '✓ Верно' : '✗ Нет'}: ${imEsc(s.pat)}</p><button type="button" class="im-g-next">Дальше →</button>`;
     open(s.id);
   }, { signal });
-  const timeKey = root.querySelector('.im-time-key');
+  const explain = document.createElement('div'); explain.className = 'nc-ui im-explain'; explain.hidden = true;
+  explain.innerHTML = '<p class="im-ex-h">Режим «Когда?»: действие впереди или уже было?</p><p class="im-ex-t">Сравните глагол в to do / -ing с главным глаголом предложения. <b>to do</b> чаще смотрит вперёд (decide to go — поездка после решения), <b>-ing</b> после remember, regret, admit — назад (admit taking — взял раньше, чем признался).</p><p class="im-ex-k"><span class="im-ta">впереди: план, цель</span><span class="im-tp">уже было</span><span class="im-tn">вне времени</span></p><button type="button" class="im-ex-x" aria-label="Скрыть пояснение">✕</button>';
+  box.append(explain);
+  explain.addEventListener('click', e => { if (e.target.closest('.im-ex-x')) explain.hidden = true; }, { signal });
   const setMode = m => {
     box.querySelectorAll('[data-im-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.imMode === m)));
-    box.classList.toggle('im-mode-pair', m === 'pair'); box.classList.toggle('im-mode-time', m === 'time'); timeKey.hidden = m !== 'time';
+    box.classList.toggle('im-mode-pair', m === 'pair'); box.classList.toggle('im-mode-time', m === 'time'); explain.hidden = m !== 'time';
     gameState.on = m === 'game'; game.hidden = !gameState.on; box.classList.toggle('im-mode-game', gameState.on);
     if (gameState.on) { gameState.score = 0; gameState.total = 0; close(); nextQ(); }
-    if (m === 'time') api.smooth(api.fit);
+    if (m === 'time') api.fit();
     if (m === 'pair') { const a = IM.pairs[0], b = IM.pairs.at(-1); api.flyTo((a.x + b.x) / 2 + IM_OFF, a.y, Math.min(box.clientWidth / (b.x - a.x + 300), 0.7)); }
   };
   box.addEventListener('click', e => { const m = e.target.closest('[data-im-mode]'); if (m) setMode(m.dataset.imMode); }, { signal });

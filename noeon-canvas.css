@@ -10,7 +10,7 @@ html.nc-lock{overflow:hidden}
 .nc-tools{left:12px;right:12px;top:max(12px,env(safe-area-inset-top));display:flex;flex-wrap:wrap;gap:6px;align-items:center;pointer-events:none}
 .nc-tools>*{pointer-events:auto}
 .nc-zoom{display:flex;gap:4px;margin-left:auto;padding:4px;background:var(--surf);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-sm)}
-.nc-zoom button{width:36px;height:36px;font:inherit;font-size:18px;cursor:pointer;color:var(--tx);background:var(--surf2);border:1px solid var(--line);border-radius:10px}
+.nc-zoom button{min-width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 8px;font:inherit;font-size:18px;cursor:pointer;color:var(--tx);background:var(--surf2);border:1px solid var(--line);border-radius:10px}
 .nc-zoom button:hover{border-color:var(--pri);color:var(--pri)}
 .nc-mini{left:12px;bottom:12px;width:170px;background:var(--surf);border:1px solid var(--line);border-radius:10px;box-shadow:var(--sh-sm);overflow:hidden;cursor:pointer}
 .nc-mini-art,.nc-mini-art svg{position:absolute;inset:0;width:100%;height:100%}
@@ -23,6 +23,17 @@ html.nc-lock{overflow:hidden}
   .nc{height:76vh;min-height:420px}
   .nc-help{display:none}
   .nc-mini{width:96px}
-  .nc-panel{left:0;right:0;top:auto;bottom:0;width:auto;max-height:58%;border-radius:18px 18px 0 0;border-bottom:0;padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
+  .nc-panel{left:0;right:0;top:auto;bottom:0;width:auto;max-height:72%;border-radius:18px 18px 0 0;border-bottom:0;padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
 }
 @media(prefers-reduced-motion:reduce){.nc-world.nc-anim{transition:none}.nc-panel{animation:none}}
+.nc-full-t{display:none;font-size:13.5px;font-weight:700}
+.nc.is-active:not(.is-full){border-color:var(--pri)}
+.nc-toast{left:50%;top:50%;transform:translate(-50%,-50%);margin:0;padding:10px 16px;border-radius:999px;background:rgba(15,26,46,.86);color:#fff;font-size:14px;font-weight:600;pointer-events:none;text-align:center;max-width:calc(100% - 32px)}
+.nc-toast[hidden]{display:none}
+.nc-panel::before{content:"";display:none;width:44px;height:5px;border-radius:3px;background:var(--line2);margin:-6px auto 10px}
+@media(max-width:700px){
+  .nc:not(.is-full){height:62vh}
+  .nc:not(.is-full) .nc-full-t{display:inline}
+  .nc-panel::before{display:block}
+}
+@media(max-height:520px){.nc-help{display:none}.nc-mini{width:96px}.nc.is-full .nc-panel{top:8px;max-height:none}}
