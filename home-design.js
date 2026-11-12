@@ -1,6 +1,6 @@
 "use strict";
 /* Главная для гостей и страница «Грамматика»: карточки разделов и мини-демо карты времён. */
-const SECTION_ORDER = ['tenses', 'passive', 'modals', 'reported', 'comparison', 'nouns', 'speaking'];
+const SECTION_ORDER = ['tenses', 'passive', 'modals', 'reported', 'comparison', 'nouns', 'speaking', 'infinitive'];
 const SECTION_META = {
   tenses: { mono: 'T', hue: 'green', facts: ['12 времён', 'интерактивная карта', 'практика A1–C2'] },
   passive: { mono: 'P', hue: 'blue', facts: ['формы пассива', 'выбор фокуса', 'особые конструкции'] },
@@ -8,6 +8,7 @@ const SECTION_META = {
   reported: { mono: 'R', hue: 'amber', facts: ['20 подтем', 'reporting verbs'] },
   comparison: { mono: 'C', hue: 'rose', facts: ['образование форм', 'равенство и разница'] },
   speaking: { mono: 'S', hue: 'indigo', facts: ['say · tell · speak · talk', 'мини-тексты'] },
+  infinitive: { mono: 'I', hue: 'blue', facts: ['to do · do · doing', 'stop · remember · try'] },
   nouns: { mono: 'N', hue: 'teal', facts: ['число и артикли', 'мини-тексты'] },
 };
 function grammarSectionCardHtml(id, section, { practice = false, student = null, compact = false } = {}) {
@@ -20,12 +21,12 @@ function grammarSectionCardHtml(id, section, { practice = false, student = null,
     <h2>${escapeHtml(section.title)}</h2>
     <p>${escapeHtml(section.description)}</p>
     ${meta.facts.length ? `<ul class="gs-facts">${meta.facts.map(f => `<li>${escapeHtml(f)}</li>`).join('')}</ul>` : ''}
-    <div class="comparison-shortcuts">${theory}<a class="button primary" href="${target}">${student ? 'Настроить задание' : 'Практика'} →</a>${tests}</div>
+    <div class="comparison-shortcuts">${theory}${section.soon ? '<span class="button gs-soon" aria-disabled="true">Практика скоро</span>' : `<a class="button primary" href="${target}">${student ? 'Настроить задание' : 'Практика'} →</a>`}${tests}</div>
   </article>`;
 }
 function grammarSectionsHtml(sections, opts) {
   const order = new Map(SECTION_ORDER.map((id, i) => [id, i]));
-  return [...sections].sort((a, b) => (order.get(a[0]) ?? 99) - (order.get(b[0]) ?? 99)).map(([id, section]) => grammarSectionCardHtml(id, section, opts)).join('');
+  return [...sections].filter(([, section]) => !(section.soon && (opts?.practice || opts?.student))).sort((a, b) => (order.get(a[0]) ?? 99) - (order.get(b[0]) ?? 99)).map(([id, section]) => grammarSectionCardHtml(id, section, opts)).join('');
 }
 
 /* Гостевая главная */

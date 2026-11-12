@@ -45,3 +45,5 @@
 @media(prefers-reduced-motion:reduce){.gs{transition:none}}
 
 @media(min-width:640px){.hg-grid>:last-child:nth-child(odd),.gs-grid>:last-child:nth-child(odd){grid-column:1/-1}}
+.gs .gs-soon{opacity:.6;cursor:default;pointer-events:none}
+.theory-soon{margin:18px 0 0;text-align:center}

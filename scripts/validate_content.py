@@ -107,8 +107,8 @@ def main() -> None:
             assert item.get("answer") is not None, item["id"]
 
     theory = json.loads((ROOT / "data/theory.json").read_text(encoding="utf-8"))
-    assert len(theory) == 11
-    assert {entry['id'] for entry in theory} == {'foundations', 'present', 'past', 'future', 'contrasts', 'comparison', 'passive', 'modals', 'reported', 'nouns', 'speaking'}
+    assert len(theory) == 12
+    assert {entry['id'] for entry in theory} == {'foundations', 'present', 'past', 'future', 'contrasts', 'comparison', 'passive', 'modals', 'reported', 'nouns', 'speaking', 'infinitive'}
     assert all(entry["id"] != "sources" for entry in theory)
     assert not (ROOT / "content/theory/SOURCES.md").exists()
     for entry in theory:

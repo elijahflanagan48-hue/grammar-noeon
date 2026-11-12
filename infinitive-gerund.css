@@ -1,0 +1,87 @@
+/* Infinitive · -ing: правило поверх токенов .mv (modal-verbs.css) и виджетов .sv (speaking-verbs.css). Своё — под .ig, телефон в первую очередь. */
+.ig .ig-to{--c:var(--mv-ad);--cb:var(--mv-ad-bg)}
+.ig .ig-bare{--c:var(--mv-of);--cb:var(--mv-of-bg)}
+.ig .ig-ing{--c:var(--mv-pe);--cb:var(--mv-pe-bg)}
+.ig .ig-both,.ig .ig-all{--c:var(--mv-pr);--cb:var(--mv-pr-bg)}
+.ig .sv-v{min-width:62px}
+.ig .ig-lenses{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ig .ig-lenses .sv-lens{grid-template-columns:1fr;grid-template-rows:auto auto auto;row-gap:4px;text-align:center;justify-items:center}
+.ig .ig-lenses .sv-icon{grid-row:auto;width:46px;height:34px;font-size:14px}
+.ig .ig-lenses .sv-word{font-size:18px}
+.ig .ig-lenses .sv-focus{font-size:12px}
+.ig .ig-lamps{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ig .ig-lamps .sv-lamp{grid-template-columns:1fr auto;padding:8px 9px}
+.ig .ig-lamps .sv-lamp-v{font-size:14.5px}
+.ig .sv-sd-n a{color:var(--mv-accent);font-weight:650;white-space:nowrap}
+.ig .ig-gloss{font-style:normal;color:var(--mv-muted);font-size:13.5px}
+/* предлог + doing */
+.ig .ig-formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 12px}
+.ig .ig-chip{display:inline-grid;place-items:center;min-height:34px;padding:4px 14px;border-radius:10px;border:2px dashed var(--mv-line);font-weight:700}
+.ig .ig-plus{font-weight:800;color:var(--mv-muted)}
+.ig .ig-formula .sv-v{font-size:15px;padding:6px 14px}
+.ig .ig-formula .sv-f-n{flex-basis:100%}
+/* пары со сменой смысла */
+.ig .ig-pairs{display:grid;gap:8px;margin:0 0 12px}
+.ig .ig-pair{border:1px solid var(--mv-line);border-radius:14px;background:var(--mv-card);padding:10px 12px;scroll-margin-top:90px;transition:box-shadow .3s}
+.ig .ig-pair.ig-flash{box-shadow:0 0 0 3px var(--mv-accent)}
+.ig .ig-ph{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
+.ig .ig-ph>b{font-size:18px;font-weight:800;letter-spacing:-.2px}
+.ig .ig-pbs{display:flex;gap:6px}
+.ig .ig-pb{font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;border-radius:999px;padding:6px 12px;min-height:38px;border:1px solid var(--mv-line);background:var(--mv-card);color:var(--c)}
+.ig .ig-pb.on{background:var(--c);border-color:var(--c);color:var(--mv-card)}
+.ig .ig-pp{margin-top:8px;border-left:4px solid var(--c);background:var(--cb);border-radius:10px;padding:9px 11px;display:grid;gap:3px;animation:sv-pop .25s ease}
+.ig .ig-pp[hidden]{display:none}
+.ig .ig-pp p{margin:0!important}
+.ig .ig-sense{font-weight:750;color:var(--c)}
+.ig .ig-sample{font-style:italic;font-size:15px}
+.ig .ig-ru{color:var(--mv-muted);font-size:14px}
+.ig .ig-order{font-size:12.5px;color:var(--mv-muted)}
+.ig .ig-order::before{content:"⏱ ";}
+/* конструктор форм */
+.ig .ig-builder{border:1px solid var(--mv-line);border-radius:16px;padding:12px;background:var(--mv-head);display:grid;gap:10px;margin:0 0 10px}
+.ig .ig-axis{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.ig .ig-axis>span{flex-basis:100%;font-size:12.5px;font-weight:700;color:var(--mv-muted);text-transform:uppercase;letter-spacing:.03em}
+.ig .ig-ax{font:inherit;font-size:14px;cursor:pointer;border-radius:10px;padding:7px 12px;min-height:40px;border:1px solid var(--mv-line);background:var(--mv-card);color:var(--mv-ink)}
+.ig .ig-ax.on{background:var(--mv-accent);border-color:var(--mv-accent);color:#fff}
+:root[data-theme="dark"] .ig .ig-ax.on{color:#06130f}
+.ig .ig-fbout{display:grid}
+.ig .ig-fbr{display:grid;grid-template-columns:1fr;gap:8px}
+.ig .ig-fbr[hidden]{display:none}
+.ig .ig-fbc{border-radius:12px;padding:10px 12px;background:var(--mv-card);border:1px solid var(--c);border-left:5px solid var(--c);display:grid;gap:2px;animation:sv-pop .25s ease}
+.ig .ig-fbc small{font-size:12px;color:var(--mv-muted);text-transform:uppercase;letter-spacing:.03em}
+.ig .ig-fbc b{font-size:19px;color:var(--c)}
+.ig .ig-fbc i{font-size:14px;color:var(--mv-ink)}
+.ig details.ig-more{margin:0 0 12px;border:1px dashed var(--mv-line);border-radius:12px;padding:8px 12px}
+.ig details.ig-more>summary{cursor:pointer;font-weight:650;color:var(--mv-accent);min-height:32px}
+.ig .ig-ftable{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+.ig .ig-ftable th,.ig .ig-ftable td{border-top:1px solid var(--mv-line);padding:6px;text-align:left;vertical-align:top}
+.ig .ig-ftable thead th{border-top:0;color:var(--mv-muted);font-size:12.5px}
+/* список */
+.ig .ig-filter button{color:var(--c)}
+.ig .ig-search{display:grid;gap:4px;margin:0 0 10px;font-size:13px;color:var(--mv-muted)}
+.ig .ig-search input{font:inherit;font-size:16px;padding:9px 12px;border-radius:12px;border:1px solid var(--mv-line);background:var(--mv-card);color:var(--mv-ink);min-height:44px;width:100%}
+.ig .ig-search input:focus{outline:2px solid var(--mv-accent);outline-offset:1px}
+.ig .ig-finds details.sv-ph>summary span{color:var(--c);font-weight:700}
+.ig .ig-none{margin:8px 0 0!important;color:var(--mv-muted);font-size:14px}
+/* мини-тест: варианты длиннее одного слова */
+.ig .ig-opts button{--c:var(--mv-ink);font-weight:650}
+.ig .ig-opts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ig .sv-motto span{font-size:13px}
+@media(min-width:760px){
+  .ig .ig-opts{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .ig .ig-pairs{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+  .ig .ig-fbr{grid-template-columns:1fr 1fr}
+  .ig .ig-builder{grid-template-columns:repeat(3,auto) 1fr;align-items:start}
+  .ig .ig-fbout{grid-column:1/-1}
+  .ig .ig-lenses .sv-lens{min-height:96px}
+}
+@media(prefers-reduced-motion:reduce){.ig .ig-pp,.ig .ig-fbc{animation:none}}
+/* компактный список: плитки в две колонки на телефоне */
+.ig .ig-finds{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+.ig .ig-finds details.sv-ph>summary{flex-direction:column;align-items:flex-start;gap:0;padding:6px 9px;min-height:44px}
+.ig .ig-finds details.sv-ph>summary b{font-size:14px;line-height:1.25}
+.ig .ig-finds details.sv-ph>summary span{font-size:12px}
+.ig .ig-finds details.sv-ph[open]{grid-column:1/-1}
+.ig .ig-finds details.sv-ph p{padding:0 9px 8px;font-size:14px}
+@media(min-width:760px){.ig .ig-finds{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.ig .ig-pair,.ig details.sv-row,.ig .mv-sec{scroll-margin-top:150px}

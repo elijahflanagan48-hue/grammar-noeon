@@ -24,6 +24,7 @@ const THEORY_ROUTE_BY_FILE = {
   "08-reported.md": "reported",
   "09-nouns.md": "nouns",
   "10-speaking-verbs-rule.html": "speaking",
+  "11-infinitive-gerund-rule.html": "infinitive",
   "08-modals.html": "modals",
   "01-foundations.md": "foundations",
   "02-present.md": "present",
@@ -255,6 +256,7 @@ function scrollTheory(parts) {
 }
 
 const GRAMMAR_SECTIONS = {
+  infinitive: { title: "Infinitive · -ing", subtitle: "Инфинитив и герундий", description: "to do, do или doing: после каких слов какая форма, пары со сменой смысла (stop, remember, try), предлоги, цель, формы инфинитива и герундия.", theory: "infinitive", soon: true },
   speaking: { title: "Say · Tell · Speak · Talk", subtitle: "Глаголы речи", description: "Четыре глагола «говорить»: say, tell, speak и talk. Управление, устойчивые сочетания, выражения и фразовые глаголы.", theory: "speaking" },
   nouns: { title: "Nouns", subtitle: "Существительные", description: "Исчисляемые и неисчисляемые, число, притяжательный падеж, составные слова, артикли и определители количества: правило и практика.", theory: "nouns" },
   reported: { title: "Reported Speech", subtitle: "Косвенная речь", description: "Сообщения, вопросы, просьбы и reporting verbs: отдельные подтемы и смешанная практика.", theory: "reported" },
@@ -263,7 +265,7 @@ const GRAMMAR_SECTIONS = {
   comparison: { title: "Degrees of Comparison", subtitle: "Степени сравнения прилагательных", description: "Образование форм, сравнение, равенство и точные смысловые различия.", theory: "comparison" },
   passive: { title: "Passive Voice", subtitle: "Пассивный залог", description: "Формы пассива, выбор фокуса и особые конструкции. Предложения, мини-тексты и преобразования.", theory: "passive" },
 };
-function grammarSectionForTheory(id) { return ["comparison","passive","modals","reported","nouns","speaking"].includes(id) ? id : "tenses"; }
+function grammarSectionForTheory(id) { return ["comparison","passive","modals","reported","nouns","speaking","infinitive"].includes(id) ? id : "tenses"; }
 function renderGrammar(topic = "", practice = false, student = null) {
   syncRouteNav();
   const sections = GRAMMAR_SECTIONS[topic] ? [[topic, GRAMMAR_SECTIONS[topic]]] : Object.entries(GRAMMAR_SECTIONS);
@@ -340,6 +342,7 @@ function renderProfile() {
 }
 
 const THEORY_SECTION_LINKS = {
+  infinitive: [["Что перед глаголом","infinitive","ig-after"],["to do · doing","infinitive","ig-verb-to"],["Предлог и без to","infinitive","ig-prep"],["Смысл меняется","infinitive","ig-meaning"],["Кого-то, цель, формы","infinitive","ig-object"],["Список и проверка","infinitive","ig-finder"]],
   speaking: [["Что после глагола","speaking","sv-after"],["Say / tell","speaking","sv-say-tell"],["Speak / talk","speaking","sv-speak-talk"],["Выражения","speaking","sv-phrases"],["Ловушки и проверка","speaking","sv-traps"]],
   nouns: [["Счёт и число","nouns","исчисляемые-и-неисчисляемые-существительные"],["Партитивы и значения","nouns","как-посчитать-неисчисляемое-партитивы"],["Притяжательный","nouns","притяжательный-падеж-s-и-of"],["Составные и группы","nouns","составные-существительные-compound-nouns"],["Артикли и определители","nouns","артикли-и-определители-с-существительными"]],
   reported: [["Основа", "reported", "rs01"], ["Вопросы", "reported", "rs09"], ["Просьбы и команды", "reported", "rs11"], ["Reporting verbs", "reported", "rs14"], ["Сложные случаи", "reported", "rs20"]],
@@ -367,6 +370,7 @@ function theorySectionIndex(active,anchor,links=theorySectionLinks(active)) {
   if(active==='modals'){const n=Number(anchor.replace('mv-r',''));return n>=8?3:n===7?2:n>=3?1:0;}
   if(active==='nouns')return nounsSectionIndex(anchor);
   if(active==='speaking')return speakingSectionIndex(anchor);
+  if(active==='infinitive')return infinitiveSectionIndex(anchor);
   if(active==='reported'){const n=Number(anchor.slice(2));return !n||n<9?0:n<11?1:n<14?2:n<20?3:4;}
   if(active==='passive'){
     if(['pv-focus','pv-flow','pv-agent'].includes(anchor))return 1;
@@ -379,6 +383,11 @@ function theorySectionIndex(active,anchor,links=theorySectionLinks(active)) {
 }
 function speakingSectionIndex(anchor) {
   const groups=[['sv-map','sv-after'],['sv-say-tell','sv-say','sv-tell','sv-reported','sv-orders','sv-direct','sv-tell-fixed','sv-tell-distinguish','sv-say-objects','sv-things-say','sv-hearsay'],['sv-speak-talk','sv-speak','sv-talk','sv-speak-ability','sv-phone','sv-speak-public','sv-talk-topic','sv-talk-chat','sv-talk-sense'],['sv-phrases','sv-phrasal'],['sv-traps','sv-check']];
+  const index=groups.findIndex(group=>group.includes(anchor));
+  return index<0?0:index;
+}
+function infinitiveSectionIndex(anchor) {
+  const groups=[['ig-map','ig-after'],['ig-verb-to','ig-want','ig-decide','ig-manage','ig-seem','ig-wh','ig-verb-ing','ig-enjoy','ig-avoid','ig-finish','ig-admit','ig-go','ig-worth'],['ig-prep','ig-prep-verb','ig-prep-adj','ig-prep-obj','ig-prep-free','ig-to-prep','ig-bare','ig-modal','ig-make-let','ig-help','ig-senses','ig-rather'],['ig-meaning','ig-remember','ig-forget','ig-stop','ig-try','ig-regret','ig-go-on','ig-mean','ig-need','ig-afraid','ig-sorry','ig-interested','ig-like','ig-same','ig-love','ig-used'],['ig-object','ig-obj-to','ig-obj-ing','ig-suggest','ig-forbid','ig-poss','ig-believe','ig-adj','ig-adj-to','ig-too','ig-first','ig-noun-to','ig-purpose','ig-subject','ig-forms','ig-perf-inf','ig-cont-inf','ig-pass','ig-perf-ger','ig-needs','ig-unreal','ig-neg'],['ig-finder','ig-list','ig-traps','ig-check']];
   const index=groups.findIndex(group=>group.includes(anchor));
   return index<0?0:index;
 }
@@ -416,6 +425,13 @@ async function renderTheory(parts) {
     initialiseModalRule(document.querySelector('.theory-content'));
     document.title='Modal Verbs — Grammar NOEON';openedTheory=slug;
     if(parts[2])requestAnimationFrame(()=>revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
+    return;
+  }
+  if(slug==='infinitive') {
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${infinitiveGerundRuleHtml()}<p class="subtle theory-soon">Практика по этой теме скоро появится.</p></section></div>`;
+    initialiseInfinitiveGerundRule(document.querySelector('.theory-content'));
+    document.title='Infinitive · -ing — Grammar NOEON';openedTheory=slug;
+    if(parts[2])requestAnimationFrame(()=>revealInfinitiveGerundAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
     return;
   }
   if(slug==='speaking') {
@@ -525,6 +541,10 @@ async function openRule(ref) {
     if(entry.id==='modals') {
       content.innerHTML=modalRuleHtml('modal-modals-');initialiseModalRule(content);content.scrollTop=0;
       revealModalAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
+    }
+    if(entry.id==='infinitive') {
+      content.innerHTML=infinitiveGerundRuleHtml('modal-infinitive-');initialiseInfinitiveGerundRule(content);content.scrollTop=0;
+      revealInfinitiveGerundAnchor(content,decodeAnchor(parts.slice(2).join('/')));return;
     }
     if(entry.id==='speaking') {
       content.innerHTML=speakingVerbsRuleHtml('modal-speaking-');initialiseSpeakingVerbsRule(content);content.scrollTop=0;
@@ -1292,7 +1312,7 @@ function ruleLink(ref) {
   const aliases = { "future-simple-will--v1":"future-simple-will-v1", "future-continuous-will-be--v-ing":"future-continuous-will-be-v-ing", "future-perfect-simple-will-have--v3":"future-perfect-simple-will-have-v3", "future-perfect-continuous-will-have-been--v-ing":"future-perfect-continuous-will-have-been-v-ing", "инверсия-после-ограничительных-и-отрицательных-выражений":"18-маркированные-и-продвинутые-употребления", "7-by-и-untiltill":"7-by-и-until-till" };
   const [file, anchor] = ref.split("#");
   if (anchor && aliases[anchor]) ref = `${file}#${aliases[anchor]}`;
-  const match = ref.match(/content\/(?:tenses|comparison|passive|modals|reported-speech|nouns|speaking)\/([^#]+?)(?:#(.+))?$/);
+  const match = ref.match(/content\/(?:tenses|comparison|passive|modals|reported-speech|nouns|speaking|infinitive)\/([^#]+?)(?:#(.+))?$/);
   if (!match) return "#theory/foundations";
   const route = THEORY_ROUTE_BY_FILE[match[1]] || "foundations";
   return `#theory/${route}${match[2] ? `/${match[2]}` : ""}`;
@@ -1797,7 +1817,7 @@ async function route() {
   syncRouteNav();
   if (nextParts[0] === "theory" && nextParts[1] === openedTheory && document.querySelector(".theory-content")) {
     syncTheoryNavigation(nextParts);
-    if(restoreTop!==null)window.scrollTo({top:restoreTop,behavior:"instant"});else if(nextParts[1]==='speaking')revealSpeakingVerbsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='nouns')revealNounsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='modals')revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='passive')revealPassiveAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else scrollTheory(nextParts);
+    if(restoreTop!==null)window.scrollTo({top:restoreTop,behavior:"instant"});else if(nextParts[1]==='infinitive')revealInfinitiveGerundAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='speaking')revealSpeakingVerbsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='nouns')revealNounsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='modals')revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='passive')revealPassiveAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else scrollTheory(nextParts);
     syncScreenChrome();return;
   }
   openedTheory = null;
