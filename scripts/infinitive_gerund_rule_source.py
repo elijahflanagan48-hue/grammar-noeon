@@ -46,10 +46,10 @@ SLOTS = [
     ('can · must · should', 'Модальные глаголы', {
         'to': ('n', 'must to go'), 'bare': ('y', 'You must go.'), 'ing': ('n', '')},
      'После can, could, must, should, may, might, will, would — глагол без to.', 'ig-modal'),
-    ('make · let + человек', 'Заставить, позволить', {
+    ('make · let + sb', 'Заставить, позволить', {
         'to': ('p', 'В пассиве: I was made to wait.'), 'bare': ('y', 'They made me wait.'), 'ing': ('n', '')},
      'make / let sb <b>do</b>. В пассиве у make возвращается to: <i>was made to wait</i>; у let пассива нет — <i>was allowed to</i>.', 'ig-make-let'),
-    ('see · hear + человек', 'Видел, слышал', {
+    ('see · hear + sb', 'Видел, слышал', {
         'to': ('p', 'В пассиве: He was seen to leave.'), 'bare': ('y', 'I saw him fall. — целиком'), 'ing': ('y', 'I saw him falling. — в процессе')},
      'Целое событие — <b>do</b>, кусочек процесса — <b>doing</b>.', 'ig-senses'),
     ('stop · remember · try', 'Смысл меняется', {
@@ -122,7 +122,7 @@ PREP = [
     ('ing', 'Прилагательное + предлог', 'good at · interested in · tired of · afraid of · fond of', 'ig-prep-adj',
      ['She’s good at solving puzzles.', 'Are you interested in joining the club?', 'I’m tired of waiting.', 'He’s proud of winning.', 'They’re keen on hiking.'],
      'Также: capable of, responsible for, famous for, bored with, worried about, sorry for.'),
-    ('ing', 'Глагол + человек + предлог', 'prevent sb from · accuse sb of · thank sb for', 'ig-prep-obj',
+    ('ing', 'Глагол + sb + предлог', 'prevent sb from · accuse sb of · thank sb for', 'ig-prep-obj',
      ['The rain prevented us from going out.', 'They accused him of cheating.', 'Thank you for helping me.', 'She talked me into buying it.', 'Congratulations on passing your test!'],
      'Также: stop sb (from), blame sb for, warn sb about, discourage sb from, forgive sb for.'),
     ('ing', 'Свободные предлоги', 'before · after · without · instead of · by · on', 'ig-prep-free',
@@ -143,7 +143,7 @@ BARE = [
     ('bare', 'help (to) do', 'help sb (to) do', 'ig-help',
      ['Can you help me (to) move the sofa?', 'This app helps you (to) learn words.'],
      'Обе формы верны. Без to чаще в разговоре.'),
-    ('bare', 'see · hear · watch · feel + человек', 'do — целиком, doing — процесс', 'ig-senses',
+    ('bare', 'see · hear · watch · feel + sb', 'do — целиком, doing — процесс', 'ig-senses',
      ['I saw her cross the road. — видел от начала до конца', 'I saw her crossing the road. — видел в процессе', 'I heard someone call my name.', 'We watched the kids playing.', 'He was seen to leave at ten.'],
      'В пассиве — to: <i>was seen to leave</i>, <i>was heard to say</i>.'),
     ('bare', 'Лучше, предпочитаю, почему бы не', 'had better · would rather · why not · rather than', 'ig-rather',
@@ -192,7 +192,7 @@ SAME = [
 ]
 
 OBJECT = [
-    ('to', 'Глагол + человек + to do', 'want · ask · tell · advise · allow · expect · remind', 'ig-obj-to',
+    ('to', 'Глагол + sb + to do', 'want · ask · tell · advise · allow · expect · remind', 'ig-obj-to',
      ['I want you to listen.', 'She asked me to wait.', 'They told us not to worry.', 'Mum reminded me to call Grandma.', 'Nobody expected him to win.', '✗ I want that you listen.'],
      'Также: would like, invite, encourage, persuade, force, order, teach, warn (not to), get, enable, allow, permit.'),
     ('ing', 'Без объекта → -ing', 'allow · permit · advise · recommend · forbid + doing', 'ig-obj-ing',
@@ -200,7 +200,7 @@ OBJECT = [
      'С человеком — <b>to do</b>, без человека — <b>-ing</b>.'),
     ('ing', 'suggest · recommend', 'suggest doing · suggest (that) sb do', 'ig-suggest',
      ['She suggested going by train.', 'She suggested (that) we go by train.', 'I recommend booking a table.', 'I recommend that you book a table.', '✗ She suggested me to go.'],
-     'После suggest человек + to do невозможен. <i>Recommend sb to do</i> встречается в британском английском, но надёжнее <i>recommend that…</i> или <i>recommend doing</i>.'),
+     'После suggest конструкция sb + to do невозможна. <i>Recommend sb to do</i> встречается в британском английском, но надёжнее <i>recommend that…</i> или <i>recommend doing</i>.'),
     ('ing', 'Запретить, помешать', 'forbid sb to do / from doing · prevent sb from doing', 'ig-forbid',
      ['Her parents forbade her to go out.', 'He forbade them from mentioning it.', 'Nothing can prevent us from leaving.', 'Stop him (from) eating the cake!'],
      'prevent / stop / discourage sb <b>from doing</b>.'),
@@ -460,7 +460,7 @@ def build_html():
     P.append(lens())
     P.append('<p class="sv-motto"><span class="ig-to">Впереди — to do.</span><span class="ig-ing">После предлога — doing.</span><span class="ig-bare">После can, make, let — do.</span><span class="ig-both">stop, try, remember — смотри на смысл.</span></p>\n')
     P.append('''<nav class="mv-nav" aria-label="Разделы правила">
-  <a href="#ig-after">1 Что перед</a><a href="#ig-verb-to">2 + to do</a><a href="#ig-verb-ing">3 + doing</a><a href="#ig-prep">4 Предлог</a><a href="#ig-bare">5 Без to</a><a href="#ig-meaning">6 Смысл</a><a href="#ig-object">7 + человек</a><a href="#ig-adj">8 Прилаг. и цель</a><a href="#ig-forms">9 Формы</a><a href="#ig-finder">10 Список</a><a href="#ig-traps">11 Ловушки</a><a href="#ig-check">12 Проверка</a>
+  <a href="#ig-after">1 Что перед</a><a href="#ig-verb-to">2 + to do</a><a href="#ig-verb-ing">3 + doing</a><a href="#ig-prep">4 Предлог</a><a href="#ig-bare">5 Без to</a><a href="#ig-meaning">6 Смысл</a><a href="#ig-object">7 + sb</a><a href="#ig-adj">8 Прилаг. и цель</a><a href="#ig-forms">9 Формы</a><a href="#ig-finder">10 Список</a><a href="#ig-traps">11 Ловушки</a><a href="#ig-check">12 Проверка</a>
 </nav>
 ''')
     P.append(sec(1, 'ig-after', 'Что стоит перед глаголом?', 'Выберите слово и посмотрите, какая форма подходит после него.', board()))
@@ -469,7 +469,7 @@ def build_html():
     P.append(sec(4, 'ig-prep', 'Предлог + doing', 'Самое надёжное правило темы: после предлога — только -ing.', prep_formula() + rows(PREP)))
     P.append(sec(5, 'ig-bare', 'Инфинитив без to', 'Короткий закрытый список. Всё остальное — с to.', rows(BARE)))
     P.append(sec(6, 'ig-meaning', 'Обе формы, но смысл разный', 'Переключайте to do и doing и сравнивайте.', pairs() + rows(SAME)))
-    P.append(sec(7, 'ig-object', 'Глагол + человек + …', 'Когда после глагола появляется человек, схема часто меняется.', rows(OBJECT)))
+    P.append(sec(7, 'ig-object', 'Глагол + sb + …', 'Когда после глагола появляется человек, схема часто меняется.', rows(OBJECT)))
     P.append(sec(8, 'ig-adj', 'Прилагательные, существительные, цель', 'После прилагательного и существительного обычно to do.', rows(ADJ)))
     P.append(sec(9, 'ig-forms', 'Формы: раньше, в процессе, пассив', 'Выберите время, залог и процесс — конструктор покажет форму.', builder() + rows(FORM_ROWS)))
     P.append(sec(10, 'ig-finder', 'Список: какой глагол что любит', 'Отфильтруйте по форме или найдите слово.', finder()))

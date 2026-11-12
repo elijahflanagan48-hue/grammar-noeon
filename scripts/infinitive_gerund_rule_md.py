@@ -56,7 +56,7 @@ def build():
               '- **+ to do** — %s: _%s_ (%s; %s)' % (to[0], to[1], to[2], to[3]),
               '- **+ doing** — %s: _%s_ (%s; %s)' % (ing[0], ing[1], ing[2], ing[3]), '']
     L += rows(S.SAME)
-    L += ['## Глагол + человек + … (ig-object)', ''] + rows(S.OBJECT)
+    L += ['## Глагол + sb + … (ig-object)', ''] + rows(S.OBJECT)
     L += ['## Прилагательные, существительные, цель (ig-adj)', ''] + rows(S.ADJ)
     L += ['## Формы: раньше, в процессе, пассив (ig-forms)', '', '| | Актив | Пассив |', '|---|---|---|',
           '| Инфинитив | to do · to be doing · to have done · to have been doing | to be done · to have been done |',

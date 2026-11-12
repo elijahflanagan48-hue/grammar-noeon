@@ -8,7 +8,7 @@ const IM_LINES = {
   bare: { label: 'do', title: 'Линия do', sub: 'без to' },
   ring: { label: 'предлог + doing', title: 'Кольцо предлогов', sub: 'после любого предлога — -ing' },
   same: { label: 'to do = doing', title: 'Без разницы', sub: 'обе формы, смысл тот же' },
-  obj: { label: 'глагол + человек + to do', title: 'Ветка «глагол + человек + to do»', sub: 'want sb to do' },
+  obj: { label: 'глагол + sb + to do', title: 'Ветка «глагол + sb + to do»', sub: 'want sb to do' },
   forms: { label: 'формы', title: 'Депо «Формы»', sub: 'раньше, процесс, пассив' },
   pair: { label: 'пересадка', title: 'Пересадки', sub: 'обе формы, смысл разный' },
 };
@@ -50,7 +50,7 @@ const IM_ZONES = {
       ['tend', 'tend to do', 'Prices tend [to rise|rising|rise] in summer.', 'Летом цены обычно растут.', 'I tend to forget names.', 'Я часто забываю имена.', '', 'n'],
       ['claim', 'claim to do · claim to have done', 'He claims [to know|knowing|know] the president.', 'Он утверждает, что знаком с президентом.', 'She claims to have seen a ghost.', 'Она утверждает, что видела привидение.', '', 'n'],
     ]],
-    ['Вопрос + to', 'ig-wh', [
+    ['Вопрос\u00a0+\u00a0to', 'ig-wh', [
       ['how to', 'how to do', 'Can you show me how [to use|using|use] this app?', 'Покажешь, как пользоваться этим приложением?', 'I don’t know how to say it in English.', 'Не знаю, как сказать это по-английски.'],
       ['what to', 'what to do', 'I don’t know what [to say|saying|say].', 'Не знаю, что сказать.', 'Tell me what to buy.', 'Скажи, что купить.'],
       ['where to', 'where to do', 'We couldn’t decide where [to go|going|go] on holiday.', 'Мы не могли решить, куда поехать в отпуск.', 'Ask the guide where to park.', 'Спроси у гида, где припарковаться.'],
@@ -99,7 +99,7 @@ const IM_ZONES = {
       ['fancy', 'fancy doing', 'Do you fancy [going|to go|go] out tonight?', 'Не хочешь сходить куда-нибудь вечером?', 'I don’t fancy cooking.', 'Что-то не хочется готовить.', 'Британское разговорное «хотеть».'],
       ['feel like', 'feel like doing', 'I don’t feel like [cooking|to cook|cook] tonight.', 'Сегодня мне не хочется готовить.', 'Do you feel like watching a film?', 'Хочешь посмотреть фильм?', 'like здесь — предлог, поэтому -ing.'],
       ['dislike', 'dislike doing', 'Cats dislike [getting|to get|get] wet.', 'Кошки не любят мокнуть.', 'I dislike being late.', 'Не люблю опаздывать.'],
-      ['Swimming is…', '-ing как подлежащее', '[Swimming|To swimming|Swim] is good for your back.', 'Плавание полезно для спины.', 'Learning a language takes time.', 'Изучение языка требует времени.', 'С <i>It’s + прилагательное</i> обычно to: <i>It’s nice to see you.</i>', 'n', 'ig-subject'],
+      ['Swimming', '-ing как подлежащее', '[Swimming|To swimming|Swim] is good for your back.', 'Плавание полезно для спины.', 'Learning a language takes time.', 'Изучение языка требует времени.', 'С <i>It’s + прилагательное</i> обычно to: <i>It’s nice to see you.</i>', 'n', 'ig-subject'],
     ]],
     ['Избегать, откладывать', 'ig-avoid', [
       ['avoid', 'avoid doing', 'She avoided [looking|to look|look] at me.', 'Она избегала смотреть на меня.', 'Try to avoid eating late.', 'Старайся не есть поздно.'],
@@ -124,7 +124,7 @@ const IM_ZONES = {
       ['deny', 'deny doing', 'She denied [breaking|to break|break] the vase.', 'Она отрицала, что разбила вазу.', 'He denies knowing her.', 'Он отрицает, что знаком с ней.', '', 'p'],
       ['suggest', 'suggest doing · suggest (that) sb do', 'I suggest [leaving|to leave|leave] early.', 'Предлагаю выйти пораньше.', 'She suggested (that) we go by train.', 'Она предложила поехать на поезде.', '✗ <s>She suggested me to go.</s>', 'n', 'ig-suggest'],
       ['recommend', 'recommend doing · recommend that', 'I recommend [booking|to book|book] a table.', 'Рекомендую забронировать столик.', 'I recommend that you book early.', 'Советую бронировать заранее.', '<i>recommend sb to do</i> встречается в британском, но надёжнее <i>recommend that…</i>', 'n', 'ig-suggest'],
-      ['consider', 'consider doing', 'Have you considered [studying|to study|study] abroad?', 'Ты не думал учиться за границей?', 'We’re considering moving.', 'Мы подумываем о переезде.', 'consider sb to be — «считать кем-то»: ветка «Глагол + человек + to do».'],
+      ['consider', 'consider doing', 'Have you considered [studying|to study|study] abroad?', 'Ты не думал учиться за границей?', 'We’re considering moving.', 'Мы подумываем о переезде.', 'consider sb to be — «считать кем-то»: ветка «Глагол + sb + to do».'],
       ['imagine', 'imagine doing', 'Imagine [living|to live|live] on a boat!', 'Представь, каково жить на лодке!', 'I can’t imagine working there.', 'Не представляю, как там работать.'],
       ['mention', 'mention doing', 'He mentioned [seeing|to see|see] you at the gym.', 'Он упомянул, что видел тебя в спортзале.', 'She never mentioned being married.', 'Она ни разу не упомянула, что замужем.', '', 'p'],
       ['involve', 'involve doing', 'The job involves [travelling|to travel|travel] a lot.', 'Работа связана с частыми поездками.', 'The plan involves selling the house.', 'План предполагает продажу дома.'],
@@ -228,7 +228,7 @@ const IM_PAIRS = [
     ['привык (be used to)', 'I’m used to [living|live] alone.', 'Я привык жить один.', 'to здесь предлог', 'n']],
 ];
 
-const IM_OFF = 240, IM_W = 3760 + IM_OFF, IM_H = 2780;
+const IM_OFF = 240, IM_W = 3900 + IM_OFF, IM_H = 2780;
 function imLayout() {
   const S = [], Z = [], L = []; // станции, районы, линии (path d + класс)
   const alt = {}; const flip = line => (alt[line] = !alt[line]) ? 't' : 'b';
@@ -240,19 +240,19 @@ function imLayout() {
   };
   // Линия to do: y = 640
   const TY = 640; let x = 260;
-  L.push(['im-l-to', `M180 ${TY} H3420 Q3480 ${TY} 3480 ${TY + 60} V1380`]);
+  L.push(['im-l-to', `M180 ${TY} H3420 Q3480 ${TY} 3480 ${TY + 60} V1420`]);
   IM_ZONES.to.forEach(([zn, ref, rows]) => {
     const x0 = x; rows.forEach((r, i) => { add('to', r, x, TY, zn, ref, 'alt'); x += 92; });
     Z.push({ name: zn, line: 'to', x: x0 - 40, y: TY - 200, w: x - x0 - 18, h: 350 }); x += 34;
   });
   // ветка прилагательных — вниз по правому краю
-  let y = 760; const AX = 3480;
+  let y = 850; const AX = 3480;
   IM_ZONES.adj[0][2].forEach(r => { add('to', r, AX, y, IM_ZONES.adj[0][0], IM_ZONES.adj[0][1], 'r'); y += 52; });
-  Z.push({ name: 'Прилагательные и «чтобы»', line: 'to', x: AX - 50, y: 600, w: 290, h: y - 600 + 30, vertical: true });
-  // ветка «глагол + человек + to do»: y = 300, от x=900
+  Z.push({ name: 'Прилагательные и цель', line: 'to', x: AX + 22, y: 700, w: 340, h: y - 700 + 40, vertical: true });
+  // ветка «глагол + sb + to do»: y = 300, от x=900
   const OY = 300; L.push(['im-l-obj', `M820 ${TY} V${OY + 60} Q820 ${OY} 880 ${OY} H2460`]);
   x = 920; IM_ZONES.obj[0][2].forEach((r, i) => { add('obj', r, x, OY, IM_ZONES.obj[0][0], IM_ZONES.obj[0][1], i % 2 ? 'b' : 't'); x += 108; });
-  Z.push({ name: 'Глагол + человек + to do', line: 'obj', x: 880, y: OY - 160, w: x - 900, h: 290 });
+  Z.push({ name: 'Глагол + sb + to do', line: 'obj', x: 880, y: OY - 160, w: x - 900, h: 290 });
   // Линия doing: y = 1640
   const GY = 1640; x = 260; L.push(['im-l-ing', `M180 ${GY} H3600`]);
   IM_ZONES.ing.forEach(([zn, ref, rows]) => {
@@ -303,12 +303,12 @@ function imLabel(s) {
 const IM_PILL = { to: 'to do', ing: 'doing', obj: 'sb + to do', bare: 'do', ring: 'предлог + doing', same: 'to do = doing', pair: 'пересадка', forms: 'формы' };
 function imZone(z) {
   const words = z.name.split(' '); let fs = 44, lines;
-  const wrap = f => { const max = Math.max(6, Math.floor((z.w - 48) / (f * 0.56))), out = ['']; words.forEach(w => { const t = out.at(-1) ? out.at(-1) + ' ' + w : w; if (t.length > max && out.at(-1)) out.push(w); else out[out.length - 1] = t; }); return out; };
-  lines = wrap(fs); while (lines.length > 2 && fs > 30) { fs -= 4; lines = wrap(fs); }
-  const longest = Math.max(...lines.map(l => l.length)), fsl = Math.min(lines.length > 1 ? 56 : 84, Math.max(fs, (z.w - 48) / (longest * 0.56)));
+  const wrap = f => { const max = Math.max(6, Math.floor((z.w - 48) / (f * 0.64))), out = ['']; words.forEach(w => { const t = out.at(-1) ? out.at(-1) + ' ' + w : w; if (t.length > max && out.at(-1)) out.push(w); else out[out.length - 1] = t; }); return out; };
+  lines = wrap(fs); while ((lines.length > 2 || Math.max(...lines.map(l => l.length)) * fs * 0.64 > z.w - 48) && fs > 26) { fs -= 2; lines = wrap(fs); }
+  const longest = Math.max(...lines.map(l => l.length)), fsl = Math.min(lines.length > 1 ? 56 : 84, Math.max(fs, (z.w - 48) / (longest * 0.64)));
   const pill = IM_PILL[z.line], pw = pill.length * 15.5 + 34, py = z.y + z.h - 52;
   return `<g class="im-zone im-z-${z.line}"><rect x="${z.x}" y="${z.y}" width="${z.w}" height="${z.h}" rx="28"/>`
-    + `<text class="im-zname" x="${z.x + 24}" y="${z.y + 18}" style="--fs:${fs}px;--fsl:${fsl.toFixed(1)}px">${lines.map((l, i) => `<tspan x="${z.x + 24}" dy="${i ? 1.08 : 1}em">${imEsc(l)}</tspan>`).join('')}</text>`
+    + `<text class="im-zname" x="${z.x + 24}" y="${z.y + 18}" data-w="${z.w - 48}" data-fs="${fs}" data-fsl="${fsl.toFixed(1)}" style="--fs:${fs}px;--fsl:${fsl.toFixed(1)}px">${lines.map((l, i) => `<tspan x="${z.x + 24}" dy="${i ? 1.08 : 1}em">${imEsc(l)}</tspan>`).join('')}</text>`
     + `<g class="im-pill im-c-${z.line}"><rect x="${z.x + 20}" y="${py}" width="${pw}" height="36" rx="18"/><text x="${z.x + 20 + pw / 2}" y="${py + 26}" text-anchor="middle">${imEsc(pill)}</text></g></g>`;
 }
 function infinitiveMapSvg() {
@@ -366,6 +366,14 @@ function initialiseInfinitiveMap(root) {
   const panel = document.createElement('aside'); panel.className = 'nc-panel im-panel'; panel.hidden = true; panel.setAttribute('aria-live', 'polite'); box.append(panel);
   const game = document.createElement('div'); game.className = 'nc-ui im-game'; game.hidden = true; box.append(game);
   const svg = world.querySelector('svg');
+  // Подогнать заголовки районов под ширину рамки по реальной ширине текста.
+  const fitTitles = () => svg.querySelectorAll('.im-zname').forEach(t => {
+    const w = +t.dataset.w, fs = +t.dataset.fs, fsl = +t.dataset.fsl; t.style.fontSize = fs + 'px';
+    const len = Math.max(...[...t.querySelectorAll('tspan')].map(s => s.getComputedTextLength())); t.style.fontSize = '';
+    if (!len) return; const f1 = Math.min(fs, fs * w / len), f2 = Math.min(fsl, fs * w / len);
+    t.style.setProperty('--fs', f1.toFixed(1) + 'px'); t.style.setProperty('--fsl', f2.toFixed(1) + 'px');
+  });
+  requestAnimationFrame(fitTitles); document.fonts?.ready?.then(fitTitles);
   const pos = id => { const p = id[0] === 'p' ? IM.pairs[+id.slice(1)] : IM.S[+id.slice(1)]; return { ...p, x: p.x + IM_OFF }; };
   const mobile = () => box.clientWidth < 700;
   const panelSpace = () => panel.hidden ? {} : mobile() ? { bottom: panel.offsetHeight } : { right: panel.offsetWidth + 16 };

@@ -342,7 +342,7 @@ function renderProfile() {
 }
 
 const THEORY_SECTION_LINKS = {
-  infinitive: [["Карта правила","infinitive","ig-metro"],["Что перед глаголом","infinitive","ig-after"],["to do · doing","infinitive","ig-verb-to"],["Предлог и без to","infinitive","ig-prep"],["Смысл меняется","infinitive","ig-meaning"],["Человек, цель, формы","infinitive","ig-object"],["Список и проверка","infinitive","ig-finder"]],
+  infinitive: [["Карта правила","infinitive","ig-metro"],["Что перед глаголом","infinitive","ig-after"],["to do · doing","infinitive","ig-verb-to"],["Предлог и без to","infinitive","ig-prep"],["Смысл меняется","infinitive","ig-meaning"],["sb, цель, формы","infinitive","ig-object"],["Список и проверка","infinitive","ig-finder"]],
   speaking: [["Что после глагола","speaking","sv-after"],["Say / tell","speaking","sv-say-tell"],["Speak / talk","speaking","sv-speak-talk"],["Выражения","speaking","sv-phrases"],["Ловушки и проверка","speaking","sv-traps"]],
   nouns: [["Счёт и число","nouns","исчисляемые-и-неисчисляемые-существительные"],["Партитивы и значения","nouns","как-посчитать-неисчисляемое-партитивы"],["Притяжательный","nouns","притяжательный-падеж-s-и-of"],["Составные и группы","nouns","составные-существительные-compound-nouns"],["Артикли и определители","nouns","артикли-и-определители-с-существительными"]],
   reported: [["Основа", "reported", "rs01"], ["Вопросы", "reported", "rs09"], ["Просьбы и команды", "reported", "rs11"], ["Reporting verbs", "reported", "rs14"], ["Сложные случаи", "reported", "rs20"]],
