@@ -1,0 +1,28 @@
+/* NOEON canvas: общий холст карт правил */
+html.nc-lock{overflow:hidden}
+.nc{position:relative;height:min(80vh,860px);min-height:480px;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--surf2);background-image:radial-gradient(var(--line2) 1.2px,transparent 1.2px);background-size:28px 28px;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;outline:0}
+.nc:focus-visible{box-shadow:0 0 0 3px var(--pri-soft)}
+.nc.is-drag{cursor:grabbing}
+.nc.is-full{position:fixed;inset:0;z-index:99999;width:100vw;height:100vh;height:100dvh;min-height:0;border-radius:0;border:0}
+.nc-world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.nc-world.nc-anim{transition:transform .45s cubic-bezier(.25,.8,.25,1)}
+.nc-ui{position:absolute;z-index:4;cursor:default}
+.nc-tools{left:12px;right:12px;top:max(12px,env(safe-area-inset-top));display:flex;flex-wrap:wrap;gap:6px;align-items:center;pointer-events:none}
+.nc-tools>*{pointer-events:auto}
+.nc-zoom{display:flex;gap:4px;margin-left:auto;padding:4px;background:var(--surf);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-sm)}
+.nc-zoom button{width:36px;height:36px;font:inherit;font-size:18px;cursor:pointer;color:var(--tx);background:var(--surf2);border:1px solid var(--line);border-radius:10px}
+.nc-zoom button:hover{border-color:var(--pri);color:var(--pri)}
+.nc-mini{left:12px;bottom:12px;width:170px;background:var(--surf);border:1px solid var(--line);border-radius:10px;box-shadow:var(--sh-sm);overflow:hidden;cursor:pointer}
+.nc-mini-art,.nc-mini-art svg{position:absolute;inset:0;width:100%;height:100%}
+.nc-view{position:absolute;border:2px solid var(--pri);background:color-mix(in srgb,var(--pri) 12%,transparent);pointer-events:none;border-radius:2px}
+.nc-help{left:50%;bottom:10px;transform:translateX(-50%);margin:0;max-width:calc(100% - 420px);padding:5px 12px;font-size:12px;color:var(--mut);background:var(--surf);border:1px solid var(--line);border-radius:999px;text-align:center;pointer-events:none}
+.nc-panel{position:absolute;z-index:5;right:12px;top:66px;bottom:12px;width:min(380px,calc(100% - 24px));overflow:auto;overscroll-behavior:contain;background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:18px;cursor:default;user-select:text;-webkit-user-select:text;touch-action:pan-y;animation:nc-in .25s ease}
+.nc-panel[hidden]{display:none}
+@keyframes nc-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:700px){
+  .nc{height:76vh;min-height:420px}
+  .nc-help{display:none}
+  .nc-mini{width:96px}
+  .nc-panel{left:0;right:0;top:auto;bottom:0;width:auto;max-height:58%;border-radius:18px 18px 0 0;border-bottom:0;padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){.nc-world.nc-anim{transition:none}.nc-panel{animation:none}}

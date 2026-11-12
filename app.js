@@ -342,7 +342,7 @@ function renderProfile() {
 }
 
 const THEORY_SECTION_LINKS = {
-  infinitive: [["Что перед глаголом","infinitive","ig-after"],["to do · doing","infinitive","ig-verb-to"],["Предлог и без to","infinitive","ig-prep"],["Смысл меняется","infinitive","ig-meaning"],["Кого-то, цель, формы","infinitive","ig-object"],["Список и проверка","infinitive","ig-finder"]],
+  infinitive: [["Карта правила","infinitive","ig-metro"],["Что перед глаголом","infinitive","ig-after"],["to do · doing","infinitive","ig-verb-to"],["Предлог и без to","infinitive","ig-prep"],["Смысл меняется","infinitive","ig-meaning"],["Кого-то, цель, формы","infinitive","ig-object"],["Список и проверка","infinitive","ig-finder"]],
   speaking: [["Что после глагола","speaking","sv-after"],["Say / tell","speaking","sv-say-tell"],["Speak / talk","speaking","sv-speak-talk"],["Выражения","speaking","sv-phrases"],["Ловушки и проверка","speaking","sv-traps"]],
   nouns: [["Счёт и число","nouns","исчисляемые-и-неисчисляемые-существительные"],["Партитивы и значения","nouns","как-посчитать-неисчисляемое-партитивы"],["Притяжательный","nouns","притяжательный-падеж-s-и-of"],["Составные и группы","nouns","составные-существительные-compound-nouns"],["Артикли и определители","nouns","артикли-и-определители-с-существительными"]],
   reported: [["Основа", "reported", "rs01"], ["Вопросы", "reported", "rs09"], ["Просьбы и команды", "reported", "rs11"], ["Reporting verbs", "reported", "rs14"], ["Сложные случаи", "reported", "rs20"]],
@@ -387,7 +387,7 @@ function speakingSectionIndex(anchor) {
   return index<0?0:index;
 }
 function infinitiveSectionIndex(anchor) {
-  const groups=[['ig-map','ig-after'],['ig-verb-to','ig-want','ig-decide','ig-manage','ig-seem','ig-wh','ig-verb-ing','ig-enjoy','ig-avoid','ig-finish','ig-admit','ig-go','ig-worth'],['ig-prep','ig-prep-verb','ig-prep-adj','ig-prep-obj','ig-prep-free','ig-to-prep','ig-bare','ig-modal','ig-make-let','ig-help','ig-senses','ig-rather'],['ig-meaning','ig-remember','ig-forget','ig-stop','ig-try','ig-regret','ig-go-on','ig-mean','ig-need','ig-afraid','ig-sorry','ig-interested','ig-like','ig-same','ig-love','ig-used'],['ig-object','ig-obj-to','ig-obj-ing','ig-suggest','ig-forbid','ig-poss','ig-believe','ig-adj','ig-adj-to','ig-too','ig-first','ig-noun-to','ig-purpose','ig-subject','ig-forms','ig-perf-inf','ig-cont-inf','ig-pass','ig-perf-ger','ig-needs','ig-unreal','ig-neg'],['ig-finder','ig-list','ig-traps','ig-check']];
+  const groups=[['ig-metro'],['ig-map','ig-after'],['ig-verb-to','ig-want','ig-decide','ig-manage','ig-seem','ig-wh','ig-verb-ing','ig-enjoy','ig-avoid','ig-finish','ig-admit','ig-go','ig-worth'],['ig-prep','ig-prep-verb','ig-prep-adj','ig-prep-obj','ig-prep-free','ig-to-prep','ig-bare','ig-modal','ig-make-let','ig-help','ig-senses','ig-rather'],['ig-meaning','ig-remember','ig-forget','ig-stop','ig-try','ig-regret','ig-go-on','ig-mean','ig-need','ig-afraid','ig-sorry','ig-interested','ig-like','ig-same','ig-love','ig-used'],['ig-object','ig-obj-to','ig-obj-ing','ig-suggest','ig-forbid','ig-poss','ig-believe','ig-adj','ig-adj-to','ig-too','ig-first','ig-noun-to','ig-purpose','ig-subject','ig-forms','ig-perf-inf','ig-cont-inf','ig-pass','ig-perf-ger','ig-needs','ig-unreal','ig-neg'],['ig-finder','ig-list','ig-traps','ig-check']];
   const index=groups.findIndex(group=>group.includes(anchor));
   return index<0?0:index;
 }
@@ -428,8 +428,9 @@ async function renderTheory(parts) {
     return;
   }
   if(slug==='infinitive') {
-    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${infinitiveGerundRuleHtml()}<p class="subtle theory-soon">Практика по этой теме скоро появится.</p></section></div>`;
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${typeof infinitiveMapHtml==='function'?infinitiveMapHtml():''}${infinitiveGerundRuleHtml()}<p class="subtle theory-soon">Практика по этой теме скоро появится.</p></section></div>`;
     initialiseInfinitiveGerundRule(document.querySelector('.theory-content'));
+    if(typeof initialiseInfinitiveMap==='function')initialiseInfinitiveMap(document.querySelector('.theory-content'));
     document.title='Infinitive · -ing — Grammar NOEON';openedTheory=slug;
     if(parts[2])requestAnimationFrame(()=>revealInfinitiveGerundAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
     return;

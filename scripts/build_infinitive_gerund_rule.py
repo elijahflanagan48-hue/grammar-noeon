@@ -29,7 +29,7 @@ function revealInfinitiveGerundAnchor(container,anchor) {
   const id=String(anchor||'').replace(/^#?(?:theory\/infinitive\/)?/,'');
   if(!id)return;
   const target=[root,...root.querySelectorAll('[data-ig-id]')].find(node=>node.dataset.igId===id||node.id===id);
-  if(!target)return;
+  if(!target){const outer=document.getElementById(id);if(outer)outer.scrollIntoView({block:'start',behavior:'instant'});return;}
   for(let node=target.closest('details');node;node=node.parentElement?.closest('details'))node.open=true;
   const spot=target.closest('details')||target.closest('.ig-pair')||target.closest('.mv-sec')||target;
   const scrollArea=root.closest('.reference-reader,.rule-dialog-content');
