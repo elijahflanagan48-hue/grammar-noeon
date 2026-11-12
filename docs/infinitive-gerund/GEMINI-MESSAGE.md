@@ -138,8 +138,8 @@
 | about · of · in · without (Предлог) | ✗ good at to draw | ✗ | ✓ She’s good at drawing. | После предлога глагол всегда с **-ing**: interested in, tired of, before, after, without, instead of. → ig-prep |
 | look forward to («to» — это предлог) | ✗ look forward to see | ✗ | ✓ I look forward to seeing you. | Проверка: подставьте существительное. _look forward to the party_ — значит, to здесь предлог, и дальше **-ing**. → ig-to-prep |
 | can · must · should (Модальные глаголы) | ✗ must to go | ✓ You must go. | ✗ | После can, could, must, should, may, might, will, would — глагол без to. → ig-modal |
-| make · let + кого-то (Заставить, позволить) | ✓ с условием В пассиве: I was made to wait. | ✓ They made me wait. | ✗ | make / let sb **do**. В пассиве у make возвращается to: _was made to wait_; у let пассива нет — _was allowed to_. → ig-make-let |
-| see · hear + кого-то (Видел, слышал) | ✓ с условием В пассиве: He was seen to leave. | ✓ I saw him fall. — целиком | ✓ I saw him falling. — в процессе | Целое событие — **do**, кусочек процесса — **doing**. → ig-senses |
+| make · let + человек (Заставить, позволить) | ✓ с условием В пассиве: I was made to wait. | ✓ They made me wait. | ✗ | make / let sb **do**. В пассиве у make возвращается to: _was made to wait_; у let пассива нет — _was allowed to_. → ig-make-let |
+| see · hear + человек (Видел, слышал) | ✓ с условием В пассиве: He was seen to leave. | ✓ I saw him fall. — целиком | ✓ I saw him falling. — в процессе | Целое событие — **do**, кусочек процесса — **doing**. → ig-senses |
 | stop · remember · try (Смысл меняется) | ✓ He stopped to rest. — чтобы отдохнуть | ✗ | ✓ He stopped smoking. — бросил | Обе формы верны, но это разные предложения. Подробно — в разделе 6. → ig-meaning |
 | begin · start · continue (Разницы почти нет) | ✓ It began to rain. | ✗ | ✓ It began raining. | begin, start, continue, intend, bother — обе формы. Но после -ing-формы берите to: _It’s starting to rain_. → ig-same |
 | easy · happy · ready (Прилагательное) | ✓ This app is easy to use. | ✗ | ✓ с условием Только worth и busy: worth seeing | Прилагательное + **to do**. Исключения на -ing: _worth_, _busy_, а также прилагательные с предлогом (_good at_). → ig-adj-to |
@@ -310,7 +310,7 @@ go + спорт и развлечения: go fishing, go camping, go dancing.
 
 Также: capable of, responsible for, famous for, bored with, worried about, sorry for.
 
-### Глагол + кого-то + предлог — doing (ig-prep-obj)
+### Глагол + человек + предлог — doing (ig-prep-obj)
 
 Схема: prevent sb from · accuse sb of · thank sb for
 
@@ -384,7 +384,7 @@ go + спорт и развлечения: go fishing, go camping, go dancing.
 
 Обе формы верны. Без to чаще в разговоре.
 
-### see · hear · watch · feel + кого-то — do (ig-senses)
+### see · hear · watch · feel + человек — do (ig-senses)
 
 Схема: do — целиком, doing — процесс
 
@@ -491,9 +491,9 @@ go + спорт и развлечения: go fishing, go camping, go dancing.
 - I’m used to living alone. — привык
 - She’ll get used to working nights. — привыкнет
 
-## Глагол + кого-то + … (ig-object)
+## Глагол + человек + … (ig-object)
 
-### Глагол + кого-то + to do — to do (ig-obj-to)
+### Глагол + человек + to do — to do (ig-obj-to)
 
 Схема: want · ask · tell · advise · allow · expect · remind
 
@@ -553,7 +553,7 @@ prevent / stop / discourage sb **from doing**.
 
 Притяжательное (my, his) — более официально, объектное (me, him) — разговорно. С инфинитивом исполнитель вводится через **for**.
 
-### считать, знать кого-то + to be — to do (ig-believe)
+### Считать человека кем-то: sb to be — to do (ig-believe)
 
 Схема: consider / believe / find sb to be
 

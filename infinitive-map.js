@@ -8,7 +8,7 @@ const IM_LINES = {
   bare: { label: 'do', title: 'Линия do', sub: 'без to' },
   ring: { label: 'предлог + doing', title: 'Кольцо предлогов', sub: 'после любого предлога — -ing' },
   same: { label: 'to do = doing', title: 'Без разницы', sub: 'обе формы, смысл тот же' },
-  obj: { label: 'кого-то + to do', title: 'Ветка «кого-то»', sub: 'want sb to do' },
+  obj: { label: 'глагол + человек + to do', title: 'Ветка «глагол + человек + to do»', sub: 'want sb to do' },
   forms: { label: 'формы', title: 'Депо «Формы»', sub: 'раньше, процесс, пассив' },
   pair: { label: 'пересадка', title: 'Пересадки', sub: 'обе формы, смысл разный' },
 };
@@ -124,7 +124,7 @@ const IM_ZONES = {
       ['deny', 'deny doing', 'She denied [breaking|to break|break] the vase.', 'Она отрицала, что разбила вазу.', 'He denies knowing her.', 'Он отрицает, что знаком с ней.', '', 'p'],
       ['suggest', 'suggest doing · suggest (that) sb do', 'I suggest [leaving|to leave|leave] early.', 'Предлагаю выйти пораньше.', 'She suggested (that) we go by train.', 'Она предложила поехать на поезде.', '✗ <s>She suggested me to go.</s>', 'n', 'ig-suggest'],
       ['recommend', 'recommend doing · recommend that', 'I recommend [booking|to book|book] a table.', 'Рекомендую забронировать столик.', 'I recommend that you book early.', 'Советую бронировать заранее.', '<i>recommend sb to do</i> встречается в британском, но надёжнее <i>recommend that…</i>', 'n', 'ig-suggest'],
-      ['consider', 'consider doing', 'Have you considered [studying|to study|study] abroad?', 'Ты не думал учиться за границей?', 'We’re considering moving.', 'Мы подумываем о переезде.', 'consider sb to be — «считать кем-то»: ветка «кого-то».'],
+      ['consider', 'consider doing', 'Have you considered [studying|to study|study] abroad?', 'Ты не думал учиться за границей?', 'We’re considering moving.', 'Мы подумываем о переезде.', 'consider sb to be — «считать кем-то»: ветка «Глагол + человек + to do».'],
       ['imagine', 'imagine doing', 'Imagine [living|to live|live] on a boat!', 'Представь, каково жить на лодке!', 'I can’t imagine working there.', 'Не представляю, как там работать.'],
       ['mention', 'mention doing', 'He mentioned [seeing|to see|see] you at the gym.', 'Он упомянул, что видел тебя в спортзале.', 'She never mentioned being married.', 'Она ни разу не упомянула, что замужем.', '', 'p'],
       ['involve', 'involve doing', 'The job involves [travelling|to travel|travel] a lot.', 'Работа связана с частыми поездками.', 'The plan involves selling the house.', 'План предполагает продажу дома.'],
@@ -228,7 +228,7 @@ const IM_PAIRS = [
     ['привык (be used to)', 'I’m used to [living|live] alone.', 'Я привык жить один.', 'to здесь предлог', 'n']],
 ];
 
-const IM_W = 3760, IM_H = 2780;
+const IM_OFF = 240, IM_W = 3760 + IM_OFF, IM_H = 2780;
 function imLayout() {
   const S = [], Z = [], L = []; // станции, районы, линии (path d + класс)
   const alt = {}; const flip = line => (alt[line] = !alt[line]) ? 't' : 'b';
@@ -243,21 +243,21 @@ function imLayout() {
   L.push(['im-l-to', `M180 ${TY} H3420 Q3480 ${TY} 3480 ${TY + 60} V1380`]);
   IM_ZONES.to.forEach(([zn, ref, rows]) => {
     const x0 = x; rows.forEach((r, i) => { add('to', r, x, TY, zn, ref, 'alt'); x += 92; });
-    Z.push({ name: zn, line: 'to', x: x0 - 40, y: TY - 150, w: x - x0 - 18, h: 300 }); x += 34;
+    Z.push({ name: zn, line: 'to', x: x0 - 40, y: TY - 200, w: x - x0 - 18, h: 350 }); x += 34;
   });
   // ветка прилагательных — вниз по правому краю
   let y = 760; const AX = 3480;
   IM_ZONES.adj[0][2].forEach(r => { add('to', r, AX, y, IM_ZONES.adj[0][0], IM_ZONES.adj[0][1], 'r'); y += 52; });
-  Z.push({ name: 'Прилагательные, «чтобы»', line: 'to', x: AX - 50, y: 700, w: 270, h: y - 700, vertical: true });
-  // ветка «кого-то»: y = 300, от x=900
+  Z.push({ name: 'Прилагательные и «чтобы»', line: 'to', x: AX - 50, y: 600, w: 290, h: y - 600 + 30, vertical: true });
+  // ветка «глагол + человек + to do»: y = 300, от x=900
   const OY = 300; L.push(['im-l-obj', `M820 ${TY} V${OY + 60} Q820 ${OY} 880 ${OY} H2460`]);
   x = 920; IM_ZONES.obj[0][2].forEach((r, i) => { add('obj', r, x, OY, IM_ZONES.obj[0][0], IM_ZONES.obj[0][1], i % 2 ? 'b' : 't'); x += 108; });
-  Z.push({ name: 'Ветка «кого-то + to do»', line: 'obj', x: 880, y: OY - 130, w: x - 900, h: 250 });
+  Z.push({ name: 'Глагол + человек + to do', line: 'obj', x: 880, y: OY - 160, w: x - 900, h: 290 });
   // Линия doing: y = 1640
   const GY = 1640; x = 260; L.push(['im-l-ing', `M180 ${GY} H3600`]);
   IM_ZONES.ing.forEach(([zn, ref, rows]) => {
     const x0 = x; rows.forEach((r, i) => { add('ing', r, x, GY, zn, ref, 'alt'); x += 82; });
-    Z.push({ name: zn, line: 'ing', x: x0 - 36, y: GY - 150, w: x - x0 - 10, h: 300 }); x += 30;
+    Z.push({ name: zn, line: 'ing', x: x0 - 36, y: GY - 200, w: x - x0 - 10, h: 350 }); x += 30;
   });
   // Пересадки: y = 1140, между линиями
   const PY = 1140; const pairs = [];
@@ -266,11 +266,11 @@ function imLayout() {
     pairs.push({ id: 'p' + i, name, ref, to, ing, x: px, y: PY });
     L.push(['im-l-link', `M${px} ${TY + 10} V${PY - 22}`], ['im-l-link', `M${px} ${PY + 22} V${GY - 10}`]);
   });
-  Z.push({ name: 'Пересадки: смысл меняется', line: 'pair', x: 220, y: PY - 110, w: 13 * 172 - 10, h: 230 });
+  Z.push({ name: 'Пересадки: смысл меняется', line: 'pair', x: 220, y: PY - 215, w: 13 * 172 - 10, h: 355 });
   // «Без разницы»: короткая фиолетовая линия справа от пересадок
   const SY = 1140; x = 2620; L.push(['im-l-same', `M2570 ${SY} H${2620 + 5 * 120 + 50}`]);
   IM_ZONES.same.forEach((r, i) => { add('same', r.slice(0, 7).concat(['n', r[7]]), x, SY, 'Без разницы', r[7], i % 2 ? 'b' : 't'); x += 120; });
-  Z.push({ name: 'Без разницы', line: 'same', x: 2560, y: SY - 110, w: 760, h: 230 });
+  Z.push({ name: 'Без разницы', line: 'same', x: 2560, y: SY - 215, w: 760, h: 355 });
   // Кольцо предлогов: центр (640, 2330), r = 300; связь с линией doing
   const RC = [640, 2330], R = 300;
   L.push(['im-l-ring', `M${RC[0] - R} ${RC[1]} a${R} ${R} 0 1 0 ${2 * R} 0 a${R} ${R} 0 1 0 ${-2 * R} 0`], ['im-l-ing', `M${RC[0]} ${GY} V${RC[1] - R}`]);
@@ -281,15 +281,15 @@ function imLayout() {
   // Ветка to-предлога: от кольца вправо
   const TPY = 2330; L.push(['im-l-ring', `M${RC[0] + R} ${TPY} H${1100 + 6 * 130}`]);
   x = 1100; IM_ZONES.toprep.forEach((r, i) => { add('ring', r, x, TPY, '«to» — это предлог', 'ig-to-prep', i % 2 ? 'b' : 't'); x += 130; });
-  Z.push({ name: '«to» — предлог', line: 'ring', x: 1040, y: TPY - 130, w: 6 * 130 + 20, h: 260 });
+  Z.push({ name: '«to» — это предлог', line: 'ring', x: 1040, y: TPY - 175, w: 6 * 130 + 20, h: 315 });
   // Линия do: y = 2060, справа от кольца
   const BY = 2060; x = 2120; L.push(['im-l-bare', `M2060 ${BY} H${2100 + 10 * 128}`]);
   IM_ZONES.bare[0][2].forEach((r, i) => { add('bare', r, x, BY, 'Линия do', IM_ZONES.bare[0][1], i % 2 ? 'b' : 't'); x += 128; });
-  Z.push({ name: 'Без to', line: 'bare', x: 2040, y: BY - 130, w: 10 * 128 + 40, h: 260 });
+  Z.push({ name: 'Без to', line: 'bare', x: 2040, y: BY - 160, w: 10 * 128 + 40, h: 300 });
   // Депо «Формы»
   const DY = 2560; x = 2120; L.push(['im-l-forms', `M2060 ${DY} H${2120 + 8 * 160}`]);
   IM_ZONES.forms.forEach((r, i) => { add('forms', r, x, DY, 'Депо «Формы»', r[8], i % 2 ? 'b' : 't'); x += 160; });
-  Z.push({ name: 'Депо «Формы»', line: 'forms', x: 2040, y: DY - 140, w: 8 * 160 + 40, h: 280 });
+  Z.push({ name: 'Депо «Формы»', line: 'forms', x: 2040, y: DY - 165, w: 8 * 160 + 40, h: 310 });
   return { S, Z, L, pairs };
 }
 const IM = imLayout();
@@ -300,17 +300,29 @@ function imLabel(s) {
   const off = { t: [0, -26, 'middle'], b: [0, 44, 'middle'], r: [24, 8, 'start'], l: [-24, 8, 'end'] }[s.lab];
   return `<text class="im-name" x="${s.x + off[0]}" y="${s.y + off[1]}" text-anchor="${off[2]}">${imEsc(s.name)}</text>`;
 }
+const IM_PILL = { to: 'to do', ing: 'doing', obj: 'sb + to do', bare: 'do', ring: 'предлог + doing', same: 'to do = doing', pair: 'пересадка', forms: 'формы' };
+function imZone(z) {
+  const words = z.name.split(' '); let fs = 44, lines;
+  const wrap = f => { const max = Math.max(6, Math.floor((z.w - 48) / (f * 0.56))), out = ['']; words.forEach(w => { const t = out.at(-1) ? out.at(-1) + ' ' + w : w; if (t.length > max && out.at(-1)) out.push(w); else out[out.length - 1] = t; }); return out; };
+  lines = wrap(fs); while (lines.length > 2 && fs > 30) { fs -= 4; lines = wrap(fs); }
+  const longest = Math.max(...lines.map(l => l.length)), fsl = Math.min(lines.length > 1 ? 56 : 84, Math.max(fs, (z.w - 48) / (longest * 0.56)));
+  const pill = IM_PILL[z.line], pw = pill.length * 15.5 + 34, py = z.y + z.h - 52;
+  return `<g class="im-zone im-z-${z.line}"><rect x="${z.x}" y="${z.y}" width="${z.w}" height="${z.h}" rx="28"/>`
+    + `<text class="im-zname" x="${z.x + 24}" y="${z.y + 18}" style="--fs:${fs}px;--fsl:${fsl.toFixed(1)}px">${lines.map((l, i) => `<tspan x="${z.x + 24}" dy="${i ? 1.08 : 1}em">${imEsc(l)}</tspan>`).join('')}</text>`
+    + `<g class="im-pill im-c-${z.line}"><rect x="${z.x + 20}" y="${py}" width="${pw}" height="36" rx="18"/><text x="${z.x + 20 + pw / 2}" y="${py + 26}" text-anchor="middle">${imEsc(pill)}</text></g></g>`;
+}
 function infinitiveMapSvg() {
-  const zones = IM.Z.map(z => `<g class="im-zone im-z-${z.line}"><rect x="${z.x}" y="${z.y}" width="${z.w}" height="${z.h}" rx="28"/><text class="im-zname" x="${z.x + 22}" y="${z.y + 40}" style="--fs:${Math.min(26, (z.w - 40) / (z.name.length * 0.62)).toFixed(1)}px;--fsl:${Math.min(64, (z.w - 40) / (z.name.length * 0.6)).toFixed(1)}px">${imEsc(z.name)}</text></g>`).join('');
+  const zones = IM.Z.map(imZone).join('');
   const lines = IM.L.map(([c, d]) => `<path class="${c}" d="${d}"/>`).join('');
   const stations = IM.S.map(s => `<g class="im-st im-${s.line} im-t-${s.time}" data-st="${s.id}" tabindex="-1"><circle class="im-hit" cx="${s.x}" cy="${s.y}" r="34"/><circle class="im-dot" cx="${s.x}" cy="${s.y}" r="13"/>${imLabel(s)}</g>`).join('');
   const pairs = IM.pairs.map((p, i) => `<g class="im-st im-pairst" data-st="${p.id}" tabindex="-1"><circle class="im-hit" cx="${p.x}" cy="${p.y}" r="44"/><circle class="im-pair-o" cx="${p.x}" cy="${p.y}" r="22"/><path class="im-pair-a" d="M${p.x} ${p.y - 15} a15 15 0 0 0 0 30 z"/><path class="im-pair-b" d="M${p.x} ${p.y - 15} a15 15 0 0 1 0 30 z"/><text class="im-name im-pname" x="${p.x}" y="${p.y + (i % 2 ? -40 : 62)}" text-anchor="middle">${imEsc(p.name)}</text></g>`).join('');
-  const titles = [['to', 30, 656], ['ing', 30, 1656], ['bare', 1985, 2076]].map(([l, x, y]) => `<text class="im-ltitle im-c-${l}" x="${x}" y="${y}">${IM_LINES[l].label}</text>`).join('');
-  const legend = `<g class="im-legend"><rect x="60" y="40" width="680" height="150" rx="24"/>
-    <text class="im-lg-h" x="90" y="92">Метро трёх форм</text>
-    <text class="im-lg-t" x="90" y="128">Слово перед глаголом — это станция. Её линия</text>
-    <text class="im-lg-t" x="90" y="160">показывает форму: to do, doing или do.</text></g>`;
-  return `<svg class="im-svg" viewBox="0 0 ${IM_W} ${IM_H}" width="${IM_W}" height="${IM_H}" role="img" aria-label="Карта правила: инфинитив и герундий">${zones}${legend}${titles}${lines}${pairs}${stations}</svg>`;
+  const titles = [['to', 24, 640], ['ing', 24, 1640], ['bare', 2050, 2060]].map(([l, x, y]) => `<g class="im-ltitle im-c-${l}"><rect x="${x}" y="${y - 62}" width="${l === 'bare' ? 170 : 380}" height="124" rx="62"/><text x="${x + (l === 'bare' ? 85 : 190)}" y="${y + 32}" text-anchor="middle">${IM_LINES[l].label}</text></g>`).join('')
+    + `<g class="im-ringtitle"><text x="${IM_OFF + 640}" y="2310" text-anchor="middle">Кольцо</text><text x="${IM_OFF + 640}" y="2366" text-anchor="middle">предлогов</text><text class="im-rt-sub" x="${IM_OFF + 640}" y="2420" text-anchor="middle">предлог + doing</text></g>`;
+  const legend = `<g class="im-legend"><rect x="3000" y="150" width="680" height="150" rx="24"/>
+    <text class="im-lg-h" x="3030" y="202">Метро трёх форм</text>
+    <text class="im-lg-t" x="3030" y="238">Слово перед глаголом — это станция. Её линия</text>
+    <text class="im-lg-t" x="3030" y="270">показывает форму: to do, doing или do.</text></g>`;
+  return `<svg class="im-svg" viewBox="0 0 ${IM_W} ${IM_H}" width="${IM_W}" height="${IM_H}" role="img" aria-label="Карта правила: инфинитив и герундий"><g transform="translate(${IM_OFF} 0)">${zones}${lines}${pairs}${stations}</g>${legend}${titles}</svg>`;
 }
 function infinitiveMapHtml() {
   const modes = `<span class="im-modes" role="group" aria-label="Режим карты"><button type="button" data-im-mode="all" aria-pressed="true">Линии</button><button type="button" data-im-mode="pair" aria-pressed="false">Пересадки</button><button type="button" data-im-mode="time" aria-pressed="false">Время</button><button type="button" data-im-mode="game" aria-pressed="false">Игра</button></span>`;
@@ -350,11 +362,11 @@ function initialiseInfinitiveMap(root) {
   infinitiveMapAbort?.abort(); infinitiveMapAbort = new AbortController(); const signal = infinitiveMapAbort.signal;
   window.addEventListener('hashchange', () => { if (!box.isConnected && !document.body.contains(box)) infinitiveMapAbort?.abort(); }, { signal });
   const world = box.querySelector('.nc-world'); world.innerHTML = infinitiveMapSvg();
-  box.querySelector('.nc-mini-art').innerHTML = `<svg viewBox="0 0 ${IM_W} ${IM_H}">${IM.L.map(([c, d]) => `<path class="${c}" d="${d}"/>`).join('')}</svg>`;
+  box.querySelector('.nc-mini-art').innerHTML = `<svg viewBox="0 0 ${IM_W} ${IM_H}"><g transform="translate(${IM_OFF} 0)">${IM.L.map(([c, d]) => `<path class="${c}" d="${d}"/>`).join('')}</g></svg>`;
   const panel = document.createElement('aside'); panel.className = 'nc-panel im-panel'; panel.hidden = true; panel.setAttribute('aria-live', 'polite'); box.append(panel);
   const game = document.createElement('div'); game.className = 'nc-ui im-game'; game.hidden = true; box.append(game);
   const svg = world.querySelector('svg');
-  const pos = id => id[0] === 'p' ? IM.pairs[+id.slice(1)] : IM.S[+id.slice(1)];
+  const pos = id => { const p = id[0] === 'p' ? IM.pairs[+id.slice(1)] : IM.S[+id.slice(1)]; return { ...p, x: p.x + IM_OFF }; };
   const mobile = () => box.clientWidth < 700;
   const panelSpace = () => panel.hidden ? {} : mobile() ? { bottom: panel.offsetHeight } : { right: panel.offsetWidth + 16 };
   let current = null;
@@ -369,7 +381,7 @@ function initialiseInfinitiveMap(root) {
     W: IM_W, H: IM_H, signal, minK: 0.1, maxK: 1.6,
     onZoom: k => { box.classList.toggle('lod-low', k < 0.32); box.classList.toggle('lod-mid', k >= 0.32 && k < 0.55); },
     onTap: e => { const st = e.target.closest('[data-st]'); if (st) { if (gameState.on) return; open(st.dataset.st); } else if (!e.target.closest('.nc-panel') && !mobile()) close(); },
-    start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.42; v.x = 4; v.y = -110; apply(); } else fit(); },
+    start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.4; v.x = 0; v.y = -40; apply(); } else fit(); },
   });
   // карточка
   panel.addEventListener('click', e => {
@@ -418,7 +430,7 @@ function initialiseInfinitiveMap(root) {
     gameState.on = m === 'game'; game.hidden = !gameState.on; box.classList.toggle('im-mode-game', gameState.on);
     if (gameState.on) { gameState.score = 0; gameState.total = 0; close(); nextQ(); }
     if (m === 'time') api.smooth(api.fit);
-    if (m === 'pair') { const a = IM.pairs[0], b = IM.pairs.at(-1); api.flyTo((a.x + b.x) / 2, a.y, Math.min(box.clientWidth / (b.x - a.x + 300), 0.7)); }
+    if (m === 'pair') { const a = IM.pairs[0], b = IM.pairs.at(-1); api.flyTo((a.x + b.x) / 2 + IM_OFF, a.y, Math.min(box.clientWidth / (b.x - a.x + 300), 0.7)); }
   };
   box.addEventListener('click', e => { const m = e.target.closest('[data-im-mode]'); if (m) setMode(m.dataset.imMode); }, { signal });
   box.addEventListener('keydown', e => { if (e.key === 'Escape' && !panel.hidden) { e.stopPropagation(); close(); } }, { signal, capture: true });

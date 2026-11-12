@@ -1,8 +1,9 @@
 /* Карта правила Infinitive · -ing: «Метро трёх форм» */
-.im-wrap{--im-to:#1c5fa0;--im-obj:#4f86c6;--im-ing:#0b7a72;--im-ring:#2f8f4e;--im-bare:#a0660a;--im-same:#6a48c0;--im-pair:#26324a;--im-forms:#6b7487;
+.im-wrap,#im-canvas{--im-to:#1c5fa0;--im-obj:#4f86c6;--im-ing:#0b7a72;--im-ring:#2f8f4e;--im-bare:#a0660a;--im-same:#6a48c0;--im-pair:#26324a;--im-forms:#6b7487;
   --im-to-bg:#e4eefa;--im-ing-bg:#e1f2f1;--im-bare-bg:#fbefd5;--im-ring-bg:#e3f2e7;--im-same-bg:#eee9fa;--im-pair-bg:#eef1f6;--im-forms-bg:#eef0f4;--im-obj-bg:#e9f1fb;
-  margin:0 0 28px}
-:root[data-theme="dark"] .im-wrap{--im-to:#7cc0ff;--im-obj:#9cc7f5;--im-ing:#5fd6cc;--im-ring:#74d391;--im-bare:#ebc570;--im-same:#b79cff;--im-pair:#e8eefb;--im-forms:#a2afc8;
+}
+.im-wrap{margin:0 0 28px}
+:root[data-theme="dark"] .im-wrap,:root[data-theme="dark"] #im-canvas{--im-to:#7cc0ff;--im-obj:#9cc7f5;--im-ing:#5fd6cc;--im-ring:#74d391;--im-bare:#ebc570;--im-same:#b79cff;--im-pair:#e8eefb;--im-forms:#a2afc8;
   --im-to-bg:#112a42;--im-ing-bg:#10343a;--im-bare-bg:#33270c;--im-ring-bg:#123020;--im-same-bg:#231a40;--im-pair-bg:#1a2438;--im-forms-bg:#1a2234;--im-obj-bg:#15283e}
 .im-head{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;margin:0 0 12px}
 .im-head h2{margin:2px 0 4px;font-size:clamp(24px,4vw,34px);letter-spacing:-.5px}
@@ -20,8 +21,10 @@
 .im-z-to rect{fill:var(--im-to-bg)}.im-z-ing rect{fill:var(--im-ing-bg)}.im-z-bare rect{fill:var(--im-bare-bg)}.im-z-ring rect{fill:var(--im-ring-bg)}
 .im-z-same rect{fill:var(--im-same-bg)}.im-z-pair rect{fill:var(--im-pair-bg)}.im-z-obj rect{fill:var(--im-obj-bg)}.im-z-forms rect{fill:var(--im-forms-bg);stroke-dasharray:14 10}
 .im-zone rect{fill-opacity:.55}
-.im-zname{font-size:var(--fs,24px);font-weight:800;fill:var(--mut);letter-spacing:.02em;stroke:none!important}
-.im-ltitle{font-size:46px;font-weight:850;letter-spacing:-1px;fill:var(--c)}
+.im-zname{font-size:var(--fs,40px);font-weight:850;fill:var(--tx);letter-spacing:-.3px;stroke:none!important}
+.im-ltitle rect{fill:var(--c);stroke:var(--surf2);stroke-width:8}.im-ltitle text{font-size:84px;font-weight:900;letter-spacing:-2px;fill:var(--surf);stroke:none!important}
+.im-pill rect{fill:var(--c);stroke:none}.im-pill text{font-size:26px;font-weight:800;fill:var(--surf);stroke:none!important}
+.im-ringtitle text{font-size:52px;font-weight:900;fill:var(--im-ring);letter-spacing:-1px}.im-ringtitle .im-rt-sub{font-size:30px;font-weight:700;fill:var(--mut)}
 .im-legend rect{fill:var(--surf);stroke:var(--line);stroke-width:2}
 .im-lg-h{font-size:38px;font-weight:850;fill:var(--tx);letter-spacing:-.8px;stroke:none!important}
 .im-lg-t{font-size:22px;fill:var(--mut);stroke:none!important}
@@ -46,7 +49,7 @@
 /* уровни детализации */
 .nc.lod-low .im-name{opacity:0}.nc.lod-low .im-pname{opacity:1;font-size:36px}
 .nc.lod-low .im-zname{font-size:var(--fsl,40px);fill:var(--tx)}
-.nc.lod-mid .im-zname{font-size:calc((var(--fs) + var(--fsl)) / 2)}
+.nc.lod-low .im-pill,.nc.lod-low .im-zname tspan+tspan{opacity:1}
 .nc.lod-low .im-dot{r:16}
 /* режимы */
 .nc.im-mode-pair .im-st:not(.im-pairst),.nc.im-mode-pair .im-zone:not(.im-z-pair),.nc.im-mode-pair path:not(.im-l-link){opacity:.14}
