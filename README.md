@@ -2,25 +2,25 @@
 
 Веб-приложение для практики английской грамматики для русскоязычных учеников A1–C2. Интерфейс — русский, учебный контент — British English. [Рабочий сайт](https://grammar-noeon.grammar-noeon.workers.dev).
 
-Банк: **9919 задания / 12538 полей**, 9 форматов.
+Банк: **10719 задания / 13418 полей**, 9 форматов.
 
 | Формат | Название | Заданий |
 |---|---|---|
 | `active_to_passive` | Active → Passive | 100 |
-| `context_cloze` | Пропуски в контекстном тексте | 373 |
+| `context_cloze` | Пропуски в контекстном тексте | 413 |
 | `direct_to_reported` | Direct → Reported | 782 |
 | `modal_fix` | Исправление предложения | 50 |
 | `modal_gap` | Пропуск: модальная форма | 700 |
 | `modal_meaning` | Выбор значения в контексте | 50 |
-| `multiple_choice` | Выбор формы / предложения | 905 |
-| `open_brackets` | Раскрытие скобок | 6712 |
-| `translation_ru_en` | Перевод | 247 |
+| `multiple_choice` | Выбор формы / предложения | 1118 |
+| `open_brackets` | Раскрытие скобок | 7239 |
+| `translation_ru_en` | Перевод | 267 |
 
-Сложность: basic — 3420, medium — 4464, advanced — 2035.
+Сложность: basic — 3662, medium — 4824, advanced — 2233.
 
-Разделы: comparison — 1000, tenses — 4379, passive — 1000, modals — 1040, reported — 1000, nouns — 1000, speaking — 500.
+Разделы: comparison — 1000, tenses — 4379, passive — 1000, modals — 1040, reported — 1000, nouns — 1000, speaking — 500, infinitive — 800.
 
-Версии: `tenses-2026-11-09.1`, `comparison-2026-11-01.5`, `passive-2026-11-09.1`, `modals-2026-11-05.1`, `reported-2026-11-05.1`, `nouns-2026-11-07.1`, `speaking-2026-11-09.1`.
+Версии: `tenses-2026-11-09.1`, `comparison-2026-11-01.5`, `passive-2026-11-09.1`, `modals-2026-11-05.1`, `reported-2026-11-05.1`, `nouns-2026-11-07.1`, `speaking-2026-11-09.1`, `infinitive-2026-11-12.1`.
 
 Локально подготовлены изменения банка; они ещё не опубликованы. [Отчёт о проверке](docs/review/V8-FINAL-2026-10-30/REPORT.md).
 

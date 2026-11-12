@@ -23,7 +23,7 @@ def main() -> None:
         items.extend(chunk)
 
     passive = [item for item in items if item.get('topic')=='passive']
-    tenses = [item for item in items if not item['id'].startswith('cmp-') and item.get('topic') not in {'passive','modals','reported','nouns','speaking'}]
+    tenses = [item for item in items if not item['id'].startswith('cmp-') and item.get('topic') not in {'passive','modals','reported','nouns','speaking','infinitive'}]
     modals = [item for item in items if item.get('topic') == 'modals']
     assert len(modals) == manifest['sections']['modals'] == 1040
     if (SOURCE / 'data/modal-verbs.exercises.jsonl').exists():
@@ -40,6 +40,8 @@ def main() -> None:
     assert len(nouns)==manifest['sections']['nouns']==1000
     speaking=[i for i in items if i.get('topic')=='speaking']
     assert len(speaking)==manifest['sections']['speaking']==500
+    infinitive=[i for i in items if i.get('topic')=='infinitive']
+    assert len(infinitive)==manifest['sections']['infinitive']==800
     comparisons = [item for item in items if item['id'].startswith('cmp-')]
     assert len(tenses) == manifest["sections"]["tenses"]
     assert len(comparisons) == manifest["sections"]["comparison"]
@@ -61,7 +63,7 @@ def main() -> None:
 
     assert manifest["levels3"] == dict(__import__("collections").Counter(i["level"] for i in items))
     for item in items:
-        if item.get('topic') not in ('modals','reported','nouns','speaking'):
+        if item.get('topic') not in ('modals','reported','nouns','speaking','infinitive'):
             assert not re.search(r"\bshall\b|\bshan[’']t\b", json.dumps(item, ensure_ascii=False), re.I), (item['id'], 'shall in current exercise')
         assert item.get("level") in {"basic", "medium", "advanced"}, item["id"]
         assert not forbidden.intersection(item), item["id"]

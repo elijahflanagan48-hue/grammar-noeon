@@ -13,7 +13,7 @@ SECTION = 'speaking'
 
 
 def section(item):
-    if item.get('topic') in ('passive', 'modals', 'reported', 'nouns', 'speaking'):
+    if item.get('topic') in ('passive', 'modals', 'reported', 'nouns', 'speaking', 'infinitive'):
         return item['topic']
     return 'comparison' if item['id'].startswith('cmp-') else 'tenses'
 

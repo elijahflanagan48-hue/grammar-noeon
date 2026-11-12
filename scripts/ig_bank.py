@@ -35,7 +35,7 @@ TYPES = ('open_brackets', 'multiple_choice', 'context_cloze', 'translation_ru_en
 SENTENCE_MC = 'Which sentence is correct?'
 RULE_FILE = 'content/infinitive/11-infinitive-gerund-rule.html'
 CYR = re.compile('[А-Яа-яЁё]')
-BRACKET = re.compile(r'\(([a-z]+)\)')
+BRACKET = re.compile(r'\(([A-Za-z][a-z]*)\)')
 IRREGULAR = {
     'be': 'been', 'bear': 'born', 'beat': 'beaten', 'become': 'become', 'begin': 'begun', 'bend': 'bent', 'bite': 'bitten', 'blow': 'blown',
     'break': 'broken', 'bring': 'brought', 'build': 'built', 'burn': 'burnt', 'buy': 'bought', 'catch': 'caught', 'choose': 'chosen',
@@ -94,6 +94,7 @@ def v3_forms(v):
 def classify(form, verb):
     """Вернуть название формы или None. Проверяет и строй формы, и то, что глагол — тот, что в скобках."""
     w = form.strip().lower().replace('’', "'").split()
+    verb = (verb or '').lower()
     if not w or not verb:
         return None
     ing, v3 = ing_forms(verb), v3_forms(verb)

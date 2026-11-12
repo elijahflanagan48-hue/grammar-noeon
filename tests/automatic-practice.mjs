@@ -15,7 +15,7 @@ assert.equal(bank.length,manifest.total_items);
 for(const item of bank) {
   assert.equal(item.response_contract,item.type==='translation_ru_en'?'manual-review-v1':'bounded-v1',item.id);
   assert.ok(item.options?.length||item.blanks?.length,item.id);
-  assert.ok(['passive','reported','nouns','speaking'].includes(item.topic)||!['translation_ru_en','transformation','error_correction'].includes(item.type),item.id);
+  assert.ok(['passive','reported','nouns','speaking','infinitive'].includes(item.topic)||!['translation_ru_en','transformation','error_correction'].includes(item.type),item.id);
   const cases=item.options?item.options.map((_,n)=>n):[item.blanks.map(b=>b.answer),item.blanks.map(()=>'not a grammatical answer')];
   if(item.blanks)for(const [n,b] of item.blanks.entries())for(const accepted of b.accepted_answers||[]){const values=item.blanks.map(x=>x.answer);values[n]=accepted;cases.push(values);}
   for(const [n,submitted] of cases.entries()){

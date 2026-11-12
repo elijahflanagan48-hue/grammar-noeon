@@ -27,7 +27,7 @@ let resolve;ctx.accountRequest=()=>new Promise(r=>resolve=r);vm.runInContext("ac
 const theory=JSON.parse(fs.readFileSync(new URL('../data/theory.json',import.meta.url),'utf8'));
 for(const id of vm.runInContext('PRACTICE_TENSES.map(t=>t.id)',ctx)){
  const parts=ctx.todayRuleLink(id).slice(1).split('/'),entry=theory.find(t=>t.id===parts[1]);assert(entry,id);
- if(parts[2]&&parts[1]==='speaking'){assert(fs.readFileSync(new URL('../'+entry.file,import.meta.url),'utf8').includes('id="'+parts[2]+'"'),id+': '+parts[2]);continue;}
+ if(parts[2]&&['speaking','infinitive'].includes(parts[1])){assert(fs.readFileSync(new URL('../'+entry.file,import.meta.url),'utf8').includes('id="'+parts[2]+'"'),id+': '+parts[2]);continue;}
  if(parts[2]&&parts[1]!=='reported'){const headings=ctx.markdownHeadings(fs.readFileSync(new URL('../'+entry.file,import.meta.url),'utf8'));assert(headings.some(h=>h.id===parts[2]),id+': '+parts[2]);}
 }
 ctx.accountRequest=async()=>{const error=new Error('Expired');error.status=401;throw error;};vm.runInContext("account.user={id:'expired',role:'student'}",ctx);await ctx.renderHome();assert.equal(vm.runInContext('account.user',ctx),null);assert(node.innerHTML.includes('home-guest'));

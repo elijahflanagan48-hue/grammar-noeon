@@ -5,7 +5,7 @@ import {grade} from '../cloudflare/generated/checker.mjs';
 const root=new URL('../',import.meta.url);
 const bank=fs.readdirSync(new URL('data/exercises/',root)).filter(p=>/^part-.*json$/.test(p)).flatMap(p=>JSON.parse(fs.readFileSync(new URL('data/exercises/'+p,root),'utf8')));
 for(const [name,items,total] of [
- ['Tenses',bank.filter(i=>!['passive','modals','reported','nouns','speaking'].includes(i.topic)&&!i.id.startsWith('cmp-')),manifest.sections.tenses],
+ ['Tenses',bank.filter(i=>!['passive','modals','reported','nouns','speaking','infinitive'].includes(i.topic)&&!i.id.startsWith('cmp-')),manifest.sections.tenses],
  ['Passive',bank.filter(i=>i.topic==='passive'),manifest.sections.passive],
  ['Comparison',bank.filter(i=>i.id.startsWith('cmp-')),manifest.sections.comparison],
 ]){
