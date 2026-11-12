@@ -311,11 +311,28 @@ function imZone(z) {
     + `<text class="im-zname" x="${z.x + 24}" y="${z.y + 18}" data-w="${z.w - 48}" data-fs="${fs}" data-fsl="${fsl.toFixed(1)}" style="--fs:${fs}px;--fsl:${fsl.toFixed(1)}px">${lines.map((l, i) => `<tspan x="${z.x + 24}" dy="${i ? 1.08 : 1}em">${imEsc(l)}</tspan>`).join('')}</text>`
     + `<g class="im-pill im-c-${z.line}"><rect x="${z.x + 20}" y="${py}" width="${pw}" height="36" rx="18"/><text x="${z.x + 20 + pw / 2}" y="${py + 26}" text-anchor="middle">${imEsc(pill)}</text></g></g>`;
 }
+const IM_TT = { a: 'потом →', p: '← раньше' };
+function imTag(x, y, t, anchor = 'middle', extra = '') {
+  if (!IM_TT[t]) return '';
+  const txt = IM_TT[t], w = txt.length * 16 + 26, x0 = anchor === 'end' ? x - w : anchor === 'start' ? x : x - w / 2;
+  return `<g class="im-ttag im-tt-${t}${extra}"><rect x="${x0}" y="${y - 27}" width="${w}" height="38" rx="19"/><text x="${x0 + w / 2}" y="${y}" text-anchor="middle">${txt}</text></g>`;
+}
+function imPairTags(p, i) {
+  const tags = [['to', p.to[4]], ['-ing', p.ing[4]]].filter(([, t]) => IM_TT[t]), up = !(i % 2);
+  return tags.map(([f, t], k) => {
+    const label = f + ' ' + IM_TT[t], w = label.length * 13 + 24, n = up ? tags.length - 1 - k : k, ty = up ? p.y - 84 - n * 40 : p.y + 100 + n * 40;
+    return `<g class="im-ttag im-ptag im-tt-${t}"><rect x="${p.x - w / 2}" y="${ty - 24}" width="${w}" height="34" rx="17"/><text x="${p.x}" y="${ty}" text-anchor="middle">${label}</text></g>`;
+  }).join('');
+}
+function imStationTag(s) {
+  const o = { t: [s.x, s.y - 66, 'middle'], b: [s.x, s.y + 92, 'middle'], r: [s.x - 26, s.y + 10, 'end'], l: [s.x + 26, s.y + 10, 'start'] }[s.lab];
+  return imTag(o[0], o[1], s.time, o[2]);
+}
 function infinitiveMapSvg() {
   const zones = IM.Z.map(imZone).join('');
   const lines = IM.L.map(([c, d]) => `<path class="${c}" d="${d}"/>`).join('');
-  const stations = IM.S.map(s => `<g class="im-st im-${s.line} im-t-${s.time}" data-st="${s.id}" tabindex="-1"><circle class="im-hit" cx="${s.x}" cy="${s.y}" r="34"/><circle class="im-dot" cx="${s.x}" cy="${s.y}" r="13"/>${imLabel(s)}</g>`).join('');
-  const pairs = IM.pairs.map((p, i) => `<g class="im-st im-pairst" data-st="${p.id}" tabindex="-1"><circle class="im-hit" cx="${p.x}" cy="${p.y}" r="44"/><circle class="im-pair-o" cx="${p.x}" cy="${p.y}" r="22"/><path class="im-pair-a" d="M${p.x} ${p.y - 15} a15 15 0 0 0 0 30 z"/><path class="im-pair-b" d="M${p.x} ${p.y - 15} a15 15 0 0 1 0 30 z"/><text class="im-name im-pname" x="${p.x}" y="${p.y + (i % 2 ? -40 : 62)}" text-anchor="middle">${imEsc(p.name)}</text></g>`).join('');
+  const stations = IM.S.map(s => `<g class="im-st im-${s.line} im-t-${s.time}" data-st="${s.id}" tabindex="-1"><circle class="im-hit" cx="${s.x}" cy="${s.y}" r="34"/><circle class="im-dot" cx="${s.x}" cy="${s.y}" r="13"/>${imLabel(s)}${imStationTag(s)}</g>`).join('');
+  const pairs = IM.pairs.map((p, i) => `<g class="im-st im-pairst" data-st="${p.id}" tabindex="-1"><circle class="im-hit" cx="${p.x}" cy="${p.y}" r="44"/><circle class="im-pair-o" cx="${p.x}" cy="${p.y}" r="22"/><path class="im-pair-a" d="M${p.x} ${p.y - 15} a15 15 0 0 0 0 30 z"/><path class="im-pair-b" d="M${p.x} ${p.y - 15} a15 15 0 0 1 0 30 z"/><text class="im-name im-pname" x="${p.x}" y="${p.y + (i % 2 ? -40 : 62)}" text-anchor="middle">${imEsc(p.name)}</text>${imPairTags(p, i)}</g>`).join('');
   const titles = [['to', 24, 640], ['ing', 24, 1640], ['bare', 2050, 2060]].map(([l, x, y]) => `<g class="im-ltitle im-c-${l}"><rect x="${x}" y="${y - 62}" width="${l === 'bare' ? 170 : 380}" height="124" rx="62"/><text x="${x + (l === 'bare' ? 85 : 190)}" y="${y + 32}" text-anchor="middle">${IM_LINES[l].label}</text></g>`).join('')
     + `<g class="im-ringtitle"><text x="${IM_OFF + 640}" y="2310" text-anchor="middle">Кольцо</text><text x="${IM_OFF + 640}" y="2366" text-anchor="middle">предлогов</text><text class="im-rt-sub" x="${IM_OFF + 640}" y="2420" text-anchor="middle">предлог + doing</text></g>`;
   const legend = `<g class="im-legend"><rect x="3000" y="150" width="680" height="150" rx="24"/>
@@ -431,9 +448,16 @@ function initialiseInfinitiveMap(root) {
     open(s.id);
   }, { signal });
   const explain = document.createElement('div'); explain.className = 'nc-ui im-explain'; explain.hidden = true;
-  explain.innerHTML = '<p class="im-ex-h">Режим «Когда?»: действие впереди или уже было?</p><p class="im-ex-t">Сравните глагол в to do / -ing с главным глаголом предложения. <b>to do</b> чаще смотрит вперёд (decide to go — поездка после решения), <b>-ing</b> после remember, regret, admit — назад (admit taking — взял раньше, чем признался).</p><p class="im-ex-k"><span class="im-ta">впереди: план, цель</span><span class="im-tp">уже было</span><span class="im-tn">вне времени</span></p><button type="button" class="im-ex-x" aria-label="Скрыть пояснение">✕</button>';
+  explain.innerHTML = `<p class="im-ex-h">Когда происходит действие?</p>
+    <div class="im-tl" aria-hidden="true"><span class="im-tl-p">← раньше</span><span class="im-tl-axis"><i></i><b>главный глагол</b><i></i></span><span class="im-tl-a">потом →</span></div>
+    <ul class="im-ex-l">
+      <li class="im-tt-p"><b>← раньше</b> действие уже было: <i>I remember <u>locking</u> the door.</i> — сначала запер, потом вспоминаю</li>
+      <li class="im-tt-a"><b>потом →</b> действие впереди: <i>We decided <u>to go</u>.</i> — сначала решили, потом поедем</li>
+      <li class="im-tt-n"><b>серые</b> время не важно: <i>I enjoy <u>cooking</u>.</i></li></ul>
+    <p class="im-ex-t">Главное правило: <b>to do</b> чаще смотрит вперёд, <b>-ing</b> после remember, forget, regret, admit, deny — назад.</p>
+    <button type="button" class="im-ex-x" aria-label="Свернуть пояснение">✕</button>`;
   box.append(explain);
-  explain.addEventListener('click', e => { if (e.target.closest('.im-ex-x')) explain.hidden = true; }, { signal });
+  explain.addEventListener('click', e => { const x = e.target.closest('.im-ex-x'); if (x) { const min = explain.classList.toggle('is-min'); x.textContent = min ? '▾' : '✕'; x.setAttribute('aria-label', min ? 'Развернуть пояснение' : 'Свернуть пояснение'); } }, { signal });
   const setMode = m => {
     box.querySelectorAll('[data-im-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.imMode === m)));
     box.classList.toggle('im-mode-pair', m === 'pair'); box.classList.toggle('im-mode-time', m === 'time'); explain.hidden = m !== 'time';
