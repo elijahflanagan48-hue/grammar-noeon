@@ -183,7 +183,7 @@ def check(items):
             continue
         w = '%s %s' % (it['_src'], it.get('id'))
         if not re.fullmatch(r'ig-(\d{4}|ex\d\d)', str(it.get('id'))):
-            errs.append('%s: id должен быть ig-0001…ig-0800' % w)
+            errs.append('%s: id должен быть ig-0001…ig-1000' % w)
         if ids[it.get('id')] > 1:
             errs.append('%s: повтор id' % w)
         t, tp = it.get('target'), it.get('type')
