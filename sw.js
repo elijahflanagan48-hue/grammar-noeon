@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v81';
+const CACHE = 'grammar-v82';
 const FILES = [
   "./",
   "styles.css",
@@ -72,7 +72,7 @@ const FILES = [
   "content/theory/04-future.md",
   "content/theory/02-present.md"
 ];
-const WAIT_MS = 3000;
+const WAIT_MS = 2000;
 const allowed = new Set(FILES.map(file => new URL(file, self.location.href).pathname));
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES.map(file => new Request(file, {cache:'reload'})))).then(() => self.skipWaiting()));
@@ -89,6 +89,28 @@ self.addEventListener('fetch', event => {
   if (!allowed.has(url.pathname) && request.mode !== 'navigate') return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
+    // Файлы с ?v=<хеш> никогда не меняются: отдаём из кэша сразу, без похода в сеть.
+    if (request.mode !== 'navigate' && url.searchParams.has('v')) {
+      const hit = await cache.match(request.url);
+      if (hit) return hit;
+      try {
+        const response = await fetch(request);
+        if (response.ok) await cache.put(request.url, response.clone());
+        return response;
+      } catch { return await cache.match(url.pathname) || Response.error(); }
+    }
+    // Шрифты и картинки: мгновенно из кэша, свежая копия подтягивается в фоне.
+    if (request.mode !== 'navigate' && /\.(?:woff2|png|svg|webmanifest)$/i.test(url.pathname)) {
+      const hit = await cache.match(url.pathname);
+      const network = fetch(request, {cache:'no-cache'}).then(async response => {
+        if (response.ok && !response.redirected) await cache.put(url.pathname, response.clone());
+        return response;
+      });
+      event.waitUntil(network.catch(() => {}));
+      if (hit) return hit;
+      try { return await network; } catch { return Response.error(); }
+    }
+    // Страница и данные (правила, оглавление банка): сначала сеть, но не дольше WAIT_MS, затем сохранённая копия.
     const key = request.mode === 'navigate' ? '/' : url.pathname;
     const fallback = () => cache.match(key);
     const network = fetch(request, {cache:'no-cache'}).then(async response => {
@@ -103,7 +125,6 @@ self.addEventListener('fetch', event => {
       if (response && response.status < 500) return response;
       const saved = await fallback();
       if (saved) {
-        // Stale copy served (slow network): tell open pages when the fresh one has arrived.
         network.then(fresh => { if (fresh && fresh.ok) return self.clients.matchAll?.().then(list => list.forEach(client => client.postMessage({type:'FRESH_AVAILABLE'}))); }).catch(() => {});
         return saved;
       }

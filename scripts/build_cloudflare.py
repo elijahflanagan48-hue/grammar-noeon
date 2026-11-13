@@ -1,5 +1,6 @@
 """Build a strict public asset directory and the trusted checker from app.js."""
 import json
+import subprocess
 import shutil
 from pathlib import Path
 
@@ -61,6 +62,7 @@ export function grade(item, submitted) {
         assessments.extend(json.loads((ROOT / f'content/assessments/{section}.json').read_text()))
     (GENERATED/'assessments.json').write_text(json.dumps(assessments,ensure_ascii=False))
     shutil.copy2(ROOT / '_headers', PUBLIC / '_headers')
+    subprocess.run(['node', str(ROOT / 'scripts/bank_keys.mjs')], check=True)
     print(f'Cloudflare: {len(bank)} exercises; public files copied by allowlist.')
 
 

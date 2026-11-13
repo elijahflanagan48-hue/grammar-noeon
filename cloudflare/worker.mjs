@@ -4,6 +4,8 @@ import { handleTaskIssues } from './task-issues.mjs';
 import { assessmentTitle } from './generated/assessment-config.mjs';
 import { randomBytes, timingSafeEqual, createHash } from 'node:crypto';
 import exercises from './generated/bank.json';
+// Ключи предложений считаются при сборке (scripts/bank_keys.mjs), а не при каждом запуске Worker.
+import bankKeys from './generated/bank-keys.json' with {type:'json'};
 import assessments from './generated/assessments.json' with {type:'json'};
 import { balancedPractice, exerciseTenses, PRACTICE_TENSES, exerciseSection, targetSection, supportedResponseContract } from './generated/selection.mjs';
 import { grade } from './generated/checker.mjs';
@@ -14,7 +16,7 @@ const bank = new Map(exercises.map(item => [item.id, item]));
 const now = () => Date.now() / 1000;
 const token = () => randomBytes(32).toString('hex');
 const digest = value => createHash('sha256').update(value).digest('hex');
-const bankSentenceKeys = new Map(exercises.map(item => [item.id, assignmentSentenceKeys(item).map(digest)]));
+const bankSentenceKeys = new Map(Object.entries(bankKeys));
 const SESSION_SECONDS = 30 * 86400;
 const SESSION_RENEW_WINDOW = SESSION_SECONDS - 86400;
 const sessionCookie = raw => `grammar_session=${raw}; HttpOnly; SameSite=Lax; Secure; Path=/; Max-Age=${SESSION_SECONDS}`;
