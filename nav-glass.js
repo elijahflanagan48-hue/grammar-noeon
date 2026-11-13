@@ -40,7 +40,7 @@
       [S.x, S.v] = step(S.x, S.v, S.tx, drag?.moved ? 900 : 330, drag?.moved ? 55 : 27, h);
       [S.w, S.wv] = step(S.w, S.wv, S.tw, 420, 40, h);
       [S.l, S.lv] = step(S.l, S.lv, S.tl, 300, 24, h);
-      [S.s, S.sv] = step(S.s, S.sv, S.ts, 620, 15, h);
+      [S.s, S.sv] = step(S.s, S.sv, S.ts, 380, 26, h);
     }
     render();
     const calm = Math.abs(S.x - S.tx) < 0.2 && Math.abs(S.v) < 2 && Math.abs(S.w - S.tw) < 0.2 && Math.abs(S.l - S.tl) < 0.003 && Math.abs(S.lv) < 0.01 && Math.abs(S.s - S.ts) < 0.0004 && Math.abs(S.sv) < 0.003;
@@ -61,7 +61,7 @@
     pill.style.opacity = current ? '1' : '0';
     if (drag) return;
     if (!ready || !last) { aim(current, true); render(); }
-    else if (current !== last) { aim(current, false); pulse(); S.sv -= 0.5; kick(); }
+    else if (current !== last) { aim(current, false); pulse(); S.sv -= 0.12; kick(); }
     else { aim(current, false); kick(); }
     last = current;
   }
@@ -82,7 +82,7 @@
     const link = event.target.closest('a[href]');
     drag = { x0: event.clientX, id: event.pointerId, moved: false, link };
     clearTimeout(lensTimer);
-    S.tl = 1; S.ts = 1.035;
+    S.tl = 1; S.ts = 1.015;
     if (link) aim(link, false);
     haptic(); kick();
   });
@@ -105,7 +105,7 @@
     if (!drag || event.pointerId !== drag.id) return;
     const moved = drag.moved; drag = null;
     links().forEach(a => a.classList.remove('nav-under'));
-    S.ts = 1; S.sv -= 0.9;
+    S.ts = 1; S.sv -= 0.2;
     const current = nav.querySelector('a.current');
     if (moved) {
       swallow = true; setTimeout(() => { swallow = false; }, 400);
