@@ -31,7 +31,7 @@
     points[points.length - 1] = 1;
     return { duration: Math.round(t * 1000), easing: hasLinear ? `linear(${points.join(', ')})` : 'cubic-bezier(.3,1.2,.45,1)' };
   }
-  const MOVE = spring(230, 25), LENS = spring(320, 28), BAR = spring(260, 21);
+  const MOVE = spring(440, 36), LENS = spring(560, 38), BAR = spring(420, 28);
   const run = (el, frames, curve, extra) => still.matches ? null : el.animate(frames, { duration: curve.duration, easing: curve.easing, ...extra });
   const matrix = el => { const t = getComputedStyle(el).transform; return !t || t === 'none' ? new DOMMatrixReadOnly() : new DOMMatrixReadOnly(t); };
 
@@ -51,7 +51,7 @@
     run(pill, [{ transform: `translate3d(${from}px,0,0)` }, { transform: `translate3d(${x}px,0,0)` }], MOVE);
     const pull = Math.min(0.22, Math.abs(from - x) / 900);
     stretchBox.getAnimations().forEach(a => a.cancel());
-    if (pull > 0.02) run(stretchBox, [{ transform: 'scale(1,1)' }, { transform: `scale(${1 + pull},${1 - pull * 0.45})`, offset: 0.28 }, { transform: 'scale(1,1)' }], { duration: Math.round(MOVE.duration * 0.75), easing: 'ease-out' });
+    if (pull > 0.02) run(stretchBox, [{ transform: 'scale(1,1)' }, { transform: `scale(${1 + pull},${1 - pull * 0.45})`, offset: 0.28 }, { transform: 'scale(1,1)' }], { duration: Math.round(MOVE.duration * 0.6), easing: 'ease-out' });
   }
   function lens(on) {
     if (on === lensOn) return; lensOn = on;
@@ -60,8 +60,8 @@
     [wrap, glass, rest].forEach(el => el.getAnimations().forEach(a => a.cancel()));
     wrap.style.transform = to; glass.style.opacity = gTo; rest.style.opacity = rTo;
     run(wrap, [{ transform: `scale(${m.a},${m.d})` }, { transform: to }], LENS);
-    run(glass, [{ opacity: gFrom }, { opacity: gTo }], { duration: 220, easing: 'ease-out' });
-    run(rest, [{ opacity: rFrom }, { opacity: rTo }], { duration: 220, easing: 'ease-out' });
+    run(glass, [{ opacity: gFrom }, { opacity: gTo }], { duration: 130, easing: 'ease-out' });
+    run(rest, [{ opacity: rFrom }, { opacity: rTo }], { duration: 130, easing: 'ease-out' });
   }
   function lensPulse(ms) { clearTimeout(lensTimer); lens(true); lensTimer = setTimeout(() => { if (!drag) lens(false); }, ms); }
   function press() { pressAnim?.cancel(); pressAnim = run(nav, [{ transform: 'scale(1)' }, { transform: 'scale(1.012)' }], LENS, { fill: 'forwards' }); }
@@ -77,7 +77,7 @@
     if (drag || !current) { last = current; return; }
     const changed = last && current !== last;
     moveTo(current, changed);
-    if (changed && !lensOn) lensPulse(260);
+    if (changed && !lensOn) lensPulse(170);
     last = current;
   }
   new MutationObserver(records => { if (records.some(r => !pill.contains(r.target))) sync(); })
@@ -91,7 +91,7 @@
     for (const a of links()) { const r = a.getBoundingClientRect(), d = Math.abs(r.left + r.width / 2 - clientX); if (d < gap) { gap = d; best = a; } }
     return best;
   }
-  const go = href => requestAnimationFrame(() => requestAnimationFrame(() => { location.hash = href; }));
+  const go = href => requestAnimationFrame(() => { location.hash = href; });
 
   nav.addEventListener('dragstart', event => event.preventDefault());
   nav.addEventListener('pointerdown', event => {
@@ -124,8 +124,8 @@
       const target = (event.type === 'pointercancel' ? current : nearest(event.clientX)) || current;
       moveTo(target, true, d.x);
       if (target && target !== current) { last = target; haptic(); go(target.getAttribute('href')); }
-      lensPulse(140);
-    } else lensPulse(220);
+      lensPulse(100);
+    } else lensPulse(150);
   }
   nav.addEventListener('pointerup', release);
   nav.addEventListener('pointercancel', release);
