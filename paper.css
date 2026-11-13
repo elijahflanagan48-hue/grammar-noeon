@@ -1,0 +1,51 @@
+/* Стили оформления под логотип «g.».
+   «Бумага» (по умолчанию): белый лист, чернильный текст и кнопки, зелёный только как точка-акцент.
+   «Тетрадь» (data-style="notebook"): фон в клетку, поля, зелёные кнопки, карточки-листы. */
+:root{--btn:#142033;--btn-fg:#fff;--dot:var(--pri)}
+:root[data-style="paper"]{
+  --bg:#ffffff;--surf:#ffffff;--surf2:#f5f7f9;
+  --tx:#142033;--mut:#5e6878;--fade:#6b7585;
+  --line:#e6e9ee;--line2:#d3d9e1;
+  --sh-sm:none;--sh:0 10px 28px rgba(20,32,51,.10);
+  --btn:#142033;--btn-fg:#ffffff;
+}
+:root[data-style="paper"][data-theme="dark"]{
+  --bg:#0e1420;--surf:#151d2b;--surf2:#1b2536;
+  --tx:#eef1f6;--mut:#9aa6b8;--fade:#8e9aad;
+  --line:#243045;--line2:#33415a;
+  --pri:#6fcfaa;--pri-d:#9be0c4;--pri-soft:#15332a;--on-pri:#06231a;
+  --sh-sm:none;--sh:0 14px 34px rgba(0,0,0,.5);
+  --btn:#eef1f6;--btn-fg:#0e1420;
+}
+:root[data-style="notebook"]{--bg:#fbfcfd;--btn:var(--pri);--btn-fg:var(--on-pri);--sh-sm:0 2px 0 var(--line),0 8px 20px rgba(20,40,60,.06)}
+:root[data-style="notebook"][data-theme="dark"]{--bg:#0e1420;--surf:#151d2b;--surf2:#1b2536;--line:#243045;--line2:#33415a;--sh-sm:0 2px 0 #0a0f18,0 8px 20px rgba(0,0,0,.35)}
+:root[data-style="notebook"] body{background-color:var(--bg);background-image:linear-gradient(var(--grid,#e9eef4) 1px,transparent 1px),linear-gradient(90deg,var(--grid,#e9eef4) 1px,transparent 1px);background-size:22px 22px;background-attachment:fixed}
+:root[data-style="notebook"][data-theme="dark"]{--grid:rgba(255,255,255,.045)}
+:root[data-style="notebook"] body::after{content:"";position:fixed;top:0;bottom:0;left:max(9px,env(safe-area-inset-left,0px));width:1.5px;background:#f2a7a0;opacity:.75;pointer-events:none;z-index:0}
+:root[data-style="notebook"][data-theme="dark"] body::after{opacity:.35}
+@media(min-width:1000px){:root[data-style="notebook"] body::after{left:203px}}
+
+/* Основные кнопки: в «Бумаге» чернильные, в «Тетради» зелёные */
+:root .button.primary,:root .button.primary:hover,:root .td-go,:root .wc-chip.on,:root .report-filters [aria-pressed=true]{background:var(--btn)!important;color:var(--btn-fg)!important;border-color:var(--btn)!important}
+:root .button.primary:hover,:root .td-go:hover{filter:brightness(1.12)}
+:root[data-style="paper"][data-theme="dark"] .button.primary:hover,:root[data-style="paper"][data-theme="dark"] .td-go:hover{filter:brightness(.92)}
+
+/* Точка в конце заголовка главных экранов */
+body[data-root="1"] .screen-title::after{content:".";color:var(--dot)}
+.td2-head h2{letter-spacing:-.02em}
+
+/* Плитки плана: ровные листы без цветной заливки */
+:root[data-style="paper"] .td-step{background:transparent;border-radius:0;border:0;border-top:1px solid var(--line);padding:14px 2px}
+:root[data-style="paper"] .td-step.now{background:transparent;border-color:var(--line)}
+:root[data-style="paper"] .td-steps{gap:0}
+:root[data-style="paper"] .td-num{background:transparent;border:2px solid var(--line2);color:var(--mut);flex-basis:28px;height:28px;width:28px;font-size:.8rem}
+:root[data-style="paper"] .td-step.now .td-num{border-color:var(--pri);color:var(--pri);background:transparent}
+:root[data-style="paper"] .td-step.done .td-num{background:var(--pri);border-color:var(--pri);color:var(--on-pri)}
+:root[data-style="paper"] .td-rule{background:var(--surf);border:1px solid var(--line)}
+:root[data-style="paper"] .td-segs i.done{background:var(--pri)}
+
+/* Нижнее меню: под активной вкладкой зелёная точка */
+@media(max-width:999px){
+  .main-nav a::after{content:"";width:5px;height:5px;border-radius:50%;background:transparent;margin-top:1px;transition:background .2s}
+  .main-nav a.current::after{background:var(--dot)}
+}

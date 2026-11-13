@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v80';
+const CACHE = 'grammar-v81';
 const FILES = [
   "./",
   "styles.css",
@@ -37,6 +37,7 @@ const FILES = [
   "nav-glass.js",
   "results-design.js",
   "dash.css",
+  "paper.css",
   "home-design.css",
   "tense-map.css",
   "tense-canvas.css",

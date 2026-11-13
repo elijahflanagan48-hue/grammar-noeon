@@ -1904,7 +1904,7 @@ function screenBack() {
   if(previousAppRoute && history.length>1)history.back();else location.hash=screenBackFallback();
 }
 function themeSettingsMarkup() {
-  return '<section id="theme-settings" class="account-section"><h2>Оформление</h2><fieldset class="theme-options"><legend>Тема приложения</legend>'+[['auto','Авто'],['light','Светлая'],['dark','Тёмная']].map(([value,label])=>`<label><input type="radio" name="app-theme" value="${value}"><span>${label}</span></label>`).join('')+'</fieldset><p class="subtle">Авто — как в настройках устройства.</p></section>';
+  return '<section id="theme-settings" class="account-section"><h2>Оформление</h2><fieldset class="theme-options"><legend>Тема приложения</legend>'+[['auto','Авто'],['light','Светлая'],['dark','Тёмная']].map(([value,label])=>`<label><input type="radio" name="app-theme" value="${value}"><span>${label}</span></label>`).join('')+'</fieldset><p class="subtle">Авто — как в настройках устройства.</p><fieldset class="theme-options"><legend>Стиль</legend>'+[['paper','Бумага'],['notebook','Тетрадь']].map(([value,label])=>`<label><input type="radio" name="app-style" value="${value}"><span>${label}</span></label>`).join('')+'</fieldset><p class="subtle">«Бумага» — чистый белый лист с чёрными кнопками. «Тетрадь» — фон в клетку, поля и зелёные кнопки.</p></section>';
 }
 function syncScreenChrome() {
   if(typeof document.getElementById!=='function')return;
@@ -1913,6 +1913,7 @@ function syncScreenChrome() {
   document.body.dataset.screen=route;
   const roots=['home','grammar','results','profile','students'];
   const root=roots.includes(route)&&!parts[1];
+  document.body.dataset.root=root?'1':'0';
   document.getElementById('screen-back').hidden=root;
   document.querySelector('.site-header .brand').hidden=route!=='home';
   title.hidden=route==='home';
@@ -1923,8 +1924,10 @@ function syncScreenChrome() {
   if(route==='profile'&&!document.getElementById('theme-settings')) {
     app.insertAdjacentHTML('beforeend',themeSettingsMarkup());
     app.querySelectorAll('[name="app-theme"]').forEach(input=>input.addEventListener('change',()=>window.NoeonTheme.set(input.value)));
+    app.querySelectorAll('[name="app-style"]').forEach(input=>input.addEventListener('change',()=>window.NoeonTheme.setStyle?.(input.value)));
   }
   app.querySelectorAll('[name="app-theme"]').forEach(input=>input.checked=input.value===window.NoeonTheme.get());
+  app.querySelectorAll('[name="app-style"]').forEach(input=>input.checked=input.value===(window.NoeonTheme.getStyle?.()||'paper'));
   const theme=document.getElementById('theme-toggle'), dark=document.documentElement.dataset.theme==='dark';
   theme.textContent=dark?'☀':'☾';theme.setAttribute('aria-label',dark?'Включить светлую тему':'Включить тёмную тему');
   syncRoleNav();
