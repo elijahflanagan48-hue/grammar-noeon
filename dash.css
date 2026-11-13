@@ -123,3 +123,29 @@
 .tt-links a{padding:10px 0;border-top:1px solid var(--line);font-weight:600;text-decoration:none}
 .tt-links a:first-of-type{border-top:0}
 @media(max-width:600px){.tt-list{padding-left:0}}
+.tt-person{align-items:flex-start}
+.tt-name{font-weight:700;color:var(--tx);text-decoration:none}.tt-name:hover{color:var(--pri)}
+.tt-person .tt-row-main a:not(.tt-name){color:var(--pri)}
+.tt-chips{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.ts{position:relative;margin:4px 0 22px}
+.ts-icon{position:absolute;left:16px;top:16px;width:20px;height:20px;fill:none;stroke:var(--mut);stroke-width:2;stroke-linecap:round}
+#topic-search{width:100%;box-sizing:border-box;font:inherit;font-size:1.02rem;padding:14px 16px 14px 46px;border-radius:16px;border:1px solid var(--line);background:var(--surf);color:var(--tx);box-shadow:var(--sh-sm)}
+#topic-search:focus{outline:2px solid var(--pri);outline-offset:1px}
+.ts-results{margin-top:10px;display:flex;flex-direction:column;gap:6px}
+.ts-count{margin:0 4px;font-size:.85rem;color:var(--mut)}
+.ts-hit{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-radius:14px;background:var(--surf);border:1px solid var(--line);color:var(--tx);text-decoration:none}
+.ts-hit:hover,.ts-hit:focus-visible{border-color:var(--pri)}
+.ts-hit>span:first-child{display:flex;flex-direction:column;min-width:0}
+.ts-hit small{color:var(--mut)}
+.ts-go{color:var(--pri);font-weight:600;white-space:nowrap;font-size:.9rem}
+/* Нижнее меню на телефоне: «жидкое стекло», прижато к низу экрана */
+@media(max-width:999px){
+ .main-nav{bottom:max(8px,calc(var(--app-safe-bottom) - 20px));left:max(10px,env(safe-area-inset-left,0px));right:max(10px,env(safe-area-inset-right,0px));max-width:none;padding:5px;gap:2px;border-radius:30px;
+  background:color-mix(in srgb,var(--surf) 68%,transparent);-webkit-backdrop-filter:blur(24px) saturate(190%);backdrop-filter:blur(24px) saturate(190%);
+  border:1px solid rgba(255,255,255,.55);box-shadow:0 12px 32px rgba(15,32,48,.18),0 2px 6px rgba(15,32,48,.08),inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(255,255,255,.2)}
+ .main-nav a{border-radius:24px;min-height:52px;transition:background .2s,color .2s}
+ .main-nav a.current{color:var(--pri);background:color-mix(in srgb,var(--surf) 70%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 2px 8px rgba(15,32,48,.10)}
+ [data-theme="dark"] .main-nav{background:color-mix(in srgb,var(--surf) 55%,transparent);border-color:rgba(255,255,255,.12);box-shadow:0 12px 32px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.14),inset 0 -1px 0 rgba(255,255,255,.04)}
+ [data-theme="dark"] .main-nav a.current{background:rgba(255,255,255,.10);box-shadow:inset 0 1px 0 rgba(255,255,255,.16)}
+ body{padding-bottom:calc(92px + max(0px,var(--app-safe-bottom) - 20px))}
+}

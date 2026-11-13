@@ -269,7 +269,7 @@ function grammarSectionForTheory(id) { return ["comparison","passive","modals","
 function renderGrammar(topic = "", practice = false, student = null) {
   syncRouteNav();
   const sections = GRAMMAR_SECTIONS[topic] ? [[topic, GRAMMAR_SECTIONS[topic]]] : Object.entries(GRAMMAR_SECTIONS);
-  app.innerHTML = `<div class="reading"><div class="eyebrow">${practice ? "Выберите раздел практики" : "Самостоятельные разделы"}</div><h1>${GRAMMAR_SECTIONS[topic]?.title || (practice ? "Практика" : "Темы")}</h1><p class="lead">${student ? "Выберите раздел для назначения ученику " + escapeHtml(student.name) + "." : "У каждого раздела — своя теория, темы и отдельные настройки практики."}</p><div class="grammar-sections gs-grid">${grammarSectionsHtml(sections, { practice, student })}</div></div>`;
+  app.innerHTML = `<div class="reading"><div class="eyebrow">${practice ? "Выберите раздел практики" : "Самостоятельные разделы"}</div><h1>${GRAMMAR_SECTIONS[topic]?.title || (practice ? "Практика" : "Темы")}</h1><p class="lead">${student ? "Выберите раздел для назначения ученику " + escapeHtml(student.name) + "." : "У каждого раздела — своя теория, темы и отдельные настройки практики."}</p>${!topic && !practice && !student && typeof topicSearchHtml === "function" ? topicSearchHtml() : ""}<div class="grammar-sections gs-grid">${grammarSectionsHtml(sections, { practice, student })}</div></div>`;
   document.title = `${student ? "Назначить задание" : practice ? "Практика" : GRAMMAR_SECTIONS[topic]?.title || "Грамматика"} — Grammar NOEON`;
 }
 function theoryCards() {
