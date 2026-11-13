@@ -1,90 +1,103 @@
 /* Нижнее меню на телефоне в духе iOS «Liquid Glass».
-   Капсула и сама панель двигаются на пружинах (своя физика на requestAnimationFrame, не CSS-переходы):
-   касание поднимает линзу и чуть «надувает» панель, при отпускании панель мягко подпрыгивает.
-   Капсулу можно тянуть пальцем; в движении линза вытягивается по скорости. */
+   Все движения идут через Web Animations с пружинной кривой linear(): браузер проигрывает их на
+   композиторе, поэтому анимация не «заедает», даже когда в этот момент перерисовывается страница.
+   Касание поднимает прозрачную линзу и чуть «надувает» панель, отпускание даёт мягкий отскок.
+   Капсулу можно тянуть пальцем. */
 (function () {
   const nav = document.getElementById('main-nav');
-  if (!nav || !window.matchMedia) return;
+  if (!nav || !window.matchMedia || !Element.prototype.animate) return;
   const mq = matchMedia('(max-width: 999px)'), still = matchMedia('(prefers-reduced-motion: reduce)');
   const pill = document.createElement('span');
   pill.className = 'nav-pill'; pill.setAttribute('aria-hidden', 'true');
-  pill.innerHTML = '<span class="np"><i class="np-rest"></i><i class="np-lens"></i></span>';
+  pill.innerHTML = '<span class="nps"><span class="np"><i class="np-rest"></i><i class="np-lens"></i></span></span>';
   nav.prepend(pill);
-  const wrap = pill.firstChild, rest = wrap.children[0], glass = wrap.children[1];
+  const stretchBox = pill.firstChild, wrap = stretchBox.firstChild, rest = wrap.children[0], glass = wrap.children[1];
 
-  // Лёгкий тактильный отклик: vibrate на Android, скрытый переключатель-switch на iOS 18+.
   const hapticBox = document.createElement('label');
   hapticBox.className = 'nav-haptic'; hapticBox.setAttribute('aria-hidden', 'true');
   hapticBox.innerHTML = '<input type="checkbox" switch tabindex="-1">';
   document.body.appendChild(hapticBox);
   const haptic = () => { try { if (navigator.vibrate) navigator.vibrate(8); else hapticBox.click(); } catch {} };
 
-  const S = { x: 0, v: 0, tx: 0, w: 64, wv: 0, tw: 64, l: 0, lv: 0, tl: 0, s: 1, sv: 0, ts: 1 };
-  let running = false, prev = 0, ready = false, last = null, drag = null, lensTimer = 0;
-  const links = () => [...nav.querySelectorAll('a[href]')].filter(a => a.offsetWidth);
-  const step = (p, v, t, k, c, dt) => { const a = -k * (p - t) - c * v; v += a * dt; return [p + v * dt, v]; };
-
-  function render() {
-    const stretch = Math.min(Math.abs(S.v) / 2200, 0.28);
-    pill.style.transform = `translate3d(${S.x.toFixed(2)}px,0,0)`;
-    pill.style.width = S.w.toFixed(2) + 'px';
-    wrap.style.transform = `scale(${(1 + 0.16 * S.l + stretch).toFixed(4)},${(1 + 0.32 * S.l - stretch * 0.35).toFixed(4)})`;
-    glass.style.opacity = Math.max(0, Math.min(1, S.l)).toFixed(3);
-    rest.style.opacity = (1 - Math.max(0, Math.min(1, S.l)) * 0.85).toFixed(3);
-    nav.style.transform = Math.abs(S.s - 1) < 0.0005 ? '' : `scale(${S.s.toFixed(4)})`;
-  }
-  function frame(now) {
-    const dt = Math.min(0.034, (now - prev) / 1000 || 0.016); prev = now;
-    for (let i = 0; i < 2; i++) {
-      const h = dt / 2;
-      [S.x, S.v] = step(S.x, S.v, S.tx, drag?.moved ? 900 : 330, drag?.moved ? 55 : 27, h);
-      [S.w, S.wv] = step(S.w, S.wv, S.tw, 420, 40, h);
-      [S.l, S.lv] = step(S.l, S.lv, S.tl, 300, 24, h);
-      [S.s, S.sv] = step(S.s, S.sv, S.ts, 380, 26, h);
+  // Пружина k/c → кривая linear(...) и длительность, пока движение не затихнет.
+  const hasLinear = !!(window.CSS && CSS.supports && CSS.supports('animation-timing-function', 'linear(0, 1)'));
+  function spring(k, c) {
+    let x = 0, v = 0, t = 0; const points = [0], dt = 1 / 600;
+    while (t < 2) {
+      for (let i = 0; i < 10; i++) { v += (-k * (x - 1) - c * v) * dt; x += v * dt; t += dt; }
+      points.push(+x.toFixed(4));
+      if (t > 0.2 && Math.abs(1 - x) < 0.0015 && Math.abs(v) < 0.02) break;
     }
-    render();
-    const calm = Math.abs(S.x - S.tx) < 0.2 && Math.abs(S.v) < 2 && Math.abs(S.w - S.tw) < 0.2 && Math.abs(S.l - S.tl) < 0.003 && Math.abs(S.lv) < 0.01 && Math.abs(S.s - S.ts) < 0.0004 && Math.abs(S.sv) < 0.003;
-    if (calm) { Object.assign(S, { x: S.tx, v: 0, w: S.tw, wv: 0, l: S.tl, lv: 0, s: S.ts, sv: 0 }); render(); running = false; return; }
-    requestAnimationFrame(frame);
+    points[points.length - 1] = 1;
+    return { duration: Math.round(t * 1000), easing: hasLinear ? `linear(${points.join(', ')})` : 'cubic-bezier(.3,1.2,.45,1)' };
   }
-  function kick() { if (still.matches) { Object.assign(S, { x: S.tx, w: S.tw, l: S.tl, s: S.ts, v: 0, sv: 0 }); render(); return; } if (!running) { running = true; prev = performance.now(); requestAnimationFrame(frame); } }
+  const MOVE = spring(230, 25), LENS = spring(320, 28), BAR = spring(260, 21);
+  const run = (el, frames, curve, extra) => still.matches ? null : el.animate(frames, { duration: curve.duration, easing: curve.easing, ...extra });
+  const matrix = el => { const t = getComputedStyle(el).transform; return !t || t === 'none' ? new DOMMatrixReadOnly() : new DOMMatrixReadOnly(t); };
 
-  function aim(link, jump) {
+  let targetX = null, lensOn = false, last = null, drag = null, lensTimer = 0, pressAnim = null, swallow = false;
+  const links = () => [...nav.querySelectorAll('a[href]')].filter(a => a.offsetWidth);
+
+  function moveTo(link, animate, fromX) {
     if (!link) return;
-    S.tx = link.offsetLeft; S.tw = link.offsetWidth;
-    if (jump) { S.x = S.tx; S.w = S.tw; S.v = 0; }
+    pill.style.width = link.offsetWidth + 'px';
+    const x = link.offsetLeft;
+    if (targetX !== null && Math.abs(x - targetX) < 0.5 && fromX === undefined) return;
+    const from = fromX ?? matrix(pill).m41;
+    pill.getAnimations().forEach(a => a.cancel());
+    pill.style.transform = `translate3d(${x}px,0,0)`;
+    targetX = x;
+    if (!animate || Math.abs(from - x) < 0.5) return;
+    run(pill, [{ transform: `translate3d(${from}px,0,0)` }, { transform: `translate3d(${x}px,0,0)` }], MOVE);
+    const pull = Math.min(0.22, Math.abs(from - x) / 900);
+    stretchBox.getAnimations().forEach(a => a.cancel());
+    if (pull > 0.02) run(stretchBox, [{ transform: 'scale(1,1)' }, { transform: `scale(${1 + pull},${1 - pull * 0.45})`, offset: 0.28 }, { transform: 'scale(1,1)' }], { duration: Math.round(MOVE.duration * 0.75), easing: 'ease-out' });
   }
-  function pulse() { clearTimeout(lensTimer); S.tl = 1; lensTimer = setTimeout(() => { if (!drag) { S.tl = 0; kick(); } }, 230); }
+  function lens(on) {
+    if (on === lensOn) return; lensOn = on;
+    const m = matrix(wrap), gFrom = getComputedStyle(glass).opacity, rFrom = getComputedStyle(rest).opacity;
+    const to = on ? 'scale(1.16,1.32)' : 'scale(1,1)', gTo = on ? '1' : '0', rTo = on ? '0.15' : '1';
+    [wrap, glass, rest].forEach(el => el.getAnimations().forEach(a => a.cancel()));
+    wrap.style.transform = to; glass.style.opacity = gTo; rest.style.opacity = rTo;
+    run(wrap, [{ transform: `scale(${m.a},${m.d})` }, { transform: to }], LENS);
+    run(glass, [{ opacity: gFrom }, { opacity: gTo }], { duration: 220, easing: 'ease-out' });
+    run(rest, [{ opacity: rFrom }, { opacity: rTo }], { duration: 220, easing: 'ease-out' });
+  }
+  function lensPulse(ms) { clearTimeout(lensTimer); lens(true); lensTimer = setTimeout(() => { if (!drag) lens(false); }, ms); }
+  function press() { pressAnim?.cancel(); pressAnim = run(nav, [{ transform: 'scale(1)' }, { transform: 'scale(1.012)' }], LENS, { fill: 'forwards' }); }
+  function bounce() {
+    const from = matrix(nav).a; pressAnim?.cancel(); pressAnim = null;
+    run(nav, [{ transform: `scale(${Math.max(from, 1.008)})` }, { transform: 'scale(1)' }], BAR);
+  }
+
   function sync() {
-    if (!mq.matches) { pill.style.opacity = '0'; nav.style.transform = ''; return; }
+    if (!mq.matches) { pill.style.opacity = '0'; return; }
     const current = nav.querySelector('a.current');
     pill.style.opacity = current ? '1' : '0';
-    if (drag) return;
-    if (!ready || !last) { aim(current, true); render(); }
-    else if (current !== last) { aim(current, false); pulse(); S.sv -= 0.12; kick(); }
-    else { aim(current, false); kick(); }
+    if (drag || !current) { last = current; return; }
+    const changed = last && current !== last;
+    moveTo(current, changed);
+    if (changed && !lensOn) lensPulse(260);
     last = current;
   }
-  new MutationObserver(records => { if (records.some(r => !pill.contains(r.target) && r.target !== hapticBox)) sync(); })
+  new MutationObserver(records => { if (records.some(r => !pill.contains(r.target))) sync(); })
     .observe(nav, { subtree: true, childList: true, attributes: true, attributeFilter: ['class', 'hidden'] });
-  addEventListener('resize', () => { if (!drag) { aim(nav.querySelector('a.current'), true); render(); } });
-  mq.addEventListener?.('change', sync);
-  sync(); requestAnimationFrame(() => { ready = true; });
+  addEventListener('resize', () => { targetX = null; const c = nav.querySelector('a.current'); if (c && mq.matches) moveTo(c, false); });
+  mq.addEventListener?.('change', () => { targetX = null; sync(); });
+  sync();
 
   function nearest(clientX) {
     let best = null, gap = Infinity;
     for (const a of links()) { const r = a.getBoundingClientRect(), d = Math.abs(r.left + r.width / 2 - clientX); if (d < gap) { gap = d; best = a; } }
     return best;
   }
+  const go = href => requestAnimationFrame(() => requestAnimationFrame(() => { location.hash = href; }));
+
   nav.addEventListener('dragstart', event => event.preventDefault());
   nav.addEventListener('pointerdown', event => {
     if (!mq.matches || (event.pointerType === 'mouse' && event.button !== 0)) return;
-    const link = event.target.closest('a[href]');
-    drag = { x0: event.clientX, id: event.pointerId, moved: false, link };
-    clearTimeout(lensTimer);
-    S.tl = 1; S.ts = 1.015;
-    if (link) aim(link, false);
-    haptic(); kick();
+    drag = { x0: event.clientX, id: event.pointerId, moved: false };
+    clearTimeout(lensTimer); lens(true); press(); haptic();
   });
   nav.addEventListener('pointermove', event => {
     if (!drag || event.pointerId !== drag.id) return;
@@ -92,31 +105,37 @@
       if (Math.abs(event.clientX - drag.x0) < 8) return;
       drag.moved = true;
       try { nav.setPointerCapture(drag.id); } catch {}
+      pill.getAnimations().forEach(a => a.cancel());
     }
-    const box = nav.getBoundingClientRect(), width = S.tw;
-    S.tx = Math.max(4, Math.min(box.width - width - 4, event.clientX - box.left - width / 2));
+    const box = nav.getBoundingClientRect(), width = pill.offsetWidth;
+    const x = Math.max(4, Math.min(box.width - width - 4, event.clientX - box.left - width / 2));
+    pill.style.transform = `translate3d(${x}px,0,0)`; drag.x = x; targetX = null;
     const near = nearest(event.clientX);
-    if (near !== drag.near) { if (drag.near) haptic(); drag.near = near; }
-    links().forEach(a => a.classList.toggle('nav-under', a === near));
-    kick();
+    if (near !== drag.near) { if (drag.near) haptic(); drag.near = near; links().forEach(a => a.classList.toggle('nav-under', a === near)); }
   });
-  let swallow = false;
   function release(event) {
     if (!drag || event.pointerId !== drag.id) return;
-    const moved = drag.moved; drag = null;
+    const d = drag; drag = null;
     links().forEach(a => a.classList.remove('nav-under'));
-    S.ts = 1; S.sv -= 0.2;
+    bounce();
     const current = nav.querySelector('a.current');
-    if (moved) {
+    if (d.moved) {
       swallow = true; setTimeout(() => { swallow = false; }, 400);
-      const target = event.type === 'pointercancel' ? current : nearest(event.clientX);
-      aim(target || current, false);
-      if (target && target !== current) { last = target; location.hash = target.getAttribute('href'); haptic(); }
-    } else if (event.type === 'pointercancel' || !event.target.closest('a[href]')) aim(current, false);
-    clearTimeout(lensTimer); lensTimer = setTimeout(() => { S.tl = 0; kick(); }, moved ? 120 : 200);
-    kick();
+      const target = (event.type === 'pointercancel' ? current : nearest(event.clientX)) || current;
+      moveTo(target, true, d.x);
+      if (target && target !== current) { last = target; haptic(); go(target.getAttribute('href')); }
+      lensPulse(140);
+    } else lensPulse(220);
   }
   nav.addEventListener('pointerup', release);
   nav.addEventListener('pointercancel', release);
-  nav.addEventListener('click', event => { if (swallow) { event.preventDefault(); event.stopPropagation(); swallow = false; } }, true);
+  nav.addEventListener('click', event => {
+    if (swallow) { event.preventDefault(); event.stopPropagation(); swallow = false; return; }
+    const link = event.target.closest('a[href]');
+    if (!link || !mq.matches || event.metaKey || event.ctrlKey) return;
+    event.preventDefault();
+    const current = nav.querySelector('a.current');
+    if (link !== current) { moveTo(link, true); last = link; }
+    go(link.getAttribute('href'));
+  }, true);
 })();
