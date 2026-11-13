@@ -149,3 +149,23 @@
  [data-theme="dark"] .main-nav a.current{background:rgba(255,255,255,.10);box-shadow:inset 0 1px 0 rgba(255,255,255,.16)}
  body{padding-bottom:calc(92px + max(0px,var(--app-safe-bottom) - 20px))}
 }
+/* Капсула-линза нижнего меню (nav-glass.js) */
+.nav-pill{display:none}
+@media(max-width:999px){
+ .main-nav{touch-action:none;-webkit-user-select:none;user-select:none}
+ .main-nav a{-webkit-user-drag:none;-webkit-touch-callout:none}
+ .main-nav a{position:relative;z-index:1;background:transparent!important;box-shadow:none!important;-webkit-tap-highlight-color:transparent;transition:color .25s,transform .3s cubic-bezier(.3,1.4,.5,1)}
+ .main-nav a.current{color:var(--tx)}
+ .main-nav a.current svg{stroke-width:2.3}
+ .main-nav a.nav-under{transform:scale(1.1)}
+ .nav-pill{display:block;position:absolute;left:0;top:5px;bottom:5px;width:64px;z-index:0;pointer-events:none;opacity:0;will-change:transform}
+ .nav-ready .nav-pill{transition:transform .5s cubic-bezier(.3,1.3,.45,1),width .3s ease,opacity .2s}
+ .nav-dragging .nav-pill{transition:width .3s ease}
+ .nav-pill i{position:absolute;inset:0;border-radius:24px;background:color-mix(in srgb,var(--tx) 8%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.55);transition:transform .38s cubic-bezier(.3,1.5,.5,1),background .3s,box-shadow .3s}
+ .nav-moving .nav-pill{z-index:2}
+ .nav-moving .nav-pill i{transform:scale(1.16,1.34);background:rgba(255,255,255,.12);-webkit-backdrop-filter:saturate(170%) brightness(1.06);backdrop-filter:saturate(170%) brightness(1.06);
+  box-shadow:inset 0 1.5px 1px rgba(255,255,255,.95),inset 0 -1.5px 2px rgba(255,255,255,.55),inset 4px 0 7px rgba(255,70,170,.20),inset -4px 0 7px rgba(40,170,255,.24),0 8px 22px rgba(15,32,48,.20)}
+ [data-theme="dark"] .nav-pill i{background:rgba(255,255,255,.10);box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
+ [data-theme="dark"] .nav-moving .nav-pill i{background:rgba(255,255,255,.06);box-shadow:inset 0 1.5px 1px rgba(255,255,255,.35),inset 0 -1px 2px rgba(255,255,255,.15),inset 4px 0 7px rgba(255,70,170,.22),inset -4px 0 7px rgba(40,170,255,.26),0 8px 22px rgba(0,0,0,.45)}
+}
+@media(prefers-reduced-motion:reduce){.nav-ready .nav-pill,.nav-pill i,.main-nav a{transition:none!important}}
