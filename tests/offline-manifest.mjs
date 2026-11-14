@@ -17,6 +17,10 @@ for(const pathname of ['/api/auth/me','/data/exercises/part-01.json','/data/exer
  let handled=false;handlers.fetch({request:new Request(origin+pathname.slice(1)),respondWith(){handled=true;}});assert.equal(handled,false,pathname);
 }
 async function request(){responsePromise=null;handlers.fetch({request:new Request(origin+'data/exercises/index.json'),respondWith(p){responsePromise=p;},waitUntil(p){p.catch(()=>{});}});return responsePromise;}
+// Instant: the first answer is the precached copy; the network copy replaces it in the background.
+const pending=[];
+async function fresh(){responsePromise=null;handlers.fetch({request:new Request(origin+'data/exercises/index.json'),respondWith(p){responsePromise=p;},waitUntil(p){pending.push(p);}});const response=await responsePromise;await Promise.all(pending.splice(0).map(p=>p.catch(()=>{})));return response;}
+assert.equal(await (await fresh()).text(),'cached');
 assert.deepEqual(await (await request()).json(),{total_items:17,answer_slots:23});
 network=false;
 assert.deepEqual(await (await request()).json(),{total_items:17,answer_slots:23});

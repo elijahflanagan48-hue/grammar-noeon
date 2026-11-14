@@ -57,7 +57,7 @@ const TENSE_MAP = [
   ]},
 ];
 
-const account = { user: null, csrf: null, available: false, demo: false, ready: true, pending: Promise.resolve(), draftTimer: null };
+const account = { user: null, csrf: null, available: false, demo: false, ready: true, pending: Promise.resolve(), verifying: null, draftTimer: null };
 function storageKey(kind) { return `noeon-${kind}${account.user ? ":" + account.user.id : ""}`; }
 const app = typeof document === "undefined" ? null : document.querySelector("#app");
 const state = {
@@ -299,6 +299,10 @@ function todayList(title,page,render,empty) {
 function todayResume(work) {
   return work?`<section class="today-resume"><p class="eyebrow">Можно продолжить</p><h2>${escapeHtml(work.title)}</h2><p class="today-resume-progress">Выполнено: ${Number(work.index)} из ${Number(work.total)}</p><button class="button primary" type="button" data-resume="${escapeHtml(work.id)}">Продолжить</button></section>`:'';
 }
+function clearTodayCache() { try { localStorage.removeItem("noeon-today-cache"); } catch {} }
+function syncAuthHint() { if (typeof writeAuthHint === "function") writeAuthHint(); }
+function readTodayCache(owner) { try { const saved = JSON.parse(localStorage.getItem("noeon-today-cache")); return saved?.owner === owner ? saved.data : null; } catch { return null; } }
+function writeTodayCache(owner, data) { try { localStorage.setItem("noeon-today-cache", JSON.stringify({ owner, data })); } catch {} }
 async function renderHome() {
   syncRouteNav();
   if(!account.user) {
@@ -306,10 +310,7 @@ async function renderHome() {
     return;
   }
   const owner=account.user.id,routeAtStart=location.hash;
-  app.innerHTML='<h1 class="sr-only">Сегодня</h1><p role="status">Загружаем ваш день…</p>';
-  try {
-    const data=await accountRequest('today');
-    if(account.user?.id!==owner||location.hash!==routeAtStart)return;
+  const paint=data=>{
     app.innerHTML='<h1 class="sr-only">Сегодня</h1><div class="today-account">'+(data.role==='student'?todayStudentMarkup(data):todayTeacherMarkup(data))+'</div>';
     bindAccountHistory();
     app.querySelectorAll('[data-today-completed]').forEach(link=>link.addEventListener('click',async event=>{
@@ -317,9 +318,19 @@ async function renderHome() {
       try{await accountRequest('notifications/read',{id:'completed:'+link.dataset.todayCompleted});}catch{toast('Не удалось отметить уведомление прочитанным');}
       if(account.user?.id===owner&&location.hash===routeAtStart)location.hash=href;
     }));
+  };
+  // Сначала мгновенно показываем прошлый «день», затем заменяем свежими данными, если они изменились.
+  const cached=readTodayCache(owner);
+  if(cached)paint(cached);else app.innerHTML='<h1 class="sr-only">Сегодня</h1><p role="status">Загружаем ваш день…</p>';
+  try {
+    const data=await accountRequest('today');
+    if(account.user?.id!==owner||location.hash!==routeAtStart)return;
+    writeTodayCache(owner,data);
+    if(!cached||JSON.stringify(cached)!==JSON.stringify(data))paint(data);
   }catch(error){
     if(account.user?.id!==owner||location.hash!==routeAtStart)return;
-    if(error.status===401){account.user=null;account.csrf=null;state.exercises=null;state.session=restoreSession();await renderHome();syncScreenChrome();return;}
+    if(error.status===401){account.user=null;account.csrf=null;state.exercises=null;state.session=restoreSession();clearTodayCache();syncAuthHint();await renderHome();syncScreenChrome();return;}
+    if(cached)return;
     app.innerHTML='<h1 class="sr-only">Сегодня</h1><p role="status">Не удалось загрузить данные аккаунта. Проверьте соединение и повторите.</p><button class="button" id="retry-today">Повторить</button> <a class="button" href="#grammar">Изучить теорию</a>';
     app.querySelector('#retry-today').addEventListener('click',()=>renderHome());
   }
@@ -1960,13 +1971,21 @@ async function fetchBankManifest() {
 
 async function initialise() {
   try {
+    // Вход проверяем параллельно с загрузкой данных. Если вход уже был известен на этом устройстве,
+    // экран рисуется сразу, не дожидаясь сервера; иначе (первый запуск) ждём ответа.
+    const hint = readAuthHint();
+    if (hint) applyAuthHint(hint);
+    const verified = account.verifying = initialiseAccount(Boolean(hint));
     [state.manifest, state.theory] = await Promise.all([
       fetchBankManifest(),
       fetchJson("data/theory.json"),
     ]);
-    await initialiseAccount();
+    if (!hint) await verified;
     initialiseChrome();
-    if(typeof initialiseNotifications==='function')initialiseNotifications();
+    verified.then(async changed => {
+      if (hint && changed && typeof route === "function") await route();
+      if (typeof initialiseNotifications === 'function') initialiseNotifications();
+    }).catch(() => {});
     window.addEventListener("storage", async event => {
       if (event.key !== "noeon-auth-event") return;
       clearTimeout(account.draftTimer); account.draftTimer = null;

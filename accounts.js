@@ -1,6 +1,8 @@
 "use strict";
 
 async function accountRequest(path, data) {
+  // Запись (POST) ждёт, пока при запуске подтвердится вход: только тогда известен CSRF-токен.
+  if (data !== undefined && account.verifying) { try { await account.verifying; } catch {} }
   const response = await fetch(`/api/${path}`, {
     method: data === undefined ? "GET" : "POST",
     headers: data === undefined ? {} : { "Content-Type": "application/json", "X-CSRF-Token": account.csrf || "" },
@@ -18,15 +20,34 @@ function showAccountMessage(selector, message, neutral = false) {
   output.setAttribute('role',neutral?'status':'alert');
 }
 function showAccountError(selector, error) { showAccountMessage(selector,error.message,error.code==='VERIFY_EMAIL'); }
-async function initialiseAccount() {
+// Быстрый запуск: что было известно о входе в прошлый раз. Показываем сразу, а сервер подтверждает в фоне.
+const AUTH_HINT_KEY = "noeon-auth-hint";
+function authSnapshot() { return { available: account.available, demo: account.demo, local: account.local, ready: account.ready, authProvider: account.authProvider, setupAvailable: account.setupAvailable !== false, user: account.user || null }; }
+function authIdentity() { return JSON.stringify([account.available, account.demo, account.local, account.ready, account.authProvider, account.setupAvailable !== false, account.user?.id || null, account.user?.role || null]); }
+function readAuthHint() { try { const hint = JSON.parse(localStorage.getItem(AUTH_HINT_KEY)); return hint && hint.available ? hint : null; } catch { return null; } }
+function writeAuthHint() { try { if (account.available) localStorage.setItem(AUTH_HINT_KEY, JSON.stringify(authSnapshot())); else localStorage.removeItem(AUTH_HINT_KEY); } catch {} }
+function applyAuthHint(hint) {
+  account.available = true; account.demo = hint.demo; account.local = hint.local; account.ready = hint.ready; account.authProvider = hint.authProvider; account.setupAvailable = hint.setupAvailable !== false;
+  account.user = hint.user || null; account.csrf = null;
+  if(account.user?.role!=='teacher')state.exercises=null;
+  state.session = restoreSession();
+}
+// Возвращает true, если ответ сервера отличается от того, с чем уже показан экран.
+async function initialiseAccount(hinted = false) {
+  const before = authIdentity();
   try {
-    const info = await accountRequest("auth/info");
+    const [info, me] = await Promise.all([accountRequest("auth/info"), accountRequest("auth/me").catch(error => { if(error.status !== 401) throw error; return null; })]);
     account.available = true; account.demo = info.demo; account.local = info.local; account.ready = info.ready; account.authProvider = info.authProvider; account.setupAvailable = info.setupAvailable !== false;
-    try { const me = await accountRequest("auth/me"); account.user = me.user; account.csrf = me.csrf; }
-    catch(error) { if(error.status !== 401) throw error; }
+    account.user = me ? me.user : null; account.csrf = me ? me.csrf : null;
     if(account.user?.role!=='teacher')state.exercises=null;
     state.session = restoreSession();
-  } catch { account.available = false; }
+    if(!account.user) clearTodayCache();
+    writeAuthHint();
+  } catch {
+    // Нет сети при запуске: если вход уже был известен, остаёмся в нём и показываем последние данные.
+    if(!hinted) account.available = false;
+  }
+  return authIdentity() !== before;
 }
 function accountNotice() { return account.demo ? '<p class="account-demo">Тестовая среда Grammar NOEON · вымышленные аккаунты и отдельная база</p>' : account.local ? '<p class="account-demo">Локальная версия Grammar NOEON · отдельная база</p>' : ''; }
 function teacherWorkspaceEntry() { return '<section class="account-section teacher-tools"><h2>Инструменты учителя</h2><div class="actions"><a class="button" href="#teacher-library">Библиотека наборов</a><a class="button" href="#task-issues">Сообщения о заданиях</a></div></section>'; }
@@ -243,6 +264,7 @@ function bindAccountHistory() {
 async function accountSignedIn(result) {
   account.user=result.user;state.exercises=null;account.csrf=result.csrf;account.ready=true;account.pending=Promise.resolve();
   state.session=restoreSession();
+  writeAuthHint();
   // Drop invitation tokens from browser history after successful acceptance.
   history.replaceState(null,"","#profile");
   localStorage.setItem("noeon-auth-event", String(Date.now()));
@@ -270,7 +292,7 @@ async function renderAccount() {
     if(user.role!=='teacher'&&typeof notificationEntry==='function')app.insertAdjacentHTML('afterbegin',notificationEntry());
     document.querySelector('#account-logout').addEventListener('click',async()=>{
       if(account.draftTimer){clearTimeout(account.draftTimer);account.draftTimer=null;}
-      try { await account.pending.catch(()=>{}); try { await accountRequest('auth/logout',{}); } catch(error) { if(error.status!==401)throw error; } account.user=null;account.csrf=null;state.exercises=null;state.session=restoreSession();localStorage.setItem('noeon-auth-event',String(Date.now()));await renderAccount(); }
+      try { await account.pending.catch(()=>{}); try { await accountRequest('auth/logout',{}); } catch(error) { if(error.status!==401)throw error; } account.user=null;account.csrf=null;state.exercises=null;state.session=restoreSession();clearTodayCache();writeAuthHint();localStorage.setItem('noeon-auth-event',String(Date.now()));await renderAccount(); }
       catch(error){toast(error.message);}
     });
     bindAccountHistory();

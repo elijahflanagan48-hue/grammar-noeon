@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v82';
+const CACHE = 'grammar-v83';
 const FILES = [
   "./",
   "styles.css",
@@ -70,7 +70,8 @@ const FILES = [
   "content/theory/06-comparison.md",
   "content/theory/01-foundations.md",
   "content/theory/04-future.md",
-  "content/theory/02-present.md"
+  "content/theory/02-present.md",
+  "content/theory/10-speaking-verbs-rule.html"
 ];
 const WAIT_MS = 2000;
 const allowed = new Set(FILES.map(file => new URL(file, self.location.href).pathname));
@@ -110,23 +111,35 @@ self.addEventListener('fetch', event => {
       if (hit) return hit;
       try { return await network; } catch { return Response.error(); }
     }
-    // Страница и данные (правила, оглавление банка): сначала сеть, но не дольше WAIT_MS, затем сохранённая копия.
+    // Страница и данные (правила, оглавление банка): мгновенно из кэша этого релиза, без похода в сеть.
+    // Свежая копия подтягивается в фоне; если она отличается, страница один раз перезагрузится (FRESH_AVAILABLE).
     const key = request.mode === 'navigate' ? '/' : url.pathname;
     const fallback = () => cache.match(key);
+    // Мгновенно только страница и JSON-данные; остальное (стили без хеша, md) — сначала сеть, как раньше.
+    const instant = request.mode === 'navigate' || url.pathname.endsWith('.json');
+    const saved = instant ? await fallback() : null;
+    const before = saved ? saved.clone() : null;
     const network = fetch(request, {cache:'no-cache'}).then(async response => {
-      if (response.ok && !response.redirected && (allowed.has(url.pathname) || request.mode === 'navigate')) await cache.put(key, response.clone());
+      if (response.ok && !response.redirected && (allowed.has(url.pathname) || request.mode === 'navigate')) {
+        let changed = false;
+        if (before) { try { changed = (await before.text()) !== (await response.clone().text()); } catch { changed = true; } }
+        await cache.put(key, response.clone());
+        if (changed) await self.clients.matchAll?.().then(list => list.forEach(client => client.postMessage({type:'FRESH_AVAILABLE'})));
+      }
       return response;
     });
     event.waitUntil(network.catch(() => {}));
+    if (saved) return saved;
+    // Кэша ещё нет (самый первый запуск): ждём сеть не дольше WAIT_MS.
     let timer;
     const timeout = new Promise(resolve => { timer = setTimeout(() => resolve(null), WAIT_MS); });
     try {
       const response = await Promise.race([network, timeout]);
       if (response && response.status < 500) return response;
-      const saved = await fallback();
-      if (saved) {
+      const old = await fallback();
+      if (old) {
         network.then(fresh => { if (fresh && fresh.ok) return self.clients.matchAll?.().then(list => list.forEach(client => client.postMessage({type:'FRESH_AVAILABLE'}))); }).catch(() => {});
-        return saved;
+        return old;
       }
       return response || await network;
     } catch { return await fallback() || Response.error(); }

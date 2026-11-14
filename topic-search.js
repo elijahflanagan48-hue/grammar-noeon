@@ -25,8 +25,8 @@ function tsRender(input) {
   const hits = tsIndex().map(item => {
     if (!words.every(w => item.text.includes(w))) return null;
     const label = tsNorm(item.label);
-    return { item, score: (label.startsWith(query) ? 0 : label.includes(query) ? 1 : 2) + (item.kind === 'section' ? -0.5 : 0) };
-  }).filter(Boolean).sort((a, b) => a.score - b.score).slice(0, 12).map(hit => hit.item);
+    return { item, score: label.startsWith(query) ? 0 : label.includes(query) ? 1 : 2 };
+  }).filter(Boolean).sort((a, b) => (a.item.kind === 'section' ? 0 : 1) - (b.item.kind === 'section' ? 0 : 1) || a.score - b.score).slice(0, 12).map(hit => hit.item);  // сначала крупные разделы, потом подтемы
   const sections = new Set(hits.map(hit => hit.section));
   grid?.querySelectorAll('[data-grammar-section]').forEach(card => card.hidden = !sections.has(card.dataset.grammarSection));
   box.hidden = false;
