@@ -7,6 +7,7 @@ const CM_HEAD = { // заголовки разделов правила, к ко
   older: 'Older и elder', further: 'Farther и further', than: 'Сравнительная степень и than', sup: 'Превосходная степень и группа',
   art: 'Артикли и определители', eq: 'Равенство и неравенство', too: 'Too и enough', less: 'Less и least', diff: 'Насколько велика разница',
   mult: 'Модификаторы равенства и кратность', grad: 'Постепенное изменение', link: 'Связанные изменения', fixed: 'Устойчивые сравнения',
+  prec: 'Точность сравнения и пропуски', limit: 'Отрицание и логические границы', scale: 'Пределы шкалы и контекст',
 };
 // Лестница: [positive, comparative, superlative, перевод, пример comparative, перевод, пример superlative, перевод, проверка, заметка?]
 const CM_STAIRS = [
@@ -127,13 +128,85 @@ const CM_TOOLS = [
   ]],
 ];
 
+// Дополнительные конструкции: [название, смысл, пример, перевод, проверка, заметка?, ловушка?, раздел правила?]
+const CM_MORE = {
+  than: [
+    ['than expected', 'чем ожидалось', 'The exam was easier than expected.', 'Экзамен был легче, чем ожидалось.', 'The trip was longer [than we expected|than we expected it|that we expected].', 'После than можно сократить предсказуемую часть: than (we) expected.', false, 'prec'],
+    ['than any other', 'чем любой другой', 'Ann is taller than any other girl in the class.', 'Анна выше любой другой девочки в классе.', 'Tom is faster than [any other runner|any runner of|other any runner].', 'Other обязательно: Ann тоже девочка в классе.', false, 'limit'],
+    ['than that of / those of', 'чем у (тот / те)', 'The population of Tokyo is larger than that of London.', 'Население Токио больше, чем население Лондона.', 'The streets here are wider than [those|that|them] in my town.', 'Сравниваем население с населением, а не с Лондоном. Those — для множественного.', false, 'prec'],
+    ['than I am / than I do', 'полная часть после than', 'She is more careful than I am. · He drives faster than I do.', 'Она осторожнее меня. · Он водит быстрее меня.', 'She speaks French better than [I do|I am|I does].', 'С be — than I am, с другим глаголом — than I do.', false, 'prec'],
+    ['more X than Y', 'скорее X, чем Y', 'He was more tired than angry.', 'Он был скорее уставшим, чем злым.', 'The film was [more sad than|sadder than|more sadder than] funny.', 'Два качества одного предмета — только more: more sad than funny.', false, 'scale'],
+  ],
+  sup: [
+    ['… of the week / year', 'самый за период', 'Monday is the busiest day of the week.', 'Понедельник — самый загруженный день недели.', 'It was the hottest day [of|in|from] the summer.', '', false, 'sup'],
+    ['the joint …', 'делят первое место', 'They were the joint fastest in the race.', 'Они разделили первое место в забеге.', 'Two teams were [the joint best|the both best|joint the best] this year.', '', false, 'sup'],
+    ['at its best', 'в лучшей форме', 'The city is at its most beautiful in May.', 'Город особенно красив в мае.', 'The garden is [at its best|at the best|in its best] in June.', 'Тот же предмет в разное время — без сравнения с другими.', false, 'art'],
+    ['Which is (the) best?', 'the можно опустить', 'Which route is (the) safest?', 'Какой маршрут самый безопасный?', 'Of all the routes, this one is [safest|the safer|most safe of].', 'После глагола-связки the иногда опускают.', false, 'art'],
+    ['a most + adj', 'очень (официально)', 'It was a most helpful reply.', 'Это был очень полезный ответ.', 'Thank you for [a most|the most a|a more] interesting talk.', 'A most — не «самый», а «весьма». Most + noun — «большинство»: most people.', false, 'art'],
+  ],
+  eq: [
+    ['just / exactly as … as', 'точно такой же', 'This box is exactly as wide as that one.', 'Эта коробка точно такой же ширины, как та.', 'My bag is [just as heavy as|just heavy as|as just heavy as] yours.', '', false, 'mult'],
+    ['almost / nearly as … as', 'почти такой же', 'He’s almost as tall as his father.', 'Он почти такого же роста, как отец.', 'The copy is [nearly as good as|nearly good as|as nearly better as] the original.', '', false, 'mult'],
+    ['not quite as … as', 'не совсем такой', 'The flat isn’t quite as big as the photos suggest.', 'Квартира не совсем такая большая, как на фото.', 'It’s [not quite as cheap as|not quite cheaper as|quite not as cheap as] I hoped.', '', false, 'mult'],
+    ['nowhere near as … as', 'далеко не такой', 'The sequel is nowhere near as good as the first film.', 'Продолжение и близко не такое хорошее, как первый фильм.', 'My English is [nowhere near as good as|nowhere as good near|not near as better as] yours.', '', false, 'mult'],
+    ['half as … as', 'вдвое меньше', 'The new phone is half as heavy as the old one.', 'Новый телефон вдвое легче старого.', 'This ticket is [half as expensive as|half expensive as|as half expensive as] that one.', 'Twice as … as — вдвое больше; half as … as — вдвое меньше.', false, 'mult'],
+    ['as + adj + a + noun + as', 'такой же … как', 'It isn’t as good a plan as yours.', 'Это не такой хороший план, как твой.', 'It’s [as practical a solution as|as a practical solution as|a as practical solution as] yours.', 'Порядок: as + прилагательное + a + существительное.', false, 'fixed'],
+  ],
+  diff: [
+    ['considerably / substantially', 'значительно', 'Prices are considerably higher this year.', 'Цены в этом году значительно выше.', 'The new model is [considerably faster|considerable faster|very faster].'],
+    ['still', 'ещё (сильнее)', 'The second test was hard, but the third was still harder.', 'Второй тест был трудным, а третий — ещё труднее.', 'Good — but this one is [still better|still more better|still best].'],
+    ['2 years older', 'точная разница', 'My sister is two years older than me.', 'Сестра старше меня на два года.', 'The bridge is [ten metres longer|longer ten metres|ten metres more long] than the old one.', 'Число + единица + comparative: ten centimetres taller.'],
+    ['marginally / a little', 'чуть-чуть', 'This route is marginally shorter.', 'Этот маршрут чуть-чуть короче.', 'Could you speak [a little louder|a little more loud|little louder]?'],
+  ],
+  too: [
+    ['too … to', 'слишком, чтобы', 'He’s too young to drive.', 'Он слишком молод, чтобы водить.', 'The box is [too heavy to lift|too heavy for lift|very heavy to lift].'],
+    ['… enough to', 'достаточно, чтобы', 'She’s old enough to vote.', 'Она достаточно взрослая, чтобы голосовать.', 'Is the water [warm enough to swim|enough warm to swim|warm enough for swim]?'],
+    ['… enough for', 'достаточно для', 'The door is wide enough for the piano.', 'Дверь достаточно широка для пианино.', 'The room is [big enough for|big enough to|enough big for] ten people.'],
+    ['sufficiently', 'достаточно (официально)', 'The results are sufficiently clear.', 'Результаты достаточно ясны.', 'The plan is not [sufficiently detailed|detailed sufficiently enough|sufficient detailed].'],
+    ['so … that / such a … that', 'так …, что', 'It was so cold that we stayed in. · It was such a cold day that we stayed in.', 'Было так холодно, что мы остались дома.', 'It was [such a long film|so long film|such long a film] that I fell asleep.', 'So + прилагательное, such a + прилагательное + существительное.', false, 'fixed'],
+  ],
+  grad: [
+    ['less and less', 'всё менее', 'The bus is less and less reliable.', 'Автобус всё менее надёжен.', 'I find the series [less and less interesting|lesser and lesser interesting|less and more interesting].'],
+  ],
+  link: [
+    ['the more …, the less …', 'чем больше…, тем меньше…', 'The more I read, the less I understand.', 'Чем больше читаю, тем меньше понимаю.', 'The more you spend, [the less you save|less you save|the fewer you save].'],
+    ['the sooner, the better', 'чем раньше, тем лучше', 'Call me back — the sooner, the better.', 'Перезвони — чем раньше, тем лучше.', 'Send it [the sooner, the better|sooner, better|the soon, the good].'],
+  ],
+  less: [
+    ['less than + amount', 'меньше чем', 'It takes less than ten minutes.', 'Это занимает меньше десяти минут.', 'It costs [less than|fewer than|lesser than] five pounds.', 'Время, деньги, расстояние — как одно целое: less than ten minutes.'],
+    ['the least … of', 'наименее из', 'It’s the least expensive of the three.', 'Это самый недорогой из трёх.', 'This is the [least difficult|less difficult|lesser difficult] of the tasks.'],
+  ],
+};
+const CM_EXTRA_ZONES = [
+  ['limit', 'Судейская: границы', 'limit', [
+    ['not taller than', 'не выше (≤)', 'He’s not taller than me — maybe the same.', 'Он не выше меня — может, такой же.', 'If A is not taller than B, A is [shorter or the same|always shorter|always taller].', 'Not taller = ниже или такой же. Shorter = строго ниже.'],
+    ['no more expensive than', 'не дороже', 'The new model is no more expensive than the old one.', 'Новая модель не дороже старой.', 'This hotel is [no more expensive than|no expensiver than|not more expensiver than] ours.'],
+    ['no less … than', 'не менее', 'Trains are no less reliable than planes.', 'Поезда не менее надёжны, чем самолёты.', 'She is [no less talented than|no less talented as|not less talented that] her sister.'],
+    ['at least / no less than', 'не меньше (≥)', 'You need at least 30 points to pass.', 'Нужно не меньше 30 баллов, чтобы сдать.', 'Bring [at least|at less|at the least of] two pens.', '30 входит: at least 30 = 30 и больше.'],
+    ['at most / no more than', 'не больше (≤)', 'The bag can weigh at most 10 kg.', 'Сумка может весить не больше 10 кг.', 'We have [at most|at the most of|at more] an hour.'],
+    ['not any + comparative', 'ничуть не', 'The instructions aren’t any clearer now.', 'Инструкция ничуть не стала понятнее.', 'The traffic isn’t [any better|any best|no better] today.', 'Не двойное отрицание: not any better или no better.'],
+  ]],
+  ['idiom', 'Крылатые фразы', 'fixed', [
+    ['the lesser of two evils', 'меньшее из двух зол', 'Staying at home was the lesser of two evils.', 'Остаться дома было меньшим злом.', 'We chose [the lesser|the less|the least] of two evils.'],
+    ['the more, the merrier', 'чем больше, тем веселее', 'Bring your friends — the more, the merrier!', 'Бери друзей — чем больше, тем веселее!', 'Come along! [The more, the merrier|More, merrier|The most, the merriest].'],
+    ['as fit as a fiddle', 'здоров как бык', 'At 80, my grandad is as fit as a fiddle.', 'В 80 лет дедушка здоров как бык.', 'Without glasses I’m as blind as [a bat|a bird|the bat].', 'Ещё: as busy as a bee, as cool as a cucumber, as light as a feather.'],
+    ['none the wiser', 'ничуть не лучше понимать', 'I read the instructions but I’m none the wiser.', 'Прочитал инструкцию, но понятнее не стало.', 'After his talk we were [none the wiser|none wiser|not the wiser].'],
+    ['all the more', 'тем более', 'That makes it all the more important.', 'Тем более это важно.', 'Her success is [all the more impressive|all more impressive|the all more impressive] because she started late.'],
+    ['not so much … as', 'не столько …, сколько', 'He wasn’t so much angry as disappointed.', 'Он был не столько зол, сколько разочарован.', 'It’s [not so much a job as|not so much job than|not as much a job than] a hobby.'],
+    ['more of a … than', 'скорее …, чем', 'It’s more of a problem than a solution.', 'Это скорее проблема, чем решение.', 'He’s [more of a friend than|more a friend of than|more of friend as] a teacher.'],
+    ['superior / preferable to', 'лучше, чем (с to)', 'The new model is superior to the old one.', 'Новая модель лучше старой.', 'Walking is preferable [to|than|from] driving in the city.', 'Senior, junior, superior, inferior, preferable — с to, не с than.', false, 'scale'],
+  ]],
+];
+CM_TOOLS.forEach(t => t[3].push(...(CM_MORE[t[0]] || [])));
+CM_TOOLS.splice(CM_TOOLS.length - 1, 0, ...CM_EXTRA_ZONES);
+
 /* ---------- раскладка: стадион ---------- */
 // Беговая дорожка: каждая дорожка — способ образования; в ряду — слово на старте (positive),
 // на отметке than (comparative) и на финише (superlative). Вокруг — пьедестал, фотофиниш, табло, планка…
 const CM_ROW = 100, CM_CHIP_W = 500, CM_CHIP_H = 70;
 const CM_ZONE_META = { // название зоны стадиона, эмодзи
   than: ['Забег двоих', '🏃'], sup: ['Пьедестал', '🏅'], eq: ['Фотофиниш', '📸'], diff: ['Табло', '📟'],
-  too: ['Прыжок в высоту', '🤸'], grad: ['Эстафета', '🔁'], link: ['Тренировка', '🏋️'], less: ['В хвосте забега', '🐢'], trap: ['Фальстарт', '🚩'],
+  too: ['Прыжок в высоту', '🤸'], limit: ['Судейская: границы', '⚖️'], idiom: ['Крылатые фразы трибун', '📣'], grad: ['Эстафета', '🔁'], link: ['Тренировка', '🏋️'], less: ['В хвосте забега', '🐢'], trap: ['Фальстарт', '🚩'],
 };
 function cmLayout() {
   const items = [], zones = [], lanes = [];
@@ -163,16 +236,12 @@ function cmLayout() {
     const [, , head, rows] = CM_TOOLS.find(t => t[0] === key), [title, icon] = CM_ZONE_META[key];
     const deco = key === 'sup' ? 330 : key === 'too' ? 250 : key === 'eq' ? 230 : 0;
     let iy = zy + 130 + deco;
-    rows.forEach(r => { push({ kind: 'tool', tool: key, head, x: zx + 30, y: iy, w: zw - 60, h: 92, name: r[0], ru: r[1], ex: r[2], exRu: r[3], check: r[4], note: r[5] || '', trap: !!r[6], groupTitle: title }); iy += 108; });
+    rows.forEach(r => { push({ kind: 'tool', tool: key, head: r[7] || head, x: zx + 30, y: iy, w: zw - 60, h: 92, name: r[0], ru: r[1], ex: r[2], exRu: r[3], check: r[4], note: r[5] || '', trap: !!r[6], groupTitle: title }); iy += 108; });
     const z = { kind: 'tool', tool: key, title, icon, x: zx, y: zy, w: zw, h: iy - zy + 20, deco }; zones.push(z); return z.h;
   };
-  const MX = LX + TW + GAP, MW = 1300;
-  let my = TOP;
-  ['sup', 'eq', 'diff', 'too'].forEach(k => { my += tool(k, MX, my, MW) + 60; });
-  const W = MX + MW + 120;
-  const BY = Math.max(hy, my) + GAP - 60, NC = 5, cw = (W - 2 * LX - (NC - 1) * 40) / NC; let bh = 0;
-  ['than', 'grad', 'link', 'less', 'trap'].forEach((k, i) => { bh = Math.max(bh, tool(k, LX + i * (cw + 40), BY, cw)); });
-  const H = BY + bh + 100;
+  const MX = LX + TW + GAP, NC = 3, cw = 1000, cols = Array(NC).fill(TOP);
+  ['sup', 'eq', 'diff', 'than', 'too', 'limit', 'idiom', 'link', 'less', 'grad', 'trap'].forEach(k => { const c = cols.indexOf(Math.min(...cols)); cols[c] += tool(k, MX + c * (cw + 40), cols[c], cw) + 50; });
+  const W = MX + NC * cw + (NC - 1) * 40 + 120, H = Math.max(hy, ...cols) + 100;
   return { items, zones, lanes, track, W, H, cols: { LX, MX } };
 }
 const CM = cmLayout();
@@ -220,9 +289,9 @@ function cmSpecial(it) {
     <text class="cm-ru" x="${x + 100}" y="${y + 94}">${cmEsc(it.ru)}</text></g>`;
 }
 function cmTool(it) {
-  const ex = it.ex.length > 40 ? it.ex.split(' · ')[0] : it.ex;
+  const ex0 = it.ex.split(' · ')[0], lim = it.w > 1100 ? 56 : 44, ex = ex0.length > lim ? ex0.slice(0, lim - 1).replace(/\s+\S*$/, '') + ' …' : ex0;
   return `<g class="cm-st cm-tool cm-t-${it.tool}${it.trap ? ' cm-trap' : ''}" data-st="${it.id}"><rect class="cm-tag" x="${it.x}" y="${it.y}" width="${it.w}" height="${it.h}" rx="18"/><rect class="cm-stripe" x="${it.x}" y="${it.y}" width="10" height="${it.h}" rx="5"/>
-    <text class="cm-tn" x="${it.x + 32}" y="${it.y + 42}">${cmEsc(it.name)}</text><text class="cm-tr" x="${it.x + 32}" y="${it.y + 74}">${cmEsc(it.ru)}</text>${it.w > 900 ? `<text class="cm-tx" x="${it.x + it.w * 0.42}" y="${it.y + 56}">${cmEsc(ex)}</text>` : ''}</g>`;
+    <text class="cm-tn" x="${it.x + 32}" y="${it.y + 42}">${cmEsc(it.name)}</text><text class="cm-tr" x="${it.x + 32}" y="${it.y + 74}">${cmEsc(it.ru)}</text>${it.w > 780 ? `<text class="cm-tx" x="${it.x + it.w * 0.46}" y="${it.y + 56}">${cmEsc(ex)}</text>` : ''}</g>`;
 }
 function cmDeco(z) {
   const x = z.x, y = z.y + 120, w = z.w, cx = x + w / 2;
