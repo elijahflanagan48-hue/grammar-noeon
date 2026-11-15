@@ -8,7 +8,7 @@ const NM_KINDS = {
   both: { label: 'два значения', title: 'Два значения', hint: 'на развес и поштучно — смысл разный' },
   pack: { label: 'упаковка', title: 'Упаковки', hint: 'делают неисчисляемое считаемым' },
   pl: { label: 'множественное', title: 'Множественное число', hint: 'как образовать' },
-  art: { label: 'ценник', title: 'Вход: ценники', hint: 'a / an, the или ничего' },
+  art: { label: 'ценник', title: 'Вход: ценники', hint: 'a / an, the или без артикля' },
   qty: { label: 'касса', title: 'Касса «Сколько?»', hint: 'many, much, few, little…' },
   poss: { label: 'чьё?', title: 'Витрина «Чьё?»', hint: '’s и of' },
   comp: { label: 'составные', title: 'Составные и группы', hint: 'bus stop, team is/are' },
