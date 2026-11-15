@@ -455,8 +455,9 @@ async function renderTheory(parts) {
     return;
   }
   if(slug==='nouns') {
-    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${nounsRuleHtml()}<a class="button primary theory-practice" href="#practice/nouns">Перейти к практике →</a></section></div>`;
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${typeof nounsMapHtml==='function'?nounsMapHtml():''}${nounsRuleHtml()}<a class="button primary theory-practice" href="#practice/nouns">Перейти к практике →</a></section></div>`;
     initialiseNounsRule(document.querySelector('.theory-content'));
+    if(typeof initialiseNounsMap==='function')initialiseNounsMap(document.querySelector('.theory-content'));
     document.title='Nouns — Grammar NOEON';openedTheory=slug;
     if(parts[2])requestAnimationFrame(()=>revealNounsAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
     return;
