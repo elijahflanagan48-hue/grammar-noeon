@@ -481,8 +481,9 @@ async function renderTheory(parts) {
   const response = await fetch(entry.file);
   if (!response.ok) throw new Error("Не удалось загрузить теорию");
   const markdown = await response.text();
-  document.querySelector(".theory-content").innerHTML = `${slug === "foundations" ? tenseMapHtml() : ""}<article>${["comparison","nouns"].includes(slug) ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>${slug === "foundations" ? tenseToolsHtml() : ""}<a class="button theory-practice" href="#practice/${grammarSectionForTheory(slug)}">Перейти к практике →</a>`;
+  document.querySelector(".theory-content").innerHTML = `${slug === "foundations" ? tenseMapHtml() : ""}${slug === "comparison" && typeof comparisonMapHtml === "function" ? comparisonMapHtml() : ""}<article>${["comparison","nouns"].includes(slug) ? comparisonRuleHtml(markdown) : markdownToHtml(markdown)}</article>${slug === "foundations" ? tenseToolsHtml() : ""}<a class="button theory-practice" href="#practice/${grammarSectionForTheory(slug)}">Перейти к практике →</a>`;
   if (slug === "foundations") { initialiseTenseMap(); initialiseTenseTools(document.querySelector(".theory-content")); }
+  if (slug === "comparison" && typeof initialiseComparisonMap === "function") initialiseComparisonMap(document.querySelector(".theory-content"));
   document.title = `${entry.title} — Grammar NOEON`;
   openedTheory = slug;
   if (parts[2]) requestAnimationFrame(() => scrollTheory(parts));

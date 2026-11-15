@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v88';
+const CACHE = 'grammar-v89';
 const FILES = [
   "./",
   "styles.css",
@@ -27,6 +27,8 @@ const FILES = [
   "infinitive-map.js",
   "nouns-map.js",
   "nouns-map.css",
+  "comparison-map.js",
+  "comparison-map.css",
   "infinitive-map.css",
   "infinitive-gerund.css",
   "content/theory/11-infinitive-gerund-rule.html",
