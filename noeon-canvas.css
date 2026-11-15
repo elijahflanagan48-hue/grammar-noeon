@@ -37,3 +37,8 @@ html.nc-lock{overflow:hidden}
   .nc-panel::before{display:block}
 }
 @media(max-height:520px){.nc-help{display:none}.nc-mini{width:96px}.nc.is-full .nc-panel{top:8px;max-height:none}}
+
+/* Во время перемещения: без наведения и без переходов у объектов карты — меньше работы на кадр */
+.nc.is-moving .nc-world{pointer-events:none}
+.nc.is-moving .nc-world *{transition:none!important}
+.nc-world{contain:layout style;backface-visibility:hidden}

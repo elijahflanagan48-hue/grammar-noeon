@@ -274,8 +274,12 @@ const NM_DATA = {
 };
 
 /* ---------- раскладка ---------- */
+const NM_ICON = { apple: '🍎', banana: '🍌', egg: '🥚', potato: '🥔', tomato: '🍅', carrot: '🥕', orange: '🍊', chair: '🪑', phone: '📱', bag: '👜', key: '🔑', book: '📖', coin: '🪙', ticket: '🎫', job: '💼', task: '📝', lesson: '🏫', exam: '✍️', project: '📁', meeting: '🤝', idea: '💡', problem: '⚠️', mistake: '❌', question: '❓', opinion: '💬', suggestion: '🙋', fact: '📌',
+  water: '💧', milk: '🥛', juice: '🧃', oil: '🫒', soup: '🍲', petrol: '⛽', rice: '🍚', sugar: '🍬', flour: '🌾', salt: '🧂', bread: '🍞', cheese: '🧀', meat: '🥩', butter: '🧈', pasta: '🍝', fruit: '🍇', wood: '🪵', plastic: '♻️', metal: '🔩', cotton: '🧵', gold: '🥇', sand: '🏖️', air: '🌬️',
+  advice: '🗣️', information: 'ℹ️', knowledge: '🧠', progress: '📈', research: '🔬', evidence: '🔍', help: '🆘', fun: '🎉', luck: '🍀', patience: '⏳', permission: '✅', behaviour: '🙂', news: '📰', furniture: '🛋️', luggage: '🧳', equipment: '🏋️', homework: '📚', money: '💰', traffic: '🚦', weather: '🌦️', accommodation: '🏠', music: '🎵', software: '💻', rubbish: '🗑️',
+  paper: '📄', glass: '🥃', time: '⏰', experience: '🌟', chicken: '🍗', coffee: '☕', room: '🚪', hair: '💇', light: '💡', work: '🛠️', business: '🏢' };
 const NM_TAG_H = 66, NM_GAP = 16, NM_FS = 27;
-const nmTagW = (s, sub = '') => Math.max(110, Math.max(s.length, sub.length * 0.82) * NM_FS * 0.56 + 52);
+const nmTagW = (s, sub = '', icon = false) => Math.max(110, Math.max(s.length, sub.length * 0.82) * NM_FS * 0.56 + 52 + (icon ? 40 : 0));
 function nmLayout() {
   const items = [], zones = [], shelves = [];
   const push = item => { item.id = 'n' + items.length; items.push(item); return item; };
@@ -285,7 +289,7 @@ function nmLayout() {
     groups.forEach(g => {
       const title = g.title, rows = [[]]; let rowW = 0;
       g.items.forEach(it => {
-        const tw = nmTagW(it.name, it.sub);
+        const tw = nmTagW(it.name, it.sub, !it.sub && !!NM_ICON[it.name] && (kind === 'cnt' || kind === 'unc' || kind === 'both'));
         if (rowW + tw > w - 60 && rows.at(-1).length) { rows.push([]); rowW = 0; }
         rows.at(-1).push([it, tw]); rowW += tw + NM_GAP;
       });
@@ -350,11 +354,13 @@ function nmPrice(it) {
 function nmTag(it) {
   const top = it.kind === 'qty' ? `nm-with-${it.with}` : '';
   const sub = it.sub || '', price = nmPrice(it);
-  const cx = it.x + it.w / 2;
+  const icon = !sub && (it.kind === 'cnt' || it.kind === 'unc' || it.kind === 'both') ? NM_ICON[it.name] : '';
+  const cx = it.x + it.w / 2 + (icon ? 18 : 0);
   return `<g class="nm-st nm-k-${it.kind} ${top}${it.trap ? ' nm-trap' : ''}" data-st="${it.id}" tabindex="-1">
     <rect class="nm-tag" x="${it.x}" y="${it.y}" width="${it.w}" height="${it.h}" rx="14"/>
     <rect class="nm-stripe" x="${it.x}" y="${it.y}" width="10" height="${it.h}" rx="5"/>
     <circle class="nm-hole" cx="${it.x + it.w - 16}" cy="${it.y + 16}" r="5"/>
+    ${icon ? `<text class="nm-icon" x="${it.x + 36}" y="${it.y + 44}" text-anchor="middle">${icon}</text>` : ''}
     <text class="nm-name${sub ? ' has-sub' : ''}" x="${cx + 4}" y="${it.y + (sub ? 30 : 43)}" text-anchor="middle">${nmEsc(it.name)}</text>
     ${sub ? `<text class="nm-sub" x="${cx + 4}" y="${it.y + 56}" text-anchor="middle">${nmEsc(sub)}</text>` : ''}
     ${price ? `<text class="nm-price" x="${cx + 4}" y="${it.y + it.h + 30}" text-anchor="middle">${nmEsc(price)}</text>` : ''}
@@ -387,7 +393,7 @@ function nounsMapSvg() {
     ${fascia}${NM.zones.map(nmZone).join('')}${bridge}${door}${NM.shelves.map(nmShelf).join('')}${NM.items.map(nmTag).join('')}</svg>`;
 }
 function nounsMapHtml() {
-  const modes = `<span class="nm-modes" role="group" aria-label="Режим карты"><button type="button" data-nm-mode="all" aria-pressed="true">Отделы</button><button type="button" data-nm-mode="trap" aria-pressed="false">Ловушки</button><button type="button" data-nm-mode="price" aria-pressed="false">Ценники</button><button type="button" data-nm-mode="game" aria-pressed="false">Список покупок</button></span>`;
+  const modes = `<span class="nm-modes" role="group" aria-label="Режим карты"><button type="button" data-nm-mode="all" aria-pressed="true">Отделы</button><button type="button" data-nm-mode="trap" aria-pressed="false">Ловушки</button><button type="button" data-nm-mode="price" aria-pressed="false">Ценники</button><button type="button" data-nm-mode="game" aria-pressed="false">Игры</button></span>`;
   const search = `<label class="nm-search"><span class="sr-only">Найти слово на карте</span><input type="search" placeholder="Найти: advice, деньги, mice…" autocomplete="off" spellcheck="false"><span class="nc-results nm-results" hidden></span></label>`;
   const key = Object.entries({ cnt: 'поштучно', unc: 'на развес', both: 'два значения', pack: 'упаковки', pl: 'множественное', art: 'артикли', qty: 'количество', poss: 'чьё?', comp: 'составные' }).map(([k, v]) => `<li class="nm-c-${k}">${v}</li>`).join('');
   return `<section class="nm-wrap" id="nouns-market" aria-labelledby="nm-title">
@@ -463,7 +469,7 @@ function initialiseNounsMap(root) {
   const api = initialiseNoeonCanvas(box, {
     W: NM.W, H: NM.H, signal, minK: 0.08, maxK: 1.6,
     onZoom: k => { box.classList.toggle('lod-low', k < 0.3); box.classList.toggle('lod-mid', k >= 0.3 && k < 0.5); },
-    onTap: e => { const st = e.target?.closest?.('[data-st]'); if (st) { if (gameState.on && !gameState.answered) return; open(st.dataset.st); } else if (!panel.hidden) close(); },
+    onTap: e => { const st = e.target?.closest?.('[data-st]'); if (st) { if (gameState.on && gameState.kind && !gameState.answered) return; open(st.dataset.st); st.classList.remove('nm-jump'); void st.getBBox(); st.classList.add('nm-jump'); } else if (!panel.hidden) close(); },
     start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.3; v.x = -NM.cols.AX * 0.3 + 8; v.y = -40; apply(); } else fit(); },
   });
   panel.addEventListener('click', e => {
@@ -487,36 +493,89 @@ function initialiseNounsMap(root) {
   }, { signal });
   input.addEventListener('keydown', e => { if (e.key === 'Enter') results.querySelector('[data-go]')?.click(); if (e.key === 'Escape') { input.value = ''; results.hidden = true; } }, { signal });
   results.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (!b) return; results.hidden = true; input.blur(); open(b.dataset.go); }, { signal });
-  // игра «Список покупок»: 10 слов — на какую полку?
-  const gameState = { on: false, list: [], i: 0, log: [], answered: false };
-  const pool = NM.items.filter(it => it.kind === 'cnt' || it.kind === 'unc' || it.kind === 'both');
-  const shelfOf = it => it.kind;
+  // ---------- игры ----------
+  // Три игры по 10 вопросов: «Разложи по полкам», «Упакуй товар», «Касса: найди ошибку».
+  // Верный ответ улетает в тележку, серия правильных ответов растёт, лучший результат запоминается.
+  const gameState = { on: false, kind: null, list: [], i: 0, log: [], answered: false, streak: 0 };
+  const hud = document.createElement('div'); hud.className = 'nc-ui nm-hud'; hud.hidden = true; box.append(hud);
+  const best = { get: k => { try { return +localStorage.getItem('nm-best-' + k) || 0; } catch { return 0; } }, set: (k, v) => { try { localStorage.setItem('nm-best-' + k, v); } catch {} } };
+  const renderHud = () => { const ok = gameState.log.filter(r => r.ok).length; hud.innerHTML = `<span class="nm-cart" aria-hidden="true">🛒</span><b>${ok}</b><span class="nm-hud-s">${gameState.streak > 1 ? `серия ×${gameState.streak}` : 'в тележке'}</span>`; };
   const shelfName = { cnt: 'Поштучно', unc: 'На развес', both: 'Два значения' };
+  const shopPool = NM.items.filter(it => it.kind === 'cnt' || it.kind === 'unc' || it.kind === 'both');
+  const packItems = NM.items.filter(it => it.kind === 'pack');
+  const PACK_GROUP = { piece: 'a', game: 'a', bottle: 'l', glass: 'l', cup: 'l', carton: 'l', can: 'l', bowl: 'l', jar: 'l', slice: 's', loaf: 's', kilo: 's', bag: 's', pinch: 's', bar: 's', sheet: 's', grain: 's' };
+  const PACK_PL = { piece: 'pieces', game: 'games', bottle: 'bottles', glass: 'glasses', cup: 'cups', carton: 'cartons', can: 'cans', bowl: 'bowls', jar: 'jars', slice: 'slices', loaf: 'loaves', kilo: 'kilos', bag: 'bags', pinch: 'pinches', bar: 'bars', sheet: 'sheets', grain: 'grains' };
+  const packOf = it => { const [, cont, , ...rest] = it.name.split(' '); return { cont, noun: rest.join(' ') }; };
+  const GAMES = {
+    shelf: { title: 'Разложи по полкам', icon: '🧺', about: 'поштучно, на развес или два значения?', pool: () => shopPool,
+      ask: it => ({ q: `Куда положить <b>${nmEsc(it.name)}</b>?`, opts: ['cnt', 'unc', 'both'].map(k => ({ v: k, t: shelfName[k], cls: 'nm-c-' + k })), right: it.kind,
+        why: it.kind === 'cnt' ? `${nmArticle(it.name)} ${it.name}, ${nmPlural(it.name)}` : it.kind === 'unc' ? `some ${it.name}, ${NM_PACK[it.name] || 'a piece of ' + it.name}` : `${it.name} — ${it.u[0]}; ${nmArticle(it.name)} ${it.name} — ${it.c[0]}`, open: it.id, label: it.name }) },
+    pack: { title: 'Упакуй товар', icon: '📦', about: 'бутылка, кусок или плитка?', pool: () => packItems,
+      ask: it => { const { cont, noun } = packOf(it), group = PACK_GROUP[cont];
+        const wrong = nmShuffle(Object.keys(PACK_GROUP).filter(c => PACK_GROUP[c] !== group)).slice(0, 2);
+        return { q: `a <span class="nm-gap">___</span> of <b>${nmEsc(noun)}</b>`, opts: nmShuffle([cont, ...wrong]).map(c => ({ v: c, t: c, cls: 'nm-c-pack' })), right: cont, why: `${it.name} — ${it.ru}`, open: it.id, label: it.name }; } },
+    till: { title: 'Касса: найди ошибку', icon: '🧾', about: 'кассир пробил с ошибкой — исправьте', pool: () => packItems.filter(it => !/chess/.test(it.name)),
+      ask: it => { const { cont, noun } = packOf(it), pl = PACK_PL[cont];
+        const right = `two ${pl} of ${noun}`, w1 = /s$/.test(noun) ? `two ${noun}` : `two ${noun}s`, w2 = `two ${cont} of ${noun}s`;
+        return { q: `<span class="nm-till">2 × <s>${nmEsc(w1)}</s></span><br>Как пробить правильно?`, opts: nmShuffle([right, w1 === right ? `two ${noun}` : `${nmArticle(noun)} ${noun}s`, w2]).map(t => ({ v: t, t, cls: 'nm-c-unc' })), right,
+          why: `${noun} — на развес, считаем упаковками: ${right}`, open: it.id, label: right }; } },
+  };
+  const menu = () => {
+    gameState.kind = null; hud.hidden = true; close();
+    game.innerHTML = `<p class="nm-g-h">Игры супермаркета</p><div class="nm-g-menu">${Object.entries(GAMES).map(([k, g]) => `<button type="button" data-game="${k}"><span class="nm-g-ic" aria-hidden="true">${g.icon}</span><span><b>${g.title}</b><small>${g.about}${best.get(k) ? ` · рекорд ${best.get(k)}/10` : ''}</small></span></button>`).join('')}</div><button type="button" class="nm-g-end">Выйти из игр</button>`;
+  };
   const ask = () => {
-    const it = gameState.list[gameState.i]; gameState.answered = false;
-    game.innerHTML = `<p class="nm-g-h">Список покупок · ${gameState.i + 1} из ${gameState.list.length}</p><p class="nm-g-q">Куда положить <b>${nmEsc(it.name)}</b>?</p><div class="nm-g-o">${['cnt', 'unc', 'both'].map(k => `<button type="button" data-g="${k}" class="nm-c-${k}">${shelfName[k]}</button>`).join('')}</div>`;
+    const G = GAMES[gameState.kind], it = gameState.list[gameState.i], q = G.ask(it); gameState.q = q; gameState.answered = false;
+    game.innerHTML = `<div class="nm-g-top"><p class="nm-g-h">${G.icon} ${G.title}</p><div class="nm-g-bar" aria-hidden="true"><i style="width:${gameState.i * 10}%"></i></div><p class="nm-g-n">${gameState.i + 1} / ${gameState.list.length}</p></div>
+      <p class="nm-g-q">${q.q}</p><div class="nm-g-o">${q.opts.map(o => `<button type="button" data-g="${nmEsc(o.v)}" class="${o.cls}">${nmEsc(o.t)}</button>`).join('')}</div>`;
+    game.classList.remove('nm-shake', 'nm-pop');
+  };
+  const flyToCart = (from) => {
+    const r = box.getBoundingClientRect(), f = from.getBoundingClientRect(), h = hud.getBoundingClientRect();
+    const chip = document.createElement('span'); chip.className = 'nm-fly'; chip.textContent = from.textContent; box.append(chip);
+    const x0 = f.left - r.left + f.width / 2, y0 = f.top - r.top + f.height / 2, x1 = h.left - r.left + 24, y1 = h.top - r.top + h.height / 2;
+    chip.style.left = x0 + 'px'; chip.style.top = y0 + 'px';
+    const anim = chip.animate([{ transform: 'translate(-50%,-50%) scale(1)', opacity: 1 }, { transform: `translate(calc(-50% + ${(x1 - x0) / 2}px), calc(-50% + ${(y1 - y0) / 2 - 80}px)) scale(.9)`, opacity: 1, offset: .5 }, { transform: `translate(calc(-50% + ${x1 - x0}px), calc(-50% + ${y1 - y0}px)) scale(.3)`, opacity: .2 }], { duration: 650, easing: 'cubic-bezier(.3,.7,.4,1)' });
+    anim.onfinish = () => { chip.remove(); hud.classList.remove('nm-bump'); void hud.offsetWidth; hud.classList.add('nm-bump'); };
   };
   const receipt = () => {
-    const ok = gameState.log.filter(r => r.ok).length;
-    game.innerHTML = `<div class="nm-receipt"><p class="nm-r-h">ЧЕК № ${String(Math.floor(Math.random() * 9000) + 1000)}</p>${gameState.log.map(r => `<p class="nm-r-row ${r.ok ? 'ok' : 'bad'}"><span>${nmEsc(r.name)}</span><i></i><b>${r.ok ? '✓' : '✗ ' + nmEsc(shelfName[r.right].toLowerCase())}</b></p>`).join('')}<p class="nm-r-total"><span>ИТОГО</span><i></i><b>${ok} из ${gameState.log.length}</b></p><p class="nm-r-thanks">${ok === gameState.log.length ? 'Идеальная покупка!' : ok >= 7 ? 'Хорошо! Ошибки можно найти на карте.' : 'Загляните в отделы ещё раз.'}</p></div><div class="nm-g-o"><button type="button" class="nm-g-again">Ещё список</button><button type="button" class="nm-g-end">Выйти</button></div>`;
+    const G = GAMES[gameState.kind], ok = gameState.log.filter(r => r.ok).length, rec = ok > best.get(gameState.kind);
+    if (rec) best.set(gameState.kind, ok);
+    const stars = ok === 10 ? '★★★' : ok >= 8 ? '★★☆' : ok >= 5 ? '★☆☆' : '☆☆☆';
+    game.innerHTML = `<div class="nm-receipt"><p class="nm-r-h">${G.icon} ЧЕК № ${String(Math.floor(Math.random() * 9000) + 1000)}</p><p class="nm-r-sub">${nmEsc(G.title)}</p>${gameState.log.map(r => `<p class="nm-r-row ${r.ok ? 'ok' : 'bad'}"><span>${nmEsc(r.label)}</span><i></i><b>${r.ok ? '✓' : '✗'}</b></p>`).join('')}<p class="nm-r-total"><span>ИТОГО</span><i></i><b>${ok} из ${gameState.log.length}</b></p><p class="nm-r-stars">${stars}</p><p class="nm-r-thanks">${rec ? 'Новый рекорд! ' : ''}${ok === 10 ? 'Идеальная покупка!' : ok >= 7 ? 'Хорошо! Ошибки можно найти на карте.' : 'Загляните в отделы ещё раз.'}</p></div><div class="nm-g-o"><button type="button" class="nm-g-again">Ещё раз</button><button type="button" class="nm-g-menu-b">Другая игра</button></div>`;
+    if (ok === 10) confetti();
   };
-  const startGame = () => { gameState.list = nmShuffle(pool).slice(0, 10); gameState.i = 0; gameState.log = []; close(); ask(); };
+  const confetti = () => {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const colors = ['var(--nm-cnt)', 'var(--nm-unc)', 'var(--nm-both)', 'var(--nm-pack)', 'var(--nm-qty)'];
+    for (let i = 0; i < 40; i++) {
+      const p = document.createElement('i'); p.className = 'nm-confetti'; p.style.background = colors[i % colors.length]; p.style.left = (10 + Math.random() * 80) + '%'; box.append(p);
+      p.animate([{ transform: 'translateY(-20px) rotate(0)', opacity: 1 }, { transform: `translate(${(Math.random() - .5) * 160}px, ${box.clientHeight * (.6 + Math.random() * .4)}px) rotate(${Math.random() * 720}deg)`, opacity: 0 }], { duration: 1400 + Math.random() * 900, easing: 'cubic-bezier(.2,.6,.4,1)' }).onfinish = () => p.remove();
+    }
+  };
+  const startGame = kind => { gameState.kind = kind; gameState.list = nmShuffle(GAMES[kind].pool()).slice(0, 10); gameState.i = 0; gameState.log = []; gameState.streak = 0; close(); hud.hidden = false; renderHud(); ask(); };
   game.addEventListener('click', e => {
     if (e.target.closest('.nm-g-end')) { setMode('all'); return; }
-    if (e.target.closest('.nm-g-again')) { startGame(); return; }
+    const pick = e.target.closest('[data-game]'); if (pick) { startGame(pick.dataset.game); return; }
+    if (e.target.closest('.nm-g-again')) { startGame(gameState.kind); return; }
+    if (e.target.closest('.nm-g-menu-b')) { menu(); return; }
     if (e.target.closest('.nm-g-next')) { gameState.i++; close(); if (gameState.i >= gameState.list.length) receipt(); else ask(); return; }
     const b = e.target.closest('[data-g]'); if (!b || gameState.answered) return;
-    const it = gameState.list[gameState.i], right = shelfOf(it), ok = b.dataset.g === right; gameState.answered = true;
-    gameState.log.push({ name: it.name, ok, right });
-    const why = it.kind === 'cnt' ? `${nmArticle(it.name)} ${it.name}, ${nmPlural(it.name)}` : it.kind === 'unc' ? `some ${it.name}, ${NM_PACK[it.name] || 'a piece of ' + it.name}` : `${it.name} — ${it.u[0]}; ${nmArticle(it.name)} ${it.name} — ${it.c[0]}`;
-    game.querySelector('.nm-g-o').innerHTML = `<p class="nm-g-r ${ok ? 'ok' : 'bad'}">${ok ? '✓ Верно' : '✗ Нет, ' + nmEsc(shelfName[right].toLowerCase())}: ${nmEsc(why)}</p><button type="button" class="nm-g-next">${gameState.i + 1 < gameState.list.length ? 'Дальше →' : 'Получить чек'}</button>`;
-    open(it.id);
+    const q = gameState.q, ok = b.dataset.g === q.right; gameState.answered = true;
+    gameState.streak = ok ? gameState.streak + 1 : 0;
+    gameState.log.push({ label: q.label, ok });
+    game.querySelectorAll('[data-g]').forEach(x => { x.disabled = true; if (x.dataset.g === q.right) x.classList.add('right'); });
+    if (ok) { b.classList.add('right'); flyToCart(b); game.classList.add('nm-pop'); } else { b.classList.add('wrong'); game.classList.add('nm-shake'); try { navigator.vibrate?.(30); } catch {} }
+    renderHud();
+    const st = svg.querySelector(`[data-st="${q.open}"]`); st?.classList.remove('nm-jump'); void st?.getBBox?.(); st?.classList.add(ok ? 'nm-jump' : 'nm-wobble');
+    game.insertAdjacentHTML('beforeend', `<p class="nm-g-r ${ok ? 'ok' : 'bad'}">${ok ? (gameState.streak > 2 ? `✓ Верно! Серия ×${gameState.streak}` : '✓ Верно') : '✗ Нет'}: ${nmEsc(q.why)}</p><button type="button" class="nm-g-next">${gameState.i + 1 < gameState.list.length ? 'Дальше →' : 'Получить чек'}</button>`);
+    open(q.open);
   }, { signal });
   const setMode = m => {
     box.querySelectorAll('[data-nm-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.nmMode === m)));
     box.classList.toggle('nm-mode-trap', m === 'trap'); box.classList.toggle('nm-mode-price', m === 'price');
     gameState.on = m === 'game'; game.hidden = !gameState.on; box.classList.toggle('nm-mode-game', gameState.on);
-    if (gameState.on) startGame(); else gameState.answered = false;
+    if (gameState.on) menu(); else { gameState.answered = false; hud.hidden = true; }
     if (m === 'trap') api.fit();
   };
   box.addEventListener('click', e => { const m = e.target.closest('[data-nm-mode]'); if (m) setMode(m.dataset.nmMode); }, { signal });

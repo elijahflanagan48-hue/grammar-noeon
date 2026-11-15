@@ -23,17 +23,28 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
   const clampK = k => Math.min(maxK, Math.max(minK, k));
   // Не даём карте уехать за экран: всегда видна полоса не меньше margin.
   const clamp = () => {
-    const bw = box.clientWidth, bh = box.clientHeight, mw = Math.min(margin, bw / 3), mh = Math.min(margin, bh / 3);
+    const bw = dims.bw || box.clientWidth, bh = dims.bh || box.clientHeight, mw = Math.min(margin, bw / 3), mh = Math.min(margin, bh / 3);
     v.x = Math.min(bw - mw, Math.max(mw - W * v.k, v.x)); v.y = Math.min(bh - mh, Math.max(mh - H * v.k, v.y));
   };
+  // Размеры холста и миникарты кешируются (обновляет ResizeObserver): во время жестов не читаем раскладку.
+  const dims = { bw: 0, bh: 0, mw: 0 };
+  const measure = () => { dims.bw = box.clientWidth; dims.bh = box.clientHeight; dims.mw = mini.clientWidth; };
+  let lastK = -1;
   const apply = () => {
+    if (!dims.bw) measure();
     clamp();
     world.style.transform = `translate3d(${v.x}px,${v.y}px,0) scale(${v.k})`;
-    onZoom?.(v.k);
-    const m = mini.clientWidth / W, bw = box.clientWidth, bh = box.clientHeight;
+    if (v.k !== lastK) { lastK = v.k; onZoom?.(v.k); }
+    const m = dims.mw / W, bw = dims.bw, bh = dims.bh;
     mini.style.height = H * m + 'px';
     viewEl.style.cssText = `left:${(-v.x / v.k) * m}px;top:${(-v.y / v.k) * m}px;width:${(bw / v.k) * m}px;height:${(bh / v.k) * m}px`;
   };
+  // Жесты присылают события чаще кадров: собираем их и рисуем один раз за кадр.
+  let frame = 0;
+  const schedule = () => { if (!frame) frame = requestAnimationFrame(() => { frame = 0; apply(); }); };
+  // Во время движения карта не реагирует на наведение и не пересчитывает стили объектов.
+  let movingTimer = 0;
+  const moving = () => { box.classList.add('is-moving'); clearTimeout(movingTimer); movingTimer = setTimeout(() => box.classList.remove('is-moving'), 140); };
   const stop = () => { cancelAnimationFrame(anim); cancelAnimationFrame(inertia); anim = inertia = 0; };
   // Плавный переход к виду (x, y, k) по кривой ease-out; миникарта и границы обновляются на каждом кадре.
   const animateTo = (tx, ty, tk, ms = 420) => {
@@ -41,14 +52,14 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const step = now => {
       const p = reduce ? 1 : Math.min(1, (now - t0) / ms), e = 1 - Math.pow(1 - p, 3);
-      v.k = s.k + (tk - s.k) * e; v.x = s.x + (tx - s.x) * e; v.y = s.y + (ty - s.y) * e; apply();
+      v.k = s.k + (tk - s.k) * e; v.x = s.x + (tx - s.x) * e; v.y = s.y + (ty - s.y) * e; apply(); moving();
       if (p < 1) anim = requestAnimationFrame(step); else anim = 0;
     };
     anim = requestAnimationFrame(step);
   };
-  const zoomAt = (cx, cy, k2, smooth = false) => {
+  const zoomAt = (cx, cy, k2, smooth = false, defer = false) => {
     k2 = clampK(k2); const x = cx - (cx - v.x) * (k2 / v.k), y = cy - (cy - v.y) * (k2 / v.k);
-    if (smooth) animateTo(x, y, k2, 260); else { v.x = x; v.y = y; v.k = k2; apply(); }
+    if (smooth) animateTo(x, y, k2, 260); else { v.x = x; v.y = y; v.k = k2; if (defer) { moving(); schedule(); } else apply(); }
   };
   const fitView = () => { const bw = box.clientWidth, bh = box.clientHeight, k = clampK(Math.min(bw / W, bh / H) * 0.97); return [(bw - W * k) / 2, (bh - H * k) / 2, k]; };
   const fit = (smooth = true) => { const [x, y, k] = fitView(); if (smooth) animateTo(x, y, k); else { v.x = x; v.y = y; v.k = k; apply(); } };
@@ -68,11 +79,11 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     box.classList.toggle('is-full', on); document.documentElement.classList.toggle('nc-lock', on);
     const b = box.querySelector('[data-nc-full]'); b.querySelector('.nc-full-i').textContent = on ? '✕' : '⛶'; b.querySelector('.nc-full-t').textContent = on ? 'Закрыть' : 'На весь экран';
     b.setAttribute('aria-label', on ? 'Выйти из полноэкранного режима' : 'На весь экран');
-    requestAnimationFrame(() => { v.x = box.clientWidth / 2 - cx * v.k; v.y = box.clientHeight / 2 - cy * v.k; apply(); box.focus({ preventScroll: true }); setActive(true); });
+    requestAnimationFrame(() => { measure(); v.x = box.clientWidth / 2 - cx * v.k; v.y = box.clientHeight / 2 - cy * v.k; apply(); box.focus({ preventScroll: true }); setActive(true); });
     if (!on) box.scrollIntoView({ block: 'nearest' });
   };
   // Указатели: перемещение (с инерцией), щипок, тапы.
-  const ptrs = new Map(); let moved = 0, downAt = 0, pinch = null, samples = [], lastTap = { t: 0, x: 0, y: 0 }, downTarget = null;
+  const ptrs = new Map(); let moved = 0, downAt = 0, pinch = null, samples = [], lastTap = { t: 0, x: 0, y: 0 }, downTarget = null, downPt = null, slop = 6;
   const local = e => { const r = box.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; };
   const pair = () => { const [a, b] = [...ptrs.values()]; return { d: Math.hypot(a.x - b.x, a.y - b.y), mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2 }; };
   box.addEventListener('pointerdown', e => {
@@ -80,7 +91,7 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     if (e.pointerType === 'mouse' && e.button !== 0) return;
     stop(); setActive(true);
     const p = local(e); ptrs.set(e.pointerId, p);
-    if (ptrs.size === 1) { moved = 0; downAt = performance.now(); downTarget = e.target; samples = [{ ...p, t: downAt }]; }
+    if (ptrs.size === 1) { moved = 0; downAt = performance.now(); downTarget = e.target; downPt = p; slop = e.pointerType === 'mouse' ? 5 : 12; samples = [{ ...p, t: downAt }]; }
     if (ptrs.size === 2) { pinch = pair(); moved = 99; }
   }, { signal });
   box.addEventListener('pointermove', e => {
@@ -88,13 +99,14 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     const prev = ptrs.get(e.pointerId), p = local(e); ptrs.set(e.pointerId, p);
     if (ptrs.size >= 2) {
       const q = pair();
-      if (pinch) { v.x += q.mx - pinch.mx; v.y += q.my - pinch.my; zoomAt(q.mx, q.my, v.k * q.d / pinch.d); }
+      if (pinch) { v.x += q.mx - pinch.mx; v.y += q.my - pinch.my; zoomAt(q.mx, q.my, v.k * q.d / pinch.d, false, true); }
       pinch = q; return;
     }
-    moved += Math.abs(p.x - prev.x) + Math.abs(p.y - prev.y);
-    if (moved > 6) {
-      if (!box.classList.contains('is-drag')) { box.classList.add('is-drag'); try { box.setPointerCapture(e.pointerId); } catch {} }
-      v.x += p.x - prev.x; v.y += p.y - prev.y; apply();
+    // Тап или перетаскивание решает расстояние от точки касания, а не сумма дрожаний пальца.
+    if (moved <= slop) moved = Math.hypot(p.x - downPt.x, p.y - downPt.y);
+    if (moved > slop) {
+      if (!box.classList.contains('is-drag')) { box.classList.add('is-drag'); try { box.setPointerCapture(e.pointerId); } catch {} moved = 99; }
+      v.x += p.x - prev.x; v.y += p.y - prev.y; moving(); schedule();
       const now = performance.now(); samples.push({ ...p, t: now }); samples = samples.filter(s => now - s.t < 90);
     }
   }, { signal });
@@ -106,8 +118,17 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     pinch = null; box.classList.remove('is-drag');
     if (e.type === 'pointercancel') return;
     const now = performance.now();
-    if (moved <= 6 && now - downAt < 600) {
+    if (moved <= slop && now - downAt < 700) {
       // Тап: по объекту — сразу onTap; по пустому месту — двойной тап приближает.
+      // Пальцем легко промахнуться по мелкой станции: ищем ближайший объект в радиусе ~22 px.
+      if (e.pointerType !== 'mouse' && !downTarget?.closest?.('[data-st]')) {
+        const r = box.getBoundingClientRect(); let best = null, bd = 1e9;
+        for (const [dx, dy] of [[0, 0], [-14, 0], [14, 0], [0, -14], [0, 14], [-12, -12], [12, -12], [-12, 12], [12, 12], [-22, 0], [22, 0], [0, -22], [0, 22]]) {
+          const hit = document.elementFromPoint(r.left + p.x + dx, r.top + p.y + dy)?.closest?.('[data-st]');
+          if (hit && box.contains(hit)) { const d = Math.hypot(dx, dy); if (d < bd) { bd = d; best = hit; } }
+        }
+        if (best) downTarget = best;
+      }
       const quick = now - lastTap.t < 320 && Math.hypot(p.x - lastTap.x, p.y - lastTap.y) < 30;
       const onObject = downTarget?.closest?.('[data-st],a,button');
       if (!onObject && quick && e.pointerType !== 'mouse') { zoomAt(p.x, p.y, v.k * 1.8, true); lastTap.t = 0; return; }
@@ -121,7 +142,7 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
       let vx = (last.x - first.x) / (last.t - first.t), vy = (last.y - first.y) / (last.t - first.t);
       if (Math.hypot(vx, vy) > 0.25 && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
         let t = performance.now();
-        const step = n => { const dt = Math.min(32, n - t); t = n; v.x += vx * dt; v.y += vy * dt; vx *= Math.pow(0.94, dt / 16); vy *= Math.pow(0.94, dt / 16); apply();
+        const step = n => { const dt = Math.min(32, n - t); t = n; v.x += vx * dt; v.y += vy * dt; vx *= Math.pow(0.94, dt / 16); vy *= Math.pow(0.94, dt / 16); apply(); moving();
           if (Math.hypot(vx, vy) > 0.02) inertia = requestAnimationFrame(step); else inertia = 0; };
         inertia = requestAnimationFrame(step);
       }
@@ -146,9 +167,9 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     e.preventDefault(); stop();
     if (e.deltaX) trackpad = true;
     const p = local(e), dy = e.deltaMode === 1 ? e.deltaY * 33 : e.deltaY;
-    if (pinchGesture) zoomAt(p.x, p.y, v.k * Math.exp(-dy * 0.01));
-    else if (!trackpad || e.deltaMode === 1) zoomAt(p.x, p.y, v.k * Math.exp(-Math.max(-120, Math.min(120, dy)) * 0.0022));
-    else { v.x -= e.deltaX; v.y -= dy; apply(); }
+    if (pinchGesture) zoomAt(p.x, p.y, v.k * Math.exp(-dy * 0.01), false, true);
+    else if (!trackpad || e.deltaMode === 1) zoomAt(p.x, p.y, v.k * Math.exp(-Math.max(-120, Math.min(120, dy)) * 0.0022), false, true);
+    else { v.x -= e.deltaX; v.y -= dy; moving(); schedule(); }
   }, { signal, passive: false });
   // Касания: страница не должна прокручиваться и масштабироваться под пальцами.
   box.addEventListener('touchmove', e => { if (!e.target.closest('.nc-ui,.nc-panel')) e.preventDefault(); }, { signal, passive: false });
@@ -167,12 +188,12 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
   // Изменение размера (поворот телефона, окно, полный экран): центр остаётся на месте.
   let size = [0, 0];
   const ro = new ResizeObserver(() => {
-    const bw = box.clientWidth, bh = box.clientHeight; if (!bw || !bh) return;
+    measure(); const bw = dims.bw, bh = dims.bh; if (!bw || !bh) return;
     if (size[0]) { v.x += (bw - size[0]) / 2; v.y += (bh - size[1]) / 2; }
     size = [bw, bh]; apply();
   });
   ro.observe(box);
-  signal.addEventListener('abort', () => { stop(); ro.disconnect(); document.documentElement.classList.remove('nc-lock'); if (isFull()) { box.classList.remove('is-full'); if (home.parentNode) home.replaceWith(box); else box.remove(); } });
+  signal.addEventListener('abort', () => { stop(); cancelAnimationFrame(frame); ro.disconnect(); document.documentElement.classList.remove('nc-lock'); if (isFull()) { box.classList.remove('is-full'); if (home.parentNode) home.replaceWith(box); else box.remove(); } });
   const api = { v, apply, fit, flyTo, animateTo, zoomAt, say, isFull, setFull, isActive: () => active };
   box.__nc = api;
   requestAnimationFrame(() => { size = [box.clientWidth, box.clientHeight]; if (start) start({ v, apply, fit: () => fit(false), box }); else fit(false); });
