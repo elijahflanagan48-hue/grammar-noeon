@@ -314,7 +314,7 @@ function nmLayout() {
   const X = []; widths.reduce((x, w, i) => { X[i] = x; return x + w + GAP; }, 120);
   const ys = widths.map(() => TOP);
   const put = (col, kind, title, sub, groups, opts) => { ys[col] += zone(kind, title, sub, X[col], ys[col], widths[col], groups, opts) + 80; };
-  put(0, 'art', 'Вход: какой ценник?', 'a / an, the или ничего', C.art.map(([t, ref, rows]) => ({ title: t === '—' ? 'ничего' : t, items: rows.map(r => ({ name: r[0], art: t, ex: r[1], exRu: r[2], check: r[3], note: r[4] || '', ref: t === 'a' ? 'a-an' : t === 'the' ? 'the' : 'нулевой-артикль', zone: 'Ценник ' + (t === '—' ? 'без артикля' : t) })) })));
+  put(0, 'art', 'Вход: какой ценник?', 'a / an, the или без артикля', C.art.map(([t, ref, rows]) => ({ title: t === '—' ? 'без артикля (zero article)' : t, items: rows.map(r => ({ name: r[0], art: t, ex: r[1], exRu: r[2], check: r[3], note: r[4] || '', ref: t === 'a' ? 'a-an' : t === 'the' ? 'the' : 'нулевой-артикль', zone: 'Ценник ' + (t === '—' ? 'без артикля' : t) })) })));
   put(0, 'poss', 'Витрина «Чьё?»', '’s и of', [{ items: C.poss.map(r => ({ name: r[0], ref: r[1], ex: r[2], exRu: r[3], check: r[4], note: r[5] || '', zone: 'Чьё?' })) }]);
   put(1, 'cnt', 'Поштучно', 'an apple · two apples · many', C.cnt.map(([t, ref, rows]) => ({ title: t, items: rows.map(word('cnt', ref, t)) })));
   put(1, 'both', 'Два значения', 'на развес — одно, поштучно — другое', [{ items: C.both.map(r => ({ name: r[0], ref: r[1], u: r[2], c: r[3], check: r[4], note: r[5] || '', trap: !!r[6], ru: r[2][0] + ' / ' + r[3][0], zone: 'Два значения' })) }]);
@@ -408,7 +408,7 @@ function nmShuffle(a) { const b = [...a]; for (let i = b.length - 1; i > 0; i--)
 function nmCheck(text) {
   const m = text && text.match(/\[([^\]]+)\]/); if (!m) return '';
   const opts = m[1].split('|');
-  return `<div class="nm-check"><p class="nm-ch-h">Проверьте себя</p><p class="nm-ch-q">${nmEsc(text.replace(m[0], '___')).replace('___', '<span class="nm-gap">___</span>')}</p><div class="nm-ch-o">${nmShuffle(opts).map(o => `<button type="button"${o === opts[0] ? ' data-ok' : ''}>${nmEsc(o === '—' ? '— (ничего)' : o)}</button>`).join('')}</div></div>`;
+  return `<div class="nm-check"><p class="nm-ch-h">Проверьте себя</p><p class="nm-ch-q">${nmEsc(text.replace(m[0], '___')).replace('___', '<span class="nm-gap">___</span>')}</p><div class="nm-ch-o">${nmShuffle(opts).map(o => `<button type="button"${o === opts[0] ? ' data-ok' : ''}>${nmEsc(o === '—' ? '— (без артикля)' : o)}</button>`).join('')}</div></div>`;
 }
 function nmForms(it) {
   if (it.kind === 'cnt') { const a = nmArticle(it.name), pl = nmPlural(it.name); return [[`${a} ${it.name}`, 'один'], [`two ${pl}`, 'несколько'], [`many ${pl} · a few ${pl}`, 'много · несколько'], [`How many ${pl}?`, 'сколько?']]; }
