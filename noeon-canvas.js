@@ -90,6 +90,9 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     if (e.target.closest('.nc-ui,.nc-panel')) return;
     if (e.pointerType === 'mouse' && e.button !== 0) return;
     stop(); setActive(true);
+    // Касание сразу «размораживает» карту: во время полёта и инерции объекты не ловят указатель,
+    // и без этого тап сразу после движения уходил в пустоту.
+    clearTimeout(movingTimer); box.classList.remove('is-moving');
     const p = local(e); ptrs.set(e.pointerId, p);
     if (ptrs.size === 1) { moved = 0; downAt = performance.now(); downTarget = e.target; downPt = p; slop = e.pointerType === 'mouse' ? 5 : 12; samples = [{ ...p, t: downAt }]; }
     if (ptrs.size === 2) { pinch = pair(); moved = 99; }
@@ -118,13 +121,16 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     pinch = null; box.classList.remove('is-drag');
     if (e.type === 'pointercancel') return;
     const now = performance.now();
-    if (moved <= slop && now - downAt < 700) {
+    if (moved <= slop && now - downAt < 1000) {
       // Тап: по объекту — сразу onTap; по пустому месту — двойной тап приближает.
-      // Пальцем легко промахнуться по мелкой станции: ищем ближайший объект в радиусе ~22 px.
-      if (e.pointerType !== 'mouse' && !downTarget?.closest?.('[data-st]')) {
+      // Цель определяем заново в точке отпускания (карта к этому моменту точно «разморожена»),
+      // а пальцем легко промахнуться по мелкой станции: ищем ближайший объект в радиусе ~24 px.
+      if (!downTarget?.closest?.('[data-st]')) {
         const r = box.getBoundingClientRect(); let best = null, bd = 1e9;
-        for (const [dx, dy] of [[0, 0], [-14, 0], [14, 0], [0, -14], [0, 14], [-12, -12], [12, -12], [-12, 12], [12, 12], [-22, 0], [22, 0], [0, -22], [0, 22]]) {
+        for (const [dx, dy] of (e.pointerType === 'mouse' ? [[0, 0]] : [[0, 0], [-8, 0], [8, 0], [0, -8], [0, 8], [-14, 0], [14, 0], [0, -14], [0, 14], [-12, -12], [12, -12], [-12, 12], [12, 12], [-24, 0], [24, 0], [0, -24], [0, 24], [-18, -18], [18, -18], [-18, 18], [18, 18]])) {
           const hit = document.elementFromPoint(r.left + p.x + dx, r.top + p.y + dy)?.closest?.('[data-st]');
+          const el = document.elementFromPoint(r.left + p.x + dx, r.top + p.y + dy);
+          if (el?.closest?.('.nc-ui,.nc-panel')) continue;
           if (hit && box.contains(hit)) { const d = Math.hypot(dx, dy); if (d < bd) { bd = d; best = hit; } }
         }
         if (best) downTarget = best;
