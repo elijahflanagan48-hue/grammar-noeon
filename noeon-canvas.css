@@ -4,7 +4,7 @@ html.nc-lock{overflow:hidden}
 .nc:focus-visible{box-shadow:0 0 0 3px var(--pri-soft)}
 .nc.is-drag{cursor:grabbing}
 .nc.is-full{position:fixed;inset:0;z-index:99999;width:100vw;height:100vh;height:100dvh;min-height:0;border-radius:0;border:0}
-.nc-world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.nc-world{position:absolute;left:0;top:0;transform-origin:0 0}
 .nc-world.nc-anim{transition:transform .45s cubic-bezier(.25,.8,.25,1)}
 .nc-ui{position:absolute;z-index:4;cursor:default}
 .nc-tools{left:12px;right:12px;top:max(12px,env(safe-area-inset-top));display:flex;flex-wrap:wrap;gap:6px;align-items:center;pointer-events:none}
@@ -33,12 +33,20 @@ html.nc-lock{overflow:hidden}
 .nc-panel::before{content:"";display:none;width:44px;height:5px;border-radius:3px;background:var(--line2);margin:-6px auto 10px}
 @media(max-width:700px){
   .nc:not(.is-full){height:62vh}
-  .nc:not(.is-full) .nc-full-t{display:inline}
+  .nc-zoom [data-nc-z]{display:none}
+  .nc:not(.is-full) .nc-mini{display:none}
   .nc-panel::before{display:block}
 }
 @media(max-height:520px){.nc-help{display:none}.nc-mini{width:96px}.nc.is-full .nc-panel{top:8px;max-height:none}}
 
 /* Во время перемещения: без наведения и без переходов у объектов карты — меньше работы на кадр */
 .nc.is-moving .nc-world{pointer-events:none}
-.nc.is-moving .nc-world *{transition:none!important}
-.nc-world{contain:layout style;backface-visibility:hidden}
+.nc-world{contain:layout style}
+/* Слой ускорения — только пока карта движется: в покое браузер заново рисует текст в текущем масштабе, и он чёткий */
+.nc.is-moving .nc-world,.nc.is-drag .nc-world,.nc.is-touch .nc-world{will-change:transform}
+/* Подписи-ориентиры */
+.nc-labels{inset:0;pointer-events:none;overflow:hidden;z-index:3}
+.nc-label{position:absolute;left:0;top:0;pointer-events:auto;font:inherit;font-size:13.5px;font-weight:800;line-height:1.15;white-space:nowrap;cursor:pointer;color:var(--tx);background:color-mix(in srgb,var(--surf) 92%,transparent);border:1px solid var(--line);border-radius:999px;padding:6px 11px;box-shadow:var(--sh-sm);-webkit-tap-highlight-color:transparent;will-change:transform}
+.nc-label[hidden]{display:none}
+.nc-label{overflow:hidden;text-overflow:ellipsis}
+.nc.is-moving .nc-label{pointer-events:none}

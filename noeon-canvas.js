@@ -13,9 +13,15 @@ function noeonCanvasShell(id, label, toolsExtra = '', help = 'Тяните ка�
     <p class="nc-ui nc-toast" aria-live="polite" hidden></p>
   </div>`;
 }
-function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, margin = 160, onTap, onZoom, start }) {
+function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, margin = 160, onTap, onZoom, start, labels = [] }) {
   const world = box.querySelector('.nc-world'), mini = box.querySelector('.nc-mini'), viewEl = box.querySelector('.nc-view'), toast = box.querySelector('.nc-toast');
   world.style.width = W + 'px'; world.style.height = H + 'px';
+  // Подписи-ориентиры: обычные HTML-плашки поверх карты. Не масштабируются, поэтому читаются при любом отдалении;
+  // нажатие перелетает к зоне. Каждая видна, пока масштаб меньше её maxK.
+  const layer = document.createElement('div'); layer.className = 'nc-ui nc-labels'; layer.setAttribute('aria-hidden', 'false');
+  layer.innerHTML = labels.map((l, i) => `<button type="button" class="nc-label${l.cls ? ' ' + l.cls : ''}" data-nc-label="${i}">${l.html ?? l.text}</button>`).join('');
+  box.querySelector('.nc-world').after(layer);
+  const labelEls = [...layer.children];
   const v = { x: 0, y: 0, k: 1 };
   const isFull = () => box.classList.contains('is-full');
   const touchUI = matchMedia('(hover: none)').matches;
@@ -34,6 +40,13 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     if (!dims.bw) measure();
     clamp();
     world.style.transform = `translate3d(${v.x}px,${v.y}px,0) scale(${v.k})`;
+    for (let i = 0; i < labelEls.length; i++) {
+      const l = labels[i], el = labelEls[i], show = v.k < (l.maxK ?? 0.3) && v.k >= (l.minK ?? 0);
+      if (el.hidden === show) el.hidden = !show;
+      if (!show) continue;
+      el.style.transform = `translate3d(${(l.x * v.k + v.x) | 0}px,${(l.y * v.k + v.y) | 0}px,0)${l.tl ? '' : ' translate(-50%,-50%)'}`;
+      if (l.w) el.style.maxWidth = Math.max(44, l.w * v.k - 6 | 0) + 'px';
+    }
     if (v.k !== lastK) { lastK = v.k; onZoom?.(v.k); }
     const m = dims.mw / W, bw = dims.bw, bh = dims.bh;
     mini.style.height = H * m + 'px';
@@ -44,7 +57,7 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
   const schedule = () => { if (!frame) frame = requestAnimationFrame(() => { frame = 0; apply(); }); };
   // Во время движения карта не реагирует на наведение и не пересчитывает стили объектов.
   let movingTimer = 0;
-  const moving = () => { box.classList.add('is-moving'); clearTimeout(movingTimer); movingTimer = setTimeout(() => box.classList.remove('is-moving'), 140); };
+  const moving = () => { if (!box.classList.contains('is-moving')) box.classList.add('is-moving'); clearTimeout(movingTimer); movingTimer = setTimeout(() => box.classList.remove('is-moving'), 180); };
   const stop = () => { cancelAnimationFrame(anim); cancelAnimationFrame(inertia); anim = inertia = 0; };
   // Плавный переход к виду (x, y, k) по кривой ease-out; миникарта и границы обновляются на каждом кадре.
   const animateTo = (tx, ty, tk, ms = 420) => {
@@ -89,7 +102,7 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
   box.addEventListener('pointerdown', e => {
     if (e.target.closest('.nc-ui,.nc-panel')) return;
     if (e.pointerType === 'mouse' && e.button !== 0) return;
-    stop(); setActive(true);
+    stop(); setActive(true); box.classList.add('is-touch');
     // Касание сразу «размораживает» карту: во время полёта и инерции объекты не ловят указатель,
     // и без этого тап сразу после движения уходил в пустоту.
     clearTimeout(movingTimer); box.classList.remove('is-moving');
@@ -118,7 +131,7 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
     const p = ptrs.get(e.pointerId); ptrs.delete(e.pointerId);
     if (ptrs.size === 1) { pinch = null; const [q] = ptrs.values(); samples = [{ ...q, t: performance.now() }]; return; }
     if (ptrs.size) return;
-    pinch = null; box.classList.remove('is-drag');
+    pinch = null; box.classList.remove('is-drag', 'is-touch');
     if (e.type === 'pointercancel') return;
     const now = performance.now();
     if (moved <= slop && now - downAt < 1000) {
@@ -160,6 +173,7 @@ function initialiseNoeonCanvas(box, { W, H, signal, minK = 0.12, maxK = 1.8, mar
   box.addEventListener('click', e => {
     const z = e.target.closest('[data-nc-z]'); if (z) { zoomAt(box.clientWidth / 2, box.clientHeight / 2, v.k * (z.dataset.ncZ > 0 ? 1.4 : 1 / 1.4), true); return; }
     if (e.target.closest('[data-nc-fit]')) { fit(); return; }
+    const lb = e.target.closest('[data-nc-label]'); if (lb) { const l = labels[+lb.dataset.ncLabel]; let k = l.k ?? Math.max((l.maxK ?? 0.3) * 1.6, v.k); if (l.fitW) k = Math.min(k, box.clientWidth / l.fitW); flyTo(l.fx ?? l.x, l.fy ?? l.y, Math.min(maxK, k)); return; }
     if (e.target.closest('[data-nc-full]')) { setFull(!isFull()); return; }
     if (e.target.closest('.nc-mini')) { const r = mini.getBoundingClientRect(), m = mini.clientWidth / W; flyTo((e.clientX - r.left) / m, (e.clientY - r.top) / m, v.k); }
   }, { signal });

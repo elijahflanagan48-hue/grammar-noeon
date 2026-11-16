@@ -103,8 +103,6 @@
 .cm-mini.cm-z-hall{fill:var(--cm-gold-bg);stroke:var(--cm-gold)}
 .cm-mini.cm-t-trap{fill:var(--cm-trap-bg);stroke:var(--cm-trap)}
 /* дальний план */
-.nc.lod-low .cm-zt{font-size:72px}
-.nc.lod-low .cm-tx,.nc.lod-low .cm-tr,.nc.lod-low .cm-zs,.nc.lod-low .cm-lhow{opacity:0}
 /* режимы */
 .nc.cm-mode-hide .cm-st:not(.cm-shown) .cm-w2,.nc.cm-mode-hide .cm-st:not(.cm-shown) .cm-w1{opacity:0}
 .nc.cm-mode-hide .cm-st:not(.cm-shown) .cm-s1,.nc.cm-mode-hide .cm-st:not(.cm-shown) .cm-s2{fill:transparent;stroke:#fff;stroke-dasharray:12 10}
@@ -113,7 +111,8 @@
 .nc.cm-mode-trap .cm-trap .cm-tag{fill:var(--cm-trap-bg);stroke:var(--cm-trap);stroke-width:4}
 /* инструменты */
 .cm-search{position:relative;flex:1 1 200px;max-width:300px}
-.cm-search input{width:100%;font:inherit;font-size:16px;min-height:44px;padding:8px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surf);color:var(--tx);box-shadow:var(--sh-sm)}
+.cm-s-ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-style:normal;font-size:15px;pointer-events:none;opacity:.7}
+.cm-search input{width:100%;padding-left:36px!important;font:inherit;font-size:16px;min-height:44px;padding:8px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surf);color:var(--tx);box-shadow:var(--sh-sm)}
 .cm-search input:focus{outline:2px solid var(--pri);outline-offset:1px}
 .cm-results{position:absolute;left:0;right:0;top:calc(100% + 6px);display:grid;gap:2px;padding:6px;background:var(--surf);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh);max-height:340px;overflow:auto}
 .cm-results[hidden]{display:none}
@@ -122,6 +121,7 @@
 .cm-results small{color:var(--mut);text-align:right}.cm-none{padding:8px 10px;color:var(--mut);font-size:14px}
 .cm-modes{display:flex;gap:3px;padding:4px;background:var(--surf);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-sm)}
 .cm-modes button{font:inherit;font-size:13.5px;font-weight:650;cursor:pointer;border:0;border-radius:10px;padding:7px 11px;min-height:36px;background:transparent;color:var(--mut)}
+.cm-modes button i{font-style:normal;margin-right:5px}
 .cm-modes button[aria-pressed="true"]{background:var(--btn,var(--pri));color:var(--btn-fg,#fff)}
 /* карточка */
 .cm-panel header{display:grid;gap:4px;margin:0 0 12px;padding-right:36px}
@@ -194,10 +194,26 @@
 @keyframes cm-jump{0%{transform:scale(1)}35%{transform:scale(1.05) translateY(-10px)}70%{transform:scale(.99)}100%{transform:scale(1)}}
 .nc.cm-mode-game .nc-panel{top:auto;max-height:44%}
 @media(max-width:700px){
-  .cm-search{max-width:none;flex-basis:100%}
-  .cm-modes{flex:1}.cm-modes button{flex:1;padding:7px 3px;font-size:12.5px;white-space:nowrap}
+  /* компактная панель на телефоне: поиск — значок, раскрывается при касании; режимы — значки */
+  .cm-search{flex:0 0 44px;max-width:none;transition:flex-basis .2s}
+  .cm-search input{padding:8px 8px 8px 36px;color:transparent}
+  .cm-search input::placeholder{color:transparent}
+  .cm-search:focus-within{flex:1 1 100%}
+  .cm-search:focus-within input{color:var(--tx)}.cm-search:focus-within input::placeholder{color:var(--mut)}
+  .cm-modes button span{display:none}
+  .cm-modes button{padding:6px 9px;font-size:17px}
   .cm-game{top:auto;bottom:12px}
   .nc.cm-mode-game .nc-panel{display:none}
   .cm-head p{font-size:14.5px}
 }
 @media(prefers-reduced-motion:reduce){.cm-st.cm-jump,.cm-game.cm-pop,.cm-game.cm-shake{animation:none}}
+
+/* подписи-ориентиры и уровни детализации */
+.nc .nc-label.cm-lab-lane{background:var(--cm-tartan-d);color:#fff;border-color:transparent}
+.nc .nc-label.cm-lab-hall{background:var(--cm-gold-bg);color:var(--cm-gold);border-color:var(--cm-gold)}
+.nc .nc-label.cm-lab-trap{color:var(--cm-trap);border-color:var(--cm-trap)}
+.nc .nc-label.cm-lab-big{font-size:16px;padding:9px 16px}
+.nc.lod-low .cm-zt,.nc.lod-low .cm-zi,.nc.lod-low .cm-ltitle,.nc.lod-low .cm-lnum,.nc.lod-low .cm-lnum-t{display:none}
+.nc.lod-low .cm-tx,.nc.lod-low .cm-tr,.nc.lod-low .cm-ru,.nc.lod-low .cm-zs,.nc.lod-low .cm-lhow,.nc.lod-low .cm-runner{display:none}
+.nc.lod-tiny .cm-w,.nc.lod-tiny .cm-tn,.nc.lod-tiny .cm-sp-w,.nc.lod-tiny .cm-cup-t,.nc.lod-tiny .cm-medal-i,.nc.lod-tiny .cm-th,.nc.lod-tiny .cm-th2,.nc.lod-tiny .cm-deco text,.nc.lod-tiny .cm-fascia text,.nc.lod-tiny .cm-run{display:none}
+@media(max-width:700px){.cm-modes button i{margin:0}}

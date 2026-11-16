@@ -322,8 +322,8 @@ function comparisonMapSvg() {
   return `<svg class="cm-svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Карта правила: стадион степеней сравнения">${fascia}${cmTrack()}${CM.zones.map(cmZone).join('')}${body}</svg>`;
 }
 function comparisonMapHtml() {
-  const modes = `<span class="cm-modes" role="group" aria-label="Режим карты"><button type="button" data-cm-mode="all" aria-pressed="true">Всё</button><button type="button" data-cm-mode="hide" aria-pressed="false">Закрыть финиш</button><button type="button" data-cm-mode="trap" aria-pressed="false">Фальстарт</button><button type="button" data-cm-mode="game" aria-pressed="false">Игры</button></span>`;
-  const search = `<label class="cm-search"><span class="sr-only">Найти слово на карте</span><input type="search" placeholder="Найти: good, дешёвый, as … as…" autocomplete="off" spellcheck="false"><span class="nc-results cm-results" hidden></span></label>`;
+  const modes = `<span class="cm-modes" role="group" aria-label="Режим карты">${[["all", "👁", "Всё"], ["hide", "🙈", "Закрыть финиш"], ["trap", "🚩", "Фальстарт"], ["game", "🎮", "Игры"]].map(([m, i, t], n) => `<button type="button" data-cm-mode="${m}" aria-pressed="${!n}" title="${t}"><i aria-hidden="true">${i}</i><span>${t}</span></button>`).join("")}</span>`;
+  const search = `<label class="cm-search"><span class="sr-only">Найти слово на карте</span><i class="cm-s-ic" aria-hidden="true">🔍</i><input type="search" placeholder="Найти: good, дешёвый, as … as…" autocomplete="off" spellcheck="false"><span class="nc-results cm-results" hidden></span></label>`;
   return `<section class="cm-wrap" id="comparison-stadium" aria-labelledby="cm-title">
     <div class="cm-head"><div><p class="eyebrow">Карта правила</p><h2 id="cm-title">Стадион сравнений</h2><p>Каждое прилагательное бежит забег: со старта (big) через отметку than (bigger) к финишу (the biggest). Нажмите на забег, чтобы увидеть примеры и проверить себя.</p></div>
       <ul class="cm-key"><li class="cm-k0">старт · positive</li><li class="cm-k1">than · comparative</li><li class="cm-k2">финиш · superlative</li></ul></div>
@@ -353,6 +353,16 @@ function cmPanelHtml(id) {
 }
 
 /* ---------- запуск ---------- */
+// Подписи-ориентиры поверх карты: видны при отдалении, нажатие — перелёт к зоне.
+function cmLabels() {
+  const t = CM.track, out = [
+    { x: t.x + t.w / 2, y: t.y + t.h / 2, text: '🏃 Беговая дорожка', maxK: 0.13, fx: t.x + t.w / 2, fy: t.y + 900, k: 0.2, cls: 'cm-lab-big' },
+    { x: CM.cols.MX + 1540, y: (CM.track.y + CM.H) / 2, text: '🏟 Конструкции', maxK: 0.13, fx: CM.cols.MX + 1540, fy: t.y + 1000, k: 0.2, cls: 'cm-lab-big' },
+  ];
+  CM.lanes.forEach(l => out.push({ x: t.x + 20, y: l.y + 30, tl: true, text: `${l.n} · ${l.title}`, minK: 0.13, maxK: 0.3, fx: t.x + 760, fy: l.y + l.h / 2, k: 0.42, fitW: 1500, cls: 'cm-lab-lane' }));
+  CM.zones.forEach(z => out.push({ x: z.x + 16, y: z.y + 16, tl: true, w: z.w - 32, text: `${z.icon || ''} ${z.title}`, minK: z.kind === 'hall' ? 0 : 0.13, maxK: 0.3, fx: z.x + z.w / 2, fy: z.y + Math.min(z.h / 2, 420), k: 0.5, fitW: z.w + 60, cls: z.kind === 'hall' ? 'cm-lab-hall' : z.tool === 'trap' ? 'cm-lab-trap' : '' }));
+  return out;
+}
 let comparisonMapAbort = null;
 function initialiseComparisonMap(root) {
   const box = root.querySelector('#cm-canvas'); if (!box) return;
@@ -370,13 +380,15 @@ function initialiseComparisonMap(root) {
     svg.querySelectorAll('.cm-st.is-on').forEach(n => n.classList.remove('is-on'));
     const el = svg.querySelector(`[data-st="${id}"]`); el?.classList.add('is-on'); bump(el);
     panel.innerHTML = `<button type="button" class="cm-close" aria-label="Закрыть">✕</button>${cmPanelHtml(id)}`; panel.hidden = false; panel.scrollTop = 0;
-    if (fly) { const it = CM.items[+id.slice(1)], wide = it.kind === 'stair'; api.flyTo(it.x + it.w / 2, it.y + it.h / 2, wide ? (mobile() ? 0.24 : 0.4) : Math.max(api.v.k, mobile() ? 0.55 : 0.7), panelSpace()); }
+    if (fly) { const it = CM.items[+id.slice(1)], wide = it.kind === 'stair'; api.flyTo(it.x + it.w / 2, it.y + it.h / 2, wide ? (mobile() ? 0.24 : 0.4) : Math.min(Math.max(api.v.k, mobile() ? 0.55 : 0.7), (box.clientWidth - 16) / (it.w + 40)), panelSpace()); }
   };
   const close = () => { panel.hidden = true; svg.querySelectorAll('.cm-st.is-on').forEach(n => n.classList.remove('is-on')); };
   const game$ = { on: false, kind: null, answered: false };
+  let lodT = 0, lodT0 = 0;
   const api = initialiseNoeonCanvas(box, {
-    W: CM.W, H: CM.H, signal, minK: 0.07, maxK: 1.6,
-    onZoom: k => { box.classList.toggle('lod-low', k < 0.28); },
+    W: CM.W, H: CM.H, signal, minK: 0.05, maxK: 1.6, labels: cmLabels(),
+    // Уровень детализации меняем после остановки жеста: переключение во время щипка вызывает пересчёт всей карты.
+    onZoom: k => { clearTimeout(lodT); lodT = setTimeout(() => { const lo = k < 0.3, ti = k < 0.16; if (box.classList.contains('lod-low') !== lo) box.classList.toggle('lod-low', lo); if (box.classList.contains('lod-tiny') !== ti) box.classList.toggle('lod-tiny', ti); }, lodT0 ? 220 : 0); lodT0 = 1; },
     onTap: e => {
       const st = e.target?.closest?.('[data-st]');
       if (st) { if (game$.on && game$.kind && !game$.answered) return;
@@ -386,7 +398,7 @@ function initialiseComparisonMap(root) {
         open(st.dataset.st); }
       else if (!panel.hidden) close();
     },
-    start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.3; v.x = -CM.cols.LX * 0.3 + 8; v.y = -50; apply(); } else fit(); },
+    start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.14; v.x = -CM.cols.LX * 0.14 + 8; v.y = 60 - CM.track.y * 0.14; apply(); } else fit(); },
   });
   panel.addEventListener('click', e => {
     if (e.target.closest('.cm-close')) { close(); return; }
