@@ -38,9 +38,9 @@
 .cm-thanline{stroke-dasharray:18 14}
 .cm-checker rect{fill:#fff}
 .cm-lnum{fill:#fff}
-.cm-lnum-t{font-size:52px;font-weight:900;fill:var(--cm-tartan-d)}
-.cm-ltitle{font-size:40px;font-weight:900;fill:#fff;letter-spacing:-.5px}
-.cm-lhow{font-size:24px;font-weight:600;fill:#fff;opacity:.85}
+.cm-lnum-t{font-size:64px;font-weight:900;fill:var(--cm-tartan-d)}
+.cm-ltitle{font-size:60px;font-weight:900;fill:#fff;letter-spacing:-.5px}
+.cm-lhow{font-size:32px;font-weight:600;fill:#fff;opacity:.85}
 .cm-run{fill:none;stroke:#fff;stroke-width:4;stroke-dasharray:3 12;stroke-linecap:round;opacity:.7}
 .cm-runner{font-size:40px;opacity:0;transition:opacity .2s}
 .cm-st.is-on .cm-runner,.cm-st:hover .cm-runner{opacity:1}
@@ -48,8 +48,8 @@
 .cm-z-tool>rect{fill:var(--cb);fill-opacity:.55;stroke:var(--c);stroke-opacity:.35}
 .cm-z-tool.cm-t-trap>rect{stroke-dasharray:14 10}
 .cm-z-hall>rect{fill:var(--cm-gold-bg);stroke:var(--cm-gold);stroke-opacity:.45}
-.cm-zi{font-size:56px}
-.cm-zt{font-size:54px;font-weight:900;letter-spacing:-1.5px;fill:var(--tx)}
+.cm-zi{font-size:76px}
+.cm-zt{font-size:84px;font-weight:900;letter-spacing:-1.5px;fill:var(--tx)}
 .cm-z-tool .cm-zt{fill:var(--c)}.cm-z-hall .cm-zt{fill:var(--cm-gold)}
 .cm-zs{font-size:26px;font-weight:650;fill:var(--mut)}
 .cm-st{cursor:pointer;outline:0;transform-box:fill-box;transform-origin:50% 50%}
@@ -213,7 +213,4 @@
 .nc .nc-label.cm-lab-hall{background:var(--cm-gold-bg);color:var(--cm-gold);border-color:var(--cm-gold)}
 .nc .nc-label.cm-lab-trap{color:var(--cm-trap);border-color:var(--cm-trap)}
 .nc .nc-label.cm-lab-big{font-size:16px;padding:9px 16px}
-.nc.lod-low .cm-zt,.nc.lod-low .cm-zi,.nc.lod-low .cm-ltitle,.nc.lod-low .cm-lnum,.nc.lod-low .cm-lnum-t{display:none}
-.nc.lod-low .cm-tx,.nc.lod-low .cm-tr,.nc.lod-low .cm-ru,.nc.lod-low .cm-zs,.nc.lod-low .cm-lhow,.nc.lod-low .cm-runner{display:none}
-.nc.lod-tiny .cm-w,.nc.lod-tiny .cm-tn,.nc.lod-tiny .cm-sp-w,.nc.lod-tiny .cm-cup-t,.nc.lod-tiny .cm-medal-i,.nc.lod-tiny .cm-th,.nc.lod-tiny .cm-th2,.nc.lod-tiny .cm-deco text,.nc.lod-tiny .cm-fascia text,.nc.lod-tiny .cm-run{display:none}
 @media(max-width:700px){.cm-modes button i{margin:0}}

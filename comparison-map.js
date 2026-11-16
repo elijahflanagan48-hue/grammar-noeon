@@ -206,7 +206,7 @@ CM_TOOLS.splice(CM_TOOLS.length - 1, 0, ...CM_EXTRA_ZONES);
 const CM_ROW = 100, CM_CHIP_W = 500, CM_CHIP_H = 70;
 const CM_ZONE_META = { // название зоны стадиона, эмодзи
   than: ['Забег двоих', '🏃'], sup: ['Пьедестал', '🏅'], eq: ['Фотофиниш', '📸'], diff: ['Табло', '📟'],
-  too: ['Прыжок в высоту', '🤸'], limit: ['Судейская: границы', '⚖️'], idiom: ['Крылатые фразы трибун', '📣'], grad: ['Эстафета', '🔁'], link: ['Тренировка', '🏋️'], less: ['В хвосте забега', '🐢'], trap: ['Фальстарт', '🚩'],
+  too: ['Прыжок в высоту', '🤸'], limit: ['Судейская: границы', '⚖️'], idiom: ['Крылатые фразы', '📣'], grad: ['Эстафета', '🔁'], link: ['Тренировка', '🏋️'], less: ['В хвосте забега', '🐢'], trap: ['Фальстарт', '🚩'],
 };
 function cmLayout() {
   const items = [], zones = [], lanes = [];
@@ -223,7 +223,7 @@ function cmLayout() {
   });
   const track = { x: LX, y: TOP, w: TW, h: y - TOP + 30, SX, CX, FL, FX };
   // зал славы: под дорожкой
-  let hy = y + 30 + GAP; const hallY = hy; hy += 130;
+  let hy = y + 30 + GAP; const hallY = hy; hy += 170;
   const cellW = (TW - 60) / CM_LIFT.length;
   CM_LIFT.forEach((w, i) => push({ kind: 'lift', head: 'irr', x: LX + 30 + i * cellW, y: hy, w: cellW - 20, h: 470, f: w.slice(0, 3), ru: w[3], exC: w[4], exCRu: w[5], exS: w[6], exSRu: w[7], check: w[8], note: w[9] || '', groupTitle: 'Зал славы' }));
   hy += 500;
@@ -235,7 +235,7 @@ function cmLayout() {
   const tool = (key, zx, zy, zw) => {
     const [, , head, rows] = CM_TOOLS.find(t => t[0] === key), [title, icon] = CM_ZONE_META[key];
     const deco = key === 'sup' ? 330 : key === 'too' ? 250 : key === 'eq' ? 230 : 0;
-    let iy = zy + 130 + deco;
+    let iy = zy + 170 + deco;
     rows.forEach(r => { push({ kind: 'tool', tool: key, head: r[7] || head, x: zx + 30, y: iy, w: zw - 60, h: 92, name: r[0], ru: r[1], ex: r[2], exRu: r[3], check: r[4], note: r[5] || '', trap: !!r[6], groupTitle: title }); iy += 108; });
     const z = { kind: 'tool', tool: key, title, icon, x: zx, y: zy, w: zw, h: iy - zy + 20, deco }; zones.push(z); return z.h;
   };
@@ -254,9 +254,9 @@ const cmFs = (t, big = 30) => t.length > 22 ? big - 8 : t.length > 16 ? big - 4 
 function cmTrack() {
   const t = CM.track, x2 = t.x + t.w;
   const lanes = CM.lanes.map((l, i) => `<g class="cm-lane cm-g-${l.key}">${i ? `<line class="cm-lline" x1="${t.x}" x2="${x2}" y1="${l.y}" y2="${l.y}"/>` : ''}
-    <circle class="cm-lnum" cx="${t.x + 70}" cy="${l.y + 74}" r="44"/><text class="cm-lnum-t" x="${t.x + 70}" y="${l.y + 90}" text-anchor="middle">${l.n}</text>
-    <text class="cm-ltitle" x="${t.x + 134}" y="${l.y + 72}">${cmEsc(l.title)}</text>
-    ${cmWrap(l.how, 24).map((s, k) => `<text class="cm-lhow" x="${t.x + 134}" y="${l.y + 112 + k * 32}">${cmEsc(s)}</text>`).join('')}</g>`).join('');
+    <circle class="cm-lnum" cx="${t.x + 76}" cy="${l.y + 82}" r="54"/><text class="cm-lnum-t" x="${t.x + 76}" y="${l.y + 104}" text-anchor="middle">${l.n}</text>
+    <text class="cm-ltitle" x="${t.x + 146}" y="${l.y + 100}">${cmEsc(l.title)}</text>
+    ${cmWrap(l.how, 20).map((s, k) => `<text class="cm-lhow" x="${t.x + 30}" y="${l.y + 180 + k * 40}">${cmEsc(s)}</text>`).join('')}</g>`).join('');
   const checker = Array.from({ length: Math.ceil((t.h - 130) / 24) }, (_, i) => `<rect x="${t.FL + (i % 2) * 12}" y="${t.y + 130 + i * 24}" width="12" height="24"/><rect x="${t.FL + 24 + ((i + 1) % 2) * 12}" y="${t.y + 130 + i * 24}" width="12" height="24"/>`).join('');
   const head = (x, a, b, cls) => `<text class="cm-th ${cls}" x="${x + CM_CHIP_W / 2}" y="${t.y + 66}" text-anchor="middle">${a}</text><text class="cm-th2" x="${x + CM_CHIP_W / 2}" y="${t.y + 104}" text-anchor="middle">${b}</text>`;
   return `<g class="cm-track"><rect class="cm-tartan" x="${t.x}" y="${t.y}" width="${t.w}" height="${t.h}" rx="40"/>
@@ -294,7 +294,7 @@ function cmTool(it) {
     <text class="cm-tn" x="${it.x + 32}" y="${it.y + 42}">${cmEsc(it.name)}</text><text class="cm-tr" x="${it.x + 32}" y="${it.y + 74}">${cmEsc(it.ru)}</text>${it.w > 780 ? `<text class="cm-tx" x="${it.x + it.w * 0.46}" y="${it.y + 56}">${cmEsc(ex)}</text>` : ''}</g>`;
 }
 function cmDeco(z) {
-  const x = z.x, y = z.y + 120, w = z.w, cx = x + w / 2;
+  const x = z.x, y = z.y + 160, w = z.w, cx = x + w / 2;
   if (z.tool === 'sup') {
     const blk = (bx, bh, n, medal, lab) => `<rect class="cm-pod cm-pod${n}" x="${bx}" y="${y + 300 - bh}" width="300" height="${bh}" rx="10"/><text class="cm-pod-n" x="${bx + 150}" y="${y + 300 - bh + 70}" text-anchor="middle">${n}</text><text class="cm-pod-m" x="${bx + 150}" y="${y + 300 - bh - 70}" text-anchor="middle">${medal}</text><text class="cm-pod-l" x="${bx + 150}" y="${y + 300 - bh - 18}" text-anchor="middle">${lab}</text>`;
     return blk(cx - 470, 140, 2, '🥈', 'the second-fastest') + blk(cx - 150, 200, 1, '🥇', 'the fastest') + blk(cx + 170, 100, 3, '🥉', 'one of the fastest');
@@ -308,8 +308,8 @@ function cmDeco(z) {
   return '';
 }
 function cmZone(z) {
-  const head = z.icon ? `<text class="cm-zi" x="${z.x + 34}" y="${z.y + 82}">${z.icon}</text>` : '';
-  return `<g class="cm-zone cm-z-${z.kind}${z.tool ? ' cm-t-' + z.tool : ''}"><rect x="${z.x}" y="${z.y}" width="${z.w}" height="${z.h}" rx="34"/>${head}<text class="cm-zt" x="${z.x + (z.icon ? 110 : 34)}" y="${z.y + 80}">${cmEsc(z.title)}</text>${z.sub ? `<text class="cm-zs" x="${z.x + z.w - 34}" y="${z.y + 76}" text-anchor="end">${cmEsc(z.sub)}</text>` : ''}<g class="cm-deco">${cmDeco(z)}</g></g>`;
+  const head = z.icon ? `<text class="cm-zi" x="${z.x + 34}" y="${z.y + 112}">${z.icon}</text>` : '';
+  return `<g class="cm-zone cm-z-${z.kind}${z.tool ? ' cm-t-' + z.tool : ''}"><rect x="${z.x}" y="${z.y}" width="${z.w}" height="${z.h}" rx="34"/>${head}<text class="cm-zt" x="${z.x + (z.icon ? 128 : 34)}" y="${z.y + 112}">${cmEsc(z.title)}</text>${z.sub ? `<text class="cm-zs" x="${z.x + z.w - 34}" y="${z.y + 76}" text-anchor="end">${cmEsc(z.sub)}</text>` : ''}<g class="cm-deco">${cmDeco(z)}</g></g>`;
 }
 function comparisonMapSvg() {
   const { W, H, cols } = CM;
@@ -359,8 +359,7 @@ function cmLabels() {
     { x: t.x + t.w / 2, y: t.y + t.h / 2, text: '🏃 Беговая дорожка', maxK: 0.13, fx: t.x + t.w / 2, fy: t.y + 900, k: 0.2, cls: 'cm-lab-big' },
     { x: CM.cols.MX + 1540, y: (CM.track.y + CM.H) / 2, text: '🏟 Конструкции', maxK: 0.13, fx: CM.cols.MX + 1540, fy: t.y + 1000, k: 0.2, cls: 'cm-lab-big' },
   ];
-  CM.lanes.forEach(l => out.push({ x: t.x + 20, y: l.y + 30, tl: true, text: `${l.n} · ${l.title}`, minK: 0.13, maxK: 0.3, fx: t.x + 760, fy: l.y + l.h / 2, k: 0.42, fitW: 1500, cls: 'cm-lab-lane' }));
-  CM.zones.forEach(z => out.push({ x: z.x + 16, y: z.y + 16, tl: true, w: z.w - 32, text: `${z.icon || ''} ${z.title}`, minK: z.kind === 'hall' ? 0 : 0.13, maxK: 0.3, fx: z.x + z.w / 2, fy: z.y + Math.min(z.h / 2, 420), k: 0.5, fitW: z.w + 60, cls: z.kind === 'hall' ? 'cm-lab-hall' : z.tool === 'trap' ? 'cm-lab-trap' : '' }));
+  out.push({ x: CM.track.x + CM.track.w / 2, y: CM.track.y + CM.track.h + 300, text: '🏆 Зал славы', maxK: 0.1, fx: CM.track.x + CM.track.w / 2, fy: CM.track.y + CM.track.h + 400, k: 0.3, fitW: CM.track.w + 60, cls: 'cm-lab-hall cm-lab-big' });
   return out;
 }
 let comparisonMapAbort = null;
