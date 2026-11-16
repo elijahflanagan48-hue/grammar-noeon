@@ -16,6 +16,8 @@ Write **exactly {{SIZE}} tasks** of batch {{BATCH}} for cell **{{CELL}}**.
 
 Below are {{SEED_COUNT}} seeds — more than you need. Choose the {{SIZE}} that best fit cell {{CELL}}, and build **each** task on its own seed (put its `seed_id` in the task). Spread the formats and levels across seeds from different domains: neighbouring tasks should not come from the same domain. Do not write the seed text as it is — turn it into a living sentence or mini-text that needs the right form.
 
+Many seeds are rich in technical detail. Use the seed as the **idea**, not as a vocabulary list: keep the core event and one vivid detail, drop the jargon. For `basic` tasks simplify strongly — everyday words only (A2–B1), 8–14 words, no specialist terms (no "autoclaved", "gimballed", "spectrometer"). For `medium` — B1–B2 vocabulary. Only `advanced` tasks may keep rarer words, and even then the sentence must be understandable without a dictionary from context.
+
 {{SEEDS}}
 
 ## Already used in earlier batches — do not repeat

@@ -276,11 +276,13 @@ def assign_seeds():
     used = {it.get("seed_id") for _, rows, _ in raw_items() for it in rows}
     path = BANK / "seed-assignment.json"
     fixed = json.loads(path.read_text()) if path.exists() else {}
-    taken = set(used) | {s for v in fixed.values() for s in v}
+    done_batches = {b for b, rows, _ in raw_items() if rows}
+    # seeds of finished batches that were not used become free again
+    taken = set(used) | {s for b, v in fixed.items() if b not in done_batches for s in v}
     for b in PLAN["batches"]:
-        if b["batch"] in fixed:
+        need = max(b["size"] + 2, round(b["size"] * PLAN["seeds_per_item"]))
+        if b["batch"] in fixed and len(fixed[b["batch"]]) >= b["size"]:
             continue
-        need = round(b["size"] * PLAN["seeds_per_item"])
         free = [s for s in db.values() if s["seed_id"] not in taken]
         want = set(HOOKS[b["cell"]])
         free.sort(key=lambda s: (0 if not want or want & set(s.get("hooks", [])) else 1))
@@ -328,7 +330,12 @@ def prompts(only=None):
             .replace("{{USED_OPENINGS}}", ", ".join(used_open) or "—") \
             .replace("{{USED_VERBS}}", ", ".join(v for v, c in vc.items() if c >= 4) or "—") \
             .replace("{{USED_NAMES}}", ", ".join(used_names))
-        (out / f"{b['batch']}.md").write_text(text)
+        master = (DOC / "gemini/00-master.md").read_text().split("\n", 3)[3]
+        text = text.replace("> Paste after `00-master.md` (it can be in the same chat as the previous batches, but if the chat already has more than 6 batches, open a new one and paste `00-master.md` again).\n\n", "")
+        full = (f"# Grammar NOEON — Passive Voice v7 · batch {b['batch']}\n\n## PART A. General instruction (read it all)\n{master}\n\n"
+                f"## PART B. Task for this message\n\n" + text.split("\n", 1)[1] +
+                "\nIf the answer does not fit in one reply, stop after a complete line; I will write «continue».\n")
+        (out / f"{b['batch']}.md").write_text(full)
         print(f"{b['batch']} ({b['cell']}, {b['size']}) → content/passive-bank/v7/prompts/{b['batch']}.md")
 
 
