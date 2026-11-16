@@ -1854,6 +1854,8 @@ async function route() {
   const section = parts[0] || "home";
   const titles = {"teacher-library":"Библиотека наборов","task-issues":"Сообщения о заданиях",tests:"Тесты","test-preview":"Просмотр теста","test-attempt":"Проверочный тест",home:"Сегодня",grammar:"Темы",practice:"Практика",session:"Задание",results:"Результаты",report:"Отчёт",student:"Ученик",notifications:"Уведомления","review-queue":"Проверка переводов",students:"Ученики",profile:"Профиль",join:"Приглашение",assign:"Назначить задание",edit:"Редактировать задание"};
   document.title = `${titles[section] || "Grammar NOEON"} — Grammar NOEON`;
+  // Анимация входа стартует сразу (на заглушке), а не после загрузки данных, иначе готовый экран «подпрыгивает».
+  app.classList.remove('viewin');void app.offsetWidth;app.classList.add('viewin');
   try {
     if (section === "home") await renderHome();
     else if (section === "students") await renderStudents();
@@ -1880,7 +1882,6 @@ async function route() {
     else { location.hash = "home"; }
   } catch (error) { showError(error); }
   syncScreenChrome();
-  app.classList.remove('viewin');void app.offsetWidth;app.classList.add('viewin');
   if(restoreTop!==null)requestAnimationFrame(()=>window.scrollTo({top:restoreTop,behavior:'instant'}));
   if(section!=='notifications'&&typeof refreshNotifications==='function')void refreshNotifications();
 }

@@ -316,3 +316,7 @@ button.roster-kpi:focus-visible { outline: 2px solid var(--pri); outline-offset:
 .sp-chip b { color: var(--bad); font-variant-numeric: tabular-nums; }
 .sp-chip:hover { border-color: var(--bad); }
 .sp-chip:focus-visible { outline: 2px solid var(--pri); outline-offset: 2px; }
+
+.roster-skel-kpis { margin: 12px 0; }
+.roster-skel-kpis i { display: block; height: 64px; border-radius: 14px; background: var(--line); animation: roster-shimmer 1.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .roster-skel-kpis i { animation: none; } }

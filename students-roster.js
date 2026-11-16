@@ -398,7 +398,7 @@
     syncRouteNav();
     if (account.user?.role !== 'teacher') { location.hash = 'profile'; return; }
     const owner = account.user.id, routeAtStart = location.hash;
-    app.innerHTML = `<div class="roster" aria-busy="true"><div class="roster-head"><h1>Ученики</h1></div><div class="roster-list">${skeletonRows(6)}</div></div>`;
+    app.innerHTML = `<div class="roster" aria-busy="true"><div class="roster-head"><h1>Ученики</h1></div><div class="roster-kpis roster-skel-kpis" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="roster-list">${skeletonRows(6)}</div></div>`;
     let data;
     try { data = await accountRequest('teacher/students'); }
     catch (error) {
@@ -455,6 +455,17 @@
       badge.textContent = reviewFields; badge.hidden = !reviewFields;
     };
 
+    /* бейджи «На проверке» и «Пригласить» известны с прошлого раза: рисуем их сразу, сервер лишь уточняет */
+    const hintKey = 'noeon-roster-hint:' + owner;
+    let hint = {};
+    try { hint = JSON.parse(localStorage.getItem(hintKey) || '{}') || {}; } catch { hint = {}; }
+    const saveHint = patch => { hint = { ...hint, ...patch }; try { localStorage.setItem(hintKey, JSON.stringify(hint)); } catch { /* приватный режим */ } };
+    if (hint.review && typeof hint.review === 'object') {
+      for (const x of items) x.i.review = hint.review[x.s.id] || null;
+      reviewFields = Number(hint.fields) || 0;
+    }
+    if (Number(hint.invites) > 0) { const b = $('#roster-invite-count'); b.textContent = hint.invites; b.hidden = false; }
+
     let shown = [];
     const paint = () => {
       const { q, fixed } = resolveQuery(items.map(x => x.s), query);
@@ -483,7 +494,11 @@
     loadReviewSummary().then(r => {
       if (!mounted()) return;
       for (const x of items) x.i.review = r.map.get(x.s.id) || null;
-      reviewFields = r.totalFields; paint();
+      const fresh = Object.fromEntries(r.map);
+      const changed = Number(hint.fields || 0) !== r.totalFields || JSON.stringify(hint.review || {}) !== JSON.stringify(fresh);
+      reviewFields = r.totalFields;
+      saveHint({ review: fresh, fields: r.totalFields });
+      if (changed) paint();
     }).catch(() => {});
 
     input.addEventListener('input', () => { query = input.value; paint(); });
@@ -525,7 +540,7 @@
     /* приглашения: прежняя логика, но в диалоге; число активных ссылок — бейдж на кнопке */
     bindInviteForm();
     const badge = $('#roster-invite-count'), invites = $('#active-invites');
-    const syncBadge = () => { const n = invites.querySelectorAll('.active-invite').length; badge.textContent = n; badge.hidden = !n; };
+    const syncBadge = () => { const n = invites.querySelectorAll('.active-invite').length; if (invites.querySelector('.active-invite') || !invites.textContent.includes('Загружаем')) saveHint({ invites: n }); badge.textContent = n; badge.hidden = !n; };
     new MutationObserver(syncBadge).observe(invites, { childList: true, subtree: true });
     await renderActiveInvites();
   }
