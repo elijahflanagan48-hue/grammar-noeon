@@ -1,8 +1,10 @@
 # Prompt for Codex: Passive Voice v7, the engine and varied selection
 
-> Paste this whole text into Codex (desktop app) in the `grammar-noeon` repository. You can run it in parts: stages 1–2 first, then 3–4, then 5–6.
+> Paste this whole text into Codex (desktop app) in the `grammar-noeon` repository.
 
 ---
+
+**First step:** run `git pull origin main` — the files this prompt refers to (`docs/variety/…`, `scripts/passive_v7.py`) were added to GitHub on 2026-11-16 and may not yet be in your local copy. Do all stages in order (1→6), without waiting for confirmation between them.
 
 ## Context
 
