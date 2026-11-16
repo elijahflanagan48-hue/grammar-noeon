@@ -89,3 +89,73 @@
 .progress[data-seg="1"]::before{content:"";position:absolute;inset:0;background:var(--surf2)}
 .progress{position:relative}
 .progress[data-seg="1"] span{position:relative;border-radius:0;box-shadow:none}
+
+/* ===== Выбор тренировки (настройка практики) ===== */
+#app .eyebrow{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--pri-d)}
+.practice-presets>h2,.practice-presets>summary{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--fade);margin:0 0 12px}
+.practice-preset-grid{gap:14px}
+.practice-preset{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;padding:20px 20px 18px 24px;background:radial-gradient(120% 80% at 0% 0%,color-mix(in srgb,var(--pri-soft) 85%,transparent),transparent 65%),var(--surf);box-shadow:0 14px 30px -22px rgba(15,26,46,.4)}
+.practice-preset::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(var(--pri),var(--ok))}
+.practice-preset h3{font-size:1.2rem;letter-spacing:-.01em}
+.practice-preset p{color:var(--mut);font-size:15px}
+.practice-preset .preset-topics{display:inline-block;align-self:flex-start;padding:4px 11px;border-radius:99px;background:var(--pri-soft);color:var(--pri-d);font-size:13px;font-weight:700}
+.practice-preset .preset-count,.practice-preset p:last-of-type:not(.preset-topics){font-size:13px;color:var(--fade)}
+.preset-actions{gap:10px;margin-top:14px}
+.preset-actions .button{min-height:50px;border-radius:16px;font-weight:800;justify-content:center}
+.preset-actions .button.primary{background:var(--tx);color:var(--surf);border:0;box-shadow:0 12px 22px -12px rgba(15,26,46,.55)}
+:root[data-theme="dark"] .preset-actions .button.primary{background:var(--pri);color:var(--on-pri)}
+
+#practice-form.filters{display:flex;flex-direction:column;gap:14px;padding:0;border:0;background:transparent;box-shadow:none}
+#practice-form .practice-tenses,#practice-form .practice-levels,#practice-form .practice-formats,#practice-form .field{margin:0;padding:18px;border:1px solid var(--line);border-radius:22px;background:var(--surf);box-shadow:var(--sh-sm)}
+#practice-form legend{padding:0;float:left;width:100%;margin:0 0 12px;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--fade)}
+#practice-form legend+*{clear:both}
+#practice-form .tense-actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+#practice-form .tense-actions .button{min-height:36px;padding:0 14px;border-radius:99px;font-size:13px;font-weight:700;background:var(--surf2);border:0;color:var(--mut)}
+#practice-form .tense-group{padding:0;border:0;background:transparent;margin:0 0 6px}
+#practice-form .tense-group legend{color:var(--pri-d);font-size:12px;margin-bottom:8px}
+#practice-form .tense-options{gap:6px 14px}
+#practice-form .tense-group label,#practice-form .tense-extra,#practice-form .level-options label{display:flex;align-items:center;gap:10px;padding:11px 14px;margin:0 0 8px;border:2px solid var(--line);border-radius:16px;background:var(--surf);font-size:15px;font-weight:600;transition:border-color .15s,background .15s}
+#practice-form .tense-group label:has(input:checked),#practice-form .tense-extra:has(input:checked),#practice-form .level-options label:has(input:checked){border-color:var(--pri);background:var(--pri-soft);color:var(--pri-d);font-weight:700}
+#practice-form .level-options{gap:8px}
+#practice-form .field label{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--fade)}
+#practice-form .field input[type=number]{min-height:54px;border:2px solid var(--line2);border-radius:16px;font-size:20px;font-weight:700;max-width:140px}
+#practice-form .filter-summary{position:sticky;bottom:calc(92px + var(--app-safe-bottom));z-index:20;margin-top:4px;padding:12px 12px 12px 18px;border:1px solid var(--line);border-radius:24px;background:color-mix(in srgb,var(--surf) 90%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 18px 34px -18px rgba(15,26,46,.45)}
+#practice-form .filter-summary #available{font-weight:700;font-size:14px}
+#practice-form .filter-summary .button.primary{min-height:54px;padding:0 24px;border-radius:18px;font-weight:800;font-size:16px;background:var(--tx);color:var(--surf);border:0;box-shadow:0 12px 22px -12px rgba(15,26,46,.55)}
+#practice-form .filter-summary .button.primary:disabled{background:var(--surf2);color:var(--fade);box-shadow:none}
+:root[data-theme="dark"] #practice-form .filter-summary .button.primary:not(:disabled){background:var(--pri);color:var(--on-pri)}
+@media (max-width:760px){#practice-form .filter-summary{flex-direction:column;align-items:stretch}#practice-form .filter-summary .button.primary{width:100%}}
+
+/* ===== Итоги тренировки ===== */
+.practice-report .report-hero{display:flex;flex-direction:column;align-items:stretch;gap:22px;padding:26px 22px;border:1px solid var(--line);border-radius:28px;background:radial-gradient(120% 70% at 0% 0%,color-mix(in srgb,var(--pri-soft) 90%,transparent),transparent 65%),var(--surf);box-shadow:0 22px 40px -26px rgba(15,26,46,.45)}
+.practice-report .report-orbit{align-self:center;width:176px;height:176px;background:conic-gradient(var(--pri) var(--result),var(--surf2) 0);box-shadow:0 0 28px -8px color-mix(in srgb,var(--pri) 55%,transparent)}
+.practice-report .report-orbit>span{width:146px;height:146px;font-family:var(--ff-serif);font-size:2.9rem;letter-spacing:-.03em}
+.practice-report .report-orbit small{font:700 .7rem/1.5 var(--ff);letter-spacing:.1em;text-transform:uppercase;color:var(--fade)}
+.practice-report .report-hero h2{font-family:var(--ff-serif);font-size:clamp(1.5rem,5vw,2.1rem);letter-spacing:-.02em;margin:0 0 8px;text-align:center}
+.practice-report .report-hero p{margin:0 0 16px;text-align:center;color:var(--mut);font-size:15px}
+.practice-report .report-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.practice-report .report-metrics>div{padding:14px 16px;border-radius:18px;background:var(--surf2)}
+.practice-report .report-metrics strong{font-size:1.15rem;line-height:1.25}
+@media (min-width:760px){.practice-report .report-hero{flex-direction:row;align-items:center;gap:36px;padding:34px}.practice-report .report-hero h2,.practice-report .report-hero p{text-align:left}}
+.report-topics h2,.report-review-toggle{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--fade)}
+.report-topic{border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--sh-sm)}
+.report-topic progress{appearance:none;-webkit-appearance:none;height:10px;border:0;border-radius:99px;background:var(--surf2);overflow:hidden}
+.report-topic progress::-webkit-progress-bar{background:var(--surf2);border-radius:99px}
+.report-topic progress::-webkit-progress-value{background:linear-gradient(90deg,var(--pri),var(--ok));border-radius:99px}
+.report-topic progress::-moz-progress-bar{background:linear-gradient(90deg,var(--pri),var(--ok));border-radius:99px}
+.report-answer{border:1px solid var(--line);border-radius:18px;background:var(--surf);margin-bottom:10px;overflow:hidden}
+.report-answer-status{display:inline-grid;place-items:center;flex:none;width:28px;height:28px;border-radius:50%;font-weight:800;font-size:15px}
+.report-answer-status.is-correct{background:var(--ok-soft);color:var(--ok)}
+.report-answer-status.is-wrong{background:var(--bad-soft);color:var(--bad)}
+.report-footer{display:flex;flex-direction:column-reverse;gap:10px;margin-top:22px}
+.report-footer .button{min-height:54px;border-radius:18px;font-weight:800;justify-content:center;text-align:center}
+.report-footer .button.primary{background:var(--tx);color:var(--surf);border:0;box-shadow:0 12px 22px -12px rgba(15,26,46,.55)}
+:root[data-theme="dark"] .report-footer .button.primary{background:var(--pri);color:var(--on-pri)}
+@media (min-width:760px){.report-footer{flex-direction:row-reverse;justify-content:space-between}.report-footer .button{min-width:220px}}
+.preset-actions{flex-wrap:nowrap}
+.preset-actions .button.primary{flex:1 1 auto}
+.preset-actions .button:not(.primary){flex:none;padding:0 18px}
+.practice-report .report-metrics>div:first-child{grid-column:1/-1}
+.practice-report .report-metrics>div:last-child{grid-column:1/-1}
+#practice-form .tense-group label,#practice-form .tense-extra,#practice-form .level-options label{padding:8px 12px;margin-bottom:6px;font-size:14px;border-radius:14px}
+#practice-form .practice-tenses input{width:17px;height:17px}
