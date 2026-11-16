@@ -322,7 +322,7 @@ function comparisonMapSvg() {
   return `<svg class="cm-svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Карта правила: стадион степеней сравнения">${fascia}${cmTrack()}${CM.zones.map(cmZone).join('')}${body}</svg>`;
 }
 function comparisonMapHtml() {
-  const modes = `<span class="cm-modes" role="group" aria-label="Режим карты">${[["all", "👁", "Всё"], ["hide", "🙈", "Закрыть финиш"], ["trap", "🚩", "Фальстарт"], ["game", "🎮", "Игры"]].map(([m, i, t], n) => `<button type="button" data-cm-mode="${m}" aria-pressed="${!n}" title="${t}"><i aria-hidden="true">${i}</i><span>${t}</span></button>`).join("")}</span>`;
+  const modes = `<span class="cm-modes" role="group" aria-label="Режим карты">${[["all", "👁", "Всё"], ["hide", "🙈", "Закрыть финиш"], ["heat", "🔥", "Ошибки"], ["game", "🎮", "Игры"]].map(([m, i, t], n) => `<button type="button" data-cm-mode="${m}" aria-pressed="${!n}" title="${t}"><i aria-hidden="true">${i}</i><span>${t}</span></button>`).join("")}</span>`;
   const search = `<label class="cm-search"><span class="sr-only">Найти слово на карте</span><i class="cm-s-ic" aria-hidden="true">🔍</i><input type="search" placeholder="Найти: good, дешёвый, as … as…" autocomplete="off" spellcheck="false"><span class="nc-results cm-results" hidden></span></label>`;
   return `<section class="cm-wrap" id="comparison-stadium" aria-labelledby="cm-title">
     <div class="cm-head"><div><p class="eyebrow">Карта правила</p><h2 id="cm-title">Стадион сравнений</h2><p>Каждое прилагательное бежит забег: со старта (big) через отметку than (bigger) к финишу (the biggest). Нажмите на забег, чтобы увидеть примеры и проверить себя.</p></div>
@@ -469,9 +469,74 @@ function initialiseComparisonMap(root) {
     game.insertAdjacentHTML('beforeend', `<p class="cm-g-r ${ok ? 'ok' : 'bad'}">${ok ? '✓ Верно' : '✗ Нет'}: ${cmEsc(q.why)}</p><button type="button" class="cm-g-next">${game$.i + 1 < game$.list.length ? 'Дальше →' : 'Итог'}</button>`);
     open(q.open);
   }, { signal });
+  /* ---------- карта ошибок ---------- */
+  // Берём ответы по теме: с сервера (свои — для ученика, всего класса — для учителя), без входа — из истории браузера.
+  // Ошибки считаются по разделам правила (rule_refs у каждого пропуска) и по словам (base_adjective).
+  const heatBox = document.createElement('div'); heatBox.className = 'nc-ui cm-heatbox'; heatBox.hidden = true; box.append(heatBox);
+  const slug = h => h.toLowerCase().replace(/\s+/g, '-');
+  const keyBySlug = Object.fromEntries(Object.entries(CM_HEAD).map(([k, h]) => [slug(h), k]));
+  const itemKeys = it => { const k = [it.head]; if (it.kind === 'lift' && it.f[0] === 'far') k.push('further'); if (it.kind === 'stair' && it.f[0] === 'old') k.push('older'); return k; };
+  const heat$ = { data: null, loading: null };
+  const localHeat = () => {
+    let hist = []; try { hist = typeof readHistory === 'function' ? readHistory() : []; } catch {}
+    const sec = {}, words = {}, wrong = {};
+    hist.forEach(at => (at.answers || []).forEach(a => (a.fields || []).forEach((f, i) => {
+      const b = a.item?.blanks?.[i], ref = b?.rule_refs?.[0] || a.item?.rule_refs?.[0] || '';
+      if (!ref.includes('06-comparison') || f.verified === false) return;
+      const s = sec[ref] || (sec[ref] = { ref, ok: 0, n: 0 }); s.n++; if (f.correct) s.ok++;
+      if (b?.base_adjective) { const w = words[b.base_adjective.toLowerCase()] || (words[b.base_adjective.toLowerCase()] = { word: b.base_adjective.toLowerCase(), ok: 0, n: 0 }); w.n++; if (f.correct) w.ok++; }
+      if (!f.correct && typeof f.submitted === 'string' && f.submitted.trim()) { const ans = b?.answer || ''; const k = ref + '|' + f.submitted.trim().toLowerCase() + '|' + ans; (wrong[k] = wrong[k] || { ref, given: f.submitted.trim().toLowerCase(), answer: ans, n: 0 }).n++; }
+    })));
+    return { scope: 'local', students: 0, sections: Object.values(sec), words: Object.values(words), wrong: Object.values(wrong).sort((a, b) => b.n - a.n).slice(0, 40) };
+  };
+  const loadHeat = () => heat$.loading || (heat$.loading = (async () => {
+    if (typeof account !== 'undefined' && account.user && typeof accountRequest === 'function') {
+      try { return heat$.data = await accountRequest('error-map?topic=comparison'); } catch {}
+    }
+    return heat$.data = localHeat();
+  })());
+  const heatColor = r => r >= 0.35 ? 'bad' : r >= 0.15 ? 'mid' : 'ok';
+  const pct = r => Math.round(r * 100) + '%';
+  const showHeat = async () => {
+    heatBox.hidden = false; heatBox.innerHTML = '<p class="cm-h-h">🔥 Карта ошибок</p><p class="cm-h-s">Считаю ответы…</p>';
+    const d = await loadHeat(); if (!box.classList.contains('cm-mode-heat')) return;
+    const bySec = {}; d.sections.forEach(s => { const k = keyBySlug[(s.ref || '').split('#')[1]]; if (!k) return; const t = bySec[k] || (bySec[k] = { key: k, ok: 0, n: 0 }); t.ok += s.ok; t.n += s.n; });
+    const byWord = Object.fromEntries(d.words.map(w => [w.word, w]));
+    svg.querySelector('.cm-heat')?.remove();
+    const g = document.createElementNS('http://www.w3.org/2000/svg', 'g'); g.setAttribute('class', 'cm-heat');
+    let marks = '';
+    svg.querySelectorAll('.has-heat').forEach(n => n.classList.remove('has-heat'));
+    CM.items.forEach(it => {
+      const w = it.kind !== 'tool' && byWord[String(it.f[0]).split(' ')[0].toLowerCase()];
+      const st = w && w.n >= 2 ? w : itemKeys(it).map(k => bySec[k]).filter(Boolean).reduce((a, s) => ({ ok: a.ok + s.ok, n: a.n + s.n }), { ok: 0, n: 0 });
+      if (!st.n) return;
+      const r = 1 - st.ok / st.n, c = heatColor(r);
+      svg.querySelector(`[data-st="${it.id}"]`)?.classList.add('has-heat');
+      const bx = it.x + it.w - 20, by = it.y + (it.kind === 'stair' ? it.h / 2 : 30);
+      marks += `<rect class="cm-hm cm-hm-${c}" x="${it.x - 6}" y="${it.y - 6}" width="${it.w + 12}" height="${it.h + 12}" rx="22"/>
+        <g class="cm-hb cm-hm-${c}"><rect x="${bx - 150}" y="${by - 30}" width="170" height="60" rx="30"/><text x="${bx - 65}" y="${by + 12}" text-anchor="middle">${pct(r)}</text></g>`;
+    });
+    g.innerHTML = marks; svg.append(g);
+    const ranked = Object.values(bySec).filter(s => s.n >= 1).map(s => ({ ...s, r: 1 - s.ok / s.n })).sort((a, b) => b.r - a.r || b.n - a.n);
+    const who = d.scope === 'class' ? `ответы учеников${d.students ? ` (${d.students})` : ''}` : d.scope === 'me' ? 'ваши ответы' : 'ответы на этом устройстве';
+    const total = ranked.reduce((a, s) => a + s.n, 0);
+    if (!total) { heatBox.innerHTML = `<p class="cm-h-h">🔥 Карта ошибок</p><p class="cm-h-s">${d.scope === 'class' ? 'Ученики ещё не решали задания по этой теме.' : 'Пока нет ответов по этой теме. Решите тренировку — и карта покажет, где ошибки.'}</p>${d.scope === 'class' ? '' : '<a class="cm-h-go" href="#practice/comparison">Начать тренировку →</a>'}`; return; }
+    const wrong = d.wrong.slice(0, 5).map(x => `<li><s>${cmEsc(x.given)}</s> → <b>${cmEsc(x.answer || '')}</b>${x.n > 1 ? ` <small>×${x.n}</small>` : ''}</li>`).join('');
+    heatBox.innerHTML = `<button type="button" class="cm-h-min" aria-label="Свернуть">–</button><p class="cm-h-h">🔥 Карта ошибок</p><p class="cm-h-s">${who} · ${total} ответов</p>
+      <p class="cm-h-legend"><i class="cm-hm-ok"></i>до 15%<i class="cm-hm-mid"></i>15–35%<i class="cm-hm-bad"></i>больше 35% ошибок</p>
+      <p class="cm-h-t">Где ошибаются чаще</p><ol class="cm-h-list">${ranked.slice(0, 6).map(s => `<li><button type="button" data-heat-go="${s.key}"><span>${cmEsc(CM_HEAD[s.key])}</span><i class="cm-hm-${heatColor(s.r)}" style="width:${Math.max(6, s.r * 100)}%"></i><small>${s.n - s.ok} из ${s.n} неверно</small></button></li>`).join('')}</ol>
+      ${wrong ? `<p class="cm-h-t">Частые неверные ответы</p><ul class="cm-h-wrong">${wrong}</ul>` : ''}`;
+  };
+  const hideHeat = () => { heatBox.hidden = true; svg.querySelector('.cm-heat')?.remove(); svg.querySelectorAll('.has-heat').forEach(n => n.classList.remove('has-heat')); };
+  heatBox.addEventListener('click', e => {
+    if (e.target.closest('.cm-h-min')) { heatBox.classList.toggle('is-min'); return; }
+    const go = e.target.closest('[data-heat-go]'); if (!go) return;
+    const it = CM.items.find(x => itemKeys(x).includes(go.dataset.heatGo)); if (it) { if (mobile()) heatBox.classList.add('is-min'); open(it.id); }
+  }, { signal });
   const setMode = m => {
     box.querySelectorAll('[data-cm-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cmMode === m)));
-    box.classList.toggle('cm-mode-hide', m === 'hide'); box.classList.toggle('cm-mode-trap', m === 'trap');
+    box.classList.toggle('cm-mode-hide', m === 'hide'); box.classList.toggle('cm-mode-heat', m === 'heat');
+    if (m === 'heat') showHeat(); else hideHeat();
     svg.querySelectorAll('.cm-shown').forEach(n => n.classList.remove('cm-shown'));
     game$.on = m === 'game'; game.hidden = !game$.on; box.classList.toggle('cm-mode-game', game$.on);
     if (game$.on) menu(); else game$.answered = false;

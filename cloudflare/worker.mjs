@@ -487,6 +487,24 @@ async function route(db, env, request, url, data, responseHeaders) {
     ])).map(result=>result.results);
     return [{topics,weeks,since:new Date(since*1000).toISOString(),days:days.map(row=>row.completed)},{}];
   }
+  // Карта ошибок: доля ошибок по разделам правила (и по словам) в ответах ученика или учеников учителя. Считает D1.
+  if(path==='/api/error-map'&&method==='GET') {
+    const topic=url.searchParams.get('topic')||'';
+    if(!/^[a-z_]{2,30}$/.test(topic))throw new Problem('Некорректная тема.');
+    const teacher=user.role==='teacher';
+    const scope=teacher?"p.user_id IN (SELECT id FROM users WHERE teacher_id=? AND role='student')":'p.user_id=?';
+    const from=`FROM practice p,json_each(p.answers) a,json_each(a.value,'$.fields') f WHERE ${scope} AND json_extract(a.value,'$.item.topic')=? AND COALESCE(json_extract(f.value,'$.verified'),1)<>0`;
+    const ref="COALESCE(json_extract(a.value,'$.item.blanks['||f.key||'].rule_refs[0]'),json_extract(a.value,'$.item.rule_refs[0]'))";
+    const [sections,words,wrong,people]=(await db.batch([
+      prepare(db,`SELECT ${ref} AS ref,SUM(json_extract(f.value,'$.correct')=1) AS ok,COUNT(*) AS n ${from} GROUP BY ref`,[user.id,topic]),
+      prepare(db,`SELECT lower(json_extract(a.value,'$.item.blanks['||f.key||'].base_adjective')) AS word,SUM(json_extract(f.value,'$.correct')=1) AS ok,COUNT(*) AS n ${from} AND word IS NOT NULL GROUP BY word`,[user.id,topic]),
+      prepare(db,`SELECT ${ref} AS ref,lower(trim(CASE WHEN json_type(f.value,'$.submitted')='integer' THEN json_extract(a.value,'$.item.options['||json_extract(f.value,'$.submitted')||']') ELSE json_extract(f.value,'$.submitted') END)) AS given,
+        COALESCE(json_extract(a.value,'$.item.blanks['||f.key||'].answer'),json_extract(a.value,'$.item.options['||json_extract(a.value,'$.item.correct_option_index')||']')) AS answer,COUNT(*) AS n
+        ${from} AND json_extract(f.value,'$.correct')<>1 GROUP BY ref,given,answer HAVING given IS NOT NULL AND length(given)<=60 ORDER BY n DESC LIMIT 40`,[user.id,topic]),
+      prepare(db,`SELECT COUNT(DISTINCT p.user_id) AS students ${from}`,[user.id,topic]),
+    ])).map(r=>r.results);
+    return [{scope:teacher?'class':'me',students:people[0]?.students||0,sections,words,wrong},{}];
+  }
   if(path==='/api/teacher/reviews'&&method==='GET')return [await reviewQueue(db,user,url.searchParams.get('cursor')),{}];
   if(path==='/api/notifications'&&method==='GET') {
     const rows=await notificationRows(db,user);

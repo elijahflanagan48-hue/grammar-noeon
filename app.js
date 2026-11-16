@@ -1227,7 +1227,7 @@ function lightHistoryAttempt(attempt) {
     ...pick(answer,['id','correct','submitted']),
     fields:(answer.fields||[]).map(f=>pick(f,['submitted','correct','verified','diagnostic'])),
     item:{...pick(answer.item,['id','type','prompt','summary','correct_option_index','options','answer','answer_text','explanation_ru','rule_refs','practice_tenses','tags','level']),
-      ...(answer.item?.blanks ? {blanks:answer.item.blanks.map(b=>pick(b,['answer','explanation_ru','rule_refs','tense_or_construction']))} : {})}
+      ...(answer.item?.blanks ? {blanks:answer.item.blanks.map(b=>pick(b,['answer','explanation_ru','rule_refs','tense_or_construction','base_adjective']))} : {})}
   }))};
 }
 let toastTimer;

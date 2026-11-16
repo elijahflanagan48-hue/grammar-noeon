@@ -1,7 +1,7 @@
 /* Карта правила Degrees of Comparison: «Лестница степеней» */
 .cm-wrap,#cm-canvas{--cm-0:#4a5b78;--cm-1:#c26a12;--cm-2:#7a3fc0;--cm-0-bg:#e9edf4;--cm-1-bg:#fcebd7;--cm-2-bg:#efe5fb;
   --cm-er:#1f7a55;--cm-e:#0b7a72;--cm-dbl:#1c5fa0;--cm-y:#8f6400;--cm-more:#a8437f;--cm-both:#6a48c0;--cm-lift:#26324a;--cm-trap:#c0392b;--cm-trap-bg:#fbe5e2;
-  --cm-tool:#24675b;--cm-tool-bg:#e4efe8;--cm-tartan:#c9573c;--cm-tartan-d:#a8432b;--cm-gold:#a87400;--cm-gold-bg:#fbf1d6}
+  --cm-tool:#24675b;--cm-tool-bg:#e4efe8;--cm-heat-ok:#2f9a5f;--cm-heat-mid:#d99a1a;--cm-heat-bad:#d63a2a;--cm-tartan:#c9573c;--cm-tartan-d:#a8432b;--cm-gold:#a87400;--cm-gold-bg:#fbf1d6}
 :root[data-theme="dark"] .cm-wrap,:root[data-theme="dark"] #cm-canvas{--cm-0:#a9b8d4;--cm-1:#f0a860;--cm-2:#c4a2ff;--cm-0-bg:#1c2538;--cm-1-bg:#3a2610;--cm-2-bg:#2a1c46;
   --cm-er:#6fd3a4;--cm-e:#5fd6cc;--cm-dbl:#7cc0ff;--cm-y:#ebc570;--cm-more:#f09ccb;--cm-both:#b79cff;--cm-lift:#e8eefb;--cm-trap:#ff8a7a;--cm-trap-bg:#3d1714;
   --cm-tool:#7fd1bf;--cm-tool-bg:#13302a;--cm-tartan:#7a3424;--cm-tartan-d:#5e2619;--cm-gold:#ebc570;--cm-gold-bg:#33270c}
@@ -107,8 +107,35 @@
 .nc.cm-mode-hide .cm-st:not(.cm-shown) .cm-w2,.nc.cm-mode-hide .cm-st:not(.cm-shown) .cm-w1{opacity:0}
 .nc.cm-mode-hide .cm-st:not(.cm-shown) .cm-s1,.nc.cm-mode-hide .cm-st:not(.cm-shown) .cm-s2{fill:transparent;stroke:#fff;stroke-dasharray:12 10}
 .nc.cm-mode-hide .cm-lift:not(.cm-shown) .cm-s1,.nc.cm-mode-hide .cm-lift:not(.cm-shown) .cm-s2{stroke:var(--line2)}
-.nc.cm-mode-trap .cm-st:not(.cm-trap){opacity:.16}
-.nc.cm-mode-trap .cm-trap .cm-tag{fill:var(--cm-trap-bg);stroke:var(--cm-trap);stroke-width:4}
+/* карта ошибок */
+.nc.cm-mode-heat .cm-st:not(.has-heat){opacity:.28}
+.cm-heat{pointer-events:none}
+.cm-hm{fill-opacity:.16;stroke-width:8}
+.cm-hm.cm-hm-ok,.cm-hb.cm-hm-ok rect{fill:var(--cm-heat-ok);stroke:var(--cm-heat-ok)}
+.cm-hm.cm-hm-mid,.cm-hb.cm-hm-mid rect{fill:var(--cm-heat-mid);stroke:var(--cm-heat-mid)}
+.cm-hm.cm-hm-bad,.cm-hb.cm-hm-bad rect{fill:var(--cm-heat-bad);stroke:var(--cm-heat-bad)}
+.cm-hm.cm-hm-bad{fill-opacity:.26;stroke-width:10}
+.cm-hb text{font-size:36px;font-weight:900;fill:#fff}
+.cm-heatbox{left:12px;top:70px;width:min(330px,calc(100% - 24px));max-height:calc(100% - 90px);overflow:auto;background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:14px 16px;display:grid;gap:8px}
+.cm-heatbox[hidden]{display:none}
+.cm-heatbox p{margin:0}
+.cm-h-h{font-size:17px;font-weight:900}
+.cm-h-s{font-size:13.5px;color:var(--mut)}
+.cm-h-t{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);margin-top:4px!important}
+.cm-h-legend{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;font-size:12px;color:var(--mut)}
+.cm-h-legend i{width:12px;height:12px;border-radius:4px;margin-left:4px}
+.cm-heatbox i.cm-hm-ok{background:var(--cm-heat-ok)}.cm-heatbox i.cm-hm-mid{background:var(--cm-heat-mid)}.cm-heatbox i.cm-hm-bad{background:var(--cm-heat-bad)}
+.cm-h-list{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.cm-h-list button{width:100%;display:grid;grid-template-columns:1fr auto;gap:3px 8px;align-items:center;text-align:left;font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:12px;background:var(--surf2);color:var(--tx);padding:8px 10px}
+.cm-h-list button:hover{border-color:var(--pri)}
+.cm-h-list span{font-size:14px;font-weight:700}.cm-h-list small{font-size:12px;color:var(--mut);grid-row:1;grid-column:2}
+.cm-h-list i{grid-column:1/-1;height:6px;border-radius:99px}
+.cm-h-wrong{list-style:none;margin:0;padding:0;display:grid;gap:3px;font-size:14px}
+.cm-h-wrong s{color:var(--bad)}.cm-h-wrong b{color:var(--ok)}.cm-h-wrong small{color:var(--mut)}
+.cm-h-go{font-weight:700;color:var(--pri)}
+.cm-h-min{position:absolute;right:10px;top:10px;width:30px;height:30px;font:inherit;font-size:18px;line-height:1;cursor:pointer;border:1px solid var(--line);border-radius:9px;background:var(--surf2);color:var(--tx)}
+.cm-heatbox.is-min>*:not(.cm-h-h):not(.cm-h-min){display:none}
+@media(max-width:700px){.cm-heatbox{top:auto;bottom:12px;max-height:46%}}
 /* инструменты */
 .cm-search{position:relative;flex:1 1 200px;max-width:300px}
 .cm-s-ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-style:normal;font-size:15px;pointer-events:none;opacity:.7}
