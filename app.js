@@ -1561,9 +1561,9 @@ function renderSession() {
     ${sessionContentOutdated(session, item) ? '<p class="verb-only-note">Эта тренировка сохранена до редакторских исправлений. <a href="#practice">Начните новую тренировку</a>, чтобы получить обновлённые задания. Старый результат сохранён.</p>' : ""}
     <div class="practice-rule-bar"><button class="button" type="button" id="practice-rule" aria-controls="practice-reference" aria-expanded="false">Правило</button></div>
     <div class="session-top"><h1 class="session-title">Задание ${session.index + 1} из ${session.items.length}</h1><span>Верно: ${session.correct}</span></div>
-    <div class="progress" role="progressbar" aria-label="Прогресс тренировки" aria-valuemin="0" aria-valuemax="${session.items.length}" aria-valuenow="${session.index + (session.checked ? 1 : 0)}"><span style="width:${((session.index + (session.checked ? 1 : 0)) / session.items.length) * 100}%"></span></div>
+    <div class="progress" style="--n:${session.items.length}" data-seg="${session.items.length<=12?1:0}" role="progressbar" aria-label="Прогресс тренировки" aria-valuemin="0" aria-valuemax="${session.items.length}" aria-valuenow="${session.index + (session.checked ? 1 : 0)}"><span style="width:${((session.index + (session.checked ? 1 : 0)) / session.items.length) * 100}%"></span></div>
     <article class="exercise-card">
-      <div class="exercise-meta"><span class="pill">${escapeHtml(levelLabel(item.level))}</span><span class="pill">${escapeHtml(TYPE_LABELS[item.type] || item.type)}</span></div>
+      <div class="exercise-meta"><span class="pill" data-level="${escapeHtml(item.level||"")}">${escapeHtml(levelLabel(item.level))}</span><span class="pill">${escapeHtml(TYPE_LABELS[item.type] || item.type)}</span></div>
       ${item.title ? `<h2>${escapeHtml(item.title)}</h2>` : ""}
       ${session.draftConflict?.index===session.index?`<section class="draft-conflict" role="status"><p>Ответ в аккаунте изменился в другой вкладке или на другом устройстве. Ваш несохранённый ввод: <strong>${escapeHtml(submittedDisplay(item,session.draftConflict.submitted))}</strong></p><button class="button" type="button" id="restore-local-draft">Восстановить мой ввод</button> <button class="button" type="button" id="keep-server-draft">Оставить ответ из аккаунта</button></section>`:""}
       ${exerciseInstructionMarkup(item)}
@@ -1917,7 +1917,7 @@ function screenBack() {
   if(previousAppRoute && history.length>1)history.back();else location.hash=screenBackFallback();
 }
 function themeSettingsMarkup() {
-  return '<section id="theme-settings" class="account-section"><h2>Оформление</h2><fieldset class="theme-options"><legend>Тема приложения</legend>'+[['auto','Авто'],['light','Светлая'],['dark','Тёмная']].map(([value,label])=>`<label><input type="radio" name="app-theme" value="${value}"><span>${label}</span></label>`).join('')+'</fieldset><p class="subtle">Авто — как в настройках устройства.</p><fieldset class="theme-options"><legend>Стиль</legend>'+[['paper','Бумага'],['notebook','Тетрадь']].map(([value,label])=>`<label><input type="radio" name="app-style" value="${value}"><span>${label}</span></label>`).join('')+'</fieldset><p class="subtle">«Бумага» — чистый белый лист с чёрными кнопками. «Тетрадь» — фон в клетку, поля и зелёные кнопки.</p></section>';
+  return '<section id="theme-settings" class="account-section"><h2>Оформление</h2><fieldset class="theme-options"><legend>Тема приложения</legend>'+[['auto','Авто'],['light','Светлая'],['dark','Тёмная']].map(([value,label])=>`<label><input type="radio" name="app-theme" value="${value}"><span>${label}</span></label>`).join('')+'</fieldset><p class="subtle">Авто — как в настройках устройства.</p><fieldset class="theme-options"><legend>Стиль</legend>'+[['paper','Бумага'],['notebook','Тетрадь']].map(([value,label])=>`<label><input type="radio" name="app-style" value="${value}"><span>${label}</span></label>`).join('')+'</fieldset><p class="subtle">«Бумага» — чистый белый лист с чёрными кнопками. «Тетрадь» — фон в клетку, поля и зелёные кнопки.</p><fieldset class="theme-options"><legend>Экран практики</legend>'+[['a','Бумага и чернила'],['b','Игровой'],['c','Тёмный фокус'],['d','Тетрадь']].map(([value,label])=>`<label><input type="radio" name="app-practice" value="${value}"><span>${label}</span></label>`).join('')+'</fieldset><p class="subtle">Как выглядят задания: «Бумага и чернила» — спокойная карточка; «Игровой» — яркие объёмные кнопки; «Тёмный фокус» — тёмный экран без лишнего; «Тетрадь» — линованный лист и пометки учителя. Настройка действует на этом устройстве.</p></section>';
 }
 function syncScreenChrome() {
   if(typeof document.getElementById!=='function')return;
@@ -1938,9 +1938,11 @@ function syncScreenChrome() {
     app.insertAdjacentHTML('beforeend',themeSettingsMarkup());
     app.querySelectorAll('[name="app-theme"]').forEach(input=>input.addEventListener('change',()=>window.NoeonTheme.set(input.value)));
     app.querySelectorAll('[name="app-style"]').forEach(input=>input.addEventListener('change',()=>window.NoeonTheme.setStyle?.(input.value)));
+    app.querySelectorAll('[name="app-practice"]').forEach(input=>input.addEventListener('change',()=>window.NoeonTheme.setPractice?.(input.value)));
   }
   app.querySelectorAll('[name="app-theme"]').forEach(input=>input.checked=input.value===window.NoeonTheme.get());
   app.querySelectorAll('[name="app-style"]').forEach(input=>input.checked=input.value===(window.NoeonTheme.getStyle?.()||'paper'));
+  app.querySelectorAll('[name="app-practice"]').forEach(input=>input.checked=input.value===(window.NoeonTheme.getPractice?.()||'a'));
   const theme=document.getElementById('theme-toggle'), dark=document.documentElement.dataset.theme==='dark';
   theme.textContent=dark?'☀':'☾';theme.setAttribute('aria-label',dark?'Включить светлую тему':'Включить тёмную тему');
   syncRoleNav();

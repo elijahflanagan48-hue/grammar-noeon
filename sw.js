@@ -43,6 +43,8 @@ const FILES = [
   "dash.css",
   "paper.css",
   "home-design.css",
+  "practice-design.css",
+  "practice-variants.css",
   "tense-map.css",
   "tense-canvas.css",
   "theory-ui.css",

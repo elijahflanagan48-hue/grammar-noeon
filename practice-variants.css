@@ -1,0 +1,75 @@
+/* Варианты экрана практики (Настройки → Оформление → Экран практики). A — основной, он в practice-design.css. */
+
+/* B · Игровой: яркие объёмные кнопки и карточки */
+:root[data-practice="b"] .session{--pri:#6c4cf1;--pri-d:#4a30c4;--pri-soft:#f1effd;--on-pri:#fff;--ok:#0d8a4d;--ok-soft:#d9f7e6;--bad:#d92d20;--bad-soft:#fde8e6;--line:#e3dffa;--line2:#cfc9f3;font-family:ui-rounded,"SF Pro Rounded","Nunito",system-ui,sans-serif}
+:root[data-theme="dark"][data-practice="b"] .session{--pri:#a08cff;--pri-d:#c4b8ff;--pri-soft:#241d4d;--on-pri:#120a38;--ok:#4ed39a;--ok-soft:#0d2a20;--bad:#ef8a76;--bad-soft:#2d1512;--line:#2b2750;--line2:#3a3570}
+:root[data-practice="b"] .progress{height:16px}
+:root[data-practice="b"] .progress[data-seg="1"]{-webkit-mask:none;mask:none;border-radius:999px;background:var(--surf2)}
+:root[data-practice="b"] .progress[data-seg="1"]::before{display:none}
+:root[data-practice="b"] .progress[data-seg="1"] span{border-radius:999px}
+:root[data-practice="b"] .progress span{background:var(--pri);box-shadow:inset 0 -4px 0 rgba(0,0,0,.14)}
+:root[data-practice="b"] .exercise-card{background:var(--surf);border:2px solid var(--line);border-bottom-width:5px;box-shadow:none}
+:root[data-practice="b"] .exercise-card::after{display:none}
+:root[data-practice="b"] .session .prompt{font-family:inherit;font-weight:800}
+:root[data-practice="b"] .session .answer-input,:root[data-practice="b"] .choice-list label{border-bottom-width:5px}
+:root[data-theme][data-practice="b"] #answer-form>.actions .button.primary,:root[data-theme][data-practice="b"] #feedback .feedback>.actions .button{background:var(--pri);color:var(--on-pri);border-bottom:6px solid var(--pri-d);box-shadow:none;text-transform:uppercase;letter-spacing:.04em;font-weight:900;min-height:56px}
+:root[data-practice="b"] #answer-form>.actions .button.primary:active,:root[data-practice="b"] #feedback .feedback>.actions .button:active{transform:translateY(4px);border-bottom-width:2px}
+:root[data-practice="b"] #feedback .feedback{border-radius:24px;border-bottom:5px solid color-mix(in srgb,var(--ok) 55%,transparent)}
+:root[data-practice="b"] #feedback .feedback.wrong{border-bottom-color:color-mix(in srgb,var(--bad) 55%,transparent)}
+:root[data-practice="b"] #feedback .feedback>.actions .button{background:var(--ok);border-bottom-color:color-mix(in srgb,var(--ok) 60%,#000);color:#fff}
+:root[data-practice="b"] #feedback .feedback.wrong>.actions .button{background:var(--bad);border-bottom-color:color-mix(in srgb,var(--bad) 60%,#000)}
+
+/* C · Тёмный фокус: тёмная панель без карточек и рамок */
+:root[data-practice="c"] .session{--bg:#080d17;--surf:#0b1220;--surf2:#141e32;--tx:#e9eef9;--mut:#a2afc8;--fade:#8393b0;--line:#1b2538;--line2:#27344b;--pri:#9df0c6;--pri-d:#9df0c6;--pri-soft:#12301f;--on-pri:#04210f;--ok:#9df0c6;--ok-soft:#0d2a1f;--bad:#ff9d8a;--bad-soft:#2d1512;color:var(--tx);background:radial-gradient(120% 40% at 50% 0%,#0f1c2e,#080d17 70%);border-radius:30px;padding:20px 18px 24px;margin-top:8px;box-shadow:0 0 0 1px #1b2538}
+:root[data-practice="c"] .session-top{color:var(--fade);font-family:ui-monospace,"SF Mono",Menlo,monospace}
+:root[data-practice="c"] .session-top>span:last-child{background:transparent;color:var(--pri);padding:0}
+:root[data-practice="c"] .session-top>span:last-child::before{display:none}
+:root[data-practice="c"] .progress{height:2px;box-shadow:none;background:#1b2538;margin-bottom:24px}
+:root[data-practice="c"] .progress[data-seg="1"]{-webkit-mask:none;mask:none}
+:root[data-practice="c"] .progress[data-seg="1"]::before{display:none}
+:root[data-practice="c"] .progress span{box-shadow:0 0 12px var(--pri);background:var(--pri)}
+:root[data-practice="c"] .exercise-card{background:transparent;border:0;box-shadow:none;padding:6px 2px;overflow:visible}
+:root[data-practice="c"] .exercise-card::after{display:none}
+:root[data-practice="c"] .exercise-meta .pill,:root[data-practice="c"] .exercise-meta .pill:last-child{background:transparent;padding:0 12px 0 0;color:var(--pri);font-family:ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em}
+:root[data-practice="c"] .exercise-meta .pill[data-level]{color:var(--fade)}
+:root[data-practice="c"] .session .prompt{font-family:var(--ff);font-size:clamp(26px,5vw,34px);font-weight:500;letter-spacing:-.025em;line-height:1.28;color:#f3f6fd}
+:root[data-practice="c"] .session .answer-input,:root[data-practice="c"] .session .answer-area{background:transparent;border:0;border-bottom:3px solid var(--pri);border-radius:0;padding-left:2px;box-shadow:none;color:var(--pri)}
+:root[data-practice="c"] .session .answer-input:focus{box-shadow:0 10px 14px -10px var(--pri)}
+:root[data-practice="c"] .choice-list label{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:16px 2px}
+:root[data-practice="c"] .choice-list label::before{background:transparent;color:var(--fade);font-family:ui-monospace,Menlo,monospace}
+:root[data-practice="c"] .choice-list label:has(input:checked){background:transparent;box-shadow:none;border-bottom-color:var(--pri);color:#fff}
+:root[data-practice="c"] .choice-list label:has(input:checked)::before{background:transparent;color:var(--pri)}
+:root[data-theme][data-practice="c"] #answer-form>.actions .button.primary,:root[data-theme][data-practice="c"] #feedback .feedback>.actions .button{background:var(--pri)!important;color:var(--on-pri)!important;box-shadow:0 0 24px -8px var(--pri);border:0}
+:root[data-practice="c"] #feedback .feedback{background:linear-gradient(#0d2a1f,#0a2118);border:1px solid #1d5d41}
+:root[data-practice="c"] #feedback .feedback.wrong{background:linear-gradient(#2d1512,#1f0f0d);border-color:#6a2f27}
+:root[data-practice="c"] .practice-rule-bar .button{background:transparent;color:var(--tx)}
+
+/* D · Тетрадь: линованный лист, поле, пометки учителя */
+:root[data-practice="d"] .session{--hand:"Bradley Hand","Segoe Print","Comic Neue","Marker Felt",cursive;--ink:#1f2d5a;--red:#d4372c}
+:root[data-theme="dark"][data-practice="d"] .session{--ink:#cfd8ff;--red:#ff8a80}
+:root[data-practice="d"] .progress{height:10px;margin-bottom:18px}
+:root[data-practice="d"] .progress span{background:var(--ink);box-shadow:none}
+:root[data-practice="d"] .session-top>span:last-child{background:transparent;color:var(--red);padding:0}
+:root[data-practice="d"] .session-top>span:last-child::before{content:"★";background:transparent;color:var(--red)}
+:root[data-practice="d"] .exercise-card{background-color:#fbf8ef;background-image:linear-gradient(#d3e0f2 1px,transparent 1px);background-size:100% 36px;background-position:0 35px;border:1px solid #e3dccb;border-radius:14px;padding:18px 20px 22px 52px;box-shadow:0 18px 30px -22px rgba(40,50,30,.5)}
+:root[data-theme="dark"][data-practice="d"] .exercise-card{background-color:#1a1f2b;background-image:linear-gradient(#2a3550 1px,transparent 1px);border-color:#2a3550}
+:root[data-practice="d"] .exercise-card::after{left:36px;width:2px;background:var(--red);opacity:.7}
+:root[data-practice="d"] .exercise-meta .pill{background:transparent;color:var(--ink);padding:0 10px 0 0;font-family:var(--hand);font-size:17px;letter-spacing:0}
+:root[data-practice="d"] .exercise-meta .pill[data-level]::before{color:var(--red)}
+:root[data-practice="d"] .exercise-meta .pill:last-child{text-decoration:underline wavy color-mix(in srgb,var(--red) 70%,transparent);text-underline-offset:5px}
+:root[data-practice="d"] .exercise-instruction{font-family:var(--hand);font-size:20px;color:var(--ink)}
+:root[data-practice="d"] .session .prompt{font-family:var(--hand);font-size:clamp(26px,5vw,32px);line-height:36px;margin:12px 0 24px;color:var(--ink);font-weight:600}
+:root[data-practice="d"] .blank-token{background:#fff1a8;color:#5c4a00;font-family:var(--ff);transform:rotate(-2deg)}
+:root[data-practice="d"] .session .answer-input,:root[data-practice="d"] .session .answer-area{font-family:var(--hand);font-size:26px;background:transparent;border:0;border-bottom:2px solid var(--ink);border-radius:0;min-height:48px;padding:6px 4px;color:var(--ink);box-shadow:none}
+:root[data-practice="d"] .session .answer-input:focus{box-shadow:none;background:rgba(31,45,90,.05)}
+:root[data-practice="d"] .choice-list label{background:transparent;border:0;border-radius:0;padding:6px 0;font-family:var(--hand);font-size:24px;line-height:32px;color:var(--ink)}
+:root[data-practice="d"] .choice-list label::before{background:transparent;border:2px solid var(--ink);border-radius:7px;width:28px;height:28px;font-family:var(--ff);color:var(--ink);font-size:13px}
+:root[data-practice="d"] .choice-list label:has(input:checked){background:transparent;box-shadow:none}
+:root[data-practice="d"] .choice-list label:has(input:checked)::before{background:var(--ink);color:#fbf8ef}
+:root[data-theme][data-practice="d"] #answer-form>.actions .button.primary,:root[data-theme][data-practice="d"] #feedback .feedback>.actions .button{background:var(--ink);color:#fbf8ef;border-radius:14px;box-shadow:3px 4px 0 #9bb0dd}
+:root[data-theme="dark"][data-practice="d"] #answer-form>.actions .button.primary{background:#cfd8ff;color:#1a1f2b}
+:root[data-practice="d"] #feedback .feedback{background:transparent;border:0;padding:6px 0;color:var(--red)}
+:root[data-practice="d"] #feedback .feedback.wrong{background:transparent}
+:root[data-practice="d"] #feedback .feedback .feedback-title,:root[data-practice="d"] #feedback .feedback h2,:root[data-practice="d"] #feedback .feedback h3{font-family:var(--hand);font-size:32px;color:var(--red)}
+:root[data-practice="d"] #feedback .feedback p{font-family:var(--hand);font-size:21px;line-height:28px;color:var(--red)}
+:root[data-practice="d"] #feedback .feedback details{background:transparent;padding:4px 0;color:var(--ink)}
