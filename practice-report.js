@@ -1,5 +1,6 @@
 /* Reports use stored server grades, never regrade historical answers. */
 function reportFieldTopics(item, index) {
+  if(item.topic==='passive'||/^pv\d?-/.test(item.id||''))return exerciseTenses(item);
   const target=item.blanks?.[index]?.tense_or_construction;
   return target ? exerciseTenses({tags:[target]}) : exerciseTenses(item);
 }

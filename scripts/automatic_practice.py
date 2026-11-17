@@ -117,6 +117,9 @@ BOUNDED={
 }
 
 def revise(item):
+    # This module converts bank records; it does not select or order sessions.
+    # Archived snapshots must retain their original response contract.
+    if item.get('retired'):return item
     ident=item['id']
     if ident in EDITS:
         item.pop('review_note_ru',None)

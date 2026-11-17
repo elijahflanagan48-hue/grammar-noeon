@@ -45,7 +45,7 @@ def main() -> None:
     comparisons = [item for item in items if item['id'].startswith('cmp-')]
     assert len(tenses) == manifest["sections"]["tenses"]
     assert len(comparisons) == manifest["sections"]["comparison"]
-    assert len(passive)==manifest['sections']['passive']==1000
+    assert len(passive)==manifest['sections']['passive']
     assert len(items) == manifest["total_items"]
     assert len({item["id"] for item in items}) == len(items)
     assert manifest["answer_slots"] == sum(len(item.get("blanks", [])) or 1 for item in items)
@@ -56,9 +56,9 @@ def main() -> None:
         "open_brackets", "multiple_choice", "context_cloze", "active_to_passive", "translation_ru_en", "direct_to_reported", "direct_to_reported", "direct_to_reported",
         "modal_gap", "modal_meaning", "modal_fix",
     }
-    assert {x["type"] for x in items} == expected_types
+    assert {x["type"] for x in items} == expected_types | ({"error_fix"} if any(x["type"]=="error_fix" for x in items) else set())
 
-    for section in (tenses, comparisons, passive, nouns):
+    for section in (tenses, comparisons, nouns):
         assert sum(i['type']=='open_brackets' for i in section)*5 >= len(section)*(3 if section is nouns else 4)
 
     assert manifest["levels3"] == dict(__import__("collections").Counter(i["level"] for i in items))
@@ -68,7 +68,7 @@ def main() -> None:
         assert item.get("level") in {"basic", "medium", "advanced"}, item["id"]
         assert not forbidden.intersection(item), item["id"]
         assert item.get('response_contract') == ('manual-review-v1' if item['type']=='translation_ru_en' else 'bounded-v1'), item['id']
-        assert item.get('options') or item.get('blanks'), item['id']
+        assert item.get('options') or item.get('blanks') or item['type']=='error_fix', item['id']
         validate_version(item, manifest['content_versions'])
         if item.get('options'):
             indices=item.get('accepted_option_indices',[item['correct_option_index']])

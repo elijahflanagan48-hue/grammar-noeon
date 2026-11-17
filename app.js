@@ -3,6 +3,7 @@
 const TYPE_LABELS = {
   modal_gap: "Вставить форму",
   modal_fix: "Исправить ошибку",
+  error_fix: "Исправить ошибку",
   modal_meaning: "Выбрать значение",
   open_brackets: "Раскрыть скобки",
   translation_ru_en: "Перевод с русского",
@@ -418,7 +419,7 @@ function theoryNav(active,anchor='') {
   const section=grammarSectionForTheory(active),title=GRAMMAR_SECTIONS[section].title;
   const links=theorySectionLinks(active),selected=theorySectionIndex(active,anchor,links);
   const label=links[selected]?.[0]||'Обзор';
-  return `<div class="theory-section-nav"><nav class="grammar-breadcrumb" aria-label="Путь в грамматике"><a href="#grammar">Темы</a><span aria-hidden="true">›</span><a href="#theory/${GRAMMAR_SECTIONS[section].theory}">${escapeHtml(title)}</a><span aria-hidden="true">›</span><span aria-current="location">${escapeHtml(label)}</span></nav><nav class="theory-nav" aria-label="Темы раздела ${escapeHtml(title)}">${links.map(([name,slug,id],index)=>`<a class="${index===selected?'active':''}"${index===selected?' aria-current="location"':''} href="#theory/${slug}${id?'/'+id:''}">${escapeHtml(name)}</a>`).join('')}<a href="#practice/${section}">Практика →</a></nav></div>`;
+  return `<div class="theory-section-nav"><nav class="grammar-breadcrumb" aria-label="Путь в грамматике"><a href="#grammar">Темы</a><span aria-hidden="true">›</span><a href="#theory/${GRAMMAR_SECTIONS[section].theory}">${escapeHtml(title)}</a><span aria-hidden="true">›</span><span aria-current="location">${escapeHtml(label)}</span></nav><nav class="theory-nav" aria-label="Темы раздела ${escapeHtml(title)}">${links.map(([name,slug,id],index)=>`<a class="${index===selected?'active':''}"${index===selected?' aria-current="location"':''} href="#theory/${slug}${id?'/'+id:''}">${escapeHtml(name)}</a>`).join('')}<a href="#practice/${section}${active==='passive'?'/'+['pv_D1','pv_D2','special'][selected]:''}">Практика →</a></nav></div>`;
 }
 function syncTheoryNavigation(parts) {
   const node=document.querySelector('.theory-section-nav');
@@ -470,7 +471,7 @@ async function renderTheory(parts) {
     return;
   }
   if(slug==='passive') {
-    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content"><h1>Passive Voice</h1>${passiveToolsHtml()}${passiveRuleHtml()}<a class="button primary theory-practice" href="#practice/passive">Перейти к практике →</a></section></div>`;
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content"><h1>Passive Voice</h1>${passiveToolsHtml()}${passiveRuleHtml()}<a class="button primary theory-practice" href="#practice/passive/${['pv_D1','pv_D2','special'][theorySectionIndex('passive',decodeAnchor(parts.slice(2).join('/')))]}">Перейти к практике →</a></section></div>`;
     initialisePassiveRule(document.querySelector('.theory-content'));initialisePassiveTools(document.querySelector('.theory-content'));
     document.title='Passive Voice — Grammar NOEON';openedTheory=slug;
     if(parts[2])requestAnimationFrame(()=>revealPassiveAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
@@ -773,7 +774,8 @@ const COMPARISON_TARGETS = [
 ];
 const MODAL_TARGETS = [{"id": "mv_S00", "label": "Смешанный выбор: все модальные", "rule": "R11"}, {"id": "mv_S01", "label": "Форма: без -s, без to", "rule": "R1"}, {"id": "mv_S02", "label": "Вопрос и отрицание без do", "rule": "R2"}, {"id": "mv_S03", "label": "Два модальных подряд нельзя", "rule": "R1"}, {"id": "mv_S04", "label": "Умение сейчас: can / be able to", "rule": "R3"}, {"id": "mv_S05", "label": "Разрешение: can / could / may", "rule": "R3"}, {"id": "mv_S06", "label": "Просьбы и предложения", "rule": "R3"}, {"id": "mv_S07", "label": "Предложение-идея: could / might", "rule": "R3"}, {"id": "mv_S08", "label": "Совет: should / ought to", "rule": "R3"}, {"id": "mv_S09", "label": "Вывод о настоящем", "rule": "R4"}, {"id": "mv_S10", "label": "Вывод о прошлом: modal + have V3", "rule": "R4"}, {"id": "mv_S11", "label": "Умение в прошлом", "rule": "R5"}, {"id": "mv_S12", "label": "Обязанность и умение в прошлом и будущем", "rule": "R5"}, {"id": "mv_S13", "label": "Упрёк и сожаление: should have V3", "rule": "R5"}, {"id": "mv_S14", "label": "Needn't have и didn't need to", "rule": "R5"}, {"id": "mv_S15", "label": "Не использованная возможность: could have V3", "rule": "R5"}, {"id": "mv_S16", "label": "Нереальное прошлое: would have V3", "rule": "R5"}, {"id": "mv_S17", "label": "Must и have to", "rule": "R6"}, {"id": "mv_S18", "label": "Сила обязанности: must / need to / should / ought to", "rule": "R6"}, {"id": "mv_S19", "label": "Mustn't и don't have to", "rule": "R7"}, {"id": "mv_S20", "label": "Needn't и don't need to", "rule": "R7"}, {"id": "mv_S21", "label": "Запрет: can't / mustn't / not allowed", "rule": "R7"}, {"id": "mv_S22", "label": "Have to и need to как обычные глаголы", "rule": "R8"}, {"id": "mv_S23", "label": "Be allowed to", "rule": "R8"}, {"id": "mv_S24", "label": "Be supposed to", "rule": "R8"}, {"id": "mv_S25", "label": "Had better", "rule": "R8"}, {"id": "mv_S26", "label": "Would rather", "rule": "R8"}, {"id": "mv_S27", "label": "Will: прогноз и решение", "rule": "R9"}, {"id": "mv_S28", "label": "Won't / wouldn't: отказ", "rule": "R9"}, {"id": "mv_S29", "label": "Would: вежливость и гипотеза", "rule": "R9"}, {"id": "mv_S30", "label": "Shall: предложения с I / we", "rule": "R9"}];
 const PASSIVE_LEGACY_TARGETS = [{"id": "pv_simple", "label": "Основные формы"}, {"id": "pv_process", "label": "Действие в процессе"}, {"id": "pv_perfect", "label": "Завершённость и предшествование"}, {"id": "pv_modals", "label": "Модальные и going to"}, {"id": "pv_questions", "label": "Вопросы и отрицания"}, {"id": "pv_patterns", "label": "Особые конструкции"}, {"id": "pv_nonfinite", "label": "Инфинитив, -ing и reporting passive"}];
-const PASSIVE_TARGETS = [{"id": "pv_present_simple", "label": "Present Simple"}, {"id": "pv_past_simple", "label": "Past Simple"}, {"id": "pv_future_simple", "label": "Future Simple"}, {"id": "pv_present_continuous", "label": "Present Continuous"}, {"id": "pv_present_perfect", "label": "Present Perfect"}, {"id": "pv_past_continuous", "label": "Past Continuous"}, {"id": "pv_past_perfect", "label": "Past Perfect"}, {"id": "pv_future_perfect", "label": "Future Perfect"}];
+const PASSIVE_TENSE_TARGETS = [{"id": "pv_present_simple", "label": "Present Simple"}, {"id": "pv_past_simple", "label": "Past Simple"}, {"id": "pv_future_simple", "label": "Future Simple"}, {"id": "pv_present_continuous", "label": "Present Continuous"}, {"id": "pv_present_perfect", "label": "Present Perfect"}, {"id": "pv_past_continuous", "label": "Past Continuous"}, {"id": "pv_past_perfect", "label": "Past Perfect"}, {"id": "pv_future_perfect", "label": "Future Perfect"}];
+const PASSIVE_TARGETS = [{"id": "pv_D1", "label": "Формы пассива по временам"}, {"id": "pv_D2", "label": "Active или passive?"}, {"id": "pv_D3", "label": "Модальные и going to"}, {"id": "pv_D4", "label": "Инфинитив и -ing в пассиве"}, {"id": "pv_D5", "label": "It is said… / is believed to…"}, {"id": "pv_D6", "label": "Два дополнения и предлоги"}, {"id": "pv_D7", "label": "Get-passive и have something done"}, {"id": "pv_D8", "label": "make, allow, see в пассиве"}, {"id": "pv_D9", "label": "Ловушки: состояние, need doing, born"}, {"id": "pv_D10", "label": "By, with или без исполнителя"}, {"id": "pv_D11", "label": "Вопросы и порядок слов"}];
 const NOUN_TARGETS = [{"id":"noun_count_uncount","label":"Исчисляемые и неисчисляемые"},{"id":"noun_plural_regular","label":"Правильное множественное число"},{"id":"noun_plural_irregular","label":"Неправильное множественное число"},{"id":"noun_number_only","label":"Только единственное или только множественное"},{"id":"noun_partitives","label":"Партитивы: a piece of, a cup of"},{"id":"noun_dual_meaning","label":"Слова с двумя значениями"},{"id":"noun_possessive","label":"Притяжательный падеж и of"},{"id":"noun_compound","label":"Составные существительные"},{"id":"noun_attributive","label":"Существительное в роли определения"},{"id":"noun_collective","label":"Собирательные существительные"},{"id":"noun_articles","label":"Артикли"},{"id":"noun_quantifiers","label":"Определители количества"},{"id":"noun_mixed","label":"Смешанные задания"},{"id":"noun_text","label":"Мини-тексты"}];
 const INFINITIVE_TARGETS = [{"id": "ig_verb_to", "label": "Глагол + to do"}, {"id": "ig_verb_ing", "label": "Глагол + doing"}, {"id": "ig_prep", "label": "Предлог + doing"}, {"id": "ig_bare", "label": "Голый инфинитив: do"}, {"id": "ig_object", "label": "Глагол + sb + to do / do"}, {"id": "ig_adj", "label": "Прилагательное + to do / doing"}, {"id": "ig_meaning", "label": "Смена смысла: remember, stop, try…"}, {"id": "ig_forms", "label": "Формы: to have done, being done…"}, {"id": "ig_mixed", "label": "Смешанные задания"}];
 const SPEAKING_TARGETS = [{"id": "sv_say_tell", "label": "Say или tell: кому и что"}, {"id": "sv_tell_fixed", "label": "Tell: правда, история, различать"}, {"id": "sv_say_fixed", "label": "Say: готовые слова, таблички, слухи"}, {"id": "sv_speak_talk", "label": "Speak или talk"}, {"id": "sv_speak_language", "label": "Язык и умение говорить"}, {"id": "sv_phrases", "label": "Выражения и фразовые глаголы"}, {"id": "sv_mixed", "label": "Смешанные задания и тексты"}];
@@ -788,12 +790,16 @@ function exerciseSection(item) {
   return item?.id?.startsWith('cmp-')?'comparison':'tenses';
 }
 function targetSection(id) { return id.startsWith('ig_')?'infinitive':id.startsWith('sv_')?'speaking':id.startsWith('noun_')?'nouns':/^rs(?:\d|_)/.test(id)?'reported':id.startsWith('mv_')?'modals':id.startsWith('pv_')?'passive':id.startsWith('cmp_')?'comparison':'tenses'; }
-function supportedResponseContract(item) {return item.response_contract==='bounded-v1'||(['equivalents-review-v1','manual-review-v1'].includes(item.response_contract)&&item.type==='translation_ru_en'&&item.blanks?.length===1);}
+function supportedResponseContract(item) {return !item.retired&&(item.response_contract==='bounded-v1'||(['equivalents-review-v1','manual-review-v1'].includes(item.response_contract)&&item.type==='translation_ru_en'&&item.blanks?.length===1));}
 const PRACTICE_TENSES = TENSE_MAP.flatMap(row => row.items.map(item => ({
   id: item.name.toLowerCase().replaceAll(" ", "_"), label: item.name,
-}))).concat({ id: "other_constructions", label: "Другие конструкции" }, COMPARISON_TARGETS, PASSIVE_LEGACY_TARGETS, PASSIVE_TARGETS, MODAL_TARGETS, REPORTED_TARGETS, NOUN_TARGETS, SPEAKING_TARGETS, INFINITIVE_TARGETS);
+}))).concat({ id: "other_constructions", label: "Другие конструкции" }, COMPARISON_TARGETS, PASSIVE_LEGACY_TARGETS, PASSIVE_TENSE_TARGETS, PASSIVE_TARGETS, MODAL_TARGETS, REPORTED_TARGETS, NOUN_TARGETS, SPEAKING_TARGETS, INFINITIVE_TARGETS);
 
 function exerciseTenses(item) {
+  if(exerciseSection(item)==='passive'){
+    const cells=(item.practice_tenses||item.tags||[]).filter(t=>/^pv_D(?:[1-9]|10|11)$/.test(t));
+    return cells.length?[...new Set(cells)]:['pv_D1'];
+  }
   const targets = item.practice_tenses || (item.blanks?.length
     ? item.blanks.map(blank => blank.tense_or_construction) : item.tags || []);
   return [...new Set(targets.filter(target=>typeof target!=='string'||!target.startsWith('mv_R')).map(target => target === "future_time_clause" ? "present_simple"
@@ -809,9 +815,47 @@ function shuffled(values, random = Math.random) {
   return result;
 }
 
+// Keep this skeleton algorithm aligned with scripts/audit_variety.py.
+function varietySkeleton(prompt) {
+  const func = new Set("a about after all already am an and any are as at be because been before being but by can could did do does each ever every for from had has have he her here him his how i if in into is it its just may me might must my n't never no not of on or our over shall she should since so some still than that the their them there these they this those to until us was we were what when where which while who whom whose why will with would yet you your".split(' '));
+  let s=String(prompt||'').toLowerCase().replace(/\([^()]*\)|_{2,}/g,' G ');
+  s=s.replace(new RegExp("(by the time|by the end of|by next \\w+|by tomorrow|yesterday|last \\w+|every \\w+|at the moment|right now|now|already|since|for the past|just|yet|tomorrow|next \\w+|ago|in \\d{4}|so far|recently|currently|tonight)",'g'),m=>m.replaceAll(' ','_').toUpperCase());
+  const out=[];
+  for(const w of s.match(/[A-Z_0-9]+|[a-z']+|[—?!.,:;]/g)||[]){
+    if(w==='G'||w===w.toUpperCase()||func.has(w)||!/[a-zA-Z]/.test(w[0]))out.push(w);
+    else if(out.at(-1)!=='w')out.push('w');
+  }
+  return out.join(' ');
+}
+function diversifyOrder(items) {
+  const keys=item=>[item.cell||item.blanks?.[0]?.tense_or_construction||item.practice_tenses?.[0]||'',
+    String(item.prompt||'').toLowerCase().trim().split(/\s+/).slice(0,2).join(' '),
+    item.skeleton||varietySkeleton(item.prompt),
+    String(item.blanks?.[0]?.base_verb||'').toLowerCase(),item.type+'/'+(item.layout||'')];
+  const remaining=items.map(item=>({item,keys:keys(item)})),out=[];
+  const weights=[3,3,3,2,1];
+  const mini=x=>x.item.layout==='mini_text';
+  while(remaining.length){
+    const avoidMini=out.length&&mini(out.at(-1))&&remaining.some(x=>!mini(x));
+    const mustMini=!(out.length&&mini(out.at(-1)))&&remaining.filter(mini).length>Math.floor(remaining.length/2);
+    let best=0,score=Infinity;
+    remaining.forEach((entry,i)=>{
+      if((avoidMini&&mini(entry))||(mustMini&&!mini(entry)))return;
+      let penalty=0;
+      for(let d=1;d<=2;d++)if(out.length>=d)for(let k=0;k<weights.length;k++){
+        if(entry.keys[k]&&entry.keys[k]===out.at(-d).keys[k])penalty+=weights[k]/d;
+      }
+      if(penalty<score){score=penalty;best=i;}
+    });
+    out.push(remaining.splice(best,1)[0]);
+  }
+  return out.map(x=>x.item);
+}
+
 // Least-covered targets get the next turn. Multi-tense exercises count towards
 // every tested tense; exhausted pools never force repeats or unrelated tenses.
 function balancedPractice(pool, count, random = Math.random) {
+  pool=pool.filter(item=>!item.retired);
   if(pool.length&&pool.every(i=>i.practice_group&&Number.isFinite(i.practice_weight)&&i.practice_weight>0)){
     const groups=[...new Set(pool.map(i=>i.practice_group))].map(key=>({key,pool:pool.filter(i=>i.practice_group===key),quota:0}));
     if(groups.length>1){
@@ -819,7 +863,7 @@ function balancedPractice(pool, count, random = Math.random) {
       for(const g of groups){g.ideal=size*g.pool[0].practice_weight/weight;g.quota=Math.min(g.pool.length,Math.floor(g.ideal));}
       let assigned=groups.reduce((n,g)=>n+g.quota,0);
       while(assigned<size){const available=groups.filter(g=>g.quota<g.pool.length);available.sort((a,b)=>(b.ideal-b.quota)-(a.ideal-a.quota));available[0].quota++;assigned++;}
-      return shuffled(groups.flatMap(g=>balancedPractice(g.pool,g.quota,random)),random);
+      return diversifyOrder(shuffled(groups.flatMap(g=>balancedPractice(g.pool,g.quota,random)),random));
     }
   }
   const remaining = shuffled(pool, random).map(item => ({ item, targets: exerciseTenses(item) }));
@@ -845,14 +889,16 @@ function balancedPractice(pool, count, random = Math.random) {
     types[item.type] = (types[item.type] || 0) + 1;
     previous = targets;
   }
-  return result;
+  return diversifyOrder(result);
 }
 
 function updatedPracticeSettings(saved,topic){
   if(topic!=='passive')return saved;
-  const oldToNew={pv_simple:['pv_present_simple','pv_past_simple','pv_future_simple'],pv_process:['pv_present_continuous','pv_past_continuous'],pv_perfect:['pv_present_perfect','pv_past_perfect','pv_future_perfect']};
-  const copy={...saved};if(Array.isArray(copy.tenses)&&copy.tenses.some(t=>PASSIVE_LEGACY_TARGETS.some(x=>x.id===t)))copy.tenses=[...new Set(copy.tenses.flatMap(t=>oldToNew[t]||(PASSIVE_LEGACY_TARGETS.some(x=>x.id===t)?PASSIVE_TARGETS.map(x=>x.id):[t])))];
-  if(copy.type&&!['all','open_brackets','translation_ru_en','active_to_passive'].includes(copy.type))copy.type='all';
+  const oldToNew={pv_simple:['pv_D1'],pv_process:['pv_D1'],pv_perfect:['pv_D1'],pv_modals:['pv_D3'],pv_questions:['pv_D11'],pv_patterns:['pv_D6','pv_D7','pv_D8','pv_D9','pv_D10'],pv_nonfinite:['pv_D4','pv_D5']};
+  for(const t of PASSIVE_TENSE_TARGETS)oldToNew[t.id]=['pv_D1'];
+  const copy={...saved};
+  if(Array.isArray(copy.tenses))copy.tenses=[...new Set(copy.tenses.flatMap(t=>oldToNew[t]||[t]))];
+  if(copy.type&&!['all','open_brackets','translation_ru_en','active_to_passive','multiple_choice','error_fix'].includes(copy.type))copy.type='all';
   return copy;
 }
 function practiceSettings(topic = "tenses") {
@@ -920,14 +966,16 @@ function uniqueAssignmentPool(pool) {
 function practicePresets(topic) {
   if(topic==='modals')return [{id:'modals-short',title:'Смешанная тренировка',description:'Пять заданий на разные значения модальных глаголов.',tenses:MODAL_TARGETS.map(x=>x.id),levels:['basic','medium'],type:'modal_gap',count:5}];
   const common = {type:'open_brackets', levels:['basic','medium'], count:10};
-  const simplePassive = ['pv_present_simple','pv_past_simple','pv_future_simple'];
+  const simplePassive = ['pv_D1','pv_D2'];
   const shortTopics = {tenses:['present_simple','past_simple','future_simple'], passive:simplePassive, comparison:['cmp_forms','cmp_superlatives'], nouns:['noun_count_uncount','noun_plural_regular','noun_articles'], speaking:['sv_say_tell','sv_speak_talk','sv_speak_language'], infinitive:['ig_verb_to','ig_verb_ing','ig_prep']};
   if (!shortTopics[topic]) return [];
   const presets = topic === 'tenses' ? [
     {...common,id:'present-pair',title:'Present Simple vs Present Continuous',description:'Привычки и факты или действие сейчас.',tenses:['present_simple','present_continuous']},
     {...common,id:'past-pair',title:'Past Simple vs Present Perfect',description:'Завершённое прошлое или связь с настоящим.',tenses:['past_simple','present_perfect']},
   ] : topic === 'passive' ? [
-    {...common,id:'passive-core',title:'Основные формы пассива',description:'Present, Past и Future Simple в пассиве.',tenses:simplePassive},
+    {...common,id:'passive-core',title:'Основные формы пассива',description:'Формы по временам и выбор между active и passive.',tenses:simplePassive},
+    {...common,id:'passive-special',title:'Особые конструкции',description:'Модальные, неличные формы и особые конструкции.',tenses:['pv_D3','pv_D4','pv_D5','pv_D6','pv_D7','pv_D8']},
+    {...common,id:'passive-traps',title:'Ловушки и порядок слов',description:'Границы пассива, исполнитель и вопросы.',tenses:['pv_D9','pv_D10','pv_D11']},
   ] : [];
   return presets.concat({id:'short',title:'Короткая тренировка',description:'Пять заданий на базовые формы.',tenses:shortTopics[topic],levels:['basic'],type:'open_brackets',count:5});
 }
@@ -1003,7 +1051,7 @@ function renderPractice(student = null, topic = location.hash.split("/")[1], stu
         <label class="tense-extra"><input type="checkbox" name="tense" value="other_constructions" checked><span>Другие конструкции: going to, future in the past и used to</span></label>
         <p class="subtle">Задания на несколько времён появятся только тогда, когда выбраны все нужные для них времена. Без повторов внутри тренировки.</p>
       </fieldset>
-      <fieldset class="practice-tenses" data-section="passive"><legend>Какие формы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${PASSIVE_TARGETS.map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${target.label}</span></label>`).join('')}</div><p>При выборе всех форматов: скобки — 80%, перевод — 10%, Active → Passive — 10%. Все переводы проверяет преподаватель.</p><a href="#theory/passive">Открыть правило Passive Voice →</a></fieldset>
+      <fieldset class="practice-tenses" data-section="passive"><legend>Какие формы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${PASSIVE_TARGETS.map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${target.label}</span></label>`).join('')}</div><p>При выборе всех форматов: предложения — 40%, мини-тексты — 25%, выбор — 20%, исправление ошибок — 7%, перевод — 4%, Active → Passive — 4%. Все переводы проверяет преподаватель.</p><a href="#theory/passive">Открыть правило Passive Voice →</a></fieldset>
       <fieldset class="practice-tenses" data-section="comparison" hidden><legend>Какие сравнения тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${COMPARISON_TARGETS.map(target => `<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${target.label}</span></label>`).join("")}</div><p>В заданиях со скобками вводите форму или сравнительное сочетание по условию задания. Уровни — учебные ориентиры. Все задания проверяются автоматически: конкретные пропуски и выбор вариантов.</p><a href="#theory/comparison">Открыть справочник по сравнениям →</a></fieldset>
       <fieldset class="practice-tenses" data-section="modals"><legend>Какие модальные глаголы тренировать</legend><p>Выберите весь раздел, группу правил или отдельные подтемы. Можно сочетать несколько подтем.</p><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Весь раздел</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="modal-targets">${[...new Set(MODAL_TARGETS.map(t=>t.rule))].sort((a,b)=>Number(a.slice(1))-Number(b.slice(1))).map(rule=>`<details><summary>${escapeHtml(typeof MODAL_RULE_TITLES!=='undefined'?MODAL_RULE_TITLES['mv-'+rule.toLowerCase()]||rule:rule)}</summary><button class="button" type="button" data-modal-rule="${rule}">Выбрать эту группу</button>${MODAL_TARGETS.filter(t=>t.rule===rule).map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${escapeHtml(target.label)}</span></label>`).join('')}</details>`).join('')}</div><a href="#theory/modals">Открыть правило Modal Verbs →</a></fieldset>
       <fieldset class="practice-tenses" data-section="nouns"><legend>Какие темы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${NOUN_TARGETS.map(target => `<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${target.label}</span></label>`).join("")}</div><p>Задания со скобками, выбором и мини-тексты. Ответ определяется контекстом: подсказок в условии нет. Все допустимые варианты принимаются.</p><a href="#theory/nouns">Открыть правило Nouns →</a></fieldset>
@@ -1069,6 +1117,11 @@ function renderPractice(student = null, topic = location.hash.split("/")[1], stu
   if(student&&!student.assignmentEdit&&topic==="reported")form.elements.title.value="Косвенная речь";
   if(student&&!student.assignmentEdit&&topic==="modals")form.elements.title.value="Практика модальных глаголов";
   const requested=decodeAnchor(location.hash.split('/')[2]||'');
+  if(topic==='passive'&&(/^pv_D(?:[1-9]|10|11)$/.test(requested)||requested==='special')){
+    const ids=requested==='special'?['pv_D3','pv_D4','pv_D5','pv_D6','pv_D7','pv_D8']:[requested];
+    form.querySelectorAll('[name="tense"]').forEach(input=>input.checked=ids.includes(input.value));
+    setPracticeFormats(form,'all');
+  }
   if(topic==='modals'&&/^mv_R(?:[1-9]|1[01])$/.test(requested)) {
     const ids=MODAL_TARGETS.filter(t=>'mv_'+t.rule===requested).map(t=>t.id);
     form.querySelectorAll('[name="tense"]').forEach(input=>input.checked=ids.includes(input.value));
@@ -1090,7 +1143,7 @@ function filteredExercises(form) {
   const tenses = selectedTenses(form);
   const pool = state.exercises.filter((item) => {
     const targets = exerciseTenses(item);
-    return targets.length && targets.every(target => tenses.includes(target))
+    return !item.retired && targets.length && targets.every(target => tenses.includes(target))
       && levels.includes(item.level) && formats.includes(item.type)
       && (!form.assignmentAvailableIds || form.assignmentAvailableIds.has(item.id));
   });
@@ -1226,7 +1279,7 @@ function lightHistoryAttempt(attempt) {
   return {...pick(attempt,['id','date','source','total','index','correct','score','maxScore','pending','levels','types','status']),answers:(attempt.answers||[]).map(answer=>({
     ...pick(answer,['id','correct','submitted']),
     fields:(answer.fields||[]).map(f=>pick(f,['submitted','correct','verified','diagnostic'])),
-    item:{...pick(answer.item,['id','type','prompt','summary','correct_option_index','options','answer','answer_text','explanation_ru','rule_refs','practice_tenses','tags','level']),
+    item:{...pick(answer.item,['id','type','prompt','summary','correct_option_index','options','answer','answer_text','explanation_ru','rule_refs','practice_tenses','tags','level','topic','cell']),
       ...(answer.item?.blanks ? {blanks:answer.item.blanks.map(b=>pick(b,['answer','explanation_ru','rule_refs','tense_or_construction','base_adjective']))} : {})}
   }))};
 }
@@ -1314,6 +1367,7 @@ function acceptedFor(item, blankIndex = null) {
 }
 
 function answerControls(item) {
+  if(item.type==='error_fix')return '<div class="field"><label for="answer">Ваше предложение</label><textarea class="answer-area" id="answer" rows="3" lang="en" autocomplete="off" spellcheck="false"></textarea><small class="field-correction" hidden></small></div>';
   if(item.type==='modal_fix')return '<div class="field"><label for="blank-0">Исправленное предложение</label><textarea class="answer-area" id="blank-0" data-answer-index="0" rows="3" lang="en" autocomplete="off" spellcheck="false"></textarea><small class="field-correction" hidden></small></div>';
   if((item.type==='active_to_passive'||item.type==='direct_to_reported')&&!item.prefix)return '<div class="field"><label for="blank-0">Ваше предложение</label><textarea class="answer-area" id="blank-0" data-answer-index="0" rows="3" lang="en" autocomplete="off" spellcheck="false"></textarea><small class="field-correction" hidden></small></div>';
   if(item.type==='word_order')return `<div class="field"><div class="word-blocks" role="group" aria-label="Слова для сборки">${item.blocks.map((b,n)=>`<button class="button" type="button" data-word-block="${n}">${escapeHtml(b)}</button>`).join('')}</div><label for="blank-0">Ваш порядок</label><input class="answer-input" id="blank-0" data-answer-index="0" readonly placeholder="Нажимайте слова по порядку" lang="en"><small class="field-correction" hidden></small><button class="button" type="button" data-word-reset>Сбросить</button></div>`;
@@ -1379,12 +1433,12 @@ function answerForms(value, ignoreCommas = false) {
   }
   return [...new Set(forms.map(form => form.replace(/\b(would|could|should|must|might|may|will)'ve\b/g, "$1 have")))];
 }
-function standardAnswerNormal(s){const negatives={"isn't":"is not","aren't":"are not","wasn't":"was not","weren't":"were not","hasn't":"has not","haven't":"have not","hadn't":"had not","won't":"will not","can't":"cannot","couldn't":"could not","mustn't":"must not","shouldn't":"should not","wouldn't":"would not","mightn't":"might not","needn't":"need not","don't":"do not","doesn't":"does not","didn't":"did not","shan't":"shall not"};const spelling={"organizer":"organiser","organizers":"organisers","organized":"organised","organizing":"organising","labeler":"labeller","labelers":"labellers","labeled":"labelled","labeling":"labelling","cataloged":"catalogued","cataloging":"cataloguing","cataloger":"cataloguer","recognized":"recognised","digitized":"digitised","color":"colour","colored":"coloured","colors":"colours","center":"centre","centerpiece":"centrepiece","theater":"theatre","neighbor":"neighbour","neighbors":"neighbours","neighborhood":"neighbourhood","fiber":"fibre","fibers":"fibres","tire":"tyre","tires":"tyres","woolen":"woollen","molded":"moulded","artifact":"artefact","artifacts":"artefacts"};return s.normalize('NFKC').replace(/[’‘ʼ]/g,"'").toLowerCase().trim().replace(/\b(could|should|would|might|must|may)'ve\b/g,'$1 have').replace(/\b[a-z]+n't\b/g,x=>negatives[x]||x).replace(/\bcan not\b/g,'cannot').replace(/\b(dr|mr|mrs|ms|prof)\.(?=\s)/g,'$1').replace(/\b[a-z]+\b/g,x=>spelling[x]||x).replace(/[.!?\s]+$/,'').replace(/\s+/g,' ').trim()}
+function standardAnswerNormal(s){const negatives={"isn't":"is not","aren't":"are not","wasn't":"was not","weren't":"were not","hasn't":"has not","haven't":"have not","hadn't":"had not","won't":"will not","can't":"cannot","couldn't":"could not","mustn't":"must not","shouldn't":"should not","wouldn't":"would not","mightn't":"might not","needn't":"need not","don't":"do not","doesn't":"does not","didn't":"did not","shan't":"shall not"};const spelling={"organizer":"organiser","organizers":"organisers","organized":"organised","organizing":"organising","labeler":"labeller","labelers":"labellers","labeled":"labelled","labeling":"labelling","cataloged":"catalogued","cataloging":"cataloguing","cataloger":"cataloguer","recognized":"recognised","digitized":"digitised","color":"colour","colored":"coloured","colors":"colours","center":"centre","centerpiece":"centrepiece","theater":"theatre","neighbor":"neighbour","neighbors":"neighbours","neighborhood":"neighbourhood","fiber":"fibre","fibers":"fibres","tire":"tyre","tires":"tyres","woolen":"woollen","molded":"moulded","artifact":"artefact","artifacts":"artefacts"};return s.normalize('NFKC').replace(/[’‘ʼ]/g,"'").replace(/[“”]/g,'"').toLowerCase().trim().replace(/\b(could|should|would|might|must|may)'ve\b/g,'$1 have').replace(/\b[a-z]+n't\b/g,x=>negatives[x]||x).replace(/\bcan not\b/g,'cannot').replace(/\b(dr|mr|mrs|ms|prof)\.(?=\s)/g,'$1').replace(/\b[a-z]+\b/g,x=>spelling[x]||x).replace(/[.!?\s]+$/,'').replace(/\s+/g,' ').trim()}
 function matchesField(item, submitted, index = null) {
   if(item.answer_profile==='modal-exact-v1')return acceptedFor(item,index).some(a=>modalAnswerNormal(a)===modalAnswerNormal(submitted));
   if(item.answer_profile==='english-standard-v2')return acceptedFor(item,index).some(a=>standardAnswerNormal(a)===standardAnswerNormal(submitted));
 
-  const ignoreCommas = ["translation_ru_en", "transformation", "error_correction"].includes(item.type);
+  const ignoreCommas = ["translation_ru_en", "transformation", "error_correction", "error_fix", "modal_fix"].includes(item.type);
   const forms = new Set(answerForms(submitted, ignoreCommas));
   return acceptedFor(item, index).some(answer => answerForms(answer, ignoreCommas).some(form => forms.has(form)));
 }
@@ -1400,7 +1454,7 @@ function needsReview(item) {
 function diagnosticForms(item, value) {
   const forms = item.answer_profile === 'modal-exact-v1' ? [modalAnswerNormal(value)] : item.answer_profile === 'english-standard-v2'
     ? [standardAnswerNormal(String(value))]
-    : answerForms(value, ['translation_ru_en', 'transformation', 'error_correction'].includes(item.type));
+    : answerForms(value, ['translation_ru_en', 'transformation', 'error_correction', 'error_fix', 'modal_fix'].includes(item.type));
   if (forms.length > 16) return [];
   return forms.map(form => form.match(/[a-z]+(?:'[a-z]+)?|[^a-z\s]+/g) || []);
 }
@@ -1529,6 +1583,7 @@ function fieldResults(item, submitted) {
 }
 
 function exerciseInstructionMarkup(item) {
+  if(item.type==='error_fix')return '<p class="exercise-instruction">'+escapeHtml(item.instruction_ru||'Если есть ошибка, исправьте её. Если ошибки нет, перепишите предложение без изменений.')+'</p>';
   if(exerciseSection(item)==='reported')return '<p class="exercise-instruction">'+escapeHtml(item.instruction_ru||'Выполните задание.')+'</p>'+(item.context_ru?'<p class="reported-context" lang="ru">'+escapeHtml(item.context_ru)+'</p>':'');
   const instruction=(item.instruction_ru||({open_brackets:'Раскройте скобки.',translation_ru_en:'Переведите предложение на английский.',active_to_passive:'Преобразуйте предложение в пассив.'}[item.type])||'Впишите ответ или выберите вариант.').trim();
   const sentences=instruction.split(/(?<=[.!?])\s+/),main=sentences.shift();
@@ -1554,7 +1609,7 @@ function renderSession() {
   syncRouteNav();
   const session = state.session;
   if (!session?.items.length) { location.hash = "practice"; return; }
-  if(!session.checked && session.remote && session.items.slice(session.index).some(item=>!item.options&&!item.blanks?.length)){renderAutomaticUpgrade(session);return;}
+  if(!session.checked && session.remote && session.items.slice(session.index).some(item=>!item.options&&!item.blanks?.length&&item.type!=='error_fix')){renderAutomaticUpgrade(session);return;}
   const item = session.items[session.index];
   document.title = `Задание ${session.index + 1} из ${session.items.length} — Grammar NOEON`;
   app.innerHTML = `<section class="session">

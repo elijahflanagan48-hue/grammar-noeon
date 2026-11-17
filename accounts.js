@@ -92,6 +92,7 @@ function reconcileStudentSession(saved, previous) {
   if(previous?.remote?.id!==saved.id || checked || previous.checked || previous.index!==saved.index)return session;
   const item=saved.items[saved.index];
   const valid=value=>item?.options ? value===null || Number.isInteger(value)&&value>=0&&value<item.options.length
+    : item?.type==='error_fix' ? typeof value==='string'&&value.length<=10000
     : item?.blanks?.length && Array.isArray(value)&&value.length===item.blanks.length&&value.every(v=>typeof v==='string'&&v.length<=10000);
   const pending=previous.draftPending?.index===saved.index ? previous.draftPending
     : previous.draftConflict?.index===saved.index ? previous.draftConflict

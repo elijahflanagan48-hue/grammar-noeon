@@ -1,0 +1,24 @@
+Passive v7 engine verification summary
+
+npm run check: failed only the new variety gate on the unchanged v6 bank.
+Other runnable checks: passed.
+Historical checks without required source archives: 25 skipped.
+Python unittest suite: 42 tests passed, including six v7 builder/gate/archive tests.
+Passive assessment source seal: passed.
+Passive assessment canonical grading: all 125 questions passed.
+Existing modal_fix compatibility: passed.
+V7 fixture integration: 11 fixtures and 16 accepted-answer variants passed.
+Synthetic session variety: 200 items; adjacent repeated cell keys reduced from 16 to 0.
+Item identity and quotas: preserved.
+Python/JavaScript skeleton parity: passed.
+Browser verification: 39 cell/format/mixed/retired checks at 360, 390 and 1280 px passed.
+Retired assignment resumption and grading: passed.
+No-overlap regression for free practice and assignments: passed.
+Post-suite ID reservation hardening: six targeted Python tests and fixture integration passed.
+Documentation and whitespace checks: passed.
+
+The release is blocked by missing approved B01–B23 inputs and keep-v6.txt.
+No production exercise files or assessment source files changed.
+No merge into main or deployment performed.
+
+This public summary omits local-machine paths and diagnostic stack traces.

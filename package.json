@@ -14,7 +14,8 @@
     "test:browser": "node scripts/check-all.mjs --browser",
     "dev": "python3 -B scripts/build_cloudflare.py && node scripts/local-worker.mjs",
     "docs:update": "python3 -B scripts/update_docs.py",
-    "docs:check": "python3 -B scripts/update_docs.py --check"
+    "docs:check": "python3 -B scripts/update_docs.py --check",
+    "check": "node scripts/check-all.mjs"
   },
   "devDependencies": {
     "axe-core": "4.14.0",

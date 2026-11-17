@@ -259,7 +259,7 @@ class GrammarApp:
         match=re.fullmatch(r'/api/teacher/students/([\w-]+)/assignment-pool',path)
         if match and method=='GET':
             student=self.own_student(db,user,match[1]);used=self.assigned_sentences(db,student['id'])
-            return {'availableIds':[item['id'] for item in self.bank.values() if all(digest(key) not in used for key in assignment_sentence_keys(item))]},[]
+            return {'availableIds':[item['id'] for item in self.bank.values() if not item.get('retired') and all(digest(key) not in used for key in assignment_sentence_keys(item))]},[]
         match=re.fullmatch(r'/api/teacher/students/([\w-]+)/assignments/([\w-]+)(?:/(edit|cancel|restore))?',path)
         if match:
             student=self.own_student(db,user,match[1])
@@ -269,7 +269,7 @@ class GrammarApp:
             editable=not row['cancelled'] and not row['completed'] and not json.loads(row['answers']) and row['draft'] is None
             used=self.assigned_sentences(db,student['id'])
             def allowed(key):return key not in used or (used[key]==row['assignment_id'] and key in current_keys)
-            if method=='GET' and not match[3]:return {'id':row['assignment_id'],'title':row['title'],'version':row['version'],'editableContent':editable,'items':items,'availableIds':[item['id'] for item in self.bank.values() if all(allowed(digest(key)) for key in assignment_sentence_keys(item))]},[]
+            if method=='GET' and not match[3]:return {'id':row['assignment_id'],'title':row['title'],'version':row['version'],'editableContent':editable,'items':items,'availableIds':[item['id'] for item in self.bank.values() if not item.get('retired') and all(allowed(digest(key)) for key in assignment_sentence_keys(item))]},[]
             action=match[3]
             if method!='POST' or not action:raise Problem('Метод не поддерживается.',405)
             if data.get('version')!=row['version']:raise Problem('Назначение уже изменено. Откройте его заново.',409)
@@ -279,7 +279,7 @@ class GrammarApp:
                 if 'ids' in data:
                     if not editable:raise Problem('Ученик уже начал работу или задание снято. Можно изменить только название.',409)
                     ids=data['ids'];current={item['id']:item for item in items}
-                    if not isinstance(ids,list) or not 1<=len(ids)<=50 or any(not isinstance(i,str) or (i not in self.bank and i not in current) for i in ids) or len(set(ids))!=len(ids):raise Problem('Некорректный набор упражнений.')
+                    if not isinstance(ids,list) or not 1<=len(ids)<=50 or any(not isinstance(i,str) or (i not in current and (i not in self.bank or self.bank[i].get('retired'))) for i in ids) or len(set(ids))!=len(ids):raise Problem('Некорректный набор упражнений.')
                     next_items=[current.get(i) or self.bank[i] for i in ids]
                     for item in next_items:
                         for key in map(digest,assignment_sentence_keys(item)):
@@ -298,7 +298,7 @@ class GrammarApp:
             student=self.own_student(db,user,match[1])
             if not student['active']:raise Problem('Кабинет ученика отключён.',409)
             title=clean(data.get('title'),160);ids=data.get('ids')
-            if not isinstance(ids,list) or not 1<=len(ids)<=50 or any(not isinstance(i,str) or i not in self.bank for i in ids) or len(set(ids))!=len(ids):raise Problem('Некорректный набор упражнений.')
+            if not isinstance(ids,list) or not 1<=len(ids)<=50 or any(not isinstance(i,str) or (i not in self.bank or self.bank[i].get('retired')) for i in ids) or len(set(ids))!=len(ids):raise Problem('Некорректный набор упражнений.')
             used=self.assigned_sentences(db,student['id']);keys=set()
             for exercise_id in ids:
                 for key in map(digest,assignment_sentence_keys(self.bank[exercise_id])):
@@ -313,7 +313,7 @@ class GrammarApp:
         if path=='/api/practice/start' and method=='POST':
             if user['role']!='teacher':raise Problem('Ученикам доступны только задания, назначенные учителем.',403)
             ids=data.get('ids')
-            if not isinstance(ids,list) or not 1<=len(ids)<=50 or any(not isinstance(i,str) or i not in self.bank for i in ids) or len(set(ids))!=len(ids):raise Problem('Некорректный набор упражнений.')
+            if not isinstance(ids,list) or not 1<=len(ids)<=50 or any(not isinstance(i,str) or (i not in self.bank or self.bank[i].get('retired')) for i in ids) or len(set(ids))!=len(ids):raise Problem('Некорректный набор упражнений.')
             ident=secrets.token_hex(16)
             db.execute('INSERT INTO practice(id,user_id,items,created) VALUES(?,?,?,?)',(ident,user['id'],json.dumps([self.bank[i] for i in ids],ensure_ascii=False),time.time()))
             return {'id':ident,'revision':0},[]
@@ -330,7 +330,7 @@ class GrammarApp:
                 if row['completed'] or data.get('revision')!=row['revision']:raise Problem('Тренировка изменилась. Откройте её заново.',409)
                 items=json.loads(row['items']);answered=len(json.loads(row['answers']));changed=False
                 for n,item in enumerate(items):
-                    if n<answered or item.get('options') or item.get('blanks'):continue
+                    if n<answered or item.get('options') or item.get('blanks') or item.get('type')=='error_fix':continue
                     current=self.bank.get(item['id'])
                     if not current or current.get('response_contract')!='bounded-v1':raise Problem('Для этой старой редакции пока нет обновления.',409)
                     items[n]=current;changed=True
@@ -355,7 +355,7 @@ class GrammarApp:
                 if not valid:raise Problem('Некорректные поля ответа.')
                 db.execute('UPDATE practice SET draft=?,revision=revision+1 WHERE id=?',(json.dumps(value,ensure_ascii=False),row['id']))
                 return {'revision':row['revision']+1},[]
-            if not items[index].get('options') and not items[index].get('blanks'):raise Problem('Обновите формат этой старой подборки перед ответом.',409)
+            if not items[index].get('options') and not items[index].get('blanks') and items[index].get('type')!='error_fix':raise Problem('Обновите формат этой старой подборки перед ответом.',409)
             try:answer=grade(items[index],data.get('submitted'))
             except ValueError as e:raise Problem(str(e))
             answers.append(answer);completed=time.time() if len(answers)==len(items) else None

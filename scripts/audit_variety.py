@@ -92,12 +92,61 @@ def audit(items, label):
     return "\n".join(lines)
 
 
+def gate(items, limits):
+    """Return human-readable violations, including values and affected IDs."""
+    items=[i for i in items if (i.get('topic') or 'tenses')==limits['topic'] and not (limits.get('exclude_retired') and i.get('retired'))]
+    n=len(items)
+    failures=[]
+    if not n: return ['empty eligible bank: 0 items']
+    def maximum(name, actual, limit, ids):
+        if actual>limit:
+            failures.append(f'{name}: actual={actual:.6g}, limit={limit:.6g}, excess={actual-limit:.6g}; items: '+', '.join(ids))
+    openings=collections.defaultdict(list)
+    verbs=collections.defaultdict(list)
+    for item in items:
+        openings[' '.join(item['prompt'].lower().split()[:2])].append(item['id'])
+        for b in item.get('blanks',[]):
+            cue=b.get('base_verb','')
+            matches=re.findall(r'\bto\s+([a-z]+)',cue.lower())
+            verb=matches[-1] if matches else cue.lower().strip()
+            if verb:verbs[verb].append(item['id'])
+    for opening, ids in sorted(openings.items()): maximum('opening '+repr(opening),len(ids)/n,limits['max_opening_share'],ids)
+    by=[i['id'] for i in items if re.match(r'\s*(?:[—–-]\s*)?by the (?:time|end)',i['prompt'],re.I)]
+    maximum('By the time/end share',len(by)/n,limits['max_by_the_share'],by)
+    for verb, ids in sorted(verbs.items()): maximum('verb '+verb,len(ids),limits['max_verb_uses'],ids)
+    timed=[i['id'] for i in items if re.search(CUES,i['prompt'],re.I)]
+    maximum('time marker share',len(timed)/n,limits['max_time_marker_share'],timed)
+    d2=[(i,b) for i in items if i.get('cell')=='D2' for b in i.get('blanks',[])]
+    active=sum(b.get('voice')=='active' for _,b in d2)/max(1,len(d2))
+    if active<limits['min_active_share_in_D2']:
+        failures.append(f'D2 active share: actual={active:.6g}, minimum={limits["min_active_share_in_D2"]}, shortfall={limits["min_active_share_in_D2"]-active:.6g}; items: '+', '.join(dict.fromkeys(i['id'] for i,_ in d2)))
+    for cell, target in limits['cell_shares'].items():
+        ids=[i['id'] for i in items if i.get('cell','D1')==cell]
+        delta=abs(len(ids)/n-target)
+        maximum(f'cell {cell} deviation (share={len(ids)/n:.6g}, target={target})',delta,limits['cell_tolerance'],ids)
+    grams=[(i['id'],trigrams(i['prompt'])) for i in items]
+    pairs=[]
+    for k,(a,ga) in enumerate(grams):
+        if len(ga)<4:continue
+        for b,gb in grams[k+1:]:
+            if len(gb)>=4 and len(ga&gb)/len(ga|gb)>=.45:pairs.append(a+' / '+b)
+    maximum('near duplicate pairs',len(pairs),limits['max_near_duplicate_pairs'],pairs)
+    return failures
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("topic", nargs="?")
     ap.add_argument("--md")
+    ap.add_argument("--gate", help="JSON limits; nonzero exit when any limit is broken")
     a = ap.parse_args()
-    items = load(a.topic)
+    limits=json.loads(Path(a.gate).read_text()) if a.gate else None
+    items = load(a.topic or (limits['topic'] if limits else None))
+    if limits:
+        failures=gate(items,limits)
+        print('Variety gate: '+('FAIL' if failures else 'PASS'))
+        for failure in failures:print('- '+failure)
+        raise SystemExit(1 if failures else 0)
     groups = collections.defaultdict(list)
     for x in items:
         groups[x.get("topic") or "tenses"].append(x)
