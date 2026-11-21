@@ -53,6 +53,13 @@ def modal_form(value):
     text=re.sub(r'\s+', ' ', text)
     return re.sub(r'[.!?]+$', '', text).strip()
 
+def already_less(text):
+    # «already» не влияет на проверку; если это единственное слово, оно остаётся ответом.
+    words=str(text).split()
+    at=next((i for i,w in enumerate(words) if ''.join(c for c in w if c.isalpha()).lower()=='already'),-1)
+    return ' '.join(words[:at]+words[at+1:]) if at>=0 and len(words)>1 else str(text)
+
+
 def grade(item, submitted):
     if item.get('options'):
         if type(submitted) is not int or submitted<0 or submitted>=len(item['options']):raise ValueError('Выберите ответ.')
@@ -69,13 +76,13 @@ def grade(item, submitted):
             sentence=item['type'] in ('translation_ru_en','transformation','error_correction')
             if item.get('answer_profile')=='modal-exact-v1':
                 actual=modal_form(value)
-                correct=any(actual==modal_form(answer) for answer in [field['answer'],*field.get('accepted_answers',[])])
+                correct=any(actual==modal_form(answer) or already_less(actual)==already_less(modal_form(answer)) for answer in [field['answer'],*field.get('accepted_answers',[])])
             elif item.get('answer_profile')=='english-standard-v2':
                 actual=standard_form(value)
-                correct=any(actual==standard_form(answer) for answer in [field['answer'],*field.get('accepted_answers',[])])
+                correct=any(actual==standard_form(answer) or already_less(actual)==already_less(standard_form(answer)) for answer in [field['answer'],*field.get('accepted_answers',[])])
             else:
                 actual=forms(value,sentence)
-                correct=any(actual & forms(answer,sentence) for answer in [field['answer'],*field.get('accepted_answers',[])])
+                correct=any(actual & forms(answer,sentence) or {already_less(f) for f in actual} & {already_less(f) for f in forms(answer,sentence)} for answer in [field['answer'],*field.get('accepted_answers',[])])
             review=item['type']=='translation_ru_en' or (not item.get('blanks') and item['type'] in ('transformation','error_correction'))
             fields.append({'submitted':value,'correct':correct,'verified':correct or not review})
     return {'id':item['id'],'submitted':submitted,'correct':all(f['correct'] for f in fields),'fields':fields,'item':item,'checker':3}

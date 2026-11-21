@@ -33,8 +33,8 @@ for(const item of items){
   }
 }
 const target=items.find(i=>i.id==='src-u02-020');
-for(const v of ['had already translated','already translated']) assert.equal(ctx.evaluate(target,[v]),true);
-for(const v of ['had translated','translated','has translated','had not translated','had never translated','had already translate','had already already translated'])assert.equal(ctx.evaluate(target,[v]),false,v);
+for(const v of ['had already translated','had translated','already translated','translated']) assert.equal(ctx.evaluate(target,[v]),true);
+for(const v of ['has translated','had not translated','had never translated','had already translate','had already already translated'])assert.equal(ctx.evaluate(target,[v]),false,v);
 const never=items.find(i=>i.id==='src-u09-027');
 assert.equal(ctx.evaluate(never,['have been']),false,'never is not globally optional');
 assert.equal(ctx.evaluate(never,['have never been']),true);
@@ -49,7 +49,8 @@ assert.equal(ctx.evaluate({answer:'He had not left.'},"He hadn't left."),true);
 assert.equal(ctx.evaluate({answer:'He had left.'},"He hadn't left."),false);
 assert.equal(ctx.evaluate({answer:'They cannot come.'},"They can't come."),true);
 assert.equal(ctx.evaluate({answer:'They can come.'},"They can't come."),false);
-assert.equal(ctx.evaluate({answer:'have translated'},'have already translated'),false,'no undeclared word deletion');
+assert.equal(ctx.evaluate({answer:'have translated'},'have already translated'),true,'already is optional');
+assert.equal(ctx.evaluate({answer:'have translated'},'have just translated'),false,'no other word deletion');
 assert.equal(ctx.evaluate(items.find(i=>i.id==='adv-transform-004'),'Seldom have I encountered a dataset this internally consistent.'),false,'explicit RARELY instruction');
 assert.equal(ctx.evaluate(JSON.parse(fs.readFileSync(new URL('docs/review/PRACTICE-FORMATS-2026-10-31/retired-records.json',root),'utf8')).find(i=>i.id==='new-error-005'),'By Friday I will finish the project.'),false,'choice requires an option index, not an arbitrary sentence');
 console.log(`Answer checking passed: ${items.length} exercises, ${variants} reviewed variants, positive and negative regressions.`);

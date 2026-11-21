@@ -36,8 +36,9 @@ check({type:'translation_ru_en',answer:'This is the cheapest option.'},'There is
 for (const bad of ['It is as expensive as ours.','It is not as cheap as ours.','Ours is not as expensive as it is.'])
   check({type:'error_correction',answer:'It is not as expensive as ours.'},bad,false,false);
 check({type:'transformation',blanks:[{answer:'cheaper than'}]},['less expensive than'],false,true);
-for (const bad of ['has gone','had not gone','had go','had already gone'])
+for (const bad of ['has gone','had not gone','had go'])
   check({type:'open_brackets',blanks:[{answer:'had gone'}]},[bad],false,true);
+check({type:'open_brackets',blanks:[{answer:'had gone'}]},['had already gone'],true,true);
 check({type:'open_brackets',blanks:[{answer:'twice as wide as'}]},['three times as wide as'],false,true);
 check({type:'transformation',blanks:[{answer:'no more than 10'}]},['less than 10'],false,true);
 check({type:'error_correction',answer:'The fee is 1,000 pounds.'},'The fee is 1000 pounds.',false,false);

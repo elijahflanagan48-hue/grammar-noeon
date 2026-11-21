@@ -603,7 +603,7 @@ function mountPracticeReference(session) {
     dialog.className = 'practice-reference';
     dialog.setAttribute('aria-labelledby', 'practice-reference-title');
     const initial = exerciseSection(session.items[0]);
-    dialog.innerHTML = `<header class="reference-header"><h2 id="practice-reference-title">Правило</h2><button class="button" type="button" data-reference-close><span class="reference-desktop-label">Свернуть</span><span class="reference-mobile-label">К заданию</span></button></header><div class="reference-picker"><label for="reference-section">Тема</label><select id="reference-section"><option value="tenses">Tenses</option><option value="comparison">Adjectives (Degrees of Comparison)</option><option value="passive">Passive Voice</option><option value="reported">Reported Speech</option><option value="nouns">Nouns</option><option value="speaking">Say · Tell · Speak · Talk</option><option value="infinitive">Infinitive · -ing</option><option value="modals">Modal Verbs</option></select></div><div class="reference-reader theory-content" tabindex="0" role="region" aria-label="Текст правила"></div>`;
+    dialog.innerHTML = `<header class="reference-header"><span class="reference-grip" aria-hidden="true"></span><div class="reference-row"><h2 id="practice-reference-title">Правило</h2><label class="reference-picker" for="reference-section"><span class="tm-sr">Тема</span><select id="reference-section"><option value="tenses">Tenses</option><option value="comparison">Adjectives (Degrees of Comparison)</option><option value="passive">Passive Voice</option><option value="reported">Reported Speech</option><option value="nouns">Nouns</option><option value="speaking">Say · Tell · Speak · Talk</option><option value="infinitive">Infinitive · -ing</option><option value="modals">Modal Verbs</option></select></label><button class="reference-close" type="button" data-reference-close aria-label="Закрыть правило">✕</button></div></header><div class="reference-reader theory-content" tabindex="0" role="region" aria-label="Текст правила"></div>`;
     document.body.append(dialog);
     const reader = dialog.querySelector('.reference-reader');
     const select = dialog.querySelector('select');
@@ -732,6 +732,12 @@ function mountPracticeReference(session) {
     document.addEventListener('click', followReference);
     dialog.querySelector('[data-reference-close]').addEventListener('click', collapse);
     dialog.addEventListener('cancel', event => { event.preventDefault(); collapse(); });
+    dialog.addEventListener('click', event => { if (event.target === dialog && !wide.matches) collapse(); });
+    let dragY = null;
+    const header = dialog.querySelector('.reference-header');
+    header.addEventListener('pointerdown', event => { if (!wide.matches && !event.target.closest('select,button')) dragY = event.clientY; });
+    header.addEventListener('pointerup', event => { if (dragY !== null && event.clientY - dragY > 60) collapse(); dragY = null; });
+    header.addEventListener('pointercancel', () => { dragY = null; });
     dialog.addEventListener('close', () => { if (!dialog.open && expanded) collapse(); });
     const escape = event => {
       if (event.key === 'Escape' && expanded && wide.matches && !document.querySelector('dialog:modal')) { event.preventDefault(); collapse(); }
@@ -1380,13 +1386,22 @@ function answerForms(value, ignoreCommas = false) {
   return [...new Set(forms.map(form => form.replace(/\b(would|could|should|must|might|may|will)'ve\b/g, "$1 have")))];
 }
 function standardAnswerNormal(s){const negatives={"isn't":"is not","aren't":"are not","wasn't":"was not","weren't":"were not","hasn't":"has not","haven't":"have not","hadn't":"had not","won't":"will not","can't":"cannot","couldn't":"could not","mustn't":"must not","shouldn't":"should not","wouldn't":"would not","mightn't":"might not","needn't":"need not","don't":"do not","doesn't":"does not","didn't":"did not","shan't":"shall not"};const spelling={"organizer":"organiser","organizers":"organisers","organized":"organised","organizing":"organising","labeler":"labeller","labelers":"labellers","labeled":"labelled","labeling":"labelling","cataloged":"catalogued","cataloging":"cataloguing","cataloger":"cataloguer","recognized":"recognised","digitized":"digitised","color":"colour","colored":"coloured","colors":"colours","center":"centre","centerpiece":"centrepiece","theater":"theatre","neighbor":"neighbour","neighbors":"neighbours","neighborhood":"neighbourhood","fiber":"fibre","fibers":"fibres","tire":"tyre","tires":"tyres","woolen":"woollen","molded":"moulded","artifact":"artefact","artifacts":"artefacts"};return s.normalize('NFKC').replace(/[’‘ʼ]/g,"'").toLowerCase().trim().replace(/\b(could|should|would|might|must|may)'ve\b/g,'$1 have').replace(/\b[a-z]+n't\b/g,x=>negatives[x]||x).replace(/\bcan not\b/g,'cannot').replace(/\b(dr|mr|mrs|ms|prof)\.(?=\s)/g,'$1').replace(/\b[a-z]+\b/g,x=>spelling[x]||x).replace(/[.!?\s]+$/,'').replace(/\s+/g,' ').trim()}
+// «already» не влияет на проверку: ответ с ним и без него одинаково верен. Если «already» — единственное слово
+// (задание «already или yet»), оно остаётся ответом и не стирается.
+function alreadyLess(text) {
+  const words = String(text).split(/\s+/).filter(Boolean);
+  const at = words.findIndex(word => word.replace(/[^a-z]/gi, '').toLowerCase() === 'already');
+  // Убираем только одно «already»: «already already» — это уже лишнее слово, а не вариант записи.
+  return at >= 0 && words.length > 1 ? [...words.slice(0, at), ...words.slice(at + 1)].join(' ') : String(text);
+}
 function matchesField(item, submitted, index = null) {
-  if(item.answer_profile==='modal-exact-v1')return acceptedFor(item,index).some(a=>modalAnswerNormal(a)===modalAnswerNormal(submitted));
-  if(item.answer_profile==='english-standard-v2')return acceptedFor(item,index).some(a=>standardAnswerNormal(a)===standardAnswerNormal(submitted));
+  if(item.answer_profile==='modal-exact-v1')return acceptedFor(item,index).some(a=>{const x=modalAnswerNormal(a),y=modalAnswerNormal(submitted);return x===y||alreadyLess(x)===alreadyLess(y);});
+  if(item.answer_profile==='english-standard-v2')return acceptedFor(item,index).some(a=>{const x=standardAnswerNormal(a),y=standardAnswerNormal(submitted);return x===y||alreadyLess(x)===alreadyLess(y);});
 
   const ignoreCommas = ["translation_ru_en", "transformation", "error_correction"].includes(item.type);
   const forms = new Set(answerForms(submitted, ignoreCommas));
-  return acceptedFor(item, index).some(answer => answerForms(answer, ignoreCommas).some(form => forms.has(form)));
+  const bare = new Set([...forms].map(alreadyLess));
+  return acceptedFor(item, index).some(answer => answerForms(answer, ignoreCommas).some(form => forms.has(form) || bare.has(alreadyLess(form))));
 }
 function optionIsCorrect(item, submitted) {
   return (item.accepted_option_indices || [item.correct_option_index]).includes(submitted);
