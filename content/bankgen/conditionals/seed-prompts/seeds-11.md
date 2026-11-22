@@ -1,0 +1,29 @@
+# Seeds for topic «Conditionals (условные предложения)», part 11 of 21
+
+> Send after `master.md`. Save the answer as `content/bankgen/conditionals/seeds/seeds-11.jsonl`.
+
+Write **50 scenario seeds**: short, concrete situations from life. Each future task will be built on its own seed, so the storylines of the bank never repeat.
+
+Domains for this part (about 10 seeds per domain, no more than 12): university and exams · work and the office · jobs and interviews · shopping and online orders · travel and airports.
+
+Every seed must contain a **natural reason** for one of these scene features of the topic (`hooks`): `a plan that depends on something` | `a warning or promise with a condition` | `a rule or a deal` | `something that always happens` | `a daydream or an imagined change` | `advice: what I would do` | `regret about the past` | `what would have happened` | `a result of an old decision still true now` | `a complaint about something annoying` | `a polite offer or request` | `a formal notice`.
+Across the 50 seeds no hook may be used in more than 25% of them.
+
+## A good seed
+- Concrete: a place, people (or a role), an event, one vivid or unexpected detail. Realistic (funny is fine, nonsense is not).
+- The seeds inside a domain are different: different places, ages, professions, countries, tones.
+- Everyday vocabulary only (A2–B1). No jargon, no rare animals or professions. Ordinary life.
+- Not a ready exercise sentence: 1–2 plain sentences, up to 30 words.
+- No celebrities, politics, religion, war, deaths, injuries with details, diagnoses.
+- Banned for this topic: The «If I won the lottery / were a millionaire / could fly / were invisible» scenes (all together at most 3% of the bank); heroes Nora, Maya, Nina, Ben as the default names; more than 55% of sentences opening with «If»; the same skeleton «If + subject + verb, subject + will/would + verb» in more than a third of the batch; textbook examples (If it rains, we will stay at home).
+
+## Format (JSONL, one line per seed)
+```
+{"seed_id":"cd-1101","domain":"school life","place":"a primary school in Leeds","who":"a class of nine-year-olds","situation":"…","hooks":["a question someone asked"],"tone":"funny","register":"dialogue"}
+```
+- `seed_id`: `cd-11NN` (NN = 01…50)
+- `hooks`: 1–2 of the list above (copy the wording exactly)
+- `tone`: funny | annoying | alarming | touching | neutral | good news | bad news | ironic
+- `register`: dialogue | chat | email | notice | news | instructions | report | review | story
+
+At the end one line: `# check: seeds=50, hooks={…}, tones={…}`.

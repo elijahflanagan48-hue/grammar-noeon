@@ -23,8 +23,24 @@ from bankgen_specs import SPECS, GENERIC_FORMATS, check_specs  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 TPL = ROOT / "docs/variety/bankgen/master-template.md"
-LEVELS = {"basic": .30, "medium": .40, "advanced": .30}
-FORMATS = {"gap", "mini", "mc", "fix", "which", "transform"}
+LEVELS = {"basic": .30, "medium": .40, "advanced": .30}  # default; a spec can override with levels=
+BASE_FORMATS = {"gap", "mini", "mc", "fix", "which", "transform"}
+EXTRA_FORMATS = {"fact", "match", "sort", "bank", "hunt", "order"}  # opt-in per topic via spec["extra_formats"]
+FORMATS = BASE_FORMATS | EXTRA_FORMATS
+FORMAT_DOCS = {
+    "fact": ("| `fact` | One sentence about an unreal situation; 4 statements of what REALLY is or was true: «what is the real situation?» | `prompt` = the conditional / wish sentence; exactly one option states the real facts; distractors are tempting reversals (wrong time, wrong polarity, real-world reading); `options`, `correct_option_index` |",
+             '{"id":"<batch>-06","seed_id":"…","cell":"…","format":"fact","genre":"…","level":"medium","prompt":"If Lena had set an alarm, she would not have missed the bus.","options":["Lena set an alarm and missed the bus.","Lena did not set an alarm and missed the bus.","Lena did not set an alarm and caught the bus.","Lena set an alarm and caught the bus."],"correct_option_index":1,"construction":"<tag>","explanation_ru":"…"}'),
+    "match": ("| `match` | Four left halves and four right halves; the learner joins them | `pairs` = 4 `[left, right]` pairs; each left half fits **exactly one** right half in form AND meaning (the lefts must differ in form, e.g. `If I see her,` / `If I saw her,` / `If I had seen her,` / `Unless I see her,`); `prompt` = a short instruction in English |",
+              '{"id":"<batch>-07","seed_id":"…","cell":"…","format":"match","genre":"…","level":"medium","prompt":"Match the halves.","pairs":[["If the shop is open,","I will buy some milk."],["If the shop were open,","I would buy some milk."],["If the shop had been open,","I would have bought some milk."],["Unless the shop is open,","I will not get any milk."]],"construction":"<tag>","explanation_ru":"…"}'),
+    "sort": ("| `sort` | 6–8 sentences; the learner puts each into a group (e.g. «Reality» / «Inside-out» or type 1 / 2 / 3) | `groups` = 2–3 names; `items` = `[{text, group}, …]`, every group has at least 2 items; each sentence belongs to exactly one group by its form and meaning; `prompt` = a short instruction |",
+             '{"id":"<batch>-08","seed_id":"…","cell":"…","format":"sort","genre":"…","level":"basic","prompt":"Which world is each sentence about?","groups":["Reality","Inside-out"],"items":[{"text":"If it rains, we stay at home.","group":"Reality"},{"text":"If I had a car, I would drive you.","group":"Inside-out"}],"construction":"<tag>","explanation_ru":"…"}'),
+    "bank": ("| `bank` | A short text with 4–5 `___` and a word bank (2 extra words); each word is used once | `prompt` = the text with `___`; `bank` = the words/short phrases (blanks + 2 extras, all distinct); `answers` = the correct word for each blank in order; every blank has only one possible bank word |",
+             '{"id":"<batch>-09","seed_id":"…","cell":"…","format":"bank","genre":"…","level":"medium","prompt":"Take a coat ___ it rains. You can borrow my bike ___ you bring it back. I will go ___ you come with me. We will go out ___ the weather is bad.","bank":["in case","as long as","unless","even if","whether","otherwise"],"answers":["in case","as long as","unless","even if"],"construction":"<tag>","explanation_ru":"…"}'),
+    "hunt": ("| `hunt` | A mini-text of 4–6 sentences; the learner taps the sentence(s) with a mistake | `sentences` = the list; `wrong` = indices (from 0) of the 1–2 wrong sentences; `fixes` = `{index: corrected sentence}`; each wrong sentence has exactly one typical mistake; the other sentences are fully correct; `prompt` = a short title or situation |",
+             '{"id":"<batch>-10","seed_id":"…","cell":"…","format":"hunt","genre":"…","level":"advanced","prompt":"A message to a friend.","sentences":["If I had known about the party, I would have come.","If you would have called me, I would have told you.","Anyway, I hope we meet soon."],"wrong":[1],"fixes":{"1":"If you had called me, I would have told you."},"construction":"<tag>","explanation_ru":"…"}'),
+    "order": ("| `order` | Words in random order; the learner builds the sentence | `words` = the tokens (5–12, punctuation attached to the word); `answer` = the correct sentence; `accepted_answers` = all correct orders, each using **exactly** the same words; the sentence must have one natural order, or all orders must be listed |",
+              '{"id":"<batch>-11","seed_id":"…","cell":"…","format":"order","genre":"…","level":"advanced","prompt":"Build the sentence.","words":["Had","I","known,","I","would","have","helped."],"answer":"Had I known, I would have helped.","accepted_answers":["Had I known, I would have helped."],"construction":"<tag>","explanation_ru":"…"}'),
+}
 GENRES = set("news notice instructions recipe process history report review dialogue chat email school work travel sport tech health nature arts science home city shopping food".split())
 DOMAINS = """weather and nature|animals and pets|food and restaurants|cooking and recipes|school life|university and exams|work and the office|jobs and interviews|shopping and online orders|travel and airports|hotels and holidays|transport and roads|sport and competitions|music and concerts|film, TV and theatre|museums and art|science and discoveries|health and clinics (no diagnoses)|technology, apps and social media|crime and police (no violence)|history and archaeology|family and home|friends and celebrations|city life and local news|environment, farming and space""".split("|")
 TIME = re.compile(r"\b(yesterday|last (?:night|week|month|year|summer|winter|weekend|time)|every (?:day|week|month|year|morning|evening|night)|at the moment|right now|now|already|since|for the past|just|yet|tomorrow|next (?:week|month|year|time|day)|ago|so far|by the time|by the end of|currently|tonight|recently)\b", re.I)
@@ -82,7 +98,7 @@ def cmd_plan(topic, batch=None):
             fm = largest_remainder(sz, c["formats"] or GENERIC_FORMATS)
             batches.append(dict(batch=f"{sp['code'].upper()}{n:02d}", cell=c["id"], size=sz,
                                 formats={f: v for f, v in fm.items() if v},
-                                levels={l: v for l, v in largest_remainder(sz, LEVELS).items() if v}))
+                                levels={l: v for l, v in largest_remainder(sz, c.get("levels") or sp.get("levels", LEVELS)).items() if v}))
     plan = dict(topic=topic, version=f"{topic}-v8", target_total=sum(b["size"] for b in batches), batches=batches)
     base(topic).mkdir(parents=True, exist_ok=True)
     (base(topic) / "plan.json").write_text(json.dumps(plan, ensure_ascii=False, indent=1))
@@ -108,7 +124,11 @@ def cmd_master(topic):
     cons = sorted({t for c in sp["cells"] for t in c["cons"]})
     text = TPL.read_text()
     extra = "\n".join("- " + e for e in sp["extra"])
+    if not sp.get("extra_formats"):  # topics without extra formats keep the old master byte-for-byte
+        text = text.replace("{{EXTRA_FORMATS_ROWS}}\n", "").replace("{{EXTRA_FORMATS_JSON}}\n", "")
     for k, v in dict(TITLE=sp["title"], SCENE=sp["scene"], BANNED=sp["banned"], EXTRA=extra, GAP_RULE=sp["gap_rule"],
+                     EXTRA_FORMATS_ROWS="\n".join(FORMAT_DOCS[f][0] for f in sp.get("extra_formats", [])),
+                     EXTRA_FORMATS_JSON="\n".join(FORMAT_DOCS[f][1] for f in sp.get("extra_formats", [])),
                      CONSTRUCTIONS=", ".join(f"`{t}`" for t in cons),
                      CELLS="\n".join(cell_block(c) for c in sp["cells"])).items():
         text = text.replace("{{" + k + "}}", v)
@@ -320,6 +340,13 @@ def lex_tools():
         return None
 
 
+def flat_text(it):
+    """All learner-visible English text of a task (for the vocabulary check)."""
+    parts = [it.get("prompt", "")] + [x for pr in it.get("pairs", []) for x in pr] + [x.get("text", "") for x in it.get("items", []) if isinstance(x, dict)] \
+        + list(it.get("sentences", [])) + list(it.get("options", [])) + list(it.get("bank", [])) + list(it.get("words", []))
+    return " ".join(x for x in parts if isinstance(x, str))
+
+
 def check_item(it, sp, cons_ok, cells_ok, seed_db, seen_seeds):
     e, w = [], []
     fmt, p = it.get("format"), it.get("prompt", "")
@@ -328,6 +355,7 @@ def check_item(it, sp, cons_ok, cells_ok, seed_db, seen_seeds):
     if it.get("cell") not in cells_ok: e.append(f"unknown cell {it.get('cell')}")
     if fmt not in FORMATS: e.append(f"unknown format {fmt}")
     if it.get("level") not in LEVELS: e.append(f"unknown level {it.get('level')}")
+    if fmt in EXTRA_FORMATS and fmt not in sp.get("extra_formats", []): e.append(f"format {fmt} is not enabled for this topic")
     if it.get("genre") and it["genre"] not in GENRES: w.append(f"genre `{it['genre']}` is not in the list")
     if it.get("explanation_ru") and not re.search("[а-яА-Я]", it["explanation_ru"]): e.append("explanation_ru is not in Russian")
     sid = it.get("seed_id")
@@ -357,6 +385,47 @@ def check_item(it, sp, cons_ok, cells_ok, seed_db, seen_seeds):
             if not isinstance(it.get("has_error"), bool): e.append("fix: has_error must be true/false")
             if it.get("has_error") is False and it.get("answer") != p: e.append("fix without error: answer must equal prompt")
             if it.get("has_error") and it.get("answer") == p: e.append("fix: has_error=true, but answer equals prompt")
+        if it.get("construction") not in cons_ok: e.append(f"unknown construction `{it.get('construction')}`")
+    elif fmt == "fact":
+        o = it.get("options") or []
+        if len(o) != 4 or len(set(o)) != 4: e.append("4 distinct options required")
+        if it.get("correct_option_index") not in range(4): e.append("correct_option_index must be 0–3")
+        if it.get("construction") not in cons_ok: e.append(f"unknown construction `{it.get('construction')}`")
+    elif fmt == "match":
+        pr = it.get("pairs") or []
+        if len(pr) != 4 or any(not isinstance(x, list) or len(x) != 2 or not all(x) for x in pr): e.append("match: 4 pairs [left, right] required")
+        else:
+            if len({x[0] for x in pr}) != 4 or len({x[1] for x in pr}) != 4: e.append("match: halves must be distinct")
+        if it.get("construction") not in cons_ok: e.append(f"unknown construction `{it.get('construction')}`")
+    elif fmt == "sort":
+        g, its = it.get("groups") or [], it.get("items") or []
+        if not 2 <= len(g) <= 3: e.append("sort: 2–3 groups required")
+        if not 6 <= len(its) <= 8: e.append("sort: 6–8 items required")
+        if any(x.get("group") not in g for x in its if isinstance(x, dict)) or any(not isinstance(x, dict) or not x.get("text") for x in its): e.append("sort: every item needs text and a group from `groups`")
+        else:
+            c = collections.Counter(x["group"] for x in its)
+            if any(c[x] < 2 for x in g): e.append("sort: every group needs at least 2 items")
+        if it.get("construction") not in cons_ok: e.append(f"unknown construction `{it.get('construction')}`")
+    elif fmt == "bank":
+        bk, an = it.get("bank") or [], it.get("answers") or []
+        if not 4 <= len(an) <= 5: e.append("bank: 4–5 blanks required")
+        if p.count("___") != len(an): e.append(f"bank: blanks in prompt {p.count('___')}, answers {len(an)}")
+        if len(set(bk)) != len(bk) or len(bk) != len(an) + 2: e.append("bank: need blanks+2 distinct words")
+        if any(a not in bk for a in an) or len(set(an)) != len(an): e.append("bank: answers must be distinct words from the bank")
+        if it.get("construction") not in cons_ok: e.append(f"unknown construction `{it.get('construction')}`")
+    elif fmt == "hunt":
+        ss, wr, fx = it.get("sentences") or [], it.get("wrong") or [], it.get("fixes") or {}
+        if not 4 <= len(ss) <= 6: e.append("hunt: 4–6 sentences required")
+        if not 1 <= len(wr) <= 2 or any(not isinstance(i, int) or i not in range(len(ss)) for i in wr): e.append("hunt: `wrong` = 1–2 valid indices")
+        elif {str(i) for i in wr} != set(fx) or any(not v or v == ss[int(k)] for k, v in fx.items()): e.append("hunt: `fixes` must cover exactly the wrong indices with a changed sentence")
+        if it.get("construction") not in cons_ok: e.append(f"unknown construction `{it.get('construction')}`")
+    elif fmt == "order":
+        wd = it.get("words") or []
+        if not 5 <= len(wd) <= 12: e.append("order: 5–12 words required")
+        acc = it.get("accepted_answers") or []
+        if it.get("answer") not in acc: e.append("order: answer is not in accepted_answers")
+        if any(collections.Counter(a.split()) != collections.Counter(wd) for a in acc): e.append("order: every accepted answer must use exactly the given words")
+        if wd and wd == (it.get("answer") or "").split(): e.append("order: words are already in the right order")
         if it.get("construction") not in cons_ok: e.append(f"unknown construction `{it.get('construction')}`")
     if {n for n in re.findall(r"(?<!^)(?<![.!?—]\s)\b([A-Z][a-z]{2,})\b", p)} & OLD_NAMES: w.append("overused name")
     if re.match(r"\s*(—\s*)?by the (time|end)", p, re.I): w.append("opening with By the time / By the end")
@@ -396,8 +465,9 @@ def cmd_validate(topic, only=None, stage="raw"):
                 mcn += 1; correct0 += it.get("correct_option_index") == 0
             if topic == "reported" and re.search(r"\bsaid\b", it.get("prompt", "") + " ".join(b.get("answer", "") for b in it.get("blanks", []))): said += 1
             if la:
-                hw = la.hard_words(it, names_all)
-                if hw and la.over_limit(it, hw): w.append("vocabulary above level: " + ", ".join(h[0] for h in hw))
+                flat = {**it, "prompt": flat_text(it)}
+                hw = la.hard_words(flat, names_all)
+                if hw and la.over_limit(flat, hw): w.append("vocabulary above level: " + ", ".join(h[0] for h in hw))
             if e: errs[i] += e
             if w: warns[i] += w
         pb = plan_b.get(bid.rstrip("abcdefghij")) if stage == "raw" else None
