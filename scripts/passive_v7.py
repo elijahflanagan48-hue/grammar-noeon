@@ -14,7 +14,7 @@ Files
   content/passive-bank/v7/reports/Bxx.md|repair-Bxx.md validation report and repair prompt
 """
 from __future__ import annotations
-import collections, glob, json, re, sys
+import collections, glob, json, os, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -71,7 +71,7 @@ def seeds():
 
 def raw_items(only=None):
     items = []
-    for f in sorted(glob.glob(str(BANK / "raw/B*.jsonl"))):
+    for f in sorted(glob.glob(str(BANK / os.environ.get("PV7_STAGE", "raw") / "B*.jsonl"))):
         b = Path(f).stem
         if only and b not in only:
             continue

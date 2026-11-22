@@ -1,0 +1,16 @@
+P = {
+"B04-16": {"add": {0: ["had to stand"]}},
+"B04-17": {"add": {1: ["tangled"]}},
+"B04-18": {"add": {1: ["were rewrapped"]}},
+"B04-19": {"add": {1: ["has been switched"]}},
+"B04-27": {"add": {0: ["has been hand-knitted"]}},
+"B04-36": {"reject": "was blown (state) is acceptable — not a clear error"},
+"B04-39": {"reject": "pointless situation, absurd options"},
+"B05-07": {"add": {0: ["had been delayed"]}},
+"B05-21": {"add": {1: ["was worrying"]}},
+"B05-27": {"rep": [("A giant clock price (to tick)", "The price on a giant clock (to tick)")]},
+"B05-32": {"opt": {1: "turn"}},
+"B06-09": {"rep": [("His complicated coffee order already (to sit)", "His complicated coffee order (already / to sit)")], "ans": {0: "was already sitting"}, "acc": {0: ["was already sitting", "had already been sitting", "already sat"]}, "cue": {0: "already / to sit"}},
+"B06-17": {"add": {0: ["will arrive", "must arrive"]}},
+"B06-38": {"reject": "was shattered is grammatical — not a clear error"},
+}

@@ -1,0 +1,8 @@
+# Repair batch B10
+
+Below are the problems found by the automatic check. Correct **only** the listed tasks, keeping their `id` and `seed_id` (you may replace a seed with an unused one from the same batch's list if the storyline is the problem). Reply with JSONL only: the corrected lines, nothing else. The master instruction still applies.
+
+- B10-10: gap 1: cue `to uncover` ≠ bracket `(To uncover)`
+  {"id": "B10-10", "seed_id": "S4-021", "cell": "D4", "format": "gap", "genre": "news", "level": "advanced", "prompt": "(To uncover) as a piece of authentic 1735 silver, the teapot was immediately withdrawn from the Victorian auction.", "blanks": [{"cue": "to uncover", "answer": "Having been uncovered", "accepted_answers": ["Having been uncovered", "Uncovered"], "voice": "passive", "construction": "pv_perfect_participle"}], "explanation_ru": "Деепричастный оборот со значением предшествования. Чайник сначала обнаружили, потом сняли с торгов (пассив)."}
+- B10-15: gap 1: cue `to place` ≠ bracket `(To place)`; mini: fewer than 3 sentences
+  {"id": "B10-15", "seed_id": "S4-085", "cell": "D4", "format": "mini", "genre": "dialogue", "level": "advanced", "prompt": "(To place) first in the phone queue, the patient felt relieved. He had finally managed (to secure) an early morning appointment.", "blanks": [{"cue": "to place", "answer": "Having been placed", "accepted_answers": ["Having been placed", "Placed"], "voice": "passive", "construction": "pv_perfect_participle"}, {"cue": "to secure", "answer": "to secure", "accepted_answers": ["to secure"], "voice": "active", "construction": "active_other"}], "explanation_ru": "Деепричастный оборот в пассиве (его поставили в очередь первым). После manage нужен активный инфинитив."}
