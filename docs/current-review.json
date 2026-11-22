@@ -10,11 +10,12 @@
     "infinitive": "infinitive-2026-11-13.1",
     "conditionals": "conditionals-2026-11-23.1"
   },
-  "description": "Обновлён Conditionals: 1007 заданий, 12 форматов источника, 11 целей, версия conditionals-2026-11-23.1. CD20-01 исправлен автором; все 60 меток имеют минимум 8 заданий. Функциональные проверки пройдены. Не закрыты basic для Inversion и проверки, заблокированные средой; точный список — в отчёте.",
+  "description": "Conditionals обновлён до 1007 заданий, версия conditionals-2026-11-23.1. CD20-01 исправлен; все 60 меток имеют минимум 8 заданий. Деплой a31c50e подтверждён GitHub Actions. Серверные проверки прошли в CI; остаются лексический gate (74 задания), полнота покрытия и подтверждение отдельного браузерного прогона.",
   "report": "docs/conditionals/INTEGRATION-REPORT.md",
   "local_unpublished_features": [
     "teacher-own-practice-delete",
     "conditionals-bank"
   ],
-  "next_step": "Следующий шаг — повторить заблокированные проверки и подтвердить автоматический деплой. Пуш разрешён текущим запросом владельца."
+  "next_step": "Следующий шаг — проверить браузерный CI job и устранить редакторские замечания по лексике и покрытию.",
+  "deployment_note": "Деплой версии conditionals-2026-11-23.1 подтверждён для коммита a31c50e: [Deploy to Cloudflare](https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45069745205)."
 }

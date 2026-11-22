@@ -348,5 +348,26 @@
     "status": "AUTOMATICALLY_REJECTED",
     "reason": "sandbox_approval: false; the session approval policy prohibits requesting escalated permissions"
   },
-  "lexical": "SKIP: wordfreq/cefrpy not installed"
+  "lexical": "SKIP: wordfreq/cefrpy not installed",
+  "ci": {
+    "sha": "a31c50ea0149bb00100ce536baefc8571df479dc",
+    "status": "FAIL",
+    "run_url": "https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45069745202",
+    "failed": [
+      {
+        "command": "python3 -B scripts/lexical_audit.py conditionals --gate 0.05",
+        "reason": "74/1007 over lexical limit (basic 39, medium 23, advanced 12)"
+      },
+      {
+        "command": "tests/conditionals-bank.mjs --coverage",
+        "reason": "cd_inversion lacks basic; eight source sort tasks have three groups"
+      }
+    ],
+    "server_tests_previously_blocked": "PASS"
+  },
+  "deployment": {
+    "sha": "a31c50ea0149bb00100ce536baefc8571df479dc",
+    "status": "SUCCESS",
+    "run_url": "https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45069745205"
+  }
 }

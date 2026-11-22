@@ -21,3 +21,26 @@ jobs:
       - run: pip install wordfreq cefrpy
       - run: npm ci
       - run: npm test
+
+  conditionals-browser:
+    name: Conditionals browser (390 and 1280)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm ci
+      - run: pip install wordfreq cefrpy
+      - run: npx playwright install --with-deps chromium
+      - run: python3 -B scripts/build_cloudflare.py
+      - name: Practice at 390 and 1280 pixels
+        run: npm run test:conditionals:browser
+      - name: Vocabulary details
+        if: always()
+        continue-on-error: true
+        run: python3 -B scripts/lexical_audit.py conditionals --gate 0.05 --list 100

@@ -26,6 +26,8 @@ release_status = (release.get('description', 'Опубликована итог�
 release_status += (' [Отчёт о выпуске](' + release.get('report', 'docs/reports/RELEASE-V8-FINAL-2026-10-30.md') + ').') if published else ' [Отчёт о проверке](' + (local.get('report', 'docs/review/V8-FINAL-2026-10-30/REPORT.md') if local_current else 'docs/review/V8-FINAL-2026-10-30/REPORT.md') + ').'
 readme = (ROOT / 'docs/README.template.md').read_text().replace('{{BANK_SUMMARY}}', '\n'.join(summary)).replace('{{RELEASE_STATUS}}', release_status)
 production = ('Рабочий сайт: https://grammar.noeon.org. Worker: ' + release['version'] + '. Трафик 100%; схема и исторические оценки сохранены.' if published else 'Применение этих изменений к рабочему сайту ещё не подтверждено. Последний подтверждённый выпуск: ' + release.get('version', 'b60bd839-0891-4d19-9015-31e457d311d1') + '.')
+if not published and local_current and local.get('deployment_note'):
+    production = local['deployment_note']
 v7_ready=all((ROOT/f'content/passive-bank/v7/final/B{n:02d}.jsonl').exists() for n in range(1,24)) and (ROOT/'content/passive-bank/v7/keep-v6.txt').exists()
 v7_status='банк собран; выпуск требует успешного npm run check и браузерной проверки' if v7_ready else 'движок подготовлен; выпуск заблокирован отсутствием проверенных B01–B23 и keep-v6.txt'
 status = '\n'.join(['# Текущее состояние', '',
