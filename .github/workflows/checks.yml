@@ -24,7 +24,7 @@ jobs:
 
   conditionals-browser:
     name: Conditionals browser (390 and 1280)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
