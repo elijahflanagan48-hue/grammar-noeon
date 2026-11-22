@@ -32,6 +32,11 @@
 .cdm-sky{fill:var(--cdm-sky)}.cdm-ground{fill:var(--cdm-ground)}
 .cdm-stars circle{fill:var(--cdm-star)}
 .cdm-cols path{stroke:var(--line2);stroke-width:4;stroke-dasharray:16 18}
+.cdm-side-ic{font-size:130px}
+.cdm-side-h{font-size:118px;font-weight:900;letter-spacing:-3px}
+.cdm-side-u .cdm-side-h{fill:var(--cdm-u)}.cdm-side-r .cdm-side-h{fill:var(--cdm-r)}
+.cdm-side-t{font-size:46px;font-weight:650;fill:var(--mut)}
+.cdm-side-ar{display:none}
 .cdm-world{font-size:40px;font-weight:900;letter-spacing:1px;text-transform:uppercase;opacity:.5}
 .cdm-wu{fill:var(--cdm-u)}.cdm-wr{fill:var(--cdm-r)}
 .cdm-glass{fill:var(--cdm-glass);stroke:var(--cdm-glass2);stroke-width:6}

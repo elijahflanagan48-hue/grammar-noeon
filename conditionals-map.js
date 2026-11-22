@@ -2,7 +2,7 @@
 /* Карта правила Conditionals: «Зазеркалье» на движке noeon-canvas.js. Данные — conditionals-map-data.js.
    Сверху — мир «если бы», снизу — реальный мир, слева направо — время. Между мирами зеркало с лифтами
    «шаг назад»: так глагол меняет форму, когда условие становится нереальным. */
-const CDM_COL_W = 1260, CDM_GAP = 120, CDM_X0 = 120, CDM_CHIP_H = 100, CDM_ROW = 116, CDM_HEAD = 176, CDM_ZGAP = 64;
+const CDM_COL_W = 1260, CDM_GAP = 120, CDM_X0 = 1060, CDM_CHIP_H = 100, CDM_ROW = 116, CDM_HEAD = 176, CDM_ZGAP = 64;
 const cdmColX = c => CDM_X0 + c * (CDM_COL_W + CDM_GAP);
 const CDM_WORLD = { u: 'Мир «если бы»', r: 'Реальный мир' };
 const CDM_GAMECAT = { zero: 'Всегда так', first: 'Реальное будущее', second: 'Если бы: сейчас / будущее', third: 'Если бы: прошлое', mixed: 'Смешанное' };
@@ -105,17 +105,29 @@ function cdmExtra(e) {
   return `<g class="cdm-legend cdm-compass"><rect x="${x}" y="${y}" width="${w}" height="${e.h}" rx="40"/><text class="cdm-lgh" x="${x + 44}" y="${y + 92}">🧭 Компас</text>
     ${steps.map(([q, a], i) => `<circle class="cdm-cn" cx="${x + 72}" cy="${y + 168 + i * 112}" r="28"/><text class="cdm-cnt" x="${x + 72}" y="${y + 180 + i * 112}" text-anchor="middle">${i + 1}</text><text class="cdm-cq" x="${x + 124}" y="${y + 166 + i * 112}">${cdmEsc(q)}</text><text class="cdm-lgt" x="${x + 124}" y="${y + 206 + i * 112}">${cdmEsc(a)}</text>`).join('')}</g>`;
 }
+// Крупные названия миров на левом поле карты.
+const CDM_SIDE = {
+  u: { icon: '🪞', name: 'Зазеркалье', lines: ['мир «если бы»:', 'этого нет, не было', 'или вряд ли будет'] },
+  r: { icon: '🌍', name: 'Реальный мир', lines: ['это правда', 'или может случиться'] },
+};
+function cdmSide(w, top, bottom) {
+  const d = CDM_SIDE[w], x = 120, cy = (top + bottom) / 2, y0 = cy - 150;
+  return `<g class="cdm-side cdm-side-${w}"><text class="cdm-side-ic" x="${x}" y="${y0}">${d.icon}</text>
+    <text class="cdm-side-h" x="${x}" y="${y0 + 170}">${cdmEsc(d.name)}</text>
+    ${d.lines.map((l, i) => `<text class="cdm-side-t" x="${x + 4}" y="${y0 + 250 + i * 58}">${cdmEsc(l)}</text>`).join('')}
+    <path class="cdm-side-ar" d="M${x + 4} ${w === 'u' ? y0 + 250 + d.lines.length * 58 + 30 : y0 - 160}v90" /></g>`;
+}
 function conditionalsMapSvg() {
   const { W, H, UY, UB, RY, RB } = CDM;
-  const fascia = `<g class="cdm-fascia"><rect x="${CDM_X0}" y="60" width="${W - 2 * CDM_X0}" height="200" rx="44"/>
+  const fascia = `<g class="cdm-fascia"><rect x="${CDM_X0}" y="60" width="${W - CDM_X0 - 120}" height="200" rx="44"/>
     <text class="cdm-fa-ic" x="${CDM_X0 + 52}" y="196">🪞</text><text class="cdm-fa-h" x="${CDM_X0 + 196}" y="190">Зазеркалье условий</text>
-    <text class="cdm-fa-t" x="${W - CDM_X0 - 60}" y="146" text-anchor="end">Внизу — реальный мир, вверху — мир «если бы».</text>
-    <text class="cdm-fa-t" x="${W - CDM_X0 - 60}" y="192" text-anchor="end">Подняться через зеркало = сделать шаг назад во времени.</text></g>`;
+    <text class="cdm-fa-t" x="${W - 180}" y="146" text-anchor="end">Внизу — реальный мир, вверху — мир «если бы».</text>
+    <text class="cdm-fa-t" x="${W - 180}" y="192" text-anchor="end">Подняться через зеркало = сделать шаг назад во времени.</text></g>`;
   const times = CDM_TIMES.map((t, c) => `<g class="cdm-time"><rect x="${cdmColX(c)}" y="296" width="${CDM_COL_W}" height="96" rx="48"/><text x="${cdmColX(c) + CDM_COL_W / 2}" y="362" text-anchor="middle">${c === 0 ? '← ' : ''}${t}${c === 2 ? ' →' : c === 3 ? ' ∞' : ''}</text></g>`).join('');
   const bands = `<rect class="cdm-sky" x="40" y="${UY}" width="${W - 80}" height="${UB - UY}" rx="56"/><rect class="cdm-ground" x="40" y="${RY}" width="${W - 80}" height="${RB - RY}" rx="56"/>
     <g class="cdm-stars">${Array.from({ length: 70 }, (_, i) => `<circle cx="${(i * 733) % (W - 200) + 100}" cy="${UY + 30 + (i * 397) % (UB - UY - 60)}" r="${3 + (i % 3) * 2}"/>`).join('')}</g>
     <g class="cdm-cols">${[1, 2, 3].map(c => `<path d="M${cdmColX(c) - CDM_GAP / 2} ${UY + 30}V${UB - 30}M${cdmColX(c) - CDM_GAP / 2} ${RY + 30}V${RB - 30}"/>`).join('')}</g>
-    <text class="cdm-world cdm-wu" x="${W - 90}" y="${UY + 70}" text-anchor="end">мир «если бы»</text><text class="cdm-world cdm-wr" x="${W - 90}" y="${RB - 36}" text-anchor="end">реальный мир</text>`;
+    ${cdmSide('u', UY, UB)}${cdmSide('r', RY, RB)}`;
   const body = CDM.items.map(cdmChip).join('');
   return `<svg class="cdm-svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Карта правила: Conditionals, Зазеркалье условий">${fascia}${times}${bands}${cdmMirror()}${CDM.zones.map(cdmZone).join('')}${cdmBridges()}${CDM.extras.map(cdmExtra).join('')}${CDM.lifts.map(cdmLift).join('')}${body}</svg>`;
 }
@@ -180,7 +192,7 @@ function initialiseConditionalsMap(root) {
     W: CDM.W, H: CDM.H, signal, minK: 0.05, maxK: 1.6,
     onZoom: k => { clearTimeout(lodT); lodT = setTimeout(() => { const lo = k < 0.26, ti = k < 0.13; if (box.classList.contains('lod-low') !== lo) box.classList.toggle('lod-low', lo); if (box.classList.contains('lod-tiny') !== ti) box.classList.toggle('lod-tiny', ti); }, lodT0 ? 220 : 0); lodT0 = 1; },
     onTap: e => { const st = e.target?.closest?.('[data-st]'); if (st) { if (game$.on && game$.kind && !game$.answered) return; open(st.dataset.st); } else if (!panel.hidden) close(); },
-    start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.12; v.x = 8 - CDM_X0 * 0.12; v.y = 40 - 280 * 0.12; apply(); } else fit(); },
+    start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.12; v.x = 8 - 40 * 0.12; v.y = 40 - 280 * 0.12; apply(); } else fit(); },
   });
   panel.addEventListener('click', e => {
     if (e.target.closest('.cdm-close')) { close(); return; }
