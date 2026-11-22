@@ -1,0 +1,1813 @@
+[
+  {
+    "id": "pv7-D1-074",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "That smart bench in Seoul charges phones and is power by sunlight.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "В пассиве после is нужна третья форма глагола: is powered, а не is power.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "tech",
+    "seed_id": "S5-152",
+    "skeleton": "that w in w and is w by w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_simple"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "That smart bench in Seoul charges phones and is powered by sunlight.",
+    "accepted_answers": [
+      "That smart bench in Seoul charges phones and is powered by sunlight."
+    ],
+    "answer_text": "That smart bench in Seoul charges phones and is powered by sunlight.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D1-075",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My lost cat poster on the Cambridge noticeboard were answered by twelve people claiming to see a different cat.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Подлежащее poster стоит в единственном числе, поэтому нужен глагол was, а не were.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "chat",
+    "seed_id": "S5-156",
+    "skeleton": "my w on the w were w by w to w a w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_simple"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "My lost cat poster on the Cambridge noticeboard was answered by twelve people claiming to see a different cat.",
+    "accepted_answers": [
+      "My lost cat poster on the Cambridge noticeboard was answered by twelve people claiming to see a different cat."
+    ],
+    "answer_text": "My lost cat poster on the Cambridge noticeboard was answered by twelve people claiming to see a different cat.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D1-076",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Over a single weekend in Nottingham, a mysterious knitted hat had been placed on every postbox in the area.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Ошибки нет. Past Perfect Passive (had been placed) грамотно описывает результат, обнаруженный после выходных.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "news",
+    "seed_id": "S5-146",
+    "skeleton": "over a w in w , a w had been w on EVERY_POSTBOX in the w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "Over a single weekend in Nottingham, a mysterious knitted hat had been placed on every postbox in the area.",
+    "accepted_answers": [
+      "Over a single weekend in Nottingham, a mysterious knitted hat had been placed on every postbox in the area."
+    ],
+    "answer_text": "Over a single weekend in Nottingham, a mysterious knitted hat had been placed on every postbox in the area.",
+    "has_error": false
+  },
+  {
+    "id": "pv7-D1-077",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "You are stuck in a huge Mexico City traffic jam right now, watching street vendors walk between the cars with snacks and phone chargers. What do you text your friend?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Действие происходит прямо сейчас на глазах у говорящего, поэтому нужен Present Continuous Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "travel",
+    "seed_id": "S5-157",
+    "skeleton": "you are w in a w RIGHT_NOW , w the w with w and w . what do you w your w ?",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_continuous"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_continuous"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Everything from cold snacks to phone chargers is being sold right between the cars!",
+      "Everything from cold snacks to phone chargers was sold right between the cars!",
+      "Everything from cold snacks to phone chargers has been sold right between the cars!",
+      "Everything from cold snacks to phone chargers will have been sold right between the cars!"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "Everything from cold snacks to phone chargers is being sold right between the cars!",
+    "summary": "Everything from cold snacks to phone chargers is being sold right between the cars!",
+    "answer_text": "Everything from cold snacks to phone chargers is being sold right between the cars!"
+  },
+  {
+    "id": "pv7-D1-078",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Your father opens a kitchen drawer crammed with mystery keys. Nobody in the family has touched them for years, and nobody knows which doors they fit. Which sentence best describes this?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Действие не происходило на протяжении периода вплоть до настоящего момента (in years): Present Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "home",
+    "seed_id": "S5-068",
+    "skeleton": "your w a w with w . w in the w has w them for w , and w NOW w which w they w . which w this ?",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_perfect"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "These mysterious keys haven't been used in years, and nobody knows what they open.",
+      "These mysterious keys aren't being used in years, and nobody knows what they open.",
+      "These mysterious keys weren't being used in years, and nobody knows what they open.",
+      "These mysterious keys won't have been used in years, and nobody knows what they open."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "These mysterious keys haven't been used in years, and nobody knows what they open.",
+    "summary": "These mysterious keys haven't been used in years, and nobody knows what they open.",
+    "answer_text": "These mysterious keys haven't been used in years, and nobody knows what they open."
+  },
+  {
+    "id": "pv7-D1-079",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A man in Kraków (to fine) whenever he feeds the square's pigeons.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Регулярно повторяющееся действие в настоящем времени (whenever): Present Simple Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "news",
+    "seed_id": "S5-160",
+    "skeleton": "a w in w G w he w the w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-079-b1",
+        "answer": "is fined",
+        "accepted_answers": [
+          "is fined",
+          "'s fined"
+        ],
+        "base_verb": "to fine",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_simple",
+        "voice": "passive",
+        "explanation_ru": "Регулярно повторяющееся действие в настоящем времени (whenever): Present Simple Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "A man in Kraków is fined whenever he feeds the square's pigeons."
+  },
+  {
+    "id": "pv7-D1-080",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "How (wastewater / to recycle) into drinking water aboard the Space Station?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Вопрос о постоянном научном процессе в Present Simple Passive: is + подлежащее + V3.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "process",
+    "seed_id": "S5-183",
+    "skeleton": "how G into w the w ?",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-080-b1",
+        "answer": "is wastewater recycled",
+        "accepted_answers": [
+          "is wastewater recycled",
+          "'s wastewater recycled"
+        ],
+        "base_verb": "wastewater / to recycle",
+        "supplied_words": [
+          "wastewater"
+        ],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "Вопрос о постоянном научном процессе в Present Simple Passive: is + подлежащее + V3.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "How is wastewater recycled into drinking water aboard the Space Station?"
+  },
+  {
+    "id": "pv7-D1-081",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At Italian village weddings, every guest (to give) five sugared almonds.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Устоявшаяся свадебная традиция: Present Simple Passive с подлежащим в единственном числе (every guest).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "instructions",
+    "seed_id": "S5-102",
+    "skeleton": "at w , EVERY_GUEST G w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-081-b1",
+        "answer": "is given",
+        "accepted_answers": [
+          "is given",
+          "'s given"
+        ],
+        "base_verb": "to give",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_simple",
+        "voice": "passive",
+        "explanation_ru": "Устоявшаяся свадебная традиция: Present Simple Passive с подлежащим в единственном числе (every guest).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "At Italian village weddings, every guest is given five sugared almonds."
+  },
+  {
+    "id": "pv7-D1-082",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "When my old radio died in Canada, I (to hand) a satellite phone.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Завершённое событие в прошлом, последовавшее за поломкой рации: Past Simple Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "chat",
+    "seed_id": "S5-198",
+    "skeleton": "when my w in w , i G a w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-082-b1",
+        "answer": "was handed",
+        "accepted_answers": [
+          "was handed"
+        ],
+        "base_verb": "to hand",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_simple",
+        "voice": "passive",
+        "explanation_ru": "Завершённое событие в прошлом, последовавшее за поломкой рации: Past Simple Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "When my old radio died in Canada, I was handed a satellite phone."
+  },
+  {
+    "id": "pv7-D1-083",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Look at our Cardiff hedge — it (to trim) into a giant dinosaur!",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Результат виден прямо сейчас (Look at...): Present Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "chat",
+    "seed_id": "S5-079",
+    "skeleton": "w at our w — it G into a w !",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_perfect"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-083-b1",
+        "answer": "has been trimmed",
+        "accepted_answers": [
+          "has been trimmed",
+          "'s been trimmed"
+        ],
+        "base_verb": "to trim",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_perfect",
+        "voice": "passive",
+        "explanation_ru": "Результат виден прямо сейчас (Look at...): Present Perfect Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Look at our Cardiff hedge — it has been trimmed into a giant dinosaur!"
+  },
+  {
+    "id": "pv7-D1-084",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Why (the Wright brothers' twelve-second flight / to watch) by only five people at Kitty Hawk?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Исторический вопрос о конкретном событии в прошлом: Past Simple Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "history",
+    "seed_id": "S5-192",
+    "skeleton": "why G by w at w ?",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-084-b1",
+        "answer": "was the Wright brothers' twelve-second flight watched",
+        "accepted_answers": [
+          "was the Wright brothers' twelve-second flight watched"
+        ],
+        "base_verb": "the Wright brothers' twelve-second flight / to watch",
+        "supplied_words": [
+          "the Wright brothers' twelve-second flight"
+        ],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "Исторический вопрос о конкретном событии в прошлом: Past Simple Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Why was the Wright brothers' twelve-second flight watched by only five people at Kitty Hawk?"
+  },
+  {
+    "id": "pv7-D1-085",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Wait a second — (holiday photos / to beam) straight to Grandma's frame in Cork right now?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Действие происходит прямо в момент речи (Wait a second ... right now): Present Continuous Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "review",
+    "seed_id": "S4-154",
+    "skeleton": "w a w — G w to w in w RIGHT_NOW ?",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_continuous"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_continuous"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-085-b1",
+        "answer": "are holiday photos being beamed",
+        "accepted_answers": [
+          "are holiday photos being beamed",
+          "'re holiday photos being beamed"
+        ],
+        "base_verb": "holiday photos / to beam",
+        "supplied_words": [
+          "holiday photos"
+        ],
+        "tense_or_construction": "pv_present_continuous",
+        "voice": "passive",
+        "explanation_ru": "Действие происходит прямо в момент речи (Wait a second ... right now): Present Continuous Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Wait a second — are holiday photos being beamed straight to Grandma's frame in Cork right now?"
+  },
+  {
+    "id": "pv7-D1-086",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "While our family breakfast (to serve) on the Albuquerque patio, a stray hot-air balloon landed beside the table.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Фоновый процесс в прошлом (While...), на фоне которого приземлился воздушный шар: Past Continuous Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "chat",
+    "seed_id": "S5-193",
+    "skeleton": "while our w G on the w , a w the w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_continuous"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_continuous"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-086-b1",
+        "answer": "was being served",
+        "accepted_answers": [
+          "was being served"
+        ],
+        "base_verb": "to serve",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_continuous",
+        "voice": "passive",
+        "explanation_ru": "Фоновый процесс в прошлом (While...), на фоне которого приземлился воздушный шар: Past Continuous Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "While our family breakfast was being served on the Albuquerque patio, a stray hot-air balloon landed beside the table."
+  },
+  {
+    "id": "pv7-D1-087",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Free parking was promised at Hull hospital, yet the ticket machines (not / to switch off)!",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Отрицательный результат к настоящему моменту (обещали, но до сих пор не выключили): Present Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "news",
+    "seed_id": "S5-140",
+    "skeleton": "w was w at w , YET the w G !",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_negative"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_negative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-087-b1",
+        "answer": "have not been switched off",
+        "accepted_answers": [
+          "have not been switched off",
+          "'ve not been switched off",
+          "haven't been switched off"
+        ],
+        "base_verb": "not / to switch off",
+        "supplied_words": [
+          "not"
+        ],
+        "tense_or_construction": "pv_negative",
+        "voice": "passive",
+        "explanation_ru": "Отрицательный результат к настоящему моменту (обещали, но до сих пор не выключили): Present Perfect Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Free parking was promised at Hull hospital, yet the ticket machines have not been switched off!"
+  },
+  {
+    "id": "pv7-D1-088",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Before that private jet leaves the Geneva hangar at six, every turbine blade (to inspect) by two mechanics.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Указан конкретный срок в будущем (Before ... leaves at six), к которому проверка завершится: Future Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "process",
+    "seed_id": "S5-194",
+    "skeleton": "before that w the w at w , EVERY_TURBINE w G by w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_future_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_future_perfect"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-088-b1",
+        "answer": "will have been inspected",
+        "accepted_answers": [
+          "will have been inspected",
+          "'ll have been inspected",
+          "will be inspected",
+          "'ll be inspected"
+        ],
+        "base_verb": "to inspect",
+        "supplied_words": [],
+        "tense_or_construction": "pv_future_perfect",
+        "voice": "passive",
+        "explanation_ru": "Указан конкретный срок в будущем (Before ... leaves at six), к которому проверка завершится: Future Perfect Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Before that private jet leaves the Geneva hangar at six, every turbine blade will have been inspected by two mechanics."
+  },
+  {
+    "id": "pv7-D1-089",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Have your grandfather's Cornwall lighthouse logbooks ever (to display) to museum visitors, or are they kept in storage?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Вопрос об опыте за всё время до настоящего момента (Have ... ever): Present Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "history",
+    "seed_id": "S5-032",
+    "skeleton": "have your w ever G to w , or are they w in w ?",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-089-b1",
+        "answer": "been displayed",
+        "accepted_answers": [
+          "been displayed"
+        ],
+        "base_verb": "to display",
+        "supplied_words": [],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "Вопрос об опыте за всё время до настоящего момента (Have ... ever): Present Perfect Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Have your grandfather's Cornwall lighthouse logbooks ever been displayed to museum visitors, or are they kept in storage?"
+  },
+  {
+    "id": "pv7-D1-090",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We craned our necks at the Fairford air show as a giant pink heart (to trace) across the cloudless sky in coloured smoke.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Длительный процесс в прошлом, за которым наблюдали зрители (as...): Past Continuous Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "report",
+    "seed_id": "S5-196",
+    "skeleton": "we w our w at the w as a w G w the w in w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_continuous"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_continuous"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-090-b1",
+        "answer": "was being traced",
+        "accepted_answers": [
+          "was being traced"
+        ],
+        "base_verb": "to trace",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_continuous",
+        "voice": "passive",
+        "explanation_ru": "Длительный процесс в прошлом, за которым наблюдали зрители (as...): Past Continuous Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "We craned our necks at the Fairford air show as a giant pink heart was being traced across the cloudless sky in coloured smoke."
+  },
+  {
+    "id": "pv7-D1-091",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Because her old handset (not / to back up) before IT wiped it, she needed a temporary bypass code over a video call.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Резервную копию не сделали ещё до того, как телефон очистили в прошлом: Past Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "email",
+    "seed_id": "S4-159",
+    "skeleton": "because her w G before it w it , she w a w over a w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-091-b1",
+        "answer": "had not been backed up",
+        "accepted_answers": [
+          "had not been backed up",
+          "'d not been backed up",
+          "hadn't been backed up"
+        ],
+        "base_verb": "not / to back up",
+        "supplied_words": [
+          "not"
+        ],
+        "tense_or_construction": "pv_past_perfect",
+        "voice": "passive",
+        "explanation_ru": "Резервную копию не сделали ещё до того, как телефон очистили в прошлом: Past Perfect Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Because her old handset had not been backed up before IT wiped it, she needed a temporary bypass code over a video call."
+  },
+  {
+    "id": "pv7-D1-092",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Before the supply ship reaches Antarctica in November, the snow-buried weather station (to dig out) by the summer crew.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Действие будет завершено к будущему рубежу (Before the supply ship reaches): Future Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "report",
+    "seed_id": "S5-199",
+    "skeleton": "before the w in w , the w NOW w G by the w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_future_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_future_perfect"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D1-092-b1",
+        "answer": "will have been dug out",
+        "accepted_answers": [
+          "will have been dug out",
+          "'ll have been dug out",
+          "will be dug out",
+          "'ll be dug out"
+        ],
+        "base_verb": "to dig out",
+        "supplied_words": [],
+        "tense_or_construction": "pv_future_perfect",
+        "voice": "passive",
+        "explanation_ru": "Действие будет завершено к будущему рубежу (Before the supply ship reaches): Future Perfect Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Before the supply ship reaches Antarctica in November, the snow-buried weather station will have been dug out by the summer crew."
+  },
+  {
+    "id": "pv7-D1-093",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our elderly neighbours in Riga never struggle with heavy bags. Every Thursday, their groceries (to bring) up the stairs by a church volunteer. Look into the hallway — today's crate (to unpack) right now.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Регулярная помощь по четвергам (Present Simple Passive) противопоставлена процессу прямо сейчас (Present Continuous Passive).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "dialogue",
+    "seed_id": "S5-076",
+    "skeleton": "our w in w never w with w . EVERY_THURSDAY , their w G w the w by a w . w into the w — w G RIGHT_NOW .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_simple",
+      "pv_present_continuous"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_simple",
+      "pv_present_continuous"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D1-093-b1",
+        "answer": "are brought",
+        "accepted_answers": [
+          "are brought",
+          "'re brought"
+        ],
+        "base_verb": "to bring",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_simple",
+        "voice": "passive",
+        "explanation_ru": "Регулярная помощь по четвергам (Present Simple Passive) противопоставлена процессу прямо сейчас (Present Continuous Passive).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      },
+      {
+        "id": "pv7-D1-093-b2",
+        "answer": "is being unpacked",
+        "accepted_answers": [
+          "is being unpacked",
+          "'s being unpacked"
+        ],
+        "base_verb": "to unpack",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_continuous",
+        "voice": "passive",
+        "explanation_ru": "Регулярная помощь по четвергам (Present Simple Passive) противопоставлена процессу прямо сейчас (Present Continuous Passive).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Our elderly neighbours in Riga never struggle with heavy bags. Every Thursday, their groceries are brought up the stairs by a church volunteer. Look into the hallway — today's crate is being unpacked right now."
+  },
+  {
+    "id": "pv7-D1-094",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our Manchester class visited the planetarium this week. The pupils are thrilled because their names (to engrave) on a tiny microchip. Next summer, that chip (to fly) to Mars aboard a rover.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Ученики рады результату, который уже есть сейчас (have been engraved), а полёт запланирован на будущее (will be flown).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "news",
+    "seed_id": "S5-184",
+    "skeleton": "our w the w this w . the w are w because their w G on a w . NEXT_SUMMER , that w G to w a w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_perfect",
+      "pv_future_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_perfect",
+      "pv_future_simple"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D1-094-b1",
+        "answer": "have been engraved",
+        "accepted_answers": [
+          "have been engraved",
+          "'ve been engraved"
+        ],
+        "base_verb": "to engrave",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_perfect",
+        "voice": "passive",
+        "explanation_ru": "Ученики рады результату, который уже есть сейчас (have been engraved), а полёт запланирован на будущее (will be flown).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      },
+      {
+        "id": "pv7-D1-094-b2",
+        "answer": "will be flown",
+        "accepted_answers": [
+          "will be flown",
+          "'ll be flown",
+          "is going to be flown",
+          "'s going to be flown"
+        ],
+        "base_verb": "to fly",
+        "supplied_words": [],
+        "tense_or_construction": "pv_future_simple",
+        "voice": "passive",
+        "explanation_ru": "Ученики рады результату, который уже есть сейчас (have been engraved), а полёт запланирован на будущее (will be flown).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Our Manchester class visited the planetarium this week. The pupils are thrilled because their names have been engraved on a tiny microchip. Next summer, that chip will be flown to Mars aboard a rover."
+  },
+  {
+    "id": "pv7-D1-095",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I walked into my Bristol kitchen at six and froze. Half a pint of milk (to drink), and a strange mug was sitting neatly inside the dishwasher. Surprisingly, nothing valuable (to take), though the burglar had left his woollen hat on the table.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Оба действия (или их отсутствие) относятся к моменту до того, как хозяин спустился на кухню в шесть утра: Past Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "chat",
+    "seed_id": "S4-193",
+    "skeleton": "i w into my w at w and w . w a w of w G , and a w was w the w . w , w G , w the w had w his w on the w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D1-095-b1",
+        "answer": "had been drunk",
+        "accepted_answers": [
+          "had been drunk",
+          "'d been drunk"
+        ],
+        "base_verb": "to drink",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_perfect",
+        "voice": "passive",
+        "explanation_ru": "Оба действия (или их отсутствие) относятся к моменту до того, как хозяин спустился на кухню в шесть утра: Past Perfect Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      },
+      {
+        "id": "pv7-D1-095-b2",
+        "answer": "had been taken",
+        "accepted_answers": [
+          "had been taken",
+          "'d been taken",
+          "was taken"
+        ],
+        "base_verb": "to take",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_perfect",
+        "voice": "passive",
+        "explanation_ru": "Оба действия (или их отсутствие) относятся к моменту до того, как хозяин спустился на кухню в шесть утра: Past Perfect Passive.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "I walked into my Bristol kitchen at six and froze. Half a pint of milk had been drunk, and a strange mug was sitting neatly inside the dishwasher. Surprisingly, nothing valuable had been taken, though the burglar had left his woollen hat on the table."
+  },
+  {
+    "id": "pv7-D1-096",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Japanese greenhouse strawberries fetch astonishing prices. Inside the warm glasshouses, every white blossom (to pollinate) by bumblebees rather than by hand. Tomorrow morning, the ripest berries (to wrap) individually in soft foam boxes for Tokyo shops.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Постоянный процесс выращивания (is pollinated) и конкретный план на завтрашнее утро (will be wrapped).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "process",
+    "seed_id": "S5-189",
+    "skeleton": "w . w the w , EVERY_WHITE w G by w than by w . TOMORROW w , the w G w in w for w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_simple",
+      "pv_future_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_simple",
+      "pv_future_simple"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D1-096-b1",
+        "answer": "is pollinated",
+        "accepted_answers": [
+          "is pollinated",
+          "'s pollinated"
+        ],
+        "base_verb": "to pollinate",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_simple",
+        "voice": "passive",
+        "explanation_ru": "Постоянный процесс выращивания (is pollinated) и конкретный план на завтрашнее утро (will be wrapped).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      },
+      {
+        "id": "pv7-D1-096-b2",
+        "answer": "will be wrapped",
+        "accepted_answers": [
+          "will be wrapped",
+          "'ll be wrapped",
+          "are going to be wrapped",
+          "'re going to be wrapped"
+        ],
+        "base_verb": "to wrap",
+        "supplied_words": [],
+        "tense_or_construction": "pv_future_simple",
+        "voice": "passive",
+        "explanation_ru": "Постоянный процесс выращивания (is pollinated) и конкретный план на завтрашнее утро (will be wrapped).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Japanese greenhouse strawberries fetch astonishing prices. Inside the warm glasshouses, every white blossom is pollinated by bumblebees rather than by hand. Tomorrow morning, the ripest berries will be wrapped individually in soft foam boxes for Tokyo shops."
+  },
+  {
+    "id": "pv7-D1-097",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My brother panicked an hour before his Manchester school prom. His date's corsage (to deliver) to the wrong street by the florist. Luckily, Mum raided the garden, and a fresh bouquet (to tie) with silk ribbon in ten minutes.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Букет доставили по ошибке ещё до того, как брат запаниковал (had been delivered), а новый сделали уже после (was tied).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "chat",
+    "seed_id": "S5-106",
+    "skeleton": "my w an w before his w . his w G to the w by the w . w , w the w , and a w G with w in w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_perfect",
+      "pv_past_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_perfect",
+      "pv_past_simple"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D1-097-b1",
+        "answer": "had been delivered",
+        "accepted_answers": [
+          "had been delivered",
+          "'d been delivered"
+        ],
+        "base_verb": "to deliver",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_perfect",
+        "voice": "passive",
+        "explanation_ru": "Букет доставили по ошибке ещё до того, как брат запаниковал (had been delivered), а новый сделали уже после (was tied).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      },
+      {
+        "id": "pv7-D1-097-b2",
+        "answer": "was tied",
+        "accepted_answers": [
+          "was tied"
+        ],
+        "base_verb": "to tie",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_simple",
+        "voice": "passive",
+        "explanation_ru": "Букет доставили по ошибке ещё до того, как брат запаниковал (had been delivered), а новый сделали уже после (was tied).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "My brother panicked an hour before his Manchester school prom. His date's corsage had been delivered to the wrong street by the florist. Luckily, Mum raided the garden, and a fresh bouquet was tied with silk ribbon in ten minutes."
+  },
+  {
+    "id": "pv7-D1-098",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our flight from Glasgow barely reached cruising altitude before the captain made a weary announcement. While the suitcases (to load) into the cargo hold, a passenger's terrier had slipped out of its crate. Consequently, the entire plane (to turn back) to the gate so handlers could catch the dog.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Погрузка багажа была фоновым процессом (were being loaded), а разворот самолёта — завершённым следствием в прошлом (was turned back).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "news",
+    "seed_id": "S5-190",
+    "skeleton": "our w from w before the w a w . while the w G into the w , a w had w of its w . w , the w G to the w so w could w the w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_continuous",
+      "pv_past_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_continuous",
+      "pv_past_simple"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D1-098-b1",
+        "answer": "were being loaded",
+        "accepted_answers": [
+          "were being loaded"
+        ],
+        "base_verb": "to load",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_continuous",
+        "voice": "passive",
+        "explanation_ru": "Погрузка багажа была фоновым процессом (were being loaded), а разворот самолёта — завершённым следствием в прошлом (was turned back).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      },
+      {
+        "id": "pv7-D1-098-b2",
+        "answer": "was turned back",
+        "accepted_answers": [
+          "was turned back"
+        ],
+        "base_verb": "to turn back",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_simple",
+        "voice": "passive",
+        "explanation_ru": "Погрузка багажа была фоновым процессом (were being loaded), а разворот самолёта — завершённым следствием в прошлом (was turned back).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Our flight from Glasgow barely reached cruising altitude before the captain made a weary announcement. While the suitcases were being loaded into the cargo hold, a passenger's terrier had slipped out of its crate. Consequently, the entire plane was turned back to the gate so handlers could catch the dog."
+  },
+  {
+    "id": "pv7-D1-099",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My smart doorbell in Nottingham nearly drove me mad during lunch. Thirty-two 'person at front door' alerts (to send) to my watch since noon. I just opened the live feed — the camera lens (to cover) by a huge spider spinning a web!",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Уведомления приходили с полудня до настоящего момента (have been sent), а паук плетёт паутину прямо сейчас в эфире (is being covered).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "chat",
+    "seed_id": "S4-157",
+    "skeleton": "my w in w me w . w 'person at w G to my w SINCE w . i JUST w the w — the w G by a w a w !",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_perfect",
+      "pv_present_continuous"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_perfect",
+      "pv_present_continuous"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D1-099-b1",
+        "answer": "have been sent",
+        "accepted_answers": [
+          "have been sent",
+          "'ve been sent"
+        ],
+        "base_verb": "to send",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_perfect",
+        "voice": "passive",
+        "explanation_ru": "Уведомления приходили с полудня до настоящего момента (have been sent), а паук плетёт паутину прямо сейчас в эфире (is being covered).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      },
+      {
+        "id": "pv7-D1-099-b2",
+        "answer": "is being covered",
+        "accepted_answers": [
+          "is being covered",
+          "'s being covered"
+        ],
+        "base_verb": "to cover",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_continuous",
+        "voice": "passive",
+        "explanation_ru": "Уведомления приходили с полудня до настоящего момента (have been sent), а паук плетёт паутину прямо сейчас в эфире (is being covered).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "My smart doorbell in Nottingham nearly drove me mad during lunch. Thirty-two 'person at front door' alerts have been sent to my watch since noon. I just opened the live feed — the camera lens is being covered by a huge spider spinning a web!"
+  },
+  {
+    "id": "pv7-D1-100",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Desert hunters in Morocco bring newly found meteorite fragments to a small town lab. First, each dark stone (to check) under a microscope to confirm its metallic crust. Before the weekend auction closes, the rarest pieces (to buy) by overseas collectors.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Обычный порядок проверки (is checked) и завершение продаж к будущему сроку (Before the auction closes — will have been bought).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "report",
+    "seed_id": "S5-186",
+    "skeleton": "w in w to a w . w , each w G w a w to w its w . before the w , the w G by w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_simple",
+      "pv_future_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_simple",
+      "pv_future_perfect"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D1-100-b1",
+        "answer": "is checked",
+        "accepted_answers": [
+          "is checked",
+          "'s checked"
+        ],
+        "base_verb": "to check",
+        "supplied_words": [],
+        "tense_or_construction": "pv_present_simple",
+        "voice": "passive",
+        "explanation_ru": "Обычный порядок проверки (is checked) и завершение продаж к будущему сроку (Before the auction closes — will have been bought).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      },
+      {
+        "id": "pv7-D1-100-b2",
+        "answer": "will have been bought",
+        "accepted_answers": [
+          "will have been bought",
+          "'ll have been bought",
+          "will be bought",
+          "'ll be bought"
+        ],
+        "base_verb": "to buy",
+        "supplied_words": [],
+        "tense_or_construction": "pv_future_perfect",
+        "voice": "passive",
+        "explanation_ru": "Обычный порядок проверки (is checked) и завершение продаж к будущему сроку (Before the auction closes — will have been bought).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-table",
+          "content/passive/07-passive.md#pv-aspect"
+        ]
+      }
+    ],
+    "answer_text": "Desert hunters in Morocco bring newly found meteorite fragments to a small town lab. First, each dark stone is checked under a microscope to confirm its metallic crust. Before the weekend auction closes, the rarest pieces will have been bought by overseas collectors."
+  },
+  {
+    "id": "pv7-D1-101",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "In ninth-century Ireland, precious monastery books ___ inside tall round towers with high doors.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Книги хранились (множественное число, Past Simple Passive): were + третья форма kept.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "history",
+    "seed_id": "S5-039",
+    "skeleton": "in w , w G w with w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_simple"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "were keep",
+      "were kept",
+      "kept",
+      "was kept"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "were kept",
+    "summary": "In ninth-century Ireland, precious monastery books were kept inside tall round towers with high doors.",
+    "answer_text": "In ninth-century Ireland, precious monastery books were kept inside tall round towers with high doors."
+  },
+  {
+    "id": "pv7-D1-102",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Look out of the plane window — those huge circular Kansas fields ___ by giant rotating sprinklers.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Действие видно прямо сейчас из иллюминатора (Look out...): Present Continuous Passive (are being watered).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "process",
+    "seed_id": "S5-200",
+    "skeleton": "w of the w — those w G by w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_continuous"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_continuous"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "are watering",
+      "are being water",
+      "are being watered",
+      "watered"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "are being watered",
+    "summary": "Look out of the plane window — those huge circular Kansas fields are being watered by giant rotating sprinklers.",
+    "answer_text": "Look out of the plane window — those huge circular Kansas fields are being watered by giant rotating sprinklers."
+  },
+  {
+    "id": "pv7-D1-103",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "When the Ohio alumni opened their 1960s time capsule, they saw the letters ___ by damp.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Письма испортились ещё до того, как капсулу открыли в прошлом: Past Perfect Passive (had been ruined).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "news",
+    "seed_id": "S5-040",
+    "skeleton": "when the w their 1960 w , they w the w G by w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "have been ruined",
+      "were ruining",
+      "had been ruined",
+      "had ruined"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "had been ruined",
+    "summary": "When the Ohio alumni opened their 1960s time capsule, they saw the letters had been ruined by damp.",
+    "answer_text": "When the Ohio alumni opened their 1960s time capsule, they saw the letters had been ruined by damp."
+  },
+  {
+    "id": "pv7-D1-104",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The Sheffield 999 operator didn't realise the frantic shouting ___ from inside a coat pocket on a fairground ride.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Процесс передачи звука шёл прямо во время звонка в прошлом: Past Continuous Passive (was being broadcast).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "dialogue",
+    "seed_id": "S4-197",
+    "skeleton": "the w 999 w the w G from w a w on a w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_continuous"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_continuous"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "was broadcasting",
+      "was being broadcast",
+      "was been broadcast",
+      "has been broadcast"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "was being broadcast",
+    "summary": "The Sheffield 999 operator didn't realise the frantic shouting was being broadcast from inside a coat pocket on a fairground ride.",
+    "answer_text": "The Sheffield 999 operator didn't realise the frantic shouting was being broadcast from inside a coat pocket on a fairground ride."
+  },
+  {
+    "id": "pv7-D1-105",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "His birthday cake in Moscow was decorate with his worst school photo.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "В пассивном залоге после was требуется третья форма глагола: was decorated, а не was decorate.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "chat",
+    "seed_id": "S5-109",
+    "skeleton": "his w in w was w with his w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_simple"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_simple"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "His birthday cake in Moscow was decorated with his worst school photo.",
+    "accepted_answers": [
+      "His birthday cake in Moscow was decorated with his worst school photo."
+    ],
+    "answer_text": "His birthday cake in Moscow was decorated with his worst school photo.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D1-106",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The ancient bronze gear device in Athens had been crafted to predict eclipses long before modern clocks existed.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Ошибки нет. Past Perfect Passive (had been crafted) верно показывает, что устройство создали задолго до появления современных часов.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "history",
+    "seed_id": "S5-030",
+    "skeleton": "the w in w had been w to w before w .",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "The ancient bronze gear device in Athens had been crafted to predict eclipses long before modern clocks existed.",
+    "accepted_answers": [
+      "The ancient bronze gear device in Athens had been crafted to predict eclipses long before modern clocks existed."
+    ],
+    "answer_text": "The ancient bronze gear device in Athens had been crafted to predict eclipses long before modern clocks existed.",
+    "has_error": false
+  },
+  {
+    "id": "pv7-D1-107",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Two tourists in Kyoto are laughing over dinner because their phone app just turned 'braised winter radish' into 'exhausted December turnip'. What do they text their friend?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Только что полученный результат, над которым они смеются прямо сейчас: Present Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "review",
+    "seed_id": "S4-158",
+    "skeleton": "w in w are w over w because their w JUST w 'braised w into 'exhausted w . what do they w their w ?",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_present_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_present_perfect"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Our radish dish has just been translated as 'exhausted December turnip'!",
+      "Our radish dish was being translated as 'exhausted December turnip'!",
+      "Our radish dish is translated as 'exhausted December turnip'!",
+      "Our radish dish will have been translated as 'exhausted December turnip'!"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "Our radish dish has just been translated as 'exhausted December turnip'!",
+    "summary": "Our radish dish has just been translated as 'exhausted December turnip'!",
+    "answer_text": "Our radish dish has just been translated as 'exhausted December turnip'!"
+  },
+  {
+    "id": "pv7-D1-108",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A drone pilot in Wales flew over brown summer grass and spotted the outline of a lost hill fort. Nobody had ever noticed it before that drought. Which sentence fits best?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Форт не замечали вплоть до конкретного события в прошлом (until a dry summer scorched): Past Perfect Passive.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-table",
+      "content/passive/07-passive.md#pv-aspect"
+    ],
+    "cell": "D1",
+    "genre": "news",
+    "seed_id": "S5-034",
+    "skeleton": "a w in w over w and w the w of a w . w had ever w it before that w . which w ?",
+    "practice_tenses": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "tags": [
+      "pv_D1",
+      "pv_past_perfect"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The lost hill fort has never been noticed until a dry summer scorched the grass.",
+      "The lost hill fort had never been noticed until a dry summer scorched the grass.",
+      "The lost hill fort wasn't being noticed until a dry summer scorched the grass.",
+      "The lost hill fort isn't noticed until a dry summer scorched the grass."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "The lost hill fort had never been noticed until a dry summer scorched the grass.",
+    "summary": "The lost hill fort had never been noticed until a dry summer scorched the grass.",
+    "answer_text": "The lost hill fort had never been noticed until a dry summer scorched the grass."
+  }
+]

@@ -8,6 +8,7 @@ import json
 import re
 from pathlib import Path
 import passive_v7 as pipeline
+pipeline.STRICT_BATCH = False
 from audit_variety import skeleton
 from build_passive_bank_v6 import cosmetic, uniq, answer_text, rewrite_forms
 

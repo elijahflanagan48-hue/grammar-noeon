@@ -11,7 +11,7 @@ for(const topic of ['tenses','comparison','passive']){
  for(let mask=0;mask<2**types.length;mask++)for(const chosenRules of [rules,...rules.map(x=>[x])]){
   const formats=types.filter((_,i)=>mask&(1<<i)),levels=['basic','medium','advanced'];
   context.form={elements:{topic:{value:topic},count:{value:'20'}},querySelectorAll(selector){return (selector.includes('name="format"')?formats:selector.includes('name="level"')?levels:chosenRules).map(value=>({value,disabled:false}));}};
-  const pool=get('filteredExercises(form)'),expected=topicItems.filter(x=>formats.includes(x.type)&&levels.includes(x.level)&&targets(x).every(t=>chosenRules.includes(t)));
+  const pool=get('filteredExercises(form)'),expected=topicItems.filter(x=>!x.retired&&formats.includes(x.type)&&levels.includes(x.level)&&targets(x).every(t=>chosenRules.includes(t)));
   assert.deepEqual(Array.from(pool,x=>x.id),expected.map(x=>x.id),topic+': strict format union and rule intersection');
   const payload=get('practiceFilterPayload(form)');assert.deepEqual(Array.from(payload.types),formats);assert(!('type'in payload));checks++;
  }

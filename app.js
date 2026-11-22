@@ -1194,7 +1194,7 @@ function updateAvailable() {
   const tenses = selectedTenses(form);
   if(account.user?.role==='student') {void previewStudentPractice(form);return;}
   if (!state.exercises) return;
-  const sectionPool = state.exercises.filter(item => exerciseSection(item) === topic);
+  const sectionPool = state.exercises.filter(item => !item.retired && exerciseSection(item) === topic);
   form.querySelectorAll('input[name="format"]').forEach(input=>{
     const total=sectionPool.filter(item=>item.type===input.value).length;
     input.disabled=!total;if(!total)input.checked=false;

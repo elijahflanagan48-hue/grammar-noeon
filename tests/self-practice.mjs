@@ -169,7 +169,7 @@ try {
     }
   }
   const multipleFilters={topic:'passive',tenses:passiveTargets,levels:['basic','medium','advanced'],types:['open_brackets','active_to_passive'],count:5};
-  for(const invalid of [[],['open_brackets','open_brackets'],['multiple_choice'],['unknown'],'open_brackets',null])same((await student.call('practice/start',{...multipleFilters,types:invalid})).status,400,'Reject invalid format union');
+  for(const invalid of [[],['open_brackets','open_brackets'],['error_correction'],['unknown'],'open_brackets',null])same((await student.call('practice/start',{...multipleFilters,types:invalid})).status,400,'Reject invalid format union');
   same((await student.call('practice/start',{...multipleFilters,type:'all'})).status,400,'Reject conflicting old/new format filters');
   for(const type of ['open_brackets','active_to_passive','translation_ru_en']){
     const filters={topic:'passive',tenses:passiveTargets,levels:['basic','medium','advanced'],type,count:1};
@@ -265,9 +265,13 @@ try {
   console.log(JSON.stringify({checks,errors,studentRequests},null,2));
   } else console.log('Browser scenarios: run npm run test:browser.');
   for(const format of ['multiple_choice','context_cloze','question','mixed']){
-    const fresh=fixtures.find(i=>/^(?:bal|ext|mix)-20261030-/.test(i.id)&&(format==='question'?i.id==='bal-20261030-present-simple-015':format==='mixed'?i.id==='mix-20261030-001':i.type===format));
-    assert(fresh,'Missing reviewed format '+format);
-    const work=await teacher.ok('teacher/students/'+sid+'/assignments',{title:'Проверка нового банка '+format,ids:[fresh.id]});
+    // Earlier random free practice in this run may already have shown the first candidate to the pupil
+    // (no-repeat rule → 409), so take the first reviewed item of this format that is still new to them.
+    const candidates=fixtures.filter(i=>/^(?:bal|ext|mix)-20261030-/.test(i.id)&&(format==='question'?i.id==='bal-20261030-present-simple-015':format==='mixed'?i.id==='mix-20261030-001':i.type===format));
+    assert(candidates.length,'Missing reviewed format '+format);
+    let fresh,work;
+    for(const candidate of candidates){const r=await teacher.call('teacher/students/'+sid+'/assignments',{title:'Проверка нового банка '+format,ids:[candidate.id]});if(r.status===409)continue;assert.equal(r.status,200,JSON.stringify(r));fresh=candidate;work=r.data;break;}
+    assert(fresh,'No unseen reviewed item for '+format);
     const before=await student.ok('practice/'+work.practiceId);noAnswers(before.items);
     same((await other.call('practice/'+work.practiceId)).status,404,'Reviewed '+format+' private to assigned pupil');
     const response=await student.ok('practice/'+work.practiceId+'/check',{index:0,revision:before.revision,submitted:fresh.options?fresh.correct_option_index:fresh.blanks.map(b=>b.answer)});

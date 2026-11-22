@@ -113,7 +113,9 @@ def gate(items, limits):
     for opening, ids in sorted(openings.items()): maximum('opening '+repr(opening),len(ids)/n,limits['max_opening_share'],ids)
     by=[i['id'] for i in items if re.match(r'\s*(?:[—–-]\s*)?by the (?:time|end)',i['prompt'],re.I)]
     maximum('By the time/end share',len(by)/n,limits['max_by_the_share'],by)
-    for verb, ids in sorted(verbs.items()): maximum('verb '+verb,len(ids),limits['max_verb_uses'],ids)
+    exempt=set(limits.get('verb_exempt',[]))
+    for verb, ids in sorted(verbs.items()):
+        if verb not in exempt: maximum('verb '+verb,len(ids),limits['max_verb_uses'],ids)
     timed=[i['id'] for i in items if re.search(CUES,i['prompt'],re.I)]
     maximum('time marker share',len(timed)/n,limits['max_time_marker_share'],timed)
     d2=[(i,b) for i in items if i.get('cell')=='D2' for b in i.get('blanks',[])]

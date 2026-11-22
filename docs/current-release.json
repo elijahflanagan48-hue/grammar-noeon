@@ -8,21 +8,27 @@
   "cache": "grammar-v44",
   "assets": "20261105-roster2",
   "content_versions": {
-    "tenses": "tenses-2026-10-31.6",
+    "tenses": "tenses-2026-11-09.1",
     "comparison": "comparison-2026-11-01.5",
-    "passive": "passive-2026-11-03.3",
+    "passive": "passive-2026-11-22.1",
     "modals": "modals-2026-11-05.1",
-    "reported": "reported-2026-11-05.1"
+    "reported": "reported-2026-11-05.1",
+    "nouns": "nouns-2026-11-07.1",
+    "speaking": "speaking-2026-11-09.1",
+    "infinitive": "infinitive-2026-11-13.1"
   },
-  "total_items": 8419,
-  "answer_slots": 10686,
-  "parts": 86,
+  "total_items": 11854,
+  "answer_slots": 14959,
+  "parts": 121,
   "sections": {
     "comparison": 1000,
     "tenses": 4379,
-    "passive": 1000,
+    "passive": 1935,
     "modals": 1040,
-    "reported": 1000
+    "reported": 1000,
+    "nouns": 1000,
+    "speaking": 500,
+    "infinitive": 1000
   },
   "assessments": {
     "tenses": {
@@ -84,5 +90,6 @@
   "base_version": "dc89012b-6f44-4216-b55c-1edd1582de50",
   "roster_browser_checks": 70,
   "roster_accessibility_scans": 4,
-  "local_pwa_checks": 23
+  "local_pwa_checks": 23,
+  "passive_v7_status": "released 2026-11-22: 935 new + 250 retained in rotation, 750 retired"
 }

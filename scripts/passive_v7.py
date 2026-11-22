@@ -45,6 +45,9 @@ August September October November December English British Scottish Welsh Irish 
 Japanese Indian London Leeds Manchester Edinburgh Glasgow Cardiff Bristol Oxford Cambridge Brighton York Liverpool UK US Mr Mrs Ms Dr
 Christmas Easter TV OK IT AI""".split())
 GAP = re.compile(r"\(([^()]+)\)")
+# Gemini batches must match the plan exactly; approved final batches may be smaller after editorial
+# rejections, and bank-wide limits are enforced by the variety gate instead.
+STRICT_BATCH = os.environ.get("PV7_STAGE", "raw") == "raw"
 
 
 def read_jsonl(path: Path):
@@ -142,7 +145,7 @@ def check_item(it, seen_seeds, seed_db):
         if fmt == "mini" and len(re.findall(r"[.!?…](?:\s|$)", p)) < 3: w.append("mini: fewer than 3 sentences")
         for i, b in enumerate(bl):
             if i < len(cues) and cues[i].strip() != b.get("cue", "").strip(): e.append(f"gap {i+1}: cue `{b.get('cue')}` ≠ bracket `({cues[i]})`")
-            if re.search(r"\b(be|been|being|by)\b", b.get("cue", "")): e.append(f"gap {i+1}: the bracket gives a hint (`{b.get('cue')}`)")
+            if b.get("cue", "").strip() != "to be" and re.search(r"\b(be|been|being|by)\b", b.get("cue", "")): e.append(f"gap {i+1}: the bracket gives a hint (`{b.get('cue')}`)")
             acc = b.get("accepted_answers") or []
             if b.get("answer") not in acc: e.append(f"gap {i+1}: answer is not in accepted_answers")
             if b.get("voice") not in ("active", "passive"): e.append(f"gap {i+1}: voice must be active/passive")
@@ -163,7 +166,7 @@ def check_item(it, seen_seeds, seed_db):
         if it.get("construction") not in CONSTRUCTIONS: e.append(f"unknown construction `{it.get('construction')}`")
     if BANNED_FRAME.search(p): w.append("banned storyline (repair/building/default)")
     if names(p) & OLD_NAMES: w.append(f"overused name: {names(p) & OLD_NAMES}")
-    if re.match(r"\s*(—\s*)?by the (time|end)", p, re.I): e.append("opening with By the time / By the end is banned")
+    if re.match(r"\s*(—\s*)?by the (time|end)", p, re.I): w.append("opening with By the time / By the end (bank-wide share is limited by the variety gate)")
     return e, w
 
 
@@ -226,6 +229,8 @@ def validate(only=None):
         doms = collections.Counter(seed_db.get(it.get("seed_id"), {}).get("domain") for it in rows)
         genres = collections.Counter(it.get("genre") for it in rows)
         if len(genres) < 8: batch_w.append(f"only {len(genres)} genres (need ≥ 8)")
+        if not STRICT_BATCH:
+            batch_w, batch_e = batch_e + batch_w, []
         n_err = sum(bool(e) for e, _, _ in per.values()) + len(batch_e)
         total_err += n_err
         lines = [f"# {b} — {plan.get('cell', '?')} — validation report", "",

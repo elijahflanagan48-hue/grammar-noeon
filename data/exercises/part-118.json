@@ -1,0 +1,5354 @@
+[
+  {
+    "id": "pv7-D7-020",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The private collector didn't restore the baroque mirror herself. She (the frame / to re-gild) with twenty-three-carat gold leaf by a workshop in Florence. It looks magnificent now!",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Коллекционер отдала раму в реставрацию (услуга).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "review",
+    "seed_id": "S4-013",
+    "skeleton": "the w the w . she G with w by a w in w . it w NOW !",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-020-b1",
+        "answer": "had the frame re-gilded",
+        "accepted_answers": [
+          "had the frame re-gilded",
+          "'d the frame re-gilded",
+          "got the frame re-gilded"
+        ],
+        "base_verb": "the frame / to re-gild",
+        "supplied_words": [
+          "the frame"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Коллекционер отдала раму в реставрацию (услуга).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "The private collector didn't restore the baroque mirror herself. She had the frame re-gilded with twenty-three-carat gold leaf by a workshop in Florence. It looks magnificent now!"
+  },
+  {
+    "id": "pv7-D7-021",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My Cromer pier sketch looks great. I (it / to mount) behind museum-grade glass yesterday. Honestly, I (to shock) by the framing bill, though!",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Сначала оформление в багетке (had it mounted). Затем неформальный get-passive для описания эмоциональной реакции (got shocked).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S4-025",
+    "skeleton": "my w . i G w YESTERDAY . w , i G by the w , w !",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-021-b1",
+        "answer": "had it mounted",
+        "accepted_answers": [
+          "had it mounted",
+          "'d it mounted",
+          "got it mounted"
+        ],
+        "base_verb": "it / to mount",
+        "supplied_words": [
+          "it"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Сначала оформление в багетке (had it mounted). Затем неформальный get-passive для описания эмоциональной реакции (got shocked).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-021-b2",
+        "answer": "got shocked",
+        "accepted_answers": [
+          "got shocked",
+          "was shocked"
+        ],
+        "base_verb": "to shock",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Сначала оформление в багетке (had it mounted). Затем неформальный get-passive для описания эмоциональной реакции (got shocked).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "My Cromer pier sketch looks great. I had it mounted behind museum-grade glass yesterday. Honestly, I got shocked by the framing bill, though!"
+  },
+  {
+    "id": "pv7-D7-022",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Before the waxwork is poured, a celebrity sitter (their head / to measure) in two hundred places. No one ever (to hurt) during this process, I promise.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Знаменитостям измеряют голову (has something done). Во втором случае get-passive для обозначения неприятного события (никто не получает травм).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "process",
+    "seed_id": "S4-027",
+    "skeleton": "before the w is w , a w G in w . no w ever G w this w , i w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-022-b1",
+        "answer": "has their head measured",
+        "accepted_answers": [
+          "has their head measured",
+          "'s their head measured",
+          "gets their head measured"
+        ],
+        "base_verb": "their head / to measure",
+        "supplied_words": [
+          "their head"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Знаменитостям измеряют голову (has something done). Во втором случае get-passive для обозначения неприятного события (никто не получает травм).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-022-b2",
+        "answer": "gets hurt",
+        "accepted_answers": [
+          "gets hurt",
+          "is hurt",
+          "'s hurt"
+        ],
+        "base_verb": "to hurt",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Знаменитостям измеряют голову (has something done). Во втором случае get-passive для обозначения неприятного события (никто не получает травм).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Before the waxwork is poured, a celebrity sitter has their head measured in two hundred places. No one ever gets hurt during this process, I promise."
+  },
+  {
+    "id": "pv7-D7-023",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The dendrochronologist needed samples from the tithe barn. He (a pencil core / to bore) from an oak beam. Remarkably, he managed to match its rings to the summer of 1384.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Ученый заказал извлечение керна (had something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S4-049",
+    "skeleton": "the w from the w . he G from an w . w , he w to w its w to the w of 1384 .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-023-b1",
+        "answer": "had a pencil core bored",
+        "accepted_answers": [
+          "had a pencil core bored",
+          "'d a pencil core bored",
+          "got a pencil core bored"
+        ],
+        "base_verb": "a pencil core / to bore",
+        "supplied_words": [
+          "a pencil core"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Ученый заказал извлечение керна (had something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "The dendrochronologist needed samples from the tithe barn. He had a pencil core bored from an oak beam. Remarkably, he managed to match its rings to the summer of 1384."
+  },
+  {
+    "id": "pv7-D7-024",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our distillation column snapped in half. Luckily, we (it / to fuse) back together by the scientific glassblower. The whole repair took twenty minutes.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Колонну починил стеклодув (had something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "review",
+    "seed_id": "S4-074",
+    "skeleton": "our w in w . w , we G w by the w . the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-024-b1",
+        "answer": "had it fused",
+        "accepted_answers": [
+          "had it fused",
+          "'d it fused",
+          "got it fused"
+        ],
+        "base_verb": "it / to fuse",
+        "supplied_words": [
+          "it"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Колонну починил стеклодув (had something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Our distillation column snapped in half. Luckily, we had it fused back together by the scientific glassblower. The whole repair took twenty minutes."
+  },
+  {
+    "id": "pv7-D7-025",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Being a sleep volunteer is tough. Last night, I (to wire up) with twelve scalp electrodes at 10 p.m. I (to wake up) every ninety minutes to recite nonsense syllables!",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Неформальный get-passive для описания неприятных процедур в прошлом (got wired up, got woken up).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S4-077",
+    "skeleton": "being a w is w . LAST_NIGHT , i G with w at 10 w . w . i G EVERY_NINETY w to w !",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-025-b1",
+        "answer": "got wired up",
+        "accepted_answers": [
+          "got wired up",
+          "was wired up"
+        ],
+        "base_verb": "to wire up",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Неформальный get-passive для описания неприятных процедур в прошлом (got wired up, got woken up).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-025-b2",
+        "answer": "got woken up",
+        "accepted_answers": [
+          "got woken up",
+          "was woken up"
+        ],
+        "base_verb": "to wake up",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Неформальный get-passive для описания неприятных процедур в прошлом (got wired up, got woken up).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Being a sleep volunteer is tough. Last night, I got wired up with twelve scalp electrodes at 10 p.m. I got woken up every ninety minutes to recite nonsense syllables!"
+  },
+  {
+    "id": "pv7-D7-026",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Dental technology has improved. Patients now (their teeth / to scan) optically. This means nobody (to force) to bite into cold pink putty anymore.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первой части пациентам сканируют зубы (have their teeth scanned). Во второй get-passive для описания нежелательного действия (gets forced).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S4-096",
+    "skeleton": "w has w . w NOW G w . this w G to w into w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-026-b1",
+        "answer": "have their teeth scanned",
+        "accepted_answers": [
+          "have their teeth scanned",
+          "'ve their teeth scanned",
+          "get their teeth scanned"
+        ],
+        "base_verb": "their teeth / to scan",
+        "supplied_words": [
+          "their teeth"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "В первой части пациентам сканируют зубы (have their teeth scanned). Во второй get-passive для описания нежелательного действия (gets forced).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-026-b2",
+        "answer": "gets forced",
+        "accepted_answers": [
+          "gets forced",
+          "is forced",
+          "'s forced"
+        ],
+        "base_verb": "to force",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "В первой части пациентам сканируют зубы (have their teeth scanned). Во второй get-passive для описания нежелательного действия (gets forced).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Dental technology has improved. Patients now have their teeth scanned optically. This means nobody gets forced to bite into cold pink putty anymore."
+  },
+  {
+    "id": "pv7-D7-027",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The five-year-old was scared. Did he (to frighten) by the cast cutter? The nurse pressed the vibrating blade against her hand to show it only tickled.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Вопросительное предложение с did требует начальной формы глагола get (Did he get frightened?).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S4-099",
+    "skeleton": "the w was w . did he G by the w ? the w the w her w to w it w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-027-b1",
+        "answer": "get frightened",
+        "accepted_answers": [
+          "get frightened"
+        ],
+        "base_verb": "to frighten",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Вопросительное предложение с did требует начальной формы глагола get (Did he get frightened?).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "The five-year-old was scared. Did he get frightened by the cast cutter? The nurse pressed the vibrating blade against her hand to show it only tickled."
+  },
+  {
+    "id": "pv7-D7-028",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I twisted my knee on the mountain. At the medical post, I (my ski boot / to slit) with a heated wire cutter so my foot could be lifted out safely.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Ботинок разрезал врач (had something done). Глагол slit не меняет форму в V3.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "review",
+    "seed_id": "S4-100",
+    "skeleton": "i w my w on the w . at the w , i G with a w so my w could be w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-028-b1",
+        "answer": "had my ski boot slit",
+        "accepted_answers": [
+          "had my ski boot slit",
+          "'d my ski boot slit",
+          "got my ski boot slit"
+        ],
+        "base_verb": "my ski boot / to slit",
+        "supplied_words": [
+          "my ski boot"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Ботинок разрезал врач (had something done). Глагол slit не меняет форму в V3.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "I twisted my knee on the mountain. At the medical post, I had my ski boot slit with a heated wire cutter so my foot could be lifted out safely."
+  },
+  {
+    "id": "pv7-D7-029",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A ginger cat sitting on a gatepost ___ automatically blurred by the privacy algorithm when the camera car drove past.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Конструкция have/get something done для описания события, случившегося с объектом (кот «получил» свою морду заблюренной: had its face blurred).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S4-130",
+    "skeleton": "a w on a w G w by the w when the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "had its face",
+      "its face had",
+      "got its face to be",
+      "had its face been"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "had its face",
+    "summary": "A ginger cat sitting on a gatepost had its face automatically blurred by the privacy algorithm when the camera car drove past.",
+    "answer_text": "A ginger cat sitting on a gatepost had its face automatically blurred by the privacy algorithm when the camera car drove past."
+  },
+  {
+    "id": "pv7-D7-030",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The flat owner ___ in the basement, only to find the stone cellar arch blocked the radio signal.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Хозяйке установили счетчик (услуга). Word order: have + object + V3 (had a meter fitted).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "review",
+    "seed_id": "S4-140",
+    "skeleton": "the w G in the w , w to w the w the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "had a digital gas meter fitted",
+      "fitted a digital gas meter",
+      "had fitted a digital gas meter",
+      "got a digital gas meter fit"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "had a digital gas meter fitted",
+    "summary": "The flat owner had a digital gas meter fitted in the basement, only to find the stone cellar arch blocked the radio signal.",
+    "answer_text": "The flat owner had a digital gas meter fitted in the basement, only to find the stone cellar arch blocked the radio signal."
+  },
+  {
+    "id": "pv7-D7-031",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The Munich programmer ___ with tweezers and brushed with synthetic grease for quieter typing.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Программист отдал клавиатуру на кастомизацию (had something done). Третья форма глагола (opened).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "review",
+    "seed_id": "S4-149",
+    "skeleton": "the w G with w and w with w for w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "had every plastic switch opened",
+      "opened every plastic switch",
+      "had opened every plastic switch",
+      "got every plastic switch open"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "had every plastic switch opened",
+    "summary": "The Munich programmer had every plastic switch opened with tweezers and brushed with synthetic grease for quieter typing.",
+    "answer_text": "The Munich programmer had every plastic switch opened with tweezers and brushed with synthetic grease for quieter typing."
+  },
+  {
+    "id": "pv7-D7-032",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "After the theft, the beekeeper had glued micro-transponders inside the frames of his remaining colonies.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Ошибочный порядок слов превратил фразу в Past Perfect. Правильно: had + object (micro-transponders) + V3 (glued). Пчеловод нанял кого-то для установки чипов.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S4-171",
+    "skeleton": "after the w , the w had w the w of his w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "After the theft, the beekeeper had micro-transponders glued inside the frames of his remaining colonies.",
+    "accepted_answers": [
+      "After the theft, the beekeeper had micro-transponders glued inside the frames of his remaining colonies.",
+      "After the theft, the beekeeper got micro-transponders glued inside the frames of his remaining colonies."
+    ],
+    "answer_text": "After the theft, the beekeeper had micro-transponders glued inside the frames of his remaining colonies.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D7-033",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A motorist caught at 54 mph had the ticket cancelled after proving the radar bounced off a swan.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Ошибки нет. Используется have something done (had the ticket cancelled) для события, которое устроили другие люди по его запросу (отмена штрафа).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S4-172",
+    "skeleton": "a w at 54 w had the w after w the w a w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "A motorist caught at 54 mph had the ticket cancelled after proving the radar bounced off a swan.",
+    "accepted_answers": [
+      "A motorist caught at 54 mph had the ticket cancelled after proving the radar bounced off a swan."
+    ],
+    "answer_text": "A motorist caught at 54 mph had the ticket cancelled after proving the radar bounced off a swan.",
+    "has_error": false
+  },
+  {
+    "id": "pv7-D7-034",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The scam was stopped when the elderly customer got asked probing questions by an alert clerk.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Ошибки нет. get asked — допустимая неформальная форма пассива (хотя was asked звучит нейтральнее).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S4-187",
+    "skeleton": "the w was w when the w by an w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "The scam was stopped when the elderly customer got asked probing questions by an alert clerk.",
+    "accepted_answers": [
+      "The scam was stopped when the elderly customer got asked probing questions by an alert clerk.",
+      "The scam was stopped when the elderly customer was asked probing questions by an alert clerk."
+    ],
+    "answer_text": "The scam was stopped when the elderly customer got asked probing questions by an alert clerk.",
+    "has_error": false
+  },
+  {
+    "id": "pv7-D7-035",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "In Victorian times, left-handed children were forced to write with their right hands. This meant they didn't write naturally. Which sentence is true about them?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Это произошло с ними против их воли (unpleasant event: had their habits changed). Варианты 2 и 3 означают, что они сами это сделали.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "history",
+    "seed_id": "S5-031",
+    "skeleton": "in w , w were w to w with their w . this w they w . which w is w about them ?",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "They had their natural writing habits changed.",
+      "They changed their natural writing habits.",
+      "They had changed their natural writing habits.",
+      "They got their natural writing habits to change."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "They had their natural writing habits changed.",
+    "summary": "They had their natural writing habits changed.",
+    "answer_text": "They had their natural writing habits changed."
+  },
+  {
+    "id": "pv7-D7-036",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Paris sewer tours show how lost items are recovered. If you drop your keys down a drain, the city workers will retrieve them for you. What happens?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Услуга, оказываемая другими: get your keys fished out. Варианты 2 и 3 — активный залог.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "dialogue",
+    "seed_id": "S5-035",
+    "skeleton": "w how w are w . if you w your w a w , the w will w them for you . what w ?",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "You get your keys fished out.",
+      "You fish your keys out.",
+      "You have fished your keys out.",
+      "You get your keys to fish out."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "You get your keys fished out.",
+    "summary": "You get your keys fished out.",
+    "answer_text": "You get your keys fished out."
+  },
+  {
+    "id": "pv7-D7-037",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A researcher wanted to find her great-grandparents' old Moscow address. She paid an archivist to search the old telephone directories. What did she do?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Она наняла специалиста (услуга: had the directories searched). Вариант 3 — Past Perfect (она сама искала до какого-то момента).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S5-036",
+    "skeleton": "a w to w her w . she w an w to w the w . what did she do ?",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "She had the old directories searched.",
+      "She searched the old directories.",
+      "She had searched the old directories.",
+      "She got the old directories search."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "She had the old directories searched.",
+    "summary": "She had the old directories searched.",
+    "answer_text": "She had the old directories searched."
+  },
+  {
+    "id": "pv7-D7-038",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The father drove for an hour with Spanish directions. His daughter had secretly changed the satnav language settings, and he didn't know how to fix it. What happened to him?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Действие было совершено кем-то другим (unpleasant event: had his satnav set). Варианты 2 и 3 означают, что он сам сменил язык.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "dialogue",
+    "seed_id": "S5-052",
+    "skeleton": "the w for an w with w . his w had w the w , and he w NOW how to w it . what w to him ?",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "He had his satnav set to Spanish.",
+      "He set his satnav to Spanish.",
+      "He had set his satnav to Spanish.",
+      "He got his satnav to set to Spanish."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "He had his satnav set to Spanish.",
+    "summary": "He had his satnav set to Spanish.",
+    "answer_text": "He had his satnav set to Spanish."
+  },
+  {
+    "id": "pv7-D7-039",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Whenever my grandfather visits London, he has watered his basil plants by a helpful neighbour in Athens.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Неверный порядок слов (have + V3 + object = Present Perfect). Правильно: have + object (his basil plants) + V3 (watered).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-061",
+    "skeleton": "w my w , he has w his w by a w in w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "Whenever my grandfather visits London, he has his basil plants watered by a helpful neighbour in Athens.",
+    "accepted_answers": [
+      "Whenever my grandfather visits London, he has his basil plants watered by a helpful neighbour in Athens.",
+      "Whenever my grandfather visits London, he gets his basil plants watered by a helpful neighbour in Athens."
+    ],
+    "answer_text": "Whenever my grandfather visits London, he has his basil plants watered by a helpful neighbour in Athens.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D7-040",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "During the important video call, the parent unfortunately ___ by a curious toddler.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Случайное событие, вызванное кем-то другим: had something done (had the camera switched on).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-063",
+    "skeleton": "w the w , the w G by a w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "had the camera switched on",
+      "switched the camera on",
+      "had switched the camera on",
+      "got the camera switch on"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "had the camera switched on",
+    "summary": "During the important video call, the parent unfortunately had the camera switched on by a curious toddler.",
+    "answer_text": "During the important video call, the parent unfortunately had the camera switched on by a curious toddler."
+  },
+  {
+    "id": "pv7-D7-041",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At the Kerala wedding, the Norwegian guest ___ by three cousins at once so she wouldn't trip on the pleats.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Get-passive в значении 'быть одетым кем-то другим' (got dressed). 'Was got' — грамматическая ошибка.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-082",
+    "skeleton": "at the w , the w G by w at w so she w on the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "got dressed",
+      "dressed",
+      "had dressed",
+      "was got dressed"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "got dressed",
+    "summary": "At the Kerala wedding, the Norwegian guest got dressed by three cousins at once so she wouldn't trip on the pleats.",
+    "answer_text": "At the Kerala wedding, the Norwegian guest got dressed by three cousins at once so she wouldn't trip on the pleats."
+  },
+  {
+    "id": "pv7-D7-042",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "On Christmas jumper day, our teacher ___ 'most hideous jumper' and walked away with a chocolate trophy.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Неформальный get-passive: got voted (за нее проголосовали другие).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-089",
+    "skeleton": "on w , our w G 'most w and w with a w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "got voted",
+      "voted",
+      "had voted",
+      "was got voted"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "got voted",
+    "summary": "On Christmas jumper day, our teacher got voted 'most hideous jumper' and walked away with a chocolate trophy.",
+    "answer_text": "On Christmas jumper day, our teacher got voted 'most hideous jumper' and walked away with a chocolate trophy."
+  },
+  {
+    "id": "pv7-D7-043",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Just five minutes before Mahler's Fifth, the timpanist (a tiny tear / to patch) with goldbeater's skin by the stage manager.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Услуга, оказанная кем-то другим (had something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "dialogue",
+    "seed_id": "S3-157",
+    "skeleton": "JUST w before w , the w G with w by the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-043-b1",
+        "answer": "had a tiny tear patched",
+        "accepted_answers": [
+          "had a tiny tear patched",
+          "'d a tiny tear patched",
+          "got a tiny tear patched"
+        ],
+        "base_verb": "a tiny tear / to patch",
+        "supplied_words": [
+          "a tiny tear"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Услуга, оказанная кем-то другим (had something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Just five minutes before Mahler's Fifth, the timpanist had a tiny tear patched with goldbeater's skin by the stage manager."
+  },
+  {
+    "id": "pv7-D7-044",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "While two of the collies fetch and sleep, the third dog (to train) to bark instantly on a single hand signal.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Get-passive для регулярного действия, описывающего процесс обучения собаки.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S3-192",
+    "skeleton": "while w of the w and w , the w G to w on a w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-044-b1",
+        "answer": "gets trained",
+        "accepted_answers": [
+          "gets trained",
+          "is trained",
+          "'s trained"
+        ],
+        "base_verb": "to train",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Get-passive для регулярного действия, описывающего процесс обучения собаки.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "While two of the collies fetch and sleep, the third dog gets trained to bark instantly on a single hand signal."
+  },
+  {
+    "id": "pv7-D7-045",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Before anyone (to allow) to run the sequence at performance tempo, every slap and sword parry is rehearsed at quarter-speed.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Неформальный get-passive в значении 'получить разрешение'.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "instructions",
+    "seed_id": "S3-195",
+    "skeleton": "before w G to w the w at w , EVERY_SLAP and w is w at w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-045-b1",
+        "answer": "gets allowed",
+        "accepted_answers": [
+          "gets allowed",
+          "is allowed",
+          "'s allowed"
+        ],
+        "base_verb": "to allow",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Неформальный get-passive в значении 'получить разрешение'.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Before anyone gets allowed to run the sequence at performance tempo, every slap and sword parry is rehearsed at quarter-speed."
+  },
+  {
+    "id": "pv7-D7-046",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Because my tongue kept clicking, I (to ask) to drink warm water with apple slices between chapters.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Актрису попросили (get-passive в Past Simple).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "dialogue",
+    "seed_id": "S3-199",
+    "skeleton": "because my w , i G to w with w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-046-b1",
+        "answer": "got asked",
+        "accepted_answers": [
+          "got asked",
+          "was asked"
+        ],
+        "base_verb": "to ask",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Актрису попросили (get-passive в Past Simple).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Because my tongue kept clicking, I got asked to drink warm water with apple slices between chapters."
+  },
+  {
+    "id": "pv7-D7-047",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "On his eightieth birthday, the retired driver (to invite) behind the brass rope to sit on the footplate of his old steam locomotive.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Неформальный get-passive (got invited — был приглашен).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S4-028",
+    "skeleton": "on his w , the w G w the w to w on the w of his w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-047-b1",
+        "answer": "got invited",
+        "accepted_answers": [
+          "got invited",
+          "was invited"
+        ],
+        "base_verb": "to invite",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Неформальный get-passive (got invited — был приглашен).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "On his eightieth birthday, the retired driver got invited behind the brass rope to sit on the footplate of his old steam locomotive."
+  },
+  {
+    "id": "pv7-D7-048",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The interior designer (six rolls of 1895 wallpaper / to hand-block) from the original pearwood printing blocks in the museum cellar.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Она заказала печать обоев (услуга: had something done в Past Simple).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "email",
+    "seed_id": "S4-039",
+    "skeleton": "the w G from the w in the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-048-b1",
+        "answer": "had six rolls of 1895 wallpaper hand-blocked",
+        "accepted_answers": [
+          "had six rolls of 1895 wallpaper hand-blocked",
+          "'d six rolls of 1895 wallpaper hand-blocked",
+          "got six rolls of 1895 wallpaper hand-blocked"
+        ],
+        "base_verb": "six rolls of 1895 wallpaper / to hand-block",
+        "supplied_words": [
+          "six rolls of 1895 wallpaper"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Она заказала печать обоев (услуга: had something done в Past Simple).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "The interior designer had six rolls of 1895 wallpaper hand-blocked from the original pearwood printing blocks in the museum cellar."
+  },
+  {
+    "id": "pv7-D7-049",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A customs clerk in Mestre mistook the volcanic sand for builders' ballast and (it / to tip) into a skip outside the pavilion.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Клерк распорядился, чтобы песок высыпали (каузативная конструкция had something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S4-040",
+    "skeleton": "a w in w the w for w LAST_AND G into a w the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-049-b1",
+        "answer": "had it tipped",
+        "accepted_answers": [
+          "had it tipped",
+          "'d it tipped",
+          "got it tipped"
+        ],
+        "base_verb": "it / to tip",
+        "supplied_words": [
+          "it"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Клерк распорядился, чтобы песок высыпали (каузативная конструкция had something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "A customs clerk in Mestre mistook the volcanic sand for builders' ballast and had it tipped into a skip outside the pavilion."
+  },
+  {
+    "id": "pv7-D7-050",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Every Thursday, the elderly patient (his weekly tablets / to seal) into seven colour-coded blister bubbles by the local pharmacist.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Пациенту регулярно оказывают услугу (Present Simple: has something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S4-102",
+    "skeleton": "EVERY_THURSDAY , the w G into w by the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-050-b1",
+        "answer": "has his weekly tablets sealed",
+        "accepted_answers": [
+          "has his weekly tablets sealed",
+          "'s his weekly tablets sealed",
+          "gets his weekly tablets sealed"
+        ],
+        "base_verb": "his weekly tablets / to seal",
+        "supplied_words": [
+          "his weekly tablets"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Пациенту регулярно оказывают услугу (Present Simple: has something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Every Thursday, the elderly patient has his weekly tablets sealed into seven colour-coded blister bubbles by the local pharmacist."
+  },
+  {
+    "id": "pv7-D7-051",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "While standing on a foam impression box, the marathon walker (a pair of cork insoles / to heat-mould) to his arches.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Пешеход получил услугу по изготовлению стелек (had something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "review",
+    "seed_id": "S4-104",
+    "skeleton": "while w on a w , the w G to his w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-051-b1",
+        "answer": "had a pair of cork insoles heat-moulded",
+        "accepted_answers": [
+          "had a pair of cork insoles heat-moulded",
+          "'d a pair of cork insoles heat-moulded",
+          "got a pair of cork insoles heat-moulded"
+        ],
+        "base_verb": "a pair of cork insoles / to heat-mould",
+        "supplied_words": [
+          "a pair of cork insoles"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Пешеход получил услугу по изготовлению стелек (had something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "While standing on a foam impression box, the marathon walker had a pair of cork insoles heat-moulded to his arches."
+  },
+  {
+    "id": "pv7-D7-052",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The lorry driver memorised the bottom line of the chart, but he (to catch) out when the optometrist scrambled the letters.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Get-passive для неприятного или неожиданного события (его поймали).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "dialogue",
+    "seed_id": "S4-108",
+    "skeleton": "the w the w of the w , but he G w when the w the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-052-b1",
+        "answer": "got caught",
+        "accepted_answers": [
+          "got caught",
+          "was caught"
+        ],
+        "base_verb": "to catch",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Get-passive для неприятного или неожиданного события (его поймали).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "The lorry driver memorised the bottom line of the chart, but he got caught out when the optometrist scrambled the letters."
+  },
+  {
+    "id": "pv7-D7-053",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Her streak was saved at two minutes to midnight by a bonus token she (to give) three months earlier.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Get-passive в форме Past Perfect (ей дали токен до того, как он спас серию).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S4-152",
+    "skeleton": "her w was w at w to w by a w she G w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-053-b1",
+        "answer": "had got given",
+        "accepted_answers": [
+          "had got given",
+          "'d got given",
+          "had been given",
+          "'d been given",
+          "was given",
+          "got given"
+        ],
+        "base_verb": "to give",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Get-passive в форме Past Perfect (ей дали токен до того, как он спас серию).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Her streak was saved at two minutes to midnight by a bonus token she had got given three months earlier."
+  },
+  {
+    "id": "pv7-D7-054",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Just as he stepped up to the scanner, the passenger (to delay) by an automatic twenty-minute operating-system update on his phone.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Неформальный get-passive для описания неприятной ситуации (задержки).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S4-155",
+    "skeleton": "JUST as he w to the w , the w G by an w on his w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-054-b1",
+        "answer": "got delayed",
+        "accepted_answers": [
+          "got delayed",
+          "was delayed"
+        ],
+        "base_verb": "to delay",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Неформальный get-passive для описания неприятной ситуации (задержки).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Just as he stepped up to the scanner, the passenger got delayed by an automatic twenty-minute operating-system update on his phone."
+  },
+  {
+    "id": "pv7-D7-055",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A silver living statue (to caution) by community wardens after jumping out and making tourists drop their chips.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Неформальный get-passive (получил предупреждение).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S4-189",
+    "skeleton": "a w G by w after w and w their w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-055-b1",
+        "answer": "got cautioned",
+        "accepted_answers": [
+          "got cautioned",
+          "was cautioned"
+        ],
+        "base_verb": "to caution",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Неформальный get-passive (получил предупреждение).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "A silver living statue got cautioned by community wardens after jumping out and making tourists drop their chips."
+  },
+  {
+    "id": "pv7-D7-056",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "In 1420, any baker whose penny loaf weighed under the standard (his bread / to confiscate) and given to castle prisoners.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "У пекаря забирали хлеб (неприятное событие, выраженное через had something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "history",
+    "seed_id": "S4-195",
+    "skeleton": "IN_1420 , any w whose w the w G and w to w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-056-b1",
+        "answer": "had his bread confiscated",
+        "accepted_answers": [
+          "had his bread confiscated",
+          "'d his bread confiscated",
+          "got his bread confiscated"
+        ],
+        "base_verb": "his bread / to confiscate",
+        "supplied_words": [
+          "his bread"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "У пекаря забирали хлеб (неприятное событие, выраженное через had something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "In 1420, any baker whose penny loaf weighed under the standard had his bread confiscated and given to castle prisoners."
+  },
+  {
+    "id": "pv7-D7-057",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "After lead flashing was stripped twice, the churchwarden (terne-coated stainless steel / to lay) on the vestry roof instead.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Староста заказал укладку стали (had something done). Глагол lay — неправильный (laid).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S4-196",
+    "skeleton": "after w was w , the w G on the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-057-b1",
+        "answer": "had terne-coated stainless steel laid",
+        "accepted_answers": [
+          "had terne-coated stainless steel laid",
+          "'d terne-coated stainless steel laid",
+          "got terne-coated stainless steel laid"
+        ],
+        "base_verb": "terne-coated stainless steel / to lay",
+        "supplied_words": [
+          "terne-coated stainless steel"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Староста заказал укладку стали (had something done). Глагол lay — неправильный (laid).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "After lead flashing was stripped twice, the churchwarden had terne-coated stainless steel laid on the vestry roof instead."
+  },
+  {
+    "id": "pv7-D7-058",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Living on an Iowa farmhouse is tough. The children (to wake) at five every morning. Do they (to pay) for feeding the calves? No, it's just expected!",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В обоих случаях get-passive. В вопросительном предложении с 'do' get стоит в начальной форме (get paid).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "dialogue",
+    "seed_id": "S5-065",
+    "skeleton": "w on an w is w . the w G at w EVERY_MORNING . do they G for w the w ? no , w JUST w !",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-058-b1",
+        "answer": "get woken",
+        "accepted_answers": [
+          "get woken",
+          "get woken up",
+          "are woken",
+          "'re woken",
+          "are woken up",
+          "'re woken up"
+        ],
+        "base_verb": "to wake",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "В обоих случаях get-passive. В вопросительном предложении с 'do' get стоит в начальной форме (get paid).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-058-b2",
+        "answer": "get paid",
+        "accepted_answers": [
+          "get paid"
+        ],
+        "base_verb": "to pay",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "В обоих случаях get-passive. В вопросительном предложении с 'do' get стоит в начальной форме (get paid).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Living on an Iowa farmhouse is tough. The children get woken at five every morning. Do they get paid for feeding the calves? No, it's just expected!"
+  },
+  {
+    "id": "pv7-D7-059",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My grandmother (her piano / to tune) twice a year by a professional. Nobody (to play) it, though, since the 1990s.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "has her piano tuned — настройку делает мастер по её заказу. Nobody has played it — играет (вернее, не играет) никто: действие активное, Present Perfect из-за since.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-067",
+    "skeleton": "my w G w a w by a w . w G it , w , SINCE the 1990 w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative",
+      "active_present_perfect"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative",
+      "active_present_perfect"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-059-b1",
+        "answer": "has her piano tuned",
+        "accepted_answers": [
+          "has her piano tuned",
+          "'s her piano tuned",
+          "gets her piano tuned"
+        ],
+        "base_verb": "her piano / to tune",
+        "supplied_words": [
+          "her piano"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "has her piano tuned — настройку делает мастер по её заказу. Nobody has played it — играет (вернее, не играет) никто: действие активное, Present Perfect из-за since.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-059-b2",
+        "answer": "has played",
+        "accepted_answers": [
+          "has played",
+          "'s played"
+        ],
+        "base_verb": "to play",
+        "supplied_words": [],
+        "tense_or_construction": "active_present_perfect",
+        "voice": "active",
+        "explanation_ru": "has her piano tuned — настройку делает мастер по её заказу. Nobody has played it — играет (вернее, не играет) никто: действие активное, Present Perfect из-за since.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "My grandmother has her piano tuned twice a year by a professional. Nobody has played it, though, since the 1990s."
+  },
+  {
+    "id": "pv7-D7-060",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A snake was found in our laundry basket! We (it / to remove) safely by a local catcher. Fortunately, nobody (to bite).",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первой части наняли ловца (had something done). Во второй get-passive для описания того, что никто не пострадал.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-069",
+    "skeleton": "a w was w in our w ! we G w by a w . w , w G .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-060-b1",
+        "answer": "had it removed",
+        "accepted_answers": [
+          "had it removed",
+          "'d it removed",
+          "got it removed"
+        ],
+        "base_verb": "it / to remove",
+        "supplied_words": [
+          "it"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "В первой части наняли ловца (had something done). Во второй get-passive для описания того, что никто не пострадал.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-060-b2",
+        "answer": "got bitten",
+        "accepted_answers": [
+          "got bitten",
+          "was bitten"
+        ],
+        "base_verb": "to bite",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "В первой части наняли ловца (had something done). Во второй get-passive для описания того, что никто не пострадал.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "A snake was found in our laundry basket! We had it removed safely by a local catcher. Fortunately, nobody got bitten."
+  },
+  {
+    "id": "pv7-D7-061",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "For our mother's 50th birthday, we didn't just buy a gift. We (a video / to make) with messages from her old friends. She (to overwhelm) by emotion.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Заказали видео у кого-то (had something done). Get-passive для выражения сильных эмоций (got overwhelmed).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-093",
+    "skeleton": "for our w 50 w , we w JUST w a w . we G with w from her w . she G by w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-061-b1",
+        "answer": "had a video made",
+        "accepted_answers": [
+          "had a video made",
+          "'d a video made",
+          "got a video made"
+        ],
+        "base_verb": "a video / to make",
+        "supplied_words": [
+          "a video"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Заказали видео у кого-то (had something done). Get-passive для выражения сильных эмоций (got overwhelmed).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-061-b2",
+        "answer": "got overwhelmed",
+        "accepted_answers": [
+          "got overwhelmed",
+          "was overwhelmed"
+        ],
+        "base_verb": "to overwhelm",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Заказали видео у кого-то (had something done). Get-passive для выражения сильных эмоций (got overwhelmed).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "For our mother's 50th birthday, we didn't just buy a gift. We had a video made with messages from her old friends. She got overwhelmed by emotion."
+  },
+  {
+    "id": "pv7-D7-062",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At the Cork reunion, old classmates only (to recognise) by their name tags. However, one man hadn't changed at all. Did he (any work / to do) on his face? Nobody knows.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Get-passive в первой части. В вопросе с 'did' конструкция have something done ставится в начальной форме (have any work done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "dialogue",
+    "seed_id": "S5-094",
+    "skeleton": "at the w , w G by their w . w , w at all . did he G on his w ? w NOW w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get",
+      "pv_causative"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-062-b1",
+        "answer": "got recognised",
+        "accepted_answers": [
+          "got recognised",
+          "got recognized",
+          "were recognised",
+          "were recognized"
+        ],
+        "base_verb": "to recognise",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Get-passive в первой части. В вопросе с 'did' конструкция have something done ставится в начальной форме (have any work done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-062-b2",
+        "answer": "have any work done",
+        "accepted_answers": [
+          "have any work done",
+          "'ve any work done",
+          "get any work done"
+        ],
+        "base_verb": "any work / to do",
+        "supplied_words": [
+          "any work"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Get-passive в первой части. В вопросе с 'did' конструкция have something done ставится в начальной форме (have any work done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "At the Cork reunion, old classmates only got recognised by their name tags. However, one man hadn't changed at all. Did he have any work done on his face? Nobody knows."
+  },
+  {
+    "id": "pv7-D7-063",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At the Texas barbecue, the exchange students (to feed) so much meat they could barely move. Eventually, they (to send) home with containers of leftovers.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Оба пропуска — неформальный get-passive (got fed, got sent) для описания действий над студентами.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-095",
+    "skeleton": "at the w , the w G so w they could w . w , they G w with w of w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-063-b1",
+        "answer": "got fed",
+        "accepted_answers": [
+          "got fed",
+          "were fed"
+        ],
+        "base_verb": "to feed",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Оба пропуска — неформальный get-passive (got fed, got sent) для описания действий над студентами.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-063-b2",
+        "answer": "got sent",
+        "accepted_answers": [
+          "got sent",
+          "were sent"
+        ],
+        "base_verb": "to send",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Оба пропуска — неформальный get-passive (got fed, got sent) для описания действий над студентами.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "At the Texas barbecue, the exchange students got fed so much meat they could barely move. Eventually, they got sent home with containers of leftovers."
+  },
+  {
+    "id": "pv7-D7-064",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A local schoolgirl entered a council competition. She (her drawing / to choose) to decorate the new pedestrian crossing. Everyone (to thrill) with the colourful result.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Ее рисунок выбрали (событие, выраженное через had something done). Get-passive для эмоций.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S5-134",
+    "skeleton": "a w a w . she G to w the w . w G with the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-064-b1",
+        "answer": "had her drawing chosen",
+        "accepted_answers": [
+          "had her drawing chosen",
+          "'d her drawing chosen",
+          "got her drawing chosen"
+        ],
+        "base_verb": "her drawing / to choose",
+        "supplied_words": [
+          "her drawing"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Ее рисунок выбрали (событие, выраженное через had something done). Get-passive для эмоций.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-064-b2",
+        "answer": "got thrilled",
+        "accepted_answers": [
+          "got thrilled",
+          "was thrilled"
+        ],
+        "base_verb": "to thrill",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Ее рисунок выбрали (событие, выраженное через had something done). Get-passive для эмоций.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "A local schoolgirl entered a council competition. She had her drawing chosen to decorate the new pedestrian crossing. Everyone got thrilled with the colourful result."
+  },
+  {
+    "id": "pv7-D7-065",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A stray cat kept visiting the Leeds fire station. Eventually, it (to give) the official job of station mascot. The firefighters (a special collar / to make) for him last week.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Коту дали работу (got given). Пожарные заказали ошейник (had something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S5-137",
+    "skeleton": "a w the w . w , it G the w of w . the w G for him LAST_WEEK .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get",
+      "pv_causative"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-065-b1",
+        "answer": "got given",
+        "accepted_answers": [
+          "got given",
+          "was given"
+        ],
+        "base_verb": "to give",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Коту дали работу (got given). Пожарные заказали ошейник (had something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-065-b2",
+        "answer": "had a special collar made",
+        "accepted_answers": [
+          "had a special collar made",
+          "'d a special collar made",
+          "got a special collar made"
+        ],
+        "base_verb": "a special collar / to make",
+        "supplied_words": [
+          "a special collar"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Коту дали работу (got given). Пожарные заказали ошейник (had something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "A stray cat kept visiting the Leeds fire station. Eventually, it got given the official job of station mascot. The firefighters had a special collar made for him last week."
+  },
+  {
+    "id": "pv7-D7-066",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A Chester Zoo penguin had a sore foot. The keepers (a tiny pair of boots / to design) for him by a specialist. Now, he (not / pick on) by the other birds anymore.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Смотрители заказали ботинки (had something done). Отрицательный get-passive в Present Simple (does not get picked on).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S5-138",
+    "skeleton": "a w had a w . the w G for him by a w . NOW , he G by the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative",
+      "pv_get"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-066-b1",
+        "answer": "had a tiny pair of boots designed",
+        "accepted_answers": [
+          "had a tiny pair of boots designed",
+          "'d a tiny pair of boots designed",
+          "got a tiny pair of boots designed"
+        ],
+        "base_verb": "a tiny pair of boots / to design",
+        "supplied_words": [
+          "a tiny pair of boots"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Смотрители заказали ботинки (had something done). Отрицательный get-passive в Present Simple (does not get picked on).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-066-b2",
+        "answer": "does not get picked on",
+        "accepted_answers": [
+          "does not get picked on",
+          "doesn't get picked on"
+        ],
+        "base_verb": "not / pick on",
+        "supplied_words": [
+          "not",
+          "pick on"
+        ],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Смотрители заказали ботинки (had something done). Отрицательный get-passive в Present Simple (does not get picked on).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "A Chester Zoo penguin had a sore foot. The keepers had a tiny pair of boots designed for him by a specialist. Now, he does not get picked on by the other birds anymore."
+  },
+  {
+    "id": "pv7-D7-067",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "On this Dutch dairy farm, cows decide their own schedule. They (to milk) by robots whenever they choose to walk in. The farmer (the machines / to service) twice a month to prevent breakdowns.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Get-passive (get milked) и регулярная услуга по обслуживанию роботов (has something done).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "process",
+    "seed_id": "S5-164",
+    "skeleton": "on this w , w their w . they G by w they w to w in . the w G w a w to w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get",
+      "pv_causative"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D7-067-b1",
+        "answer": "get milked",
+        "accepted_answers": [
+          "get milked",
+          "are milked",
+          "'re milked"
+        ],
+        "base_verb": "to milk",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Get-passive (get milked) и регулярная услуга по обслуживанию роботов (has something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      },
+      {
+        "id": "pv7-D7-067-b2",
+        "answer": "has the machines serviced",
+        "accepted_answers": [
+          "has the machines serviced",
+          "'s the machines serviced",
+          "gets the machines serviced"
+        ],
+        "base_verb": "the machines / to service",
+        "supplied_words": [
+          "the machines"
+        ],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "Get-passive (get milked) и регулярная услуга по обслуживанию роботов (has something done).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "On this Dutch dairy farm, cows decide their own schedule. They get milked by robots whenever they choose to walk in. The farmer has the machines serviced twice a month to prevent breakdowns."
+  },
+  {
+    "id": "pv7-D7-068",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Working in the North Sea is perilous. Each offshore wind turbine ___ by a technician lowered directly from a helicopter.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Регулярное пассивное действие (gets checked). Вариант has checked — это активный залог (Present Perfect).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S5-172",
+    "skeleton": "w in the w is w . each w G by a w from a w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "gets checked",
+      "gets checking",
+      "has checked",
+      "has it checked"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "gets checked",
+    "summary": "Working in the North Sea is perilous. Each offshore wind turbine gets checked by a technician lowered directly from a helicopter.",
+    "answer_text": "Working in the North Sea is perilous. Each offshore wind turbine gets checked by a technician lowered directly from a helicopter."
+  },
+  {
+    "id": "pv7-D7-069",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "After years of hard work rounding up sheep, the farm dog ___ and given his own armchair by the fire.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Его отправили на пенсию (get-passive: got retired).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S5-180",
+    "skeleton": "after w of w , the w G and w his w by the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "got retired",
+      "had retired",
+      "retired himself",
+      "had his retirement done"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "got retired",
+    "summary": "After years of hard work rounding up sheep, the farm dog got retired and given his own armchair by the fire.",
+    "answer_text": "After years of hard work rounding up sheep, the farm dog got retired and given his own armchair by the fire."
+  },
+  {
+    "id": "pv7-D7-070",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Long-distance lorry drivers ___ if they forget their fog lamps on the coastal highway at dawn.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Их штрафуют (регулярное неприятное действие: get fined).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "instructions",
+    "seed_id": "S1-031",
+    "skeleton": "w G if they w their w on the w at w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "get fined",
+      "are got fined",
+      "have fined",
+      "get fine"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "get fined",
+    "summary": "Long-distance lorry drivers get fined if they forget their fog lamps on the coastal highway at dawn.",
+    "answer_text": "Long-distance lorry drivers get fined if they forget their fog lamps on the coastal highway at dawn."
+  },
+  {
+    "id": "pv7-D7-071",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Student grape-pickers ___ very well for harvesting Riesling ice wine at three in the morning.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Студентам платят (get-passive: get paid).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "process",
+    "seed_id": "S1-033",
+    "skeleton": "w G w for w at w in the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "get paid",
+      "have paid",
+      "pay themselves",
+      "get their pay done"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "get paid",
+    "summary": "Student grape-pickers get paid very well for harvesting Riesling ice wine at three in the morning.",
+    "answer_text": "Student grape-pickers get paid very well for harvesting Riesling ice wine at three in the morning."
+  },
+  {
+    "id": "pv7-D7-072",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The wildlife rangers ___ across the four-lane highway so grizzlies could cross safely.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Лесники организовали постройку (had something done). Вариант 'built...themselves' маловероятен, так как они не строители.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S1-075",
+    "skeleton": "the w G w the w so w could w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "had earth-covered overpasses built",
+      "built earth-covered overpasses themselves",
+      "got built earth-covered overpasses",
+      "had built earth-covered overpasses"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "had earth-covered overpasses built",
+    "summary": "The wildlife rangers had earth-covered overpasses built across the four-lane highway so grizzlies could cross safely.",
+    "answer_text": "The wildlife rangers had earth-covered overpasses built across the four-lane highway so grizzlies could cross safely."
+  },
+  {
+    "id": "pv7-D7-073",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The wildlife photographer waited four hours in a hide, but got tricked by a squirrel sitting on his tripod.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Ошибки нет. Используется get-passive (got tricked) для описания неожиданного и слегка обидного события.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "chat",
+    "seed_id": "S1-078",
+    "skeleton": "the w in a w , but w by a w on his w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "The wildlife photographer waited four hours in a hide, but got tricked by a squirrel sitting on his tripod.",
+    "accepted_answers": [
+      "The wildlife photographer waited four hours in a hide, but got tricked by a squirrel sitting on his tripod."
+    ],
+    "answer_text": "The wildlife photographer waited four hours in a hide, but got tricked by a squirrel sitting on his tripod.",
+    "has_error": false
+  },
+  {
+    "id": "pv7-D7-074",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At five-thirty, the groom has each thoroughbred's hooves pick out and oiled before the string rides onto the heath.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "В конструкции have something done глагол должен стоять в третьей форме (picked out, а не pick out).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "instructions",
+    "seed_id": "S1-079",
+    "skeleton": "at w , the w has each w and w before the w the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "At five-thirty, the groom has each thoroughbred's hooves picked out and oiled before the string rides onto the heath.",
+    "accepted_answers": [
+      "At five-thirty, the groom has each thoroughbred's hooves picked out and oiled before the string rides onto the heath.",
+      "At five-thirty, the groom gets each thoroughbred's hooves picked out and oiled before the string rides onto the heath."
+    ],
+    "answer_text": "At five-thirty, the groom has each thoroughbred's hooves picked out and oiled before the string rides onto the heath.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D7-075",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Green cardamom pods get grading by diameter through brass sieves so the essential oils are preserved.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Get-passive образуется при помощи get + V3 (graded, а не grading).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "process",
+    "seed_id": "S1-100",
+    "skeleton": "w by w so the w are w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "Green cardamom pods get graded by diameter through brass sieves so the essential oils are preserved.",
+    "accepted_answers": [
+      "Green cardamom pods get graded by diameter through brass sieves so the essential oils are preserved."
+    ],
+    "answer_text": "Green cardamom pods get graded by diameter through brass sieves so the essential oils are preserved.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D7-076",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The family in Quebec gets forty litres of sap boiled down into a single litre of amber syrup every March.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Ошибки нет. Конструкция get something done (gets sap boiled down) для организации процесса переработки.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S1-113",
+    "skeleton": "the w in w of w into a w of w EVERY_MARCH .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "The family in Quebec gets forty litres of sap boiled down into a single litre of amber syrup every March.",
+    "accepted_answers": [
+      "The family in Quebec gets forty litres of sap boiled down into a single litre of amber syrup every March.",
+      "The family in Quebec has forty litres of sap boiled down into a single litre of amber syrup every March."
+    ],
+    "answer_text": "The family in Quebec gets forty litres of sap boiled down into a single litre of amber syrup every March.",
+    "has_error": false
+  },
+  {
+    "id": "pv7-D7-077",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "In this San Sebastián tapas bar, toothpicks on your plate are counted to calculate your bill. If you try to pocket one, you will be in trouble. What happens?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Вас поймают (неприятное событие: get caught). Варианты 3 и 4 означают, что вы организовали поимку официанта.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "instructions",
+    "seed_id": "S1-114",
+    "skeleton": "in this w , w on your w are w to w your w . if you w to w , you will be in w . what w ?",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "You get caught by the waiter.",
+      "You catch the waiter.",
+      "You have the waiter caught.",
+      "You get the waiter caught."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "You get caught by the waiter.",
+    "summary": "You get caught by the waiter.",
+    "answer_text": "You get caught by the waiter."
+  },
+  {
+    "id": "pv7-D7-078",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The village baker seals the clay oven door with wet wood ash. He doesn't hire anyone for this; he does it all himself to stop the steam escaping. What does he do?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Пекарь делает это сам, поэтому нужен активный залог, а не каузативная конструкция have/get something done.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "process",
+    "seed_id": "S1-151",
+    "skeleton": "the w the w with w . he w for this ; he does it all w to w the w . what does he do ?",
+    "practice_tenses": [
+      "pv_D7",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D7",
+      "active_other"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "He seals the clay oven door himself.",
+      "He has the clay oven door sealed.",
+      "He gets the clay oven door sealed.",
+      "He gets sealed the clay oven door."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "He seals the clay oven door himself.",
+    "summary": "He seals the clay oven door himself.",
+    "answer_text": "He seals the clay oven door himself."
+  },
+  {
+    "id": "pv7-D7-079",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Salt cod (bacalhau) must soak in water for thirty-six hours, and you need to change the water three times. What must you do?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Повар меняет воду сам (активный залог). Have/get the water changed означало бы, что он просит кого-то другого сделать это.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "instructions",
+    "seed_id": "S1-154",
+    "skeleton": "w G must w in w for w , and you w to w the w . what must you do ?",
+    "practice_tenses": [
+      "pv_D7",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D7",
+      "active_other"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "You must change the water three times.",
+      "You must have the water changed three times.",
+      "You must get the water changed three times.",
+      "You must get changed the water three times."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "You must change the water three times.",
+    "summary": "You must change the water three times.",
+    "answer_text": "You must change the water three times."
+  },
+  {
+    "id": "pv7-D7-080",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Paprika growers string red peppers under the eaves to dry in the autumn sun. They don't pay a factory to dry them. What do they do?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Фермеры сушат перцы сами (активный залог).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "process",
+    "seed_id": "S1-158",
+    "skeleton": "w the w to w in the w . they w a w to w them . what do they do ?",
+    "practice_tenses": [
+      "pv_D7",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D7",
+      "active_other"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "They dry the red peppers in the sun.",
+      "They have the red peppers dried in the sun.",
+      "They get the red peppers dried in the sun.",
+      "They have dried the red peppers in the sun."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "They dry the red peppers in the sun.",
+    "summary": "They dry the red peppers in the sun.",
+    "answer_text": "They dry the red peppers in the sun."
+  },
+  {
+    "id": "pv7-D7-081",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The gardening club planted forty pumpkin seeds in April, but half of them (to eat) by slugs.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Семена были съедены (неприятное событие — got eaten).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S1-191",
+    "skeleton": "the w in w , but w of them G by w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-081-b1",
+        "answer": "got eaten",
+        "accepted_answers": [
+          "got eaten",
+          "were eaten"
+        ],
+        "base_verb": "to eat",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Семена были съедены (неприятное событие — got eaten).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "The gardening club planted forty pumpkin seeds in April, but half of them got eaten by slugs."
+  },
+  {
+    "id": "pv7-D7-082",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At twenty past twelve, desks are pushed together and the pupils (to serve) hot curry and milk by the class monitors.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Учеников обслуживают дежурные (get served).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "report",
+    "seed_id": "S1-193",
+    "skeleton": "at w , w are w and the w G w and w by the w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-082-b1",
+        "answer": "get served",
+        "accepted_answers": [
+          "get served",
+          "are served",
+          "'re served"
+        ],
+        "base_verb": "to serve",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Учеников обслуживают дежурные (get served).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "At twenty past twelve, desks are pushed together and the pupils get served hot curry and milk by the class monitors."
+  },
+  {
+    "id": "pv7-D7-083",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "While shifting crates in the Leiden library basement, the student assistant (to cover) in decades of dust.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Студентка испачкалась (got covered — неформальный get-passive для случайного события).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "news",
+    "seed_id": "S2-026",
+    "skeleton": "while w in the w , the w G in w of w .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_get"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-083-b1",
+        "answer": "got covered",
+        "accepted_answers": [
+          "got covered",
+          "was covered"
+        ],
+        "base_verb": "to cover",
+        "supplied_words": [],
+        "tense_or_construction": "pv_get",
+        "voice": "passive",
+        "explanation_ru": "Студентка испачкалась (got covered — неформальный get-passive для случайного события).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "While shifting crates in the Leiden library basement, the student assistant got covered in decades of dust."
+  },
+  {
+    "id": "pv7-D8-001",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Drivers on Lake Baikal (not / to allow / leave) the flagged ice lane.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Запрет в пассиве: be not allowed + to-инфинитив. Водителям не разрешают съезжать с трассы.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S1-037",
+    "skeleton": "w on w G the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-001-b1",
+        "answer": "are not allowed to leave",
+        "accepted_answers": [
+          "are not allowed to leave",
+          "'re not allowed to leave",
+          "aren't allowed to leave"
+        ],
+        "base_verb": "not / to allow / leave",
+        "supplied_words": [
+          "not",
+          "leave"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Запрет в пассиве: be not allowed + to-инфинитив. Водителям не разрешают съезжать с трассы.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Drivers on Lake Baikal are not allowed to leave the flagged ice lane."
+  },
+  {
+    "id": "pv7-D8-002",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I (to make / collect) three signatures from different deans before getting my grant.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После пассивного make обязательно ставится частица to: was made to collect.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "email",
+    "seed_id": "S2-035",
+    "skeleton": "i G w from w before w my w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-002-b1",
+        "answer": "was made to collect",
+        "accepted_answers": [
+          "was made to collect"
+        ],
+        "base_verb": "to make / collect",
+        "supplied_words": [
+          "collect"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "После пассивного make обязательно ставится частица to: was made to collect.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "I was made to collect three signatures from different deans before getting my grant."
+  },
+  {
+    "id": "pv7-D8-003",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "In small Roman pharmacies, customers (not / to allow / pick) items off the shelves.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Конструкция be not allowed to do описывает правило, действующее постоянно (Present Simple).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S2-147",
+    "skeleton": "in w , w G w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-003-b1",
+        "answer": "are not allowed to pick",
+        "accepted_answers": [
+          "are not allowed to pick",
+          "'re not allowed to pick",
+          "aren't allowed to pick"
+        ],
+        "base_verb": "not / to allow / pick",
+        "supplied_words": [
+          "not",
+          "pick"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Конструкция be not allowed to do описывает правило, действующее постоянно (Present Simple).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "In small Roman pharmacies, customers are not allowed to pick items off the shelves."
+  },
+  {
+    "id": "pv7-D8-004",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Petrol cars (not / to allow / enter) the streets of Zermatt, so electric carts carry luggage.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Постоянный запрет в пассиве: are not allowed to enter.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "report",
+    "seed_id": "S3-027",
+    "skeleton": "w G the w of w , so w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-004-b1",
+        "answer": "are not allowed to enter",
+        "accepted_answers": [
+          "are not allowed to enter",
+          "'re not allowed to enter",
+          "aren't allowed to enter"
+        ],
+        "base_verb": "not / to allow / enter",
+        "supplied_words": [
+          "not",
+          "enter"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Постоянный запрет в пассиве: are not allowed to enter.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Petrol cars are not allowed to enter the streets of Zermatt, so electric carts carry luggage."
+  },
+  {
+    "id": "pv7-D8-005",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Visiting sixth-formers (to ask / leave) their watches in a tray outside the Faraday cage.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Правило безопасности в настоящем времени: be asked + to-инфинитив.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S4-054",
+    "skeleton": "w G their w in a w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-005-b1",
+        "answer": "are asked to leave",
+        "accepted_answers": [
+          "are asked to leave",
+          "'re asked to leave"
+        ],
+        "base_verb": "to ask / leave",
+        "supplied_words": [
+          "leave"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Правило безопасности в настоящем времени: be asked + to-инфинитив.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Visiting sixth-formers are asked to leave their watches in a tray outside the Faraday cage."
+  },
+  {
+    "id": "pv7-D8-006",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Are Oxford students really (to allow / ask) for a free pint of beer during exams?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В вопросе вспомогательный глагол Are уже вынесен в начало, остаётся allowed + to-инфинитив.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "dialogue",
+    "seed_id": "S5-021",
+    "skeleton": "are w G for a w of w ?",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-006-b1",
+        "answer": "allowed to ask",
+        "accepted_answers": [
+          "allowed to ask"
+        ],
+        "base_verb": "to allow / ask",
+        "supplied_words": [
+          "ask"
+        ],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "В вопросе вспомогательный глагол Are уже вынесен в начало, остаётся allowed + to-инфинитив.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Are Oxford students really allowed to ask for a free pint of beer during exams?"
+  },
+  {
+    "id": "pv7-D8-007",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Dog owners (to expect / keep) their pets on a lead near the park pond.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Формальное требование на табличке: be expected + to-инфинитив.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "notice",
+    "seed_id": "S5-122",
+    "skeleton": "w G their w on a w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-007-b1",
+        "answer": "are expected to keep",
+        "accepted_answers": [
+          "are expected to keep",
+          "'re expected to keep"
+        ],
+        "base_verb": "to expect / keep",
+        "supplied_words": [
+          "keep"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Формальное требование на табличке: be expected + to-инфинитив.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Dog owners are expected to keep their pets on a lead near the park pond."
+  },
+  {
+    "id": "pv7-D8-008",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Why (diplomatic bags / not / to make / go) through airport X-ray scanners like ordinary luggage?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Отрицательный вопрос в пассиве с make: после made обязательно нужен инфинитив с to (to go).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "report",
+    "seed_id": "S2-191",
+    "skeleton": "why G w ?",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-008-b1",
+        "answer": "are diplomatic bags not made to go",
+        "accepted_answers": [
+          "are diplomatic bags not made to go",
+          "'re diplomatic bags not made to go",
+          "aren't diplomatic bags made to go"
+        ],
+        "base_verb": "diplomatic bags / not / to make / go",
+        "supplied_words": [
+          "diplomatic bags",
+          "not",
+          "go"
+        ],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "Отрицательный вопрос в пассиве с make: после made обязательно нужен инфинитив с to (to go).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Why are diplomatic bags not made to go through airport X-ray scanners like ordinary luggage?"
+  },
+  {
+    "id": "pv7-D8-009",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Road-train drivers (to make / unhook) their massive trailers at the city perimeter because they cannot fit on roundabouts.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Водителей заставляют отцеплять прицепы (регулярное правило). В пассиве после make ставится to.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "report",
+    "seed_id": "S3-063",
+    "skeleton": "w G their w at the w because they w on w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-009-b1",
+        "answer": "are made to unhook",
+        "accepted_answers": [
+          "are made to unhook",
+          "'re made to unhook"
+        ],
+        "base_verb": "to make / unhook",
+        "supplied_words": [
+          "unhook"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Водителей заставляют отцеплять прицепы (регулярное правило). В пассиве после make ставится to.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Road-train drivers are made to unhook their massive trailers at the city perimeter because they cannot fit on roundabouts."
+  },
+  {
+    "id": "pv7-D8-010",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Before stepping past the yellow magnetic-field line, I (to tell / remove) even my metal hairclips.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Пассивная конструкция be told + to-инфинитив: мне велели снять заколки.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S4-088",
+    "skeleton": "before w the w , i G w my w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-010-b1",
+        "answer": "was told to remove",
+        "accepted_answers": [
+          "was told to remove"
+        ],
+        "base_verb": "to tell / remove",
+        "supplied_words": [
+          "remove"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Пассивная конструкция be told + to-инфинитив: мне велели снять заколки.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Before stepping past the yellow magnetic-field line, I was told to remove even my metal hairclips."
+  },
+  {
+    "id": "pv7-D8-011",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The server outage in Oregon (to make / us / sit) in a completely dark hallway when we got home.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Здесь активный залог (сбой заставил нас сидеть), поэтому после make частица to не ставится.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "dialogue",
+    "seed_id": "S4-123",
+    "skeleton": "the w in w G in a w when we w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_past_simple"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_past_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-011-b1",
+        "answer": "made us sit",
+        "accepted_answers": [
+          "made us sit"
+        ],
+        "base_verb": "to make / us / sit",
+        "supplied_words": [
+          "us",
+          "sit"
+        ],
+        "tense_or_construction": "active_past_simple",
+        "voice": "active",
+        "explanation_ru": "Здесь активный залог (сбой заставил нас сидеть), поэтому после make частица to не ставится.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "The server outage in Oregon made us sit in a completely dark hallway when we got home."
+  },
+  {
+    "id": "pv7-D8-012",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At Sydney customs, wood-boring beetles (to hear / chew) loudly inside a tourist's wooden carving.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол восприятия hear в пассиве: чтобы показать процесс, используется причастие (were heard chewing).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "report",
+    "seed_id": "S4-198",
+    "skeleton": "at w , w G w a w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-012-b1",
+        "answer": "were heard chewing",
+        "accepted_answers": [
+          "were heard chewing",
+          "were heard to chew"
+        ],
+        "base_verb": "to hear / chew",
+        "supplied_words": [
+          "chew"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "Глагол восприятия hear в пассиве: чтобы показать процесс, используется причастие (were heard chewing).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "At Sydney customs, wood-boring beetles were heard chewing loudly inside a tourist's wooden carving."
+  },
+  {
+    "id": "pv7-D8-013",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our shy new intern (to hear / sing) brilliantly at karaoke, so everyone immediately demanded an encore.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После пассивного hear нельзя ставить голый инфинитив (sing) — нужно либо -ing (процесс), либо to sing.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "chat",
+    "seed_id": "S5-099",
+    "skeleton": "our w G w at w , so w an w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-013-b1",
+        "answer": "was heard singing",
+        "accepted_answers": [
+          "was heard singing",
+          "was heard to sing"
+        ],
+        "base_verb": "to hear / sing",
+        "supplied_words": [
+          "sing"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "После пассивного hear нельзя ставить голый инфинитив (sing) — нужно либо -ing (процесс), либо to sing.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Our shy new intern was heard singing brilliantly at karaoke, so everyone immediately demanded an encore."
+  },
+  {
+    "id": "pv7-D8-014",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "In Arbroath, salted haddock (to leave / hang) over smouldering oak barrels for forty-five minutes until copper-gold.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Регулярный процесс копчения: рыбу оставляют висеть (is left to hang / hanging).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "process",
+    "seed_id": "S1-118",
+    "skeleton": "in w , w G over w for w until w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-014-b1",
+        "answer": "is left to hang",
+        "accepted_answers": [
+          "is left to hang",
+          "'s left to hang",
+          "is left hanging",
+          "'s left hanging"
+        ],
+        "base_verb": "to leave / hang",
+        "supplied_words": [
+          "hang"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Регулярный процесс копчения: рыбу оставляют висеть (is left to hang / hanging).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "In Arbroath, salted haddock is left to hang over smouldering oak barrels for forty-five minutes until copper-gold."
+  },
+  {
+    "id": "pv7-D8-015",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Because the frosted film only covered the middle of the glass, the directors' shoes (to see / kick) under the table.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Пассив с глаголом восприятия see + -ing подчёркивает, что действие было видно в процессе.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "chat",
+    "seed_id": "S2-074",
+    "skeleton": "because the w the w of the w , the w G w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-015-b1",
+        "answer": "were seen kicking",
+        "accepted_answers": [
+          "were seen kicking",
+          "could be seen kicking"
+        ],
+        "base_verb": "to see / kick",
+        "supplied_words": [
+          "kick"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "Пассив с глаголом восприятия see + -ing подчёркивает, что действие было видно в процессе.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Because the frosted film only covered the middle of the glass, the directors' shoes were seen kicking under the table."
+  },
+  {
+    "id": "pv7-D8-016",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "During a force-seven gale, the newly qualified pilot (to see / climb) the rope ladder up the ship's hull.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В пассиве после see используется -ing (процесс) или инфинитив с to (завершённое действие), но не голый инфинитив.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "report",
+    "seed_id": "S2-117",
+    "skeleton": "w a w , the w G the w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-016-b1",
+        "answer": "was seen climbing",
+        "accepted_answers": [
+          "was seen climbing",
+          "was seen to climb"
+        ],
+        "base_verb": "to see / climb",
+        "supplied_words": [
+          "climb"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "В пассиве после see используется -ing (процесс) или инфинитив с to (завершённое действие), но не голый инфинитив.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "During a force-seven gale, the newly qualified pilot was seen climbing the rope ladder up the ship's hull."
+  },
+  {
+    "id": "pv7-D8-017",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "No examiner (to allow / destroy) written exam booklets until thirteen months have passed after results day.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Отрицание уже выражено словом No, поэтому глагол стоит в утвердительной форме пассива: is allowed to destroy.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "notice",
+    "seed_id": "S2-039",
+    "skeleton": "no w G w until w have w after w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-017-b1",
+        "answer": "is allowed to destroy",
+        "accepted_answers": [
+          "is allowed to destroy",
+          "'s allowed to destroy"
+        ],
+        "base_verb": "to allow / destroy",
+        "supplied_words": [
+          "destroy"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Отрицание уже выражено словом No, поэтому глагол стоит в утвердительной форме пассива: is allowed to destroy.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "No examiner is allowed to destroy written exam booklets until thirteen months have passed after results day."
+  },
+  {
+    "id": "pv7-D8-018",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "After the triumphal scene in Verona, stage sweepers (to make / vacuum) forty barrow-loads of red confetti in twelve minutes.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Регулярная обязанность в театре: после пассивного make обязательно требуется to.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "report",
+    "seed_id": "S3-197",
+    "skeleton": "after the w in w , w G w of w in w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-018-b1",
+        "answer": "are made to vacuum",
+        "accepted_answers": [
+          "are made to vacuum",
+          "'re made to vacuum"
+        ],
+        "base_verb": "to make / vacuum",
+        "supplied_words": [
+          "vacuum"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Регулярная обязанность в театре: после пассивного make обязательно требуется to.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "After the triumphal scene in Verona, stage sweepers are made to vacuum forty barrow-loads of red confetti in twelve minutes."
+  },
+  {
+    "id": "pv7-D8-019",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Before it was cleared for launch, the camera lens assembly (to make / spin) at twelve G on an eight-metre arm.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Инженеры заставили блок вращаться (пассив в прошлом: was made + to-инфинитив).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "report",
+    "seed_id": "S4-080",
+    "skeleton": "before it was w for w , the w G at w on an w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-019-b1",
+        "answer": "was made to spin",
+        "accepted_answers": [
+          "was made to spin"
+        ],
+        "base_verb": "to make / spin",
+        "supplied_words": [
+          "spin"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Инженеры заставили блок вращаться (пассив в прошлом: was made + to-инфинитив).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Before it was cleared for launch, the camera lens assembly was made to spin at twelve G on an eight-metre arm."
+  },
+  {
+    "id": "pv7-D8-020",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Because master passwords are encrypted locally, company staff (not / to allow / access) your vault even under a court order.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Сотрудникам не разрешено (и технически невозможно) получать доступ: are not allowed to access.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S4-132",
+    "skeleton": "because w are w , w G your w a w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-020-b1",
+        "answer": "are not allowed to access",
+        "accepted_answers": [
+          "are not allowed to access",
+          "'re not allowed to access",
+          "aren't allowed to access"
+        ],
+        "base_verb": "not / to allow / access",
+        "supplied_words": [
+          "not",
+          "access"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Сотрудникам не разрешено (и технически невозможно) получать доступ: are not allowed to access.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Because master passwords are encrypted locally, company staff are not allowed to access your vault even under a court order."
+  },
+  {
+    "id": "pv7-D8-021",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "In fifteenth-century Estonia, anyone who (to catch / throw) rubbish into the market well faced a heavy fine.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После пассивного catch (быть пойманным за чем-либо) используется причастие с -ing: was caught throwing.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "history",
+    "seed_id": "S5-009",
+    "skeleton": "in w , w who G w into the w a w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-021-b1",
+        "answer": "was caught throwing",
+        "accepted_answers": [
+          "was caught throwing"
+        ],
+        "base_verb": "to catch / throw",
+        "supplied_words": [
+          "throw"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "После пассивного catch (быть пойманным за чем-либо) используется причастие с -ing: was caught throwing.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "In fifteenth-century Estonia, anyone who was caught throwing rubbish into the market well faced a heavy fine."
+  },
+  {
+    "id": "pv7-D8-022",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "During the Melbourne tramway test, a dummy pram (to see / roll) onto the wet rails from behind a parked van.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Описание стандартного теста в Present Simple. После пассивного see ставится -ing или to-инфинитив.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "process",
+    "seed_id": "S2-110",
+    "skeleton": "w the w , a w G w the w from w a w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-022-b1",
+        "answer": "was seen rolling",
+        "accepted_answers": [
+          "was seen rolling",
+          "is seen rolling",
+          "'s seen rolling",
+          "is seen to roll",
+          "'s seen to roll",
+          "was seen to roll"
+        ],
+        "base_verb": "to see / roll",
+        "supplied_words": [
+          "roll"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "Описание стандартного теста в Present Simple. После пассивного see ставится -ing или to-инфинитив.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "During the Melbourne tramway test, a dummy pram was seen rolling onto the wet rails from behind a parked van."
+  },
+  {
+    "id": "pv7-D8-023",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our Pyrenean campsite laundry has strict hours. Guests (not / to allow / use) ordinary coins in the machines. Instead, we (to ask / buy) brass tokens from the bread van between eight and nine.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Оба пропуска описывают действующие правила кемпинга в пассиве: be not allowed to do и be asked to do.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "notice",
+    "seed_id": "S2-192",
+    "skeleton": "our w has w . w G w in the w . w , we G w from the w and w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-023-b1",
+        "answer": "are not allowed to use",
+        "accepted_answers": [
+          "are not allowed to use",
+          "'re not allowed to use",
+          "aren't allowed to use"
+        ],
+        "base_verb": "not / to allow / use",
+        "supplied_words": [
+          "not",
+          "use"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Оба пропуска описывают действующие правила кемпинга в пассиве: be not allowed to do и be asked to do.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-023-b2",
+        "answer": "are asked to buy",
+        "accepted_answers": [
+          "are asked to buy",
+          "'re asked to buy"
+        ],
+        "base_verb": "to ask / buy",
+        "supplied_words": [
+          "buy"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Оба пропуска описывают действующие правила кемпинга в пассиве: be not allowed to do и be asked to do.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Our Pyrenean campsite laundry has strict hours. Guests are not allowed to use ordinary coins in the machines. Instead, we are asked to buy brass tokens from the bread van between eight and nine."
+  },
+  {
+    "id": "pv7-D8-024",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Security in this Singapore hotel is tight. Visitors (not / to allow / press) the residential floor buttons without a keycard. The system (to make / you / tap) your card against the brass reader first.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом случае пассив с to (are not allowed to press). Во втором — активный глагол make, после которого to не ставится (makes you tap).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S3-036",
+    "skeleton": "w in this w is w . w G the w a w . the w G your w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow",
+      "active_present_simple"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-024-b1",
+        "answer": "are not allowed to press",
+        "accepted_answers": [
+          "are not allowed to press",
+          "'re not allowed to press",
+          "aren't allowed to press"
+        ],
+        "base_verb": "not / to allow / press",
+        "supplied_words": [
+          "not",
+          "press"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "В первом случае пассив с to (are not allowed to press). Во втором — активный глагол make, после которого to не ставится (makes you tap).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-024-b2",
+        "answer": "makes you tap",
+        "accepted_answers": [
+          "makes you tap"
+        ],
+        "base_verb": "to make / you / tap",
+        "supplied_words": [
+          "you",
+          "tap"
+        ],
+        "tense_or_construction": "active_present_simple",
+        "voice": "active",
+        "explanation_ru": "В первом случае пассив с to (are not allowed to press). Во втором — активный глагол make, после которого to не ставится (makes you tap).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Security in this Singapore hotel is tight. Visitors are not allowed to press the residential floor buttons without a keycard. The system makes you tap your card against the brass reader first."
+  },
+  {
+    "id": "pv7-D8-025",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My teenage son in Oslo never cleans up on his own. Yesterday, I (to make / him / tidy) his bedroom before his mates arrived. He (to hear / grumble) loudly behind the closed door for twenty minutes.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассивном предложении с hear используется -ing (was heard grumbling).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "chat",
+    "seed_id": "S5-062",
+    "skeleton": "my w in w never w on his w . YESTERDAY , i G his w before his w . he G w the w for w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_past_simple",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_past_simple",
+      "pv_perception"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-025-b1",
+        "answer": "made him tidy",
+        "accepted_answers": [
+          "made him tidy"
+        ],
+        "base_verb": "to make / him / tidy",
+        "supplied_words": [
+          "him",
+          "tidy"
+        ],
+        "tense_or_construction": "active_past_simple",
+        "voice": "active",
+        "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассивном предложении с hear используется -ing (was heard grumbling).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-025-b2",
+        "answer": "was heard grumbling",
+        "accepted_answers": [
+          "was heard grumbling",
+          "was heard to grumble"
+        ],
+        "base_verb": "to hear / grumble",
+        "supplied_words": [
+          "grumble"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассивном предложении с hear используется -ing (was heard grumbling).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "My teenage son in Oslo never cleans up on his own. Yesterday, I made him tidy his bedroom before his mates arrived. He was heard grumbling loudly behind the closed door for twenty minutes."
+  },
+  {
+    "id": "pv7-D8-026",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Six interrailers learnt the Ljubljana hostel rules the hard way. All guests (to tell / write) their name and checkout date on fridge items. Unlabelled food is declared free at nine, so we watched as our own yoghurt (to eat) by a stranger!",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "are told to write — гостям велят (правило). Йогурт съел незнакомец — пассив was eaten / was being eaten.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "notice",
+    "seed_id": "S2-194",
+    "skeleton": "w the w the w . all w G their w and w on w . w is w at w , so we w as our w G by a w !",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow",
+      "pv_past_simple"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow",
+      "pv_past_simple"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-026-b1",
+        "answer": "are told to write",
+        "accepted_answers": [
+          "are told to write",
+          "'re told to write"
+        ],
+        "base_verb": "to tell / write",
+        "supplied_words": [
+          "write"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "are told to write — гостям велят (правило). Йогурт съел незнакомец — пассив was eaten / was being eaten.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-026-b2",
+        "answer": "was eaten",
+        "accepted_answers": [
+          "was eaten",
+          "was being eaten"
+        ],
+        "base_verb": "to eat",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_simple",
+        "voice": "passive",
+        "explanation_ru": "are told to write — гостям велят (правило). Йогурт съел незнакомец — пассив was eaten / was being eaten.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Six interrailers learnt the Ljubljana hostel rules the hard way. All guests are told to write their name and checkout date on fridge items. Unlabelled food is declared free at nine, so we watched as our own yoghurt was eaten by a stranger!"
+  },
+  {
+    "id": "pv7-D8-027",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Before the Tbilisi cable car opens at seven, engineers run a safety check. Passengers (not / to allow / board) until an empty cabin full of sandbags completes a full trip. That test car (to see / glide) over the gorge every morning at dawn.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Запрет в пассиве (are not allowed to board) и глагол восприятия see в пассиве с -ing (is seen gliding) для описания регулярного процесса.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "process",
+    "seed_id": "S3-072",
+    "skeleton": "before the w at w , w a w . w G until an w of w a w . that w G over the w EVERY_MORNING at w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow",
+      "pv_perception"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-027-b1",
+        "answer": "are not allowed to board",
+        "accepted_answers": [
+          "are not allowed to board",
+          "'re not allowed to board",
+          "aren't allowed to board"
+        ],
+        "base_verb": "not / to allow / board",
+        "supplied_words": [
+          "not",
+          "board"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Запрет в пассиве (are not allowed to board) и глагол восприятия see в пассиве с -ing (is seen gliding) для описания регулярного процесса.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-027-b2",
+        "answer": "is seen gliding",
+        "accepted_answers": [
+          "is seen gliding",
+          "'s seen gliding",
+          "can be seen gliding"
+        ],
+        "base_verb": "to see / glide",
+        "supplied_words": [
+          "glide"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "Запрет в пассиве (are not allowed to board) и глагол восприятия see в пассиве с -ing (is seen gliding) для описания регулярного процесса.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Before the Tbilisi cable car opens at seven, engineers run a safety check. Passengers are not allowed to board until an empty cabin full of sandbags completes a full trip. That test car is seen gliding over the gorge every morning at dawn."
+  },
+  {
+    "id": "pv7-D8-028",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our health centre in Inverness recently upgraded its reception. Patients (to encourage / use) the new touchscreen kiosk in Gaelic or Polish. Because it prints a numbered slip, nobody's name (to hear / echo) across the waiting room anymore.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом случае пассив с инфинитивом (are encouraged to use). Во втором — пассивный глагол восприятия hear + -ing.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "notice",
+    "seed_id": "S4-093",
+    "skeleton": "our w in w RECENTLY w its w . w G the w in w or w . because it w a w , w G w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow",
+      "pv_perception"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-028-b1",
+        "answer": "are encouraged to use",
+        "accepted_answers": [
+          "are encouraged to use",
+          "'re encouraged to use"
+        ],
+        "base_verb": "to encourage / use",
+        "supplied_words": [
+          "use"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "В первом случае пассив с инфинитивом (are encouraged to use). Во втором — пассивный глагол восприятия hear + -ing.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-028-b2",
+        "answer": "is heard echoing",
+        "accepted_answers": [
+          "is heard echoing",
+          "'s heard echoing"
+        ],
+        "base_verb": "to hear / echo",
+        "supplied_words": [
+          "echo"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "В первом случае пассив с инфинитивом (are encouraged to use). Во втором — пассивный глагол восприятия hear + -ing.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Our health centre in Inverness recently upgraded its reception. Patients are encouraged to use the new touchscreen kiosk in Gaelic or Polish. Because it prints a numbered slip, nobody's name is heard echoing across the waiting room anymore."
+  },
+  {
+    "id": "pv7-D8-029",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Chinese New Year traditions are taken seriously in our London family. Children (to allow / open) their red envelopes only after wishing their elders good health. However, relatives (to expect / avoid) giving any amount containing the number four.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Обе части описывают семейные правила в настоящем времени: be allowed + to-инфинитив и be expected + to-инфинитив.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S5-096",
+    "skeleton": "w are w in our w . w G their w after w their w . w , w G w any w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-029-b1",
+        "answer": "are allowed to open",
+        "accepted_answers": [
+          "are allowed to open",
+          "'re allowed to open"
+        ],
+        "base_verb": "to allow / open",
+        "supplied_words": [
+          "open"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Обе части описывают семейные правила в настоящем времени: be allowed + to-инфинитив и be expected + to-инфинитив.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-029-b2",
+        "answer": "are expected to avoid",
+        "accepted_answers": [
+          "are expected to avoid",
+          "'re expected to avoid"
+        ],
+        "base_verb": "to expect / avoid",
+        "supplied_words": [
+          "avoid"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Обе части описывают семейные правила в настоящем времени: be allowed + to-инфинитив и be expected + to-инфинитив.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Chinese New Year traditions are taken seriously in our London family. Children are allowed to open their red envelopes only after wishing their elders good health. However, relatives are expected to avoid giving any amount containing the number four."
+  },
+  {
+    "id": "pv7-D8-030",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Running a steam locomotive in Pickering requires an early start. Volunteer firemen (to make / light) the boiler with oily rags five hours before departure. Until the pressure gauge hits the red mark, the driver (not / to allow / move) the engine out of the shed.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "После пассивного make ставится to (are made to light). Во втором пропуске — запрет в пассиве (is not allowed to move).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S3-074",
+    "skeleton": "w a w in w an w . w G the w with w before w . until the w the w , the w G the w of the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-030-b1",
+        "answer": "are made to light",
+        "accepted_answers": [
+          "are made to light",
+          "'re made to light"
+        ],
+        "base_verb": "to make / light",
+        "supplied_words": [
+          "light"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "После пассивного make ставится to (are made to light). Во втором пропуске — запрет в пассиве (is not allowed to move).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-030-b2",
+        "answer": "is not allowed to move",
+        "accepted_answers": [
+          "is not allowed to move",
+          "'s not allowed to move",
+          "isn't allowed to move"
+        ],
+        "base_verb": "not / to allow / move",
+        "supplied_words": [
+          "not",
+          "move"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "После пассивного make ставится to (are made to light). Во втором пропуске — запрет в пассиве (is not allowed to move).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Running a steam locomotive in Pickering requires an early start. Volunteer firemen are made to light the boiler with oily rags five hours before departure. Until the pressure gauge hits the red mark, the driver is not allowed to move the engine out of the shed."
+  },
+  {
+    "id": "pv7-D8-031",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Police horses in London undergo months of calm desensitisation. Before stadium duty, each horse (to make / walk) over rustling tarpaulins and smoke flares. Trainers never (to let / a horse / panic); instead, they reward every steady step.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В пассиве после make нужно to (is made to walk). Глагол let используется в активе без частицы to (let a horse panic).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "report",
+    "seed_id": "S4-200",
+    "skeleton": "w in w of w . before w , each w G over w and w . w never G ; w , they w EVERY_STEADY w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow",
+      "active_present_simple"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-031-b1",
+        "answer": "is made to walk",
+        "accepted_answers": [
+          "is made to walk",
+          "'s made to walk"
+        ],
+        "base_verb": "to make / walk",
+        "supplied_words": [
+          "walk"
+        ],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "В пассиве после make нужно to (is made to walk). Глагол let используется в активе без частицы to (let a horse panic).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-031-b2",
+        "answer": "let a horse panic",
+        "accepted_answers": [
+          "let a horse panic"
+        ],
+        "base_verb": "to let / a horse / panic",
+        "supplied_words": [
+          "a horse",
+          "panic"
+        ],
+        "tense_or_construction": "active_present_simple",
+        "voice": "active",
+        "explanation_ru": "В пассиве после make нужно to (is made to walk). Глагол let используется в активе без частицы to (let a horse panic).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Police horses in London undergo months of calm desensitisation. Before stadium duty, each horse is made to walk over rustling tarpaulins and smoke flares. Trainers never let a horse panic; instead, they reward every steady step."
+  },
+  {
+    "id": "pv7-D8-032",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our Kraków payroll office gave everyone a surprise before the holidays. Although salaries arrived three days early, a server bug (to make / the payslips / show) the year 1970. Several confused staff members (to hear / joke) about getting paid in vintage banknotes.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Активный make не требует to (made the payslips show). Пассивный hear + -ing (were heard joking) передаёт процесс.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "email",
+    "seed_id": "S2-079",
+    "skeleton": "our w a w before the w . w , a w G the w 1970 . w G about w in w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_past_simple",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_past_simple",
+      "pv_perception"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "pv7-D8-032-b1",
+        "answer": "made the payslips show",
+        "accepted_answers": [
+          "made the payslips show"
+        ],
+        "base_verb": "to make / the payslips / show",
+        "supplied_words": [
+          "the payslips",
+          "show"
+        ],
+        "tense_or_construction": "active_past_simple",
+        "voice": "active",
+        "explanation_ru": "Активный make не требует to (made the payslips show). Пассивный hear + -ing (were heard joking) передаёт процесс.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      },
+      {
+        "id": "pv7-D8-032-b2",
+        "answer": "were heard joking",
+        "accepted_answers": [
+          "were heard joking"
+        ],
+        "base_verb": "to hear / joke",
+        "supplied_words": [
+          "joke"
+        ],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "Активный make не требует to (made the payslips show). Пассивный hear + -ing (were heard joking) передаёт процесс.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Our Kraków payroll office gave everyone a surprise before the holidays. Although salaries arrived three days early, a server bug made the payslips show the year 1970. Several confused staff members were heard joking about getting paid in vintage banknotes."
+  },
+  {
+    "id": "pv7-D8-033",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Whenever the coastguard helicopter approaches Plymouth hospital, pedestrians ___ cross the roof car park.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол let не употребляется в пассиве; для запрета используется be not allowed + to-инфинитив.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "notice",
+    "seed_id": "S4-105",
+    "skeleton": "w the w , w G w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "aren't let to",
+      "aren't allowed to",
+      "don't allow to",
+      "aren't allowed"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "aren't allowed to",
+    "summary": "Whenever the coastguard helicopter approaches Plymouth hospital, pedestrians aren't allowed to cross the roof car park.",
+    "answer_text": "Whenever the coastguard helicopter approaches Plymouth hospital, pedestrians aren't allowed to cross the roof car park."
+  },
+  {
+    "id": "pv7-D8-034",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At our Warsaw Christmas Eve dinner, an empty chair ___ at the table for an unexpected guest.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Ожидается, что стул будет оставлен: is expected + пассивный инфинитив to be left.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "dialogue",
+    "seed_id": "S5-045",
+    "skeleton": "at our w , an w G at the w for an w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "is always made leave",
+      "is always allowed leaving",
+      "is always expected to be left",
+      "always lets to leave"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "is always expected to be left",
+    "summary": "At our Warsaw Christmas Eve dinner, an empty chair is always expected to be left at the table for an unexpected guest.",
+    "answer_text": "At our Warsaw Christmas Eve dinner, an empty chair is always expected to be left at the table for an unexpected guest."
+  },
+  {
+    "id": "pv7-D8-035",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Before trading in a tablet in Birmingham, customers ___ sign out of their cloud accounts.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В пассивном залоге после глагола make обязательно нужна частица to: are made to sign out.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "instructions",
+    "seed_id": "S4-145",
+    "skeleton": "before w in a w in w , w G w of their w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "are made",
+      "are made to",
+      "make to",
+      "are let to"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "are made to",
+    "summary": "Before trading in a tablet in Birmingham, customers are made to sign out of their cloud accounts.",
+    "answer_text": "Before trading in a tablet in Birmingham, customers are made to sign out of their cloud accounts."
+  },
+  {
+    "id": "pv7-D8-036",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "In medieval Bruges, merchants ___ break the wax seal on a contract unless the deal was officially cancelled.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол let не образует пассив (weren't let). Правильно: weren't allowed to break.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "history",
+    "seed_id": "S5-017",
+    "skeleton": "in w , w G w the w on a w the w was w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "weren't let",
+      "weren't allowed to",
+      "weren't allowed",
+      "didn't allow to"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "weren't allowed to",
+    "summary": "In medieval Bruges, merchants weren't allowed to break the wax seal on a contract unless the deal was officially cancelled.",
+    "answer_text": "In medieval Bruges, merchants weren't allowed to break the wax seal on a contract unless the deal was officially cancelled."
+  }
+]

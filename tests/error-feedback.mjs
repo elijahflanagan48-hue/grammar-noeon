@@ -104,7 +104,7 @@ const hostile = ctx.errorExplanations([{...wrong.fields[0],diagnostic:{version:1
 assert(!hostile.includes('<img')); assert(hostile.includes('&lt;img'));
 // Grading accepts all reviewed answers without creating an error diagnosis.
 for (const item of bank) {
-  const submitted = item.options ? item.correct_option_index : item.blanks.map(b => b.answer);
+  const submitted = item.options ? item.correct_option_index : item.type === 'error_fix' ? item.answer : item.blanks.map(b => b.answer);
   assert(grade(item, submitted).fields.every(f => !f.diagnostic), item.id);
 }
 console.log(`Error feedback: ${checked} positive/negative cases; all ${bank.length} canonical answers, browser/Worker parity, stored reports, legacy neutrality and escaping passed.`);

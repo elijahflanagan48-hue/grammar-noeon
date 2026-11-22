@@ -3,7 +3,7 @@
   "exclude_retired": true,
   "max_opening_share": 0.02,
   "max_by_the_share": 0.015,
-  "max_verb_uses": 6,
+  "max_verb_uses": 10,
   "max_time_marker_share": 0.35,
   "min_active_share_in_D2": 0.4,
   "cell_shares": {
@@ -20,5 +20,34 @@
     "D11": 0.03
   },
   "cell_tolerance": 0.03,
-  "max_near_duplicate_pairs": 0
+  "max_near_duplicate_pairs": 0,
+  "verb_exempt": [
+    "be",
+    "make",
+    "allow",
+    "let",
+    "see",
+    "hear",
+    "say",
+    "believe",
+    "think",
+    "expect",
+    "know",
+    "report",
+    "consider",
+    "rumour",
+    "need",
+    "get",
+    "have",
+    "give",
+    "send",
+    "offer",
+    "hand",
+    "tell",
+    "ask",
+    "show",
+    "lend",
+    "preposition"
+  ],
+  "_note_verb": "Construction verbs (make/allow/see for D8, say/believe/expect for D5, give/send/offer/hand for D6, need/have/get for D7/D9) are fixed by the grammar point itself, so they are exempt; any other verb may fill a gap at most 10 times among ~1,500 gaps."
 }

@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "content_version": "tenses-2026-11-09.1",
   "editorial_language": "British English",
-  "total_items": 10919,
-  "answer_slots": 13702,
+  "total_items": 11854,
+  "answer_slots": 14959,
   "excluded_non_publishable": 62,
   "levels": {
     "A1": 51,
@@ -13,18 +13,19 @@
     "B2": 1701,
     "C1": 784,
     "C2": 311,
-    "unrated": 5540
+    "unrated": 6475
   },
   "types": {
-    "active_to_passive": 100,
+    "open_brackets": 8008,
+    "multiple_choice": 1374,
     "context_cloze": 443,
-    "direct_to_reported": 782,
-    "modal_fix": 50,
+    "translation_ru_en": 267,
+    "active_to_passive": 100,
     "modal_gap": 700,
+    "modal_fix": 50,
     "modal_meaning": 50,
-    "multiple_choice": 1172,
-    "open_brackets": 7355,
-    "translation_ru_en": 267
+    "direct_to_reported": 782,
+    "error_fix": 80
   },
   "parts": [
     {
@@ -1098,8 +1099,8 @@
         "open_brackets": 100
       },
       "levels3": {
-        "advanced": 95,
-        "medium": 5
+        "medium": 5,
+        "advanced": 95
       }
     },
     {
@@ -1127,9 +1128,9 @@
         "open_brackets": 100
       },
       "levels3": {
-        "advanced": 5,
         "basic": 35,
-        "medium": 60
+        "medium": 60,
+        "advanced": 5
       }
     },
     {
@@ -1143,9 +1144,9 @@
         "open_brackets": 100
       },
       "levels3": {
-        "advanced": 70,
         "basic": 15,
-        "medium": 15
+        "medium": 15,
+        "advanced": 70
       }
     },
     {
@@ -1159,9 +1160,9 @@
         "translation_ru_en": 100
       },
       "levels3": {
-        "advanced": 20,
         "basic": 40,
-        "medium": 40
+        "medium": 40,
+        "advanced": 20
       }
     },
     {
@@ -1175,9 +1176,9 @@
         "active_to_passive": 100
       },
       "levels3": {
-        "advanced": 44,
         "basic": 24,
-        "medium": 32
+        "medium": 32,
+        "advanced": 44
       }
     },
     {
@@ -1973,12 +1974,192 @@
       "levels": {
         "unrated": 100
       }
+    },
+    {
+      "file": "data/exercises/part-112.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "open_brackets": 80,
+        "multiple_choice": 14,
+        "error_fix": 6
+      },
+      "levels3": {
+        "basic": 34,
+        "medium": 38,
+        "advanced": 28
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-113.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "open_brackets": 72,
+        "multiple_choice": 20,
+        "error_fix": 8
+      },
+      "levels3": {
+        "medium": 40,
+        "advanced": 32,
+        "basic": 28
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-114.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "open_brackets": 72,
+        "multiple_choice": 20,
+        "error_fix": 8
+      },
+      "levels3": {
+        "basic": 29,
+        "medium": 42,
+        "advanced": 29
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-115.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "open_brackets": 71,
+        "multiple_choice": 22,
+        "error_fix": 7
+      },
+      "levels3": {
+        "medium": 41,
+        "advanced": 29,
+        "basic": 30
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-116.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "error_fix": 8,
+        "multiple_choice": 17,
+        "open_brackets": 75
+      },
+      "levels3": {
+        "basic": 30,
+        "medium": 40,
+        "advanced": 30
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-117.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "open_brackets": 78,
+        "multiple_choice": 15,
+        "error_fix": 7
+      },
+      "levels3": {
+        "basic": 28,
+        "medium": 42,
+        "advanced": 30
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-118.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "open_brackets": 69,
+        "multiple_choice": 23,
+        "error_fix": 8
+      },
+      "levels3": {
+        "advanced": 27,
+        "medium": 43,
+        "basic": 30
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-119.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "multiple_choice": 45,
+        "error_fix": 17,
+        "open_brackets": 38
+      },
+      "levels3": {
+        "medium": 39,
+        "advanced": 28,
+        "basic": 33
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-120.json",
+      "section": "passive",
+      "count": 100,
+      "types": {
+        "open_brackets": 76,
+        "multiple_choice": 18,
+        "error_fix": 6
+      },
+      "levels3": {
+        "medium": 42,
+        "advanced": 33,
+        "basic": 25
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-121.json",
+      "section": "passive",
+      "count": 35,
+      "types": {
+        "error_fix": 5,
+        "multiple_choice": 8,
+        "open_brackets": 22
+      },
+      "levels3": {
+        "basic": 10,
+        "medium": 14,
+        "advanced": 11
+      },
+      "levels": {
+        "unrated": 35
+      }
     }
   ],
   "sections": {
     "comparison": 1000,
     "tenses": 4379,
-    "passive": 1000,
+    "passive": 1935,
     "modals": 1040,
     "reported": 1000,
     "nouns": 1000,
@@ -1988,7 +2169,7 @@
   "content_versions": {
     "tenses": "tenses-2026-11-09.1",
     "comparison": "comparison-2026-11-01.5",
-    "passive": "passive-2026-11-09.1",
+    "passive": "passive-2026-11-22.1",
     "modals": "modals-2026-11-05.1",
     "reported": "reported-2026-11-05.1",
     "nouns": "nouns-2026-11-07.1",
@@ -1996,9 +2177,9 @@
     "infinitive": "infinitive-2026-11-13.1"
   },
   "levels3": {
-    "advanced": 2289,
-    "basic": 3712,
-    "medium": 4918
+    "advanced": 2566,
+    "medium": 5299,
+    "basic": 3989
   },
   "section_types": {
     "comparison": {
@@ -2012,9 +2193,11 @@
       "open_brackets": 3908
     },
     "passive": {
-      "active_to_passive": 100,
-      "open_brackets": 800,
-      "translation_ru_en": 100
+      "open_brackets": 803,
+      "translation_ru_en": 50,
+      "active_to_passive": 50,
+      "multiple_choice": 202,
+      "error_fix": 80
     },
     "modals": {
       "context_cloze": 40,
