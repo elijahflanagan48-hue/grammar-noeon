@@ -2,7 +2,7 @@
 
 Локально подготовлены изменения банка; они ещё не опубликованы. [Отчёт о проверке](docs/review/V8-FINAL-2026-10-30/REPORT.md).
 
-Банк: tenses-2026-11-09.1, comparison-2026-11-01.5, passive-2026-11-22.2, modals-2026-11-05.1, reported-2026-11-05.1, nouns-2026-11-07.1, speaking-2026-11-09.1, infinitive-2026-11-13.1; 11854 задания / 14959 полей. PWA: grammar-v97.
+Банк: tenses-2026-11-09.1, comparison-2026-11-01.5, passive-2026-11-22.2, modals-2026-11-05.1, reported-2026-11-05.1, nouns-2026-11-07.1, speaking-2026-11-09.1, infinitive-2026-11-13.1; 11854 задания / 14959 полей. PWA: grammar-v98.
 
 Уровни: basic — 3989, medium — 5299, advanced — 2566.
 

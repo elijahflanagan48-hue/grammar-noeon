@@ -26,3 +26,5 @@
 5. Файлы добавить в `index.html`, `sw.js` и `scripts/build_cloudflare.py`.
 
 Пример — `infinitive-map.js` («Метро трёх форм»).
+
+Карта Conditionals — `conditionals-map.js` + `conditionals-map-data.js` («Зазеркалье условий»): сверху мир «если бы», снизу реальный мир, слева направо время; лифты «шаг назад» в зеркале, игры «Какой мир?», «Отражение», «Викторина». Данные конструкций — в `conditionals-map-data.js`, проверка — `tests/conditionals-rule.mjs`.

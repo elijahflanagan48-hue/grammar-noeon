@@ -1,6 +1,6 @@
 "use strict";
 /* Главная для гостей и страница «Грамматика»: карточки разделов и мини-демо карты времён. */
-const SECTION_ORDER = ['tenses', 'passive', 'modals', 'reported', 'comparison', 'nouns', 'speaking', 'infinitive'];
+const SECTION_ORDER = ['tenses', 'passive', 'modals', 'conditionals', 'reported', 'comparison', 'nouns', 'speaking', 'infinitive'];
 const SECTION_META = {
   tenses: { mono: 'T', hue: 'green', facts: ['12 времён', 'интерактивная карта', 'практика A1–C2'] },
   passive: { mono: 'P', hue: 'blue', facts: ['формы пассива', 'выбор фокуса', 'особые конструкции'] },
@@ -9,6 +9,7 @@ const SECTION_META = {
   comparison: { mono: 'C', hue: 'rose', facts: ['образование форм', 'равенство и разница'] },
   speaking: { mono: 'S', hue: 'indigo', facts: ['say · tell · speak · talk', 'мини-тексты'] },
   infinitive: { mono: 'I', hue: 'blue', facts: ['to do · do · doing', 'stop · remember · try'] },
+  conditionals: { mono: 'If', hue: 'violet', facts: ['zero → third, mixed', 'wish · unless · Had I known', 'карта «Зазеркалье»'] },
   nouns: { mono: 'N', hue: 'teal', facts: ['число и артикли', 'мини-тексты'] },
 };
 function grammarSectionCardHtml(id, section, { practice = false, student = null, compact = false } = {}) {

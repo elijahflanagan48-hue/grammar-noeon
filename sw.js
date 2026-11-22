@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v97';
+const CACHE = 'grammar-v98';
 const FILES = [
   "./",
   "styles.css",
@@ -32,6 +32,12 @@ const FILES = [
   "infinitive-map.css",
   "infinitive-gerund.css",
   "content/theory/11-infinitive-gerund-rule.html",
+  "conditionals.js",
+  "conditionals.css",
+  "conditionals-map-data.js",
+  "conditionals-map.js",
+  "conditionals-map.css",
+  "content/theory/12-conditionals-rule.html",
   "tense-map.js",
   "tense-canvas.js",
   "theory-ui.js",

@@ -5,7 +5,7 @@ function tsRu(text) { return tsNorm(text).split(' ').map(word => TS_RU[word] || 
 function tsIndex() {
   if (tsIndex.cache) return tsIndex.cache;
   const legacy = new Set((typeof PASSIVE_LEGACY_TARGETS !== 'undefined' ? PASSIVE_LEGACY_TARGETS : []).map(t => t.id));
-  const items = Object.entries(GRAMMAR_SECTIONS).filter(([, s]) => !s.soon).map(([id, s]) => ({ kind: 'section', id, section: id, label: s.title, sub: s.subtitle, href: '#theory/' + s.theory, text: tsNorm([s.title, s.subtitle, s.description].join(' ')) + ' ' + tsRu(s.title) }));
+  const items = Object.entries(GRAMMAR_SECTIONS).filter(([, s]) => !s.soon || s.theoryReady).map(([id, s]) => ({ kind: 'section', id, section: id, label: s.title, sub: s.subtitle, href: '#theory/' + s.theory, text: tsNorm([s.title, s.subtitle, s.description].join(' ')) + ' ' + tsRu(s.title) }));
   PRACTICE_TENSES.forEach(t => {
     if (t.id === 'other_constructions' || legacy.has(t.id)) return;
     const section = targetSection(t.id), sec = GRAMMAR_SECTIONS[section];

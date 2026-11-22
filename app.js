@@ -26,6 +26,7 @@ const THEORY_ROUTE_BY_FILE = {
   "09-nouns.md": "nouns",
   "10-speaking-verbs-rule.html": "speaking",
   "11-infinitive-gerund-rule.html": "infinitive",
+  "12-conditionals-rule.html": "conditionals",
   "08-modals.html": "modals",
   "01-foundations.md": "foundations",
   "02-present.md": "present",
@@ -257,6 +258,7 @@ function scrollTheory(parts) {
 }
 
 const GRAMMAR_SECTIONS = {
+  conditionals: { title: "Conditionals", subtitle: "Условные предложения", description: "Реальные и «если бы»: zero, first, second, third, смешанные, unless и in case, wish, would rather, условия без if и инверсия.", theory: "conditionals", soon: true, theoryReady: true },
   infinitive: { title: "Infinitive · -ing", subtitle: "Инфинитив и герундий", description: "to do, do или doing: после каких слов какая форма, пары со сменой смысла (stop, remember, try), предлоги, цель, формы инфинитива и герундия.", theory: "infinitive" },
   speaking: { title: "Say · Tell · Speak · Talk", subtitle: "Глаголы речи", description: "Четыре глагола «говорить»: say, tell, speak и talk. Управление, устойчивые сочетания, выражения и фразовые глаголы.", theory: "speaking" },
   nouns: { title: "Nouns", subtitle: "Существительные", description: "Исчисляемые и неисчисляемые, число, притяжательный падеж, составные слова, артикли и определители количества: правило и практика.", theory: "nouns" },
@@ -266,7 +268,7 @@ const GRAMMAR_SECTIONS = {
   comparison: { title: "Degrees of Comparison", subtitle: "Степени сравнения прилагательных", description: "Образование форм, сравнение, равенство и точные смысловые различия.", theory: "comparison" },
   passive: { title: "Passive Voice", subtitle: "Пассивный залог", description: "Формы пассива, выбор фокуса и особые конструкции. Предложения, мини-тексты и преобразования.", theory: "passive" },
 };
-function grammarSectionForTheory(id) { return ["comparison","passive","modals","reported","nouns","speaking","infinitive"].includes(id) ? id : "tenses"; }
+function grammarSectionForTheory(id) { return ["comparison","passive","modals","reported","nouns","speaking","infinitive","conditionals"].includes(id) ? id : "tenses"; }
 function renderGrammar(topic = "", practice = false, student = null) {
   syncRouteNav();
   const sections = GRAMMAR_SECTIONS[topic] ? [[topic, GRAMMAR_SECTIONS[topic]]] : Object.entries(GRAMMAR_SECTIONS);
@@ -355,6 +357,7 @@ function renderProfile() {
 }
 
 const THEORY_SECTION_LINKS = {
+  conditionals: [["Карта правила","conditionals","cd-mirror"],["Два мира","conditionals","cd-core"],["Реальные","conditionals","cd-zero"],["Если бы","conditionals","cd-second"],["Смешанные · без if","conditionals","cd-mixed"],["Wish · rather","conditionals","cd-wish"],["Ловушки и проверка","conditionals","cd-traps"]],
   infinitive: [["Карта правила","infinitive","ig-metro"],["Что перед глаголом","infinitive","ig-after"],["to do · doing","infinitive","ig-verb-to"],["Предлог и без to","infinitive","ig-prep"],["Смысл меняется","infinitive","ig-meaning"],["sb, цель, формы","infinitive","ig-object"],["Список и проверка","infinitive","ig-finder"]],
   speaking: [["Что после глагола","speaking","sv-after"],["Say / tell","speaking","sv-say-tell"],["Speak / talk","speaking","sv-speak-talk"],["Выражения","speaking","sv-phrases"],["Ловушки и проверка","speaking","sv-traps"]],
   nouns: [["Счёт и число","nouns","исчисляемые-и-неисчисляемые-существительные"],["Партитивы и значения","nouns","как-посчитать-неисчисляемое-партитивы"],["Притяжательный","nouns","притяжательный-падеж-s-и-of"],["Составные и группы","nouns","составные-существительные-compound-nouns"],["Артикли и определители","nouns","артикли-и-определители-с-существительными"]],
@@ -384,6 +387,7 @@ function theorySectionIndex(active,anchor,links=theorySectionLinks(active)) {
   if(active==='nouns')return nounsSectionIndex(anchor);
   if(active==='speaking')return speakingSectionIndex(anchor);
   if(active==='infinitive')return infinitiveSectionIndex(anchor);
+  if(active==='conditionals')return conditionalsSectionIndex(anchor);
   if(active==='reported'){const n=Number(anchor.slice(2));return !n||n<9?0:n<11?1:n<14?2:n<20?3:4;}
   if(active==='passive'){
     if(['pv-focus','pv-flow','pv-agent'].includes(anchor))return 1;
@@ -398,6 +402,13 @@ function speakingSectionIndex(anchor) {
   const groups=[['sv-map','sv-after'],['sv-say-tell','sv-say','sv-tell','sv-reported','sv-orders','sv-direct','sv-tell-fixed','sv-tell-distinguish','sv-say-objects','sv-things-say','sv-hearsay'],['sv-speak-talk','sv-speak','sv-talk','sv-speak-ability','sv-phone','sv-speak-public','sv-talk-topic','sv-talk-chat','sv-talk-sense'],['sv-phrases','sv-phrasal'],['sv-traps','sv-check']];
   const index=groups.findIndex(group=>group.includes(anchor));
   return index<0?0:index;
+}
+function conditionalsSectionIndex(anchor) {
+  const a=String(anchor||'');
+  if(!a||a==='cd-mirror')return 0;
+  const order=[['cd-core','cd-builder','cd-top'],['cd-zero','cd-first','cd-conj','cd-unless','cd-as-long-as','cd-provided','cd-condition','cd-only-if','cd-even-if','cd-in-case','cd-whether','cd-suppose','cd-assuming'],['cd-second','cd-third','cd-were','cd-were-to','cd-if-i-were-you','cd-polite'],['cd-mixed','cd-implied','cd-inversion','cd-without','cd-but-for','cd-otherwise','cd-imperative','cd-if-so','cd-in-that-case'],['cd-wish','cd-unreal','cd-wish-main','cd-wish-could','cd-if-only','cd-rather','cd-time','cd-as-if','cd-prefer'],['cd-traps','cd-check']];
+  const i=order.findIndex(g=>g.includes(a)||g.some(x=>a.startsWith(x+'-')));
+  return i<0?1:i+1;
 }
 function infinitiveSectionIndex(anchor) {
   const groups=[['ig-metro'],['ig-map','ig-after'],['ig-verb-to','ig-want','ig-decide','ig-manage','ig-seem','ig-wh','ig-verb-ing','ig-enjoy','ig-avoid','ig-finish','ig-admit','ig-go','ig-worth'],['ig-prep','ig-prep-verb','ig-prep-adj','ig-prep-obj','ig-prep-free','ig-to-prep','ig-bare','ig-modal','ig-make-let','ig-help','ig-senses','ig-rather'],['ig-meaning','ig-remember','ig-forget','ig-stop','ig-try','ig-regret','ig-go-on','ig-mean','ig-need','ig-afraid','ig-sorry','ig-interested','ig-like','ig-same','ig-love','ig-used'],['ig-object','ig-obj-to','ig-obj-ing','ig-suggest','ig-forbid','ig-poss','ig-believe','ig-adj','ig-adj-to','ig-too','ig-first','ig-noun-to','ig-purpose','ig-subject','ig-forms','ig-perf-inf','ig-cont-inf','ig-pass','ig-perf-ger','ig-needs','ig-unreal','ig-neg'],['ig-finder','ig-list','ig-traps','ig-check']];
@@ -419,7 +430,7 @@ function theoryNav(active,anchor='') {
   const section=grammarSectionForTheory(active),title=GRAMMAR_SECTIONS[section].title;
   const links=theorySectionLinks(active),selected=theorySectionIndex(active,anchor,links);
   const label=links[selected]?.[0]||'Обзор';
-  return `<div class="theory-section-nav"><nav class="grammar-breadcrumb" aria-label="Путь в грамматике"><a href="#grammar">Темы</a><span aria-hidden="true">›</span><a href="#theory/${GRAMMAR_SECTIONS[section].theory}">${escapeHtml(title)}</a><span aria-hidden="true">›</span><span aria-current="location">${escapeHtml(label)}</span></nav><nav class="theory-nav" aria-label="Темы раздела ${escapeHtml(title)}">${links.map(([name,slug,id],index)=>`<a class="${index===selected?'active':''}"${index===selected?' aria-current="location"':''} href="#theory/${slug}${id?'/'+id:''}">${escapeHtml(name)}</a>`).join('')}<a href="#practice/${section}${active==='passive'?'/'+['pv_D1','pv_D2','special'][selected]:''}">Практика →</a></nav></div>`;
+  return `<div class="theory-section-nav"><nav class="grammar-breadcrumb" aria-label="Путь в грамматике"><a href="#grammar">Темы</a><span aria-hidden="true">›</span><a href="#theory/${GRAMMAR_SECTIONS[section].theory}">${escapeHtml(title)}</a><span aria-hidden="true">›</span><span aria-current="location">${escapeHtml(label)}</span></nav><nav class="theory-nav" aria-label="Темы раздела ${escapeHtml(title)}">${links.map(([name,slug,id],index)=>`<a class="${index===selected?'active':''}"${index===selected?' aria-current="location"':''} href="#theory/${slug}${id?'/'+id:''}">${escapeHtml(name)}</a>`).join('')}${GRAMMAR_SECTIONS[section].soon?'':`<a href="#practice/${section}${active==='passive'?'/'+['pv_D1','pv_D2','special'][selected]:''}">Практика →</a>`}</nav></div>`;
 }
 function syncTheoryNavigation(parts) {
   const node=document.querySelector('.theory-section-nav');
@@ -438,6 +449,15 @@ async function renderTheory(parts) {
     initialiseModalRule(document.querySelector('.theory-content'));
     document.title='Modal Verbs — Grammar NOEON';openedTheory=slug;
     if(parts[2])requestAnimationFrame(()=>revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
+    return;
+  }
+  if(slug==='conditionals') {
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${typeof conditionalsMapHtml==='function'?conditionalsMapHtml():''}${conditionalsRuleHtml()}<p class="theory-soon subtle">Практика по этой теме готовится.</p></section></div>`;
+    initialiseConditionalsRule(document.querySelector('.theory-content'));
+    if(typeof initialiseConditionalsMap==='function')initialiseConditionalsMap(document.querySelector('.theory-content'));
+    document.title='Conditionals — Grammar NOEON';openedTheory=slug;
+    if(parts[2]&&parts[2]!=='cd-mirror')requestAnimationFrame(()=>revealConditionalsAnchor(document.querySelector('.theory-content'),decodeAnchor(parts.slice(2).join('/'))));
+    else if(parts[2])requestAnimationFrame(()=>document.getElementById('cd-mirror')?.scrollIntoView({block:'start'}));
     return;
   }
   if(slug==='infinitive') {
@@ -1036,7 +1056,7 @@ function renderPractice(student = null, topic = location.hash.split("/")[1], stu
   if (student?.assignmentEdit) topic = exerciseSection(student.assignmentEdit.items[0]);
   if (!account.user) { syncRouteNav(); app.innerHTML='<h1>Практика</h1><p>Ученикам доступны задания, назначенные учителем. Войдите в свой кабинет.</p><a class="button primary" href="#profile">Войти в кабинет</a> <a class="button" href="#theory/foundations">Изучить теорию</a>'; return; }
   if (account.user.role === "student" && !studentAllowed) return renderStudentPractice(topic);
-  if (!GRAMMAR_SECTIONS[topic]) return renderGrammar("", true, student);
+  if (!GRAMMAR_SECTIONS[topic] || GRAMMAR_SECTIONS[topic].soon) return renderGrammar("", true, student);
   syncRouteNav();
   const section = GRAMMAR_SECTIONS[topic];
   document.title = `${student?.assignmentEdit ? "Редактировать задание" : student ? "Назначить задание" : "Практика"}: ${section.title} — Grammar NOEON`;
@@ -1911,7 +1931,7 @@ async function route() {
   syncRouteNav();
   if (nextParts[0] === "theory" && nextParts[1] === openedTheory && document.querySelector(".theory-content")) {
     syncTheoryNavigation(nextParts);
-    if(restoreTop!==null)window.scrollTo({top:restoreTop,behavior:"instant"});else if(nextParts[1]==='infinitive')revealInfinitiveGerundAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='speaking')revealSpeakingVerbsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='nouns')revealNounsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='modals')revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='passive')revealPassiveAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else scrollTheory(nextParts);
+    if(restoreTop!==null)window.scrollTo({top:restoreTop,behavior:"instant"});else if(nextParts[1]==='conditionals'){const a=decodeAnchor(nextParts.slice(2).join('/'));if(a==='cd-mirror'||!a)(a?document.getElementById('cd-mirror'):document.querySelector('.theory-content'))?.scrollIntoView({block:'start'});else revealConditionalsAnchor(document.querySelector('.theory-content'),a);}else if(nextParts[1]==='infinitive')revealInfinitiveGerundAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='speaking')revealSpeakingVerbsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='nouns')revealNounsAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='modals')revealModalAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else if(nextParts[1]==='passive')revealPassiveAnchor(document.querySelector('.theory-content'),decodeAnchor(nextParts.slice(2).join('/')));else scrollTheory(nextParts);
     syncScreenChrome();return;
   }
   openedTheory = null;
@@ -2002,7 +2022,7 @@ function syncScreenChrome() {
   document.querySelector('.site-header .brand').hidden=route!=='home';
   title.hidden=route==='home';
   const names={'teacher-library':'Библиотека наборов','task-issues':'Сообщения о заданиях',tests:'Тесты','test-preview':'Просмотр теста','test-attempt':'Проверочный тест',home:'Сегодня',grammar:'Темы',results:'Результаты',profile:'Профиль',students:'Ученики',student:'Ученик',theory:'Теория',practice:'Практика',report:'Отчёт',work:'Работа','student-work':'Работа ученика',notifications:'Уведомления','review-queue':'Проверка переводов',assign:'Назначить задание',edit:'Изменить задание',join:'Приглашение'};
-  const short={reported:'Косвенная речь',foundations:'Основы',present:'Present',past:'Past',future:'Future',contrasts:'Сопоставления',comparison:'Сравнения',passive:'Пассив',modals:'Модальные глаголы'};
+  const short={reported:'Косвенная речь',foundations:'Основы',present:'Present',past:'Past',future:'Future',contrasts:'Сопоставления',comparison:'Сравнения',passive:'Пассив',modals:'Модальные глаголы',conditionals:'Conditionals'};
   const text=route==='session'?document.title.replace(' — Grammar NOEON',''):route==='theory'?short[parts[1]]||'Теория':route==='results'&&parts[1]?'Отчёт':route==='grammar'&&parts[1]?GRAMMAR_SECTIONS[parts[1]]?.title||'Грамматика':names[route]||'Grammar NOEON';
   if(title.textContent!==text)title.textContent=text;
   if(route==='profile'&&!document.getElementById('theme-settings')) {
