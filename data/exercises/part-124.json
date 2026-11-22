@@ -1,0 +1,4686 @@
+[
+  {
+    "id": "CD08-07",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If I (to have) the office dog's easy day, I (to nap) through the boring meeting.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Я сейчас не на месте собаки, это воображаемая ситуация: после if — Past Simple (had), в главной части — would + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-07-b1",
+        "answer": "had",
+        "accepted_answers": [
+          "had",
+          "were to have"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "have"
+      },
+      {
+        "id": "CD08-07-b2",
+        "answer": "would nap",
+        "accepted_answers": [
+          "would nap",
+          "'d nap"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "nap"
+      }
+    ],
+    "answer_text": "If I had the office dog's easy day, I would nap through the boring meeting."
+  },
+  {
+    "id": "CD08-08",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Dario (to arrive) before his lectures if the clocks (to run) backwards.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Часы не идут назад, это фантазия: после if — Past Simple (ran), в главной части — would + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-08-b1",
+        "answer": "would arrive",
+        "accepted_answers": [
+          "would arrive",
+          "'d arrive"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "arrive"
+      },
+      {
+        "id": "CD08-08-b2",
+        "answer": "ran",
+        "accepted_answers": [
+          "ran",
+          "were running"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "run"
+      }
+    ],
+    "answer_text": "Dario would arrive before his lectures if the clocks ran backwards."
+  },
+  {
+    "id": "CD08-12",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Your puppy is not too bad. If I {{1:to be}} you, I {{2:to keep}} him quiet and indoors. Rest is what the paw needs. It would heal much faster if you {{3:to give}} it that rest.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Совет «на вашем месте» всегда идёт с were (If I were you), после него — would; в части с if о собаке — Past Simple.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-12-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_if_i_were_you",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD08-12-b2",
+        "answer": "would keep",
+        "accepted_answers": [
+          "would keep",
+          "'d keep"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_if_i_were_you",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "keep"
+      },
+      {
+        "id": "CD08-12-b3",
+        "answer": "gave",
+        "accepted_answers": [
+          "gave"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "give"
+      }
+    ],
+    "answer_text": "Your puppy is not too bad. If I were you, I would keep him quiet and indoors. Rest is what the paw needs. It would heal much faster if you gave it that rest."
+  },
+  {
+    "id": "CD08-15",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The app cuts out again and again. If it {{1:to work}} properly, I {{2:not / to miss}} a word. The sound drops at the worst moment.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Приложение сейчас работает плохо, это нереальное условие: после if — Past Simple, отрицание в главной части — would not + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-15-b1",
+        "answer": "worked",
+        "accepted_answers": [
+          "worked",
+          "were to work"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "work"
+      },
+      {
+        "id": "CD08-15-b2",
+        "answer": "would not miss",
+        "accepted_answers": [
+          "would not miss",
+          "wouldn't miss"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "miss"
+      }
+    ],
+    "answer_text": "The app cuts out again and again. If it worked properly, I would not miss a word. The sound drops at the worst moment."
+  },
+  {
+    "id": "CD08-16",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The floodlights turn off early. If they {{1:to stay}} on, I {{2:not / to lose}} the ball. The team often trains in the dark.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Свет сейчас выключается, поэтому условие нереальное: после if — Past Simple, в главной части — would not + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-16-b1",
+        "answer": "stayed",
+        "accepted_answers": [
+          "stayed",
+          "were to stay"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "stay"
+      },
+      {
+        "id": "CD08-16-b2",
+        "answer": "would not lose",
+        "accepted_answers": [
+          "would not lose",
+          "wouldn't lose"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "lose"
+      }
+    ],
+    "answer_text": "The floodlights turn off early. If they stayed on, I would not lose the ball. The team often trains in the dark."
+  },
+  {
+    "id": "CD08-17",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The order machine breaks in the Friday rush again and again. If it {{1:not / to crash}} at the busiest hour, the kitchen {{2:to manage}} the orders and Enzo {{3:to serve}} each table on time.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Машина на самом деле ломается, это нереальное условие: после if — Past Simple, обе части результата — would + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-17-b1",
+        "answer": "did not crash",
+        "accepted_answers": [
+          "did not crash",
+          "didn't crash"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "crash"
+      },
+      {
+        "id": "CD08-17-b2",
+        "answer": "would manage",
+        "accepted_answers": [
+          "would manage"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "manage"
+      },
+      {
+        "id": "CD08-17-b3",
+        "answer": "would serve",
+        "accepted_answers": [
+          "would serve"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "serve"
+      }
+    ],
+    "answer_text": "The order machine breaks in the Friday rush again and again. If it did not crash at the busiest hour, the kitchen would manage the orders and Enzo would serve each table on time."
+  },
+  {
+    "id": "CD08-18",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Zuzanna ___ on a warm beach, she would feel much better.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После if в нереальном условии идёт Past Simple (relaxed), а не настоящее или will/would — это типичная ошибка «если бы».",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "relaxes",
+      "will relax",
+      "relaxed",
+      "would relax"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "relaxed"
+  },
+  {
+    "id": "CD08-19",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Oksana ___ a quiet train, she would take it through the green hills.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Нереальное условие требует Past Simple после if (found); finds, will find и would find — типичные ошибки «если бы».",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "finds",
+      "found",
+      "will find",
+      "would find"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "found"
+  },
+  {
+    "id": "CD08-20",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Sami ___ his cards right away, nobody would steal his money.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После if нельзя ставить would — в нереальном условии нужен Past Simple (cancelled); «if + would» — частая ошибка «если бы».",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "would cancel",
+      "will cancel",
+      "cancels",
+      "cancelled"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "cancelled"
+  },
+  {
+    "id": "CD08-21",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Bora ___ earlier, he would still get a good seat for the comedy.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После if в нереальном условии — Past Simple (arrived), а не настоящее или will/would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "arrives",
+      "arrived",
+      "will arrive",
+      "would arrive"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "arrived"
+  },
+  {
+    "id": "CD08-22",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Carlos ___ to arrive before the recruiter, he would hand in his CV in person.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Конструкция «If he were to arrive» передаёт маловероятное будущее: после if нужен were, а не was, is или would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were_to"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "were",
+      "was",
+      "is",
+      "would"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "were"
+  },
+  {
+    "id": "CD08-23",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My cake would not melt in the warm hall if it would arrive on time.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "В части с if нельзя ставить would: для нереального условия нужен Past Simple — arrived.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "My cake would not melt in the warm hall if it arrived on time.",
+    "accepted_answers": [
+      "My cake would not melt in the warm hall if it arrived on time.",
+      "My cake wouldn't melt in the warm hall if it arrived on time."
+    ]
+  },
+  {
+    "id": "CD08-24",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Nuria's appointment were not moved again, she would be less annoyed.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Предложение верное: нереальное условие с were (или was) после if и would в главной части — ошибки здесь нет.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "If Nuria's appointment were not moved again, she would be less annoyed.",
+    "accepted_answers": [
+      "If Nuria's appointment were not moved again, she would be less annoyed.",
+      "If Nuria's appointment was not moved again, she would be less annoyed.",
+      "If Nuria's appointment weren't moved again, she would be less annoyed.",
+      "If Nuria's appointment wasn't moved again, she would be less annoyed."
+    ]
+  },
+  {
+    "id": "CD08-25",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I would label my milk if the hostel will give out labels.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if в нереальном условии нельзя ставить will — нужен Past Simple: gave out.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_will_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "I would label my milk if the hostel gave out labels.",
+    "accepted_answers": [
+      "I would label my milk if the hostel gave out labels."
+    ]
+  },
+  {
+    "id": "CD08-26",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Klara would finish the reports in an hour if her desk is quiet.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if в нереальном условии нужен Past Simple, а не настоящее время: is → were/was.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "Klara would finish the reports in an hour if her desk were quiet.",
+    "accepted_answers": [
+      "Klara would finish the reports in an hour if her desk were quiet.",
+      "Klara would finish the reports in an hour if her desk was quiet."
+    ]
+  },
+  {
+    "id": "CD08-27",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Deniz's cousin is moving to a new flat and has no savings. Deniz gives her advice.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Совет «на вашем месте» передаётся как If I were you + would; «would have saved» — про прошлое, а am/was и will — неверные формы.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "If I were you, I would save a little money each month.",
+      "If I were you, I would have saved a little money each month.",
+      "If I am you, I will save a little money each month.",
+      "If I was you, I save a little money each month."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "If I were you, I would save a little money each month."
+  },
+  {
+    "id": "CD08-28",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Aylin wants a restful week and cannot choose between two islands. The travel agent gives advice.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Совет «на вашем месте» — If I were you + would; остальные варианты ломают форму (am/will, без would, would have — про прошлое).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "If I am you, I will pick the quieter island.",
+      "If I were you, I would pick the quieter island.",
+      "If I were you, I picked the quieter island.",
+      "If I were you, I would have picked the quieter island."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "If I were you, I would pick the quieter island."
+  },
+  {
+    "id": "CD08-29",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The hillside is dry, so Carmen cannot plant anything. → If the hillside were not so dry,",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Из «cannot plant» (невозможность) получаем could plant, а в части с if — Past Simple: were not / was not so dry.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-29-b1",
+        "answer": "If the hillside were not so dry, Carmen could plant something.",
+        "accepted_answers": [
+          "If the hillside were not so dry, Carmen could plant something.",
+          "If the hillside was not so dry, Carmen could plant something.",
+          "If the hillside weren't so dry, Carmen could plant something.",
+          "If the hillside wasn't so dry, Carmen could plant something.",
+          "If the hillside were not so dry, Carmen would be able to plant something.",
+          "If the hillside were not so dry, Carmen would plant something."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If the hillside were not so dry, Carmen could plant something."
+  },
+  {
+    "id": "CD08-31",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The car park blocks the way, so Gareth cannot show his pupils the plain where the stones stand. → If the car park were not there,",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Нереальное условие: после if — Past Simple (were not / was not there), в главной части — would + глагол; придаточное where the stones stand остаётся без изменений.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-31-b1",
+        "answer": "If the car park were not there, Gareth would show his pupils the plain where the stones stand.",
+        "accepted_answers": [
+          "If the car park were not there, Gareth would show his pupils the plain where the stones stand.",
+          "If the car park was not there, Gareth would show his pupils the plain where the stones stand.",
+          "If the car park weren't there, Gareth would show his pupils the plain where the stones stand.",
+          "If the car park wasn't there, Gareth would show his pupils the plain where the stones stand."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If the car park were not there, Gareth would show his pupils the plain where the stones stand."
+  },
+  {
+    "id": "CD08-32",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Ivana would enjoy the visit if the dentist's drill were a tiny violin.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Условие нереальное (бормашина — не скрипка), поэтому в реальности всё наоборот и в настоящем времени: does not enjoy.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "The drill is a violin, so Ivana enjoys the visit.",
+      "The drill was not a violin, so Ivana did not enjoy the visit.",
+      "The drill is not a violin, so Ivana does not enjoy the visit.",
+      "The drill is not a violin, but Ivana enjoys the visit."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "The drill is not a violin, so Ivana does not enjoy the visit."
+  },
+  {
+    "id": "CD08-33",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Anouk made her short film, a talking cat would star in it.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Фильм не снимается (условие нереальное), значит в реальности кота в нём нет — в настоящем времени.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "Anouk makes the film, so a talking cat stars in it.",
+      "Anouk does not make the film, so a talking cat does not star in it.",
+      "Anouk did not make the film, so a talking cat did not star in it.",
+      "Anouk does not make the film, but a talking cat stars in it."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "Anouk does not make the film, so a talking cat does not star in it."
+  },
+  {
+    "id": "CD08-34",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Kirill's street were a green pedestrian lane, cars would stay away.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Улица не стала пешеходной (условие нереальное), поэтому машины на самом деле не уезжают — в настоящем времени.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "The street is a green lane, so cars stay away.",
+      "The street was not a green lane, so cars did not stay away.",
+      "The street is not a green lane, so cars do not stay away.",
+      "The street is not a green lane, but cars stay away."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "The street is not a green lane, so cars do not stay away."
+  },
+  {
+    "id": "CD08-35",
+    "topic": "conditionals",
+    "type": "match",
+    "source_format": "match",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Match the halves about the shared kitchen.",
+    "instruction_ru": "Соедините каждое начало с одним окончанием.",
+    "explanation_ru": "Каждая левая часть — нереальное условие (were, Past Simple), и к ней подходит результат с would/could по смыслу и форме.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "starts": [
+      "If I were you,",
+      "If everyone cleaned up,",
+      "If the pan were clean,",
+      "If her flatmate asked first,"
+    ],
+    "endings": [
+      "Eilidh could start cooking at once.",
+      "I would wash the pan first.",
+      "the kitchen would stay tidy.",
+      "she would lend him the pan."
+    ],
+    "blanks": [
+      {
+        "id": "CD08-35-b1",
+        "answer": "I would wash the pan first.",
+        "accepted_answers": [
+          "I would wash the pan first."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD08-35-b2",
+        "answer": "the kitchen would stay tidy.",
+        "accepted_answers": [
+          "the kitchen would stay tidy."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD08-35-b3",
+        "answer": "Eilidh could start cooking at once.",
+        "accepted_answers": [
+          "Eilidh could start cooking at once."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD08-35-b4",
+        "answer": "she would lend him the pan.",
+        "accepted_answers": [
+          "she would lend him the pan."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If I were you, I would wash the pan first. · If everyone cleaned up, the kitchen would stay tidy. · If the pan were clean, Eilidh could start cooking at once. · If her flatmate asked first, she would lend him the pan."
+  },
+  {
+    "id": "CD08-37",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Build the sentence.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "Это инверсия от «If Hiro were to buy»: Were + подлежащее + to buy, в главной части — would + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were_to"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD08-37-b1",
+        "answer": "Were Hiro to buy a print, he would choose a small one.",
+        "accepted_answers": [
+          "Were Hiro to buy a print, he would choose a small one.",
+          "Were Hiro to choose a print, he would buy a small one."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were_to",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "Were Hiro to buy a print, he would choose a small one.",
+    "blocks": [
+      "print,",
+      "Hiro",
+      "to",
+      "a",
+      "choose",
+      "buy",
+      "small",
+      "one.",
+      "would",
+      "he",
+      "a",
+      "Were"
+    ]
+  },
+  {
+    "id": "CD08-38",
+    "topic": "conditionals",
+    "type": "sort",
+    "source_format": "sort",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Which world is each sentence about?",
+    "instruction_ru": "Выберите группу для каждого предложения.",
+    "explanation_ru": "«If I were / were shorter / had more time» — нереальное настоящее; «if the bell rings / you read / Sakura asks» — реальное возможное будущее.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "groups": [
+      "Unreal now",
+      "Possible future"
+    ],
+    "sort_items": [
+      "If I were you, I would practise reading aloud.",
+      "If the bell rings, we will stop reading.",
+      "If Sakura had more time, she would help each pupil.",
+      "If you read the text, you will understand it.",
+      "If the lesson were shorter, we would read in pairs.",
+      "If Sakura asks, I will read it aloud."
+    ],
+    "blanks": [
+      {
+        "id": "CD08-38-b1",
+        "answer": "Unreal now",
+        "accepted_answers": [
+          "Unreal now"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD08-38-b2",
+        "answer": "Possible future",
+        "accepted_answers": [
+          "Possible future"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD08-38-b3",
+        "answer": "Unreal now",
+        "accepted_answers": [
+          "Unreal now"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD08-38-b4",
+        "answer": "Possible future",
+        "accepted_answers": [
+          "Possible future"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD08-38-b5",
+        "answer": "Unreal now",
+        "accepted_answers": [
+          "Unreal now"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD08-38-b6",
+        "answer": "Possible future",
+        "accepted_answers": [
+          "Possible future"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If I were you, I would practise reading aloud. → Unreal now · If the bell rings, we will stop reading. → Possible future · If Sakura had more time, she would help each pupil. → Unreal now · If you read the text, you will understand it. → Possible future · If the lesson were shorter, we would read in pairs. → Unreal now · If Sakura asks, I will read it aloud. → Possible future"
+  },
+  {
+    "id": "CD09-01",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Aisling (to have) one sleepy puppy, she would enjoy a quiet afternoon.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Ситуация нереальна: у Айслинг пять собак, а не один щенок. Поэтому после if стоит Past Simple (had), а в главной части — would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-01-b1",
+        "answer": "had",
+        "accepted_answers": [
+          "had"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "have"
+      }
+    ],
+    "answer_text": "If Aisling had one sleepy puppy, she would enjoy a quiet afternoon."
+  },
+  {
+    "id": "CD09-02",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If everyone (to close) the fridge door, the milk would stay cold.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Дверцу холодильника сейчас оставляют открытой, значит условие нереальное. После if нужен Past Simple (closed), а в результате — would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-02-b1",
+        "answer": "closed",
+        "accepted_answers": [
+          "closed",
+          "were to close"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "close"
+      }
+    ],
+    "answer_text": "If everyone closed the fridge door, the milk would stay cold."
+  },
+  {
+    "id": "CD09-04",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Gianna would return the dress if the page (to work).",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Страница возврата сейчас не работает, поэтому условие нереальное. После if ставим Past Simple (worked).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-04-b1",
+        "answer": "worked",
+        "accepted_answers": [
+          "worked",
+          "were working"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "work"
+      }
+    ],
+    "answer_text": "Gianna would return the dress if the page worked."
+  },
+  {
+    "id": "CD09-05",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Mateus (to score) the winning shot, the team would cheer.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Матеус на самом деле не забивает победный мяч — это мечта. Поэтому в if-части нужен Past Simple (scored).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-05-b1",
+        "answer": "scored",
+        "accepted_answers": [
+          "scored",
+          "were to score"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "score"
+      }
+    ],
+    "answer_text": "If Mateus scored the winning shot, the team would cheer."
+  },
+  {
+    "id": "CD09-06",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Your lemon tree would die if you (to leave) it outside.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Дерево ещё стоит в саду, и мороз — лишь нереальная угроза. После if нужен Past Simple (left).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-06-b1",
+        "answer": "left",
+        "accepted_answers": [
+          "left",
+          "were to leave"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "leave"
+      }
+    ],
+    "answer_text": "Your lemon tree would die if you left it outside."
+  },
+  {
+    "id": "CD09-07",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The camera above Oleg's space does not work, so if it (to work), he could see who scratched his car.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Камера сейчас не работает — условие нереально. После if ставим Past Simple (worked), а результат передаём через could.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-07-b1",
+        "answer": "worked",
+        "accepted_answers": [
+          "worked",
+          "were to work"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "work"
+      }
+    ],
+    "answer_text": "The camera above Oleg's space does not work, so if it worked, he could see who scratched his car."
+  },
+  {
+    "id": "CD09-08",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Filip would catch the last line if his streaming (not / to buffer) at the ending.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Стриминг сейчас буферит, поэтому ситуация нереальна. В if-части — Past Simple с отрицанием (did not buffer).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-08-b1",
+        "answer": "did not buffer",
+        "accepted_answers": [
+          "did not buffer",
+          "didn't buffer",
+          "were not to buffer"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "buffer"
+      }
+    ],
+    "answer_text": "Filip would catch the last line if his streaming did not buffer at the ending."
+  },
+  {
+    "id": "CD09-09",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "There are too many forms, so Piotr would finish sooner if he (to start) with the short guide.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Пиотр сейчас не начинает с короткой инструкции, поэтому условие нереальное. После if нужен Past Simple (started).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-09-b1",
+        "answer": "started",
+        "accepted_answers": [
+          "started",
+          "were to start"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "start"
+      }
+    ],
+    "answer_text": "There are too many forms, so Piotr would finish sooner if he started with the short guide."
+  },
+  {
+    "id": "CD09-10",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Would Leah sleep better if the street light (not / to flicker) all night?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Фонарь сейчас мигает, значит условие нереально. В if-части ставим Past Simple с отрицанием (did not flicker).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-10-b1",
+        "answer": "did not flicker",
+        "accepted_answers": [
+          "did not flicker",
+          "didn't flicker"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_question",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "flicker"
+      }
+    ],
+    "answer_text": "Would Leah sleep better if the street light did not flicker all night?"
+  },
+  {
+    "id": "CD09-11",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The chemist gives Johan some advice. 'If I {{1:to be}} you, I would rest before the flight.' Johan is happy. If he {{2:to rest}} well, he would feel better.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Совет даётся через 'If I were you' — здесь всегда were. Второе условие нереально сейчас: Past Simple (rested) + would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-11-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "was"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_if_i_were_you",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD09-11-b2",
+        "answer": "rested",
+        "accepted_answers": [
+          "rested",
+          "were to rest"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "rest"
+      }
+    ],
+    "answer_text": "The chemist gives Johan some advice. 'If I were you, I would rest before the flight.' Johan is happy. If he rested well, he would feel better."
+  },
+  {
+    "id": "CD09-15",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Bjorn works on roads all day, but at night he writes songs. 'If I {{1:to leave}} this job, I would play in a warm basement for a small audience,' he tells his guitar. 'And if those people {{2:to like}} my music, I would never stop writing.'",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Обе части — мечта, нереальная сейчас: в if-частях Past Simple, в результатах — would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-15-b1",
+        "answer": "left",
+        "accepted_answers": [
+          "left",
+          "were to leave"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "leave"
+      },
+      {
+        "id": "CD09-15-b2",
+        "answer": "liked",
+        "accepted_answers": [
+          "liked",
+          "were to like"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "like"
+      }
+    ],
+    "answer_text": "Bjorn works on roads all day, but at night he writes songs. 'If I left this job, I would play in a warm basement for a small audience,' he tells his guitar. 'And if those people liked my music, I would never stop writing.'"
+  },
+  {
+    "id": "CD09-16",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Matilda plans her friend's wedding in a village. 'If the weather {{1:to be}} warm, we would put the tables under the trees,' she says. 'And if everyone {{2:to dance}} until late, I would be the happiest person there.'",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "После if с 'the weather' (it) допустимы и was, и were. В результате — would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-16-b1",
+        "answer": "was",
+        "accepted_answers": [
+          "was",
+          "were"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD09-16-b2",
+        "answer": "danced",
+        "accepted_answers": [
+          "danced"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "dance"
+      }
+    ],
+    "answer_text": "Matilda plans her friend's wedding in a village. 'If the weather was warm, we would put the tables under the trees,' she says. 'And if everyone danced until late, I would be the happiest person there.'"
+  },
+  {
+    "id": "CD09-17",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Timur writes to the manager: 'If my neighbours ___ quieter, I would sleep well.'",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После if нельзя ставить would/will. Для нереального настоящего нужен Past Simple — were (соседи — мн. ч.).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "would be",
+      "are",
+      "were",
+      "will be"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "were"
+  },
+  {
+    "id": "CD09-18",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If the windows ___ better, Petar could sleep in this noisy room.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Окна сейчас закрываются плохо — условие нереальное. После if нужен Past Simple (closed), а не would/will.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "would close",
+      "closed",
+      "close",
+      "will close"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "closed"
+  },
+  {
+    "id": "CD09-19",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Giulia would enjoy her pizza if the chef ___ it longer.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Пиццу сейчас недопекают, поэтому условие нереальное. После if ставим Past Simple (cooked).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "cooks",
+      "will cook",
+      "would cook",
+      "cooked"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "cooked"
+  },
+  {
+    "id": "CD09-20",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Gemma asks about the smaller town, and her friend says: 'If I ___ you, I would stay there a whole week first.'",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В совете 'If I were you' всегда только were; was здесь неверно.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "were",
+      "was",
+      "would be",
+      "am"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "were"
+  },
+  {
+    "id": "CD09-21",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Diego cannot choose between two courses, so his friend says: 'I ___ the one with fewer essays if I were you.'",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Результат нереального условия передаётся через would + инфинитив (would choose), а не will или настоящее время.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "will choose",
+      "would choose",
+      "choose",
+      "chose"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "would choose"
+  },
+  {
+    "id": "CD09-22",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If I would have a big parrot, it would be unhappy in my small flat.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Типичная ошибка — would после if (калька с «если бы»). В if-части нужен Past Simple: had.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "If I had a big parrot, it would be unhappy in my small flat.",
+    "accepted_answers": [
+      "If I had a big parrot, it would be unhappy in my small flat."
+    ]
+  },
+  {
+    "id": "CD09-23",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Elif would be happier if visitors stop touching the mosaics.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "В нереальном условии после if нужен Past Simple (stopped), а не настоящее время.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "Elif would be happier if visitors stopped touching the mosaics.",
+    "accepted_answers": [
+      "Elif would be happier if visitors stopped touching the mosaics."
+    ]
+  },
+  {
+    "id": "CD09-24",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Lorenzo would stay happy in the kitchen if the head chef gave him credit.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Здесь ошибки нет: это правильное нереальное условие — Past Simple (gave) в if-части и would в результате.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "Lorenzo would stay happy in the kitchen if the head chef gave him credit.",
+    "accepted_answers": [
+      "Lorenzo would stay happy in the kitchen if the head chef gave him credit."
+    ]
+  },
+  {
+    "id": "CD09-25",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Efe would feel safer if the council will add more lights to the rack.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Типичная ошибка — will после if. В нереальном условии (would в главной части) нужен Past Simple: added.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "Efe would feel safer if the council added more lights to the rack.",
+    "accepted_answers": [
+      "Efe would feel safer if the council added more lights to the rack."
+    ]
+  },
+  {
+    "id": "CD09-26",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Ali's flight has landed late and the buses have stopped. A driver gives him advice.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Совет даётся через 'If I were you' — только were, а в результате would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "If I were you, I would share a taxi with two other people.",
+      "If I was you, I will share a taxi with two other people.",
+      "If I am you, I would share a taxi with two other people.",
+      "I would share a taxi if I would be you."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "If I were you, I would share a taxi with two other people."
+  },
+  {
+    "id": "CD09-27",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Vikram works the front desk at a crowded city museum. He often thinks about a quiet little gallery by the sea.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Мечта о нереальном настоящем: после if — Past Simple (worked), в результате — would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "If he works in a quiet gallery, he would feel calm.",
+      "If he worked in a quiet gallery, he would feel calm.",
+      "If he would work in a quiet gallery, he would feel calm.",
+      "If he worked in a quiet gallery, he will feel calm."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "If he worked in a quiet gallery, he would feel calm."
+  },
+  {
+    "id": "CD09-28",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Artur cannot get his free coffee because the café is closed. → Artur would get his free coffee if ",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Обратная замена реальности на нереальное условие: после if допустимы и were, и was (café = it).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-28-b1",
+        "answer": "Artur would get his free coffee if the café were open.",
+        "accepted_answers": [
+          "Artur would get his free coffee if the café were open.",
+          "Artur would get his free coffee if the café was open.",
+          "Artur would get his free coffee if the café were not closed.",
+          "Artur would get his free coffee if the café was not closed.",
+          "Artur would get his free coffee if the café weren't closed."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "Artur would get his free coffee if the café were open."
+  },
+  {
+    "id": "CD09-29",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Sunita has to move the displays because the tent leaks. → If the tent did not leak, ",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Отрицательное нереальное условие: после if — Past Simple (did not leak), в результате — would not have to.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-29-b1",
+        "answer": "If the tent did not leak, Sunita would not have to move the displays.",
+        "accepted_answers": [
+          "If the tent did not leak, Sunita would not have to move the displays.",
+          "If the tent did not leak, Sunita wouldn't have to move the displays.",
+          "If the tent didn't leak, Sunita would not have to move the displays.",
+          "If the tent didn't leak, Sunita wouldn't have to move the displays."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If the tent did not leak, Sunita would not have to move the displays."
+  },
+  {
+    "id": "CD09-31",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Mairi would sleep well if the turbines were quiet.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "В реальности турбины шумят и Мэри плохо спит. Условие меняет обе части на противоположные, время остаётся настоящим.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "The turbines are not quiet, and Mairi does not sleep well.",
+      "The turbines are quiet, and Mairi does not sleep well.",
+      "The turbines are not quiet, and Mairi sleeps well.",
+      "The turbines were noisy, and Mairi did not sleep well."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "The turbines are not quiet, and Mairi does not sleep well."
+  },
+  {
+    "id": "CD09-32",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Zainab rushed through the test, she would make mistakes.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "В реальности Зайнаб не спешит и не делает ошибок. Условие меняет полярность, но время остаётся настоящим.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "Zainab does not rush, so she does not make mistakes.",
+      "Zainab rushes, so she makes mistakes.",
+      "Zainab does not rush, but she still makes mistakes.",
+      "Zainab did not rush, so she did not make mistakes."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "Zainab does not rush, so she does not make mistakes."
+  },
+  {
+    "id": "CD09-33",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Chen lived in a mountain cabin, he would not hear the city traffic.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "В реальности Чэнь живёт в городе и слышит шум машин. Условие меняет полярность, время остаётся настоящим.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "Chen lives in a cabin, so he does not hear the traffic.",
+      "Chen lived in the city, so he heard the traffic.",
+      "Chen does not live in a cabin, so he hears the traffic.",
+      "Chen does not live in a cabin, but he does not hear the traffic."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "Chen does not live in a cabin, so he hears the traffic."
+  },
+  {
+    "id": "CD09-34",
+    "topic": "conditionals",
+    "type": "match",
+    "source_format": "match",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Match the halves.",
+    "instruction_ru": "Соедините каждое начало с одним окончанием.",
+    "explanation_ru": "Все половины образуют нереальное условие: Past Simple после if и would в результате; каждая левая часть подходит только к одной правой.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "starts": [
+      "If the market had more bins,",
+      "If I were the boss,",
+      "If people used the bins,",
+      "If the bins were full,"
+    ],
+    "endings": [
+      "the street would be clean.",
+      "I would hire more cleaners.",
+      "the cleaners would have an easier day.",
+      "the smell would be bad."
+    ],
+    "blanks": [
+      {
+        "id": "CD09-34-b1",
+        "answer": "the street would be clean.",
+        "accepted_answers": [
+          "the street would be clean."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD09-34-b2",
+        "answer": "I would hire more cleaners.",
+        "accepted_answers": [
+          "I would hire more cleaners."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD09-34-b3",
+        "answer": "the cleaners would have an easier day.",
+        "accepted_answers": [
+          "the cleaners would have an easier day."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD09-34-b4",
+        "answer": "the smell would be bad.",
+        "accepted_answers": [
+          "the smell would be bad."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If the market had more bins, the street would be clean. · If I were the boss, I would hire more cleaners. · If people used the bins, the cleaners would have an easier day. · If the bins were full, the smell would be bad."
+  },
+  {
+    "id": "CD09-36",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Build the sentence.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "'Were to' обозначает маловероятное будущее; в результате — would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were_to"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD09-36-b1",
+        "answer": "If I were to lose my place, I would just carry on.",
+        "accepted_answers": [
+          "If I were to lose my place, I would just carry on."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were_to",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If I were to lose my place, I would just carry on.",
+    "blocks": [
+      "were",
+      "I",
+      "If",
+      "carry",
+      "I",
+      "place,",
+      "my",
+      "on.",
+      "just",
+      "lose",
+      "would",
+      "to"
+    ]
+  },
+  {
+    "id": "CD09-37",
+    "topic": "conditionals",
+    "type": "sort",
+    "source_format": "sort",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Sort the sentences.",
+    "instruction_ru": "Выберите группу для каждого предложения.",
+    "explanation_ru": "В 'Unreal now' — Past Simple после if и would в результате; в 'Real future' — Present Simple после if и will.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "groups": [
+      "Unreal now",
+      "Real future"
+    ],
+    "sort_items": [
+      "If I had a big balcony, I would relax there.",
+      "If Jacob saves money, he will buy a bigger flat.",
+      "I would grow plants if I had more sun.",
+      "If it is sunny, I will sit outside.",
+      "If the flat were bigger, Jacob would put a swing there.",
+      "If the flat is cheap, he will rent it."
+    ],
+    "blanks": [
+      {
+        "id": "CD09-37-b1",
+        "answer": "Unreal now",
+        "accepted_answers": [
+          "Unreal now"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD09-37-b2",
+        "answer": "Real future",
+        "accepted_answers": [
+          "Real future"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD09-37-b3",
+        "answer": "Unreal now",
+        "accepted_answers": [
+          "Unreal now"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD09-37-b4",
+        "answer": "Real future",
+        "accepted_answers": [
+          "Real future"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD09-37-b5",
+        "answer": "Unreal now",
+        "accepted_answers": [
+          "Unreal now"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD09-37-b6",
+        "answer": "Real future",
+        "accepted_answers": [
+          "Real future"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If I had a big balcony, I would relax there. → Unreal now · If Jacob saves money, he will buy a bigger flat. → Real future · I would grow plants if I had more sun. → Unreal now · If it is sunny, I will sit outside. → Real future · If the flat were bigger, Jacob would put a swing there. → Unreal now · If the flat is cheap, he will rent it. → Real future"
+  },
+  {
+    "id": "CD10-01",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Jessica (to have) a bigger shop, she would keep more fish.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Ситуация воображаемая: сейчас магазин не больше. В условии второго типа — Past Simple (had), в результате — would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-01-b1",
+        "answer": "had",
+        "accepted_answers": [
+          "had",
+          "were to have"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "have"
+      }
+    ],
+    "answer_text": "If Jessica had a bigger shop, she would keep more fish."
+  },
+  {
+    "id": "CD10-02",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If the oven (to work) well, the cakes would not burn.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Это жалоба: духовка сейчас греет неровно. Нереальное условие ставим в Past Simple (worked).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-02-b1",
+        "answer": "worked",
+        "accepted_answers": [
+          "worked",
+          "were to work"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "work"
+      }
+    ],
+    "answer_text": "If the oven worked well, the cakes would not burn."
+  },
+  {
+    "id": "CD10-03",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Marcus (to open) his own van, he would be his own boss.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Маркус только мечтает о фургоне. В условии второго типа — Past Simple (opened), в результате — would.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-03-b1",
+        "answer": "opened",
+        "accepted_answers": [
+          "opened",
+          "were to open"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "open"
+      }
+    ],
+    "answer_text": "If Marcus opened his own van, he would be his own boss."
+  },
+  {
+    "id": "CD10-04",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If I (to be) you, I would take the smaller van.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В «If I were you» всегда пишем were — это совет, а не прошедшее время.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-04-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "was"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_if_i_were_you",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      }
+    ],
+    "answer_text": "If I were you, I would take the smaller van."
+  },
+  {
+    "id": "CD10-05",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Would Daria (to sleep) better if she left her phone in the kitchen?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После would в вопросе второго типа идёт инфинитив без частицы to (sleep).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-05-b1",
+        "answer": "sleep",
+        "accepted_answers": [
+          "sleep"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_question",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "sleep"
+      }
+    ],
+    "answer_text": "Would Daria sleep better if she left her phone in the kitchen?"
+  },
+  {
+    "id": "CD10-06",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The flight would not feel so long if Viktor (to sit) beside his children.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Главная часть (would not feel) показывает второй тип, поэтому в условии ставим Past Simple (sat).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-06-b1",
+        "answer": "sat",
+        "accepted_answers": [
+          "sat",
+          "were sitting"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "sit"
+      }
+    ],
+    "answer_text": "The flight would not feel so long if Viktor sat beside his children."
+  },
+  {
+    "id": "CD10-09",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If this fitting room light (to work), Daniel could see the true colour.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Свет сейчас сломан, поэтому условие нереально: Past Simple (worked), а could + инфинитив — о возможности.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-09-b1",
+        "answer": "worked",
+        "accepted_answers": [
+          "worked",
+          "were to work"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "work"
+      }
+    ],
+    "answer_text": "If this fitting room light worked, Daniel could see the true colour."
+  },
+  {
+    "id": "CD10-10",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Beatriz (to swim) the final as calmly as she does in training, she would finally reach the podium.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Условие воображаемое: сейчас она не в финале, поэтому Past Simple (swam) без значения прошедшего; в главной части would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-10-b1",
+        "answer": "swam",
+        "accepted_answers": [
+          "swam",
+          "were to swim"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "swim"
+      }
+    ],
+    "answer_text": "If Beatriz swam the final as calmly as she does in training, she would finally reach the podium."
+  },
+  {
+    "id": "CD10-11",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Rahim is nervous about his toast. His friend says: 'If I {{1:to be}} you, I {{2:to keep}} it short.' Rahim thinks a short speech would be easier.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Совет через второй тип: в «If I were you» стоит were, а в главной части — would + инфинитив (would keep).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-11-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_if_i_were_you",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD10-11-b2",
+        "answer": "would keep",
+        "accepted_answers": [
+          "would keep",
+          "'d keep"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "keep"
+      }
+    ],
+    "answer_text": "Rahim is nervous about his toast. His friend says: 'If I were you, I would keep it short.' Rahim thinks a short speech would be easier."
+  },
+  {
+    "id": "CD10-14",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Meera lives far from Chennai and sees her old friends once a year. If she {{1:to live}} closer, she {{2:to see}} them much more often. The city would feel like home again.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Сейчас она живёт далеко, поэтому условие нереально: Past Simple (lived) без значения прошедшего; результат would see.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-14-b1",
+        "answer": "lived",
+        "accepted_answers": [
+          "lived"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "live"
+      },
+      {
+        "id": "CD10-14-b2",
+        "answer": "would see",
+        "accepted_answers": [
+          "would see",
+          "'d see"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "see"
+      }
+    ],
+    "answer_text": "Meera lives far from Chennai and sees her old friends once a year. If she lived closer, she would see them much more often. The city would feel like home again."
+  },
+  {
+    "id": "CD10-16",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Karim complains that the library Wi-Fi is slow. The librarian says: 'If you {{1:to sit}} near the router, the pages {{2:to load}} much faster.' Karim moves to a table by the wall.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Совет о ситуации, которой ещё нет: Past Simple (sat) в условии, would + инфинитив (would load) в результате.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-16-b1",
+        "answer": "sat",
+        "accepted_answers": [
+          "sat",
+          "were to sit"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "sit"
+      },
+      {
+        "id": "CD10-16-b2",
+        "answer": "would load",
+        "accepted_answers": [
+          "would load",
+          "'d load"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "load"
+      }
+    ],
+    "answer_text": "Karim complains that the library Wi-Fi is slow. The librarian says: 'If you sat near the router, the pages would load much faster.' Karim moves to a table by the wall."
+  },
+  {
+    "id": "CD10-17",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Leo says: 'If the kitten were older, it ___ outside safely.'",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В главной части второго типа после would идёт инфинитив без частицы to (would go); «would went» — ошибка: после would нельзя ставить прошедшую форму.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "will go",
+      "would go",
+      "would went",
+      "goes"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "would go"
+  },
+  {
+    "id": "CD10-18",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Natalia asks: 'Would you mind if I ___ this bag while I look at the other colours?'",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После «Would you mind if I…» глагол стоит в Past Simple (held) — это вежливая просьба, а не прошедшее время.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_polite_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "hold",
+      "holds",
+      "will hold",
+      "held"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "held"
+  },
+  {
+    "id": "CD10-19",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Piotr imagines a calm office. 'If every meeting ___ by email,' he thinks, 'the day would be much quieter.'",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После if во втором типе — Past Simple (happened), а не would/will: «would happen» — типичная ошибка из-за русского «если бы».",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "would happen",
+      "will happen",
+      "happened",
+      "happens"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "happened"
+  },
+  {
+    "id": "CD10-20",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Vanja watches a falling ball and wonders: 'What ___ happen if gravity suddenly disappeared?'",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Вопрос о воображаемой ситуации (если бы гравитация исчезла) — второй тип: What would happen + if + Past Simple.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "would",
+      "will",
+      "did",
+      "does"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "would"
+  },
+  {
+    "id": "CD10-21",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Sanaa chose the pharmacy over a clinic job years ago, and she still regrets it. 'If I ___ again,' she thinks, 'I would choose the small clinic and the mothers I dreamed of.'",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После if во втором типе — Past Simple (had), а не would/will: «если бы у меня был выбор». В главной части would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "would have the choice",
+      "will have the choice",
+      "had the choice",
+      "have the choice"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "had the choice"
+  },
+  {
+    "id": "CD10-22",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The smaller print would fit your frame if you chose it.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Предложение уже верное: if + Past Simple (chose) в условии, would + инфинитив (would fit) в главной части. Ошибки нет.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "The smaller print would fit your frame if you chose it.",
+    "accepted_answers": [
+      "The smaller print would fit your frame if you chose it."
+    ]
+  },
+  {
+    "id": "CD10-23",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Femke would ride home dry if the rain would stop by five.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if нельзя ставить would: здесь нужно Past Simple (stopped). Would остаётся в главной части.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "Femke would ride home dry if the rain stopped by five.",
+    "accepted_answers": [
+      "Femke would ride home dry if the rain stopped by five."
+    ]
+  },
+  {
+    "id": "CD10-24",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Aleksandr would have a quiet flat, he would not feel so tired in class.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if нужен Past Simple (had), а не would have: «would have» в условии — типичная ошибка из-за русского «если бы».",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "If Aleksandr had a quiet flat, he would not feel so tired in class.",
+    "accepted_answers": [
+      "If Aleksandr had a quiet flat, he would not feel so tired in class.",
+      "If Aleksandr had a quiet flat, he wouldn't feel so tired in class."
+    ]
+  },
+  {
+    "id": "CD10-25",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I would enjoy the show more if the staff move me to a better seat.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "В условии второго типа нужен Past Simple (moved), а не настоящее время (move): главная часть (would enjoy) уже показывает нереальность.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "I would enjoy the show more if the staff moved me to a better seat.",
+    "accepted_answers": [
+      "I would enjoy the show more if the staff moved me to a better seat."
+    ]
+  },
+  {
+    "id": "CD10-26",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Jiyeon's cousin wants to sign the contract for a new flat after one quick visit. Jiyeon thinks that is risky and offers her advice.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Совет через второй тип: «If I were you» + would + инфинитив. Варианты с am, will и would be в условии ошибочны.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "If I am you, I would visit the flat at different times.",
+      "If I were you, I would visit the flat at different times.",
+      "If I would be you, I would visit the flat at different times.",
+      "If I were you, I will visit the flat at different times."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "If I were you, I would visit the flat at different times."
+  },
+  {
+    "id": "CD10-27",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Rafael's bus is late again, and it is raining hard. He is tired of waiting and thinks about the bus company.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Это жалоба на нереальную сейчас ситуацию, поэтому второй тип: if + Past Simple (ran), would + инфинитив (would not wait).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "If the buses ran on time, Rafael would not wait in the rain.",
+      "If the buses run on time, Rafael will not wait in the rain.",
+      "If the buses would run on time, Rafael would not wait in the rain.",
+      "If the buses ran on time, Rafael will not wait in the rain."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "If the buses ran on time, Rafael would not wait in the rain."
+  },
+  {
+    "id": "CD10-28",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Angus does not have the museum job, so he is not proud. → If Angus had the museum job,",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Сейчас поста нет, поэтому условие второго типа: if + Past Simple (had), в главной части would be (would be proud).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-28-b1",
+        "answer": "If Angus had the museum job, he would be proud.",
+        "accepted_answers": [
+          "If Angus had the museum job, he would be proud."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If Angus had the museum job, he would be proud."
+  },
+  {
+    "id": "CD10-31",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If each form filled itself in, I would finish the pile quickly.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Настоящая ситуация противоположна условию: формы сами не заполняются, поэтому работа идёт медленно (время сохраняется — настоящее).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "The forms fill themselves in, so I finish quickly.",
+      "The forms do not fill themselves in, so I work slowly.",
+      "The forms did not fill themselves in, so I worked slowly.",
+      "I finish quickly because the forms fill themselves in."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "The forms do not fill themselves in, so I work slowly."
+  },
+  {
+    "id": "CD10-32",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The soil would stay in place if the hillside were covered in young trees.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "На самом деле склон не покрыт деревьями, поэтому почва вымывается: это настоящее время, полярность противоположна условию.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "The hillside is covered in trees, so the soil stays in place.",
+      "The hillside was not covered in trees, so the soil washed away.",
+      "The hillside is not covered in trees, so the soil washes away.",
+      "The trees cover the hillside, so the soil stays in place."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "The hillside is not covered in trees, so the soil washes away."
+  },
+  {
+    "id": "CD10-33",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The young fan would feel at home if she were directing her own quiet drama by the sea.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Настоящая ситуация противоположна: она не снимает фильм, поэтому не чувствует себя как дома; время остаётся настоящим.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "She is not directing any film, so she does not feel at home.",
+      "She is directing a film by the sea, so she feels at home.",
+      "She was not directing any film, so she did not feel at home.",
+      "She feels at home because she is directing the drama."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "She is not directing any film, so she does not feel at home."
+  },
+  {
+    "id": "CD10-34",
+    "topic": "conditionals",
+    "type": "match",
+    "source_format": "match",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Match the halves to make correct sentences.",
+    "instruction_ru": "Соедините каждое начало с одним окончанием.",
+    "explanation_ru": "Второй тип: if + Past Simple в условии, would + инфинитив в главной части. Соединяй половинки по подлежащему и смыслу.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "starts": [
+      "If I were you,",
+      "If Mei were free,",
+      "If he felt calmer,",
+      "If you had a question,"
+    ],
+    "endings": [
+      "she would run one more practice.",
+      "I would prepare two questions.",
+      "he would answer more clearly.",
+      "you would ask it early."
+    ],
+    "blanks": [
+      {
+        "id": "CD10-34-b1",
+        "answer": "I would prepare two questions.",
+        "accepted_answers": [
+          "I would prepare two questions."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-34-b2",
+        "answer": "she would run one more practice.",
+        "accepted_answers": [
+          "she would run one more practice."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-34-b3",
+        "answer": "he would answer more clearly.",
+        "accepted_answers": [
+          "he would answer more clearly."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-34-b4",
+        "answer": "you would ask it early.",
+        "accepted_answers": [
+          "you would ask it early."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If I were you, I would prepare two questions. · If Mei were free, she would run one more practice. · If he felt calmer, he would answer more clearly. · If you had a question, you would ask it early."
+  },
+  {
+    "id": "CD10-35",
+    "topic": "conditionals",
+    "type": "match",
+    "source_format": "match",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Join each half with its correct ending.",
+    "instruction_ru": "Соедините каждое начало с одним окончанием.",
+    "explanation_ru": "Второй тип: if + Past Simple (were/had/sailed), would + инфинитив в результате. Подбирай половинки по подлежащему и смыслу.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "starts": [
+      "If the sea were calmer,",
+      "If I were you,",
+      "If Kwame had a life jacket,",
+      "If the night boat sailed,"
+    ],
+    "endings": [
+      "the crossing would feel smoother.",
+      "I would book the slower night boat.",
+      "we would leave after dark.",
+      "he would feel much safer."
+    ],
+    "blanks": [
+      {
+        "id": "CD10-35-b1",
+        "answer": "the crossing would feel smoother.",
+        "accepted_answers": [
+          "the crossing would feel smoother."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-35-b2",
+        "answer": "I would book the slower night boat.",
+        "accepted_answers": [
+          "I would book the slower night boat."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-35-b3",
+        "answer": "he would feel much safer.",
+        "accepted_answers": [
+          "he would feel much safer."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-35-b4",
+        "answer": "we would leave after dark.",
+        "accepted_answers": [
+          "we would leave after dark."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If the sea were calmer, the crossing would feel smoother. · If I were you, I would book the slower night boat. · If Kwame had a life jacket, he would feel much safer. · If the night boat sailed, we would leave after dark."
+  },
+  {
+    "id": "CD10-36",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Build the sentence.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "«If Petra were to book» — формальный способ выразить маловероятное условие; далее в главной части would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were_to"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD10-36-b1",
+        "answer": "If Petra were to book early, the workshop would still have places.",
+        "accepted_answers": [
+          "If Petra were to book early, the workshop would still have places."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were_to",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If Petra were to book early, the workshop would still have places.",
+    "blocks": [
+      "book",
+      "places.",
+      "workshop",
+      "still",
+      "the",
+      "early,",
+      "were",
+      "Petra",
+      "have",
+      "to",
+      "If",
+      "would"
+    ]
+  },
+  {
+    "id": "CD10-37",
+    "topic": "conditionals",
+    "type": "sort",
+    "source_format": "sort",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Which group does each sentence belong to?",
+    "instruction_ru": "Выберите группу для каждого предложения.",
+    "explanation_ru": "Первый тип (настоящее время в if + will) — о реальном и возможном; второй тип (Past Simple + would) — о воображаемом и нереальном.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "groups": [
+      "Real or possible",
+      "Imagined or unreal"
+    ],
+    "sort_items": [
+      "If I find my sheet music, I will sing.",
+      "If the conductor has a spare copy, he will lend it to me.",
+      "If we print new copies, everyone will be ready.",
+      "If I had my sheet music, I would sing.",
+      "If the conductor were here, he would help me.",
+      "If I knew the song, I would not worry."
+    ],
+    "blanks": [
+      {
+        "id": "CD10-37-b1",
+        "answer": "Real or possible",
+        "accepted_answers": [
+          "Real or possible"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-37-b2",
+        "answer": "Real or possible",
+        "accepted_answers": [
+          "Real or possible"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-37-b3",
+        "answer": "Real or possible",
+        "accepted_answers": [
+          "Real or possible"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-37-b4",
+        "answer": "Imagined or unreal",
+        "accepted_answers": [
+          "Imagined or unreal"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-37-b5",
+        "answer": "Imagined or unreal",
+        "accepted_answers": [
+          "Imagined or unreal"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      },
+      {
+        "id": "CD10-37-b6",
+        "answer": "Imagined or unreal",
+        "accepted_answers": [
+          "Imagined or unreal"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If I find my sheet music, I will sing. → Real or possible · If the conductor has a spare copy, he will lend it to me. → Real or possible · If we print new copies, everyone will be ready. → Real or possible · If I had my sheet music, I would sing. → Imagined or unreal · If the conductor were here, he would help me. → Imagined or unreal · If I knew the song, I would not worry. → Imagined or unreal"
+  },
+  {
+    "id": "CD11-01",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The dog would have stayed inside if Cian (to close) the park gate.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Речь о прошлом, которое уже нельзя изменить: в части с if для третьего типа используется Past Perfect (had closed).",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-01-b1",
+        "answer": "had closed",
+        "accepted_answers": [
+          "had closed",
+          "'d closed"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "close"
+      }
+    ],
+    "answer_text": "The dog would have stayed inside if Cian had closed the park gate."
+  },
+  {
+    "id": "CD11-02",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Kofi would have passed the class if he (not / to forget) his project.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Кофи забыл проект и не сдал работу; для нереального условия в прошлом после if нужен отрицательный Past Perfect (hadn't forgotten).",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-02-b1",
+        "answer": "hadn't forgotten",
+        "accepted_answers": [
+          "hadn't forgotten",
+          "had not forgotten"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "forget"
+      }
+    ],
+    "answer_text": "Kofi would have passed the class if he hadn't forgotten his project."
+  },
+  {
+    "id": "CD11-03",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Youssef closed his stall at noon; if he (to wait) two hours, he (to sell) everything to the festival crowd.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Ситуация уже в прошлом: в условии ставим Past Perfect (had waited), а в результате — would/could/might have + V3.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-03-b1",
+        "answer": "had waited",
+        "accepted_answers": [
+          "had waited",
+          "'d waited"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "wait"
+      },
+      {
+        "id": "CD11-03-b2",
+        "answer": "would have sold",
+        "accepted_answers": [
+          "would have sold",
+          "'d have sold",
+          "could have sold",
+          "might have sold"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "sell"
+      }
+    ],
+    "answer_text": "Youssef closed his stall at noon; if he had waited two hours, he would have sold everything to the festival crowd."
+  },
+  {
+    "id": "CD11-04",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "— Why did nobody eat the soup? — If I (to taste) it first, I (not / to add) so much salt.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Суп уже пересолили, и это невозможно исправить: после if идёт Past Perfect (had tasted), а в главной части — wouldn't have added.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-04-b1",
+        "answer": "had tasted",
+        "accepted_answers": [
+          "had tasted",
+          "'d tasted"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "taste"
+      },
+      {
+        "id": "CD11-04-b2",
+        "answer": "wouldn't have added",
+        "accepted_answers": [
+          "wouldn't have added",
+          "would not have added"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "add"
+      }
+    ],
+    "answer_text": "— Why did nobody eat the soup? — If I had tasted it first, I wouldn't have added so much salt."
+  },
+  {
+    "id": "CD11-05",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Petra left her shop unlocked overnight; the thief (not / to get) in if she (to check) the back door.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Кража уже произошла, поэтому в главной части стоит wouldn't/couldn't have got, а в придаточном с if — Past Perfect (had checked).",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-05-b1",
+        "answer": "wouldn't have got",
+        "accepted_answers": [
+          "wouldn't have got",
+          "would not have got",
+          "couldn't have got",
+          "could not have got",
+          "would not have gotten",
+          "wouldn't have gotten"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "get"
+      },
+      {
+        "id": "CD11-05-b2",
+        "answer": "had checked",
+        "accepted_answers": [
+          "had checked",
+          "'d checked"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "check"
+      }
+    ],
+    "answer_text": "Petra left her shop unlocked overnight; the thief wouldn't have got in if she had checked the back door."
+  },
+  {
+    "id": "CD11-08",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "We fell out at my friend's party in Osaka. If I (not / to leave) so early, we (to talk) it through.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Вечеринка и ссора уже позади: сожаление о прошлом передаётся через if + hadn't left и would/could/might have talked.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-08-b1",
+        "answer": "hadn't left",
+        "accepted_answers": [
+          "hadn't left",
+          "had not left"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "leave"
+      },
+      {
+        "id": "CD11-08-b2",
+        "answer": "would have talked",
+        "accepted_answers": [
+          "would have talked",
+          "'d have talked",
+          "could have talked",
+          "might have talked",
+          "would've talked"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "talk"
+      }
+    ],
+    "answer_text": "We fell out at my friend's party in Osaka. If I hadn't left so early, we would have talked it through."
+  },
+  {
+    "id": "CD11-09",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Before Pádraig cleared the trees along the field, nobody warned him that the stream would dry up; if he (to know) how they sheltered the water, he (not / to cut) them down.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Деревья уже срублены, поэтому оба действия относятся к прошлому: Past Perfect в условии (had known) и wouldn't have cut в результате.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-09-b1",
+        "answer": "had known",
+        "accepted_answers": [
+          "had known",
+          "'d known"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "know"
+      },
+      {
+        "id": "CD11-09-b2",
+        "answer": "wouldn't have cut",
+        "accepted_answers": [
+          "wouldn't have cut",
+          "would not have cut"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "cut"
+      }
+    ],
+    "answer_text": "Before Pádraig cleared the trees along the field, nobody warned him that the stream would dry up; if he had known how they sheltered the water, he wouldn't have cut them down."
+  },
+  {
+    "id": "CD11-10",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "According to Bao's report from the riverside site in Hanoi, the ancient wooden boat (to survive) the flood if the team (to move) it to higher ground before the river rose.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наводнение уже случилось, и лодку не успели перенести: главная часть требует would/could/might have survived, а часть с if — had moved.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-10-b1",
+        "answer": "would have survived",
+        "accepted_answers": [
+          "would have survived",
+          "could have survived",
+          "might have survived",
+          "would've survived"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "survive"
+      },
+      {
+        "id": "CD11-10-b2",
+        "answer": "had moved",
+        "accepted_answers": [
+          "had moved",
+          "'d moved"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "move"
+      }
+    ],
+    "answer_text": "According to Bao's report from the riverside site in Hanoi, the ancient wooden boat would have survived the flood if the team had moved it to higher ground before the river rose."
+  },
+  {
+    "id": "CD11-11",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Two years ago, we sold our old piano to save space in the living room. Six months later, my daughter asked to start music lessons! If we {{1:not / to sell}} it, she {{2:to practise}} at home every day. {{3:you / to keep}} it in our place?",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Вся история о прошлом решении продать пианино: отрицание в условии (hadn't sold), результат (would have practised) и вопрос в третьем типе (Would you have kept).",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form",
+      "cd_third_negative",
+      "cd_third_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-11-b1",
+        "answer": "hadn't sold",
+        "accepted_answers": [
+          "hadn't sold",
+          "had not sold"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "sell"
+      },
+      {
+        "id": "CD11-11-b2",
+        "answer": "would have practised",
+        "accepted_answers": [
+          "would have practised",
+          "'d have practised",
+          "could have practised",
+          "would be practising",
+          "would practise"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "practise"
+      },
+      {
+        "id": "CD11-11-b3",
+        "answer": "Would you have kept",
+        "accepted_answers": [
+          "Would you have kept"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_question",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "keep"
+      }
+    ],
+    "answer_text": "Two years ago, we sold our old piano to save space in the living room. Six months later, my daughter asked to start music lessons! If we hadn't sold it, she would have practised at home every day. Would you have kept it in our place?"
+  },
+  {
+    "id": "CD11-12",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Aisha reached the platform in Alexandria with ten minutes to spare, only to realise her passport was still on her kitchen table. She watched the overnight train pull away without her. If she {{1:to pack}} her bag the night before, she {{2:not / to miss}} the trip. She {{3:to arrive}} in Cairo by breakfast.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Поезд уже ушёл, поэтому нереальное условие и оба его воображаемых последствия в прошлом строятся по третьему типу: had packed, wouldn't have missed и would have arrived.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-12-b1",
+        "answer": "had packed",
+        "accepted_answers": [
+          "had packed",
+          "'d packed"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "pack"
+      },
+      {
+        "id": "CD11-12-b2",
+        "answer": "wouldn't have missed",
+        "accepted_answers": [
+          "wouldn't have missed",
+          "would not have missed"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "miss"
+      },
+      {
+        "id": "CD11-12-b3",
+        "answer": "would have arrived",
+        "accepted_answers": [
+          "would have arrived",
+          "'d have arrived",
+          "could have arrived"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "arrive"
+      }
+    ],
+    "answer_text": "Aisha reached the platform in Alexandria with ten minutes to spare, only to realise her passport was still on her kitchen table. She watched the overnight train pull away without her. If she had packed her bag the night before, she wouldn't have missed the trip. She would have arrived in Cairo by breakfast."
+  },
+  {
+    "id": "CD11-13",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Dark clouds rolled across the farm while June was driving the cows to the far field. Half an hour later, heavy hail forced everyone back to the barn. If she {{1:to read}} the weather warning that morning, she {{2:to leave}} the animals safely near the house. The wooden gate {{3:not / to break}} in the rush.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Град уже прошёл и ворота сломались: в условии используется Past Perfect (had read), а в последствиях — would have left и wouldn't have broken.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-13-b1",
+        "answer": "had read",
+        "accepted_answers": [
+          "had read",
+          "'d read"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "read"
+      },
+      {
+        "id": "CD11-13-b2",
+        "answer": "would have left",
+        "accepted_answers": [
+          "would have left",
+          "'d have left",
+          "could have left",
+          "would've left"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "leave"
+      },
+      {
+        "id": "CD11-13-b3",
+        "answer": "wouldn't have broken",
+        "accepted_answers": [
+          "wouldn't have broken",
+          "would not have broken"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "break"
+      }
+    ],
+    "answer_text": "Dark clouds rolled across the farm while June was driving the cows to the far field. Half an hour later, heavy hail forced everyone back to the barn. If she had read the weather warning that morning, she would have left the animals safely near the house. The wooden gate wouldn't have broken in the rush."
+  },
+  {
+    "id": "CD11-14",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C5",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The baby panda in Singapore arrived a week earlier than anyone had expected. Luckily, Mei Ling had already set up the warm room the weekend before. If the staff {{1:not / to prepare}} the room in advance, the first night {{2:to be}} chaotic. Even a short delay {{3:to put}} the tiny cub at risk.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Рождение панды и та ночь уже в прошлом: мы представляем, что случилось бы без подготовки, через hadn't prepared и would/could/might have + V3.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_could_might",
+      "cd_third_form",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-14-b1",
+        "answer": "hadn't prepared",
+        "accepted_answers": [
+          "hadn't prepared",
+          "had not prepared"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "prepare"
+      },
+      {
+        "id": "CD11-14-b2",
+        "answer": "would have been",
+        "accepted_answers": [
+          "would have been",
+          "could have been",
+          "might have been",
+          "would've been"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD11-14-b3",
+        "answer": "would have put",
+        "accepted_answers": [
+          "would have put",
+          "could have put",
+          "might have put",
+          "would've put"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "put"
+      }
+    ],
+    "answer_text": "The baby panda in Singapore arrived a week earlier than anyone had expected. Luckily, Mei Ling had already set up the warm room the weekend before. If the staff hadn't prepared the room in advance, the first night would have been chaotic. Even a short delay would have put the tiny cub at risk."
+  },
+  {
+    "id": "CD11-15",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C5",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "When the coastal storm hit French Guiana, Sophie's team stopped the countdown with three minutes left. Some managers complained about the lost week, so Sophie reviewed the wind data. If the rocket {{1:to take}} off in those gusts, the side winds {{2:to damage}} the outer shell. {{3:the mission / to succeed}} under those conditions? Almost certainly not.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Запуск отменили во время прошлого шторма, поэтому гипотетический сценарий требует had taken, would/could/might have damaged и вопроса Would/Could the mission have succeeded.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_could_might",
+      "cd_third_form",
+      "cd_third_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-15-b1",
+        "answer": "had taken",
+        "accepted_answers": [
+          "had taken"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "take"
+      },
+      {
+        "id": "CD11-15-b2",
+        "answer": "would have damaged",
+        "accepted_answers": [
+          "would have damaged",
+          "could have damaged",
+          "might have damaged",
+          "'d have damaged"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "damage"
+      },
+      {
+        "id": "CD11-15-b3",
+        "answer": "Would the mission have succeeded",
+        "accepted_answers": [
+          "Would the mission have succeeded",
+          "Could the mission have succeeded"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_question",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "succeed"
+      }
+    ],
+    "answer_text": "When the coastal storm hit French Guiana, Sophie's team stopped the countdown with three minutes left. Some managers complained about the lost week, so Sophie reviewed the wind data. If the rocket had taken off in those gusts, the side winds would have damaged the outer shell. Would the mission have succeeded under those conditions? Almost certainly not."
+  },
+  {
+    "id": "CD11-16",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C5",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Last winter, a storm brought down the roof of the rebuilt Roman villa near Naples. Giulia inspected the damage and saw cheap nails in the frame. If the builders {{1:to choose}} stronger wood, the roof {{2:not / to fall}} in the wind. The whole hall {{3:to stay}} open to visitors all spring.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Крыша уже обрушилась прошлой зимой, поэтому для другого исхода нужны Past Perfect (had chosen) и формы would (not) have + V3.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD11-16-b1",
+        "answer": "had chosen",
+        "accepted_answers": [
+          "had chosen"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "choose"
+      },
+      {
+        "id": "CD11-16-b2",
+        "answer": "wouldn't have fallen",
+        "accepted_answers": [
+          "wouldn't have fallen",
+          "would not have fallen"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "fall"
+      },
+      {
+        "id": "CD11-16-b3",
+        "answer": "would have stayed",
+        "accepted_answers": [
+          "would have stayed",
+          "could have stayed",
+          "would've stayed"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "stay"
+      }
+    ],
+    "answer_text": "Last winter, a storm brought down the roof of the rebuilt Roman villa near Naples. Giulia inspected the damage and saw cheap nails in the frame. If the builders had chosen stronger wood, the roof wouldn't have fallen in the wind. The whole hall would have stayed open to visitors all spring."
+  }
+]

@@ -109,11 +109,15 @@ class PassiveV7(unittest.TestCase):
             self.assertEqual(current['levels']['unrated'],15)
 
     def test_missing_release_inputs_never_mutates_bank(self):
-        manifest=ROOT/'data/exercises/index.json';before=manifest.read_bytes()
-        result=subprocess.run([sys.executable,str(ROOT/'scripts/build_passive_bank_v7.py')],capture_output=True,text=True)
-        if not (ROOT/'content/passive-bank/v7/final/B01.jsonl').exists():
-            self.assertNotEqual(result.returncode,0)
-            self.assertIn('Missing approved release inputs',result.stderr)
+        # A missing-input test must never rebuild the real checkout when sources exist.
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); bank=root/'content/passive-bank/v7'
+            manifest=root/'data/exercises/index.json';manifest.parent.mkdir(parents=True)
+            manifest.write_bytes((ROOT/'data/exercises/index.json').read_bytes())
+            before=manifest.read_bytes()
+            with patch.object(builder,'ROOT',root),patch.object(builder,'BANK',bank):
+                with self.assertRaisesRegex(ValueError,'Missing approved release inputs'):
+                    builder.build(Namespace(fixture=None,output=None,date='2026-11-16'))
             self.assertEqual(before,manifest.read_bytes())
 
 if __name__=='__main__':unittest.main()

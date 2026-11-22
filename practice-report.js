@@ -94,8 +94,9 @@ function translationReviewControls(answer,answerIndex,enabled) {
 }
 function reportSubmittedField(item,field,index,teacherView) {
   const e=escapeHtml,review=field.manual_review;
+  const context=item.topic==='conditionals'?(item.starts||item.sort_items||item.sentences||[])[index]:'';
   const status=field.verified===false?'Требует проверки преподавателем':review?`Преподаватель: ${field.correct?'зачтено':'не зачтено'}`:field.correct?'Верно':'Нужно исправить';
-  return `<div class="report-submitted" data-field-index="${index}" tabindex="-1"><span>${index+1}. ${teacherView?'Ответ ученика':'Ваш ответ'}</span><strong lang="en">${e(submittedDisplay(item,field.submitted))}</strong><small>${status}</small>${review?`${Number.isFinite(review.at)?`<p class="manual-review-result">Проверено: ${e(new Date(review.at*1000).toLocaleString('ru-RU'))}</p>`:''}${review.note?`<p><strong>Комментарий преподавателя:</strong> ${e(review.note)}</p>`:''}`:''}</div>`;
+  return `<div class="report-submitted" data-field-index="${index}" tabindex="-1"><span>${index+1}. ${teacherView?'Ответ ученика':'Ваш ответ'}</span>${context?`<p lang="en">${e(context)}</p>`:''}<strong lang="en">${e(submittedDisplay(item,field.submitted))}</strong><small>${status}</small>${review?`${Number.isFinite(review.at)?`<p class="manual-review-result">Проверено: ${e(new Date(review.at*1000).toLocaleString('ru-RU'))}</p>`:''}${review.note?`<p><strong>Комментарий преподавателя:</strong> ${e(review.note)}</p>`:''}`:''}</div>`;
 }
 function remediationActions(attempt,studentId='') {
   const eligible=attempt.status==='completed'&&(attempt.answers||[]).some(a=>(a.fields||[]).some(f=>!f.correct&&f.verified===true&&!f.skipped));

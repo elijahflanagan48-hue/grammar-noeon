@@ -15,7 +15,12 @@
     "dev": "python3 -B scripts/build_cloudflare.py && node scripts/local-worker.mjs",
     "docs:update": "python3 -B scripts/update_docs.py",
     "docs:check": "python3 -B scripts/update_docs.py --check",
-    "check": "node scripts/check-all.mjs"
+    "check": "node scripts/check-all.mjs",
+    "check-all": "node scripts/check-all.mjs",
+    "build:conditionals": "python3 -B scripts/build_conditionals_bank.py",
+    "test:conditionals": "python3 -B scripts/build_cloudflare.py && node tests/conditionals-bank.mjs && node tests/conditionals-workflows.mjs",
+    "test:conditionals:coverage": "node tests/conditionals-bank.mjs --coverage",
+    "test:conditionals:browser": "node tests/conditionals-practice-browser.cjs"
   },
   "devDependencies": {
     "axe-core": "4.14.0",

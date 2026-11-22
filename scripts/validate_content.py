@@ -23,7 +23,7 @@ def main() -> None:
         items.extend(chunk)
 
     passive = [item for item in items if item.get('topic')=='passive']
-    tenses = [item for item in items if not item['id'].startswith('cmp-') and item.get('topic') not in {'passive','modals','reported','nouns','speaking','infinitive'}]
+    tenses = [item for item in items if not item['id'].startswith('cmp-') and item.get('topic') not in {'passive','modals','reported','nouns','speaking','infinitive','conditionals'}]
     modals = [item for item in items if item.get('topic') == 'modals']
     assert len(modals) == manifest['sections']['modals'] == 1040
     if (SOURCE / 'data/modal-verbs.exercises.jsonl').exists():
@@ -54,7 +54,7 @@ def main() -> None:
     forbidden = {"publishable", "source", "source_prompt", "license_note", "provenance"}
     expected_types = {
         "open_brackets", "multiple_choice", "context_cloze", "active_to_passive", "translation_ru_en", "direct_to_reported", "direct_to_reported", "direct_to_reported",
-        "modal_gap", "modal_meaning", "modal_fix",
+        "modal_gap", "modal_meaning", "modal_fix", "word_order", "transformation", "match", "sort", "bank", "hunt",
     }
     assert {x["type"] for x in items} == expected_types | ({"error_fix"} if any(x["type"]=="error_fix" for x in items) else set())
 
@@ -63,7 +63,7 @@ def main() -> None:
 
     assert manifest["levels3"] == dict(__import__("collections").Counter(i["level"] for i in items))
     for item in items:
-        if item.get('topic') not in ('modals','reported','nouns','speaking','infinitive'):
+        if item.get('topic') not in ('modals','reported','nouns','speaking','infinitive','conditionals'):
             assert not re.search(r"\bshall\b|\bshan[’']t\b", json.dumps(item, ensure_ascii=False), re.I), (item['id'], 'shall in current exercise')
         assert item.get("level") in {"basic", "medium", "advanced"}, item["id"]
         assert not forbidden.intersection(item), item["id"]
@@ -80,7 +80,7 @@ def main() -> None:
             assert re.sub(r'^\s*\d+\s*[.)]\s+', '', item['answer']) in {correct, expected}, item['id']
         for field in item.get('blanks') or [item]:
             if not item.get('options'):
-                maximum=64 if item.get('answer_profile')=='english-standard-v2' else 6 if item.get('answer_profile')=='modal-exact-v1' else 2
+                maximum=64 if item.get('answer_profile') in ('english-standard-v2','conditionals-exact-v1') else 6 if item.get('answer_profile')=='modal-exact-v1' else 2
                 assert 1 <= len(field.get('accepted_answers', [])) <= maximum, (item['id'], 'Reviewed answer variants per field')
                 assert field['answer'] in field.get('accepted_answers',[]), (item['id'],'Canonical answer omitted')
         assert item.get("prompt")

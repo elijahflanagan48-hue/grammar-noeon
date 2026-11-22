@@ -1,0 +1,158 @@
+[
+  {
+    "id": "CD25-57",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C6",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I turned down the job in Leeds, so I still live far from my sister. If I had taken the job, I ___ near her now.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Условие относится к прошлому (had taken), а результат — к настоящему (now): would live, а не would have lived.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_choose"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "options": [
+      "would have lived",
+      "will live",
+      "would live",
+      "lived"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "would live"
+  },
+  {
+    "id": "CD25-58",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C6",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Last week Idris did not back up his files, so he lost his essay. Now he is very stressed.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Прошлое условие (had backed up) и результат в настоящем (now): would not be, без have been.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_choose"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "options": [
+      "If Idris had backed up his files, he would not have been so stressed now.",
+      "If Idris backed up his files, he would not have been so stressed.",
+      "If Idris had backed up his files, he would not be so stressed now.",
+      "If Idris would back up his files, he would not be so stressed now."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "If Idris had backed up his files, he would not be so stressed now."
+  },
+  {
+    "id": "CD25-59",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C1",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Put the words in order.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "В инструкции после if + Present Simple идёт императив: leave the building.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "blanks": [
+      {
+        "id": "CD25-59-b1",
+        "answer": "If the alarm goes off, leave the building at once.",
+        "accepted_answers": [
+          "If the alarm goes off, leave the building at once."
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      }
+    ],
+    "answer_text": "If the alarm goes off, leave the building at once.",
+    "blocks": [
+      "leave",
+      "If",
+      "the",
+      "off,",
+      "alarm",
+      "goes",
+      "building",
+      "the",
+      "at",
+      "once."
+    ]
+  },
+  {
+    "id": "CD25-60",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C9",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-22.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Hamid wishes he could play in the school team.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Wish + could означает, что сейчас сделать что-то нельзя, а хочется: Hamid не может играть в команде.",
+    "practice_tenses": [
+      "cd_wish"
+    ],
+    "tags": [
+      "cd_wish",
+      "cd_wish_could"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-wish"
+    ],
+    "options": [
+      "Hamid is able to play in the school team.",
+      "Hamid can't play in the school team now, and he is sorry.",
+      "Hamid couldn't play in the team last year, but he can now.",
+      "Hamid doesn't want to play in the school team."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "Hamid can't play in the school team now, and he is sorry."
+  }
+]

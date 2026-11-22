@@ -14,7 +14,7 @@ assert.equal(subjectBefore('The number of people who (to take up) regular fitnes
 const broken=[{id:'fixture',prompt:'I (to work). It {{2:test}}.',blanks:[{answer:'has worked',accepted_answers:[]},{answer:'have tested',accepted_answers:[]}]}];assert.equal(checkItems(broken).length,2);
 assert(checkItems([{id:'name',prompt:'(Emily / to work) here?',blanks:[{answer:'Has Emily worked',accepted_answers:['Has worked']}]}]).some(x=>x.kind==='question_subject_missing'));
 // This subject heuristic was authored for the original active-tense bank.
-const items=loadBank().filter(i=>i.topic!=='passive');assert.deepEqual(checkItems(items),[]);
+const items=loadBank().filter(i=>i.topic!=='passive'&&i.topic!=='conditionals');assert.deepEqual(checkItems(items),[]);
 const item=items.find(i=>i.id==='src-u03-092');
 const historical=structuredClone(item);historical.content_version='historical-fixture';historical.blanks[0].answer='has chosen';historical.blanks[0].accepted_answers=['has chosen'];assert.equal(grade(historical,['has chosen']).correct,true,'Historical embedded keys retain their original grading');
 for(const check of [evaluate,(i,a)=>grade(i,a).correct]){assert.equal(check(item,['have chosen']),true);assert.equal(check(item,['has chosen']),false);}

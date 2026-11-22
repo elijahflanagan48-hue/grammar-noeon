@@ -15,6 +15,10 @@ const TYPE_LABELS = {
   direct_to_reported: "Direct → Reported",
   active_to_passive: "Active → Passive",
   passive_to_active: "Passive → Active",
+  match: "Соединить половинки",
+  sort: "Распределить по группам",
+  bank: "Слова из банка",
+  hunt: "Найти неверные предложения",
   word_order: "Собрать цепочку",
   context_cloze: "Контекстный текст",
 };
@@ -258,7 +262,7 @@ function scrollTheory(parts) {
 }
 
 const GRAMMAR_SECTIONS = {
-  conditionals: { title: "Conditionals", subtitle: "Условные предложения", description: "Реальные и «если бы»: zero, first, second, third, смешанные, unless и in case, wish, would rather, условия без if и инверсия.", theory: "conditionals", soon: true, theoryReady: true },
+  conditionals: { title: "Conditionals", subtitle: "Условные предложения", description: "Реальные и «если бы»: zero, first, second, third, смешанные, unless и in case, wish, would rather, условия без if и инверсия.", theory: "conditionals", theoryReady: true },
   infinitive: { title: "Infinitive · -ing", subtitle: "Инфинитив и герундий", description: "to do, do или doing: после каких слов какая форма, пары со сменой смысла (stop, remember, try), предлоги, цель, формы инфинитива и герундия.", theory: "infinitive" },
   speaking: { title: "Say · Tell · Speak · Talk", subtitle: "Глаголы речи", description: "Четыре глагола «говорить»: say, tell, speak и talk. Управление, устойчивые сочетания, выражения и фразовые глаголы.", theory: "speaking" },
   nouns: { title: "Nouns", subtitle: "Существительные", description: "Исчисляемые и неисчисляемые, число, притяжательный падеж, составные слова, артикли и определители количества: правило и практика.", theory: "nouns" },
@@ -288,6 +292,7 @@ function todayRuleLink(topicId) {
   for(const row of TENSE_MAP)for(const item of row.items)if(item.name.toLowerCase().replaceAll(' ','_')===topicId)return '#theory/'+row.route+'/'+item.anchor;
   const comparisons={cmp_forms:'формы-и-орфография',cmp_superlatives:'превосходная-степень-и-группа',cmp_equality:'равенство-и-неравенство',cmp_development:'насколько-велика-разница',cmp_precision:'точность-сравнения-и-пропуски'};
   const nouns={noun_count_uncount:'исчисляемые-и-неисчисляемые-существительные',noun_plural_regular:'регулярное-образование-множественного-числа',noun_plural_irregular:'неправильное-множественное-число',noun_number_only:'только-единственное-или-только-множественное-число',noun_partitives:'как-посчитать-неисчисляемое-партитивы',noun_dual_meaning:'слова-с-двумя-значениями-исчисляемое-неисчисляемое',noun_possessive:'притяжательный-падеж-s-и-of',noun_compound:'составные-существительные-compound-nouns',noun_attributive:'существительное-в-роли-определения-noun-noun',noun_collective:'собирательные-существительные-collective-nouns',noun_articles:'артикли-и-определители-с-существительными',noun_quantifiers:'количественные-определители-quantifiers',noun_mixed:'проверка-перед-ответом',noun_text:'карта-раздела'};
+  if(topicId.startsWith('cd_'))return '#theory/conditionals/'+(topicId==='cd_all'?'cd-core':topicId.replace('_','-'));
   if(topicId.startsWith('ig_'))return '#theory/infinitive/'+({ig_verb_to:'ig-verb-to',ig_verb_ing:'ig-verb-ing',ig_prep:'ig-prep',ig_bare:'ig-bare',ig_object:'ig-object',ig_adj:'ig-adj',ig_meaning:'ig-meaning',ig_forms:'ig-forms',ig_mixed:'ig-after'}[topicId]||'ig-metro');
   if(topicId.startsWith('sv_'))return '#theory/speaking/'+({"sv_say_tell": "sv-say-tell", "sv_tell_fixed": "sv-tell-fixed", "sv_say_fixed": "sv-say-objects", "sv_speak_talk": "sv-speak-talk", "sv_speak_language": "sv-speak-ability", "sv_phrases": "sv-phrases", "sv_mixed": "sv-after"}[topicId]||'sv-map');
   if(topicId.startsWith('noun_'))return '#theory/nouns/'+nouns[topicId];
@@ -452,7 +457,7 @@ async function renderTheory(parts) {
     return;
   }
   if(slug==='conditionals') {
-    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${typeof conditionalsMapHtml==='function'?conditionalsMapHtml():''}${conditionalsRuleHtml()}<p class="theory-soon subtle">Практика по этой теме готовится.</p></section></div>`;
+    app.innerHTML=`<div class="theory-layout">${theoryNav(slug,decodeAnchor(parts.slice(2).join('/')))}<section class="theory-content">${typeof conditionalsMapHtml==='function'?conditionalsMapHtml():''}${conditionalsRuleHtml()}<a class="button primary theory-practice" href="#practice/conditionals">Перейти к практике →</a></section></div>`;
     initialiseConditionalsRule(document.querySelector('.theory-content'));
     if(typeof initialiseConditionalsMap==='function')initialiseConditionalsMap(document.querySelector('.theory-content'));
     document.title='Conditionals — Grammar NOEON';openedTheory=slug;
@@ -624,7 +629,7 @@ function mountPracticeReference(session) {
     dialog.className = 'practice-reference';
     dialog.setAttribute('aria-labelledby', 'practice-reference-title');
     const initial = exerciseSection(session.items[0]);
-    dialog.innerHTML = `<header class="reference-header"><span class="reference-grip" aria-hidden="true"></span><div class="reference-row"><h2 id="practice-reference-title">Правило</h2><label class="reference-picker" for="reference-section"><span class="tm-sr">Тема</span><select id="reference-section"><option value="tenses">Tenses</option><option value="comparison">Adjectives (Degrees of Comparison)</option><option value="passive">Passive Voice</option><option value="reported">Reported Speech</option><option value="nouns">Nouns</option><option value="speaking">Say · Tell · Speak · Talk</option><option value="infinitive">Infinitive · -ing</option><option value="modals">Modal Verbs</option></select></label><button class="reference-close" type="button" data-reference-close aria-label="Закрыть правило">✕</button></div></header><div class="reference-reader theory-content" tabindex="0" role="region" aria-label="Текст правила"></div>`;
+    dialog.innerHTML = `<header class="reference-header"><span class="reference-grip" aria-hidden="true"></span><div class="reference-row"><h2 id="practice-reference-title">Правило</h2><label class="reference-picker" for="reference-section"><span class="tm-sr">Тема</span><select id="reference-section"><option value="tenses">Tenses</option><option value="comparison">Adjectives (Degrees of Comparison)</option><option value="passive">Passive Voice</option><option value="reported">Reported Speech</option><option value="nouns">Nouns</option><option value="speaking">Say · Tell · Speak · Talk</option><option value="conditionals">Conditionals</option><option value="infinitive">Infinitive · -ing</option><option value="modals">Modal Verbs</option></select></label><button class="reference-close" type="button" data-reference-close aria-label="Закрыть правило">✕</button></div></header><div class="reference-reader theory-content" tabindex="0" role="region" aria-label="Текст правила"></div>`;
     document.body.append(dialog);
     const reader = dialog.querySelector('.reference-reader');
     const select = dialog.querySelector('select');
@@ -677,6 +682,7 @@ function mountPracticeReference(session) {
         initialiseModalRule(reader);reader.scrollTop=positions.get(id)||0;
         if(anchor)revealModalAnchor(reader,anchor);return;
       }
+      if(id==='conditionals'){reader.innerHTML='<article data-reference-chapter="conditionals">'+conditionalsRuleHtml('reference-conditionals-')+'</article>';initialiseConditionalsRule(reader);return;}
       if(id==='infinitive') {
         reader.innerHTML='<article data-reference-chapter="infinitive">'+infinitiveGerundRuleHtml('reference-infinitive-')+'</article>';
         initialiseInfinitiveGerundRule(reader);reader.scrollTop=positions.get(id)||0;
@@ -806,7 +812,9 @@ const NOUN_TARGETS = [{"id":"noun_count_uncount","label":"Исчисляемые
 const INFINITIVE_TARGETS = [{"id": "ig_verb_to", "label": "Глагол + to do"}, {"id": "ig_verb_ing", "label": "Глагол + doing"}, {"id": "ig_prep", "label": "Предлог + doing"}, {"id": "ig_bare", "label": "Голый инфинитив: do"}, {"id": "ig_object", "label": "Глагол + sb + to do / do"}, {"id": "ig_adj", "label": "Прилагательное + to do / doing"}, {"id": "ig_meaning", "label": "Смена смысла: remember, stop, try…"}, {"id": "ig_forms", "label": "Формы: to have done, being done…"}, {"id": "ig_mixed", "label": "Смешанные задания"}];
 const SPEAKING_TARGETS = [{"id": "sv_say_tell", "label": "Say или tell: кому и что"}, {"id": "sv_tell_fixed", "label": "Tell: правда, история, различать"}, {"id": "sv_say_fixed", "label": "Say: готовые слова, таблички, слухи"}, {"id": "sv_speak_talk", "label": "Speak или talk"}, {"id": "sv_speak_language", "label": "Язык и умение говорить"}, {"id": "sv_phrases", "label": "Выражения и фразовые глаголы"}, {"id": "sv_mixed", "label": "Смешанные задания и тексты"}];
 const REPORTED_TARGETS = [{"id": "rs01", "label": "Say / tell / ask"}, {"id": "rs02", "label": "Statements: Simple"}, {"id": "rs03", "label": "Statements: Continuous / Perfect"}, {"id": "rs04", "label": "Сохранение времени"}, {"id": "rs05", "label": "Местоимения и принадлежность"}, {"id": "rs06", "label": "Указатели времени"}, {"id": "rs07", "label": "Место и указательные слова"}, {"id": "rs08", "label": "Модальные значения"}, {"id": "rs09", "label": "Общие вопросы"}, {"id": "rs10", "label": "Специальные вопросы"}, {"id": "rs11", "label": "Утвердительные команды"}, {"id": "rs12", "label": "Запреты"}, {"id": "rs13", "label": "Просьбы"}, {"id": "rs14", "label": "Reporting verb + to"}, {"id": "rs15", "label": "Reporting verb + object + to"}, {"id": "rs16", "label": "Reporting verb + -ing"}, {"id": "rs17", "label": "Reporting verb + предлог + -ing"}, {"id": "rs18", "label": "Reporting verb + придаточная часть"}, {"id": "rs19", "label": "Выбор модели reporting verb"}, {"id": "rs20", "label": "Условные и продвинутые формы"}, {"id": "rs_mixed", "label": "Смешанные задания"}];
+const CONDITIONALS_TARGETS = [{"id": "cd_zero", "label": "Факты и привычки"}, {"id": "cd_first", "label": "Реальное будущее"}, {"id": "cd_conj", "label": "Союзы условия"}, {"id": "cd_second", "label": "Нереальное настоящее и будущее"}, {"id": "cd_third", "label": "Нереальное прошлое"}, {"id": "cd_mixed", "label": "Смешанные условия"}, {"id": "cd_implied", "label": "Условие без if"}, {"id": "cd_inversion", "label": "Инверсия"}, {"id": "cd_wish", "label": "Wish и if only"}, {"id": "cd_unreal", "label": "Rather, time, as if"}, {"id": "cd_all", "label": "Выбор типа и ловушки"}];
 function exerciseSection(item) {
+  if(item?.topic==='conditionals'||/^CD\d+-/.test(item?.id||''))return 'conditionals';
   if(item?.topic==='infinitive'||/^ig-\d/.test(item?.id||''))return 'infinitive';
   if(item?.topic==='speaking'||/^sv-\d/.test(item?.id||''))return 'speaking';
   if(item?.topic==='nouns'||/^n-\d/.test(item?.id||''))return 'nouns';
@@ -815,11 +823,11 @@ function exerciseSection(item) {
   if(item?.topic==='passive'||/^pv\d?-/.test(item?.id||''))return 'passive';
   return item?.id?.startsWith('cmp-')?'comparison':'tenses';
 }
-function targetSection(id) { return id.startsWith('ig_')?'infinitive':id.startsWith('sv_')?'speaking':id.startsWith('noun_')?'nouns':/^rs(?:\d|_)/.test(id)?'reported':id.startsWith('mv_')?'modals':id.startsWith('pv_')?'passive':id.startsWith('cmp_')?'comparison':'tenses'; }
+function targetSection(id) { return id.startsWith('cd_')?'conditionals':id.startsWith('ig_')?'infinitive':id.startsWith('sv_')?'speaking':id.startsWith('noun_')?'nouns':/^rs(?:\d|_)/.test(id)?'reported':id.startsWith('mv_')?'modals':id.startsWith('pv_')?'passive':id.startsWith('cmp_')?'comparison':'tenses'; }
 function supportedResponseContract(item) {return !item.retired&&(item.response_contract==='bounded-v1'||(['equivalents-review-v1','manual-review-v1'].includes(item.response_contract)&&item.type==='translation_ru_en'&&item.blanks?.length===1));}
 const PRACTICE_TENSES = TENSE_MAP.flatMap(row => row.items.map(item => ({
   id: item.name.toLowerCase().replaceAll(" ", "_"), label: item.name,
-}))).concat({ id: "other_constructions", label: "Другие конструкции" }, COMPARISON_TARGETS, PASSIVE_LEGACY_TARGETS, PASSIVE_TENSE_TARGETS, PASSIVE_TARGETS, MODAL_TARGETS, REPORTED_TARGETS, NOUN_TARGETS, SPEAKING_TARGETS, INFINITIVE_TARGETS);
+}))).concat({ id: "other_constructions", label: "Другие конструкции" }, COMPARISON_TARGETS, PASSIVE_LEGACY_TARGETS, PASSIVE_TENSE_TARGETS, PASSIVE_TARGETS, MODAL_TARGETS, REPORTED_TARGETS, NOUN_TARGETS, SPEAKING_TARGETS, INFINITIVE_TARGETS, CONDITIONALS_TARGETS);
 
 function exerciseTenses(item) {
   if(exerciseSection(item)==='passive'){
@@ -955,8 +963,11 @@ function selectedLevels(form) {
 
 function assignmentSentenceKeys(item) {
   const prompt = item.prompt || "", options = item.options || [], texts = [];
+  if(item.topic==='conditionals'){
+    texts.push(...(item.sentences||[]),...Object.values(item.fixes||{}),...(item.sort_items||[]),...(item.starts||[]).map((start,n)=>start+' '+item.blanks[n].answer));
+  }
   const gaps = prompt.match(/_{2,}/g) || [];
-  texts.push(options.length && !gaps.length && item.type !== "meaning_choice" ? [prompt,...options].join("\n") : prompt);
+  if(!(item.topic==='conditionals'&&['match','sort','hunt','word_order'].includes(item.type)))texts.push(options.length && !gaps.length && item.type !== "meaning_choice" ? [prompt,...options].join("\n") : prompt);
   const completed = [];
   if (item.answer_text) completed.push(item.answer_text);
   if (options.length && item.type !== "meaning_choice") {
@@ -1082,6 +1093,8 @@ function renderPractice(student = null, topic = location.hash.split("/")[1], stu
       <fieldset class="practice-tenses" data-section="modals"><legend>Какие модальные глаголы тренировать</legend><p>Выберите весь раздел, группу правил или отдельные подтемы. Можно сочетать несколько подтем.</p><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Весь раздел</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="modal-targets">${[...new Set(MODAL_TARGETS.map(t=>t.rule))].sort((a,b)=>Number(a.slice(1))-Number(b.slice(1))).map(rule=>`<details><summary>${escapeHtml(typeof MODAL_RULE_TITLES!=='undefined'?MODAL_RULE_TITLES['mv-'+rule.toLowerCase()]||rule:rule)}</summary><button class="button" type="button" data-modal-rule="${rule}">Выбрать эту группу</button>${MODAL_TARGETS.filter(t=>t.rule===rule).map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${escapeHtml(target.label)}</span></label>`).join('')}</details>`).join('')}</div><a href="#theory/modals">Открыть правило Modal Verbs →</a></fieldset>
       <fieldset class="practice-tenses" data-section="nouns"><legend>Какие темы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${NOUN_TARGETS.map(target => `<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${target.label}</span></label>`).join("")}</div><p>Задания со скобками, выбором и мини-тексты. Ответ определяется контекстом: подсказок в условии нет. Все допустимые варианты принимаются.</p><a href="#theory/nouns">Открыть правило Nouns →</a></fieldset>
       <fieldset class="practice-tenses" data-section="speaking"><legend>Какие темы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${SPEAKING_TARGETS.map(target => `<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${escapeHtml(target.label)}</span></label>`).join("")}</div><p>Скобки, выбор, мини-тексты и переводы. Ответ определяется контекстом: подсказок в условии нет. Переводы проверяет преподаватель.</p><a href="#theory/speaking">Открыть правило Say · Tell · Speak · Talk →</a></fieldset>
+      <input type="hidden" name="construction" value=""><p id="construction-filter" hidden>Практика по выбранной конструкции. <a href="#practice/conditionals">Все конструкции →</a></p>
+      <fieldset class="practice-tenses" data-section="conditionals"><legend>Какие темы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${CONDITIONALS_TARGETS.map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${escapeHtml(target.label)}</span></label>`).join('')}</div><a href="#theory/conditionals">Открыть правило Conditionals →</a></fieldset>
       <fieldset class="practice-tenses" data-section="infinitive"><legend>Какие темы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все темы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${INFINITIVE_TARGETS.map(target => `<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${escapeHtml(target.label)}</span></label>`).join("")}</div><p>Скобки, выбор, мини-тексты и переводы. Форму (to do, doing или do) определяет контекст: в скобках дан только глагол.</p></fieldset>
       <fieldset class="practice-tenses" data-section="reported"><legend>Какие подтемы тренировать</legend><div class="tense-actions"><button class="button" type="button" data-tense-action="all">Выбрать все подтемы</button><button class="button" type="button" data-tense-action="none">Снять выбор</button></div><div class="level-options">${REPORTED_TARGETS.map(target=>`<label><input type="checkbox" name="tense" value="${target.id}" checked><span>${escapeHtml(target.label)}</span></label>`).join('')}</div><p>Общие и специальные вопросы, модели reporting verbs выбираются отдельно. «Смешанные задания» — комплексные упражнения; при выборе всех подтем используется общий банк.</p><a href="#theory/reported">Открыть правило Reported Speech →</a></fieldset>
       <fieldset class="practice-levels"><legend>Уровни сложности</legend><div class="tense-actions"><button class="button" type="button" data-level-action="all">Все уровни</button><button class="button" type="button" data-level-action="none">Снять выбор уровней</button></div><div class="level-options">${levels.map(level => `<label><input type="checkbox" name="level" value="${escapeHtml(level)}" checked><span>${escapeHtml(levelLabel(level))}</span></label>`).join("")}</div></fieldset>
@@ -1153,6 +1166,10 @@ function renderPractice(student = null, topic = location.hash.split("/")[1], stu
     form.querySelectorAll('[name="tense"]').forEach(input=>input.checked=ids.includes(input.value));
     setPracticeFormats(form,'all');
   }
+  if(topic==='conditionals'&&state.manifest.construction_counts?.conditionals?.[requested]){
+    form.elements.construction.value=requested;form.querySelector('#construction-filter').hidden=false;
+    form.querySelectorAll('[name="tense"], [name="level"]').forEach(input=>input.checked=!input.disabled);setPracticeFormats(form,'all');
+  }
   if(PRACTICE_TENSES.some(t=>t.id===requested)&&targetSection(requested)===topic) {
     form.querySelectorAll('[name="tense"]').forEach(input=>input.checked=input.value===requested);
     form.querySelectorAll('[name="level"]').forEach(input=>input.checked=!input.disabled);
@@ -1171,6 +1188,7 @@ function filteredExercises(form) {
     const targets = exerciseTenses(item);
     return !item.retired && targets.length && targets.every(target => tenses.includes(target))
       && levels.includes(item.level) && formats.includes(item.type)
+      && (!form.elements.construction?.value || item.tags?.includes(form.elements.construction.value))
       && (!form.assignmentAvailableIds || form.assignmentAvailableIds.has(item.id));
   });
   return form.assignmentAvailableIds ? uniqueAssignmentPool(pool) : pool;
@@ -1181,7 +1199,7 @@ function practiceCountError(form, minimum=Math.max(1,Number(form.elements.count.
   return Number.isInteger(count)&&count>=minimum&&count<=50?'':`Введите целое количество заданий от ${minimum} до 50.`;
 }
 function practiceFilterPayload(form) {
-  return {topic:form.elements.topic.value,tenses:selectedTenses(form),levels:selectedLevels(form),types:selectedFormats(form),count:Number(form.elements.count.value)};
+  return {topic:form.elements.topic.value,tenses:selectedTenses(form),levels:selectedLevels(form),types:selectedFormats(form),count:Number(form.elements.count.value),...(form.elements.construction?.value?{construction:form.elements.construction.value}:{})};
 }
 let previewSequence = 0;
 async function previewStudentPractice(form) {
@@ -1290,11 +1308,14 @@ async function startSession(event) {
 
 const stripSourceNumber = (text = "") => String(text).replace(/^\s*\d+\s*[.)]\s+/, "");
 function displayPrompt(item) {
+  if(item?.topic==='conditionals'&&['match','sort','hunt','word_order'].includes(item.type))return [item.prompt,...(item.starts||item.sort_items||item.sentences||item.blocks||[])].join(' ');
   const generic = item?.type === "multiple_choice" && item.prompt === "Выберите грамматически корректное предложение.";
   const label = item?.summary || (generic ? item.options?.[item.correct_option_index] || item.answer : null);
   return stripSourceNumber(label || item?.prompt || "").replace(/\{\{(\d+):[^}]*}}/g, "___($1)");
 }
 function submittedDisplay(item, submitted) {
+  if(item?.type==='hunt'&&Array.isArray(submitted))return 'Отмечены предложения: '+(submitted.flatMap((v,n)=>v==='1'?[n+1]:[]).join(', ')||'ни одного');
+  if(item?.type==='hunt')return submitted==='1'?'Отмечено как неверное':'Не отмечено';
   if (Array.isArray(submitted)) return submitted.map(value=>submittedDisplay(item,value)).join(" · ");
   return stripSourceNumber(item?.options && Number.isInteger(Number(submitted)) && submitted !== "" && submitted !== null
     ? item.options[Number(submitted)] ?? submitted : submitted ?? "—");
@@ -1305,7 +1326,7 @@ function lightHistoryAttempt(attempt) {
   return {...pick(attempt,['id','date','source','total','index','correct','score','maxScore','pending','levels','types','status']),answers:(attempt.answers||[]).map(answer=>({
     ...pick(answer,['id','correct','submitted']),
     fields:(answer.fields||[]).map(f=>pick(f,['submitted','correct','verified','diagnostic'])),
-    item:{...pick(answer.item,['id','type','prompt','summary','correct_option_index','options','answer','answer_text','explanation_ru','rule_refs','practice_tenses','tags','level','topic','cell']),
+    item:{...pick(answer.item,['starts','endings','groups','sort_items','word_bank','sentences','fixes','blocks','source_format','id','type','prompt','summary','correct_option_index','options','answer','answer_text','explanation_ru','rule_refs','practice_tenses','tags','level','topic','cell']),
       ...(answer.item?.blanks ? {blanks:answer.item.blanks.map(b=>pick(b,['answer','explanation_ru','rule_refs','tense_or_construction','base_adjective']))} : {})}
   }))};
 }
@@ -1318,7 +1339,7 @@ function toast(message) {
 }
 function inlineAnswers(item) {
   if(exerciseSection(item)==='modals'&&item.type==='modal_gap')return true;
-  return !item.options && item.blanks?.length && (item.type === "context_cloze" || (item.type === "open_brackets" && (item.blanks.length > 1 || ["passive","reported"].includes(exerciseSection(item)))));
+  return !item.options && item.blanks?.length && (item.type === "context_cloze" || (item.type === "open_brackets" && (item.blanks.length > 1 || ["passive","reported","conditionals"].includes(exerciseSection(item)))));
 }
 function blankCue(item, index) {
   const blank = item.blanks[index];
@@ -1368,6 +1389,7 @@ function initialiseAnswerSizing(form) {
   });
 }
 function renderPrompt(item) {
+  if(item.type==='bank'){let n=0;return escapeHtml(item.prompt).replace(/___/g,()=>conditionalsSelect(item,n++,item.word_bank,true));}
   if(exerciseSection(item)==='modals'&&['modal_gap','context_cloze'].includes(item.type)) {
     let index=0;return escapeHtml(item.prompt).replace(/___/g,()=>blankControl(item,index++,true));
   }
@@ -1386,6 +1408,10 @@ function renderPrompt(item) {
   return escapeHtml(prompt);
 }
 
+function conditionalsSelect(item,n,values,inline=false){
+  return `<span class="${inline?'inline-blank':'conditionals-select'}">${inline?`<label for="blank-${n}" class="blank-number">${n+1}</label>`:''}<select id="blank-${n}" data-answer-index="${n}" aria-label="${item.type==='match'?'Окончание':item.type==='sort'?'Группа':'Пропуск'} ${n+1}" lang="en"><option value="">Выберите…</option>${(item.type==='sort'?values:shuffled(values)).map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('')}</select>${item.type==='match'?'<span class="conditionals-selected" aria-live="polite"></span>':''}<small class="field-correction" hidden></small></span>`;
+}
+
 function acceptedFor(item, blankIndex = null) {
   const source = blankIndex === null ? item : item.blanks[blankIndex];
   const answer = Array.isArray(source.answer) ? source.answer[blankIndex] : source.answer;
@@ -1393,6 +1419,10 @@ function acceptedFor(item, blankIndex = null) {
 }
 
 function answerControls(item) {
+  if(item.type==='match')return `<div class="conditionals-rows">${item.starts.map((start,n)=>`<div class="field"><label for="blank-${n}" lang="en">${escapeHtml(start)}</label>${conditionalsSelect(item,n,item.endings)}</div>`).join('')}</div>`;
+  if(item.type==='sort')return `<div class="conditionals-rows">${item.sort_items.map((text,n)=>`<div class="field"><label for="blank-${n}" lang="en">${n+1}. ${escapeHtml(text)}</label>${conditionalsSelect(item,n,item.groups)}</div>`).join('')}</div>`;
+  if(item.type==='hunt')return `<div class="conditionals-hunt" role="group" aria-label="Нажмите неверные предложения">${item.sentences.map((text,n)=>`<div class="field"><button class="button" type="button" data-hunt="${n}" aria-pressed="false" lang="en">${n+1}. ${escapeHtml(text)}</button><input type="hidden" data-answer-index="${n}" value="0"><small class="field-correction" hidden></small></div>`).join('')}</div>`;
+  if(item.type==='bank')return '';
   if(item.type==='error_fix')return '<div class="field"><label for="answer">Ваше предложение</label><textarea class="answer-area" id="answer" rows="3" lang="en" autocomplete="off" spellcheck="false"></textarea><small class="field-correction" hidden></small></div>';
   if(item.type==='modal_fix')return '<div class="field"><label for="blank-0">Исправленное предложение</label><textarea class="answer-area" id="blank-0" data-answer-index="0" rows="3" lang="en" autocomplete="off" spellcheck="false"></textarea><small class="field-correction" hidden></small></div>';
   if((item.type==='active_to_passive'||item.type==='direct_to_reported')&&!item.prefix)return '<div class="field"><label for="blank-0">Ваше предложение</label><textarea class="answer-area" id="blank-0" data-answer-index="0" rows="3" lang="en" autocomplete="off" spellcheck="false"></textarea><small class="field-correction" hidden></small></div>';
@@ -1416,7 +1446,7 @@ function ruleLink(ref) {
   const aliases = { "future-simple-will--v1":"future-simple-will-v1", "future-continuous-will-be--v-ing":"future-continuous-will-be-v-ing", "future-perfect-simple-will-have--v3":"future-perfect-simple-will-have-v3", "future-perfect-continuous-will-have-been--v-ing":"future-perfect-continuous-will-have-been-v-ing", "инверсия-после-ограничительных-и-отрицательных-выражений":"18-маркированные-и-продвинутые-употребления", "7-by-и-untiltill":"7-by-и-until-till" };
   const [file, anchor] = ref.split("#");
   if (anchor && aliases[anchor]) ref = `${file}#${aliases[anchor]}`;
-  const match = ref.match(/content\/(?:tenses|comparison|passive|modals|reported-speech|nouns|speaking|infinitive)\/([^#]+?)(?:#(.+))?$/);
+  const match = ref.match(/content\/(?:tenses|comparison|passive|modals|reported-speech|nouns|speaking|infinitive|conditionals)\/([^#]+?)(?:#(.+))?$/);
   if (!match) return "#theory/foundations";
   const route = THEORY_ROUTE_BY_FILE[match[1]] || "foundations";
   return `#theory/${route}${match[2] ? `/${match[2]}` : ""}`;
@@ -1468,7 +1498,9 @@ function alreadyLess(text) {
   // Убираем только одно «already»: «already already» — это уже лишнее слово, а не вариант записи.
   return at >= 0 && words.length > 1 ? [...words.slice(0, at), ...words.slice(at + 1)].join(' ') : String(text);
 }
+function conditionalsAnswerNormal(value){return String(value).normalize('NFKC').replace(/[’‘ʼ]/g,"'").toLowerCase().trim().replace(/[.!?;]+$/,'').replace(/\s+/g,' ').trim();}
 function matchesField(item, submitted, index = null) {
+  if(item.answer_profile==='conditionals-exact-v1')return acceptedFor(item,index).some(a=>conditionalsAnswerNormal(a)===conditionalsAnswerNormal(submitted));
   if(item.answer_profile==='modal-exact-v1')return acceptedFor(item,index).some(a=>{const x=modalAnswerNormal(a),y=modalAnswerNormal(submitted);return x===y||alreadyLess(x)===alreadyLess(y);});
   if(item.answer_profile==='english-standard-v2')return acceptedFor(item,index).some(a=>{const x=standardAnswerNormal(a),y=standardAnswerNormal(submitted);return x===y||alreadyLess(x)===alreadyLess(y);});
 
@@ -1481,13 +1513,14 @@ function optionIsCorrect(item, submitted) {
   return (item.accepted_option_indices || [item.correct_option_index]).includes(submitted);
 }
 function needsReview(item) {
+  if(item.answer_profile==='conditionals-exact-v1')return false;
   return item.type === "translation_ru_en" || (!item.blanks?.length && !item.options && ["transformation", "error_correction"].includes(item.type));
 }
 
 // Feedback is separate from grading. Only a single, unambiguous local change
 // against the snapshot's accepted answers receives a specific explanation.
 function diagnosticForms(item, value) {
-  const forms = item.answer_profile === 'modal-exact-v1' ? [modalAnswerNormal(value)] : item.answer_profile === 'english-standard-v2'
+  const forms = item.answer_profile === 'conditionals-exact-v1' ? [conditionalsAnswerNormal(value)] : item.answer_profile === 'modal-exact-v1' ? [modalAnswerNormal(value)] : item.answer_profile === 'english-standard-v2'
     ? [standardAnswerNormal(String(value))]
     : answerForms(value, ['translation_ru_en', 'transformation', 'error_correction', 'error_fix', 'modal_fix'].includes(item.type));
   if (forms.length > 16) return [];
@@ -1675,6 +1708,11 @@ function renderSession() {
   }
   initialiseAnswerSizing(form);
   initialiseWordOrder(form,item);
+  form.querySelectorAll('.conditionals-select select').forEach(select=>{const show=()=>{const node=select.parentElement.querySelector('.conditionals-selected');if(node)node.textContent=select.value;};show();select.addEventListener('input',show);});
+  form.querySelectorAll('[data-hunt]').forEach(button=>{
+    const input=form.querySelector(`[data-answer-index="${button.dataset.hunt}"]`);button.setAttribute('aria-pressed',String(input.value==='1'));
+    button.addEventListener('click',()=>{if(session.checked)return;input.value=input.value==='1'?'0':'1';button.setAttribute('aria-pressed',String(input.value==='1'));input.dispatchEvent(new Event('input',{bubbles:true}));});
+  });
   form.addEventListener("input", () => { session.draft = getSubmitted(item, form); if(session.remote) scheduleAccountDraft(session, item, form); else saveSession(); });
   document.getElementById('restore-local-draft')?.addEventListener('click',()=>{
     session.draft=session.draftConflict.submitted;delete session.draftConflict;saveSession();renderSession();
@@ -1748,7 +1786,8 @@ function errorExplanations(fields = []) {
 function explanations(item, fields = []) {
   const detailedBlanks = (item.blanks || []).filter((blank) => blank.explanation_ru);
   const details = detailedBlanks.map((blank, index) => `<li><strong>${index + 1}. ${escapeHtml(blank.answer)}</strong> — ${escapeHtml(blank.explanation_ru)}</li>`).join("");
-  const general = `${escapeHtml(item.explanation_ru || "")}${details ? `<details><summary>Разбор каждого пропуска</summary><ul>${details}</ul></details>` : ""}`;
+  const fixes=item.type==='hunt'?`<ol class="hunt-fixes">${Object.entries(item.fixes||{}).map(([n,text])=>`<li value="${Number(n)+1}" lang="en">${escapeHtml(text)}</li>`).join('')}</ol>`:'';
+  const general = `${escapeHtml(item.explanation_ru || "")}${fixes}${details ? `<details><summary>Разбор каждого пропуска</summary><ul>${details}</ul></details>` : ""}`;
   const specific = errorExplanations(fields);
   return specific ? `${specific}<details><summary>Общее правило</summary>${general}</details>` : general;
 }
@@ -1835,7 +1874,7 @@ async function labelRuleLinks(container, item) {
 function showFeedback(item, correct) {
   const session=state.session, feedback=document.querySelector('#feedback'), form=document.querySelector('#answer-form');
   const answer=session.answers[session.index], fields=answer.fields;
-  form.querySelectorAll('input, textarea, select, button[type="submit"], button[data-word-block], button[data-word-reset]').forEach(control=>control.disabled=true);
+  form.querySelectorAll('input, textarea, select, button[type="submit"], button[data-word-block], button[data-word-reset], button[data-hunt]').forEach(control=>control.disabled=true);
   form.querySelector('[type=submit]').hidden=true;
   fields.forEach((field,index)=>{
     if(item.options) {
@@ -1847,12 +1886,13 @@ function showFeedback(item, correct) {
     } else {
       const control=form.querySelector(`[data-answer-index="${index}"]`) || form.querySelector('#answer');
       if(!control)return;
+      if(item.type==='hunt')form.querySelector(`[data-hunt="${index}"]`)?.classList.add(field.correct?'answer-correct':'answer-wrong');
       control.classList.add(field.verified===false?'answer-pending':field.correct?'answer-correct':'answer-wrong');
       control.setAttribute('aria-invalid',String(!field.correct&&field.verified!==false));
       if(!field.correct&&field.verified!==false) {
         let note=control.parentElement.querySelector('.field-correction');
         if(!note){note=document.createElement('small');note.className='field-correction';control.after(note);}
-        note.hidden=false;note.textContent='Верный вариант: '+stripSourceNumber(item.blanks?.[index]?.answer || correctAnswer(item));
+        note.hidden=false;note.textContent=item.type==='hunt'?(item.blanks[index].answer==='1'?'Нужно отметить: здесь есть ошибка.':'Это предложение верное.'):'Верный вариант: '+stripSourceNumber(item.blanks?.[index]?.answer || correctAnswer(item));
         const fragment=fieldErrorFragmentMarkup(field);
         if(fragment&&!control.parentElement.querySelector('.field-error-fragment'))note.insertAdjacentHTML('beforebegin',fragment);
         note.id=`correction-${index}`;control.setAttribute('aria-describedby',note.id);

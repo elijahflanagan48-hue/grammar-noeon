@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "content_version": "tenses-2026-11-09.1",
   "editorial_language": "British English",
-  "total_items": 11854,
-  "answer_slots": 14959,
+  "total_items": 12658,
+  "answer_slots": 16295,
   "excluded_non_publishable": 62,
   "levels": {
     "A1": 51,
@@ -13,19 +13,25 @@
     "B2": 1701,
     "C1": 784,
     "C2": 311,
-    "unrated": 6475
+    "unrated": 7279
   },
   "types": {
-    "open_brackets": 8008,
-    "multiple_choice": 1374,
-    "context_cloze": 443,
-    "translation_ru_en": 267,
     "active_to_passive": 100,
-    "modal_gap": 700,
-    "modal_fix": 50,
-    "modal_meaning": 50,
+    "bank": 14,
+    "context_cloze": 540,
     "direct_to_reported": 782,
-    "error_fix": 80
+    "error_fix": 169,
+    "hunt": 16,
+    "match": 17,
+    "modal_fix": 50,
+    "modal_gap": 700,
+    "modal_meaning": 50,
+    "multiple_choice": 1635,
+    "open_brackets": 8191,
+    "sort": 22,
+    "transformation": 81,
+    "translation_ru_en": 267,
+    "word_order": 24
   },
   "parts": [
     {
@@ -2154,6 +2160,208 @@
       "levels": {
         "unrated": 35
       }
+    },
+    {
+      "file": "data/exercises/part-122.json",
+      "count": 100,
+      "section": "conditionals",
+      "types": {
+        "context_cloze": 10,
+        "error_fix": 12,
+        "match": 5,
+        "multiple_choice": 28,
+        "open_brackets": 34,
+        "sort": 5,
+        "transformation": 4,
+        "word_order": 2
+      },
+      "levels3": {
+        "advanced": 8,
+        "basic": 55,
+        "medium": 37
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-123.json",
+      "count": 100,
+      "section": "conditionals",
+      "types": {
+        "bank": 10,
+        "context_cloze": 9,
+        "error_fix": 11,
+        "match": 1,
+        "multiple_choice": 29,
+        "open_brackets": 28,
+        "sort": 1,
+        "transformation": 10,
+        "word_order": 1
+      },
+      "levels3": {
+        "advanced": 23,
+        "basic": 29,
+        "medium": 48
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-124.json",
+      "count": 100,
+      "section": "conditionals",
+      "types": {
+        "context_cloze": 16,
+        "error_fix": 12,
+        "match": 4,
+        "multiple_choice": 30,
+        "open_brackets": 27,
+        "sort": 3,
+        "transformation": 5,
+        "word_order": 3
+      },
+      "levels3": {
+        "advanced": 18,
+        "basic": 39,
+        "medium": 43
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-125.json",
+      "count": 100,
+      "section": "conditionals",
+      "types": {
+        "context_cloze": 17,
+        "error_fix": 12,
+        "hunt": 3,
+        "match": 3,
+        "multiple_choice": 34,
+        "open_brackets": 19,
+        "transformation": 9,
+        "word_order": 3
+      },
+      "levels3": {
+        "advanced": 31,
+        "basic": 16,
+        "medium": 53
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-126.json",
+      "count": 100,
+      "section": "conditionals",
+      "types": {
+        "bank": 2,
+        "context_cloze": 15,
+        "error_fix": 9,
+        "hunt": 4,
+        "multiple_choice": 38,
+        "open_brackets": 19,
+        "transformation": 11,
+        "word_order": 2
+      },
+      "levels3": {
+        "advanced": 58,
+        "basic": 9,
+        "medium": 33
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-127.json",
+      "count": 100,
+      "section": "conditionals",
+      "types": {
+        "bank": 2,
+        "context_cloze": 7,
+        "error_fix": 11,
+        "match": 2,
+        "multiple_choice": 25,
+        "open_brackets": 18,
+        "transformation": 24,
+        "word_order": 11
+      },
+      "levels3": {
+        "advanced": 51,
+        "basic": 11,
+        "medium": 38
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-128.json",
+      "count": 100,
+      "section": "conditionals",
+      "types": {
+        "context_cloze": 12,
+        "error_fix": 11,
+        "hunt": 1,
+        "match": 2,
+        "multiple_choice": 36,
+        "open_brackets": 24,
+        "sort": 5,
+        "transformation": 9
+      },
+      "levels3": {
+        "advanced": 21,
+        "basic": 30,
+        "medium": 49
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-129.json",
+      "count": 100,
+      "section": "conditionals",
+      "types": {
+        "context_cloze": 11,
+        "error_fix": 11,
+        "hunt": 8,
+        "multiple_choice": 38,
+        "open_brackets": 14,
+        "sort": 8,
+        "transformation": 9,
+        "word_order": 1
+      },
+      "levels3": {
+        "advanced": 31,
+        "basic": 26,
+        "medium": 43
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-130.json",
+      "count": 4,
+      "section": "conditionals",
+      "types": {
+        "multiple_choice": 3,
+        "word_order": 1
+      },
+      "levels3": {
+        "advanced": 1,
+        "basic": 2,
+        "medium": 1
+      },
+      "levels": {
+        "unrated": 4
+      }
     }
   ],
   "sections": {
@@ -2164,7 +2372,8 @@
     "reported": 1000,
     "nouns": 1000,
     "speaking": 500,
-    "infinitive": 1000
+    "infinitive": 1000,
+    "conditionals": 804
   },
   "content_versions": {
     "tenses": "tenses-2026-11-09.1",
@@ -2174,12 +2383,13 @@
     "reported": "reported-2026-11-05.1",
     "nouns": "nouns-2026-11-07.1",
     "speaking": "speaking-2026-11-09.1",
-    "infinitive": "infinitive-2026-11-13.1"
+    "infinitive": "infinitive-2026-11-13.1",
+    "conditionals": "conditionals-2026-11-22.1"
   },
   "levels3": {
-    "advanced": 2566,
-    "medium": 5299,
-    "basic": 3989
+    "advanced": 2808,
+    "basic": 4206,
+    "medium": 5644
   },
   "section_types": {
     "comparison": {
@@ -2228,6 +2438,82 @@
       "multiple_choice": 267,
       "open_brackets": 643,
       "translation_ru_en": 20
+    },
+    "conditionals": {
+      "bank": 14,
+      "context_cloze": 97,
+      "error_fix": 89,
+      "hunt": 16,
+      "match": 17,
+      "multiple_choice": 261,
+      "open_brackets": 183,
+      "sort": 22,
+      "transformation": 81,
+      "word_order": 24
+    }
+  },
+  "construction_counts": {
+    "conditionals": {
+      "cd_as_if": 12,
+      "cd_conj_as_long_as": 13,
+      "cd_conj_even_if": 8,
+      "cd_conj_in_case": 12,
+      "cd_conj_on_condition": 9,
+      "cd_conj_only_if": 8,
+      "cd_conj_provided": 13,
+      "cd_conj_suppose": 8,
+      "cd_conj_unless": 17,
+      "cd_conj_whether": 7,
+      "cd_first_imperative": 7,
+      "cd_first_modal": 8,
+      "cd_first_no_will_after_if": 46,
+      "cd_first_vs_zero": 8,
+      "cd_first_when_if": 12,
+      "cd_first_will": 43,
+      "cd_id_prefer": 9,
+      "cd_if_only": 15,
+      "cd_if_when": 8,
+      "cd_implied_but_for": 9,
+      "cd_implied_if_it_werent": 9,
+      "cd_implied_if_so": 8,
+      "cd_implied_imperative": 10,
+      "cd_implied_in_that_case": 8,
+      "cd_implied_otherwise": 20,
+      "cd_implied_without": 14,
+      "cd_inversion_had": 8,
+      "cd_inversion_negative": 11,
+      "cd_inversion_should": 11,
+      "cd_inversion_were": 10,
+      "cd_its_time": 12,
+      "cd_mixed_choose": 9,
+      "cd_mixed_past_present": 56,
+      "cd_mixed_present_past": 33,
+      "cd_real_or_unreal": 8,
+      "cd_second_could_might": 8,
+      "cd_second_if_i_were_you": 9,
+      "cd_second_polite_would": 5,
+      "cd_second_question": 10,
+      "cd_second_were": 8,
+      "cd_second_were_to": 8,
+      "cd_second_would": 56,
+      "cd_third_contracted": 11,
+      "cd_third_could_might": 21,
+      "cd_third_form": 62,
+      "cd_third_negative": 46,
+      "cd_third_question": 12,
+      "cd_trap_will_after_if": 21,
+      "cd_trap_would_after_if": 27,
+      "cd_type_choice": 9,
+      "cd_what_if": 7,
+      "cd_wish_could": 10,
+      "cd_wish_past": 25,
+      "cd_wish_past_perfect": 25,
+      "cd_wish_would": 22,
+      "cd_would_rather": 14,
+      "cd_zero_fact": 9,
+      "cd_zero_habit": 22,
+      "cd_zero_if_when": 16,
+      "cd_zero_imperative": 7
     }
   }
 }

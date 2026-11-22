@@ -1,0 +1,250 @@
+{
+  "total": 804,
+  "formats": {
+    "bank": 14,
+    "fact": 55,
+    "fix": 89,
+    "gap": 183,
+    "hunt": 16,
+    "match": 17,
+    "mc": 136,
+    "mini": 97,
+    "order": 24,
+    "sort": 22,
+    "transform": 81,
+    "which": 70
+  },
+  "levels": {
+    "advanced": 242,
+    "basic": 217,
+    "medium": 345
+  },
+  "constructions": {
+    "cd_as_if": 12,
+    "cd_conj_as_long_as": 13,
+    "cd_conj_even_if": 8,
+    "cd_conj_in_case": 12,
+    "cd_conj_on_condition": 9,
+    "cd_conj_only_if": 8,
+    "cd_conj_provided": 13,
+    "cd_conj_suppose": 8,
+    "cd_conj_unless": 17,
+    "cd_conj_whether": 7,
+    "cd_first_imperative": 7,
+    "cd_first_modal": 8,
+    "cd_first_no_will_after_if": 46,
+    "cd_first_vs_zero": 8,
+    "cd_first_when_if": 12,
+    "cd_first_will": 43,
+    "cd_id_prefer": 9,
+    "cd_if_only": 15,
+    "cd_if_when": 8,
+    "cd_implied_but_for": 9,
+    "cd_implied_if_it_werent": 9,
+    "cd_implied_if_so": 8,
+    "cd_implied_imperative": 10,
+    "cd_implied_in_that_case": 8,
+    "cd_implied_otherwise": 20,
+    "cd_implied_without": 14,
+    "cd_inversion_had": 8,
+    "cd_inversion_negative": 11,
+    "cd_inversion_should": 11,
+    "cd_inversion_were": 10,
+    "cd_its_time": 12,
+    "cd_mixed_choose": 9,
+    "cd_mixed_past_present": 56,
+    "cd_mixed_present_past": 33,
+    "cd_real_or_unreal": 8,
+    "cd_second_could_might": 8,
+    "cd_second_if_i_were_you": 9,
+    "cd_second_polite_would": 5,
+    "cd_second_question": 10,
+    "cd_second_were": 8,
+    "cd_second_were_to": 8,
+    "cd_second_would": 56,
+    "cd_third_contracted": 11,
+    "cd_third_could_might": 21,
+    "cd_third_form": 62,
+    "cd_third_negative": 46,
+    "cd_third_question": 12,
+    "cd_trap_will_after_if": 21,
+    "cd_trap_would_after_if": 27,
+    "cd_type_choice": 9,
+    "cd_what_if": 7,
+    "cd_wish_could": 10,
+    "cd_wish_past": 25,
+    "cd_wish_past_perfect": 25,
+    "cd_wish_would": 22,
+    "cd_would_rather": 14,
+    "cd_zero_fact": 9,
+    "cd_zero_habit": 22,
+    "cd_zero_if_when": 16,
+    "cd_zero_imperative": 7
+  },
+  "targets": {
+    "cd_zero": {
+      "basic": 30,
+      "medium": 16,
+      "advanced": 3
+    },
+    "cd_first": {
+      "basic": 44,
+      "advanced": 9,
+      "medium": 42
+    },
+    "cd_conj": {
+      "basic": 15,
+      "medium": 40,
+      "advanced": 25
+    },
+    "cd_second": {
+      "basic": 44,
+      "medium": 43,
+      "advanced": 18
+    },
+    "cd_third": {
+      "basic": 18,
+      "medium": 58,
+      "advanced": 33
+    },
+    "cd_mixed": {
+      "medium": 22,
+      "advanced": 49
+    },
+    "cd_implied": {
+      "basic": 12,
+      "advanced": 27,
+      "medium": 30
+    },
+    "cd_inversion": {
+      "advanced": 32,
+      "medium": 8
+    },
+    "cd_wish": {
+      "basic": 23,
+      "medium": 37,
+      "advanced": 14
+    },
+    "cd_unreal": {
+      "basic": 11,
+      "medium": 24,
+      "advanced": 14
+    },
+    "cd_all": {
+      "basic": 20,
+      "medium": 25,
+      "advanced": 18
+    }
+  },
+  "coverage_met": false,
+  "undercovered": [
+    {
+      "construction": "cd_conj_whether",
+      "count": 7,
+      "ids": [
+        "CD06-16",
+        "CD06-34",
+        "CD07-20",
+        "CD07-27",
+        "CD25-18",
+        "CD25-19",
+        "CD25-20"
+      ]
+    },
+    {
+      "construction": "cd_first_imperative",
+      "count": 7,
+      "ids": [
+        "CD03-10",
+        "CD03-13",
+        "CD05-19",
+        "CD25-09",
+        "CD25-10",
+        "CD25-11",
+        "CD25-12"
+      ]
+    },
+    {
+      "construction": "cd_second_polite_would",
+      "count": 5,
+      "ids": [
+        "CD10-18",
+        "CD25-01",
+        "CD25-02",
+        "CD25-03",
+        "CD25-04"
+      ]
+    },
+    {
+      "construction": "cd_what_if",
+      "count": 7,
+      "ids": [
+        "CD21-17",
+        "CD21-21",
+        "CD22-11",
+        "CD22-14",
+        "CD25-29",
+        "CD25-30",
+        "CD25-31"
+      ]
+    },
+    {
+      "construction": "cd_zero_imperative",
+      "count": 7,
+      "ids": [
+        "CD01-21",
+        "CD02-01",
+        "CD25-05",
+        "CD25-06",
+        "CD25-07",
+        "CD25-08",
+        "CD25-59"
+      ]
+    }
+  ],
+  "source_issues": [
+    {
+      "id": "CD20-01",
+      "field": "blanks[0].accepted_answers",
+      "reason": "was is not grammatical with plural they; only were is valid. The reviewed source is preserved."
+    },
+    {
+      "id": "CD23-11",
+      "field": "groups",
+      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
+    },
+    {
+      "id": "CD23-21",
+      "field": "groups",
+      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
+    },
+    {
+      "id": "CD23-28",
+      "field": "groups",
+      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
+    },
+    {
+      "id": "CD24-11",
+      "field": "groups",
+      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
+    },
+    {
+      "id": "CD24-17",
+      "field": "groups",
+      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
+    },
+    {
+      "id": "CD24-30",
+      "field": "groups",
+      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
+    }
+  ],
+  "missing_levels": {
+    "cd_mixed": [
+      "basic"
+    ],
+    "cd_inversion": [
+      "basic"
+    ]
+  }
+}

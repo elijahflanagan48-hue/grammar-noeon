@@ -149,6 +149,43 @@ function cdmCheck(text) {
   return `<div class="cdm-check"><p class="cdm-ch-h">Проверьте себя</p><p class="cdm-ch-q">${cdmEsc(text.replace(m[0], '___')).replace('___', '<span class="cdm-gap">___</span>')}</p><div class="cdm-ch-o">${cdmShuffle(opts).map(o => `<button type="button"${o === opts[0] ? ' data-ok' : ''}>${cdmEsc(o)}</button>`).join('')}</div></div>`;
 }
 function cdmWhere(it) { return `${CDM_WORLD[it.world]} · ${CDM_TIMES[it.col].toLowerCase()}`; }
+// Exercise filters are independent of rule text and the map's examples.
+function cdmPracticeTarget(it) {
+  const tags = {
+    'would have done':'cd_third_form','could have done':'cd_third_could_might','might have done':'cd_third_could_might',
+    '’d = had / would':'cd_third_contracted','wish + had done':'cd_wish_past_perfect','if only + had done':'cd_if_only',
+    'wish + could have done':'cd_wish_could','would rather sb had done':'cd_would_rather','would rather have done':'cd_would_rather',
+    'as if + had done':'cd_as_if','What if … had done?':'cd_what_if',
+    'had done → would do':'cd_mixed_past_present','had done → would be doing':'cd_mixed_past_present',
+    'did → would have done':'cd_mixed_present_past','were → would have done':'cd_mixed_present_past','could → would have done':'cd_mixed_present_past',
+    'would do':'cd_second_would','If I were you':'cd_second_if_i_were_you','were / was':'cd_second_were',
+    'could do':'cd_second_could_might','might do':'cd_second_could_might','if + could':'cd_second_could_might',
+    'wish + Past':'cd_wish_past','wish + were':'cd_wish_past','wish + could':'cd_wish_could',
+    'if only + Past':'cd_if_only','would rather sb did':'cd_would_rather','it’s time sb did':'cd_its_time','it’s high time':'cd_its_time',
+    'as if + Past':'cd_as_if','imagine / suppose + Past':'cd_conj_suppose','if it weren’t for':'cd_implied_if_it_werent',
+    'without / with + noun':'cd_implied_without','were to do':'cd_second_were_to','were to: мягко':'cd_second_were_to',
+    'wish + would':'cd_wish_would','if only + would':'cd_if_only','would prefer it if':'cd_id_prefer',
+    'Would it be OK if…?':'cd_second_question','I wouldn’t…':'cd_second_would','It would be…':'cd_second_would',
+    'Should you…':'cd_inversion_should','Should you not…':'cd_inversion_negative','Were I…':'cd_inversion_were',
+    'Were sb to do…':'cd_inversion_were','Had I known…':'cd_inversion_had','Had I not…':'cd_inversion_negative',
+    'Were it not for':'cd_inversion_negative','Had it not been for':'cd_inversion_negative',
+    'otherwise':'cd_implied_otherwise','or (else)':'cd_implied_otherwise','повелит. + and':'cd_implied_imperative','повелит. + or':'cd_implied_imperative',
+    'with + noun':'cd_implied_without','without + noun':'cd_implied_without','but for':'cd_implied_but_for',
+    'if it hadn’t been for':'cd_implied_if_it_werent','if not for':'cd_implied_but_for','in that case':'cd_implied_in_that_case',
+    'if so / if not':'cd_implied_if_so','unless':'cd_conj_unless','unless ≠ if … not':'cd_conj_unless',
+    'as long as':'cd_conj_as_long_as','provided / providing':'cd_conj_provided','on condition that':'cd_conj_on_condition',
+    'only if':'cd_conj_only_if','even if':'cd_conj_even_if','in case':'cd_conj_in_case','in case (прошлое)':'cd_conj_in_case',
+    'in case of':'cd_conj_in_case','whether … or not':'cd_conj_whether','suppose / what if':'cd_conj_suppose','assuming (that)':'cd_conj_suppose',
+    'will do':'cd_first_will','can / may / might':'cd_first_modal','повелительное':'cd_first_imperative',
+    'when ≠ if':'cd_first_when_if','if you will…':'cd_second_polite_would','if you would…':'cd_second_polite_would',
+    'if + Present → Present':'cd_zero_fact','when = if':'cd_zero_if_when','инструкции':'cd_zero_imperative',
+    'привычки':'cd_zero_habit','unless (правила)':'cd_conj_unless','whenever':'cd_zero_habit',
+    '✗ If it will rain':'cd_trap_will_after_if','✗ If I would have':'cd_trap_would_after_if','✗ If I’d have known':'cd_trap_would_after_if',
+    '✗ I wish I can':'cd_wish_could','✗ I wish I would':'cd_wish_would','✗ unless … don’t':'cd_conj_unless',
+    '✗ if (заранее)':'cd_conj_in_case','✗ It’s time we go':'cd_its_time','✗ I’d rather you don’t':'cd_would_rather','✗ even if (факт)':'cd_conj_even_if'
+  };
+  return tags[it.name] || ({third:'cd_third',mixed:'cd_mixed',second:'cd_second',unlikely:'cd_second',formal:'cd_inversion',implied:'cd_implied',rnow:'cd_zero',rpast:'cd_all',gates:'cd_conj',first:'cd_first',zero:'cd_zero',traps:'cd_all'}[it.zone] || 'cd_all');
+}
 function cdmPanelHtml(id) {
   if (id[0] === 'l') {
     const l = CDM.lifts[+id.slice(1)];
@@ -162,7 +199,7 @@ function cdmPanelHtml(id) {
   const note = it.note ? `<p class="${it.trap ? 'cdm-trapnote' : 'cdm-note'}">${it.trap ? '<b>Ловушка.</b> ' : ''}${cdmEsc(it.note)}</p>` : '';
   return `<header><span class="cdm-badge cdm-z-${it.zone}">${cdmEsc(it.zoneTitle)}</span><span class="cdm-where">${cdmEsc(cdmWhere(it))}</span><h3>${cdmEsc(it.name)}</h3><p class="cdm-pat">${cdmEsc(it.pat)}</p><p class="cdm-mean">${cdmEsc(it.mean)}</p></header>
     <ul class="cdm-exs">${it.ex.map(([e, r]) => `<li><span class="cdm-ex">${cdmEsc(e)}</span><span class="cdm-ru">${cdmEsc(r)}</span></li>`).join('')}</ul>
-    ${note}${cdmCheck(it.check)}<a class="cdm-rule" href="#theory/conditionals/${it.ref}" data-cdm-rule="${it.ref}">Подробно в правиле →</a>`;
+    ${note}${cdmCheck(it.check)}<a class="button primary cdm-practice" href="#practice/conditionals/${cdmPracticeTarget(it)}">Практика →</a><a class="cdm-rule" href="#theory/conditionals/${it.ref}" data-cdm-rule="${it.ref}">Подробно в правиле →</a>`;
 }
 /* ---------- запуск ---------- */
 let conditionalsMapAbort = null;

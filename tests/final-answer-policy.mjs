@@ -4,7 +4,7 @@ import {grade} from '../cloudflare/generated/checker.mjs';
 import {createRequire} from 'node:module';
 const require=createRequire(import.meta.url),{evaluate}=require('../app.js');
 const read=name=>JSON.parse(fs.readFileSync(new URL('../'+name,import.meta.url)));
-const manifest=read('data/exercises/index.json'),bank=manifest.parts.flatMap(p=>read(p.file)).filter(i=>i.topic!=='passive'&&i.topic!=='modals');
+const manifest=read('data/exercises/index.json'),bank=manifest.parts.flatMap(p=>read(p.file)).filter(i=>i.topic!=='passive'&&i.topic!=='modals'&&i.topic!=='conditionals');
 const shall=/\bshall\b|\bshan[’']t\b/i;
 let fields=0,historical=0;
 for(const item of bank){

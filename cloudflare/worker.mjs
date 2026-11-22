@@ -147,16 +147,17 @@ async function freePracticeAllowed(db, id) {
   return !!(await one(db,'SELECT allowed FROM student_practice_settings WHERE student_id=?',[id]))?.allowed;
 }
 function practiceFilters(data, excluded = new Set()) {
-  if (!data || Object.keys(data).some(key=>!['topic','tenses','levels','type','types','count'].includes(key))) throw new Problem('Некорректные фильтры практики.');
-  if (!['tenses','comparison','passive','modals','reported','nouns','speaking','infinitive'].includes(data.topic) || !Number.isInteger(data.count) || data.count<1 || data.count>50) throw new Problem('Выберите раздел и размер от 1 до 50.');
+  if (!data || Object.keys(data).some(key=>!['topic','tenses','levels','type','types','count','construction'].includes(key))) throw new Problem('Некорректные фильтры практики.');
+  if (!['tenses','comparison','passive','modals','reported','nouns','speaking','infinitive','conditionals'].includes(data.topic) || !Number.isInteger(data.count) || data.count<1 || data.count>50) throw new Problem('Выберите раздел и размер от 1 до 50.');
   const targets=PRACTICE_TENSES.filter(t=>targetSection(t.id)===data.topic).map(t=>t.id);
   const levels=[...new Set(exercises.map(item=>item.level))], types=[...new Set(exercises.filter(item=>exerciseSection(item)===data.topic&&supportedResponseContract(item)).map(item=>item.type))];
   for(const [key,allowed] of [['tenses',targets],['levels',levels]]) if(!Array.isArray(data[key])||!data[key].length||data[key].length>allowed.length||new Set(data[key]).size!==data[key].length||data[key].some(value=>!allowed.includes(value))) throw new Problem('Выберите доступные темы и уровни.');
   if(data.types!==undefined&&data.type!==undefined)throw new Problem('Передайте один набор форматов.');
   const formats=data.types!==undefined?data.types:data.type==='all'?types:[data.type];
   if(!Array.isArray(formats)||!formats.length||formats.length>types.length||new Set(formats).size!==formats.length||formats.some(type=>!types.includes(type)))throw new Problem('Выберите доступные форматы.');
+  if(data.construction!==undefined&&(data.topic!=='conditionals'||typeof data.construction!=='string'||!exercises.some(i=>i.topic==='conditionals'&&i.tags.includes(data.construction))))throw new Problem('Выберите доступную конструкцию.');
   const selectedTargets=updatedPracticeSettings(data,data.topic).tenses;
-  const pool=exercises.filter(item=>exerciseSection(item)===data.topic&&supportedResponseContract(item)&&data.levels.includes(item.level)&&formats.includes(item.type)&&exerciseTenses(item).length&&exerciseTenses(item).every(target=>selectedTargets.includes(target))&&bankSentenceKeys.get(item.id).every(key=>!excluded.has(key)));
+  const pool=exercises.filter(item=>exerciseSection(item)===data.topic&&supportedResponseContract(item)&&data.levels.includes(item.level)&&formats.includes(item.type)&&(!data.construction||item.tags?.includes(data.construction))&&exerciseTenses(item).length&&exerciseTenses(item).every(target=>selectedTargets.includes(target))&&bankSentenceKeys.get(item.id).every(key=>!excluded.has(key)));
   const covered=new Set(pool.flatMap(exerciseTenses)),missing=selectedTargets.filter(target=>!covered.has(target));
   const size=Math.min(pool.length,data.topic==='tenses'?Math.max(data.count,covered.size):data.count);
   return {pool,available:pool.length,size,missing,coverage:covered.size};
@@ -213,7 +214,7 @@ async function reviewQueue(db,user,cursor=null,limit=20) {
     nextCursor:rows.length>limit?btoa(JSON.stringify([last.completed,last.practiceId])):null};
 }
 function learnerItem(item) {
-  const visible = Object.fromEntries(['id','type','prompt','title','options','level','content_version','topic','instruction_ru','context_ru','prefix','blocks','error_fragment','grading_mode','layout'].filter(key => key in item).map(key => [key,item[key]]));
+  const visible = Object.fromEntries(['id','type','prompt','title','options','level','content_version','topic','instruction_ru','context_ru','prefix','blocks','error_fragment','grading_mode','layout','source_format','starts','endings','groups','sort_items','word_bank','sentences'].filter(key => key in item).map(key => [key,item[key]]));
   if (item.blanks) visible.blanks = item.blanks.map(blank => Object.fromEntries(['id','base_verb','base_adjective','supplied_words','modal_options'].filter(key => key in blank).map(key => [key,blank[key]])));
   return visible;
 }

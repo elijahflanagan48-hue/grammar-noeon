@@ -53,6 +53,11 @@ def modal_form(value):
     text=re.sub(r'\s+', ' ', text)
     return re.sub(r'[.!?]+$', '', text).strip()
 
+def conditionals_form(value):
+    text = unicodedata.normalize('NFKC', str(value)).replace('’', "'").replace('‘', "'").replace('ʼ', "'").lower().strip()
+    return re.sub(r'\s+', ' ', re.sub(r'[.!?;]+$', '', text)).strip()
+
+
 def already_less(text):
     # «already» не влияет на проверку; если это единственное слово, оно остаётся ответом.
     words=str(text).split()
@@ -74,7 +79,9 @@ def grade(item, submitted):
             return {'id':item['id'],'submitted':submitted,'correct':False,'fields':[{'submitted':v,'correct':False,'verified':False} for v in values],'item':item,'checker':3}
         for field,value in zip(targets,values):
             sentence=item['type'] in ('translation_ru_en','transformation','error_correction','error_fix','modal_fix')
-            if item.get('answer_profile')=='modal-exact-v1':
+            if item.get('answer_profile')=='conditionals-exact-v1':
+                correct=any(conditionals_form(value)==conditionals_form(answer) for answer in [field['answer'],*field.get('accepted_answers',[])])
+            elif item.get('answer_profile')=='modal-exact-v1':
                 actual=modal_form(value)
                 correct=any(actual==modal_form(answer) or already_less(actual)==already_less(modal_form(answer)) for answer in [field['answer'],*field.get('accepted_answers',[])])
             elif item.get('answer_profile')=='english-standard-v2':
@@ -83,6 +90,6 @@ def grade(item, submitted):
             else:
                 actual=forms(value,sentence)
                 correct=any(actual & forms(answer,sentence) or {already_less(f) for f in actual} & {already_less(f) for f in forms(answer,sentence)} for answer in [field['answer'],*field.get('accepted_answers',[])])
-            review=item['type']=='translation_ru_en' or (not item.get('blanks') and item['type'] in ('transformation','error_correction'))
+            review=item.get('answer_profile')!='conditionals-exact-v1' and (item['type']=='translation_ru_en' or (not item.get('blanks') and item['type'] in ('transformation','error_correction')))
             fields.append({'submitted':value,'correct':correct,'verified':correct or not review})
     return {'id':item['id'],'submitted':submitted,'correct':all(f['correct'] for f in fields),'fields':fields,'item':item,'checker':3}

@@ -83,10 +83,17 @@ def load_items(topic=None, include_retired=False):
     return items
 
 
+def lexical_text(x):
+    text = x['prompt']
+    if x.get('topic') == 'conditionals':
+        text += ' ' + ' '.join(v for k in ('options', 'starts', 'endings', 'sort_items', 'word_bank', 'sentences') for v in x.get(k, []))
+    return text
+
+
 def find_names(items):
     names = collections.Counter()
     for _, x in items:
-        p = x["prompt"]
+        p = lexical_text(x)
         for m in WORD.finditer(p):
             w = m.group(0)
             if w[0].isupper() and m.start() > 0 and p[max(0, m.start() - 2):m.start()].strip() not in {"", ".", "?", "!", ":", "“", '"', "(", "—"}:
@@ -99,7 +106,7 @@ def find_names(items):
 def hard_words(x, names, extra_ok=frozenset()):
     level = x.get("level", "medium")
     cap = CAP.get(level, 3)
-    text = x["prompt"] + " " + " ".join((b.get("base_verb") or b.get("cue") or "") for b in x.get("blanks", []))
+    text = lexical_text(x) + " " + " ".join((b.get("base_verb") or b.get("cue") or "") for b in x.get("blanks", []))
     res = []
     for m in WORD.finditer(text):
         w = m.group(0)
@@ -148,6 +155,8 @@ def main():
     ap.add_argument("--gate", type=float, help="fail if share of over-limit items in any topic exceeds this (0..1)")
     a = ap.parse_args()
     rows = run(a.topic)
+    if a.topic and not rows:
+        sys.exit("No exercises found for topic: " + a.topic)
     out, bad = {}, False
     for t, rs in rows.items():
         n = len(rs)

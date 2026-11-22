@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 index = json.loads((ROOT / 'data/exercises/index.json').read_text())
 labels = {'open_brackets': 'Раскрытие скобок', 'multiple_choice': 'Выбор формы / предложения', 'meaning_choice': 'Выбор значения', 'discourse_choice': 'Связность текста', 'context_cloze': 'Пропуски в контекстном тексте'}
 labels.update(error_fix='Исправить ошибку',direct_to_reported='Direct → Reported',modal_gap='Пропуск: модальная форма',modal_meaning='Выбор значения в контексте',modal_fix='Исправление предложения',active_to_passive='Active → Passive',passive_to_active='Passive → Active',word_order='Сборка цепочки',error_correction='Исправление слова',translation_ru_en='Перевод')
+labels.update(match='Соединить половинки',sort='Распределить по группам',bank='Слова из банка',hunt='Найти неверные предложения',transformation='Перефразирование')
 summary = [f"Банк: **{index['total_items']} задания / {index['answer_slots']} полей**, {len(index['types'])} форматов.",
     '',
     '| Формат | Название | Заданий |', '|---|---|---|']

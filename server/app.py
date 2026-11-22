@@ -44,6 +44,8 @@ CREATE TABLE IF NOT EXISTS practice_format_events(id TEXT PRIMARY KEY,practice_i
 
 def learner_item(item):
     visible={key:item[key] for key in ('id','type','prompt','title','options','cefr_estimate','content_version') if key in item}
+    if item.get('topic') == 'conditionals':
+        visible.update({key:item[key] for key in ('topic','level','instruction_ru','source_format','blocks','starts','endings','groups','sort_items','word_bank','sentences') if key in item})
     if 'blanks' in item:visible['blanks']=[{key:blank[key] for key in ('id','base_verb','base_adjective','supplied_words') if key in blank} for blank in item['blanks']]
     return visible
 

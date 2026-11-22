@@ -36,13 +36,14 @@ if(process.argv.includes('--live')) {
   run(python,['-B','scripts/validate_content.py']);
   run(python,['-B','scripts/audit_variety.py','--gate','docs/variety/passive-gates.json']);
   run(python,['-B','scripts/lexical_audit.py','passive','--gate','0.05']);
+  run(python,['-B','scripts/lexical_audit.py','conditionals','--gate','0.05']);
   run(python,['-B','-m','unittest','discover','-s','tests','-p','test_*.py']);
   let miniflare=true;
   try {require.resolve('miniflare');}catch(error){if(error.code==='MODULE_NOT_FOUND')miniflare=false;else throw error;}
   for(const name of files.filter(name=>name.endsWith('.mjs')&&!remote(name))) {
     const needsMiniflare=/\b(?:Miniflare|from ['"]miniflare)/.test(fs.readFileSync(path.join(root,'tests',name),'utf8'));
     if(needsMiniflare&&!miniflare){console.log('SKIP (Miniflare not installed): '+name);continue;}
-    run(process.execPath,['--import','./scripts/no-network.mjs','tests/'+name],{GRAMMAR_TEST_BROWSER:'0'});
+    run(process.execPath,['--import','./scripts/no-network.mjs','tests/'+name,...(name==='conditionals-bank.mjs'?['--coverage']:[])],{GRAMMAR_TEST_BROWSER:'0'});
   }
 }
 if(skipped)console.log(`\n${skipped} checks skipped: they need local audit archives that are not in the repository.`);

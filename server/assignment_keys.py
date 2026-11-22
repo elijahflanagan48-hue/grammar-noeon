@@ -6,7 +6,14 @@ import unicodedata
 def assignment_sentence_keys(item):
     prompt=item.get('prompt') or '';options=item.get('options') or []
     gaps=re.findall(r'_{2,}',prompt)
-    texts=['\n'.join([prompt,*options]) if options and not gaps and item['type']!='meaning_choice' else prompt]
+    texts=[]
+    if item.get('topic') == 'conditionals':
+        texts.extend(item.get('sentences', []))
+        texts.extend(item.get('fixes', {}).values())
+        texts.extend(item.get('sort_items', []))
+        texts.extend(start + ' ' + item['blanks'][n]['answer'] for n, start in enumerate(item.get('starts', [])))
+    if not (item.get('topic') == 'conditionals' and item['type'] in ('match', 'sort', 'hunt', 'word_order')):
+        texts.append('\n'.join([prompt,*options]) if options and not gaps and item['type']!='meaning_choice' else prompt)
     completed=[]
     if item.get('answer_text'):completed.append(item['answer_text'])
     if options and item['type']!='meaning_choice':
