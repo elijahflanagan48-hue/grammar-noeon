@@ -71,7 +71,7 @@
 | `tests/teacher-library.mjs` | `listen EPERM: operation not permitted 127.0.0.1` |
 | `tests/today.mjs` | `listen EPERM: operation not permitted 127.0.0.1` |
 
-`npm run test:browser`: exit 1; 40 непройденных запусков. Каждый остановился на `listen EPERM: operation not permitted 127.0.0.1`, до полноценного открытия браузера. У Conditionals настроены проверки 390 и 1280 px; успешный визуальный прогон не подтверждён.
+`npm run test:browser`: exit 1; 40 непройденных запусков. Каждый остановился на `listen EPERM: operation not permitted 127.0.0.1`, до полноценного открытия браузера. У Conditionals настроены проверки 390 и 1280 px; локально визуальный прогон не подтверждён; отдельный прогон Conditionals позднее успешно выполнен в CI (см. ниже).
 
 | Файл браузерного теста | Запуск |
 |---|---|
@@ -120,16 +120,16 @@
 
 ## Проверка на GitHub Actions
 
-Коммит `a31c50ea0149bb00100ce536baefc8571df479dc` отправлен в main. [Deploy to Cloudflare](https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45069745205) завершился успешно.
+Коммит с проверенным приложением `53052ad9923f6992420ba2f3d27178accdc3a6ed` отправлен в main. [Deploy to Cloudflare](https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45071094083) завершился успешно. Отправка выполнена через GitHub API без force, поскольку сеть терминала недоступна; локальная история синхронизирована с GitHub.
 
-[Content checks](https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45069745202) выполнен на Ubuntu, Node 22, Python 3.12 с установленными wordfreq/cefrpy. Все 12 серверных/workerd-тестов, блокировавшихся на Mac ошибкой порта, здесь пройдены. Не пройдены ровно две проверки:
+[Content checks](https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45071094091) выполнен на Ubuntu, Node 22, Python 3.12 с установленными wordfreq/cefrpy. Все 12 серверных/workerd-тестов, блокировавшихся на Mac ошибкой порта, здесь пройдены. Не пройдены ровно две проверки:
 
 | Команда | Результат |
 |---|---|
 | `python3 -B scripts/lexical_audit.py conditionals --gate 0.05` | 74/1007 заданий выше лексического лимита (7,35% при пороге 5%). basic: 39/275; medium: 23/439; advanced: 12/293. |
 | `tests/conditionals-bank.mjs --coverage` | Нет basic у Inversion; восемь sort-источников имеют 3 группы вместо 2. |
 
-Для проверки интерфейса добавлен отдельный CI job Conditionals browser (390 and 1280). Его результат фиксируется после выполнения.
+Браузерный CI job **Conditionals browser (390 and 1280)** пройден: **172 проверки на 390/1280 px**, включая все 10 типов сайта, ввод через видимые элементы управления, сохранение черновика после перезагрузки, серверную оценку, объяснения после ответа и отсутствие горизонтального переполнения. [Успешный job](https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45071094091/job/137357976365). Для совместимости с Playwright 1.58.2 job закреплён на Ubuntu 24.04. Тест выбора вариантов нажимает видимую карточку и проверяет её radio-состояние.
 
 ## Пропущенные проверки
 
@@ -168,4 +168,6 @@
 
 Лексический gate Conditionals включён в check-all и охватывает условие, варианты ответа и содержимое структурных форматов. Его результат в этой среде — SKIP, не PASS.
 
-Полные счётчики: [bank-report.json](bank-report.json). Машинный список выполненных команд и результатов: [verification-results.json](verification-results.json). Для завершения проверки нужны basic-материалы Inversion/редакторское решение по трём группам, лексические зависимости и среда с доступным локальным сервером.
+Полный список 74 результатов лексического аудита с ID и словами: [lexical-findings.json](lexical-findings.json). В нём присутствуют имена собственные и повторяющиеся слова; это сырые результаты автоматического детектора для редакторской проверки. Исходники не менялись.
+
+Полные счётчики: [bank-report.json](bank-report.json). Машинный список выполненных команд и результатов: [verification-results.json](verification-results.json). Итоговые незакрытые проверки в CI: только lexical_audit Conditionals (74/1007) и conditionals-bank --coverage (нет basic у Inversion и восемь sort с тремя группами). Серверная проверка и браузерный прогон подтверждены в CI. Исторические архивные тесты остаются пропущенными согласно списку выше.

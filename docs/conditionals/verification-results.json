@@ -348,11 +348,11 @@
     "status": "AUTOMATICALLY_REJECTED",
     "reason": "sandbox_approval: false; the session approval policy prohibits requesting escalated permissions"
   },
-  "lexical": "SKIP: wordfreq/cefrpy not installed",
+  "lexical": "Local SKIP; CI FAIL: 74/1007 (see lexical-findings.json)",
   "ci": {
-    "sha": "a31c50ea0149bb00100ce536baefc8571df479dc",
+    "sha": "53052ad9923f6992420ba2f3d27178accdc3a6ed",
     "status": "FAIL",
-    "run_url": "https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45069745202",
+    "run_url": "https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45071094091",
     "failed": [
       {
         "command": "python3 -B scripts/lexical_audit.py conditionals --gate 0.05",
@@ -366,8 +366,19 @@
     "server_tests_previously_blocked": "PASS"
   },
   "deployment": {
-    "sha": "a31c50ea0149bb00100ce536baefc8571df479dc",
+    "sha": "53052ad9923f6992420ba2f3d27178accdc3a6ed",
     "status": "SUCCESS",
-    "run_url": "https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45069745205"
+    "run_url": "https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45071094083"
+  },
+  "ci_browser": {
+    "status": "PASS",
+    "checks": 172,
+    "viewports": [
+      390,
+      1280
+    ],
+    "sha": "53052ad9923f6992420ba2f3d27178accdc3a6ed",
+    "job_url": "https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45071094091/job/137357976365",
+    "runner": "ubuntu-24.04"
   }
 }

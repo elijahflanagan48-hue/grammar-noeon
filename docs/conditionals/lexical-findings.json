@@ -1,0 +1,456 @@
+{
+  "source_commit": "c0d193d5542a293535813105a04d66fc10b2811d",
+  "job_url": "https://github.com/elijahflanagan48-hue/grammar-noeon/actions/runs/45070367231/job/137355744282",
+  "command": "python3 -B scripts/lexical_audit.py conditionals --gate 0.05 --list 100",
+  "total": 1007,
+  "flagged": 74,
+  "share": 0.07348560079443893,
+  "threshold": 0.05,
+  "interpretation": "Raw automated findings; proper names and repeated words are included by the current audit. Source tasks were not edited.",
+  "items": [
+    {
+      "id": "CD01-02",
+      "level": "basic",
+      "findings": "[('curtains', 'B1', 3.9, False), ('parrot', 'B1', 3.5, False), ('whistle', 'B2', 3.9, False), ('whistle', 'B2', 3.9, False)]",
+      "prompt_excerpt": "When Haruto (to open) the curtains, his parrot (to whistle)."
+    },
+    {
+      "id": "CD01-03",
+      "level": "basic",
+      "findings": "[('pigeons', 'C2', 3.6, True)]",
+      "prompt_excerpt": "The pigeons (to gather) near my guitar case when I (to play)."
+    },
+    {
+      "id": "CD01-21",
+      "level": "basic",
+      "findings": "[('instruction', 'B1', 4.1, False), ('dough', 'C1', 3.9, True), ('dumplings', 'C2', 3.0, True), ('dough', 'C1', 3.9, True), ('dumplings', 'C2', 3.0, True), ('dough', 'C1', 3.9, True), ('dumplings', 'C2', 3.0, True), ('dumpling', 'C2', 2.7, True)]",
+      "prompt_excerpt": "Does each sentence state a fact or give an instruction?"
+    },
+    {
+      "id": "CD03-09",
+      "level": "basic",
+      "findings": "[('billie', 'C2', 3.5, True)]",
+      "prompt_excerpt": "Billie (to plant) the flowers by the fence if the neighbours (to agree)."
+    },
+    {
+      "id": "CD03-22",
+      "level": "basic",
+      "findings": "[('gül', 'C2', 2.9, True)]",
+      "prompt_excerpt": "Gül will watch it if you will make a video."
+    },
+    {
+      "id": "CD04-03",
+      "level": "basic",
+      "findings": "[('tortilla', 'C2', 3.1, True)]",
+      "prompt_excerpt": "Carmen will show you how to make a tortilla if you (to come) on Sunday."
+    },
+    {
+      "id": "CD04-10",
+      "level": "basic",
+      "findings": "[('aloud', 'B1', 3.5, False), ('aloud', 'B1', 3.5, False), ('aloud', 'B1', 3.5, False), ('aloud', 'B1', 3.5, False)]",
+      "prompt_excerpt": "An older man cannot read the questions on his form. Which sentence fits?"
+    },
+    {
+      "id": "CD04-24",
+      "level": "basic",
+      "findings": "[('camille', 'C2', 3.3, True), ('shelter', 'B1', 4.2, False), ('helpers', 'B2', 3.4, False)]",
+      "prompt_excerpt": "Camille will open the shelter to visitors if she ___ enough helpers."
+    },
+    {
+      "id": "CD05-17",
+      "level": "basic",
+      "findings": "[('natalia', 'C1', 3.1, True), ('instructor', 'B1', 4.0, False)]",
+      "prompt_excerpt": "Natalia's son will join the class if the instructor ___ him a place."
+    },
+    {
+      "id": "CD06-01",
+      "level": "basic",
+      "findings": "[('maeve', 'C2', 2.7, True)]",
+      "prompt_excerpt": "Maeve says you cannot take a horse out unless the gate (to be) shut."
+    },
+    {
+      "id": "CD06-13",
+      "level": "basic",
+      "findings": "[('rina', 'C2', 2.7, True)]",
+      "prompt_excerpt": "Rina says visitors may go inside only if they (to leave) big bags outside."
+    },
+    {
+      "id": "CD06-22",
+      "level": "advanced",
+      "findings": "[('mikkel', 'C2', 2.3, True), ('homepage', '?', 3.5, True), ('layout', 'C2', 4.1, True)]",
+      "prompt_excerpt": "Mikkel has saved a copy of the old homepage on his drive ___ the client rejects the new layout next week."
+    },
+    {
+      "id": "CD06-24",
+      "level": "medium",
+      "findings": "[('alfie', 'C2', 3.2, True), ('alfie', 'C2', 3.2, True), ('alfie', 'C2', 3.2, True), ('alfie', 'C2', 3.2, True), ('alfie', 'C2', 3.2, True)]",
+      "prompt_excerpt": "Alfie is not sure if his neighbour will arrive late, so he buys an extra bag of ice now just to be safe."
+    },
+    {
+      "id": "CD06-25",
+      "level": "basic",
+      "findings": "[('filipe', 'C2', 2.5, True), ('puppy', 'B1', 4.0, False)]",
+      "prompt_excerpt": "Filipe gives the puppy no treats ___ it sits quietly by the door."
+    },
+    {
+      "id": "CD06-26",
+      "level": "medium",
+      "findings": "[('dumpling', 'C2', 2.7, True), ('dough', 'C1', 3.9, True)]",
+      "prompt_excerpt": "Mislav happily makes all the dumpling dough every evening, so long as his cousin (to clean) the kitchen and (to lock) up"
+    },
+    {
+      "id": "CD07-06",
+      "level": "basic",
+      "findings": "[('sushi', 'C2', 3.7, True)]",
+      "prompt_excerpt": "Jacek will not try the sushi bar ___ his friend comes too."
+    },
+    {
+      "id": "CD07-14",
+      "level": "medium",
+      "findings": "[('amara', 'C2', 2.6, True), ('tyre', 'C2', 3.5, True), ('tyre', 'C2', 3.5, True)]",
+      "prompt_excerpt": "Amara wants to cycle to the market in Lagos, but her back tyre is slowly losing air. She will not reach the stalls on ti"
+    },
+    {
+      "id": "CD07-24",
+      "level": "medium",
+      "findings": "[('scooter', 'B2', 3.6, False), ('tomasz', 'C2', 2.4, True), ('strap', 'C2', 3.8, True), ('tyre', 'C2', 3.5, True)]",
+      "prompt_excerpt": "\"Excuse me, can I rent a scooter with my bicycle helmet?\" Tomasz asks in Warsaw. \"You can ride off today provided the st"
+    },
+    {
+      "id": "CD07-31",
+      "level": "advanced",
+      "findings": "[('lakshmi', 'C2', 2.8, True), ('lakshmi', 'C2', 2.8, True), ('lakshmi', 'C2', 2.8, True), ('lakshmi', 'C2', 2.8, True), ('lakshmi', 'C2', 2.8, True)]",
+      "prompt_excerpt": "Lakshmi is desperate to attend her cousin's wedding in Goa, and she has already warned her manager that she will go by n"
+    },
+    {
+      "id": "CD08-01",
+      "level": "basic",
+      "findings": "[('goldfish', 'C2', 3.3, True)]",
+      "prompt_excerpt": "The goldfish (to swim) around happily if it (to live) in a bigger tank."
+    },
+    {
+      "id": "CD08-12",
+      "level": "basic",
+      "findings": "[('puppy', 'B1', 4.0, False), ('paw', 'B2', 3.5, False), ('heal', 'B1', 4.1, False)]",
+      "prompt_excerpt": "Your puppy is not too bad. If I {{1:to be}} you, I {{2:to keep}} him quiet and indoors. Rest is what the paw needs. It w"
+    },
+    {
+      "id": "CD08-29",
+      "level": "medium",
+      "findings": "[('hillside', 'C2', 3.4, True), ('hillside', 'C2', 3.4, True)]",
+      "prompt_excerpt": "The hillside is dry, so Carmen cannot plant anything. → If the hillside were not so dry,"
+    },
+    {
+      "id": "CD08-38",
+      "level": "basic",
+      "findings": "[('aloud', 'B1', 3.5, False), ('pupil', 'B1', 3.8, False), ('aloud', 'B1', 3.5, False)]",
+      "prompt_excerpt": "Which world is each sentence about?"
+    },
+    {
+      "id": "CD09-04",
+      "level": "basic",
+      "findings": "[('gianna', 'C2', 2.4, True)]",
+      "prompt_excerpt": "Gianna would return the dress if the page (to work)."
+    },
+    {
+      "id": "CD09-08",
+      "level": "medium",
+      "findings": "[('filip', 'C2', 2.6, True), ('buffer', 'C1', 3.8, True), ('buffer', 'C1', 3.8, True)]",
+      "prompt_excerpt": "Filip would catch the last line if his streaming (not / to buffer) at the ending."
+    },
+    {
+      "id": "CD09-10",
+      "level": "medium",
+      "findings": "[('flicker', 'C2', 3.6, True), ('flicker', 'C2', 3.6, True)]",
+      "prompt_excerpt": "Would Leah sleep better if the street light (not / to flicker) all night?"
+    },
+    {
+      "id": "CD09-19",
+      "level": "basic",
+      "findings": "[('giulia', 'C2', 2.7, True)]",
+      "prompt_excerpt": "Giulia would enjoy her pizza if the chef ___ it longer."
+    },
+    {
+      "id": "CD09-31",
+      "level": "basic",
+      "findings": "[('turbines', 'B2', 3.6, False), ('turbines', 'B2', 3.6, False), ('turbines', 'B2', 3.6, False), ('turbines', 'B2', 3.6, False), ('turbines', 'B2', 3.6, False)]",
+      "prompt_excerpt": "Mairi would sleep well if the turbines were quiet."
+    },
+    {
+      "id": "CD09-34",
+      "level": "basic",
+      "findings": "[('bins', 'B1', 4.2, False), ('bins', 'B1', 4.2, False), ('bins', 'B1', 4.2, False)]",
+      "prompt_excerpt": "Match the halves."
+    },
+    {
+      "id": "CD10-18",
+      "level": "basic",
+      "findings": "[('natalia', 'C1', 3.1, True)]",
+      "prompt_excerpt": "Natalia asks: 'Would you mind if I ___ this bag while I look at the other colours?'"
+    },
+    {
+      "id": "CD10-32",
+      "level": "medium",
+      "findings": "[('hillside', 'C2', 3.4, True), ('hillside', 'C2', 3.4, True), ('hillside', 'C2', 3.4, True), ('hillside', 'C2', 3.4, True), ('hillside', 'C2', 3.4, True)]",
+      "prompt_excerpt": "The soil would stay in place if the hillside were covered in young trees."
+    },
+    {
+      "id": "CD10-37",
+      "level": "basic",
+      "findings": "[('conductor', 'B2', 3.8, False), ('spare', 'B2', 4.3, False), ('conductor', 'B2', 3.8, False)]",
+      "prompt_excerpt": "Which group does each sentence belong to?"
+    },
+    {
+      "id": "CD11-26",
+      "level": "medium",
+      "findings": "[('audition', 'B2', 3.8, False), ('audition', 'B2', 3.8, False), ('audition', 'B2', 3.8, False), ('audition', 'B2', 3.8, False), ('audition', 'B2', 3.8, False)]",
+      "prompt_excerpt": "Dino found out about the Zagreb TV audition one day too late, so he never got a chance to try for the main part."
+    },
+    {
+      "id": "CD11-34",
+      "level": "medium",
+      "findings": "[('noodle', 'C2', 3.4, True), ('noodle', 'C2', 3.4, True), ('noodle', 'C2', 3.4, True), ('noodle', 'C2', 3.4, True), ('noodle', 'C2', 3.4, True)]",
+      "prompt_excerpt": "I'd never have opened my own noodle bar in Shanghai if I'd stayed at the big hotel kitchen."
+    },
+    {
+      "id": "CD11-35",
+      "level": "advanced",
+      "findings": "[('evelyn', 'C2', 3.6, True), ('stray', 'C2', 3.7, True), ('evelyn', 'C2', 3.6, True), ('stray', 'C2', 3.7, True), ('evelyn', 'C2', 3.6, True), ('stray', 'C2', 3.7, True), ('evelyn', 'C2', 3.6, True), ('stray', 'C2', 3.7, True), ('evelyn', 'C2', 3.6, True), ('stray', 'C2', 3.7, True)]",
+      "prompt_excerpt": "Evelyn might have spent that long winter in the cottage completely alone if she hadn't taken in the stray dog she found "
+    },
+    {
+      "id": "CD12-19",
+      "level": "medium",
+      "findings": "[('willem', 'C2', 3.0, True), ('leaned', 'B2', 4.1, False), ('lean', 'B2', 4.1, False), ('leaned', 'B2', 4.1, False), ('leaned', 'B2', 4.1, False)]",
+      "prompt_excerpt": "Willem told reporters that the monkeys wouldn't have broken the visitor's phone if he ___ over the fence."
+    },
+    {
+      "id": "CD12-31",
+      "level": "medium",
+      "findings": "[('olive', 'B2', 4.1, False), ('grove', 'B2', 3.9, False), ('olive', 'B2', 4.1, False), ('grove', 'B2', 3.9, False), ('olive', 'B2', 4.1, False), ('grove', 'B2', 3.9, False), ('olive', 'B2', 4.1, False), ('grove', 'B2', 3.9, False), ('olive', 'B2', 4.1, False), ('grove', 'B2', 3.9, False)]",
+      "prompt_excerpt": "If Nikos had sold the olive grove in Crete, he would have lost his family's bees."
+    },
+    {
+      "id": "CD13-17",
+      "level": "basic",
+      "findings": "[('sepp', 'C2', 3.9, True)]",
+      "prompt_excerpt": "Sepp ___ the old chair if his granddaughter had asked earlier."
+    },
+    {
+      "id": "CD13-25",
+      "level": "medium",
+      "findings": "[('telescope', 'B2', 3.8, False), ('telescope', 'B2', 3.8, False), ('telescope', 'B2', 3.8, False), ('telescope', 'B2', 3.8, False), ('telescope', 'B2', 3.8, False)]",
+      "prompt_excerpt": "Jennifer sold her old telescope a month before a bright comet passed over Szeged, so she missed it."
+    },
+    {
+      "id": "CD13-31",
+      "level": "medium",
+      "findings": "[('dental', 'B2', 4.1, False), ('dental', 'B2', 4.1, False), ('dental', 'B2', 4.1, False), ('dental', 'B2', 4.1, False), ('dental', 'B2', 4.1, False)]",
+      "prompt_excerpt": "If Ifeoma had studied pharmacy instead, she wouldn't have opened her friendly dental clinic in Miskolc."
+    },
+    {
+      "id": "CD13-32",
+      "level": "medium",
+      "findings": "[('alma', 'C2', 3.6, True), ('alma', 'C2', 3.6, True), ('alma', 'C2', 3.6, True), ('alma', 'C2', 3.6, True), ('alma', 'C2', 3.6, True)]",
+      "prompt_excerpt": "Alma couldn't have built her first phone app if she hadn't left banking three years ago."
+    },
+    {
+      "id": "CD13-33",
+      "level": "medium",
+      "findings": "[('ingrid', 'B2', 3.2, False), ('ingrid', 'B2', 3.2, False), ('ingrid', 'B2', 3.2, False), ('ingrid', 'B2', 3.2, False), ('ingrid', 'B2', 3.2, False)]",
+      "prompt_excerpt": "Ingrid wouldn't have panicked in Bergen's busy centre if she'd learned to drive on city roads."
+    },
+    {
+      "id": "CD14-04",
+      "level": "advanced",
+      "findings": "[('frustrating', 'C2', 4.0, True), ('login', 'C2', 3.5, True), ('beforehand', 'C2', 3.6, True), ('retake', 'C2', 3.3, True)]",
+      "prompt_excerpt": "I am writing from Stockholm with frustrating news about my online exam. I forgot my password five minutes before the tes"
+    },
+    {
+      "id": "CD14-25",
+      "level": "advanced",
+      "findings": "[('dewi', 'C2', 2.3, True), ('rainwater', 'C2', 3.0, True), ('dewi', 'C2', 2.3, True), ('dewi', 'C2', 2.3, True), ('dewi', 'C2', 2.3, True), ('dewi', 'C2', 2.3, True)]",
+      "prompt_excerpt": "A blocked drain outside Dewi's shop in Jakarta let rainwater flood in overnight, and now her dry stock is completely rui"
+    },
+    {
+      "id": "CD14-27",
+      "level": "medium",
+      "findings": "[('goldfish', 'C2', 3.3, True), ('goldfish', 'C2', 3.3, True), ('goldfish', 'C2', 3.3, True), ('goldfish', 'C2', 3.3, True), ('goldfish', 'C2', 3.3, True)]",
+      "prompt_excerpt": "Lisa's goldfish would still be eating properly if she had taken it to the vet in Gdynia sooner."
+    },
+    {
+      "id": "CD15-36",
+      "level": "advanced",
+      "findings": "[('courier', 'C1', 3.7, True), ('courier', 'C1', 3.7, True), ('courier', 'C1', 3.7, True), ('courier', 'C1', 3.7, True)]",
+      "prompt_excerpt": "Our neighbour works from home in our block in Murcia, so he was able to sign for our heavy parcel yesterday."
+    },
+    {
+      "id": "CD16-14",
+      "level": "basic",
+      "findings": "[('metro', 'C1', 4.2, True)]",
+      "prompt_excerpt": "Farid hurried to the metro: \"Run faster; otherwise, we (to miss) the last train!\""
+    },
+    {
+      "id": "CD17-03",
+      "level": "basic",
+      "findings": "[('noam', 'C2', 2.8, True)]",
+      "prompt_excerpt": "You are at Noam's restaurant. The waiter says your main meal is late."
+    },
+    {
+      "id": "CD17-24",
+      "level": "medium",
+      "findings": "[('queue', 'B2', 3.8, False), ('spare', 'B2', 4.3, False), ('queue', 'B2', 3.8, False), ('queue', 'B2', 3.8, False), ('spare', 'B2', 4.3, False), ('queue', 'B2', 3.8, False), ('spare', 'B2', 4.3, False), ('queue', 'B2', 3.8, False)]",
+      "prompt_excerpt": "Yusra sees a traveller with a very heavy suitcase heading towards a long check-in queue in Doha."
+    },
+    {
+      "id": "CD19-11",
+      "level": "medium",
+      "findings": "[('milena', 'C2', 2.4, True), ('milena', 'C2', 2.4, True), ('milena', 'C2', 2.4, True), ('hung', 'B2', 4.2, False), ('milena', 'C2', 2.4, True), ('hung', 'B2', 4.2, False), ('milena', 'C2', 2.4, True)]",
+      "prompt_excerpt": "Milena loves drawing in the quiet gallery. She is still a student, and she truly wants her work to hang on that wall in "
+    },
+    {
+      "id": "CD19-19",
+      "level": "basic",
+      "findings": "[('ola', 'C2', 3.0, True)]",
+      "prompt_excerpt": "Ola stares at the grey rain and wishes she (to live) by the sea."
+    },
+    {
+      "id": "CD19-20",
+      "level": "basic",
+      "findings": "[('amelia', 'C2', 3.5, True), ('aloud', 'B1', 3.5, False)]",
+      "prompt_excerpt": "Join each half to complete Amelia's thoughts during a long office meeting."
+    },
+    {
+      "id": "CD19-34",
+      "level": "medium",
+      "findings": "[('rooftop', 'C2', 3.5, True), ('rooftop', 'C2', 3.5, True)]",
+      "prompt_excerpt": "Match each sentence about Rashid's rooftop café dream with what is actually true."
+    },
+    {
+      "id": "CD20-06",
+      "level": "basic",
+      "findings": "[('lectures', 'B1', 4.1, False), ('exhaust', 'B2', 3.8, False), ('lectures', 'B1', 4.1, False), ('lectures', 'B1', 4.1, False), ('lectures', 'B1', 4.1, False), ('lectures', 'B1', 4.1, False)]",
+      "prompt_excerpt": "Early lectures exhaust Aiko; she wishes she didn't have them at eight."
+    },
+    {
+      "id": "CD20-09",
+      "level": "basic",
+      "findings": "[('natalie', 'C2', 3.8, True)]",
+      "prompt_excerpt": "Natalie sits at a desk all day and cannot travel for work."
+    },
+    {
+      "id": "CD20-18",
+      "level": "basic",
+      "findings": "[('niklaus', 'C2', 2.0, True), ('skipped', 'B2', 4.2, False), ('lectures', 'B1', 4.1, False), ('niklaus', 'C2', 2.0, True), ('lectures', 'B1', 4.1, False), ('niklaus', 'C2', 2.0, True), ('skip', 'B2', 4.2, False), ('lectures', 'B1', 4.1, False), ('niklaus', 'C2', 2.0, True), ('lectures', 'B1', 4.1, False), ('niklaus', 'C2', 2.0, True), ('skipped', 'B2', 4.2, False), ('lectures', 'B1', 4.1, False)]",
+      "prompt_excerpt": "Niklaus wishes he hadn't skipped those morning lectures before the exam."
+    },
+    {
+      "id": "CD23-08",
+      "level": "basic",
+      "findings": "[('mat', 'C2', 3.8, True), ('mat', 'C2', 3.8, True), ('tin', 'B1', 4.0, False), ('mat', 'C2', 3.8, True)]",
+      "prompt_excerpt": "Decide whether each sentence about Isha's cat is a habit or a possible future event."
+    },
+    {
+      "id": "CD23-24",
+      "level": "advanced",
+      "findings": "[('technician', 'C2', 3.7, True), ('technician', 'C2', 3.7, True), ('technician', 'C2', 3.7, True), ('technician', 'C2', 3.7, True), ('technician', 'C2', 3.7, True)]",
+      "prompt_excerpt": "A junior technician in Taoyuan restarted the main server last night without backing up the files first, so the whole off"
+    },
+    {
+      "id": "CD23-29",
+      "level": "advanced",
+      "findings": "[('neda', 'C2', 2.3, True), ('campfire', 'C2', 3.1, True), ('hikers', 'C2', 3.1, True), ('gusts', 'C2', 3.1, True)]",
+      "prompt_excerpt": "Neda's camp notes from a windy evening in Patagonia."
+    },
+    {
+      "id": "CD23-30",
+      "level": "advanced",
+      "findings": "[('lakeside', 'C2', 3.1, True), ('lakeside', 'C2', 3.1, True), ('lakeside', 'C2', 3.1, True), ('lakeside', 'C2', 3.1, True), ('lakeside', 'C2', 3.1, True)]",
+      "prompt_excerpt": "Aya leads walking tours in the Lake District, and she knows the lakeside path closes whenever heavy rain floods the brid"
+    },
+    {
+      "id": "CD24-01",
+      "level": "basic",
+      "findings": "[('doorbell', 'C2', 3.0, True), ('tin', 'B1', 4.0, False)]",
+      "prompt_excerpt": "Sort these sentences about our old cat in Tartu: Reality or Inside-out?"
+    },
+    {
+      "id": "CD24-02",
+      "level": "basic",
+      "findings": "[('recipe', 'B2', 4.2, False), ('recipe', 'B2', 4.2, False), ('recipe', 'B2', 4.2, False), ('recipe', 'B2', 4.2, False), ('recipe', 'B2', 4.2, False)]",
+      "prompt_excerpt": "Grandfather Tor wants his grandson to help in the kitchen in Bydgoszcz. He makes a real promise about his family bread r"
+    },
+    {
+      "id": "CD24-05",
+      "level": "basic",
+      "findings": "[('bakery', 'B1', 3.7, False), ('buns', 'B2', 3.6, False), ('trays', 'B2', 3.8, False), ('buns', 'B2', 3.6, False)]",
+      "prompt_excerpt": "The corner bakery in Poznan makes the best sweet buns. If you {{1:to come}} after ten, the trays are always empty. I pro"
+    },
+    {
+      "id": "CD24-08",
+      "level": "basic",
+      "findings": "[('sellers', 'B2', 4.0, False), ('shoppers', 'B1', 3.5, False), ('stall', 'B1', 3.8, False)]",
+      "prompt_excerpt": "Put these sentences from the fruit market in Ghent into two groups: Real or Unreal."
+    },
+    {
+      "id": "CD24-11",
+      "level": "medium",
+      "findings": "[('newsroom', 'C2', 3.1, True), ('conditional', 'B2', 3.6, False), ('refills', 'C2', 3.2, True), ('interns', 'C2', 3.7, True), ('newsroom', 'C2', 3.1, True), ('grumpy', 'C2', 3.5, True), ('latte', '?', 3.3, True)]",
+      "prompt_excerpt": "Classify these sentences from Saeed's newsroom in Coimbra: Zero, First, or Second conditional?"
+    },
+    {
+      "id": "CD24-13",
+      "level": "medium",
+      "findings": "[('cookery', 'C2', 3.1, True), ('spits', 'C2', 3.9, True)]",
+      "prompt_excerpt": "Safety rules from a cookery class in Dundee."
+    },
+    {
+      "id": "CD24-26",
+      "level": "advanced",
+      "findings": "[('joao', 'C2', 2.7, True), ('joao', 'C2', 2.7, True), ('joao', 'C2', 2.7, True), ('joao', 'C2', 2.7, True), ('joao', 'C2', 2.7, True)]",
+      "prompt_excerpt": "Joao's old flat in the northern city wouldn't be standing empty now if he hadn't moved to sunny Cascais for the weather."
+    },
+    {
+      "id": "CD24-29",
+      "level": "advanced",
+      "findings": "[('technician', 'C2', 3.7, True), ('technician', 'C2', 3.7, True), ('technician', 'C2', 3.7, True), ('technician', 'C2', 3.7, True), ('technician', 'C2', 3.7, True)]",
+      "prompt_excerpt": "The new technician in Mallow is usually careless about warnings. Yesterday he switched off the backup server mid-update,"
+    },
+    {
+      "id": "CD25-49",
+      "level": "basic",
+      "findings": "[('ola', 'C2', 3.0, True)]",
+      "prompt_excerpt": "Grandma lives ten hours away. Ola can only visit her twice a year."
+    },
+    {
+      "id": "CD25-60",
+      "level": "basic",
+      "findings": "[('hamid', 'C2', 3.2, True), ('hamid', 'C2', 3.2, True), ('hamid', 'C2', 3.2, True), ('hamid', 'C2', 3.2, True), ('hamid', 'C2', 3.2, True)]",
+      "prompt_excerpt": "Hamid wishes he could play in the school team."
+    },
+    {
+      "id": "CD26-12",
+      "level": "advanced",
+      "findings": "[('tyres', 'C2', 3.5, True), ('tyre', 'C2', 3.5, True), ('tyre', 'C2', 3.5, True)]",
+      "prompt_excerpt": "My cousin Hamza drives a delivery lorry, and he checks his tyres every Monday. He says that if the air {{1:to get}} cold"
+    },
+    {
+      "id": "CD26-43",
+      "level": "basic",
+      "findings": "[('rasa', 'C2', 2.7, True)]",
+      "prompt_excerpt": "Rasa's school finishes in July. Her uncle asks about her summer plans."
+    },
+    {
+      "id": "CD28-01",
+      "level": "basic",
+      "findings": "[('femi', 'C2', 2.4, True)]",
+      "prompt_excerpt": "Femi forgot to charge his phone, so he did not call his dad from the station. If he (to charge) it, he (to call) his dad"
+    },
+    {
+      "id": "CD29-18",
+      "level": "medium",
+      "findings": "[('jude', 'C2', 3.5, True), ('jude', 'C2', 3.5, True), ('jude', 'C2', 3.5, True), ('jude', 'C2', 3.5, True), ('jude', 'C2', 3.5, True)]",
+      "prompt_excerpt": "Jude lives in a small village where only one bus a day goes to town, and he finds this very inconvenient. Which sentence"
+    }
+  ]
+}
