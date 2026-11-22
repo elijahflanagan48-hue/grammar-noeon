@@ -1,3 +1,4 @@
+import {spawnSync} from 'node:child_process';
 import {sqlStatements} from './sql-statements.mjs';
 // Local-only Worker/D1 with a fictional identity service. Never reads cloud credentials.
 import fs from 'node:fs';
@@ -11,7 +12,20 @@ import {build} from 'esbuild';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const temporary=fs.mkdtempSync(path.join(os.tmpdir(),'grammar-local-'));
 const bundled=path.join(temporary,'worker.mjs');
-await build({entryPoints:[path.join(root,'cloudflare/worker.mjs')],outfile:bundled,bundle:true,format:'esm',platform:'neutral',external:['node:crypto']});
+// This opt-in fixture mode exists only in the disposable local emulator.
+let fixtureBank,fixtureManifest;
+if(process.argv.includes('--passive-v7-fixture')){
+ const output=path.join(temporary,'fixture.json');
+ const result=spawnSync('python3',['scripts/build_passive_bank_v7.py','--fixture','tests/fixtures/passive-v7-sample.jsonl','--output',output],{cwd:root,encoding:'utf8'});
+ assert.equal(result.status,0,result.stderr);
+ const original=JSON.parse(fs.readFileSync(path.join(root,'cloudflare/generated/bank.json'),'utf8')).find(i=>i.id==='pv5-s001');
+ fixtureBank=[...JSON.parse(fs.readFileSync(output,'utf8')),{...original,retired:'passive-v7'}];
+ fixtureManifest=JSON.parse(fs.readFileSync(path.join(root,'data/exercises/index.json'),'utf8'));
+ fixtureManifest.parts=[{file:'data/exercises/part-999.json',count:fixtureBank.length}];
+ fixtureManifest.section_types.passive={open_brackets:7,multiple_choice:2,error_fix:2};
+}
+await build({entryPoints:[path.join(root,'cloudflare/worker.mjs')],outfile:bundled,bundle:true,format:'esm',platform:'neutral',external:['node:crypto'],
+ ...(fixtureBank?{plugins:[{name:'isolated-v7-fixtures',setup(build){build.onLoad({filter:/generated\/bank\.json$/},()=>({contents:JSON.stringify(fixtureBank),loader:'json'}));}}]}:{})});
 const identities=new Map(); let identityCounter=0;
 async function fakeFirebase(request){
   const url=new URL(request.url);
@@ -36,6 +50,8 @@ async function fakeFirebase(request){
 }
 async function assets(request) {
   const filename=new URL(request.url).pathname==='/'?'index.html':decodeURIComponent(new URL(request.url).pathname).slice(1);
+  if(fixtureBank&&filename==='data/exercises/index.json')return Response.json(fixtureManifest);
+  if(fixtureBank&&filename==='data/exercises/part-999.json')return Response.json(fixtureBank);
   const target=path.resolve(root,'cloudflare/public',filename);
   if(!target.startsWith(path.resolve(root,'cloudflare/public')+path.sep))return new Response('',{status:404});
   try {return new Response(fs.readFileSync(target),{headers:{'Content-Type':({'.js':'text/javascript','.html':'text/html','.css':'text/css','.json':'application/json','.webmanifest':'application/manifest+json','.woff2':'font/woff2','.png':'image/png','.svg':'image/svg+xml','.md':'text/plain; charset=utf-8'}[path.extname(target)]||'application/octet-stream'),'Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'"}});}catch{return new Response('',{status:404});}
@@ -59,7 +75,17 @@ try {
  }
  await call('auth/setup',{code:'fictional-owner-code',name:'Тестовый учитель',email:'teacher@example.test',password:'FictionalPassword!2026'});
  const invite=await call('teacher/invite',{});cookie='';csrf='';
- await call('auth/join',{token:invite.token,name:'Тестовый ученик',email:'anna@example.test',password:'FictionalPassword!2026'});
+ const joined=await call('auth/join',{token:invite.token,name:'Тестовый ученик',email:'anna@example.test',password:'FictionalPassword!2026'});
+ if(fixtureBank){
+  const teacher=await db.prepare("SELECT id FROM users WHERE role='teacher'").first();
+  const pupil=await db.prepare("SELECT id FROM users WHERE role='student'").first();
+  const retired=fixtureBank.find(i=>i.retired);
+  for(const width of [360,390,1280]){
+   const id='fixture-retired-'+width;
+   await db.prepare('INSERT INTO practice(id,user_id,items,created,total_items) VALUES(?,?,?,?,1)').bind(id,pupil.id,JSON.stringify([retired]),Date.now()/1000).run();
+   await db.prepare('INSERT INTO assignments VALUES(?,?,?,?,?,?)').bind(id,teacher.id,pupil.id,id,'Архивное задание',Date.now()/1000).run();
+  }
+ }
  server=http.createServer(async(req,res)=>{
   try {
    const chunks=[];for await(const chunk of req)chunks.push(chunk);

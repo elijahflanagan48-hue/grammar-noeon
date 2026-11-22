@@ -39,7 +39,7 @@ STANDARD_V2_NEGATIVES={"isn't": 'is not', "aren't": 'are not', "wasn't": 'was no
 STANDARD_V2_SPELLING={'organizer': 'organiser', 'organizers': 'organisers', 'organized': 'organised', 'organizing': 'organising', 'labeler': 'labeller', 'labelers': 'labellers', 'labeled': 'labelled', 'labeling': 'labelling', 'cataloged': 'catalogued', 'cataloging': 'cataloguing', 'cataloger': 'cataloguer', 'recognized': 'recognised', 'digitized': 'digitised', 'color': 'colour', 'colored': 'coloured', 'colors': 'colours', 'center': 'centre', 'centerpiece': 'centrepiece', 'theater': 'theatre', 'neighbor': 'neighbour', 'neighbors': 'neighbours', 'neighborhood': 'neighbourhood', 'fiber': 'fibre', 'fibers': 'fibres', 'tire': 'tyre', 'tires': 'tyres', 'woolen': 'woollen', 'molded': 'moulded', 'artifact': 'artefact', 'artifacts': 'artefacts'}
 
 def standard_form(value):
-    text=unicodedata.normalize('NFKC',value).replace('’',"'").replace('‘',"'").replace('ʼ',"'").lower().strip()
+    text=unicodedata.normalize('NFKC',value).replace('’',"'").replace('‘',"'").replace('ʼ',"'").replace('“','"').replace('”','"').lower().strip()
     text=re.sub(r"\b(could|should|would|might|must|may)'ve\b",r'\1 have',text)
     text=re.sub(r"\b[a-z]+n't\b",lambda m:STANDARD_V2_NEGATIVES.get(m[0],m[0]),text)
     text=re.sub(r'\bcan not\b','cannot',text)
@@ -73,7 +73,7 @@ def grade(item, submitted):
         if item.get('grading_mode')=='teacher':
             return {'id':item['id'],'submitted':submitted,'correct':False,'fields':[{'submitted':v,'correct':False,'verified':False} for v in values],'item':item,'checker':3}
         for field,value in zip(targets,values):
-            sentence=item['type'] in ('translation_ru_en','transformation','error_correction')
+            sentence=item['type'] in ('translation_ru_en','transformation','error_correction','error_fix','modal_fix')
             if item.get('answer_profile')=='modal-exact-v1':
                 actual=modal_form(value)
                 correct=any(actual==modal_form(answer) or already_less(actual)==already_less(modal_form(answer)) for answer in [field['answer'],*field.get('accepted_answers',[])])

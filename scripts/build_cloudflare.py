@@ -31,7 +31,7 @@ def build():
     source = (ROOT / 'app.js').read_text()
     (GENERATED / 'assignment-keys.mjs').write_text(source[source.index('function assignmentSentenceKeys('):source.index('\nfunction uniqueAssignmentPool(')] + '\nexport { assignmentSentenceKeys };\n')
     selection = source[source.index('const TENSE_MAP ='):source.index('const account =')] + source[source.index('const COMPARISON_TARGETS ='):source.index('function practiceSettings(')]
-    (GENERATED / 'selection.mjs').write_text(selection + '\nexport { balancedPractice, exerciseTenses, PRACTICE_TENSES, exerciseSection, targetSection, supportedResponseContract };\n')
+    (GENERATED / 'selection.mjs').write_text(selection + '\nexport { updatedPracticeSettings, diversifyOrder, varietySkeleton, balancedPractice, exerciseTenses, PRACTICE_TENSES, exerciseSection, targetSection, supportedResponseContract };\n')
     normalise = source[source.index('const normalise ='):source.index('\nfunction inlineMarkdown')]
     accepted = source[source.index('function acceptedFor('):source.index('\nfunction answerControls(')]
     checker = source[source.index('function answerForms('):source.index('\nfunction renderSession(')]

@@ -5,7 +5,7 @@ import { assessmentTitle } from './generated/assessment-config.mjs';
 import { randomBytes, timingSafeEqual, createHash } from 'node:crypto';
 import exercises from './generated/bank.json';
 import assessments from './generated/assessments.json' with {type:'json'};
-import { balancedPractice, exerciseTenses, PRACTICE_TENSES, exerciseSection, targetSection, supportedResponseContract } from './generated/selection.mjs';
+import { updatedPracticeSettings, balancedPractice, exerciseTenses, PRACTICE_TENSES, exerciseSection, targetSection, supportedResponseContract } from './generated/selection.mjs';
 import { grade } from './generated/checker.mjs';
 import { reportFieldTopics, storedTopicSummary, reviewableTranslationField } from './generated/topics.mjs';
 import { assignmentSentenceKeys } from './generated/assignment-keys.mjs';
@@ -155,8 +155,9 @@ function practiceFilters(data, excluded = new Set()) {
   if(data.types!==undefined&&data.type!==undefined)throw new Problem('Передайте один набор форматов.');
   const formats=data.types!==undefined?data.types:data.type==='all'?types:[data.type];
   if(!Array.isArray(formats)||!formats.length||formats.length>types.length||new Set(formats).size!==formats.length||formats.some(type=>!types.includes(type)))throw new Problem('Выберите доступные форматы.');
-  const pool=exercises.filter(item=>exerciseSection(item)===data.topic&&supportedResponseContract(item)&&data.levels.includes(item.level)&&formats.includes(item.type)&&exerciseTenses(item).length&&exerciseTenses(item).every(target=>data.tenses.includes(target))&&bankSentenceKeys.get(item.id).every(key=>!excluded.has(key)));
-  const covered=new Set(pool.flatMap(exerciseTenses)),missing=data.tenses.filter(target=>!covered.has(target));
+  const selectedTargets=updatedPracticeSettings(data,data.topic).tenses;
+  const pool=exercises.filter(item=>exerciseSection(item)===data.topic&&supportedResponseContract(item)&&data.levels.includes(item.level)&&formats.includes(item.type)&&exerciseTenses(item).length&&exerciseTenses(item).every(target=>selectedTargets.includes(target))&&bankSentenceKeys.get(item.id).every(key=>!excluded.has(key)));
+  const covered=new Set(pool.flatMap(exerciseTenses)),missing=selectedTargets.filter(target=>!covered.has(target));
   const size=Math.min(pool.length,data.topic==='tenses'?Math.max(data.count,covered.size):data.count);
   return {pool,available:pool.length,size,missing,coverage:covered.size};
 }
@@ -212,7 +213,7 @@ async function reviewQueue(db,user,cursor=null,limit=20) {
     nextCursor:rows.length>limit?btoa(JSON.stringify([last.completed,last.practiceId])):null};
 }
 function learnerItem(item) {
-  const visible = Object.fromEntries(['id','type','prompt','title','options','level','content_version','topic','instruction_ru','context_ru','prefix','blocks','error_fragment','grading_mode'].filter(key => key in item).map(key => [key,item[key]]));
+  const visible = Object.fromEntries(['id','type','prompt','title','options','level','content_version','topic','instruction_ru','context_ru','prefix','blocks','error_fragment','grading_mode','layout'].filter(key => key in item).map(key => [key,item[key]]));
   if (item.blanks) visible.blanks = item.blanks.map(blank => Object.fromEntries(['id','base_verb','base_adjective','supplied_words','modal_options'].filter(key => key in blank).map(key => [key,blank[key]])));
   return visible;
 }
@@ -325,7 +326,7 @@ async function unavailableSentences(db, studentId) {
 
 async function remediationPool(db,row,owner,mode) {
   const answers=JSON.parse(row.answers),wrong=answers.filter(a=>(a.fields||[]).some(f=>!f.correct&&f.verified===true&&!f.skipped));
-  if(mode==='repeat')return wrong.filter(a=>a.item.options?.length||a.item.blanks?.length).map(a=>{const item=structuredClone(a.item);delete item.assessment_id;return item;});
+  if(mode==='repeat')return wrong.filter(a=>a.item.options?.length||a.item.blanks?.length||a.item.type==='error_fix').map(a=>{const item=structuredClone(a.item);delete item.assessment_id;return item;});
   const targets=new Set(),levels=new Set(),types=new Set(),sections=new Set();
   for(const a of wrong){sections.add(exerciseSection(a.item));levels.add(a.item.level);types.add(a.item.type);
     (a.fields||[]).forEach((f,n)=>{if(!f.correct&&f.verified===true&&!f.skipped)reportFieldTopics(a.item,n).forEach(t=>targets.add(t));});}
@@ -570,7 +571,7 @@ async function route(db, env, request, url, data, responseHeaders) {
       while(remaining.length){
         remaining.sort((a,b)=>exerciseTenses(b).filter(t=>!covered.has(t)).length-exerciseTenses(a).filter(t=>!covered.has(t)).length);
         const item=remaining.shift();const sentenceKeys=assignmentSentenceKeys(item);if(mode==='new'&&sentenceKeys.some(k=>keys.has(k)))continue;selected.push(item);exerciseTenses(item).forEach(t=>covered.add(t));sentenceKeys.forEach(k=>keys.add(k));if(selected.length===(mode==='repeat'?50:5))break;}
-      return [{canStart:true,mode,revision:row.revision,requestId:token(),available:pool.length,wrongCount:JSON.parse(row.answers).filter(a=>(a.fields||[]).some(f=>!f.correct&&f.verified===true&&!f.skipped)).length,omitted:mode==='repeat'?JSON.parse(row.answers).filter(a=>(a.fields||[]).some(f=>!f.correct&&f.verified===true&&!f.skipped)&&!a.item.options?.length&&!a.item.blanks?.length).length:0,items:user.role==='student'?selected.map(learnerItem):selected},{}];
+      return [{canStart:true,mode,revision:row.revision,requestId:token(),available:pool.length,wrongCount:JSON.parse(row.answers).filter(a=>(a.fields||[]).some(f=>!f.correct&&f.verified===true&&!f.skipped)).length,omitted:mode==='repeat'?JSON.parse(row.answers).filter(a=>(a.fields||[]).some(f=>!f.correct&&f.verified===true&&!f.skipped)&&!a.item.options?.length&&!a.item.blanks?.length&&a.item.type!=='error_fix').length:0,items:user.role==='student'?selected.map(learnerItem):selected},{}];
     }
     const ids=data.ids;
     if(!Array.isArray(ids)||!ids.length||ids.length>(mode==='repeat'?50:10)||new Set(ids).size!==ids.length)throw new Problem('Выберите задания из предложенной подборки.');
@@ -691,7 +692,7 @@ async function route(db, env, request, url, data, responseHeaders) {
   if (poolMatch && method === 'GET') {
     const student = await ownStudent(db,user,poolMatch[1]);
     const used = await unavailableSentences(db,student.id);
-    return [{ availableIds: exercises.filter(item => bankSentenceKeys.get(item.id).every(key => !used.has(key))).map(item => item.id) }, {}];
+    return [{ availableIds: exercises.filter(item => !item.retired && bankSentenceKeys.get(item.id).every(key => !used.has(key))).map(item => item.id) }, {}];
   }
   const manageMatch = path.match(/^\/api\/teacher\/students\/([\w-]+)\/assignments\/([\w-]+)(?:\/(edit|cancel|restore))?$/);
   if (manageMatch) {
@@ -706,7 +707,7 @@ async function route(db, env, request, url, data, responseHeaders) {
     const used = await unavailableSentences(db,student.id);
     const allowed = key => !used.has(key) || (used.get(key)===row.assignment_id && currentKeys.has(key));
     if (method==='GET' && !manageMatch[3]) return [{id:row.assignment_id,title:row.title,version:row.version,assessmentId:items[0]?.assessment_id,editableContent,items,
-      availableIds:exercises.filter(item=>bankSentenceKeys.get(item.id).every(allowed)).map(item=>item.id)},{}];
+      availableIds:exercises.filter(item=>!item.retired&&bankSentenceKeys.get(item.id).every(allowed)).map(item=>item.id)},{}];
     const action=manageMatch[3];
     if(action==='restore'&&!student.active)throw new Problem('Кабинет ученика отключён.',409);
     if (method!=='POST' || !action) throw new Problem('Метод не поддерживается.',405);
@@ -718,7 +719,7 @@ async function route(db, env, request, url, data, responseHeaders) {
       if (data.ids!==undefined) {
         if (!editableContent) throw new Problem('Ученик уже начал работу или задание снято. Можно изменить только название.',409);
         const ids=data.ids,current=new Map(items.map(item=>[item.id,item]));
-        if (!Array.isArray(ids)||!ids.length||ids.length>50||new Set(ids).size!==ids.length||ids.some(id=>!bank.has(id)&&!current.has(id))) throw new Problem('Некорректный набор упражнений.');
+        if (!Array.isArray(ids)||!ids.length||ids.length>50||new Set(ids).size!==ids.length||ids.some(id=>!current.has(id)&&(!bank.has(id)||bank.get(id).retired))) throw new Problem('Некорректный набор упражнений.');
         nextItems=ids.map(id=>current.get(id)||bank.get(id));
         if(data.itemVersions!==undefined&&(!Array.isArray(data.itemVersions)||data.itemVersions.length!==ids.length||nextItems.some((item,n)=>(item.content_version??null)!==data.itemVersions[n])))throw new Problem('Редакция заданий изменилась. Обновите страницу и проверьте набор заново.',409);
         for (const item of nextItems) for (const key of assignmentSentenceKeys(item).map(digest)) {
@@ -757,7 +758,7 @@ async function route(db, env, request, url, data, responseHeaders) {
     const student = await ownStudent(db, user, assignMatch[1]);
     if (!student.active) throw new Problem('Кабинет ученика отключён.', 409);
     const title = clean(data.title, 160), ids = data.ids;
-    if (!Array.isArray(ids) || !ids.length || ids.length > 50 || ids.some(id => !bank.has(id)) || new Set(ids).size !== ids.length) throw new Problem('Некорректный набор упражнений.');
+    if (!Array.isArray(ids) || !ids.length || ids.length > 50 || ids.some(id => !bank.has(id)||bank.get(id).retired) || new Set(ids).size !== ids.length) throw new Problem('Некорректный набор упражнений.');
     if(data.itemVersions!==undefined&&(!Array.isArray(data.itemVersions)||data.itemVersions.length!==ids.length||ids.some((id,n)=>(bank.get(id).content_version??null)!==data.itemVersions[n])))throw new Problem('Редакция заданий изменилась. Обновите страницу и проверьте набор заново.',409);
     const used = await unavailableSentences(db,student.id), keys = new Set();
     for (const exerciseId of ids) for (const key of bankSentenceKeys.get(exerciseId)) {
@@ -790,7 +791,7 @@ async function route(db, env, request, url, data, responseHeaders) {
       return [{id,revision:0},{}];
     }
     const ids = data.ids;
-    if (!Array.isArray(ids) || !ids.length || ids.length > 50 || ids.some(id => !bank.has(id)) || new Set(ids).size !== ids.length) throw new Problem('Некорректный набор упражнений.');
+    if (!Array.isArray(ids) || !ids.length || ids.length > 50 || ids.some(id => !bank.has(id)||bank.get(id).retired) || new Set(ids).size !== ids.length) throw new Problem('Некорректный набор упражнений.');
     const id = token();
     await run(db, 'INSERT INTO practice(id,user_id,items,created,total_items,answered_count,topic_summary,levels_json,types_json) VALUES(?,?,?,?,?,?,?,?,?)', [id,user.id,JSON.stringify(ids.map(id=>bank.get(id))),now(),...metadata(ids.map(id=>bank.get(id)),[])]);
     return [{ id, revision: 0 }, {}];
@@ -819,7 +820,7 @@ async function route(db, env, request, url, data, responseHeaders) {
       if(row.completed||data.revision!==row.revision)throw changedElsewhere();
       let changed=false;
       for(let n=answers.length;n<items.length;n++) {
-        if(items[n].options||items[n].blanks?.length)continue;
+        if(items[n].options||items[n].blanks?.length||items[n].type==='error_fix')continue;
         const current=bank.get(items[n].id);
         if(!current||current.response_contract!=='bounded-v1')throw new Problem('Для этой старой редакции пока нет обновления.',409);
         items[n]=current;changed=true;
@@ -854,7 +855,7 @@ async function route(db, env, request, url, data, responseHeaders) {
       return [{ revision: row.revision + 1 }, {}];
     }
     let answer;
-    if(!items[index].options&&!items[index].blanks?.length)throw new Problem('Обновите формат этой старой подборки перед ответом.',409);
+    if(!items[index].options&&!items[index].blanks?.length&&items[index].type!=='error_fix')throw new Problem('Обновите формат этой старой подборки перед ответом.',409);
     try { answer = grade(items[index], data.submitted); } catch (error) { throw new Problem(error.message); }
     answers.push(answer);
     const fields = answers.flatMap(answer => answer.fields);

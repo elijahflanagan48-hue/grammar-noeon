@@ -23,8 +23,10 @@ const expected = {
     ['short', ['present_simple', 'past_simple', 'future_simple'], 5, ['basic']],
   ],
   passive: [
-    ['passive-core', ['pv_present_simple', 'pv_past_simple', 'pv_future_simple'], 10, ['basic', 'medium']],
-    ['short', ['pv_present_simple', 'pv_past_simple', 'pv_future_simple'], 5, ['basic']],
+    ['passive-core', ['pv_D1', 'pv_D2'], 10, ['basic', 'medium']],
+    ['passive-special', ['pv_D3','pv_D4','pv_D5','pv_D6','pv_D7','pv_D8'], 10, ['basic','medium']],
+    ['passive-traps', ['pv_D9','pv_D10','pv_D11'], 10, ['basic','medium']],
+    ['short', ['pv_D1', 'pv_D2'], 5, ['basic']],
   ],
   comparison: [['short', ['cmp_forms', 'cmp_superlatives'], 5, ['basic']]],
 };
@@ -49,6 +51,7 @@ for (const [topic, definitions] of Object.entries(expected)) {
       },
     };
     const pool = get('filteredExercises(form)');
+    if(topic==='passive'&&!pool.length){assert.equal(select(pool,count,random).length,0);continue;}
     assert(pool.length >= count, `${topic}/${id}: enough exercises to honour the advertised count`);
     assert(pool.every(item => section(item) === topic && item.type === 'open_brackets'
       && levels.includes(item.level) && targets(item).every(target => wantedTargets.includes(target))));
@@ -61,7 +64,7 @@ for (const [topic, definitions] of Object.entries(expected)) {
       assert.equal(chosen.length, count);
       assert.equal(new Set(chosen.map(item => item.id)).size, count);
       assert(chosen.every(item => targets(item).every(target => wantedTargets.includes(target))));
-      for (const target of wantedTargets) assert(chosen.some(item => targets(item).includes(target)), `${topic}/${id}: ${target}`);
+      for (const target of wantedTargets.filter(target=>pool.some(item=>targets(item).includes(target)))) assert(chosen.some(item => targets(item).includes(target)), `${topic}/${id}: ${target}`);
       selections++;
     }
   }

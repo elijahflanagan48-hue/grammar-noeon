@@ -62,6 +62,8 @@ export async function handleTeacherLibrary(context) {
   if(typeof data.requestId!=='string'||!/^[\w-]{12,100}$/.test(data.requestId))throw new Problem('Некорректный запрос назначения.');
   if(data.allowRepeat!==true&&data.allowRepeat!==false)throw new Problem('Укажите, разрешено ли повторное назначение предложений.');
   const title=cleanTitle(data.title??row.title),items=JSON.parse(row.items),created=now();
+  if(items.some(item=>item.retired||bank.get(item.id)?.retired))throw new Problem('В наборе есть снятые с ротации задания. Подберите новые упражнения.',409);
+  const allowRepeat=data.allowRepeat&&items.every(item=>item.topic!=='passive');
   const fingerprint=digest(JSON.stringify({set:row.id,students:[...recipients].sort(),title,allowRepeat:data.allowRepeat}));
   const deliveryId=digest('teacher-set-delivery:'+user.id+':'+data.requestId);
   const previous=await one(db,'SELECT fingerprint,result FROM teacher_set_deliveries WHERE id=? AND teacher_id=?',[deliveryId,user.id]);
@@ -70,7 +72,7 @@ export async function handleTeacherLibrary(context) {
   for(const id of recipients){const pupil=await ownStudent(db,user,id);if(!pupil.active)throw new Problem('Один из кабинетов отключён. Снимите его выбор.',409);students.push(pupil);}
   const keys=[...new Set(items.flatMap(assignmentSentenceKeys).map(digest))];
   const reservations=[];
-  for(const pupil of students){const used=await assignedSentences(db,pupil.id);if(!data.allowRepeat&&keys.some(key=>used.has(key)))throw new Problem('Некоторым ученикам эти предложения уже назначены или пройдены в свободной тренировке. Разрешите повтор явно или измените выбор учеников.',409);reservations.push(used);}
+  for(const pupil of students){const used=await assignedSentences(db,pupil.id);if(!allowRepeat&&keys.some(key=>used.has(key)))throw new Problem(items.some(item=>item.topic==='passive')?'Некоторым ученикам эти предложения уже назначены или пройдены в свободной тренировке. Измените набор.':'Некоторым ученикам эти предложения уже назначены или пройдены в свободной тренировке. Разрешите повтор явно или измените выбор учеников.',409);reservations.push(used);}
   const deliveries=students.map(pupil=>({studentId:pupil.id,practiceId:digest(deliveryId+':practice:'+pupil.id),assignmentId:digest(deliveryId+':assignment:'+pupil.id)}));
   const result={setId:row.id,deliveries};
   const guardSql="(SELECT CASE WHEN COUNT(*)=? THEN 1 ELSE 0 END FROM users WHERE teacher_id=? AND role='student' AND active=1 AND id IN (SELECT value FROM json_each(?)))";
@@ -80,7 +82,7 @@ export async function handleTeacherLibrary(context) {
     commands.push(prepare(db,'INSERT INTO practice(id,user_id,items,created,total_items,answered_count,topic_summary,levels_json,types_json) VALUES(?,?,?,?,?,?,?,?,?)',[delivery.practiceId,pupil.id,row.items,created,...metadata(items,[])]));
     commands.push(prepare(db,'INSERT INTO assignments(id,teacher_id,student_id,practice_id,title,created) VALUES(?,?,?,?,?,?)',[delivery.assignmentId,user.id,pupil.id,delivery.practiceId,title,created]));
     if(used.legacy?.length)commands.push(prepare(db,"INSERT OR IGNORE INTO assignment_sentences(student_id,sentence_key,assignment_id) SELECT ?,json_extract(value,'$.key'),json_extract(value,'$.assignment') FROM json_each(?)",[pupil.id,JSON.stringify(used.legacy)]));
-    commands.push(prepare(db,`INSERT ${data.allowRepeat?'OR IGNORE ':''}INTO assignment_sentences(student_id,sentence_key,assignment_id) SELECT ?,value,? FROM json_each(?)`,[pupil.id,delivery.assignmentId,JSON.stringify(keys)]));
+    commands.push(prepare(db,`INSERT ${allowRepeat?'OR IGNORE ':''}INTO assignment_sentences(student_id,sentence_key,assignment_id) SELECT ?,value,? FROM json_each(?)`,[pupil.id,delivery.assignmentId,JSON.stringify(keys)]));
   }
   try{await db.batch(commands);}catch(error){
     const saved=await one(db,'SELECT fingerprint,result FROM teacher_set_deliveries WHERE id=? AND teacher_id=?',[deliveryId,user.id]);

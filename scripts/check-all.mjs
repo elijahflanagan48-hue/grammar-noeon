@@ -34,6 +34,7 @@ if(process.argv.includes('--live')) {
   run(python,['-B','scripts/build_cloudflare.py']);
   run(python,['-B','scripts/update_docs.py','--check']);
   run(python,['-B','scripts/validate_content.py']);
+  run(python,['-B','scripts/audit_variety.py','--gate','docs/variety/passive-gates.json']);
   run(python,['-B','-m','unittest','discover','-s','tests','-p','test_*.py']);
   let miniflare=true;
   try {require.resolve('miniflare');}catch(error){if(error.code==='MODULE_NOT_FOUND')miniflare=false;else throw error;}
