@@ -4,7 +4,7 @@
    «шаг назад»: так глагол меняет форму, когда условие становится нереальным. */
 const CDM_COL_W = 1260, CDM_GAP = 120, CDM_X0 = 1060, CDM_CHIP_H = 100, CDM_ROW = 116, CDM_HEAD = 176, CDM_ZGAP = 64;
 const cdmColX = c => CDM_X0 + c * (CDM_COL_W + CDM_GAP);
-const CDM_WORLD = { u: 'Мир «если бы»', r: 'Реальный мир' };
+const CDM_WORLD = { u: 'Изнанка', r: 'Реальность' };
 const CDM_GAMECAT = { zero: 'Всегда так', first: 'Реальное будущее', second: 'Если бы: сейчас / будущее', third: 'Если бы: прошлое', mixed: 'Смешанное' };
 
 // Ссылка «Подробно в правиле»: конструкции wish, would rather и т. п. живут в своих разделах, даже если на карте стоят в районе по времени.
@@ -96,7 +96,7 @@ function cdmBridges() {
 function cdmExtra(e) {
   const x = e.x, y = e.y, w = e.w;
   if (e.kind === 'legend') {
-    const rows = [['u', 'Мир «если бы»: этого нет, не было или вряд ли будет'], ['r', 'Реальный мир: правда или может случиться'], ['mixed', 'Мосты: условие и результат в разное время'], ['gates', 'Шлагбаумы и тропы: условие без if'], ['traps', 'Трещины: частые ошибки']];
+    const rows = [['u', 'Изнанка — мир «если бы»: этого нет, не было или вряд ли будет'], ['r', 'Реальность: правда или может случиться'], ['mixed', 'Мосты: условие и результат в разное время'], ['gates', 'Шлагбаумы и тропы: условие без if'], ['traps', 'Трещины: частые ошибки']];
     return `<g class="cdm-legend"><rect x="${x}" y="${y}" width="${w}" height="${e.h}" rx="40"/><text class="cdm-lgh" x="${x + 44}" y="${y + 92}">Как читать карту</text>
       ${rows.map(([k, t], i) => `<rect class="cdm-lgk cdm-k-${k}" x="${x + 44}" y="${y + 136 + i * 66}" width="40" height="40" rx="12"/><text class="cdm-lgt" x="${x + 104}" y="${y + 166 + i * 66}">${cdmEsc(t)}</text>`).join('')}
       <text class="cdm-lgt cdm-lgm" x="${x + 44}" y="${y + 136 + rows.length * 66 + 50}">Слева направо — время: прошлое, сейчас, будущее, всегда.</text></g>`;
@@ -107,8 +107,8 @@ function cdmExtra(e) {
 }
 // Крупные названия миров на левом поле карты.
 const CDM_SIDE = {
-  u: { icon: '🪞', name: 'Зазеркалье', lines: ['мир «если бы»:', 'этого нет, не было', 'или вряд ли будет'] },
-  r: { icon: '🌍', name: 'Реальный мир', lines: ['это правда', 'или может случиться'] },
+  u: { icon: '🪞', name: 'Изнанка', lines: ['мир «если бы»:', 'этого нет, не было', 'или вряд ли будет'] },
+  r: { icon: '🌍', name: 'Реальность', lines: ['это правда', 'или может случиться'] },
 };
 function cdmSide(w, top, bottom) {
   const d = CDM_SIDE[w], x = 120, cy = (top + bottom) / 2, y0 = cy - 150;
@@ -135,7 +135,7 @@ function conditionalsMapHtml() {
   const modes = `<span class="cdm-modes" role="group" aria-label="Режим карты">${[['all', '👁', 'Всё'], ['lift', '⇅', 'Шаг назад'], ['game', '🎮', 'Игры']].map(([m, i, t], n) => `<button type="button" data-cdm-mode="${m}" aria-pressed="${!n}" title="${t}"><i aria-hidden="true">${i}</i><span>${t}</span></button>`).join('')}</span>`;
   const search = `<label class="cdm-search"><span class="sr-only">Найти конструкцию на карте</span><i class="cdm-s-ic" aria-hidden="true">🔍</i><input type="search" placeholder="Найти: wish, unless, если бы…" autocomplete="off" spellcheck="false"><span class="nc-results cdm-results" hidden></span></label>`;
   return `<section class="cdm-wrap" id="cd-mirror" aria-labelledby="cdm-title">
-    <div class="cdm-head"><div><p class="eyebrow">Карта правила</p><h2 id="cdm-title">Зазеркалье условий</h2><p>Внизу реальный мир, вверху его отражение — мир «если бы». Слева направо идёт время. Нажмите на конструкцию, чтобы увидеть схему, примеры и проверить себя, или на лифт в зеркале — как глагол меняет форму.</p></div>
+    <div class="cdm-head"><div><p class="eyebrow">Карта правила</p><h2 id="cdm-title">Зазеркалье условий</h2><p>Внизу реальность, вверху её изнанка — мир «если бы». Слева направо идёт время. Нажмите на конструкцию, чтобы увидеть схему, примеры и проверить себя, или на лифт в зеркале — как глагол меняет форму.</p></div>
       <ul class="cdm-key"><li class="cdm-k-r">реально</li><li class="cdm-k-u">если бы</li><li class="cdm-k-mixed">смешанное</li><li class="cdm-k-gates">без if</li><li class="cdm-k-traps">ловушки</li></ul></div>
     ${noeonCanvasShell('cdm-canvas', 'Карта правила «Зазеркалье условий». Перетаскивайте, масштабируйте колесом или щипком', search + modes, 'Тяните карту · колесо или щипок — масштаб · нажмите на конструкцию или лифт')}
   </section>`;
