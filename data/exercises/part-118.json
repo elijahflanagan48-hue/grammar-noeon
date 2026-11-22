@@ -3,10 +3,10 @@
     "id": "pv7-D7-020",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The private collector didn't restore the baroque mirror herself. She (the frame / to re-gild) with twenty-three-carat gold leaf by a workshop in Florence. It looks magnificent now!",
+    "prompt": "The private collector didn't restore the old mirror herself. She (the frame / to paint) with gold by a workshop in Florence. It looks magnificent now!",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Коллекционер отдала раму в реставрацию (услуга).",
     "rule_refs": [
@@ -32,13 +32,13 @@
     "blanks": [
       {
         "id": "pv7-D7-020-b1",
-        "answer": "had the frame re-gilded",
+        "answer": "had the frame painted",
         "accepted_answers": [
-          "had the frame re-gilded",
-          "'d the frame re-gilded",
-          "got the frame re-gilded"
+          "had the frame painted",
+          "'d the frame painted",
+          "got the frame painted"
         ],
-        "base_verb": "the frame / to re-gild",
+        "base_verb": "the frame / to paint",
         "supplied_words": [
           "the frame"
         ],
@@ -51,13 +51,13 @@
         ]
       }
     ],
-    "answer_text": "The private collector didn't restore the baroque mirror herself. She had the frame re-gilded with twenty-three-carat gold leaf by a workshop in Florence. It looks magnificent now!"
+    "answer_text": "The private collector didn't restore the old mirror herself. She had the frame painted with gold by a workshop in Florence. It looks magnificent now!"
   },
   {
     "id": "pv7-D7-021",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My Cromer pier sketch looks great. I (it / to mount) behind museum-grade glass yesterday. Honestly, I (to shock) by the framing bill, though!",
@@ -130,7 +130,7 @@
     "id": "pv7-D7-022",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Before the waxwork is poured, a celebrity sitter (their head / to measure) in two hundred places. No one ever (to hurt) during this process, I promise.",
@@ -204,7 +204,7 @@
     "id": "pv7-D7-023",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The dendrochronologist needed samples from the tithe barn. He (a pencil core / to bore) from an oak beam. Remarkably, he managed to match its rings to the summer of 1384.",
@@ -258,12 +258,12 @@
     "id": "pv7-D7-024",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our distillation column snapped in half. Luckily, we (it / to fuse) back together by the scientific glassblower. The whole repair took twenty minutes.",
+    "prompt": "Our big glass tube snapped in half. Luckily, we (it / to repair) by the lab's glass expert. The whole repair took twenty minutes.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Колонну починил стеклодув (had something done).",
+    "explanation_ru": "Трубку починил специалист (had something done).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-get",
       "content/passive/07-passive.md#pv-causative"
@@ -271,7 +271,7 @@
     "cell": "D7",
     "genre": "review",
     "seed_id": "S4-074",
-    "skeleton": "our w in w . w , we G w by the w . the w .",
+    "skeleton": "our w in w . w , we G by the w . the w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -287,32 +287,32 @@
     "blanks": [
       {
         "id": "pv7-D7-024-b1",
-        "answer": "had it fused",
+        "answer": "had it repaired",
         "accepted_answers": [
-          "had it fused",
-          "'d it fused",
-          "got it fused"
+          "had it repaired",
+          "'d it repaired",
+          "got it repaired"
         ],
-        "base_verb": "it / to fuse",
+        "base_verb": "it / to repair",
         "supplied_words": [
           "it"
         ],
         "tense_or_construction": "pv_causative",
         "voice": "passive",
-        "explanation_ru": "Колонну починил стеклодув (had something done).",
+        "explanation_ru": "Трубку починил специалист (had something done).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-get",
           "content/passive/07-passive.md#pv-causative"
         ]
       }
     ],
-    "answer_text": "Our distillation column snapped in half. Luckily, we had it fused back together by the scientific glassblower. The whole repair took twenty minutes."
+    "answer_text": "Our big glass tube snapped in half. Luckily, we had it repaired by the lab's glass expert. The whole repair took twenty minutes."
   },
   {
     "id": "pv7-D7-025",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Being a sleep volunteer is tough. Last night, I (to wire up) with twelve scalp electrodes at 10 p.m. I (to wake up) every ninety minutes to recite nonsense syllables!",
@@ -380,7 +380,7 @@
     "id": "pv7-D7-026",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Dental technology has improved. Patients now (their teeth / to scan) optically. This means nobody (to force) to bite into cold pink putty anymore.",
@@ -454,10 +454,10 @@
     "id": "pv7-D7-027",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The five-year-old was scared. Did he (to frighten) by the cast cutter? The nurse pressed the vibrating blade against her hand to show it only tickled.",
+    "prompt": "The five-year-old was scared. Did he (to frighten) by the noisy machine? The nurse put it against her hand to show it didn't hurt.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Вопросительное предложение с did требует начальной формы глагола get (Did he get frightened?).",
     "rule_refs": [
@@ -467,7 +467,7 @@
     "cell": "D7",
     "genre": "chat",
     "seed_id": "S4-099",
-    "skeleton": "the w was w . did he G by the w ? the w the w her w to w it w .",
+    "skeleton": "the w was w . did he G by the w ? the w it w her w to w it w .",
     "practice_tenses": [
       "pv_D7",
       "pv_get"
@@ -498,18 +498,18 @@
         ]
       }
     ],
-    "answer_text": "The five-year-old was scared. Did he get frightened by the cast cutter? The nurse pressed the vibrating blade against her hand to show it only tickled."
+    "answer_text": "The five-year-old was scared. Did he get frightened by the noisy machine? The nurse put it against her hand to show it didn't hurt."
   },
   {
     "id": "pv7-D7-028",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "I twisted my knee on the mountain. At the medical post, I (my ski boot / to slit) with a heated wire cutter so my foot could be lifted out safely.",
+    "prompt": "I hurt my knee on the mountain. At the medical post, I (my ski boot / to cut) with special scissors so my foot could come out safely.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Ботинок разрезал врач (had something done). Глагол slit не меняет форму в V3.",
+    "explanation_ru": "Ботинок разрезал врач (have something done). Глагол cut не меняет форму в V3.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-get",
       "content/passive/07-passive.md#pv-causative"
@@ -517,7 +517,7 @@
     "cell": "D7",
     "genre": "review",
     "seed_id": "S4-100",
-    "skeleton": "i w my w on the w . at the w , i G with a w so my w could be w .",
+    "skeleton": "i w my w on the w . at the w , i G with w so my w could w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -533,35 +533,35 @@
     "blanks": [
       {
         "id": "pv7-D7-028-b1",
-        "answer": "had my ski boot slit",
+        "answer": "had my ski boot cut",
         "accepted_answers": [
-          "had my ski boot slit",
-          "'d my ski boot slit",
-          "got my ski boot slit"
+          "had my ski boot cut",
+          "'d my ski boot cut",
+          "got my ski boot cut"
         ],
-        "base_verb": "my ski boot / to slit",
+        "base_verb": "my ski boot / to cut",
         "supplied_words": [
           "my ski boot"
         ],
         "tense_or_construction": "pv_causative",
         "voice": "passive",
-        "explanation_ru": "Ботинок разрезал врач (had something done). Глагол slit не меняет форму в V3.",
+        "explanation_ru": "Ботинок разрезал врач (have something done). Глагол cut не меняет форму в V3.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-get",
           "content/passive/07-passive.md#pv-causative"
         ]
       }
     ],
-    "answer_text": "I twisted my knee on the mountain. At the medical post, I had my ski boot slit with a heated wire cutter so my foot could be lifted out safely."
+    "answer_text": "I hurt my knee on the mountain. At the medical post, I had my ski boot cut with special scissors so my foot could come out safely."
   },
   {
     "id": "pv7-D7-029",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A ginger cat sitting on a gatepost ___ automatically blurred by the privacy algorithm when the camera car drove past.",
+    "prompt": "An orange cat sitting on a wall ___ automatically blurred by the privacy program when the camera car drove past.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Конструкция have/get something done для описания события, случившегося с объектом (кот «получил» свою морду заблюренной: had its face blurred).",
     "rule_refs": [
@@ -571,7 +571,7 @@
     "cell": "D7",
     "genre": "news",
     "seed_id": "S4-130",
-    "skeleton": "a w on a w G w by the w when the w .",
+    "skeleton": "an w on a w G w by the w when the w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -594,14 +594,14 @@
       0
     ],
     "answer": "had its face",
-    "summary": "A ginger cat sitting on a gatepost had its face automatically blurred by the privacy algorithm when the camera car drove past.",
-    "answer_text": "A ginger cat sitting on a gatepost had its face automatically blurred by the privacy algorithm when the camera car drove past."
+    "summary": "An orange cat sitting on a wall had its face automatically blurred by the privacy program when the camera car drove past.",
+    "answer_text": "An orange cat sitting on a wall had its face automatically blurred by the privacy program when the camera car drove past."
   },
   {
     "id": "pv7-D7-030",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The flat owner ___ in the basement, only to find the stone cellar arch blocked the radio signal.",
@@ -644,10 +644,10 @@
     "id": "pv7-D7-031",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The Munich programmer ___ with tweezers and brushed with synthetic grease for quieter typing.",
+    "prompt": "The programmer ___ with a small tool and oiled for quieter typing.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Программист отдал клавиатуру на кастомизацию (had something done). Третья форма глагола (opened).",
     "rule_refs": [
@@ -657,7 +657,7 @@
     "cell": "D7",
     "genre": "review",
     "seed_id": "S4-149",
-    "skeleton": "the w G with w and w with w for w .",
+    "skeleton": "the w G with a w and w for w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -680,14 +680,14 @@
       0
     ],
     "answer": "had every plastic switch opened",
-    "summary": "The Munich programmer had every plastic switch opened with tweezers and brushed with synthetic grease for quieter typing.",
-    "answer_text": "The Munich programmer had every plastic switch opened with tweezers and brushed with synthetic grease for quieter typing."
+    "summary": "The programmer had every plastic switch opened with a small tool and oiled for quieter typing.",
+    "answer_text": "The programmer had every plastic switch opened with a small tool and oiled for quieter typing."
   },
   {
     "id": "pv7-D7-032",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "After the theft, the beekeeper had glued micro-transponders inside the frames of his remaining colonies.",
@@ -724,10 +724,10 @@
     "id": "pv7-D7-033",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A motorist caught at 54 mph had the ticket cancelled after proving the radar bounced off a swan.",
+    "prompt": "A driver caught going too fast had the ticket cancelled after proving the machine was wrong.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Ошибки нет. Используется have something done (had the ticket cancelled) для события, которое устроили другие люди по его запросу (отмена штрафа).",
     "rule_refs": [
@@ -737,7 +737,7 @@
     "cell": "D7",
     "genre": "news",
     "seed_id": "S4-172",
-    "skeleton": "a w at 54 w had the w after w the w a w .",
+    "skeleton": "a w had the w after w the w was w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -749,21 +749,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "A motorist caught at 54 mph had the ticket cancelled after proving the radar bounced off a swan.",
+    "answer": "A driver caught going too fast had the ticket cancelled after proving the machine was wrong.",
     "accepted_answers": [
-      "A motorist caught at 54 mph had the ticket cancelled after proving the radar bounced off a swan."
+      "A driver caught going too fast had the ticket cancelled after proving the machine was wrong."
     ],
-    "answer_text": "A motorist caught at 54 mph had the ticket cancelled after proving the radar bounced off a swan.",
+    "answer_text": "A driver caught going too fast had the ticket cancelled after proving the machine was wrong.",
     "has_error": false
   },
   {
     "id": "pv7-D7-034",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The scam was stopped when the elderly customer got asked probing questions by an alert clerk.",
+    "prompt": "The plan was stopped when the elderly customer got asked careful questions by a bank clerk.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Ошибки нет. get asked — допустимая неформальная форма пассива (хотя was asked звучит нейтральнее).",
     "rule_refs": [
@@ -773,7 +773,7 @@
     "cell": "D7",
     "genre": "news",
     "seed_id": "S4-187",
-    "skeleton": "the w was w when the w by an w .",
+    "skeleton": "the w was w when the w by a w .",
     "practice_tenses": [
       "pv_D7",
       "pv_get"
@@ -785,19 +785,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "The scam was stopped when the elderly customer got asked probing questions by an alert clerk.",
+    "answer": "The plan was stopped when the elderly customer got asked careful questions by a bank clerk.",
     "accepted_answers": [
-      "The scam was stopped when the elderly customer got asked probing questions by an alert clerk.",
-      "The scam was stopped when the elderly customer was asked probing questions by an alert clerk."
+      "The plan was stopped when the elderly customer got asked careful questions by a bank clerk."
     ],
-    "answer_text": "The scam was stopped when the elderly customer got asked probing questions by an alert clerk.",
+    "answer_text": "The plan was stopped when the elderly customer got asked careful questions by a bank clerk.",
     "has_error": false
   },
   {
     "id": "pv7-D7-035",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In Victorian times, left-handed children were forced to write with their right hands. This meant they didn't write naturally. Which sentence is true about them?",
@@ -840,7 +839,7 @@
     "id": "pv7-D7-036",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Paris sewer tours show how lost items are recovered. If you drop your keys down a drain, the city workers will retrieve them for you. What happens?",
@@ -883,7 +882,7 @@
     "id": "pv7-D7-037",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A researcher wanted to find her great-grandparents' old Moscow address. She paid an archivist to search the old telephone directories. What did she do?",
@@ -926,10 +925,10 @@
     "id": "pv7-D7-038",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The father drove for an hour with Spanish directions. His daughter had secretly changed the satnav language settings, and he didn't know how to fix it. What happened to him?",
+    "prompt": "The father drove for an hour with Spanish directions. His daughter had secretly changed the language on the GPS, and he didn't know how to fix it. What happened to him?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
     "explanation_ru": "Действие было совершено кем-то другим (unpleasant event: had his satnav set). Варианты 2 и 3 означают, что он сам сменил язык.",
     "rule_refs": [
@@ -939,7 +938,7 @@
     "cell": "D7",
     "genre": "dialogue",
     "seed_id": "S5-052",
-    "skeleton": "the w for an w with w . his w had w the w , and he w NOW how to w it . what w to him ?",
+    "skeleton": "the w for an w with w . his w had w the w on the w , and he w NOW how to w it . what w to him ?",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -952,24 +951,24 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "He had his satnav set to Spanish.",
-      "He set his satnav to Spanish.",
-      "He had set his satnav to Spanish.",
-      "He got his satnav to set to Spanish."
+      "He had his GPS set to Spanish.",
+      "He set his GPS to Spanish.",
+      "He had set his GPS to Spanish.",
+      "He got his GPS to set to Spanish."
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "He had his satnav set to Spanish.",
-    "summary": "He had his satnav set to Spanish.",
-    "answer_text": "He had his satnav set to Spanish."
+    "answer": "He had his GPS set to Spanish.",
+    "summary": "He had his GPS set to Spanish.",
+    "answer_text": "He had his GPS set to Spanish."
   },
   {
     "id": "pv7-D7-039",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Whenever my grandfather visits London, he has watered his basil plants by a helpful neighbour in Athens.",
@@ -1006,7 +1005,7 @@
     "id": "pv7-D7-040",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "During the important video call, the parent unfortunately ___ by a curious toddler.",
@@ -1049,7 +1048,7 @@
     "id": "pv7-D7-041",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At the Kerala wedding, the Norwegian guest ___ by three cousins at once so she wouldn't trip on the pleats.",
@@ -1092,7 +1091,7 @@
     "id": "pv7-D7-042",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "On Christmas jumper day, our teacher ___ 'most hideous jumper' and walked away with a chocolate trophy.",
@@ -1135,10 +1134,10 @@
     "id": "pv7-D7-043",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Just five minutes before Mahler's Fifth, the timpanist (a tiny tear / to patch) with goldbeater's skin by the stage manager.",
+    "prompt": "Just five minutes before the concert, the drummer (a tiny tear / to repair) by the stage manager.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Услуга, оказанная кем-то другим (had something done).",
     "rule_refs": [
@@ -1148,7 +1147,7 @@
     "cell": "D7",
     "genre": "dialogue",
     "seed_id": "S3-157",
-    "skeleton": "JUST w before w , the w G with w by the w .",
+    "skeleton": "JUST w before the w , the w G by the w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -1164,13 +1163,13 @@
     "blanks": [
       {
         "id": "pv7-D7-043-b1",
-        "answer": "had a tiny tear patched",
+        "answer": "had a tiny tear repaired",
         "accepted_answers": [
-          "had a tiny tear patched",
-          "'d a tiny tear patched",
-          "got a tiny tear patched"
+          "had a tiny tear repaired",
+          "'d a tiny tear repaired",
+          "got a tiny tear repaired"
         ],
-        "base_verb": "a tiny tear / to patch",
+        "base_verb": "a tiny tear / to repair",
         "supplied_words": [
           "a tiny tear"
         ],
@@ -1183,13 +1182,13 @@
         ]
       }
     ],
-    "answer_text": "Just five minutes before Mahler's Fifth, the timpanist had a tiny tear patched with goldbeater's skin by the stage manager."
+    "answer_text": "Just five minutes before the concert, the drummer had a tiny tear repaired by the stage manager."
   },
   {
     "id": "pv7-D7-044",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "While two of the collies fetch and sleep, the third dog (to train) to bark instantly on a single hand signal.",
@@ -1241,10 +1240,10 @@
     "id": "pv7-D7-045",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Before anyone (to allow) to run the sequence at performance tempo, every slap and sword parry is rehearsed at quarter-speed.",
+    "prompt": "Before anyone (to allow) to run the scene at full speed, every fight move is practised at quarter-speed.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Неформальный get-passive в значении 'получить разрешение'.",
     "rule_refs": [
@@ -1254,7 +1253,7 @@
     "cell": "D7",
     "genre": "instructions",
     "seed_id": "S3-195",
-    "skeleton": "before w G to w the w at w , EVERY_SLAP and w is w at w .",
+    "skeleton": "before w G to w the w at w , EVERY_FIGHT w is w at w .",
     "practice_tenses": [
       "pv_D7",
       "pv_get"
@@ -1287,13 +1286,13 @@
         ]
       }
     ],
-    "answer_text": "Before anyone gets allowed to run the sequence at performance tempo, every slap and sword parry is rehearsed at quarter-speed."
+    "answer_text": "Before anyone gets allowed to run the scene at full speed, every fight move is practised at quarter-speed."
   },
   {
     "id": "pv7-D7-046",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because my tongue kept clicking, I (to ask) to drink warm water with apple slices between chapters.",
@@ -1344,10 +1343,10 @@
     "id": "pv7-D7-047",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "On his eightieth birthday, the retired driver (to invite) behind the brass rope to sit on the footplate of his old steam locomotive.",
+    "prompt": "On his eightieth birthday, the retired driver (to invite) behind the rope to sit in the cab of his old steam train.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Неформальный get-passive (got invited — был приглашен).",
     "rule_refs": [
@@ -1357,7 +1356,7 @@
     "cell": "D7",
     "genre": "news",
     "seed_id": "S4-028",
-    "skeleton": "on his w , the w G w the w to w on the w of his w .",
+    "skeleton": "on his w , the w G w the w to w in the w of his w .",
     "practice_tenses": [
       "pv_D7",
       "pv_get"
@@ -1389,16 +1388,16 @@
         ]
       }
     ],
-    "answer_text": "On his eightieth birthday, the retired driver got invited behind the brass rope to sit on the footplate of his old steam locomotive."
+    "answer_text": "On his eightieth birthday, the retired driver got invited behind the rope to sit in the cab of his old steam train."
   },
   {
     "id": "pv7-D7-048",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The interior designer (six rolls of 1895 wallpaper / to hand-block) from the original pearwood printing blocks in the museum cellar.",
+    "prompt": "The interior designer (six rolls of paper / to print) by hand from old wooden blocks in the museum cellar.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Она заказала печать обоев (услуга: had something done в Past Simple).",
     "rule_refs": [
@@ -1408,7 +1407,7 @@
     "cell": "D7",
     "genre": "email",
     "seed_id": "S4-039",
-    "skeleton": "the w G from the w in the w .",
+    "skeleton": "the w G by w from w in the w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -1424,15 +1423,15 @@
     "blanks": [
       {
         "id": "pv7-D7-048-b1",
-        "answer": "had six rolls of 1895 wallpaper hand-blocked",
+        "answer": "had six rolls of paper printed",
         "accepted_answers": [
-          "had six rolls of 1895 wallpaper hand-blocked",
-          "'d six rolls of 1895 wallpaper hand-blocked",
-          "got six rolls of 1895 wallpaper hand-blocked"
+          "had six rolls of paper printed",
+          "'d six rolls of paper printed",
+          "got six rolls of paper printed"
         ],
-        "base_verb": "six rolls of 1895 wallpaper / to hand-block",
+        "base_verb": "six rolls of paper / to print",
         "supplied_words": [
-          "six rolls of 1895 wallpaper"
+          "six rolls of paper"
         ],
         "tense_or_construction": "pv_causative",
         "voice": "passive",
@@ -1443,16 +1442,16 @@
         ]
       }
     ],
-    "answer_text": "The interior designer had six rolls of 1895 wallpaper hand-blocked from the original pearwood printing blocks in the museum cellar."
+    "answer_text": "The interior designer had six rolls of paper printed by hand from old wooden blocks in the museum cellar."
   },
   {
     "id": "pv7-D7-049",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A customs clerk in Mestre mistook the volcanic sand for builders' ballast and (it / to tip) into a skip outside the pavilion.",
+    "prompt": "A customs clerk in Mestre mistook the black sand for building sand and (it / to throw) into a bin outside the hall.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Клерк распорядился, чтобы песок высыпали (каузативная конструкция had something done).",
     "rule_refs": [
@@ -1462,7 +1461,7 @@
     "cell": "D7",
     "genre": "news",
     "seed_id": "S4-040",
-    "skeleton": "a w in w the w for w LAST_AND G into a w the w .",
+    "skeleton": "a w in w the w for w and G into a w the w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -1478,13 +1477,13 @@
     "blanks": [
       {
         "id": "pv7-D7-049-b1",
-        "answer": "had it tipped",
+        "answer": "had it thrown",
         "accepted_answers": [
-          "had it tipped",
-          "'d it tipped",
-          "got it tipped"
+          "had it thrown",
+          "'d it thrown",
+          "got it thrown"
         ],
-        "base_verb": "it / to tip",
+        "base_verb": "it / to throw",
         "supplied_words": [
           "it"
         ],
@@ -1497,13 +1496,13 @@
         ]
       }
     ],
-    "answer_text": "A customs clerk in Mestre mistook the volcanic sand for builders' ballast and had it tipped into a skip outside the pavilion."
+    "answer_text": "A customs clerk in Mestre mistook the black sand for building sand and had it thrown into a bin outside the hall."
   },
   {
     "id": "pv7-D7-050",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Every Thursday, the elderly patient (his weekly tablets / to seal) into seven colour-coded blister bubbles by the local pharmacist.",
@@ -1557,10 +1556,10 @@
     "id": "pv7-D7-051",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "While standing on a foam impression box, the marathon walker (a pair of cork insoles / to heat-mould) to his arches.",
+    "prompt": "While standing on a soft box, the runner (a pair of shoe pads / to shape) to his feet.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Пешеход получил услугу по изготовлению стелек (had something done).",
     "rule_refs": [
@@ -1586,15 +1585,15 @@
     "blanks": [
       {
         "id": "pv7-D7-051-b1",
-        "answer": "had a pair of cork insoles heat-moulded",
+        "answer": "had a pair of shoe pads shaped",
         "accepted_answers": [
-          "had a pair of cork insoles heat-moulded",
-          "'d a pair of cork insoles heat-moulded",
-          "got a pair of cork insoles heat-moulded"
+          "had a pair of shoe pads shaped",
+          "'d a pair of shoe pads shaped",
+          "got a pair of shoe pads shaped"
         ],
-        "base_verb": "a pair of cork insoles / to heat-mould",
+        "base_verb": "a pair of shoe pads / to shape",
         "supplied_words": [
-          "a pair of cork insoles"
+          "a pair of shoe pads"
         ],
         "tense_or_construction": "pv_causative",
         "voice": "passive",
@@ -1605,16 +1604,16 @@
         ]
       }
     ],
-    "answer_text": "While standing on a foam impression box, the marathon walker had a pair of cork insoles heat-moulded to his arches."
+    "answer_text": "While standing on a soft box, the runner had a pair of shoe pads shaped to his feet."
   },
   {
     "id": "pv7-D7-052",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The lorry driver memorised the bottom line of the chart, but he (to catch) out when the optometrist scrambled the letters.",
+    "prompt": "The truck driver memorised the bottom line of the chart, but he (to catch) out when the eye doctor mixed the letters.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Get-passive для неприятного или неожиданного события (его поймали).",
     "rule_refs": [
@@ -1656,16 +1655,16 @@
         ]
       }
     ],
-    "answer_text": "The lorry driver memorised the bottom line of the chart, but he got caught out when the optometrist scrambled the letters."
+    "answer_text": "The truck driver memorised the bottom line of the chart, but he got caught out when the eye doctor mixed the letters."
   },
   {
     "id": "pv7-D7-053",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Her streak was saved at two minutes to midnight by a bonus token she (to give) three months earlier.",
+    "prompt": "Her daily record was saved at two minutes to midnight by a bonus point she (to give) three months earlier.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Get-passive в форме Past Perfect (ей дали токен до того, как он спас серию).",
     "rule_refs": [
@@ -1711,13 +1710,13 @@
         ]
       }
     ],
-    "answer_text": "Her streak was saved at two minutes to midnight by a bonus token she had got given three months earlier."
+    "answer_text": "Her daily record was saved at two minutes to midnight by a bonus point she had got given three months earlier."
   },
   {
     "id": "pv7-D7-054",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Just as he stepped up to the scanner, the passenger (to delay) by an automatic twenty-minute operating-system update on his phone.",
@@ -1768,7 +1767,7 @@
     "id": "pv7-D7-055",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A silver living statue (to caution) by community wardens after jumping out and making tourists drop their chips.",
@@ -1819,7 +1818,7 @@
     "id": "pv7-D7-056",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In 1420, any baker whose penny loaf weighed under the standard (his bread / to confiscate) and given to castle prisoners.",
@@ -1873,10 +1872,10 @@
     "id": "pv7-D7-057",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "After lead flashing was stripped twice, the churchwarden (terne-coated stainless steel / to lay) on the vestry roof instead.",
+    "prompt": "After lead sheets were stolen twice, the church manager (new steel sheets / to lay) on the roof instead.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Староста заказал укладку стали (had something done). Глагол lay — неправильный (laid).",
     "rule_refs": [
@@ -1886,7 +1885,7 @@
     "cell": "D7",
     "genre": "report",
     "seed_id": "S4-196",
-    "skeleton": "after w was w , the w G on the w .",
+    "skeleton": "after w were w , the w G on the w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -1902,15 +1901,15 @@
     "blanks": [
       {
         "id": "pv7-D7-057-b1",
-        "answer": "had terne-coated stainless steel laid",
+        "answer": "had new steel sheets laid",
         "accepted_answers": [
-          "had terne-coated stainless steel laid",
-          "'d terne-coated stainless steel laid",
-          "got terne-coated stainless steel laid"
+          "had new steel sheets laid",
+          "'d new steel sheets laid",
+          "got new steel sheets laid"
         ],
-        "base_verb": "terne-coated stainless steel / to lay",
+        "base_verb": "new steel sheets / to lay",
         "supplied_words": [
-          "terne-coated stainless steel"
+          "new steel sheets"
         ],
         "tense_or_construction": "pv_causative",
         "voice": "passive",
@@ -1921,16 +1920,16 @@
         ]
       }
     ],
-    "answer_text": "After lead flashing was stripped twice, the churchwarden had terne-coated stainless steel laid on the vestry roof instead."
+    "answer_text": "After lead sheets were stolen twice, the church manager had new steel sheets laid on the roof instead."
   },
   {
     "id": "pv7-D7-058",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Living on an Iowa farmhouse is tough. The children (to wake) at five every morning. Do they (to pay) for feeding the calves? No, it's just expected!",
+    "prompt": "Living on an Iowa farm is tough. The children (to wake) at five every morning. Do they (to pay) for feeding the animals? No, it's just expected!",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "В обоих случаях get-passive. В вопросительном предложении с 'do' get стоит в начальной форме (get paid).",
     "rule_refs": [
@@ -1992,13 +1991,13 @@
         ]
       }
     ],
-    "answer_text": "Living on an Iowa farmhouse is tough. The children get woken at five every morning. Do they get paid for feeding the calves? No, it's just expected!"
+    "answer_text": "Living on an Iowa farm is tough. The children get woken at five every morning. Do they get paid for feeding the animals? No, it's just expected!"
   },
   {
     "id": "pv7-D7-059",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My grandmother (her piano / to tune) twice a year by a professional. Nobody (to play) it, though, since the 1990s.",
@@ -2071,7 +2070,7 @@
     "id": "pv7-D7-060",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A snake was found in our laundry basket! We (it / to remove) safely by a local catcher. Fortunately, nobody (to bite).",
@@ -2144,7 +2143,7 @@
     "id": "pv7-D7-061",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "For our mother's 50th birthday, we didn't just buy a gift. We (a video / to make) with messages from her old friends. She (to overwhelm) by emotion.",
@@ -2217,7 +2216,7 @@
     "id": "pv7-D7-062",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At the Cork reunion, old classmates only (to recognise) by their name tags. However, one man hadn't changed at all. Did he (any work / to do) on his face? Nobody knows.",
@@ -2292,7 +2291,7 @@
     "id": "pv7-D7-063",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At the Texas barbecue, the exchange students (to feed) so much meat they could barely move. Eventually, they (to send) home with containers of leftovers.",
@@ -2360,10 +2359,10 @@
     "id": "pv7-D7-064",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A local schoolgirl entered a council competition. She (her drawing / to choose) to decorate the new pedestrian crossing. Everyone (to thrill) with the colourful result.",
+    "prompt": "A local girl entered a town competition. She (her drawing / to choose) for the new road crossing. Everyone (to please) with the colourful result.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Ее рисунок выбрали (событие, выраженное через had something done). Get-passive для эмоций.",
     "rule_refs": [
@@ -2373,7 +2372,7 @@
     "cell": "D7",
     "genre": "news",
     "seed_id": "S5-134",
-    "skeleton": "a w a w . she G to w the w . w G with the w .",
+    "skeleton": "a w a w . she G for the w . w G with the w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative",
@@ -2411,12 +2410,12 @@
       },
       {
         "id": "pv7-D7-064-b2",
-        "answer": "got thrilled",
+        "answer": "was pleased",
         "accepted_answers": [
-          "got thrilled",
-          "was thrilled"
+          "was pleased",
+          "got pleased"
         ],
-        "base_verb": "to thrill",
+        "base_verb": "to please",
         "supplied_words": [],
         "tense_or_construction": "pv_get",
         "voice": "passive",
@@ -2427,16 +2426,16 @@
         ]
       }
     ],
-    "answer_text": "A local schoolgirl entered a council competition. She had her drawing chosen to decorate the new pedestrian crossing. Everyone got thrilled with the colourful result."
+    "answer_text": "A local girl entered a town competition. She had her drawing chosen for the new road crossing. Everyone was pleased with the colourful result."
   },
   {
     "id": "pv7-D7-065",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A stray cat kept visiting the Leeds fire station. Eventually, it (to give) the official job of station mascot. The firefighters (a special collar / to make) for him last week.",
+    "prompt": "A lost cat kept visiting the Leeds fire station. Eventually, it (to give) the job of station cat. The staff (a special collar / to make) for him last week.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Коту дали работу (got given). Пожарные заказали ошейник (had something done).",
     "rule_refs": [
@@ -2500,13 +2499,13 @@
         ]
       }
     ],
-    "answer_text": "A stray cat kept visiting the Leeds fire station. Eventually, it got given the official job of station mascot. The firefighters had a special collar made for him last week."
+    "answer_text": "A lost cat kept visiting the Leeds fire station. Eventually, it got given the job of station cat. The staff had a special collar made for him last week."
   },
   {
     "id": "pv7-D7-066",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A Chester Zoo penguin had a sore foot. The keepers (a tiny pair of boots / to design) for him by a specialist. Now, he (not / pick on) by the other birds anymore.",
@@ -2582,7 +2581,7 @@
     "id": "pv7-D7-067",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "On this Dutch dairy farm, cows decide their own schedule. They (to milk) by robots whenever they choose to walk in. The farmer (the machines / to service) twice a month to prevent breakdowns.",
@@ -2656,10 +2655,10 @@
     "id": "pv7-D7-068",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Working in the North Sea is perilous. Each offshore wind turbine ___ by a technician lowered directly from a helicopter.",
+    "prompt": "Working in the North Sea is dangerous. Each wind turbine ___ by a worker lowered directly from a helicopter.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Регулярное пассивное действие (gets checked). Вариант has checked — это активный залог (Present Perfect).",
     "rule_refs": [
@@ -2692,14 +2691,14 @@
       0
     ],
     "answer": "gets checked",
-    "summary": "Working in the North Sea is perilous. Each offshore wind turbine gets checked by a technician lowered directly from a helicopter.",
-    "answer_text": "Working in the North Sea is perilous. Each offshore wind turbine gets checked by a technician lowered directly from a helicopter."
+    "summary": "Working in the North Sea is dangerous. Each wind turbine gets checked by a worker lowered directly from a helicopter.",
+    "answer_text": "Working in the North Sea is dangerous. Each wind turbine gets checked by a worker lowered directly from a helicopter."
   },
   {
     "id": "pv7-D7-069",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "After years of hard work rounding up sheep, the farm dog ___ and given his own armchair by the fire.",
@@ -2742,7 +2741,7 @@
     "id": "pv7-D7-070",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Long-distance lorry drivers ___ if they forget their fog lamps on the coastal highway at dawn.",
@@ -2785,7 +2784,7 @@
     "id": "pv7-D7-071",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Student grape-pickers ___ very well for harvesting Riesling ice wine at three in the morning.",
@@ -2828,7 +2827,7 @@
     "id": "pv7-D7-072",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The wildlife rangers ___ across the four-lane highway so grizzlies could cross safely.",
@@ -2871,10 +2870,10 @@
     "id": "pv7-D7-073",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The wildlife photographer waited four hours in a hide, but got tricked by a squirrel sitting on his tripod.",
+    "prompt": "The nature photographer waited four hours, but got tricked by a bird sitting on his camera.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Ошибки нет. Используется get-passive (got tricked) для описания неожиданного и слегка обидного события.",
     "rule_refs": [
@@ -2884,7 +2883,7 @@
     "cell": "D7",
     "genre": "chat",
     "seed_id": "S1-078",
-    "skeleton": "the w in a w , but w by a w on his w .",
+    "skeleton": "the w , but w by a w on his w .",
     "practice_tenses": [
       "pv_D7",
       "pv_get"
@@ -2896,21 +2895,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "The wildlife photographer waited four hours in a hide, but got tricked by a squirrel sitting on his tripod.",
+    "answer": "The nature photographer waited four hours, but got tricked by a bird sitting on his camera.",
     "accepted_answers": [
-      "The wildlife photographer waited four hours in a hide, but got tricked by a squirrel sitting on his tripod."
+      "The nature photographer waited four hours, but got tricked by a bird sitting on his camera."
     ],
-    "answer_text": "The wildlife photographer waited four hours in a hide, but got tricked by a squirrel sitting on his tripod.",
+    "answer_text": "The nature photographer waited four hours, but got tricked by a bird sitting on his camera.",
     "has_error": false
   },
   {
     "id": "pv7-D7-074",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "At five-thirty, the groom has each thoroughbred's hooves pick out and oiled before the string rides onto the heath.",
+    "prompt": "At five-thirty, the groom has each horse's legs wash and dried before the group rides out.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "В конструкции have something done глагол должен стоять в третьей форме (picked out, а не pick out).",
     "rule_refs": [
@@ -2920,7 +2919,7 @@
     "cell": "D7",
     "genre": "instructions",
     "seed_id": "S1-079",
-    "skeleton": "at w , the w has each w and w before the w the w .",
+    "skeleton": "at w , the w has each w and w before the w .",
     "practice_tenses": [
       "pv_D7",
       "pv_causative"
@@ -2932,22 +2931,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "At five-thirty, the groom has each thoroughbred's hooves picked out and oiled before the string rides onto the heath.",
+    "answer": "At five-thirty, the groom has each horse's legs washed and dried before the group rides out.",
     "accepted_answers": [
-      "At five-thirty, the groom has each thoroughbred's hooves picked out and oiled before the string rides onto the heath.",
-      "At five-thirty, the groom gets each thoroughbred's hooves picked out and oiled before the string rides onto the heath."
+      "At five-thirty, the groom has each horse's legs washed and dried before the group rides out."
     ],
-    "answer_text": "At five-thirty, the groom has each thoroughbred's hooves picked out and oiled before the string rides onto the heath.",
+    "answer_text": "At five-thirty, the groom has each horse's legs washed and dried before the group rides out.",
     "has_error": true
   },
   {
     "id": "pv7-D7-075",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Green cardamom pods get grading by diameter through brass sieves so the essential oils are preserved.",
+    "prompt": "Green coffee beans get grading by size on a machine so the best ones are kept.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Get-passive образуется при помощи get + V3 (graded, а не grading).",
     "rule_refs": [
@@ -2957,7 +2955,7 @@
     "cell": "D7",
     "genre": "process",
     "seed_id": "S1-100",
-    "skeleton": "w by w so the w are w .",
+    "skeleton": "w by w on a w so the w are w .",
     "practice_tenses": [
       "pv_D7",
       "pv_get"
@@ -2969,21 +2967,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Green cardamom pods get graded by diameter through brass sieves so the essential oils are preserved.",
+    "answer": "Green coffee beans get graded by size on a machine so the best ones are kept.",
     "accepted_answers": [
-      "Green cardamom pods get graded by diameter through brass sieves so the essential oils are preserved."
+      "Green coffee beans get graded by size on a machine so the best ones are kept."
     ],
-    "answer_text": "Green cardamom pods get graded by diameter through brass sieves so the essential oils are preserved.",
+    "answer_text": "Green coffee beans get graded by size on a machine so the best ones are kept.",
     "has_error": true
   },
   {
     "id": "pv7-D7-076",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The family in Quebec gets forty litres of sap boiled down into a single litre of amber syrup every March.",
+    "prompt": "The family in Quebec gets forty litres of tree juice boiled down into a single litre of sweet syrup every March.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Ошибки нет. Конструкция get something done (gets sap boiled down) для организации процесса переработки.",
     "rule_refs": [
@@ -3005,19 +3003,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "The family in Quebec gets forty litres of sap boiled down into a single litre of amber syrup every March.",
+    "answer": "The family in Quebec gets forty litres of tree juice boiled down into a single litre of sweet syrup every March.",
     "accepted_answers": [
-      "The family in Quebec gets forty litres of sap boiled down into a single litre of amber syrup every March.",
-      "The family in Quebec has forty litres of sap boiled down into a single litre of amber syrup every March."
+      "The family in Quebec gets forty litres of tree juice boiled down into a single litre of sweet syrup every March."
     ],
-    "answer_text": "The family in Quebec gets forty litres of sap boiled down into a single litre of amber syrup every March.",
+    "answer_text": "The family in Quebec gets forty litres of tree juice boiled down into a single litre of sweet syrup every March.",
     "has_error": false
   },
   {
     "id": "pv7-D7-077",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In this San Sebastián tapas bar, toothpicks on your plate are counted to calculate your bill. If you try to pocket one, you will be in trouble. What happens?",
@@ -3060,7 +3057,7 @@
     "id": "pv7-D7-078",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The village baker seals the clay oven door with wet wood ash. He doesn't hire anyone for this; he does it all himself to stop the steam escaping. What does he do?",
@@ -3103,10 +3100,10 @@
     "id": "pv7-D7-079",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Salt cod (bacalhau) must soak in water for thirty-six hours, and you need to change the water three times. What must you do?",
+    "prompt": "Salt fish must stay in water for thirty-six hours, and you need to change the water three times. What must you do?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
     "explanation_ru": "Повар меняет воду сам (активный залог). Have/get the water changed означало бы, что он просит кого-то другого сделать это.",
     "rule_refs": [
@@ -3116,7 +3113,7 @@
     "cell": "D7",
     "genre": "instructions",
     "seed_id": "S1-154",
-    "skeleton": "w G must w in w for w , and you w to w the w . what must you do ?",
+    "skeleton": "w must w in w for w , and you w to w the w . what must you do ?",
     "practice_tenses": [
       "pv_D7",
       "active_other"
@@ -3146,10 +3143,10 @@
     "id": "pv7-D7-080",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Paprika growers string red peppers under the eaves to dry in the autumn sun. They don't pay a factory to dry them. What do they do?",
+    "prompt": "Pepper growers hang red peppers outside to dry in the autumn sun. They don't pay a factory to dry them. What do they do?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
     "explanation_ru": "Фермеры сушат перцы сами (активный залог).",
     "rule_refs": [
@@ -3159,7 +3156,7 @@
     "cell": "D7",
     "genre": "process",
     "seed_id": "S1-158",
-    "skeleton": "w the w to w in the w . they w a w to w them . what do they do ?",
+    "skeleton": "w to w in the w . they w a w to w them . what do they do ?",
     "practice_tenses": [
       "pv_D7",
       "active_other"
@@ -3189,10 +3186,10 @@
     "id": "pv7-D7-081",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The gardening club planted forty pumpkin seeds in April, but half of them (to eat) by slugs.",
+    "prompt": "The gardening club planted forty pumpkin seeds in April, but half of them (to eat) by insects.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Семена были съедены (неприятное событие — got eaten).",
     "rule_refs": [
@@ -3234,13 +3231,13 @@
         ]
       }
     ],
-    "answer_text": "The gardening club planted forty pumpkin seeds in April, but half of them got eaten by slugs."
+    "answer_text": "The gardening club planted forty pumpkin seeds in April, but half of them got eaten by insects."
   },
   {
     "id": "pv7-D7-082",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At twenty past twelve, desks are pushed together and the pupils (to serve) hot curry and milk by the class monitors.",
@@ -3292,7 +3289,7 @@
     "id": "pv7-D7-083",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "While shifting crates in the Leiden library basement, the student assistant (to cover) in decades of dust.",
@@ -3343,7 +3340,7 @@
     "id": "pv7-D8-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Drivers on Lake Baikal (not / to allow / leave) the flagged ice lane.",
@@ -3396,7 +3393,7 @@
     "id": "pv7-D8-002",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "I (to make / collect) three signatures from different deans before getting my grant.",
@@ -3446,7 +3443,7 @@
     "id": "pv7-D8-003",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In small Roman pharmacies, customers (not / to allow / pick) items off the shelves.",
@@ -3499,10 +3496,10 @@
     "id": "pv7-D8-004",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Petrol cars (not / to allow / enter) the streets of Zermatt, so electric carts carry luggage.",
+    "prompt": "Petrol cars (not / to allow / enter) the streets of Zermatt, so electric vehicles carry bags.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Постоянный запрет в пассиве: are not allowed to enter.",
     "rule_refs": [
@@ -3546,13 +3543,13 @@
         ]
       }
     ],
-    "answer_text": "Petrol cars are not allowed to enter the streets of Zermatt, so electric carts carry luggage."
+    "answer_text": "Petrol cars are not allowed to enter the streets of Zermatt, so electric vehicles carry bags."
   },
   {
     "id": "pv7-D8-005",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Visiting sixth-formers (to ask / leave) their watches in a tray outside the Faraday cage.",
@@ -3603,7 +3600,7 @@
     "id": "pv7-D8-006",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Are Oxford students really (to allow / ask) for a free pint of beer during exams?",
@@ -3653,7 +3650,7 @@
     "id": "pv7-D8-007",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Dog owners (to expect / keep) their pets on a lead near the park pond.",
@@ -3704,7 +3701,7 @@
     "id": "pv7-D8-008",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Why (diplomatic bags / not / to make / go) through airport X-ray scanners like ordinary luggage?",
@@ -3758,7 +3755,7 @@
     "id": "pv7-D8-009",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Road-train drivers (to make / unhook) their massive trailers at the city perimeter because they cannot fit on roundabouts.",
@@ -3809,7 +3806,7 @@
     "id": "pv7-D8-010",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Before stepping past the yellow magnetic-field line, I (to tell / remove) even my metal hairclips.",
@@ -3859,7 +3856,7 @@
     "id": "pv7-D8-011",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The server outage in Oregon (to make / us / sit) in a completely dark hallway when we got home.",
@@ -3910,7 +3907,7 @@
     "id": "pv7-D8-012",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At Sydney customs, wood-boring beetles (to hear / chew) loudly inside a tourist's wooden carving.",
@@ -3961,10 +3958,10 @@
     "id": "pv7-D8-013",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our shy new intern (to hear / sing) brilliantly at karaoke, so everyone immediately demanded an encore.",
+    "prompt": "Our shy new worker (to hear / sing) brilliantly at karaoke, so everyone immediately wanted another song.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "После пассивного hear нельзя ставить голый инфинитив (sing) — нужно либо -ing (процесс), либо to sing.",
     "rule_refs": [
@@ -3973,7 +3970,7 @@
     "cell": "D8",
     "genre": "chat",
     "seed_id": "S5-099",
-    "skeleton": "our w G w at w , so w an w .",
+    "skeleton": "our w G w at w , so w .",
     "practice_tenses": [
       "pv_D8",
       "pv_perception"
@@ -4006,25 +4003,25 @@
         ]
       }
     ],
-    "answer_text": "Our shy new intern was heard singing brilliantly at karaoke, so everyone immediately demanded an encore."
+    "answer_text": "Our shy new worker was heard singing brilliantly at karaoke, so everyone immediately wanted another song."
   },
   {
     "id": "pv7-D8-014",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "In Arbroath, salted haddock (to leave / hang) over smouldering oak barrels for forty-five minutes until copper-gold.",
+    "prompt": "In Arbroath, salted fish (to allow / hang) over a smoky fire for forty-five minutes until golden.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Регулярный процесс копчения: рыбу оставляют висеть (is left to hang / hanging).",
+    "explanation_ru": "Регулярный процесс копчения: рыбе позволяют висеть (is allowed to hang).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-patterns"
     ],
     "cell": "D8",
     "genre": "process",
     "seed_id": "S1-118",
-    "skeleton": "in w , w G over w for w until w .",
+    "skeleton": "in w , w G over a w for w until w .",
     "practice_tenses": [
       "pv_D8",
       "pv_make_allow"
@@ -4040,32 +4037,30 @@
     "blanks": [
       {
         "id": "pv7-D8-014-b1",
-        "answer": "is left to hang",
+        "answer": "is allowed to hang",
         "accepted_answers": [
-          "is left to hang",
-          "'s left to hang",
-          "is left hanging",
-          "'s left hanging"
+          "is allowed to hang",
+          "'s allowed to hang"
         ],
-        "base_verb": "to leave / hang",
+        "base_verb": "to allow / hang",
         "supplied_words": [
           "hang"
         ],
         "tense_or_construction": "pv_make_allow",
         "voice": "passive",
-        "explanation_ru": "Регулярный процесс копчения: рыбу оставляют висеть (is left to hang / hanging).",
+        "explanation_ru": "Регулярный процесс копчения: рыбе позволяют висеть (is allowed to hang).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-patterns"
         ]
       }
     ],
-    "answer_text": "In Arbroath, salted haddock is left to hang over smouldering oak barrels for forty-five minutes until copper-gold."
+    "answer_text": "In Arbroath, salted fish is allowed to hang over a smoky fire for forty-five minutes until golden."
   },
   {
     "id": "pv7-D8-015",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because the frosted film only covered the middle of the glass, the directors' shoes (to see / kick) under the table.",
@@ -4116,10 +4111,10 @@
     "id": "pv7-D8-016",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "During a force-seven gale, the newly qualified pilot (to see / climb) the rope ladder up the ship's hull.",
+    "prompt": "During a strong storm, the newly qualified pilot (to see / climb) the rope ladder up the ship's side.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "В пассиве после see используется -ing (процесс) или инфинитив с to (завершённое действие), но не голый инфинитив.",
     "rule_refs": [
@@ -4161,13 +4156,13 @@
         ]
       }
     ],
-    "answer_text": "During a force-seven gale, the newly qualified pilot was seen climbing the rope ladder up the ship's hull."
+    "answer_text": "During a strong storm, the newly qualified pilot was seen climbing the rope ladder up the ship's side."
   },
   {
     "id": "pv7-D8-017",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "No examiner (to allow / destroy) written exam booklets until thirteen months have passed after results day.",
@@ -4218,12 +4213,12 @@
     "id": "pv7-D8-018",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "After the triumphal scene in Verona, stage sweepers (to make / vacuum) forty barrow-loads of red confetti in twelve minutes.",
+    "prompt": "After the final scene in Verona, stage cleaners (to make / clean up) forty bags of red paper in twelve minutes.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Регулярная обязанность в театре: после пассивного make обязательно требуется to.",
+    "explanation_ru": "Регулярная обязанность в театре: после пассивного make нужен инфинитив с to (are made to clean up).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-patterns"
     ],
@@ -4246,30 +4241,30 @@
     "blanks": [
       {
         "id": "pv7-D8-018-b1",
-        "answer": "are made to vacuum",
+        "answer": "are made to clean up",
         "accepted_answers": [
-          "are made to vacuum",
-          "'re made to vacuum"
+          "are made to clean up",
+          "'re made to clean up"
         ],
-        "base_verb": "to make / vacuum",
+        "base_verb": "to make / clean up",
         "supplied_words": [
-          "vacuum"
+          "clean up"
         ],
         "tense_or_construction": "pv_make_allow",
         "voice": "passive",
-        "explanation_ru": "Регулярная обязанность в театре: после пассивного make обязательно требуется to.",
+        "explanation_ru": "Регулярная обязанность в театре: после пассивного make нужен инфинитив с to (are made to clean up).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-patterns"
         ]
       }
     ],
-    "answer_text": "After the triumphal scene in Verona, stage sweepers are made to vacuum forty barrow-loads of red confetti in twelve minutes."
+    "answer_text": "After the final scene in Verona, stage cleaners are made to clean up forty bags of red paper in twelve minutes."
   },
   {
     "id": "pv7-D8-019",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Before it was cleared for launch, the camera lens assembly (to make / spin) at twelve G on an eight-metre arm.",
@@ -4319,7 +4314,7 @@
     "id": "pv7-D8-020",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because master passwords are encrypted locally, company staff (not / to allow / access) your vault even under a court order.",
@@ -4372,7 +4367,7 @@
     "id": "pv7-D8-021",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In fifteenth-century Estonia, anyone who (to catch / throw) rubbish into the market well faced a heavy fine.",
@@ -4422,10 +4417,10 @@
     "id": "pv7-D8-022",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "During the Melbourne tramway test, a dummy pram (to see / roll) onto the wet rails from behind a parked van.",
+    "prompt": "During the Melbourne tram test, a toy pram (to see / roll) onto the wet rails from behind a parked van.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Описание стандартного теста в Present Simple. После пассивного see ставится -ing или to-инфинитив.",
     "rule_refs": [
@@ -4471,16 +4466,16 @@
         ]
       }
     ],
-    "answer_text": "During the Melbourne tramway test, a dummy pram was seen rolling onto the wet rails from behind a parked van."
+    "answer_text": "During the Melbourne tram test, a toy pram was seen rolling onto the wet rails from behind a parked van."
   },
   {
     "id": "pv7-D8-023",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our Pyrenean campsite laundry has strict hours. Guests (not / to allow / use) ordinary coins in the machines. Instead, we (to ask / buy) brass tokens from the bread van between eight and nine.",
+    "prompt": "Our mountain camp laundry has strict hours. Guests (not / to allow / use) ordinary coins in the machines. Instead, we (to ask / buy) special coins from the bread van between eight and nine.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Оба пропуска описывают действующие правила кемпинга в пассиве: be not allowed to do и be asked to do.",
     "rule_refs": [
@@ -4542,16 +4537,16 @@
         ]
       }
     ],
-    "answer_text": "Our Pyrenean campsite laundry has strict hours. Guests are not allowed to use ordinary coins in the machines. Instead, we are asked to buy brass tokens from the bread van between eight and nine."
+    "answer_text": "Our mountain camp laundry has strict hours. Guests are not allowed to use ordinary coins in the machines. Instead, we are asked to buy special coins from the bread van between eight and nine."
   },
   {
     "id": "pv7-D8-024",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Security in this Singapore hotel is tight. Visitors (not / to allow / press) the residential floor buttons without a keycard. The system (to make / you / tap) your card against the brass reader first.",
+    "prompt": "Security in this Singapore hotel is tight. Visitors (not / to allow / press) the floor buttons without a key card. The system (to make / you / tap) your card on the reader first.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "В первом случае пассив с to (are not allowed to press). Во втором — активный глагол make, после которого to не ставится (makes you tap).",
     "rule_refs": [
@@ -4560,7 +4555,7 @@
     "cell": "D8",
     "genre": "instructions",
     "seed_id": "S3-036",
-    "skeleton": "w in this w is w . w G the w a w . the w G your w the w .",
+    "skeleton": "w in this w is w . w G the w a w . the w G your w on the w .",
     "practice_tenses": [
       "pv_D8",
       "pv_make_allow",
@@ -4615,18 +4610,18 @@
         ]
       }
     ],
-    "answer_text": "Security in this Singapore hotel is tight. Visitors are not allowed to press the residential floor buttons without a keycard. The system makes you tap your card against the brass reader first."
+    "answer_text": "Security in this Singapore hotel is tight. Visitors are not allowed to press the floor buttons without a key card. The system makes you tap your card on the reader first."
   },
   {
     "id": "pv7-D8-025",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My teenage son in Oslo never cleans up on his own. Yesterday, I (to make / him / tidy) his bedroom before his mates arrived. He (to hear / grumble) loudly behind the closed door for twenty minutes.",
+    "prompt": "My teenage son in Oslo never cleans up on his own. Yesterday, I (to make / him / tidy) his bedroom before his friends arrived. He (to hear / complain) loudly behind the closed door for twenty minutes.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассивном предложении с hear используется -ing (was heard grumbling).",
+    "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассиве после heard: was heard complaining / was heard to complain.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-patterns"
     ],
@@ -4662,37 +4657,37 @@
         ],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассивном предложении с hear используется -ing (was heard grumbling).",
+        "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассиве после heard: was heard complaining / was heard to complain.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-patterns"
         ]
       },
       {
         "id": "pv7-D8-025-b2",
-        "answer": "was heard grumbling",
+        "answer": "was heard complaining",
         "accepted_answers": [
-          "was heard grumbling",
-          "was heard to grumble"
+          "was heard complaining",
+          "was heard to complain"
         ],
-        "base_verb": "to hear / grumble",
+        "base_verb": "to hear / complain",
         "supplied_words": [
-          "grumble"
+          "complain"
         ],
         "tense_or_construction": "pv_perception",
         "voice": "passive",
-        "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассивном предложении с hear используется -ing (was heard grumbling).",
+        "explanation_ru": "В активном залоге после made нет to (made him tidy). В пассиве после heard: was heard complaining / was heard to complain.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-patterns"
         ]
       }
     ],
-    "answer_text": "My teenage son in Oslo never cleans up on his own. Yesterday, I made him tidy his bedroom before his mates arrived. He was heard grumbling loudly behind the closed door for twenty minutes."
+    "answer_text": "My teenage son in Oslo never cleans up on his own. Yesterday, I made him tidy his bedroom before his friends arrived. He was heard complaining loudly behind the closed door for twenty minutes."
   },
   {
     "id": "pv7-D8-026",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Six interrailers learnt the Ljubljana hostel rules the hard way. All guests (to tell / write) their name and checkout date on fridge items. Unlabelled food is declared free at nine, so we watched as our own yoghurt (to eat) by a stranger!",
@@ -4761,7 +4756,7 @@
     "id": "pv7-D8-027",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Before the Tbilisi cable car opens at seven, engineers run a safety check. Passengers (not / to allow / board) until an empty cabin full of sandbags completes a full trip. That test car (to see / glide) over the gorge every morning at dawn.",
@@ -4835,10 +4830,10 @@
     "id": "pv7-D8-028",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our health centre in Inverness recently upgraded its reception. Patients (to encourage / use) the new touchscreen kiosk in Gaelic or Polish. Because it prints a numbered slip, nobody's name (to hear / echo) across the waiting room anymore.",
+    "prompt": "Our health centre in Inverness recently changed its reception. Patients (to encourage / use) the new touchscreen in Gaelic or Polish. Because it prints a numbered ticket, nobody's name (to hear / call) across the waiting room anymore.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "В первом случае пассив с инфинитивом (are encouraged to use). Во втором — пассивный глагол восприятия hear + -ing.",
     "rule_refs": [
@@ -4883,14 +4878,14 @@
       },
       {
         "id": "pv7-D8-028-b2",
-        "answer": "is heard echoing",
+        "answer": "is heard calling",
         "accepted_answers": [
-          "is heard echoing",
-          "'s heard echoing"
+          "is heard calling",
+          "'s heard calling"
         ],
-        "base_verb": "to hear / echo",
+        "base_verb": "to hear / call",
         "supplied_words": [
-          "echo"
+          "call"
         ],
         "tense_or_construction": "pv_perception",
         "voice": "passive",
@@ -4900,13 +4895,13 @@
         ]
       }
     ],
-    "answer_text": "Our health centre in Inverness recently upgraded its reception. Patients are encouraged to use the new touchscreen kiosk in Gaelic or Polish. Because it prints a numbered slip, nobody's name is heard echoing across the waiting room anymore."
+    "answer_text": "Our health centre in Inverness recently changed its reception. Patients are encouraged to use the new touchscreen in Gaelic or Polish. Because it prints a numbered ticket, nobody's name is heard calling across the waiting room anymore."
   },
   {
     "id": "pv7-D8-029",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Chinese New Year traditions are taken seriously in our London family. Children (to allow / open) their red envelopes only after wishing their elders good health. However, relatives (to expect / avoid) giving any amount containing the number four.",
@@ -4975,10 +4970,10 @@
     "id": "pv7-D8-030",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Running a steam locomotive in Pickering requires an early start. Volunteer firemen (to make / light) the boiler with oily rags five hours before departure. Until the pressure gauge hits the red mark, the driver (not / to allow / move) the engine out of the shed.",
+    "prompt": "Running a steam train in Pickering requires an early start. Volunteer workers (to make / light) the boiler five hours before departure. Until the pressure reading hits the red mark, the driver (not / to allow / move) the engine out of the shed.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "После пассивного make ставится to (are made to light). Во втором пропуске — запрет в пассиве (is not allowed to move).",
     "rule_refs": [
@@ -4987,7 +4982,7 @@
     "cell": "D8",
     "genre": "instructions",
     "seed_id": "S3-074",
-    "skeleton": "w a w in w an w . w G the w with w before w . until the w the w , the w G the w of the w .",
+    "skeleton": "w a w in w an w . w G the w before w . until the w the w , the w G the w of the w .",
     "practice_tenses": [
       "pv_D8",
       "pv_make_allow"
@@ -5040,16 +5035,16 @@
         ]
       }
     ],
-    "answer_text": "Running a steam locomotive in Pickering requires an early start. Volunteer firemen are made to light the boiler with oily rags five hours before departure. Until the pressure gauge hits the red mark, the driver is not allowed to move the engine out of the shed."
+    "answer_text": "Running a steam train in Pickering requires an early start. Volunteer workers are made to light the boiler five hours before departure. Until the pressure reading hits the red mark, the driver is not allowed to move the engine out of the shed."
   },
   {
     "id": "pv7-D8-031",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Police horses in London undergo months of calm desensitisation. Before stadium duty, each horse (to make / walk) over rustling tarpaulins and smoke flares. Trainers never (to let / a horse / panic); instead, they reward every steady step.",
+    "prompt": "Police horses in London undergo months of calm training. Before stadium duty, each horse (to make / walk) over noisy plastic sheets and smoke. Trainers never (to let / a horse / panic); instead, they reward every steady step.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "В пассиве после make нужно to (is made to walk). Глагол let используется в активе без частицы to (let a horse panic).",
     "rule_refs": [
@@ -5111,16 +5106,16 @@
         ]
       }
     ],
-    "answer_text": "Police horses in London undergo months of calm desensitisation. Before stadium duty, each horse is made to walk over rustling tarpaulins and smoke flares. Trainers never let a horse panic; instead, they reward every steady step."
+    "answer_text": "Police horses in London undergo months of calm training. Before stadium duty, each horse is made to walk over noisy plastic sheets and smoke. Trainers never let a horse panic; instead, they reward every steady step."
   },
   {
     "id": "pv7-D8-032",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our Kraków payroll office gave everyone a surprise before the holidays. Although salaries arrived three days early, a server bug (to make / the payslips / show) the year 1970. Several confused staff members (to hear / joke) about getting paid in vintage banknotes.",
+    "prompt": "Our Kraków office gave everyone a surprise before the holidays. Although salaries arrived three days early, a computer error (to make / the pay papers / show) the year 1970. Several confused staff members (to hear / joke) about getting paid in old money.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Активный make не требует to (made the payslips show). Пассивный hear + -ing (were heard joking) передаёт процесс.",
     "rule_refs": [
@@ -5147,13 +5142,13 @@
     "blanks": [
       {
         "id": "pv7-D8-032-b1",
-        "answer": "made the payslips show",
+        "answer": "made the pay papers show",
         "accepted_answers": [
-          "made the payslips show"
+          "made the pay papers show"
         ],
-        "base_verb": "to make / the payslips / show",
+        "base_verb": "to make / the pay papers / show",
         "supplied_words": [
-          "the payslips",
+          "the pay papers",
           "show"
         ],
         "tense_or_construction": "active_past_simple",
@@ -5167,7 +5162,8 @@
         "id": "pv7-D8-032-b2",
         "answer": "were heard joking",
         "accepted_answers": [
-          "were heard joking"
+          "were heard joking",
+          "were heard to joke"
         ],
         "base_verb": "to hear / joke",
         "supplied_words": [
@@ -5181,16 +5177,16 @@
         ]
       }
     ],
-    "answer_text": "Our Kraków payroll office gave everyone a surprise before the holidays. Although salaries arrived three days early, a server bug made the payslips show the year 1970. Several confused staff members were heard joking about getting paid in vintage banknotes."
+    "answer_text": "Our Kraków office gave everyone a surprise before the holidays. Although salaries arrived three days early, a computer error made the pay papers show the year 1970. Several confused staff members were heard joking about getting paid in old money."
   },
   {
     "id": "pv7-D8-033",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Whenever the coastguard helicopter approaches Plymouth hospital, pedestrians ___ cross the roof car park.",
+    "prompt": "Whenever the rescue helicopter approaches Plymouth hospital, pedestrians ___ cross the roof car park.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Глагол let не употребляется в пассиве; для запрета используется be not allowed + to-инфинитив.",
     "rule_refs": [
@@ -5222,14 +5218,14 @@
       1
     ],
     "answer": "aren't allowed to",
-    "summary": "Whenever the coastguard helicopter approaches Plymouth hospital, pedestrians aren't allowed to cross the roof car park.",
-    "answer_text": "Whenever the coastguard helicopter approaches Plymouth hospital, pedestrians aren't allowed to cross the roof car park."
+    "summary": "Whenever the rescue helicopter approaches Plymouth hospital, pedestrians aren't allowed to cross the roof car park.",
+    "answer_text": "Whenever the rescue helicopter approaches Plymouth hospital, pedestrians aren't allowed to cross the roof car park."
   },
   {
     "id": "pv7-D8-034",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At our Warsaw Christmas Eve dinner, an empty chair ___ at the table for an unexpected guest.",
@@ -5271,7 +5267,7 @@
     "id": "pv7-D8-035",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Before trading in a tablet in Birmingham, customers ___ sign out of their cloud accounts.",
@@ -5313,7 +5309,7 @@
     "id": "pv7-D8-036",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In medieval Bruges, merchants ___ break the wax seal on a contract unless the deal was officially cancelled.",

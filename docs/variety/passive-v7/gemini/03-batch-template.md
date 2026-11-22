@@ -29,3 +29,8 @@ Many seeds are rich in technical detail. Use the seed as the **idea**, not as a 
 ## Final self-check (the last line of the response)
 
 `# check: active_share=<share of active gaps>, time_markers=<N>/{{SIZE}}, openings_unique=<yes/no>, verbs_max=<max uses of one verb>, genres=<number>, names_repeated=<N>, seeds_used={{SIZE}}, formats=<gap/mini/mc/fix/which>, levels=<b/m/a>`
+
+
+## Vocabulary check before sending
+
+Run through every item: is any noun, adjective or bracketed verb above the level cap or rare? If yes, replace it with a common word and keep the grammar target unchanged.

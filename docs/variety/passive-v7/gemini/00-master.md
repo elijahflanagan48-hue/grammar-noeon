@@ -98,3 +98,15 @@ Allowed `construction` values:
 3. Does the bracket give away the answer (e.g. `(to be repaired)`)? It must not.
 4. Is there a banned storyline? A repeated opening? A third use of the same verb? A repeated name?
 5. Does the format/level/count distribution match the request exactly?
+
+
+## Vocabulary rules (mandatory, see docs/variety/lexical-rules.md)
+
+We train grammar, not vocabulary. A strange word must never be the thing that makes the learner stumble.
+
+- Level caps: basic = A1–A2 words only; medium = up to B1; advanced = up to B2. At most 0 rare words in basic, 1 in medium, 2 in advanced.
+- Rare = C1/C2 or not in everyday frequency lists. Bad examples: squirrel, canopy, monologue, prop, kiln, auction, locomotive, porcelain, vintage, automated, arborist.
+- The verb in brackets must be a very common one (go, make, take, give, find, buy, send, open, clean, wait, ask, build, write, repair, invite...). Never `to coax`, `to prune`, `to descale`.
+- No narrow professional or hobby vocabulary (crafts, music, science, law, medicine, cooking), no exotic animals, plants or food, no archaic or literary words.
+- Plots are ordinary life: home, school, work, road, shop, friends, trips, sport, internet. Variety comes from situations, people and places, not from rare words.
+- When in doubt, pick the word a school student knows after two years of English.

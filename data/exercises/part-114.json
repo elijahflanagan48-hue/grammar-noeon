@@ -3,10 +3,10 @@
     "id": "pv7-D2-201",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Updraughts from the ocean blew hard, and the waterfall (to rise) backwards over the cliff.",
+    "prompt": "Strong winds blew hard, and the waterfall (to rise) backwards over the rocks.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Вода поднялась сама (активный залог). Глагол rise не имеет пассива.",
     "rule_refs": [
@@ -16,7 +16,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S1-028",
-    "skeleton": "w from the w , and the w G w over the w .",
+    "skeleton": "w , and the w G w over the w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple"
@@ -47,18 +47,18 @@
         ]
       }
     ],
-    "answer_text": "Updraughts from the ocean blew hard, and the waterfall rose backwards over the cliff."
+    "answer_text": "Strong winds blew hard, and the waterfall rose backwards over the rocks."
   },
   {
     "id": "pv7-D2-202",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Whenever keepers turned away, the spotlight (to short-circuit) by a clever octopus.",
+    "prompt": "Whenever the zoo workers turned away, the lamp (to break) by a clever monkey.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Прожектор замыкался осьминогом (пассивный залог), действие направлено на предмет.",
+    "explanation_ru": "Лампу разбивала обезьяна (пассивный залог), действие направлено на лампу.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -66,7 +66,7 @@
     "cell": "D2",
     "genre": "report",
     "seed_id": "S1-068",
-    "skeleton": "w , the w G by a w .",
+    "skeleton": "w the w , the w G by a w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple"
@@ -82,28 +82,28 @@
     "blanks": [
       {
         "id": "pv7-D2-202-b1",
-        "answer": "was short-circuited",
+        "answer": "was broken",
         "accepted_answers": [
-          "was short-circuited"
+          "was broken"
         ],
-        "base_verb": "to short-circuit",
+        "base_verb": "to break",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Прожектор замыкался осьминогом (пассивный залог), действие направлено на предмет.",
+        "explanation_ru": "Лампу разбивала обезьяна (пассивный залог), действие направлено на лампу.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Whenever keepers turned away, the spotlight was short-circuited by a clever octopus."
+    "answer_text": "Whenever the zoo workers turned away, the lamp was broken by a clever monkey."
   },
   {
     "id": "pv7-D2-203",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because a huge spider (to settle) on the scales, mail was weighed elsewhere.",
@@ -155,12 +155,12 @@
     "id": "pv7-D2-204",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "After hiding in the scrub for four years, the wild sheep finally (to shear) by a local vet.",
+    "prompt": "After hiding in the bushes for four years, the wild sheep finally (to catch) by a local farmer.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Овцу постриг ветеринар (пассивный залог).",
+    "explanation_ru": "Овцу поймал фермер (пассивный залог).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -184,29 +184,29 @@
     "blanks": [
       {
         "id": "pv7-D2-204-b1",
-        "answer": "was shorn",
+        "answer": "was caught",
         "accepted_answers": [
-          "was shorn",
-          "was sheared"
+          "was caught",
+          "got caught"
         ],
-        "base_verb": "to shear",
+        "base_verb": "to catch",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Овцу постриг ветеринар (пассивный залог).",
+        "explanation_ru": "Овцу поймал фермер (пассивный залог).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "After hiding in the scrub for four years, the wild sheep finally was shorn by a local vet."
+    "answer_text": "After hiding in the bushes for four years, the wild sheep finally was caught by a local farmer."
   },
   {
     "id": "pv7-D2-205",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Anyone caught taking a photograph after the gong sounds (to ask) to put their phone away.",
@@ -259,12 +259,12 @@
     "id": "pv7-D2-206",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Brown mustard seeds (to grind) between cold granite stones to stop the paste turning bitter.",
+    "prompt": "Brown mustard seeds (to crush) between cold stones to stop the paste turning bitter.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Зёрна перемалывают (пассивный залог).",
+    "explanation_ru": "Зёрна измельчают (пассивный залог).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -288,29 +288,29 @@
     "blanks": [
       {
         "id": "pv7-D2-206-b1",
-        "answer": "are ground",
+        "answer": "are crushed",
         "accepted_answers": [
-          "are ground",
-          "'re ground"
+          "are crushed",
+          "'re crushed"
         ],
-        "base_verb": "to grind",
+        "base_verb": "to crush",
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Зёрна перемалывают (пассивный залог).",
+        "explanation_ru": "Зёрна измельчают (пассивный залог).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Brown mustard seeds are ground between cold granite stones to stop the paste turning bitter."
+    "answer_text": "Brown mustard seeds are crushed between cold stones to stop the paste turning bitter."
   },
   {
     "id": "pv7-D2-207",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "His complicated coffee order (already / to sit) on the counter before he arrived.",
@@ -365,7 +365,7 @@
     "id": "pv7-D2-208",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The students gently (to pack) warm curds into cloth-lined moulds before pressing them.",
@@ -416,12 +416,12 @@
     "id": "pv7-D2-209",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Since the chickpeas hadn't been soaked, they (to pressure-cook) with a pinch of baking soda.",
+    "prompt": "Since the beans hadn't been soaked, they (to boil) with a little baking soda for two hours.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Нут сварили повара (пассивный залог).",
+    "explanation_ru": "Фасоль сварили повара (пассивный залог).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -429,7 +429,7 @@
     "cell": "D2",
     "genre": "email",
     "seed_id": "S1-152",
-    "skeleton": "SINCE the w been w , they G with a w of w .",
+    "skeleton": "SINCE the w been w , they G with a w for w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple"
@@ -445,30 +445,30 @@
     "blanks": [
       {
         "id": "pv7-D2-209-b1",
-        "answer": "were pressure-cooked",
+        "answer": "were boiled",
         "accepted_answers": [
-          "were pressure-cooked",
-          "had to be pressure-cooked",
-          "'d to be pressure-cooked"
+          "were boiled",
+          "had to be boiled",
+          "'d to be boiled"
         ],
-        "base_verb": "to pressure-cook",
+        "base_verb": "to boil",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Нут сварили повара (пассивный залог).",
+        "explanation_ru": "Фасоль сварили повара (пассивный залог).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Since the chickpeas hadn't been soaked, they were pressure-cooked with a pinch of baking soda."
+    "answer_text": "Since the beans hadn't been soaked, they were boiled with a little baking soda for two hours."
   },
   {
     "id": "pv7-D2-210",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Halfway through boiling, the gas ran out and the pasta (to steep) in lukewarm water for twenty minutes.",
@@ -518,7 +518,7 @@
     "id": "pv7-D2-211",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The poor student came out at four o'clock to find his saddle (to turn) backwards as a cruel prank.",
@@ -570,7 +570,7 @@
     "id": "pv7-D2-212",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "After unlocking the gates for thirty-four years, the pupils (to present) the caretaker with a vintage fishing rod.",
@@ -620,7 +620,7 @@
     "id": "pv7-D2-213",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A massive delay occurred at the ferry port because one boy's passport (to pack) at the very bottom of the ski-boot hold.",
@@ -672,7 +672,7 @@
     "id": "pv7-D2-214",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Two thousand freshers' guides (to print) with the campus map completely upside down.",
@@ -722,10 +722,10 @@
     "id": "pv7-D2-215",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Architecture students (to arrive) at eight sharp. Their cardboard models must (to place) on the tables before the critique.",
+    "prompt": "Architecture students (to arrive) at eight sharp. Their paper models must (to place) on the tables before the lesson.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Студенты приходят сами (актив), а модели должны быть размещены ими (пассив).",
     "rule_refs": [
@@ -787,13 +787,13 @@
         ]
       }
     ],
-    "answer_text": "Architecture students arrive at eight sharp. Their cardboard models must be placed on the tables before the critique."
+    "answer_text": "Architecture students arrive at eight sharp. Their paper models must be placed on the tables before the lesson."
   },
   {
     "id": "pv7-D2-216",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The electric blackboards (to drive) by motors here. Yesterday, a professor pressed the wrong switch and an equation (to disappear) into the ceiling.",
@@ -862,10 +862,10 @@
     "id": "pv7-D2-217",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A phishing test email (to send) to four hundred staff members recently. Surprisingly, only three people (to click) the dangerous link.",
+    "prompt": "A fake bank email (to send) to four hundred staff members recently. Surprisingly, only three people (to click) the link.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Письмо отправили (пассив), а люди сами нажали на ссылку (актив).",
     "rule_refs": [
@@ -924,18 +924,18 @@
         ]
       }
     ],
-    "answer_text": "A phishing test email was sent to four hundred staff members recently. Surprisingly, only three people clicked the dangerous link."
+    "answer_text": "A fake bank email was sent to four hundred staff members recently. Surprisingly, only three people clicked the link."
   },
   {
     "id": "pv7-D2-218",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "During a wet November, sixty colleagues (to sign) a petition. Soon after, a heated drying room (to install) in the basement.",
+    "prompt": "During a wet November, sixty workers (to sign) a letter. Soon after, a warm drying room (to build) in the basement.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Коллеги подписали петицию сами (актив), а комнату установили строители (пассив).",
+    "explanation_ru": "Рабочие подписали письмо сами (актив), а комнату построили (пассив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -969,7 +969,7 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Коллеги подписали петицию сами (актив), а комнату установили строители (пассив).",
+        "explanation_ru": "Рабочие подписали письмо сами (актив), а комнату построили (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -977,33 +977,35 @@
       },
       {
         "id": "pv7-D2-218-b2",
-        "answer": "was installed",
+        "answer": "was built",
         "accepted_answers": [
-          "was installed"
+          "was built",
+          "has been built",
+          "'s been built"
         ],
-        "base_verb": "to install",
+        "base_verb": "to build",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Коллеги подписали петицию сами (актив), а комнату установили строители (пассив).",
+        "explanation_ru": "Рабочие подписали письмо сами (актив), а комнату построили (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "During a wet November, sixty colleagues signed a petition. Soon after, a heated drying room was installed in the basement."
+    "answer_text": "During a wet November, sixty workers signed a letter. Soon after, a warm drying room was built in the basement."
   },
   {
     "id": "pv7-D2-219",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The summer temp (to ask) to digitise some Victorian tin deed boxes. Inside one, a pressed four-leaf clover suddenly (to appear).",
+    "prompt": "The summer worker (to ask) to scan some very old paper boxes. Inside one, a dried flower suddenly (to appear).",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Стажёра попросили (пассив), а клевер появился сам (актив, нет пассива).",
+    "explanation_ru": "Работника попросили (пассив), а цветок появился сам (актив, нет пассива).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1037,7 +1039,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Стажёра попросили (пассив), а клевер появился сам (актив, нет пассива).",
+        "explanation_ru": "Работника попросили (пассив), а цветок появился сам (актив, нет пассива).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -1053,20 +1055,20 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Стажёра попросили (пассив), а клевер появился сам (актив, нет пассива).",
+        "explanation_ru": "Работника попросили (пассив), а цветок появился сам (актив, нет пассива).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "The summer temp was asked to digitise some Victorian tin deed boxes. Inside one, a pressed four-leaf clover suddenly appeared."
+    "answer_text": "The summer worker was asked to scan some very old paper boxes. Inside one, a dried flower suddenly appeared."
   },
   {
     "id": "pv7-D2-220",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Just before his farewell cake was cut, the intern (to push) a test line to the live website. The message (to remove) quickly by the panicked team.",
@@ -1136,7 +1138,7 @@
     "id": "pv7-D2-221",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At the assessment centre, twelve graduates (to give) spaghetti sticks and one marshmallow. The assessors (to judge) them on how well they listened to each other.",
@@ -1204,12 +1206,12 @@
     "id": "pv7-D2-222",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The new locum (to approve) for the hospital pharmacy job in April. However, her smartcard could not be issued until her police certificate (to arrive) by post.",
+    "prompt": "The new doctor (to approve) for the hospital job in April. However, her card could not be made until her documents (to arrive) by post.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Её кандидатуру одобрило начальство (пассив), а справка пришла сама (актив).",
+    "explanation_ru": "Её кандидатуру одобрило начальство (пассив), а документы пришли сами (актив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1245,7 +1247,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Её кандидатуру одобрило начальство (пассив), а справка пришла сама (актив).",
+        "explanation_ru": "Её кандидатуру одобрило начальство (пассив), а документы пришли сами (актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -1261,20 +1263,20 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Её кандидатуру одобрило начальство (пассив), а справка пришла сама (актив).",
+        "explanation_ru": "Её кандидатуру одобрило начальство (пассив), а документы пришли сами (актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "The new locum was approved for the hospital pharmacy job in April. However, her smartcard could not be issued until her police certificate arrived by post."
+    "answer_text": "The new doctor was approved for the hospital job in April. However, her card could not be made until her documents arrived by post."
   },
   {
     "id": "pv7-D2-223",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A woman (to order) a simple bathmat online. Strangely, it (to deliver) inside a cardboard carton big enough for a washing machine.",
@@ -1344,7 +1346,7 @@
     "id": "pv7-D2-224",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "When the gold pocket watch (to prise) open, tiny repair codes were revealed. Four different watchmakers (to scratch) them inside the lid between 1884 and 1951.",
@@ -1415,7 +1417,7 @@
     "id": "pv7-D2-225",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The card terminal (to lose) its mobile signal just as he tapped his watch. Consequently, his bank account (to debit) twice for a single newspaper.",
@@ -1483,7 +1485,7 @@
     "id": "pv7-D2-226",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The French toll machine (to locate) on the left side of the lane. Therefore, the British passenger (to have) to lean out of the window with kitchen tongs to grab the ticket.",
@@ -1554,7 +1556,7 @@
     "id": "pv7-D2-227",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Following a bumpy approach through crosswinds, the nervous boy (to invite) into the flight deck. The captain (to give) him a pair of plastic wings.",
@@ -1622,7 +1624,7 @@
     "id": "pv7-D2-228",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Whenever the Northern Lights (to emerge) above the steamer's mast, a special announcement (to broadcast) directly into the cabin speakers.",
@@ -1691,12 +1693,12 @@
     "id": "pv7-D2-229",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Their folding deckchairs ___ off the veranda during a sudden squall.",
+    "prompt": "Their folding chairs ___ off the balcony during a sudden storm.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Шезлонги сдуло ветром (пассивный залог), они не могут дуть сами.",
+    "explanation_ru": "Стулья сдуло ветром (пассивный залог), они не могут дуть сами.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1727,14 +1729,14 @@
       0
     ],
     "answer": "were blown",
-    "summary": "Their folding deckchairs were blown off the veranda during a sudden squall.",
-    "answer_text": "Their folding deckchairs were blown off the veranda during a sudden squall."
+    "summary": "Their folding chairs were blown off the balcony during a sudden storm.",
+    "answer_text": "Their folding chairs were blown off the balcony during a sudden storm."
   },
   {
     "id": "pv7-D2-230",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "While she was out sightseeing, the snapped castor on her suitcase ___ with a brass furniture wheel.",
@@ -1777,7 +1779,7 @@
     "id": "pv7-D2-231",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Sugar bowls ___ inside mesh cages on the tables to protect them from monkeys.",
@@ -1820,7 +1822,7 @@
     "id": "pv7-D2-232",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Her alternator belt ___ on the motorway, so the recovery driver loaded her car onto his truck.",
@@ -1863,7 +1865,7 @@
     "id": "pv7-D2-233",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "He didn't wait for the green light, and thirty hours later he ___ a non-return fee.",
@@ -1906,12 +1908,12 @@
     "id": "pv7-D2-234",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Commuters are carried across the frozen channel on a hovercraft.",
+    "prompt": "Workers are carried across the frozen lake on a small boat.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Ошибки нет. Пассажиров перевозят на судне (пассивный залог).",
+    "explanation_ru": "Ошибки нет. Работников перевозят на лодке (пассивный залог).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1931,18 +1933,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Commuters are carried across the frozen channel on a hovercraft.",
+    "answer": "Workers are carried across the frozen lake on a small boat.",
     "accepted_answers": [
-      "Commuters are carried across the frozen channel on a hovercraft."
+      "Workers are carried across the frozen lake on a small boat."
     ],
-    "answer_text": "Commuters are carried across the frozen channel on a hovercraft.",
+    "answer_text": "Workers are carried across the frozen lake on a small boat.",
     "has_error": false
   },
   {
     "id": "pv7-D2-235",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Any golf ball moved by a raven may replace without penalty.",
@@ -1978,10 +1980,10 @@
     "id": "pv7-D2-236",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The goose feathers are quite brittle before the match. What is done to prevent them from breaking?",
+    "prompt": "The bird feathers are quite dry before the match. What is done to prevent them from breaking?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
     "explanation_ru": "Их обрабатывают паром (пассивный залог).",
     "rule_refs": [
@@ -2004,24 +2006,24 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "They are steamed in a cabinet.",
-      "They steam in a cabinet.",
-      "A cabinet is steamed them.",
-      "They have steamed in a cabinet."
+      "They are steamed in a box.",
+      "They steam in a box.",
+      "A box is steamed them.",
+      "They have steamed in a box."
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "They are steamed in a cabinet.",
-    "summary": "They are steamed in a cabinet.",
-    "answer_text": "They are steamed in a cabinet."
+    "answer": "They are steamed in a box.",
+    "summary": "They are steamed in a box.",
+    "answer_text": "They are steamed in a box."
   },
   {
     "id": "pv7-D2-237",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The auditorium doors lock automatically when the concert begins. How do latecomers watch the performance?",
@@ -2064,19 +2066,19 @@
     "id": "pv7-D3-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Two red cones (must / to hoist) as soon as the barometer drops more than six millibars.",
+    "prompt": "Two red flags (must / to raise) as soon as the wind speed goes above fifty.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "cones must be hoisted — пассивный залог с модальным глаголом (конусы должны быть подняты).",
+    "explanation_ru": "flags must be raised — пассивный залог с модальным глаголом (флаги должны быть подняты).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "notice",
     "seed_id": "S1-006",
-    "skeleton": "w G as w as the w than w .",
+    "skeleton": "w G as w as the w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -2092,29 +2094,30 @@
     "blanks": [
       {
         "id": "pv7-D3-001-b1",
-        "answer": "must be hoisted",
+        "answer": "must be raised",
         "accepted_answers": [
-          "must be hoisted"
+          "must be raised",
+          "must be raized"
         ],
-        "base_verb": "must / to hoist",
+        "base_verb": "must / to raise",
         "supplied_words": [
           "must"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "cones must be hoisted — пассивный залог с модальным глаголом (конусы должны быть подняты).",
+        "explanation_ru": "flags must be raised — пассивный залог с модальным глаголом (флаги должны быть подняты).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Two red cones must be hoisted as soon as the barometer drops more than six millibars."
+    "answer_text": "Two red flags must be raised as soon as the wind speed goes above fifty."
   },
   {
     "id": "pv7-D3-002",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The bronze bells ___ by ball lightning in 1741, as the oak beams weren't scorched at all.",
@@ -2156,12 +2159,12 @@
     "id": "pv7-D3-003",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "High-visibility ponchos (can / to borrow) from the rangers if the lower loop is too windy.",
+    "prompt": "Rain coats (can / to borrow) from the guides if the lower path is too windy.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "ponchos can be borrowed — пассивный залог (пончо можно одолжить).",
+    "explanation_ru": "coats can be borrowed — пассивный залог (плащи можно одолжить).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -2194,19 +2197,19 @@
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "ponchos can be borrowed — пассивный залог (пончо можно одолжить).",
+        "explanation_ru": "coats can be borrowed — пассивный залог (плащи можно одолжить).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "High-visibility ponchos can be borrowed from the rangers if the lower loop is too windy."
+    "answer_text": "Rain coats can be borrowed from the guides if the lower path is too windy."
   },
   {
     "id": "pv7-D3-004",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A pair of white storks built a huge nest directly on our live wires. Obviously, the cables (could / not / to ignore). A steel platform (had to / to raise) forty centimetres above the danger zone. We (going to / to test) the line tomorrow.",
@@ -2298,10 +2301,10 @@
     "id": "pv7-D3-005",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Each chick's leg band needs to be record in the official ledger before June.",
+    "prompt": "Each young bird's leg ring needs to be record in the official book before June.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "После конструкции needs to be необходим смысловой глагол в третьей форме: recorded.",
     "rule_refs": [
@@ -2322,21 +2325,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Each chick's leg band needs to be recorded in the official ledger before June.",
+    "answer": "Each young bird's leg ring needs to be recorded in the official book before June.",
     "accepted_answers": [
-      "Each chick's leg band needs to be recorded in the official ledger before June."
+      "Each young bird's leg ring needs to be recorded in the official book before June."
     ],
-    "answer_text": "Each chick's leg band needs to be recorded in the official ledger before June.",
+    "answer_text": "Each young bird's leg ring needs to be recorded in the official book before June.",
     "has_error": true
   },
   {
     "id": "pv7-D3-006",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Traffic wardens had to step in, as our bus (had to / to hold back) to let the otters cross.",
+    "prompt": "Police had to step in, as our bus (had to / to hold back) to let the ducks cross.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "bus had to be held back — пассивный залог в прошедшем времени (автобус нужно было задержать).",
     "rule_refs": [
@@ -2378,13 +2381,13 @@
         ]
       }
     ],
-    "answer_text": "Traffic wardens had to step in, as our bus had to be held back to let the otters cross."
+    "answer_text": "Police had to step in, as our bus had to be held back to let the ducks cross."
   },
   {
     "id": "pv7-D3-007",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Waiting at a Taipei night market, you are handed a numbered wooden tally by the vendor. Only a few pepper buns come out of the clay oven at a time. What does this mean for you?",
@@ -2426,7 +2429,7 @@
     "id": "pv7-D3-008",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Every single hardtack biscuit (had to / to stamp) with the baker's initials so that mouldy batches could be traced back to the exact oven.",
@@ -2477,7 +2480,7 @@
     "id": "pv7-D3-009",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Dry natural cider (should / to pour) from arm's height into a wide glass. Just a splash is served at a time. Any liquid left at the bottom (must / not / to drink). Instead, you (ought to / to tip) it onto the sawdust floor.",
@@ -2565,7 +2568,7 @@
     "id": "pv7-D3-010",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The oven door (must / not / to open) during the first twenty minutes, otherwise your éclairs will flatten into hollow pancakes.",
@@ -2617,10 +2620,10 @@
     "id": "pv7-D3-011",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "I can't believe we left the plastic bag of giblets inside the turkey! We (should / to warn) by the butcher. Well, the gravy (will have to / to make) without them now. At least the meat tastes fine.",
+    "prompt": "I can't believe we left the plastic bag inside the chicken! We (should / to warn) by the shop. Well, the sauce (will have to / to make) without it now. At least the meat tastes fine.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "should have been warned — сожаление о невыполненном действии в прошлом (нас должны были предупредить); will have to be made — пассив в будущем времени.",
     "rule_refs": [
@@ -2629,7 +2632,7 @@
     "cell": "D3",
     "genre": "dialogue",
     "seed_id": "S1-124",
-    "skeleton": "i w we w the w of w the w ! we G by the w . w , the w G w them NOW . at w the w .",
+    "skeleton": "i w we w the w the w ! we G by the w . w , the w G w it NOW . at w the w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal_perfect",
@@ -2681,16 +2684,16 @@
         ]
       }
     ],
-    "answer_text": "I can't believe we left the plastic bag of giblets inside the turkey! We should have been warned by the butcher. Well, the gravy will have to be made without them now. At least the meat tastes fine."
+    "answer_text": "I can't believe we left the plastic bag inside the chicken! We should have been warned by the shop. Well, the sauce will have to be made without it now. At least the meat tastes fine."
   },
   {
     "id": "pv7-D3-012",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "To make a proper tagine, saffron threads ___ straight into the boiling broth.",
+    "prompt": "To make a good soup, spices ___ straight into the boiling water.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "shouldn't be thrown — правильная форма пассивного залога после модального глагола.",
     "rule_refs": [
@@ -2722,19 +2725,19 @@
       3
     ],
     "answer": "shouldn't be thrown",
-    "summary": "To make a proper tagine, saffron threads shouldn't be thrown straight into the boiling broth.",
-    "answer_text": "To make a proper tagine, saffron threads shouldn't be thrown straight into the boiling broth."
+    "summary": "To make a good soup, spices shouldn't be thrown straight into the boiling water.",
+    "answer_text": "To make a good soup, spices shouldn't be thrown straight into the boiling water."
   },
   {
     "id": "pv7-D3-013",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My smartwatch (needs to / to hand in) at the invigilator's desk before I can start the exam.",
+    "prompt": "My phone (needs to / to hand in) at the teacher's desk before I can start the exam.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "smartwatch needs to be handed in — пассивный залог (часы нужно сдать).",
+    "explanation_ru": "phone needs to be handed in — пассивный залог (телефон нужно сдать).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -2767,19 +2770,19 @@
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "smartwatch needs to be handed in — пассивный залог (часы нужно сдать).",
+        "explanation_ru": "phone needs to be handed in — пассивный залог (телефон нужно сдать).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "My smartwatch needs to be handed in at the invigilator's desk before I can start the exam."
+    "answer_text": "My phone needs to be handed in at the teacher's desk before I can start the exam."
   },
   {
     "id": "pv7-D3-014",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In the nineteenth century, boys caught carving their initials into oak desks had to be taught a harsh lesson in the workshop.",
@@ -2814,12 +2817,12 @@
     "id": "pv7-D3-015",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A fifty-zloty note was tucked inside the returned book, so it (must / to slip) there as a fine for being decades late.",
+    "prompt": "A fifty-euro note was found inside the returned book, so it (must / to hide) there as a payment for being decades late.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "must have been slipped — логический вывод о произошедшем в прошлом (должно быть, была подсунута).",
+    "explanation_ru": "must have been hidden — логический вывод о произошедшем в прошлом (купюру, должно быть, спрятали).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -2842,29 +2845,29 @@
     "blanks": [
       {
         "id": "pv7-D3-015-b1",
-        "answer": "must have been slipped",
+        "answer": "must have been hidden",
         "accepted_answers": [
-          "must have been slipped"
+          "must have been hidden"
         ],
-        "base_verb": "must / to slip",
+        "base_verb": "must / to hide",
         "supplied_words": [
           "must"
         ],
         "tense_or_construction": "pv_modal_perfect",
         "voice": "passive",
-        "explanation_ru": "must have been slipped — логический вывод о произошедшем в прошлом (должно быть, была подсунута).",
+        "explanation_ru": "must have been hidden — логический вывод о произошедшем в прошлом (купюру, должно быть, спрятали).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "A fifty-zloty note was tucked inside the returned book, so it must have been slipped there as a fine for being decades late."
+    "answer_text": "A fifty-euro note was found inside the returned book, so it must have been hidden there as a payment for being decades late."
   },
   {
     "id": "pv7-D3-016",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My final mark sheets (going to / to sign off) by the external examiner next week. Until then, anonymous exam numbers (can / not / to match) back to our real names. Without this rule, candidates (might / to penalise) unfairly.",
@@ -2956,7 +2959,7 @@
     "id": "pv7-D3-017",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "According to historians, anatomical dissections in the 1500s ___ in January by candlelight to preserve the specimens in the winter cold.",
@@ -2998,7 +3001,7 @@
     "id": "pv7-D3-018",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Those course codes (ought to / to check) before the reading list was printed, as the wrong year group bought up all forty copies of the saga.",
@@ -3048,10 +3051,10 @@
     "id": "pv7-D3-019",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Confidential tender files (must / to view) inside a secure browser sandbox. Text (can / not / to copy) onto my local machine. I hate these rules.",
+    "prompt": "Secret work files (must / to view) inside a safe program. Text (can / not / to copy) onto my own computer. I hate these rules.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "must be viewed (должны просматриваться) и can't be copied (не может быть скопирован) — пассивный залог.",
     "rule_refs": [
@@ -3111,13 +3114,13 @@
         ]
       }
     ],
-    "answer_text": "Confidential tender files must be viewed inside a secure browser sandbox. Text cannot be copied onto my local machine. I hate these rules."
+    "answer_text": "Secret work files must be viewed inside a safe program. Text cannot be copied onto my own computer. I hate these rules."
   },
   {
     "id": "pv7-D3-020",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Missing prepositions (might / to miss) if the front-page headline hadn't been read aloud backwards before the ten o'clock edition.",
@@ -3167,10 +3170,10 @@
     "id": "pv7-D3-021",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "An ultrasonic X-ray check has to passed by every apprentice welder before a contract is offered.",
+    "prompt": "A safety test has to passed by every new worker before a contract is offered.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "После has to нужен глагол be, чтобы образовать пассивный залог: has to be passed.",
     "rule_refs": [
@@ -3179,7 +3182,7 @@
     "cell": "D3",
     "genre": "work",
     "seed_id": "S2-082",
-    "skeleton": "an w has to w by EVERY_APPRENTICE w before a w is w .",
+    "skeleton": "a w has to w by EVERY_NEW w before a w is w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -3191,18 +3194,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "An ultrasonic X-ray check has to be passed by every apprentice welder before a contract is offered.",
+    "answer": "A safety test has to be passed by every new worker before a contract is offered.",
     "accepted_answers": [
-      "An ultrasonic X-ray check has to be passed by every apprentice welder before a contract is offered."
+      "A safety test has to be passed by every new worker before a contract is offered."
     ],
-    "answer_text": "An ultrasonic X-ray check has to be passed by every apprentice welder before a contract is offered.",
+    "answer_text": "A safety test has to be passed by every new worker before a contract is offered.",
     "has_error": true
   },
   {
     "id": "pv7-D3-022",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A thick carpet is laid on stage so that a candidate's footsteps (can / not / to hear) by the jury behind the screen.",
@@ -3254,7 +3257,7 @@
     "id": "pv7-D3-023",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In 1895, a man applies to be an assistant lighthouse keeper. What does the official guide say about his sight?",
@@ -3296,19 +3299,19 @@
     "id": "pv7-D3-024",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Where is my winter coat? It (should / not / to wedge) inside the recycling bin under two cabbages! I (going to / to complain) to the courier company. They (ought to / to drop) it on the porch.",
+    "prompt": "Where is my winter coat? It (should / not / to throw) inside the recycling bin under two cabbages! I (going to / to complain) to the delivery company. They (ought to / to leave) it at the door.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "shouldn't have been wedged — пассив и недовольство прошлым (не должно было быть засунуто). complain и ought to have dropped — актив (я пожалуюсь, они должны были оставить).",
+    "explanation_ru": "shouldn't have been thrown — пассив и недовольство прошлым (не следовало бросать). ought to have left — актив (они должны были оставить).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "chat",
     "seed_id": "S2-121",
-    "skeleton": "where is my w ? it G w the w ! i G to the w . they G it on the w .",
+    "skeleton": "where is my w ? it G w the w ! i G to the w . they G it at the w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal_perfect",
@@ -3328,19 +3331,19 @@
     "blanks": [
       {
         "id": "pv7-D3-024-b1",
-        "answer": "shouldn't have been wedged",
+        "answer": "shouldn't have been thrown",
         "accepted_answers": [
-          "shouldn't have been wedged",
-          "should not have been wedged"
+          "shouldn't have been thrown",
+          "should not have been thrown"
         ],
-        "base_verb": "should / not / to wedge",
+        "base_verb": "should / not / to throw",
         "supplied_words": [
           "should",
           "not"
         ],
         "tense_or_construction": "pv_modal_perfect",
         "voice": "passive",
-        "explanation_ru": "shouldn't have been wedged — пассив и недовольство прошлым (не должно было быть засунуто). complain и ought to have dropped — актив (я пожалуюсь, они должны были оставить).",
+        "explanation_ru": "shouldn't have been thrown — пассив и недовольство прошлым (не следовало бросать). ought to have left — актив (они должны были оставить).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -3358,36 +3361,36 @@
         ],
         "tense_or_construction": "active_future_simple",
         "voice": "active",
-        "explanation_ru": "shouldn't have been wedged — пассив и недовольство прошлым (не должно было быть засунуто). complain и ought to have dropped — актив (я пожалуюсь, они должны были оставить).",
+        "explanation_ru": "shouldn't have been thrown — пассив и недовольство прошлым (не следовало бросать). ought to have left — актив (они должны были оставить).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       },
       {
         "id": "pv7-D3-024-b3",
-        "answer": "ought to have dropped",
+        "answer": "ought to have left",
         "accepted_answers": [
-          "ought to have dropped"
+          "ought to have left"
         ],
-        "base_verb": "ought to / to drop",
+        "base_verb": "ought to / to leave",
         "supplied_words": [
           "ought to"
         ],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "shouldn't have been wedged — пассив и недовольство прошлым (не должно было быть засунуто). complain и ought to have dropped — актив (я пожалуюсь, они должны были оставить).",
+        "explanation_ru": "shouldn't have been thrown — пассив и недовольство прошлым (не следовало бросать). ought to have left — актив (они должны были оставить).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Where is my winter coat? It shouldn't have been wedged inside the recycling bin under two cabbages! I am going to complain to the courier company. They ought to have dropped it on the porch."
+    "answer_text": "Where is my winter coat? It shouldn't have been thrown inside the recycling bin under two cabbages! I am going to complain to the delivery company. They ought to have left it at the door."
   },
   {
     "id": "pv7-D3-025",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "That rare 1920s lithograph (could / to destroy) forever if the previous owner hadn't pasted a cheap cocoa advertisement over it.",
@@ -3437,19 +3440,19 @@
     "id": "pv7-D3-026",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Bottles over a hundred millilitres (going to / to seal) inside a plastic bag before you board your connection.",
+    "prompt": "Bottles of liquid (going to / to pack) inside a clear plastic bag before you board your plane.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "bottles are going to be sealed — пассив с конструкцией going to (будут запечатаны).",
+    "explanation_ru": "bottles are going to be packed — пассив с going to (бутылки будут упакованы).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "travel",
     "seed_id": "S2-133",
-    "skeleton": "w over a w G w a w before you w your w .",
+    "skeleton": "w of w G w a w before you w your w .",
     "practice_tenses": [
       "pv_D3",
       "pv_going_to"
@@ -3465,33 +3468,33 @@
     "blanks": [
       {
         "id": "pv7-D3-026-b1",
-        "answer": "are going to be sealed",
+        "answer": "are going to be packed",
         "accepted_answers": [
-          "are going to be sealed",
-          "'re going to be sealed"
+          "are going to be packed",
+          "'re going to be packed"
         ],
-        "base_verb": "going to / to seal",
+        "base_verb": "going to / to pack",
         "supplied_words": [
           "going to"
         ],
         "tense_or_construction": "pv_going_to",
         "voice": "passive",
-        "explanation_ru": "bottles are going to be sealed — пассив с конструкцией going to (будут запечатаны).",
+        "explanation_ru": "bottles are going to be packed — пассив с going to (бутылки будут упакованы).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Bottles over a hundred millilitres are going to be sealed inside a plastic bag before you board your connection."
+    "answer_text": "Bottles of liquid are going to be packed inside a clear plastic bag before you board your plane."
   },
   {
     "id": "pv7-D3-027",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "We hung our breakfast card on the handle before midnight. Our croissants (should / to bring) to the compartment door soon. Coffee (will have to / to pour) carefully while the train is moving!",
+    "prompt": "We put our breakfast card on the door handle before midnight. Our bread rolls (should / to bring) to the door soon. Coffee (will have to / to pour) carefully while the train is moving!",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "should be brought (должны принести) и will have to be poured (придётся наливать) — модальный пассив.",
     "rule_refs": [
@@ -3550,18 +3553,18 @@
         ]
       }
     ],
-    "answer_text": "We hung our breakfast card on the handle before midnight. Our croissants should be brought to the compartment door soon. Coffee will have to be poured carefully while the train is moving!"
+    "answer_text": "We put our breakfast card on the door handle before midnight. Our bread rolls should be brought to the door soon. Coffee will have to be poured carefully while the train is moving!"
   },
   {
     "id": "pv7-D3-028",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Passengers' deckchairs and tartan rugs (had to / to hire) from the deck steward for four shillings on the first morning of the voyage.",
+    "prompt": "Passengers' chairs and warm blankets (had to / to hire) from the ship worker for four dollars on the first morning of the trip.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "deckchairs had to be hired — пассивный залог в прошлом (должны были быть арендованы).",
+    "explanation_ru": "chairs had to be hired — пассивный залог в прошлом (стулья нужно было брать напрокат).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -3595,19 +3598,19 @@
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "deckchairs had to be hired — пассивный залог в прошлом (должны были быть арендованы).",
+        "explanation_ru": "chairs had to be hired — пассивный залог в прошлом (стулья нужно было брать напрокат).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Passengers' deckchairs and tartan rugs had to be hired from the deck steward for four shillings on the first morning of the voyage."
+    "answer_text": "Passengers' chairs and warm blankets had to be hired from the ship worker for four dollars on the first morning of the trip."
   },
   {
     "id": "pv7-D3-029",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "His wife's passport ___ in an identical green cover, otherwise he wouldn't have packed it by mistake at Stansted.",
@@ -3649,10 +3652,10 @@
     "id": "pv7-D3-030",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Thermal sleeping bags (going to / to hand out) to us at nine p.m. Our suitcases (should / to store) in the heated locker block. Otherwise, the zips will freeze shut.",
+    "prompt": "Warm sleeping bags (going to / to hand out) to us at nine p.m. Our suitcases (should / to store) in the heated room. Otherwise, everything will freeze.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "are going to be handed out (будут выданы) и should be stored (следует оставить) — пассивный залог.",
     "rule_refs": [
@@ -3661,7 +3664,7 @@
     "cell": "D3",
     "genre": "travel",
     "seed_id": "S3-002",
-    "skeleton": "w G to us at w . w . our w G in the w . w , the w will w .",
+    "skeleton": "w G to us at w . w . our w G in the w . w , w will w .",
     "practice_tenses": [
       "pv_D3",
       "pv_going_to",
@@ -3713,18 +3716,18 @@
         ]
       }
     ],
-    "answer_text": "Thermal sleeping bags are going to be handed out to us at nine p.m. Our suitcases should be stored in the heated locker block. Otherwise, the zips will freeze shut."
+    "answer_text": "Warm sleeping bags are going to be handed out to us at nine p.m. Our suitcases should be stored in the heated room. Otherwise, everything will freeze."
   },
   {
     "id": "pv7-D3-031",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Your two-euro deposit (can / to refund) only when the magnetic locker wristband is scanned at the exit turnstile.",
+    "prompt": "Your two-euro deposit (can / to return) only when the locker key is scanned at the exit gate.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "deposit can be refunded — пассивный залог (депозит может быть возвращён).",
+    "explanation_ru": "deposit can be returned — пассивный залог (залог можно вернуть).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -3747,29 +3750,29 @@
     "blanks": [
       {
         "id": "pv7-D3-031-b1",
-        "answer": "can be refunded",
+        "answer": "can be returned",
         "accepted_answers": [
-          "can be refunded"
+          "can be returned"
         ],
-        "base_verb": "can / to refund",
+        "base_verb": "can / to return",
         "supplied_words": [
           "can"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "deposit can be refunded — пассивный залог (депозит может быть возвращён).",
+        "explanation_ru": "deposit can be returned — пассивный залог (залог можно вернуть).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Your two-euro deposit can be refunded only when the magnetic locker wristband is scanned at the exit turnstile."
+    "answer_text": "Your two-euro deposit can be returned only when the locker key is scanned at the exit gate."
   },
   {
     "id": "pv7-D3-032",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Look at this massive inventory list. Every teaspoon (going to / to count) by the site warden on Saturday morning. The fridge (will have to / to defrost) as well. We (should / to book) a hotel instead.",
@@ -3859,7 +3862,7 @@
     "id": "pv7-D3-033",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Passing places on single-track roads are for traffic only and ___ in by photographers admiring the scenery.",
@@ -3901,7 +3904,7 @@
     "id": "pv7-D3-034",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The puncture (could / to cause) by this three-inch woodscrew a whole week ago, but it sealed its own hole until the pressure dropped.",
@@ -3951,7 +3954,7 @@
     "id": "pv7-D3-035",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Stuck at the multi-storey exit because a wet leaf covered your registration plate, you press the intercom. What do you explain to the operator?",
@@ -3993,7 +3996,7 @@
     "id": "pv7-D3-036",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The tip of the épée blade (needs to / to test) with a 750-gram brass weight to prove the spring doesn't trigger too easily.",
@@ -4043,10 +4046,10 @@
     "id": "pv7-D3-037",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Any jumper wearing a Lycra suit two millimetres too loose (going to / to disqualify) instantly by the equipment controller.",
+    "prompt": "Any runner wearing the wrong shoes (going to / to disqualify) at once by the judges.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "is going to be disqualified — пассивный залог с going to (будет дисквалифицирован).",
     "rule_refs": [
@@ -4055,7 +4058,7 @@
     "cell": "D3",
     "genre": "sport",
     "seed_id": "S3-093",
-    "skeleton": "any w a w G w by the w .",
+    "skeleton": "any w the w G at w by the w .",
     "practice_tenses": [
       "pv_D3",
       "pv_going_to"
@@ -4088,18 +4091,18 @@
         ]
       }
     ],
-    "answer_text": "Any jumper wearing a Lycra suit two millimetres too loose is going to be disqualified instantly by the equipment controller."
+    "answer_text": "Any runner wearing the wrong shoes is going to be disqualified at once by the judges."
   },
   {
     "id": "pv7-D3-038",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Nobody is allowed onto the Cumberland turf just yet. The morning dew (has to / to brush off) with a special whalebone switch first. Only then (can / the green / to use) for today's match.",
+    "prompt": "Nobody is allowed onto the grass just yet. The morning water (has to / to brush off) with a special broom first. Only then (can / the field / to use) for today's match.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "has to be brushed off — пассив (роса должна быть стряхнута). can the green be used — пассив в вопросительной конструкции с инверсией.",
+    "explanation_ru": "has to be brushed off — пассив (вода должна быть сметена).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -4135,37 +4138,37 @@
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "has to be brushed off — пассив (роса должна быть стряхнута). can the green be used — пассив в вопросительной конструкции с инверсией.",
+        "explanation_ru": "has to be brushed off — пассив (вода должна быть сметена).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       },
       {
         "id": "pv7-D3-038-b2",
-        "answer": "can the green be used",
+        "answer": "can the field be used",
         "accepted_answers": [
-          "can the green be used"
+          "can the field be used"
         ],
-        "base_verb": "can / the green / to use",
+        "base_verb": "can / the field / to use",
         "supplied_words": [
           "can",
-          "the green"
+          "the field"
         ],
         "tense_or_construction": "pv_question",
         "voice": "passive",
-        "explanation_ru": "has to be brushed off — пассив (роса должна быть стряхнута). can the green be used — пассив в вопросительной конструкции с инверсией.",
+        "explanation_ru": "has to be brushed off — пассив (вода должна быть сметена).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Nobody is allowed onto the Cumberland turf just yet. The morning dew has to be brushed off with a special whalebone switch first. Only then can the green be used for today's match."
+    "answer_text": "Nobody is allowed onto the grass just yet. The morning water has to be brushed off with a special broom first. Only then can the field be used for today's match."
   },
   {
     "id": "pv7-D3-039",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Digital watches (had to / to switch) to flight mode because our vintage 1950s valve microphone was picking up texts three seconds before they arrived.",
@@ -4216,7 +4219,7 @@
     "id": "pv7-D3-040",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A half-price child ticket ___ for her cello because it occupied a reserved window seat in the quiet coach.",
@@ -4258,7 +4261,7 @@
     "id": "pv7-D3-041",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "We are stuck at Dover customs. Every double-bass bow with mother-of-pearl (should / to list) on a wildlife carnet. Unfortunately, ours weren't. The lorry (might / to delay) here for another twelve hours. I (going to / to ring) the manager.",
@@ -4347,19 +4350,19 @@
     "id": "pv7-D3-042",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Polaroid photos (must / to check), otherwise the detective's plaster wouldn't have been stuck over the correct eyebrow in Scene 14.",
+    "prompt": "Photos (must / to examine), otherwise the actor's hat wouldn't have been on the correct side in Scene 14.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "must have been checked — логический вывод о произошедшем (должно быть, фотографии были проверены).",
+    "explanation_ru": "must have been examined — логический вывод о произошедшем (должно быть, фотографии были просмотрены).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "arts",
     "seed_id": "S3-169",
-    "skeleton": "w G , w the w have been w over the w in w 14 .",
+    "skeleton": "w G , w the w have been on the w in w 14 .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal_perfect"
@@ -4375,41 +4378,41 @@
     "blanks": [
       {
         "id": "pv7-D3-042-b1",
-        "answer": "must have been checked",
+        "answer": "must have been examined",
         "accepted_answers": [
-          "must have been checked"
+          "must have been examined"
         ],
-        "base_verb": "must / to check",
+        "base_verb": "must / to examine",
         "supplied_words": [
           "must"
         ],
         "tense_or_construction": "pv_modal_perfect",
         "voice": "passive",
-        "explanation_ru": "must have been checked — логический вывод о произошедшем (должно быть, фотографии были проверены).",
+        "explanation_ru": "must have been examined — логический вывод о произошедшем (должно быть, фотографии были просмотрены).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Polaroid photos must have been checked, otherwise the detective's plaster wouldn't have been stuck over the correct eyebrow in Scene 14."
+    "answer_text": "Photos must have been examined, otherwise the actor's hat wouldn't have been on the correct side in Scene 14."
   },
   {
     "id": "pv7-D3-043",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Each wooden marionette needs to be unhooked and hang on a revolving rack so they don't tangle.",
+    "prompt": "Each wet coat needs to be taken off and hang on a hook so it can dry.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "После конструкции needs to be оба глагола должны стоять в третьей форме: unhooked and hung (отцеплена и повешена).",
+    "explanation_ru": "После конструкции needs to be оба глагола должны стоять в третьей форме (taken off and hung).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "arts",
     "seed_id": "S3-173",
-    "skeleton": "each w to be w and w on a w so they w .",
+    "skeleton": "each w to be w and w on a w so it can w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -4421,30 +4424,30 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Each wooden marionette needs to be unhooked and hung on a revolving rack so they don't tangle.",
+    "answer": "Each wet coat needs to be taken off and hung on a hook so it can dry.",
     "accepted_answers": [
-      "Each wooden marionette needs to be unhooked and hung on a revolving rack so they don't tangle."
+      "Each wet coat needs to be taken off and hung on a hook so it can dry."
     ],
-    "answer_text": "Each wooden marionette needs to be unhooked and hung on a revolving rack so they don't tangle.",
+    "answer_text": "Each wet coat needs to be taken off and hung on a hook so it can dry.",
     "has_error": true
   },
   {
     "id": "pv7-D3-044",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "That disposable coffee cup on the medieval banquet table (had to / to paint out) frame by frame overnight before the broadcast.",
+    "prompt": "That plastic coffee cup on the table in the old film (had to / to remove) from every frame overnight before the broadcast.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "cup had to be painted out — пассив в прошедшем времени (стаканчик пришлось закрашивать).",
+    "explanation_ru": "cup had to be removed — пассив в прошедшем времени (стакан пришлось убрать).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "tech",
     "seed_id": "S3-178",
-    "skeleton": "that w on the w G w by w before the w .",
+    "skeleton": "that w on the w in the w G from EVERY_FRAME w before the w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -4460,30 +4463,30 @@
     "blanks": [
       {
         "id": "pv7-D3-044-b1",
-        "answer": "had to be painted out",
+        "answer": "had to be removed",
         "accepted_answers": [
-          "had to be painted out",
-          "'d to be painted out"
+          "had to be removed",
+          "'d to be removed"
         ],
-        "base_verb": "had to / to paint out",
+        "base_verb": "had to / to remove",
         "supplied_words": [
           "had to"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "cup had to be painted out — пассив в прошедшем времени (стаканчик пришлось закрашивать).",
+        "explanation_ru": "cup had to be removed — пассив в прошедшем времени (стакан пришлось убрать).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "That disposable coffee cup on the medieval banquet table had to be painted out frame by frame overnight before the broadcast."
+    "answer_text": "That plastic coffee cup on the table in the old film had to be removed from every frame overnight before the broadcast."
   },
   {
     "id": "pv7-D3-045",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The tiny signature on the floating barrel (could / not / to spot) without a magnifying glass, which is why the seascape remained unsold for so long.",
@@ -4535,7 +4538,7 @@
     "id": "pv7-D3-046",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Oh no, I straightened that metal frame on the wall! I didn't realise it (was supposed to / to leave) tilted. The artist (must / to spend) hours getting that exact seven-degree angle. I (should / to ask) the security guard first.",
@@ -4621,7 +4624,7 @@
     "id": "pv7-D3-047",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Three 1890s bamboo fly-fishing rods ___ inside the mahogany umbrella stand, otherwise he wouldn't have bought it for thirty pounds.",
@@ -4663,7 +4666,7 @@
     "id": "pv7-D3-048",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The wind speeds during the 1927 hurricane (must / to measure) at over a hundred knots, considering the needle jammed at ninety-eight.",
@@ -4713,10 +4716,10 @@
     "id": "pv7-D3-049",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Wooden foundation piles (need to / to keep) completely submerged during summer droughts to prevent rot.",
+    "prompt": "Wooden posts under the bridge (need to / to keep) under water during dry summers to prevent damage.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "need to be kept — пассивный залог с модальной конструкцией (нужно держать).",
     "rule_refs": [
@@ -4725,7 +4728,7 @@
     "cell": "D3",
     "genre": "report",
     "seed_id": "S1-025",
-    "skeleton": "w G w to w .",
+    "skeleton": "w the w G w to w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -4757,25 +4760,25 @@
         ]
       }
     ],
-    "answer_text": "Wooden foundation piles need to be kept completely submerged during summer droughts to prevent rot."
+    "answer_text": "Wooden posts under the bridge need to be kept under water during dry summers to prevent damage."
   },
   {
     "id": "pv7-D3-050",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "We watched in horror as freezing rain coated every twig. The heaviest branches of our century-old limes (had to / to prune) by crane. Otherwise, the trees (would / to collapse) under the sheer weight of the ice. I believe the city arborist (should / to call) hours earlier.",
+    "prompt": "We watched in horror as freezing rain covered every branch. The heaviest branches of our old trees (had to / to cut) by crane. Otherwise, the trees (would / to fall) under the weight of the ice. I believe the city worker (should / to call) hours earlier.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "had to be pruned — пассив в прошлом (пришлось обрезать). would have collapsed — актив (рухнули бы сами). should have been called — пассивный перфект для сожаления о прошлом (следовало вызвать).",
+    "explanation_ru": "had to be cut — пассив в прошлом (пришлось обрезать). would have fallen — актив, нереальное прошлое. should have been called — пассив (рабочего следовало вызвать раньше).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "news",
     "seed_id": "S1-029",
-    "skeleton": "we w in w as w EVERY_TWIG . the w of our w G by w . w , the w G w the w of the w . i w the w G w .",
+    "skeleton": "we w in w as w EVERY_BRANCH . the w of our w G by w . w , the w G w the w of the w . i w the w G w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal",
@@ -4795,35 +4798,35 @@
     "blanks": [
       {
         "id": "pv7-D3-050-b1",
-        "answer": "had to be pruned",
+        "answer": "had to be cut",
         "accepted_answers": [
-          "had to be pruned",
-          "'d to be pruned"
+          "had to be cut",
+          "'d to be cut"
         ],
-        "base_verb": "had to / to prune",
+        "base_verb": "had to / to cut",
         "supplied_words": [
           "had to"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "had to be pruned — пассив в прошлом (пришлось обрезать). would have collapsed — актив (рухнули бы сами). should have been called — пассивный перфект для сожаления о прошлом (следовало вызвать).",
+        "explanation_ru": "had to be cut — пассив в прошлом (пришлось обрезать). would have fallen — актив, нереальное прошлое. should have been called — пассив (рабочего следовало вызвать раньше).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       },
       {
         "id": "pv7-D3-050-b2",
-        "answer": "would have collapsed",
+        "answer": "would have fallen",
         "accepted_answers": [
-          "would have collapsed"
+          "would have fallen"
         ],
-        "base_verb": "would / to collapse",
+        "base_verb": "would / to fall",
         "supplied_words": [
           "would"
         ],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "had to be pruned — пассив в прошлом (пришлось обрезать). would have collapsed — актив (рухнули бы сами). should have been called — пассивный перфект для сожаления о прошлом (следовало вызвать).",
+        "explanation_ru": "had to be cut — пассив в прошлом (пришлось обрезать). would have fallen — актив, нереальное прошлое. should have been called — пассив (рабочего следовало вызвать раньше).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -4840,19 +4843,19 @@
         ],
         "tense_or_construction": "pv_modal_perfect",
         "voice": "passive",
-        "explanation_ru": "had to be pruned — пассив в прошлом (пришлось обрезать). would have collapsed — актив (рухнули бы сами). should have been called — пассивный перфект для сожаления о прошлом (следовало вызвать).",
+        "explanation_ru": "had to be cut — пассив в прошлом (пришлось обрезать). would have fallen — актив, нереальное прошлое. should have been called — пассив (рабочего следовало вызвать раньше).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "We watched in horror as freezing rain coated every twig. The heaviest branches of our century-old limes had to be pruned by crane. Otherwise, the trees would have collapsed under the sheer weight of the ice. I believe the city arborist should have been called hours earlier."
+    "answer_text": "We watched in horror as freezing rain covered every branch. The heaviest branches of our old trees had to be cut by crane. Otherwise, the trees would have fallen under the weight of the ice. I believe the city worker should have been called hours earlier."
   },
   {
     "id": "pv7-D3-051",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "To prevent unnatural attachment to humans, orphaned seal pups ___ through a silicon tube for their first fortnight.",
@@ -4894,7 +4897,7 @@
     "id": "pv7-D3-052",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My spanner compartments were full of cherry stones; they (must / to fill) by a very busy field mouse while the shed was locked.",
@@ -4944,10 +4947,10 @@
     "id": "pv7-D3-053",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Ground-floor windows (must / not / to leave) ajar, because our resident peacock likes to wander in and fight its own reflection.",
+    "prompt": "Ground-floor windows (must / not / to leave) open, because our pet dog likes to run in and make a mess.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "must not be left — строгий запрет в пассивном залоге (нельзя оставлять).",
     "rule_refs": [
@@ -4956,7 +4959,7 @@
     "cell": "D3",
     "genre": "notice",
     "seed_id": "S1-061",
-    "skeleton": "w G w , because our w to w in and w its w .",
+    "skeleton": "w G w , because our w to w in and w a w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -4990,13 +4993,13 @@
         ]
       }
     ],
-    "answer_text": "Ground-floor windows must not be left ajar, because our resident peacock likes to wander in and fight its own reflection."
+    "answer_text": "Ground-floor windows must not be left open, because our pet dog likes to run in and make a mess."
   },
   {
     "id": "pv7-D3-054",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "We assumed the bread was free, but it cost forty lira; we should have warned about the extra charge before sitting down.",
@@ -5031,19 +5034,19 @@
     "id": "pv7-D3-055",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Surplus pastries arrive from the bakeries at seven. Every single item (has to / to log) with an allergen sticker immediately. The door (can / to unlock) for the community only after that. We (going to / to feed) a lot of families tonight!",
+    "prompt": "Extra bread and cakes arrive from the shops at seven. Every item (has to / to check) for dates first. The door (can / to open) for everyone only after that. We (going to / to feed) a lot of families tonight!",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "has to be logged и can be unlocked — пассив (должно быть зарегистрировано, может быть открыта). are going to feed — актив (мы собираемся накормить).",
+    "explanation_ru": "has to be checked и can be opened — пассив (должно быть проверено, можно открыть). We are going to feed — актив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "notice",
     "seed_id": "S1-105",
-    "skeleton": "w from the w at w . EVERY_SINGLE w G with an w . the w G for the w after that . we G a w of w TONIGHT !",
+    "skeleton": "w and w from the w at w . EVERY_ITEM G for w . the w G for w after that . we G a w of w TONIGHT !",
     "practice_tenses": [
       "pv_D3",
       "pv_modal",
@@ -5061,35 +5064,35 @@
     "blanks": [
       {
         "id": "pv7-D3-055-b1",
-        "answer": "has to be logged",
+        "answer": "has to be checked",
         "accepted_answers": [
-          "has to be logged",
-          "'s to be logged"
+          "has to be checked",
+          "'s to be checked"
         ],
-        "base_verb": "has to / to log",
+        "base_verb": "has to / to check",
         "supplied_words": [
           "has to"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "has to be logged и can be unlocked — пассив (должно быть зарегистрировано, может быть открыта). are going to feed — актив (мы собираемся накормить).",
+        "explanation_ru": "has to be checked и can be opened — пассив (должно быть проверено, можно открыть). We are going to feed — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       },
       {
         "id": "pv7-D3-055-b2",
-        "answer": "can be unlocked",
+        "answer": "can be opened",
         "accepted_answers": [
-          "can be unlocked"
+          "can be opened"
         ],
-        "base_verb": "can / to unlock",
+        "base_verb": "can / to open",
         "supplied_words": [
           "can"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "has to be logged и can be unlocked — пассив (должно быть зарегистрировано, может быть открыта). are going to feed — актив (мы собираемся накормить).",
+        "explanation_ru": "has to be checked и can be opened — пассив (должно быть проверено, можно открыть). We are going to feed — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -5107,19 +5110,19 @@
         ],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "has to be logged и can be unlocked — пассив (должно быть зарегистрировано, может быть открыта). are going to feed — актив (мы собираемся накормить).",
+        "explanation_ru": "has to be checked и can be opened — пассив (должно быть проверено, можно открыть). We are going to feed — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Surplus pastries arrive from the bakeries at seven. Every single item has to be logged with an allergen sticker immediately. The door can be unlocked for the community only after that. We are going to feed a lot of families tonight!"
+    "answer_text": "Extra bread and cakes arrive from the shops at seven. Every item has to be checked for dates first. The door can be opened for everyone only after that. We are going to feed a lot of families tonight!"
   },
   {
     "id": "pv7-D3-056",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Eighty portions of pureed broccoli (cannot / to order) by the orthopaedic ward; the optical scanner clearly misread the patient survey forms.",
@@ -5170,7 +5173,7 @@
     "id": "pv7-D3-057",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "I just tasted the chocolate cake I baked for the party, and it is incredibly salty! What do you realise about the jars?",
@@ -5212,7 +5215,7 @@
     "id": "pv7-D3-058",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "This eighty-year-old rye starter is incredibly precious, so it (going to / to give) exactly fifty grams of flour every Tuesday without fail.",
@@ -5263,10 +5266,10 @@
     "id": "pv7-D3-059",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The skins of the damsons ___ with a darning needle, otherwise they will split and cloud the gin liqueur.",
+    "prompt": "The skins of the plums ___ with a small needle, otherwise they will split.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "ought to be pricked — совет/правило в пассивном залоге (следует проколоть).",
     "rule_refs": [
@@ -5275,7 +5278,7 @@
     "cell": "D3",
     "genre": "instructions",
     "seed_id": "S1-140",
-    "skeleton": "the w of the w G with a w , w they will w and w the w .",
+    "skeleton": "the w of the w G with a w , w they will w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -5298,14 +5301,14 @@
       1
     ],
     "answer": "ought to be pricked",
-    "summary": "The skins of the damsons ought to be pricked with a darning needle, otherwise they will split and cloud the gin liqueur.",
-    "answer_text": "The skins of the damsons ought to be pricked with a darning needle, otherwise they will split and cloud the gin liqueur."
+    "summary": "The skins of the plums ought to be pricked with a small needle, otherwise they will split.",
+    "answer_text": "The skins of the plums ought to be pricked with a small needle, otherwise they will split."
   },
   {
     "id": "pv7-D3-060",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Outdoor boots will have to placed on the heated racks by the entrance all winter.",
@@ -5340,7 +5343,7 @@
     "id": "pv7-D3-061",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "An automated absence alert (going to / to send) to both parents unless the pupil signs in at reception before nine-fifteen.",
@@ -5391,19 +5394,19 @@
     "id": "pv7-D3-062",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our individual class portraits were ruined because of a stupid mistake. The date plaque on the velvet stool (should / to update) by the photographer before break. Now, all three hundred pictures (will have to / to retake) next week. We (going to / to complain) to the agency.",
+    "prompt": "Our individual class photos were ruined because of a stupid mistake. The date sign on the stool (should / to update) by the photographer before break. Now, all three hundred pictures (will have to / to do) again next week. We (going to / to complain) to the agency.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "should have been updated — сожаление об ошибке в прошлом (следовало обновить). will have to be retaken — пассив в будущем. complain — актив (мы собираемся пожаловаться).",
+    "explanation_ru": "should have been updated — сожаление об ошибке в прошлом. will have to be done — пассив в будущем. complain — актив (мы собираемся пожаловаться).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "email",
     "seed_id": "S1-182",
-    "skeleton": "our w were w because of a w . the w on the w G by the w before w . NOW , all w G NEXT_WEEK . we G to the w .",
+    "skeleton": "our w were w because of a w . the w on the w G by the w before w . NOW , all w G w NEXT_WEEK . we G to the w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal_perfect",
@@ -5433,25 +5436,25 @@
         ],
         "tense_or_construction": "pv_modal_perfect",
         "voice": "passive",
-        "explanation_ru": "should have been updated — сожаление об ошибке в прошлом (следовало обновить). will have to be retaken — пассив в будущем. complain — актив (мы собираемся пожаловаться).",
+        "explanation_ru": "should have been updated — сожаление об ошибке в прошлом. will have to be done — пассив в будущем. complain — актив (мы собираемся пожаловаться).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       },
       {
         "id": "pv7-D3-062-b2",
-        "answer": "will have to be retaken",
+        "answer": "will have to be done",
         "accepted_answers": [
-          "will have to be retaken",
-          "'ll have to be retaken"
+          "will have to be done",
+          "'ll have to be done"
         ],
-        "base_verb": "will have to / to retake",
+        "base_verb": "will have to / to do",
         "supplied_words": [
           "will have to"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "should have been updated — сожаление об ошибке в прошлом (следовало обновить). will have to be retaken — пассив в будущем. complain — актив (мы собираемся пожаловаться).",
+        "explanation_ru": "should have been updated — сожаление об ошибке в прошлом. will have to be done — пассив в будущем. complain — актив (мы собираемся пожаловаться).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -5469,19 +5472,19 @@
         ],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "should have been updated — сожаление об ошибке в прошлом (следовало обновить). will have to be retaken — пассив в будущем. complain — актив (мы собираемся пожаловаться).",
+        "explanation_ru": "should have been updated — сожаление об ошибке в прошлом. will have to be done — пассив в будущем. complain — актив (мы собираемся пожаловаться).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Our individual class portraits were ruined because of a stupid mistake. The date plaque on the velvet stool should have been updated by the photographer before break. Now, all three hundred pictures will have to be retaken next week. We are going to complain to the agency."
+    "answer_text": "Our individual class photos were ruined because of a stupid mistake. The date sign on the stool should have been updated by the photographer before break. Now, all three hundred pictures will have to be done again next week. We are going to complain to the agency."
   },
   {
     "id": "pv7-D3-063",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Not a single word of my forty phonetics sentences was captured; the microphone's phantom-power switch (must / to leave) off for the entire hour.",

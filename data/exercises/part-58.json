@@ -4312,7 +4312,7 @@
     "content_version": "passive-2026-11-09.1",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The film (to nominate) for three awards, including best actress.",
+    "prompt": "The film (to choose) for three awards, including best actress.",
     "instruction_ru": "Раскройте скобки.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-table",
@@ -4321,26 +4321,26 @@
     "blanks": [
       {
         "id": "pv5-s293-b1",
-        "answer": "has been nominated",
+        "answer": "has been chosen",
         "accepted_answers": [
-          "has been nominated",
-          "'s been nominated"
+          "has been chosen",
+          "'s been chosen"
         ],
-        "explanation_ru": "Present Perfect Passive — новость, актуальная сейчас: has been nominated.",
+        "explanation_ru": "Present Perfect Passive — новость, актуальная сейчас: has been chosen.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-table",
           "content/passive/07-passive.md#pv-aspect"
         ],
         "tense_or_construction": "pv_present_perfect",
-        "base_verb": "to nominate",
+        "base_verb": "to choose",
         "supplied_words": []
       }
     ],
     "layout": "sentence",
     "practice_group": "sentence",
     "practice_weight": 40,
-    "answer_text": "The film has been nominated for three awards, including best actress.",
-    "explanation_ru": "Present Perfect Passive — новость, актуальная сейчас: has been nominated.",
+    "answer_text": "The film has been chosen for three awards, including best actress.",
+    "explanation_ru": "Present Perfect Passive — новость, актуальная сейчас: has been chosen.",
     "practice_tenses": [
       "pv_D1",
       "pv_present_perfect"

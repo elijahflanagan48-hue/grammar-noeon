@@ -21,7 +21,7 @@
 
 Разделы: comparison — 1000, tenses — 4379, passive — 1935, modals — 1040, reported — 1000, nouns — 1000, speaking — 500, infinitive — 1000.
 
-Версии: `tenses-2026-11-09.1`, `comparison-2026-11-01.5`, `passive-2026-11-22.1`, `modals-2026-11-05.1`, `reported-2026-11-05.1`, `nouns-2026-11-07.1`, `speaking-2026-11-09.1`, `infinitive-2026-11-13.1`.
+Версии: `tenses-2026-11-09.1`, `comparison-2026-11-01.5`, `passive-2026-11-22.2`, `modals-2026-11-05.1`, `reported-2026-11-05.1`, `nouns-2026-11-07.1`, `speaking-2026-11-09.1`, `infinitive-2026-11-13.1`.
 
 Локально подготовлены изменения банка; они ещё не опубликованы. [Отчёт о проверке](docs/review/V8-FINAL-2026-10-30/REPORT.md).
 

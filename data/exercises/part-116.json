@@ -3,12 +3,12 @@
     "id": "pv7-D4-069",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The timber importer was lucky to be freeze the payment before the hackers vanished.",
+    "prompt": "The shop owner was lucky to be stop the payment before the thieves disappeared.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Импортёр сам заморозил платёж, поэтому здесь нужен активный, а не пассивный инфинитив.",
+    "explanation_ru": "Владелец сам остановил платёж, поэтому здесь нужен активный инфинитив (to stop), а не пассивный.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -27,21 +27,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "The timber importer was lucky to freeze the payment before the hackers vanished.",
+    "answer": "The shop owner was lucky to stop the payment before the thieves disappeared.",
     "accepted_answers": [
-      "The timber importer was lucky to freeze the payment before the hackers vanished."
+      "The shop owner was lucky to stop the payment before the thieves disappeared."
     ],
-    "answer_text": "The timber importer was lucky to freeze the payment before the hackers vanished.",
+    "answer_text": "The shop owner was lucky to stop the payment before the thieves disappeared.",
     "has_error": true
   },
   {
     "id": "pv7-D4-070",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Residents appreciate to be given ultraviolet marker pens for marking their lawnmowers.",
+    "prompt": "Residents appreciate to be given special marker pens for marking their bikes.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Глагол appreciate требует после себя герундия, а не инфинитива (appreciate being given).",
     "rule_refs": [
@@ -62,18 +62,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Residents appreciate being given ultraviolet marker pens for marking their lawnmowers.",
+    "answer": "Residents appreciate being given special marker pens for marking their bikes.",
     "accepted_answers": [
-      "Residents appreciate being given ultraviolet marker pens for marking their lawnmowers."
+      "Residents appreciate being given special marker pens for marking their bikes."
     ],
-    "answer_text": "Residents appreciate being given ultraviolet marker pens for marking their lawnmowers.",
+    "answer_text": "Residents appreciate being given special marker pens for marking their bikes.",
     "has_error": true
   },
   {
     "id": "pv7-D4-071",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Witnesses are asked to watch nine short video clips instead of standing behind a one-way mirror.",
@@ -108,7 +108,7 @@
     "id": "pv7-D4-072",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Being manufactured at a royal factory decades ago, the doorstop is incredibly valuable.",
@@ -144,10 +144,10 @@
     "id": "pv7-D4-073",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A schoolboy is visiting a printing museum. He really wants to use Gutenberg's replica himself. What does he say?",
+    "prompt": "A boy is visiting a printing museum. He really wants to use the old printing machine himself. What does he say?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
     "explanation_ru": "Глагол hope управляет инфинитивом. Мальчик хочет, чтобы ему разрешили это сделать (пассивный залог).",
     "rule_refs": [
@@ -156,7 +156,7 @@
     "cell": "D4",
     "genre": "chat",
     "seed_id": "S5-020",
-    "skeleton": "a w is w a w . he w to w . what does he w ?",
+    "skeleton": "a w is w a w . he w to w the w . what does he w ?",
     "practice_tenses": [
       "pv_D4",
       "pv_infinitive"
@@ -186,7 +186,7 @@
     "id": "pv7-D4-074",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A medieval monk wrote a margin note complaining about the freezing library. He didn't like working in such conditions. Which sentence describes this?",
@@ -228,7 +228,7 @@
     "id": "pv7-D4-075",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The student arrived home with a massive suitcase of dirty clothes. His mother immediately gave him directions to the local launderette. What happened?",
@@ -270,7 +270,7 @@
     "id": "pv7-D4-076",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My grandparents hoped (to teach) how to use video calls, and now they ring me at six every morning.",
@@ -318,7 +318,7 @@
     "id": "pv7-D4-077",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "This exhausted father succeeded in putting his baby to sleep by (to play) hairdryer noises on his phone.",
@@ -366,7 +366,7 @@
     "id": "pv7-D4-078",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The bride-to-be strictly refused (to make) to wear a crown of plastic flowers all weekend.",
@@ -414,7 +414,7 @@
     "id": "pv7-D4-079",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "That poor groom claims (to leave) on a tram by his mates during his stag do in Prague.",
@@ -462,7 +462,7 @@
     "id": "pv7-D4-080",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Backpackers in Sydney can't stand (to push) out of their harbour spots before the fireworks even begin.",
@@ -511,7 +511,7 @@
     "id": "pv7-D4-081",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Local shopkeepers want the Christmas lights (to switch on) by the girl who raised money for the hospital.",
@@ -559,7 +559,7 @@
     "id": "pv7-D4-082",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Council officials suggested (to vote) on the snowplough's name, which resulted in the bizarre choice of 'Sir Andy Plowray'.",
@@ -607,7 +607,7 @@
     "id": "pv7-D4-083",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Thoroughly furious at (to block in) for three hours by a film crew, the drivers started sounding their horns.",
@@ -656,7 +656,7 @@
     "id": "pv7-D4-084",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Half her hives happen (to abandon) by the swarming bees just before the neighbour found them on the trampoline.",
@@ -704,7 +704,7 @@
     "id": "pv7-D4-085",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Despite (to warn) repeatedly about the fragile rows, tourists walked right through the middle of the lavender farm.",
@@ -753,7 +753,7 @@
     "id": "pv7-D4-086",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Danish farmers provide toys for piglets because the animals deserve (to keep) entertained indoors.",
@@ -801,10 +801,10 @@
     "id": "pv7-D4-087",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Twelve glass panes appear (to crack) by that freak hailstorm. We desperately need (to fit) temporary sheets today.",
+    "prompt": "Twelve glass panes appear (to crack) by that strong storm. We desperately need (to fit) temporary sheets today.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Стекла разбились в прошлом (перфектный пассивный инфинитив после appear). Нам самим нужно установить листы (актив после need).",
     "rule_refs": [
@@ -860,13 +860,13 @@
         ]
       }
     ],
-    "answer_text": "Twelve glass panes appear to have been cracked by that freak hailstorm. We desperately need to fit temporary sheets today."
+    "answer_text": "Twelve glass panes appear to have been cracked by that strong storm. We desperately need to fit temporary sheets today."
   },
   {
     "id": "pv7-D4-088",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Solar panels require constant maintenance. They simply cannot function properly without (to wash) after a severe dust storm. The technicians prefer (to spray) them at high pressure.",
@@ -932,7 +932,7 @@
     "id": "pv7-D4-089",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Fruit growers expect a hard frost (to forecast) for midnight. They avoid (to lose) their crops by setting up paraffin heaters early.",
@@ -998,10 +998,10 @@
     "id": "pv7-D4-090",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Migrating bream occasionally need (to help) through the complex lock system. Commuters genuinely enjoy (to log) on to the virtual doorbell to assist them.",
+    "prompt": "Fish occasionally need (to help) through the complex lock system. Commuters genuinely enjoy (to log) on to the website to help them.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "После need для пассивного значения используется to be done (или герундий). После enjoy строго идёт герундий, действие выполняют сами люди (актив).",
     "rule_refs": [
@@ -1058,25 +1058,25 @@
         ]
       }
     ],
-    "answer_text": "Migrating bream occasionally need to be helped through the complex lock system. Commuters genuinely enjoy logging on to the virtual doorbell to assist them."
+    "answer_text": "Fish occasionally need to be helped through the complex lock system. Commuters genuinely enjoy logging on to the website to help them."
   },
   {
     "id": "pv7-D4-091",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Hedgehogs benefit immensely from (to allow) to roam freely across tarmac. These small gaps seem (to cut) into the fences by a thoughtful local handyman.",
+    "prompt": "Small animals benefit a lot from (to allow) to walk freely across the road. These small gaps seem (to cut) into the fences by a kind local worker.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "После from нужен герундий (ежам разрешают — пассив). Отверстия были вырезаны ранее (перфектный пассивный инфинитив после seem).",
+    "explanation_ru": "После from нужен герундий (животным разрешают — пассив). Отверстия сделаны в прошлом — перфектный пассивный инфинитив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
     "cell": "D4",
     "genre": "email",
     "seed_id": "S1-052",
-    "skeleton": "w from G to w . these w G into the w by a w .",
+    "skeleton": "w a w from G to w the w . these w G into the w by a w .",
     "practice_tenses": [
       "pv_D4",
       "pv_gerund",
@@ -1102,7 +1102,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "После from нужен герундий (ежам разрешают — пассив). Отверстия были вырезаны ранее (перфектный пассивный инфинитив после seem).",
+        "explanation_ru": "После from нужен герундий (животным разрешают — пассив). Отверстия сделаны в прошлом — перфектный пассивный инфинитив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
@@ -1117,19 +1117,19 @@
         "supplied_words": [],
         "tense_or_construction": "pv_perfect_infinitive",
         "voice": "passive",
-        "explanation_ru": "После from нужен герундий (ежам разрешают — пассив). Отверстия были вырезаны ранее (перфектный пассивный инфинитив после seem).",
+        "explanation_ru": "После from нужен герундий (животным разрешают — пассив). Отверстия сделаны в прошлом — перфектный пассивный инфинитив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "Hedgehogs benefit immensely from being allowed to roam freely across tarmac. These small gaps seem to have been cut into the fences by a thoughtful local handyman."
+    "answer_text": "Small animals benefit a lot from being allowed to walk freely across the road. These small gaps seem to have been cut into the fences by a kind local worker."
   },
   {
     "id": "pv7-D4-092",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The racing pigeon was fortunate ___ by the night-shift cleaners inside the Quiet Coach.",
@@ -1171,7 +1171,7 @@
     "id": "pv7-D4-093",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The massive wheels of Gruyères cheese slowly mature in the cellar by ___ with salt water twice a week.",
@@ -1213,10 +1213,10 @@
     "id": "pv7-D4-094",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Every neighbour hoped (to send) a portion of the celebratory plov from the banquet hall.",
+    "prompt": "Every neighbour hoped (to send) a portion of the party food from the hall.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Hope управляет инфинитивом. Соседи надеялись, что им пришлют угощение (пассив).",
     "rule_refs": [
@@ -1255,13 +1255,13 @@
         ]
       }
     ],
-    "answer_text": "Every neighbour hoped to be sent a portion of the celebratory plov from the banquet hall."
+    "answer_text": "Every neighbour hoped to be sent a portion of the party food from the hall."
   },
   {
     "id": "pv7-D4-095",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Some smallholder farmers in Crete insist on their morning olives (to press) cold that very same evening.",
@@ -1309,19 +1309,19 @@
     "id": "pv7-D4-096",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A rusted cleaver cannot slice vegetables well without (to regrind) properly on wet whetstones.",
+    "prompt": "An old knife cannot cut vegetables well without (to sharpen) properly on wet stones.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Предлог without всегда требует герундия. Нож затачивается мастером (пассивный залог).",
+    "explanation_ru": "Предлог without всегда требует герундия. Нож затачивают — being sharpened.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
     "cell": "D4",
     "genre": "review",
     "seed_id": "S1-126",
-    "skeleton": "a w G w on w .",
+    "skeleton": "an w G w on w .",
     "practice_tenses": [
       "pv_D4",
       "pv_gerund"
@@ -1337,27 +1337,27 @@
     "blanks": [
       {
         "id": "pv7-D4-096-b1",
-        "answer": "being reground",
+        "answer": "being sharpened",
         "accepted_answers": [
-          "being reground"
+          "being sharpened"
         ],
-        "base_verb": "to regrind",
+        "base_verb": "to sharpen",
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "Предлог without всегда требует герундия. Нож затачивается мастером (пассивный залог).",
+        "explanation_ru": "Предлог without всегда требует герундия. Нож затачивают — being sharpened.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "A rusted cleaver cannot slice vegetables well without being reground properly on wet whetstones."
+    "answer_text": "An old knife cannot cut vegetables well without being sharpened properly on wet stones."
   },
   {
     "id": "pv7-D5-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "After the 1839 storm, (it / to report) that ocean salt covered windows far inland.",
@@ -1407,10 +1407,10 @@
     "id": "pv7-D5-002",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "That famous dodo (to know) (to assemble) from goose feathers and wire in 1890.",
+    "prompt": "That famous bird model (to know) (to build) from feathers and wire in 1890.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Известно сейчас (is known), но собрали чучело в прошлом, поэтому нужен перфектный пассивный инфинитив.",
     "rule_refs": [
@@ -1454,11 +1454,11 @@
       },
       {
         "id": "pv7-D5-002-b2",
-        "answer": "to have been assembled",
+        "answer": "to have been built",
         "accepted_answers": [
-          "to have been assembled"
+          "to have been built"
         ],
-        "base_verb": "to assemble",
+        "base_verb": "to build",
         "supplied_words": [],
         "tense_or_construction": "pv_perfect_infinitive",
         "voice": "passive",
@@ -1468,18 +1468,18 @@
         ]
       }
     ],
-    "answer_text": "That famous dodo is known to have been assembled from goose feathers and wire in 1890."
+    "answer_text": "That famous bird model is known to have been built from feathers and wire in 1890."
   },
   {
     "id": "pv7-D5-003",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Millions of sea snails (to think) (to die) for one single bolt of purple silk.",
+    "prompt": "Millions of sea animals (to think) (to die) for one single piece of purple cloth.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Улитки погибли до момента повествования, поэтому после reporting verb ставится перфектный инфинитив (to have died) в активе.",
+    "explanation_ru": "Животные погибли до момента повествования, поэтому после reporting passive нужен перфектный инфинитив (to have died).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
@@ -1514,7 +1514,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Улитки погибли до момента повествования, поэтому после reporting verb ставится перфектный инфинитив (to have died) в активе.",
+        "explanation_ru": "Животные погибли до момента повествования, поэтому после reporting passive нужен перфектный инфинитив (to have died).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
@@ -1529,19 +1529,19 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "Улитки погибли до момента повествования, поэтому после reporting verb ставится перфектный инфинитив (to have died) в активе.",
+        "explanation_ru": "Животные погибли до момента повествования, поэтому после reporting passive нужен перфектный инфинитив (to have died).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "Millions of sea snails are thought to have died for one single bolt of purple silk."
+    "answer_text": "Millions of sea animals are thought to have died for one single piece of purple cloth."
   },
   {
     "id": "pv7-D5-004",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Renaissance court sorbets (to rumour) (to freeze) using snow carried down from the Apennine caves.",
@@ -1607,19 +1607,19 @@
     "id": "pv7-D5-005",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The angry reviewer (to understand) (to substitute) cream of celery soup for the actual broth before complaining.",
+    "prompt": "The angry reviewer (to understand) (to replace) the real soup with a cheap powder before complaining.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Считается (is understood), что комментатор сам заменил ингредиент в прошлом (активный перфектный инфинитив).",
+    "explanation_ru": "Считается (is understood), что рецензент сам заменил суп порошком до жалобы — перфектный инфинитив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
     "cell": "D5",
     "genre": "review",
     "seed_id": "S1-160",
-    "skeleton": "the w G G w of w for the w before w .",
+    "skeleton": "the w G G the w with a w before w .",
     "practice_tenses": [
       "pv_D5",
       "pv_present_simple",
@@ -1646,34 +1646,34 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Считается (is understood), что комментатор сам заменил ингредиент в прошлом (активный перфектный инфинитив).",
+        "explanation_ru": "Считается (is understood), что рецензент сам заменил суп порошком до жалобы — перфектный инфинитив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       },
       {
         "id": "pv7-D5-005-b2",
-        "answer": "to have substituted",
+        "answer": "to have replaced",
         "accepted_answers": [
-          "to have substituted"
+          "to have replaced"
         ],
-        "base_verb": "to substitute",
+        "base_verb": "to replace",
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "Считается (is understood), что комментатор сам заменил ингредиент в прошлом (активный перфектный инфинитив).",
+        "explanation_ru": "Считается (is understood), что рецензент сам заменил суп порошком до жалобы — перфектный инфинитив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "The angry reviewer is understood to have substituted cream of celery soup for the actual broth before complaining."
+    "answer_text": "The angry reviewer is understood to have replaced the real soup with a cheap powder before complaining."
   },
   {
     "id": "pv7-D5-006",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Any Oxford fresher who wears a sword to an exam (to suppose) (to have) the right to demand ale.",
@@ -1739,7 +1739,7 @@
     "id": "pv7-D5-007",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Austrian property deeds before 1998 (to say) (to stitch) together with green linen thread and sealed with wax.",
@@ -1806,7 +1806,7 @@
     "id": "pv7-D5-008",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Early twentieth-century outgoing letters (to believe) (to copy) by pressing the wet ink against damp tissue paper.",
@@ -1873,7 +1873,7 @@
     "id": "pv7-D5-009",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Retiring soap-boilers in Marseille (to say) (to hand) their tasting paddles to their successors at a special ceremony.",
@@ -1940,10 +1940,10 @@
     "id": "pv7-D5-010",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "In Nuremberg, (it / to understand) that a journeyman locksmith forged his master key inside a locked room.",
+    "prompt": "In Nuremberg, (it / to understand) that a young worker made a master key inside a locked room.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Безличная конструкция it is understood that используется для передачи исторического факта или сложившегося понимания.",
     "rule_refs": [
@@ -1952,7 +1952,7 @@
     "cell": "D5",
     "genre": "history",
     "seed_id": "S2-115",
-    "skeleton": "in w , G that a w his w a w .",
+    "skeleton": "in w , G that a w a w a w .",
     "practice_tenses": [
       "pv_D5",
       "pv_reporting_it"
@@ -1985,18 +1985,18 @@
         ]
       }
     ],
-    "answer_text": "In Nuremberg, it is understood that a journeyman locksmith forged his master key inside a locked room."
+    "answer_text": "In Nuremberg, it is understood that a young worker made a master key inside a locked room."
   },
   {
     "id": "pv7-D5-011",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Cash paid at Edwardian counters (to claim) (to shoot) through overhead pneumatic tubes to the central gallery.",
+    "prompt": "Cash paid at old shop counters (to claim) (to send) through overhead pipes to the central room.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Деньги отправлялись по трубам в прошлом, поэтому используется перфектный пассивный инфинитив.",
+    "explanation_ru": "Деньги отправлялись по трубам в прошлом, поэтому используется перфектный пассивный инфинитив (to have been sent).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
@@ -2031,34 +2031,34 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Деньги отправлялись по трубам в прошлом, поэтому используется перфектный пассивный инфинитив.",
+        "explanation_ru": "Деньги отправлялись по трубам в прошлом, поэтому используется перфектный пассивный инфинитив (to have been sent).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       },
       {
         "id": "pv7-D5-011-b2",
-        "answer": "to have been shot",
+        "answer": "to have been sent",
         "accepted_answers": [
-          "to have been shot"
+          "to have been sent"
         ],
-        "base_verb": "to shoot",
+        "base_verb": "to send",
         "supplied_words": [],
         "tense_or_construction": "pv_perfect_infinitive",
         "voice": "passive",
-        "explanation_ru": "Деньги отправлялись по трубам в прошлом, поэтому используется перфектный пассивный инфинитив.",
+        "explanation_ru": "Деньги отправлялись по трубам в прошлом, поэтому используется перфектный пассивный инфинитив (to have been sent).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "Cash paid at Edwardian counters is claimed to have been shot through overhead pneumatic tubes to the central gallery."
+    "answer_text": "Cash paid at old shop counters is claimed to have been sent through overhead pipes to the central room."
   },
   {
     "id": "pv7-D5-012",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My replacement laptop battery (to presume) (to fly) through three different countries before finally landing in Riga.",
@@ -2124,12 +2124,12 @@
     "id": "pv7-D5-013",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Medieval Silk Road camels (to allege) (to wear) stitched rawhide boots whenever they crossed volcanic gravel.",
+    "prompt": "Silk Road camels (to say) (to wear) leather boots whenever they crossed hot stones.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Утверждается (are alleged), что верблюды сами носили эти ботинки в прошлом (активный перфектный инфинитив).",
+    "explanation_ru": "Говорят (are said), что верблюды сами носили эти ботинки в прошлом — активный перфектный инфинитив (to have worn).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
@@ -2154,16 +2154,16 @@
     "blanks": [
       {
         "id": "pv7-D5-013-b1",
-        "answer": "are alleged",
+        "answer": "are said",
         "accepted_answers": [
-          "are alleged",
-          "'re alleged"
+          "are said",
+          "'re said"
         ],
-        "base_verb": "to allege",
+        "base_verb": "to say",
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Утверждается (are alleged), что верблюды сами носили эти ботинки в прошлом (активный перфектный инфинитив).",
+        "explanation_ru": "Говорят (are said), что верблюды сами носили эти ботинки в прошлом — активный перфектный инфинитив (to have worn).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
@@ -2178,19 +2178,19 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "Утверждается (are alleged), что верблюды сами носили эти ботинки в прошлом (активный перфектный инфинитив).",
+        "explanation_ru": "Говорят (are said), что верблюды сами носили эти ботинки в прошлом — активный перфектный инфинитив (to have worn).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "Medieval Silk Road camels are alleged to have worn stitched rawhide boots whenever they crossed volcanic gravel."
+    "answer_text": "Silk Road camels are said to have worn leather boots whenever they crossed hot stones."
   },
   {
     "id": "pv7-D5-014",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A returning merchant seaman's chest (to expect) (to mark) with a chalk cross once his tobacco had been declared.",
@@ -2255,7 +2255,7 @@
     "id": "pv7-D5-015",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Old Cairo hotel labels (to think) (to paste) onto wealthy guests' steamer trunks strictly for advertising purposes.",
@@ -2322,10 +2322,10 @@
     "id": "pv7-D5-016",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Guests love the tower room. (it / to report) in the brochure that the spiral staircase was built left-handed in 1540. A defending swordsman (to suppose) (to need) room to swing his right arm.",
+    "prompt": "Guests love the tower room. (it / to report) in the brochure that the spiral stairs were built left-handed in 1540. A defending soldier (to suppose) (to need) room to swing his right arm.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "В брошюре сообщается сейчас (It is reported). Предполагается, что мечнику требовалось место в прошлом (перфектный активный инфинитив to have needed).",
     "rule_refs": [
@@ -2334,7 +2334,7 @@
     "cell": "D5",
     "genre": "history",
     "seed_id": "S3-030",
-    "skeleton": "w the w . G in the w that the w was w IN_1540 . a w G G w to w his w .",
+    "skeleton": "w the w . G in the w that the w were w IN_1540 . a w G G w to w his w .",
     "practice_tenses": [
       "pv_D5",
       "pv_reporting_it",
@@ -2403,16 +2403,16 @@
         ]
       }
     ],
-    "answer_text": "Guests love the tower room. It is reported in the brochure that the spiral staircase was built left-handed in 1540. A defending swordsman is supposed to have needed room to swing his right arm."
+    "answer_text": "Guests love the tower room. It is reported in the brochure that the spiral stairs were built left-handed in 1540. A defending soldier is supposed to have needed room to swing his right arm."
   },
   {
     "id": "pv7-D5-017",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Have you heard about the Leiden canal? Bridge tolls (to say) (to collect) with a wooden clog on a fishing rod. (it / to consider) a very effective method in the 1930s.",
+    "prompt": "Have you heard about the old bridge in Leiden? The fees for crossing (to say) (to collect) with a basket on a fishing rod. (it / to consider) a very good method in the 1930s.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Говорят сейчас, что пошлины собирались в прошлом (перфектный пассив). Во втором предложении действие полностью в прошлом (It was considered).",
     "rule_refs": [
@@ -2421,7 +2421,7 @@
     "cell": "D5",
     "genre": "history",
     "seed_id": "S3-049",
-    "skeleton": "have you w about the w ? w G G with a w on a w . G a w in the 1930 w .",
+    "skeleton": "have you w about the w in w ? the w for w G G with a w on a w . G a w in the 1930 w .",
     "practice_tenses": [
       "pv_D5",
       "pv_present_simple",
@@ -2488,16 +2488,16 @@
         ]
       }
     ],
-    "answer_text": "Have you heard about the Leiden canal? Bridge tolls are said to have been collected with a wooden clog on a fishing rod. It was considered a very effective method in the 1930s."
+    "answer_text": "Have you heard about the old bridge in Leiden? The fees for crossing are said to have been collected with a basket on a fishing rod. It was considered a very good method in the 1930s."
   },
   {
     "id": "pv7-D5-018",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Mail-coach guards (to know) (to carry) a blunderbuss and a brass horn. If the turnpike gate was closed, the keeper (to require) (to pay) a hefty fine.",
+    "prompt": "Mail-coach guards (to know) (to carry) a gun and a brass horn. If the toll gate was closed, the keeper (to require) (to pay) a large fine.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Охранники носили оружие в прошлом (to have carried). Смотрителя ворот обязывали в тот же момент в прошлом платить штраф (was required to pay).",
     "rule_refs": [
@@ -2586,13 +2586,13 @@
         ]
       }
     ],
-    "answer_text": "Mail-coach guards are known to have carried a blunderbuss and a brass horn. If the turnpike gate was closed, the keeper was required to pay a hefty fine."
+    "answer_text": "Mail-coach guards are known to have carried a gun and a brass horn. If the toll gate was closed, the keeper was required to pay a large fine."
   },
   {
     "id": "pv7-D5-019",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Real-tennis balls are unique. They (to believe) (to contain) a core of champagne corks. The cloth covers (to guarantee) (to sew) entirely by hand even today.",
@@ -2691,19 +2691,19 @@
     "id": "pv7-D5-020",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "For decades, the 1967 master tapes (to assume) (to wipe) for reuse. However, (it / to state) recently that an engineer found a mono copy in a biscuit tin.",
+    "prompt": "For decades, the 1967 master tapes (to assume) (to throw away) long ago. However, (it / to state) recently that an engineer found a copy in a biscuit tin.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "В прошлом предполагалось (were assumed), что пленки были стерты до этого (перфектный пассив). Затем кто-то недавно сделал заявление (it was stated).",
+    "explanation_ru": "В прошлом предполагалось (were assumed), что плёнки выбросили ещё раньше (to have been thrown away). It was stated — безличная конструкция.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
     "cell": "D5",
     "genre": "history",
     "seed_id": "S3-158",
-    "skeleton": "for w , the 1967 w G G for w . w , G RECENTLY that an w a w in a w .",
+    "skeleton": "for w , the 1967 w G G w AGO . w , G RECENTLY that an w a w in a w .",
     "practice_tenses": [
       "pv_D5",
       "pv_past_simple",
@@ -2731,22 +2731,22 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "В прошлом предполагалось (were assumed), что пленки были стерты до этого (перфектный пассив). Затем кто-то недавно сделал заявление (it was stated).",
+        "explanation_ru": "В прошлом предполагалось (were assumed), что плёнки выбросили ещё раньше (to have been thrown away). It was stated — безличная конструкция.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       },
       {
         "id": "pv7-D5-020-b2",
-        "answer": "to have been wiped",
+        "answer": "to have been thrown away",
         "accepted_answers": [
-          "to have been wiped"
+          "to have been thrown away"
         ],
-        "base_verb": "to wipe",
+        "base_verb": "to throw away",
         "supplied_words": [],
         "tense_or_construction": "pv_perfect_infinitive",
         "voice": "passive",
-        "explanation_ru": "В прошлом предполагалось (were assumed), что пленки были стерты до этого (перфектный пассив). Затем кто-то недавно сделал заявление (it was stated).",
+        "explanation_ru": "В прошлом предполагалось (were assumed), что плёнки выбросили ещё раньше (to have been thrown away). It was stated — безличная конструкция.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
@@ -2764,19 +2764,19 @@
         ],
         "tense_or_construction": "pv_reporting_it",
         "voice": "passive",
-        "explanation_ru": "В прошлом предполагалось (were assumed), что пленки были стерты до этого (перфектный пассив). Затем кто-то недавно сделал заявление (it was stated).",
+        "explanation_ru": "В прошлом предполагалось (were assumed), что плёнки выбросили ещё раньше (to have been thrown away). It was stated — безличная конструкция.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "For decades, the 1967 master tapes were assumed to have been wiped for reuse. However, it was stated recently that an engineer found a mono copy in a biscuit tin."
+    "answer_text": "For decades, the 1967 master tapes were assumed to have been thrown away long ago. However, it was stated recently that an engineer found a copy in a biscuit tin."
   },
   {
     "id": "pv7-D5-021",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Victorian theatre lighting was dangerous. Gas footlights (to know) (to control) from a brass valve-table in the prompt corner. The operator (to rumour) (to sit) right next to the open flames during the whole performance.",
@@ -2877,7 +2877,7 @@
     "id": "pv7-D5-022",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Running a 1975 cinema required skill. A tiny silver dot on the film frame (to say) (to warn) the projectionist. (it / to expect) that he would start the second motor exactly on time.",
@@ -2964,10 +2964,10 @@
     "id": "pv7-D5-023",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Some ivory miniatures in Windsor (to believe) (to paint) with single-hair squirrel brushes. Because they warp easily, (it / to consider) strictly forbidden to place them near hot spotlights.",
+    "prompt": "Some small ivory paintings in Windsor (to believe) (to paint) with single-hair brushes. Because they bend easily, (it / to consider) strictly forbidden to place them near hot lights.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Миниатюры были нарисованы в прошлом (to have been painted). В настоящее время считается запрещенным их нагревать (it is considered).",
     "rule_refs": [
@@ -3043,16 +3043,16 @@
         ]
       }
     ],
-    "answer_text": "Some ivory miniatures in Windsor are believed to have been painted with single-hair squirrel brushes. Because they warp easily, it is considered strictly forbidden to place them near hot spotlights."
+    "answer_text": "Some small ivory paintings in Windsor are believed to have been painted with single-hair brushes. Because they bend easily, it is considered strictly forbidden to place them near hot lights."
   },
   {
     "id": "pv7-D5-024",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "By 1805, citrus juice ___ exhaustion on long sea trips, so crews received fresh limes.",
+    "prompt": "By 1805, fruit juice ___ sickness on long sea trips, so crews received fresh lemons.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Конструкция Subject + was understood + to do. Цитрусовый сок предотвращал цингу, поэтому инфинитив активный.",
     "rule_refs": [
@@ -3084,17 +3084,17 @@
       0
     ],
     "answer": "was understood to prevent",
-    "summary": "By 1805, citrus juice was understood to prevent exhaustion on long sea trips, so crews received fresh limes.",
-    "answer_text": "By 1805, citrus juice was understood to prevent exhaustion on long sea trips, so crews received fresh limes."
+    "summary": "By 1805, fruit juice was understood to prevent sickness on long sea trips, so crews received fresh lemons.",
+    "answer_text": "By 1805, fruit juice was understood to prevent sickness on long sea trips, so crews received fresh lemons."
   },
   {
     "id": "pv7-D5-025",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Leeuwenhoek's single-lens microscopes are thought ___ from soda-lime glass beads no bigger than a pinhead.",
+    "prompt": "Early single-lens microscopes are thought ___ from small glass beads no bigger than a seed.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Микроскопы были отшлифованы в прошлом (предшествование), и над ними совершали действие (пассив).",
     "rule_refs": [
@@ -3126,14 +3126,14 @@
       0
     ],
     "answer": "to have been ground",
-    "summary": "Leeuwenhoek's single-lens microscopes are thought to have been ground from soda-lime glass beads no bigger than a pinhead.",
-    "answer_text": "Leeuwenhoek's single-lens microscopes are thought to have been ground from soda-lime glass beads no bigger than a pinhead."
+    "summary": "Early single-lens microscopes are thought to have been ground from small glass beads no bigger than a seed.",
+    "answer_text": "Early single-lens microscopes are thought to have been ground from small glass beads no bigger than a seed."
   },
   {
     "id": "pv7-D5-026",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Bitter herbal pills ___ in silver leaf so eighteenth-century patients could swallow them easily.",
@@ -3175,10 +3175,10 @@
     "id": "pv7-D5-027",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Several tonnes of pitchblende ore ___ down in a draughty courtyard shed to isolate radium.",
+    "prompt": "Several tonnes of rock ___ down in a cold shed to make a new metal.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Факт известен сейчас (are known), а руду кипятили в прошлом, поэтому нужен перфектный пассивный инфинитив.",
     "rule_refs": [
@@ -3187,7 +3187,7 @@
     "cell": "D5",
     "genre": "history",
     "seed_id": "S4-057",
-    "skeleton": "w of w G w in a w to w .",
+    "skeleton": "w of w G w in a w to w a w .",
     "practice_tenses": [
       "pv_D5",
       "pv_perfect_infinitive"
@@ -3210,14 +3210,14 @@
       0
     ],
     "answer": "are known to have been boiled",
-    "summary": "Several tonnes of pitchblende ore are known to have been boiled down in a draughty courtyard shed to isolate radium.",
-    "answer_text": "Several tonnes of pitchblende ore are known to have been boiled down in a draughty courtyard shed to isolate radium."
+    "summary": "Several tonnes of rock are known to have been boiled down in a cold shed to make a new metal.",
+    "answer_text": "Several tonnes of rock are known to have been boiled down in a cold shed to make a new metal."
   },
   {
     "id": "pv7-D5-028",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The paper tape is reported that it tore if fed through the photo-cells too quickly.",
@@ -3254,10 +3254,10 @@
     "id": "pv7-D5-029",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The first transatlantic telegraph cable is believed to be failed because too much voltage was applied.",
+    "prompt": "The first cable under the Atlantic is believed to be failed because too much power was used.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Кабель сломался сам (актив), и это произошло в прошлом. Нужен перфектный активный инфинитив: to have failed.",
     "rule_refs": [
@@ -3266,7 +3266,7 @@
     "cell": "D5",
     "genre": "history",
     "seed_id": "S4-153",
-    "skeleton": "the w is w to be w because w was w .",
+    "skeleton": "the w the w is w to be w because w was w .",
     "practice_tenses": [
       "pv_D5",
       "pv_perfect_infinitive"
@@ -3278,18 +3278,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "The first transatlantic telegraph cable is believed to have failed because too much voltage was applied.",
+    "answer": "The first cable under the Atlantic is believed to have failed because too much power was used.",
     "accepted_answers": [
-      "The first transatlantic telegraph cable is believed to have failed because too much voltage was applied."
+      "The first cable under the Atlantic is believed to have failed because too much power was used."
     ],
-    "answer_text": "The first transatlantic telegraph cable is believed to have failed because too much voltage was applied.",
+    "answer_text": "The first cable under the Atlantic is believed to have failed because too much power was used.",
     "has_error": true
   },
   {
     "id": "pv7-D5-030",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The disputed codicil on the millionaire's will (to prove) (to write) with a pen that did not exist at the time.",
@@ -3357,12 +3357,12 @@
     "id": "pv7-D5-031",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "In 1875, thieves tried to tunnel into a London bank vault. People say their squeaky wheelbarrow gave them away. Which sentence means this?",
+    "prompt": "In 1875, thieves tried to dig into a London bank. People say their noisy cart gave them away. Which sentence means this?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
-    "explanation_ru": "Вор выдала тачка (пассив). Действие произошло в 1875 году, поэтому после are said используется to have been given away.",
+    "explanation_ru": "Воров выдала тележка (пассив). Действие произошло в 1875 году, поэтому нужен перфектный пассивный инфинитив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
@@ -3382,24 +3382,24 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "The tunnellers are said to have been given away by their wheelbarrow.",
-      "The tunnellers are said to give away by their wheelbarrow.",
-      "It is said the tunnellers to have been given away by their wheelbarrow.",
-      "The tunnellers say to have been given away by their wheelbarrow."
+      "The thieves are said to have been given away by their cart.",
+      "The thieves are said to give away by their cart.",
+      "It is said the thieves to have been given away by their cart.",
+      "The thieves say to have been given away by their cart."
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "The tunnellers are said to have been given away by their wheelbarrow.",
-    "summary": "The tunnellers are said to have been given away by their wheelbarrow.",
-    "answer_text": "The tunnellers are said to have been given away by their wheelbarrow."
+    "answer": "The thieves are said to have been given away by their cart.",
+    "summary": "The thieves are said to have been given away by their cart.",
+    "answer_text": "The thieves are said to have been given away by their cart."
   },
   {
     "id": "pv7-D5-032",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Peat cutters found a lump of butter from 3,000 years ago. According to the news, it still smells faintly of cheese today. Which reporting structure is correct?",
@@ -3441,7 +3441,7 @@
     "id": "pv7-D5-033",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A captain's parrot from 1755 (to claim) (to swear) fluently in three different languages.",
@@ -3507,7 +3507,7 @@
     "id": "pv7-D5-034",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The shed key (to suppose) (to hide) where only the robins can find it.",
@@ -3573,7 +3573,7 @@
     "id": "pv7-D5-035",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The winning pub quiz team (to rumour) (to check) their phones under the table during the history round.",
@@ -3640,7 +3640,7 @@
     "id": "pv7-D5-036",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Commuters on the London Underground (to expect) (not / to feed) the station mouse under any circumstances.",
@@ -3708,10 +3708,10 @@
     "id": "pv7-D5-037",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The night-duty technician (to say) (to find) two paperclips wedged under the space bar of the broken keyboard.",
+    "prompt": "The night worker (to say) (to find) two coins stuck under the space bar of the broken keyboard.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Говорят об этом сейчас (is said), но скрепки были найдены до этого, поэтому после Reporting Verb ставится перфектный инфинитив (to have found).",
     "rule_refs": [
@@ -3768,16 +3768,16 @@
         ]
       }
     ],
-    "answer_text": "The night-duty technician is said to have found two paperclips wedged under the space bar of the broken keyboard."
+    "answer_text": "The night worker is said to have found two coins stuck under the space bar of the broken keyboard."
   },
   {
     "id": "pv7-D5-038",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Nowadays, (it / to assume) that rosewater and almond hand cream are still compounded from 1612 monastic formularies.",
+    "prompt": "Nowadays, (it / to assume) that rose hand cream is still made from a recipe from 1612.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Безличная конструкция it is assumed (предполагается), так как нет конкретного подлежащего, совершающего действие. Факт актуален для настоящего времени.",
     "rule_refs": [
@@ -3786,7 +3786,7 @@
     "cell": "D5",
     "genre": "history",
     "seed_id": "S4-115",
-    "skeleton": "NOW w , G that w and w are still w from 1612 w .",
+    "skeleton": "NOW w , G that w is still w from a w from 1612 .",
     "practice_tenses": [
       "pv_D5",
       "pv_reporting_it"
@@ -3818,16 +3818,16 @@
         ]
       }
     ],
-    "answer_text": "Nowadays, it is assumed that rosewater and almond hand cream are still compounded from 1612 monastic formularies."
+    "answer_text": "Nowadays, it is assumed that rose hand cream is still made from a recipe from 1612."
   },
   {
     "id": "pv7-D5-039",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The ward recovery rate in 1847 (to report) (to rise) significantly after handwashing was introduced.",
+    "prompt": "The hospital recovery rate in 1847 (to report) (to rise) significantly after washing hands was introduced.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Процент выздоровления вырос (to have risen — перфектный инфинитив, так как действие было в прошлом), а сообщают об этом сейчас (is reported).",
     "rule_refs": [
@@ -3885,25 +3885,25 @@
         ]
       }
     ],
-    "answer_text": "The ward recovery rate in 1847 is reported to have risen significantly after handwashing was introduced."
+    "answer_text": "The hospital recovery rate in 1847 is reported to have risen significantly after washing hands was introduced."
   },
   {
     "id": "pv7-D5-040",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "That masked intruder rattling the conservatory latch (to think) (to be) just an escaped pet raccoon.",
+    "prompt": "That man in a mask shaking the garden door (to think) (to be) just a neighbour playing a joke.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Енот был там в прошлом (перфектный инфинитив to have been), а думают об этом сейчас (is thought).",
+    "explanation_ru": "Тот, кто был за дверью, был там в прошлом: перфектный инфинитив (to have been).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
     "cell": "D5",
     "genre": "chat",
     "seed_id": "S4-175",
-    "skeleton": "that w the w G G JUST an w .",
+    "skeleton": "that w in a w the w G G JUST a w a w .",
     "practice_tenses": [
       "pv_D5",
       "pv_present_simple",
@@ -3930,7 +3930,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Енот был там в прошлом (перфектный инфинитив to have been), а думают об этом сейчас (is thought).",
+        "explanation_ru": "Тот, кто был за дверью, был там в прошлом: перфектный инфинитив (to have been).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
@@ -3946,19 +3946,19 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "Енот был там в прошлом (перфектный инфинитив to have been), а думают об этом сейчас (is thought).",
+        "explanation_ru": "Тот, кто был за дверью, был там в прошлом: перфектный инфинитив (to have been).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "That masked intruder rattling the conservatory latch is thought to have been just an escaped pet raccoon."
+    "answer_text": "That man in a mask shaking the garden door is thought to have been just a neighbour playing a joke."
   },
   {
     "id": "pv7-D5-041",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Before digital scanners, ten-print cards (to understand) (to classify) by counting ridges with a magnifying glass.",
@@ -4025,7 +4025,7 @@
     "id": "pv7-D5-042",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "That ancient Pompeii fresco (to consider) (to show) exactly what locals ate on the go.",
@@ -4091,7 +4091,7 @@
     "id": "pv7-D5-043",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At the Tower, (it / to believe) that the kingdom will fall if the ravens ever leave.",
@@ -4141,7 +4141,7 @@
     "id": "pv7-D5-044",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Whoever is learning the trumpet on the third floor (to expect) (not / to practise) after ten o'clock.",
@@ -4209,7 +4209,7 @@
     "id": "pv7-D5-045",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In Switzerland, (it / to consider) incredibly ironic when a Zurich train was featured in the local paper for leaving forty seconds late.",
@@ -4259,10 +4259,10 @@
     "id": "pv7-D5-046",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Harvest workers (to suppose) (to flood) the dry cranberry beds with thirty centimetres of water before November.",
+    "prompt": "Harvest workers (to suppose) (to flood) the dry berry fields with thirty centimetres of water before November.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Рабочие должны затапливать поля (are supposed — настоящее время, to flood — простой инфинитив, так как это регулярное, повторяющееся действие).",
     "rule_refs": [
@@ -4319,16 +4319,16 @@
         ]
       }
     ],
-    "answer_text": "Harvest workers are supposed to flood the dry cranberry beds with thirty centimetres of water before November."
+    "answer_text": "Harvest workers are supposed to flood the dry berry fields with thirty centimetres of water before November."
   },
   {
     "id": "pv7-D5-047",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Underground hot-water pipes (to know) (to keep) the Sapporo platform edge completely clear of snowdrifts.",
+    "prompt": "Underground hot-water pipes (to know) (to keep) the Sapporo platform edge completely clear of snow.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Известно, что трубы сохраняют платформу чистой сейчас (и вообще), поэтому нужен простой активный инфинитив (to keep).",
     "rule_refs": [
@@ -4337,7 +4337,7 @@
     "cell": "D5",
     "genre": "report",
     "seed_id": "S1-027",
-    "skeleton": "w G G the w of w NOW w .",
+    "skeleton": "w G G the w of w NOW .",
     "practice_tenses": [
       "pv_D5",
       "pv_present_simple",
@@ -4385,25 +4385,25 @@
         ]
       }
     ],
-    "answer_text": "Underground hot-water pipes are known to keep the Sapporo platform edge completely clear of snowdrifts."
+    "answer_text": "Underground hot-water pipes are known to keep the Sapporo platform edge completely clear of snow."
   },
   {
     "id": "pv7-D5-048",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Custom-fitted rubber boots (to claim) (to strap) onto a racing camel's hooves after foot surgery.",
+    "prompt": "Custom-made rubber boots (to claim) (to fit) to a racing camel's feet after foot surgery.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Ботинки надевают верблюдам (пассивный инфинитив to be strapped), и утверждается, что это регулярная практика (are claimed).",
+    "explanation_ru": "Ботинки надевают верблюдам (пассивный инфинитив to be fitted).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
     "cell": "D5",
     "genre": "report",
     "seed_id": "S1-064",
-    "skeleton": "w G G w a w after w .",
+    "skeleton": "w G G to a w after w .",
     "practice_tenses": [
       "pv_D5",
       "pv_present_simple",
@@ -4430,34 +4430,34 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Ботинки надевают верблюдам (пассивный инфинитив to be strapped), и утверждается, что это регулярная практика (are claimed).",
+        "explanation_ru": "Ботинки надевают верблюдам (пассивный инфинитив to be fitted).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       },
       {
         "id": "pv7-D5-048-b2",
-        "answer": "to be strapped",
+        "answer": "to be fitted",
         "accepted_answers": [
-          "to be strapped"
+          "to be fitted"
         ],
-        "base_verb": "to strap",
+        "base_verb": "to fit",
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "Ботинки надевают верблюдам (пассивный инфинитив to be strapped), и утверждается, что это регулярная практика (are claimed).",
+        "explanation_ru": "Ботинки надевают верблюдам (пассивный инфинитив to be fitted).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "Custom-fitted rubber boots are claimed to be strapped onto a racing camel's hooves after foot surgery."
+    "answer_text": "Custom-made rubber boots are claimed to be fitted to a racing camel's feet after foot surgery."
   },
   {
     "id": "pv7-D5-049",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A local vixen (to believe) (to take) the missing cycling shoe to her earth three hundred yards away.",
@@ -4523,7 +4523,7 @@
     "id": "pv7-D5-050",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The third-floor flat owner (to rumour) (to eat) all three margherita pizzas before the real customer rang up.",
@@ -4590,7 +4590,7 @@
     "id": "pv7-D5-051",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Two hundred porcelain cups of silver-tip tea (to estimate) (to evaluate) during the session without a single sip being swallowed.",
@@ -4656,10 +4656,10 @@
     "id": "pv7-D5-052",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Next month, (it / to expect) that the old copper saucepans will be recoated with molten tin over a charcoal forge.",
+    "prompt": "Next month, (it / to expect) that the old copper pans will be covered again with a thin layer of tin.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Безличная конструкция It is expected (ожидается), которая вводит будущее действие через that.",
     "rule_refs": [
@@ -4668,7 +4668,7 @@
     "cell": "D5",
     "genre": "process",
     "seed_id": "S1-135",
-    "skeleton": "NEXT_MONTH , G that the w will be w with w over a w .",
+    "skeleton": "NEXT_MONTH , G that the w will be w with a w of w .",
     "practice_tenses": [
       "pv_D5",
       "pv_reporting_it"
@@ -4700,16 +4700,16 @@
         ]
       }
     ],
-    "answer_text": "Next month, it is expected that the old copper saucepans will be recoated with molten tin over a charcoal forge."
+    "answer_text": "Next month, it is expected that the old copper pans will be covered again with a thin layer of tin."
   },
   {
     "id": "pv7-D5-053",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Every village household (to suppose) (to receive) a two-hour slot to bake walnut rye bread in the communal stone oven.",
+    "prompt": "Every village household (to suppose) (to receive) a two-hour slot to bake bread in the shared stone oven.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Предполагается (is supposed), что каждая семья сама получает свое время у печи (простой активный инфинитив to receive).",
     "rule_refs": [
@@ -4766,13 +4766,13 @@
         ]
       }
     ],
-    "answer_text": "Every village household is supposed to receive a two-hour slot to bake walnut rye bread in the communal stone oven."
+    "answer_text": "Every village household is supposed to receive a two-hour slot to bake bread in the shared stone oven."
   },
   {
     "id": "pv7-D5-054",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Despite the IT contractor's rewiring, Desk 7 (to report) (to broadcast) the Spanish listening track to the German class right now.",
@@ -4838,7 +4838,7 @@
     "id": "pv7-D5-055",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Currently, (it / to know) that dinner money accounts are topped up online and checked by thumbprint at the till.",
@@ -4888,12 +4888,12 @@
     "id": "pv7-D5-056",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Leftover traybakes (to say) (to wrap) in wax paper at five o'clock and handed out free in the computer cluster.",
+    "prompt": "Spare cakes (to say) (to pack) in paper at five o'clock and given out free in the computer room.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Говорят (are said), что остатки заворачивают (простой пассивный инфинитив to be wrapped).",
+    "explanation_ru": "Говорят (are said), что остатки пирожных упаковывают (простой пассивный инфинитив to be packed).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
@@ -4927,37 +4927,37 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Говорят (are said), что остатки заворачивают (простой пассивный инфинитив to be wrapped).",
+        "explanation_ru": "Говорят (are said), что остатки пирожных упаковывают (простой пассивный инфинитив to be packed).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       },
       {
         "id": "pv7-D5-056-b2",
-        "answer": "to be wrapped",
+        "answer": "to be packed",
         "accepted_answers": [
-          "to be wrapped"
+          "to be packed"
         ],
-        "base_verb": "to wrap",
+        "base_verb": "to pack",
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "Говорят (are said), что остатки заворачивают (простой пассивный инфинитив to be wrapped).",
+        "explanation_ru": "Говорят (are said), что остатки пирожных упаковывают (простой пассивный инфинитив to be packed).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "Leftover traybakes are said to be wrapped in wax paper at five o'clock and handed out free in the computer cluster."
+    "answer_text": "Spare cakes are said to be packed in paper at five o'clock and given out free in the computer room."
   },
   {
     "id": "pv7-D5-057",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The ceremony was a bit chaotic. (it / to state) that the envelopes had been mixed up beforehand. The prize winners (to think) (to swap) them back over tea.",
+    "prompt": "The ceremony was a bit crazy. (it / to state) that the envelopes had been mixed up before it began. The prize winners (to think) (to swap) them back over tea.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Заявляется (It is stated) о факте. Победители поменялись конвертами в прошлом (перфектный инфинитив to have swapped), а думают об этом сейчас (are thought).",
     "rule_refs": [
@@ -4966,7 +4966,7 @@
     "cell": "D5",
     "genre": "dialogue",
     "seed_id": "S2-017",
-    "skeleton": "the w was a w . G that the w had been w . the w G G them w over w .",
+    "skeleton": "the w was a w . G that the w had been w before it w . the w G G them w over w .",
     "practice_tenses": [
       "pv_D5",
       "pv_reporting_it",
@@ -5035,16 +5035,16 @@
         ]
       }
     ],
-    "answer_text": "The ceremony was a bit chaotic. It is stated that the envelopes had been mixed up beforehand. The prize winners are thought to have swapped them back over tea."
+    "answer_text": "The ceremony was a bit crazy. It is stated that the envelopes had been mixed up before it began. The prize winners are thought to have swapped them back over tea."
   },
   {
     "id": "pv7-D5-058",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "These new standing desks are very safe. They (to presume) (to stop) automatically if a mug handle gets caught underneath. (it / to understand) that an electric sensor controls this feature.",
+    "prompt": "These new standing desks are very safe. They (to presume) (to stop) automatically if a cup gets caught underneath. (it / to understand) that a small computer controls this feature.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Предполагается, что столы останавливаются сами (to stop — простой активный инфинитив). Безличная форма It is understood вводит факт.",
     "rule_refs": [
@@ -5053,7 +5053,7 @@
     "cell": "D5",
     "genre": "instructions",
     "seed_id": "S2-044",
-    "skeleton": "these w are w . they G G w if a w . G that an w this w .",
+    "skeleton": "these w are w . they G G w if a w . G that a w this w .",
     "practice_tenses": [
       "pv_D5",
       "pv_present_simple",
@@ -5120,25 +5120,25 @@
         ]
       }
     ],
-    "answer_text": "These new standing desks are very safe. They are presumed to stop automatically if a mug handle gets caught underneath. It is understood that an electric sensor controls this feature."
+    "answer_text": "These new standing desks are very safe. They are presumed to stop automatically if a cup gets caught underneath. It is understood that a small computer controls this feature."
   },
   {
     "id": "pv7-D5-059",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "New riders on probation have good conditions. (it / to claim) that every rookie is lent a cargo bike and a waterproof cape. The deposit (to assume) (to deduct) in three small instalments from their wages.",
+    "prompt": "New delivery riders have good conditions. (it / to claim) that every new rider is lent a cargo bike and a rain jacket. The deposit (to assume) (to remove) in three small payments from their wages.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Безличная конструкция It is claimed. Залог удерживается из зарплаты регулярно, поэтому простой пассивный инфинитив (to be deducted).",
+    "explanation_ru": "Безличная конструкция It is claimed. Залог удерживают из зарплаты — пассивный инфинитив (to be removed).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
     "cell": "D5",
     "genre": "instructions",
     "seed_id": "S2-092",
-    "skeleton": "w on w have w . G that EVERY_ROOKIE is w a w and a w . the w G G in w from their w .",
+    "skeleton": "w have w . G that EVERY_NEW w is w a w and a w . the w G G in w from their w .",
     "practice_tenses": [
       "pv_D5",
       "pv_reporting_it",
@@ -5168,7 +5168,7 @@
         ],
         "tense_or_construction": "pv_reporting_it",
         "voice": "passive",
-        "explanation_ru": "Безличная конструкция It is claimed. Залог удерживается из зарплаты регулярно, поэтому простой пассивный инфинитив (to be deducted).",
+        "explanation_ru": "Безличная конструкция It is claimed. Залог удерживают из зарплаты — пассивный инфинитив (to be removed).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
@@ -5184,37 +5184,37 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Безличная конструкция It is claimed. Залог удерживается из зарплаты регулярно, поэтому простой пассивный инфинитив (to be deducted).",
+        "explanation_ru": "Безличная конструкция It is claimed. Залог удерживают из зарплаты — пассивный инфинитив (to be removed).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       },
       {
         "id": "pv7-D5-059-b3",
-        "answer": "to be deducted",
+        "answer": "to be removed",
         "accepted_answers": [
-          "to be deducted"
+          "to be removed"
         ],
-        "base_verb": "to deduct",
+        "base_verb": "to remove",
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "Безличная конструкция It is claimed. Залог удерживается из зарплаты регулярно, поэтому простой пассивный инфинитив (to be deducted).",
+        "explanation_ru": "Безличная конструкция It is claimed. Залог удерживают из зарплаты — пассивный инфинитив (to be removed).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-reporting"
         ]
       }
     ],
-    "answer_text": "New riders on probation have good conditions. It is claimed that every rookie is lent a cargo bike and a waterproof cape. The deposit is assumed to be deducted in three small instalments from their wages."
+    "answer_text": "New delivery riders have good conditions. It is claimed that every new rider is lent a cargo bike and a rain jacket. The deposit is assumed to be removed in three small payments from their wages."
   },
   {
     "id": "pv7-D5-060",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "This spatial-memory test is extremely challenging. Cadet controllers (to rumour) (to put) through a simulated radar storm. During the exercise, six aircraft (to expect) (to request) emergency diversions at the same time.",
+    "prompt": "This memory test is extremely hard. New air-traffic controllers (to rumour) (to put) through a fake storm. During the exercise, six planes (to expect) (to ask) to change direction at the same time.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Ходят слухи, что кадетов подвергают испытанию (to be put — пассивный инфинитив). Самолеты запрашивают посадку сами (to request — актив).",
     "rule_refs": [
@@ -5223,7 +5223,7 @@
     "cell": "D5",
     "genre": "process",
     "seed_id": "S2-097",
-    "skeleton": "this w is w . w G G w a w . w the w , w G G w at the w .",
+    "skeleton": "this w is w . w G G w a w . w the w , w G G to w at the w .",
     "practice_tenses": [
       "pv_D5",
       "pv_present_simple",
@@ -5290,11 +5290,11 @@
       },
       {
         "id": "pv7-D5-060-b4",
-        "answer": "to request",
+        "answer": "to ask",
         "accepted_answers": [
-          "to request"
+          "to ask"
         ],
-        "base_verb": "to request",
+        "base_verb": "to ask",
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
@@ -5304,16 +5304,16 @@
         ]
       }
     ],
-    "answer_text": "This spatial-memory test is extremely challenging. Cadet controllers are rumoured to be put through a simulated radar storm. During the exercise, six aircraft are expected to request emergency diversions at the same time."
+    "answer_text": "This memory test is extremely hard. New air-traffic controllers are rumoured to be put through a fake storm. During the exercise, six planes are expected to ask to change direction at the same time."
   },
   {
     "id": "pv7-D5-061",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our bridesmaid loved the alteration studio. Her silk dress (to say) (to take up) three centimetres on Tuesday. (it / to rumour) that the seamstress sewed a tiny blue glass bead inside the lining for luck.",
+    "prompt": "Our friend loved the dress shop. Her silk dress (to say) (to take up) three centimetres on Tuesday. (it / to rumour) that the shop owner sewed a tiny blue button inside the dress for luck.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Платье укоротили в прошлом (перфектный пассивный инфинитив to have been taken up). It is presumed — безличная форма.",
     "rule_refs": [
@@ -5389,16 +5389,16 @@
         ]
       }
     ],
-    "answer_text": "Our bridesmaid loved the alteration studio. Her silk dress is said to have been taken up three centimetres on Tuesday. It is rumoured that the seamstress sewed a tiny blue glass bead inside the lining for luck."
+    "answer_text": "Our friend loved the dress shop. Her silk dress is said to have been taken up three centimetres on Tuesday. It is rumoured that the shop owner sewed a tiny blue button inside the dress for luck."
   },
   {
     "id": "pv7-D5-062",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Making bespoke spectacles is quite a long process. (it / to say) that the nose bridge is meticulously measured with callipers first. Then, the cellulose-acetate frame (to say) (to polish) in a barrel of beechwood pegs for four days.",
+    "prompt": "Making glasses by hand is quite a long process. (it / to say) that the nose part is carefully measured first. Then, the plastic frame (to say) (to polish) in a barrel for four days.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Утверждается сейчас (It is alleged / is declared). Оправу полируют другие люди, поэтому используется простой пассивный инфинитив (to be polished).",
     "rule_refs": [
@@ -5407,7 +5407,7 @@
     "cell": "D5",
     "genre": "process",
     "seed_id": "S2-135",
-    "skeleton": "w is w a w . G that the w is w with w . w , the w G G in a w of w for w .",
+    "skeleton": "w by w is w a w . G that the w is w . w , the w G G in a w for w .",
     "practice_tenses": [
       "pv_D5",
       "pv_reporting_it",
@@ -5474,13 +5474,13 @@
         ]
       }
     ],
-    "answer_text": "Making bespoke spectacles is quite a long process. It is said that the nose bridge is meticulously measured with callipers first. Then, the cellulose-acetate frame is said to be polished in a barrel of beechwood pegs for four days."
+    "answer_text": "Making glasses by hand is quite a long process. It is said that the nose part is carefully measured first. Then, the plastic frame is said to be polished in a barrel for four days."
   },
   {
     "id": "pv7-D5-063",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Tokyo Station cleaning crews are incredibly fast. Every seat row (to say) (to spin) round a hundred and eighty degrees in just seven minutes. (it / to say) that a simple foot pedal unlocks the mechanism.",
@@ -5565,12 +5565,12 @@
     "id": "pv7-D5-064",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Muddy tweed gaiters left outside the bedroom door ___ in the boiler room before seven a.m.",
+    "prompt": "Muddy boots left outside the bedroom door ___ in the boiler room before seven a.m.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Гетры сушат другие люди (пассивный инфинитив). Подлежащее во множественном числе, поэтому are expected.",
+    "explanation_ru": "Ботинки сушат другие люди (пассивный инфинитив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
@@ -5600,26 +5600,26 @@
       0
     ],
     "answer": "are expected to be dried",
-    "summary": "Muddy tweed gaiters left outside the bedroom door are expected to be dried in the boiler room before seven a.m.",
-    "answer_text": "Muddy tweed gaiters left outside the bedroom door are expected to be dried in the boiler room before seven a.m."
+    "summary": "Muddy boots left outside the bedroom door are expected to be dried in the boiler room before seven a.m.",
+    "answer_text": "Muddy boots left outside the bedroom door are expected to be dried in the boiler room before seven a.m."
   },
   {
     "id": "pv7-D5-065",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Fresh flatbreads and kashmiri tea ___ across Lake Dal in a narrow shikara at seven a.m.",
+    "prompt": "Fresh bread and hot tea ___ across the lake in a narrow boat at seven a.m.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Лепешки перевозят на лодке (пассивный инфинитив to be paddled). Вариант 'are reported that they are paddled' — грубая грамматическая ошибка.",
+    "explanation_ru": "Хлеб и чай привозят на лодке (пассивный инфинитив to be carried).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
     "cell": "D5",
     "genre": "report",
     "seed_id": "S3-023",
-    "skeleton": "w and w G w in a w at w a . w .",
+    "skeleton": "w and w G w the w in a w at w a . w .",
     "practice_tenses": [
       "pv_D5",
       "pv_infinitive"
@@ -5632,27 +5632,27 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "are reported to be paddled",
-      "report to be paddled",
-      "are reported that they are paddled",
-      "are reported to have paddled"
+      "are reported to be carried",
+      "report to be carried",
+      "are reported that they are carried",
+      "are reported to have carried"
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "are reported to be paddled",
-    "summary": "Fresh flatbreads and kashmiri tea are reported to be paddled across Lake Dal in a narrow shikara at seven a.m.",
-    "answer_text": "Fresh flatbreads and kashmiri tea are reported to be paddled across Lake Dal in a narrow shikara at seven a.m."
+    "answer": "are reported to be carried",
+    "summary": "Fresh bread and hot tea are reported to be carried across the lake in a narrow boat at seven a.m.",
+    "answer_text": "Fresh bread and hot tea are reported to be carried across the lake in a narrow boat at seven a.m."
   },
   {
     "id": "pv7-D5-066",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Green LED studs set into the Copenhagen asphalt ___ at exactly twenty kilometres an hour.",
+    "prompt": "Green LED lights set into the Copenhagen road ___ at exactly twenty kilometres an hour.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Индикаторы мигают сами, это регулярное действие (простой активный инфинитив to flash).",
     "rule_refs": [
@@ -5684,14 +5684,14 @@
       0
     ],
     "answer": "are known to flash",
-    "summary": "Green LED studs set into the Copenhagen asphalt are known to flash at exactly twenty kilometres an hour.",
-    "answer_text": "Green LED studs set into the Copenhagen asphalt are known to flash at exactly twenty kilometres an hour."
+    "summary": "Green LED lights set into the Copenhagen road are known to flash at exactly twenty kilometres an hour.",
+    "answer_text": "Green LED lights set into the Copenhagen road are known to flash at exactly twenty kilometres an hour."
   },
   {
     "id": "pv7-D5-067",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Vehicles in Newport ___ across the River Usk on a suspended steel gondola rather than driving over the high girders.",
@@ -5733,7 +5733,7 @@
     "id": "pv7-D5-068",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because of the heat, sponges soaked in iced rosemary water were believed to hand out by local schoolchildren.",
@@ -5768,7 +5768,7 @@
     "id": "pv7-D5-069",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The doubles player is said to have had six rackets strung at twenty-six kilos tension overnight.",
@@ -5803,19 +5803,19 @@
     "id": "pv7-D5-070",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A Scottish pipe-major recently got his sheepskin bagpipes fixed after twenty years. People mention they were seasoned with warm honey-and-glycerine jelly. Which sentence describes this rumour?",
+    "prompt": "A local musician recently got his old violin fixed after twenty years. People say it was cleaned with warm honey. Which sentence describes this rumour?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
-    "explanation_ru": "Мешок был обработан в прошлом (предшествование, поэтому нужен перфектный пассивный инфинитив to have been seasoned).",
+    "explanation_ru": "Скрипку почистили в прошлом (предшествование, поэтому перфектный пассивный инфинитив): is said to have been cleaned.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
     "cell": "D5",
     "genre": "report",
     "seed_id": "S3-133",
-    "skeleton": "a w RECENTLY w his w after w . w they were w with w and w . which w this w ?",
+    "skeleton": "a w RECENTLY w his w after w . w it was w with w . which w this w ?",
     "practice_tenses": [
       "pv_D5",
       "pv_perfect_infinitive"
@@ -5828,36 +5828,36 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "The pipe bag is said to have been seasoned with honey-and-glycerine jelly.",
-      "The pipe bag is said to be seasoned with honey-and-glycerine jelly.",
-      "It is said the pipe bag to have been seasoned with honey-and-glycerine jelly.",
-      "The pipe bag says to have been seasoned with honey-and-glycerine jelly."
+      "The violin is said to have been cleaned with warm honey.",
+      "The violin is said to be cleaned with warm honey.",
+      "It is said the violin to have been cleaned with warm honey.",
+      "The violin says to have been cleaned with warm honey."
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "The pipe bag is said to have been seasoned with honey-and-glycerine jelly.",
-    "summary": "The pipe bag is said to have been seasoned with honey-and-glycerine jelly.",
-    "answer_text": "The pipe bag is said to have been seasoned with honey-and-glycerine jelly."
+    "answer": "The violin is said to have been cleaned with warm honey.",
+    "summary": "The violin is said to have been cleaned with warm honey.",
+    "answer_text": "The violin is said to have been cleaned with warm honey."
   },
   {
     "id": "pv7-D5-071",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "At the Loughborough bell foundry, metal is shaved off the inside lip of a bronze church bell on a vertical lathe. This is a well-known fact about how they tune five separate notes. Which sentence is correct?",
+    "prompt": "At the old bell factory, metal is taken off the inside of a big church bell on a machine. This is a well-known fact about how they tune the sound. Which sentence is correct?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
-    "explanation_ru": "Металл снимают на станке регулярно (простой пассивный инфинитив to be shaved).",
+    "explanation_ru": "Металл снимают на станке регулярно (простой пассивный инфинитив): is known to be taken off.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-reporting"
     ],
     "cell": "D5",
     "genre": "process",
     "seed_id": "S3-135",
-    "skeleton": "at the w , w is w the w of a w on a w . this is a w NOW w about how they w . which w is w ?",
+    "skeleton": "at the w , w is w the w of a w on a w . this is a w NOW w about how they w the w . which w is w ?",
     "practice_tenses": [
       "pv_D5",
       "pv_infinitive"
@@ -5870,27 +5870,27 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "Metal is known to be shaved off the inside lip on a vertical lathe.",
-      "Metal is known to have been shaved off the inside lip on a vertical lathe.",
-      "It is known metal to be shaved off the inside lip on a vertical lathe.",
-      "Metal knows to be shaved off the inside lip on a vertical lathe."
+      "Metal is known to be taken off the inside of the bell on a machine.",
+      "Metal is known to have been taken off the inside of the bell on a machine.",
+      "It is known metal to be taken off the inside of the bell on a machine.",
+      "Metal knows to be taken off the inside of the bell on a machine."
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "Metal is known to be shaved off the inside lip on a vertical lathe.",
-    "summary": "Metal is known to be shaved off the inside lip on a vertical lathe.",
-    "answer_text": "Metal is known to be shaved off the inside lip on a vertical lathe."
+    "answer": "Metal is known to be taken off the inside of the bell on a machine.",
+    "summary": "Metal is known to be taken off the inside of the bell on a machine.",
+    "answer_text": "Metal is known to be taken off the inside of the bell on a machine."
   },
   {
     "id": "pv7-D6-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Shopkeepers on the quay had a terrible morning because the flooded cellar had (to deal with) before the café could open.",
+    "prompt": "Shopkeepers by the river had a terrible morning because the flooded basement had (to deal with) before the café could open.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Фразовый глагол deal with в пассиве сохраняет предлог на конце: to be dealt with.",
     "rule_refs": [
@@ -5900,7 +5900,7 @@
     "cell": "D6",
     "genre": "news",
     "seed_id": "S1-036",
-    "skeleton": "w on the w had a w because the w had G before the w could w .",
+    "skeleton": "w by the w had a w because the w had G before the w could w .",
     "practice_tenses": [
       "pv_D6",
       "pv_prepositional"
@@ -5931,6 +5931,6 @@
         ]
       }
     ],
-    "answer_text": "Shopkeepers on the quay had a terrible morning because the flooded cellar had to be dealt with before the café could open."
+    "answer_text": "Shopkeepers by the river had a terrible morning because the flooded basement had to be dealt with before the café could open."
   }
 ]

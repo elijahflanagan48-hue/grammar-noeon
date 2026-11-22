@@ -3,7 +3,7 @@
     "id": "pv7-D8-037",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In that Brighton café, regulars ___ bring their own reusable cups in exchange for a discount and a biscuit.",
@@ -45,7 +45,7 @@
     "id": "pv7-D8-038",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "During the Champagne harvest, workers ___ pick every bunch by hand because machines would crush the grapes.",
@@ -87,7 +87,7 @@
     "id": "pv7-D8-039",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "For over a century, the international kilogram cylinder ___ only when three separate keyholders were present.",
@@ -129,7 +129,7 @@
     "id": "pv7-D8-040",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "On the Oban research vessel, a brass weight ___ down the steel cable to trigger the deep-water bottles.",
@@ -171,7 +171,7 @@
     "id": "pv7-D8-041",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Joggers in Madrid are not allowed using the park fountains after midnight.",
@@ -206,7 +206,7 @@
     "id": "pv7-D8-042",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My grandmother never writes her jollof rice recipe down; we were made watch her cook it instead.",
@@ -241,7 +241,7 @@
     "id": "pv7-D8-043",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "On Bonfire Night in Lewes, spectators were seen to cheering as huge figures were carried through the town.",
@@ -277,7 +277,7 @@
     "id": "pv7-D8-044",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Assam tea pickers are not let to pluck anything other than the top two leaves and a bud.",
@@ -312,10 +312,10 @@
     "id": "pv7-D8-045",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The flour on the dry cast-iron pan was heard sizzle softly as the boy helped his grandfather griddle potato farls.",
+    "prompt": "The oil in the hot pan was heard sizzle softly as the boy helped his grandfather cook breakfast.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "В пассиве после глагола восприятия hear нельзя ставить голый инфинитив (sizzle) — нужно sizzling или to sizzle.",
     "rule_refs": [
@@ -324,7 +324,7 @@
     "cell": "D8",
     "genre": "report",
     "seed_id": "S1-159",
-    "skeleton": "the w on the w was w as the w his w .",
+    "skeleton": "the w in the w was w as the w his w .",
     "practice_tenses": [
       "pv_D8",
       "pv_perception"
@@ -336,22 +336,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "The flour on the dry cast-iron pan was heard sizzling softly as the boy helped his grandfather griddle potato farls.",
+    "answer": "The oil in the hot pan was heard sizzling softly as the boy helped his grandfather cook breakfast.",
     "accepted_answers": [
-      "The flour on the dry cast-iron pan was heard sizzling softly as the boy helped his grandfather griddle potato farls.",
-      "The flour on the dry cast-iron pan was heard to sizzle softly as the boy helped his grandfather griddle potato farls."
+      "The oil in the hot pan was heard sizzling softly as the boy helped his grandfather cook breakfast."
     ],
-    "answer_text": "The flour on the dry cast-iron pan was heard sizzling softly as the boy helped his grandfather griddle potato farls.",
+    "answer_text": "The oil in the hot pan was heard sizzling softly as the boy helped his grandfather cook breakfast.",
     "has_error": true
   },
   {
     "id": "pv7-D8-046",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "In Bali, an ancient system decides when each rice farmer gets water. Farmers cannot open the irrigation gates whenever they want. Which sentence fits best?",
+    "prompt": "In Bali, an old system decides when each rice farmer gets water. Farmers cannot open the water gates whenever they want. Which sentence fits best?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
     "explanation_ru": "Для выражения запрета в пассиве используется be not allowed + to-инфинитив. Let в пассиве не употребляется.",
     "rule_refs": [
@@ -390,7 +389,7 @@
     "id": "pv7-D8-047",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A senior reviser in Munich was retiring. Her colleagues secretly placed a signed dictionary and freesias on her desk before she arrived. A cleaner noticed them doing it. What can the cleaner say?",
@@ -432,10 +431,10 @@
     "id": "pv7-D9-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "I bought a battered Abbey Road sleeve, and I (to surprise) to find a 1969 ticket stub inside.",
+    "prompt": "I bought a battered old record cover, and I (to surprise) to find a 1969 ticket inside.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Здесь surprised — прилагательное, описывающее состояние (был удивлён), а не действие.",
     "rule_refs": [
@@ -475,16 +474,16 @@
         ]
       }
     ],
-    "answer_text": "I bought a battered Abbey Road sleeve, and I was surprised to find a 1969 ticket stub inside."
+    "answer_text": "I bought a battered old record cover, and I was surprised to find a 1969 ticket inside."
   },
   {
     "id": "pv7-D9-002",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The lower berth on that Vietnamese sleeper bus simply (not / to fit) my long legs.",
+    "prompt": "The lower bed on that Vietnamese night bus simply (not / to fit) my long legs.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Глагол fit в значении «подходить по размеру» не употребляется в пассивном залоге.",
     "rule_refs": [
@@ -526,13 +525,13 @@
         ]
       }
     ],
-    "answer_text": "The lower berth on that Vietnamese sleeper bus simply did not fit my long legs."
+    "answer_text": "The lower bed on that Vietnamese night bus simply did not fit my long legs."
   },
   {
     "id": "pv7-D9-003",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Your diving mask (to need / adjust) before the boat leaves at six-fifteen tomorrow morning.",
@@ -583,7 +582,7 @@
     "id": "pv7-D9-004",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "We were at eight-all in the fifth squash game when the court lights suddenly (to go) out.",
@@ -631,7 +630,7 @@
     "id": "pv7-D9-005",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My nine-year-old son (to bear) in Madrid, and he just lost his first tooth biting an apple.",
@@ -679,19 +678,19 @@
     "id": "pv7-D9-006",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Does that cast-iron waffle press in Oslo (to need / grease) before you pour in the cardamom batter?",
+    "prompt": "Does that old iron pan in Oslo (to need / clean) before you cook?",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "После need для пассивного значения используется герундий (need greasing) или пассивный инфинитив (need to be greased).",
+    "explanation_ru": "После need для пассивного значения используется герундий (need cleaning) или to be + V3 (need to be cleaned).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-boundaries"
     ],
     "cell": "D9",
     "genre": "review",
     "seed_id": "S3-038",
-    "skeleton": "does that w in w G before you w in the w ?",
+    "skeleton": "does that w in w G before you w ?",
     "practice_tenses": [
       "pv_D9",
       "pv_need_ing"
@@ -707,42 +706,42 @@
     "blanks": [
       {
         "id": "pv7-D9-006-b1",
-        "answer": "need greasing",
+        "answer": "need cleaning",
         "accepted_answers": [
-          "need greasing",
-          "need to be greased"
+          "need cleaning",
+          "need to be cleaned"
         ],
-        "base_verb": "to need / grease",
+        "base_verb": "to need / clean",
         "supplied_words": [
-          "grease"
+          "clean"
         ],
         "tense_or_construction": "pv_need_ing",
         "voice": "passive",
-        "explanation_ru": "После need для пассивного значения используется герундий (need greasing) или пассивный инфинитив (need to be greased).",
+        "explanation_ru": "После need для пассивного значения используется герундий (need cleaning) или to be + V3 (need to be cleaned).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Does that cast-iron waffle press in Oslo need greasing before you pour in the cardamom batter?"
+    "answer_text": "Does that old iron pan in Oslo need cleaning before you cook?"
   },
   {
     "id": "pv7-D9-007",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Before every Tokyo sumo bout, the raised clay ring (to need / sweep) and sprinkling with purified salt.",
+    "prompt": "Before every game, the playing field (to need / clean) and marking with white lines.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Кольцо нуждается в подметании: needs sweeping (или needs to be swept).",
+    "explanation_ru": "Поле нуждается в уборке: needs cleaning (need + -ing передаёт пассивный смысл).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-boundaries"
     ],
     "cell": "D9",
     "genre": "report",
     "seed_id": "S3-097",
-    "skeleton": "before EVERY_TOKYO w , the w G and w with w .",
+    "skeleton": "before EVERY_GAME , the w G and w with w .",
     "practice_tenses": [
       "pv_D9",
       "pv_need_ing"
@@ -758,32 +757,32 @@
     "blanks": [
       {
         "id": "pv7-D9-007-b1",
-        "answer": "needs sweeping",
+        "answer": "needs cleaning",
         "accepted_answers": [
-          "needs sweeping"
+          "needs cleaning"
         ],
-        "base_verb": "to need / sweep",
+        "base_verb": "to need / clean",
         "supplied_words": [
-          "sweep"
+          "clean"
         ],
         "tense_or_construction": "pv_need_ing",
         "voice": "passive",
-        "explanation_ru": "Кольцо нуждается в подметании: needs sweeping (или needs to be swept).",
+        "explanation_ru": "Поле нуждается в уборке: needs cleaning (need + -ing передаёт пассивный смысл).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Before every Tokyo sumo bout, the raised clay ring needs sweeping and sprinkling with purified salt."
+    "answer_text": "Before every game, the playing field needs cleaning and marking with white lines."
   },
   {
     "id": "pv7-D9-008",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A bright lime-green tie never (to suit) a weather presenter standing in front of a chroma-key screen.",
+    "prompt": "A bright green tie never (to suit) a weather presenter standing in front of a green screen.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Глагол suit (быть к лицу, подходить) не употребляется в пассиве.",
     "rule_refs": [
@@ -822,16 +821,16 @@
         ]
       }
     ],
-    "answer_text": "A bright lime-green tie never suits a weather presenter standing in front of a chroma-key screen."
+    "answer_text": "A bright green tie never suits a weather presenter standing in front of a green screen."
   },
   {
     "id": "pv7-D9-009",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Why (not / Rembrandt drypoints / to display) in the sunny gallery? Because daylight fades the rag paper.",
+    "prompt": "Why (not / old drawings / to display) in the sunny gallery? Because daylight damages the paper.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Отрицательный вопрос в Present Simple Passive описывает постоянное правило хранения гравюр.",
     "rule_refs": [
@@ -856,16 +855,16 @@
     "blanks": [
       {
         "id": "pv7-D9-009-b1",
-        "answer": "are Rembrandt drypoints not displayed",
+        "answer": "are old drawings not displayed",
         "accepted_answers": [
-          "are Rembrandt drypoints not displayed",
-          "'re Rembrandt drypoints not displayed",
-          "aren't Rembrandt drypoints displayed"
+          "are old drawings not displayed",
+          "'re old drawings not displayed",
+          "aren't old drawings displayed"
         ],
-        "base_verb": "not / Rembrandt drypoints / to display",
+        "base_verb": "not / old drawings / to display",
         "supplied_words": [
           "not",
-          "Rembrandt drypoints"
+          "old drawings"
         ],
         "tense_or_construction": "pv_question",
         "voice": "passive",
@@ -875,25 +874,25 @@
         ]
       }
     ],
-    "answer_text": "Why are Rembrandt drypoints not displayed in the sunny gallery? Because daylight fades the rag paper."
+    "answer_text": "Why are old drawings not displayed in the sunny gallery? Because daylight damages the paper."
   },
   {
     "id": "pv7-D9-010",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "When a surgical tray arrives from theatre, it (to need / sterilise) under high-pressure steam immediately.",
+    "prompt": "When a tray of tools arrives from the operating room, it (to need / clean) with hot steam immediately.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Конструкция need + -ing (needs sterilising) передаёт пассивное значение необходимости.",
+    "explanation_ru": "Конструкция need + -ing (needs cleaning) передаёт пассивный смысл: поднос нужно очистить.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-boundaries"
     ],
     "cell": "D9",
     "genre": "process",
     "seed_id": "S4-084",
-    "skeleton": "when a w from w , it G w .",
+    "skeleton": "when a w of w from the w , it G with w .",
     "practice_tenses": [
       "pv_D9",
       "pv_need_ing"
@@ -909,31 +908,30 @@
     "blanks": [
       {
         "id": "pv7-D9-010-b1",
-        "answer": "needs sterilising",
+        "answer": "needs cleaning",
         "accepted_answers": [
-          "needs sterilising",
-          "needs to be sterilised",
-          "needs to be sterilized"
+          "needs cleaning",
+          "needs to be cleaned"
         ],
-        "base_verb": "to need / sterilise",
+        "base_verb": "to need / clean",
         "supplied_words": [
-          "sterilise"
+          "clean"
         ],
         "tense_or_construction": "pv_need_ing",
         "voice": "passive",
-        "explanation_ru": "Конструкция need + -ing (needs sterilising) передаёт пассивное значение необходимости.",
+        "explanation_ru": "Конструкция need + -ing (needs cleaning) передаёт пассивный смысл: поднос нужно очистить.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "When a surgical tray arrives from theatre, it needs sterilising under high-pressure steam immediately."
+    "answer_text": "When a tray of tools arrives from the operating room, it needs cleaning with hot steam immediately."
   },
   {
     "id": "pv7-D9-011",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "I felt so sorry for the grocery robot that (to stick) behind a parked van on my pavement.",
@@ -981,7 +979,7 @@
     "id": "pv7-D9-012",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Nobody in our Bath book club had finished the novel, so we (not / to bore) — we just ate cheese.",
@@ -1032,7 +1030,7 @@
     "id": "pv7-D9-013",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Each painted canvas backdrop in the Newcastle fly-tower (to weigh) ninety kilos, yet one technician can lift it.",
@@ -1080,10 +1078,10 @@
     "id": "pv7-D9-014",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Fragile 1640s silk banners (not / to wash) easily, so conservators use de-ionised mist through nylon mesh.",
+    "prompt": "Old silk flags (not / to wash) easily, so experts use a fine mist through a net.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Активная форма с пассивным значением (ergative verb): «не стираются легко» — do not wash easily.",
     "rule_refs": [
@@ -1092,7 +1090,7 @@
     "cell": "D9",
     "genre": "process",
     "seed_id": "S4-003",
-    "skeleton": "w 1640 w G w , so w .",
+    "skeleton": "w G w , so w a w a w .",
     "practice_tenses": [
       "pv_D9",
       "active_present_simple"
@@ -1125,13 +1123,13 @@
         ]
       }
     ],
-    "answer_text": "Fragile 1640s silk banners do not wash easily, so conservators use de-ionised mist through nylon mesh."
+    "answer_text": "Old silk flags do not wash easily, so experts use a fine mist through a net."
   },
   {
     "id": "pv7-D9-015",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Modern lead (to lack) the radioactive purity required for the underground cosmic-ray detector in Yorkshire.",
@@ -1179,7 +1177,7 @@
     "id": "pv7-D9-016",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My grandfather, who (to bear) during the war, would have loved the ration books we found under the floorboards.",
@@ -1227,12 +1225,12 @@
     "id": "pv7-D9-017",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our client pitch on the fourteenth floor was going fine. Suddenly, a window cleaner's cradle (to drop) right past the glass. We (to amuse) when the cleaner held up a whiteboard scoring our slides nine out of ten.",
+    "prompt": "Our client meeting on the fourteenth floor was going fine. Suddenly, a window cleaner's platform (to drop) right past the glass. We (to amuse) when the cleaner held up a sign scoring our slides nine out of ten.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Люлька сама опустилась — актив dropped. We were amused — V3 в роли прилагательного (нам было смешно).",
+    "explanation_ru": "Платформа сама опустилась — актив dropped. We were amused — состояние (причастие как прилагательное).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-boundaries"
     ],
@@ -1265,7 +1263,7 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Люлька сама опустилась — актив dropped. We were amused — V3 в роли прилагательного (нам было смешно).",
+        "explanation_ru": "Платформа сама опустилась — актив dropped. We were amused — состояние (причастие как прилагательное).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-boundaries"
         ]
@@ -1280,19 +1278,19 @@
         "supplied_words": [],
         "tense_or_construction": "pv_state",
         "voice": "passive",
-        "explanation_ru": "Люлька сама опустилась — актив dropped. We were amused — V3 в роли прилагательного (нам было смешно).",
+        "explanation_ru": "Платформа сама опустилась — актив dropped. We were amused — состояние (причастие как прилагательное).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Our client pitch on the fourteenth floor was going fine. Suddenly, a window cleaner's cradle dropped right past the glass. We were amused when the cleaner held up a whiteboard scoring our slides nine out of ten."
+    "answer_text": "Our client meeting on the fourteenth floor was going fine. Suddenly, a window cleaner's platform dropped right past the glass. We were amused when the cleaner held up a sign scoring our slides nine out of ten."
   },
   {
     "id": "pv7-D9-018",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Our cat vanished in Toronto yesterday, and my daughter (to worry) sick. We searched the whole street in the rain. Eventually, we noticed that the airing cupboard door (not / to shut) properly, and we found him fast asleep inside.",
@@ -1363,10 +1361,10 @@
     "id": "pv7-D9-019",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Poole Harbour's chain-ferry looks simple, but it is clever engineering. Two heavy iron chains (to lie) on the seabed all day. When the ferry crosses, the chains (to lift) over drive wheels and dropped back into the silt.",
+    "prompt": "The harbour's chain-ferry looks simple, but it is clever engineering. Two heavy iron chains (to lie) on the bottom all day. When the ferry crosses, the chains (to lift) over drive wheels and dropped back into the water.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Глагол lie (лежать) непереходный, пассив невозможен. Цепи поднимают механизмы — здесь нужен пассив (are lifted).",
     "rule_refs": [
@@ -1375,7 +1373,7 @@
     "cell": "D9",
     "genre": "process",
     "seed_id": "S3-059",
-    "skeleton": "w , but it is w . w G on the w all w . when the w , the w G over w and w into the w .",
+    "skeleton": "the w , but it is w . w G on the w all w . when the w , the w G over w and w into the w .",
     "practice_tenses": [
       "pv_D9",
       "active_present_simple",
@@ -1423,13 +1421,13 @@
         ]
       }
     ],
-    "answer_text": "Poole Harbour's chain-ferry looks simple, but it is clever engineering. Two heavy iron chains lie on the seabed all day. When the ferry crosses, the chains are lifted over drive wheels and dropped back into the silt."
+    "answer_text": "The harbour's chain-ferry looks simple, but it is clever engineering. Two heavy iron chains lie on the bottom all day. When the ferry crosses, the chains are lifted over drive wheels and dropped back into the water."
   },
   {
     "id": "pv7-D9-020",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "I had a bizarre morning on the Underground. The magnet in my saucer rim (to wake) my e-reader screen up inside my bag. Before I knew it, three expensive thrillers (to buy) automatically!",
@@ -1496,7 +1494,7 @@
     "id": "pv7-D9-021",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Every morning this week, ripe tomatoes (to disappear) from our Devon garden. My husband was convinced birds were to blame. Then our toddler walked in with red juice on his shirt — the mystery (to solve)!",
@@ -1563,7 +1561,7 @@
     "id": "pv7-D9-022",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Brand-new linen shirts look far too clean for a Shakespearean battle scene. They (to need / age) before filming starts. First, they are rubbed with earth, and then they (to drag) round the gravel car park until they look six months worn.",
@@ -1633,7 +1631,7 @@
     "id": "pv7-D9-023",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Deep inside a Svalbard mountain, foil packets of wild wheat seeds are stored at minus eighteen degrees. Even if the electricity fails, the seeds (to stay) completely frozen. That is because the surrounding permafrost (not / to need / cool) artificially.",
@@ -1706,7 +1704,7 @@
     "id": "pv7-D9-024",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A tiny library (to appear) inside an old Sheffield bus shelter last month. Nobody knows who built the shelves, yet the paperbacks (to change) every day. Commuters say the shelter no longer feels gloomy.",
@@ -1774,10 +1772,10 @@
     "id": "pv7-D9-025",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "At my friend's housewarming, the new cream sofa ___ cleaning after someone spilled red wine on it.",
+    "prompt": "At my friend's party, the new cream sofa ___ cleaning after someone spilled red wine on it.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Конструкция need + -ing (needed cleaning) имеет пассивное значение, сам глагол need стоит в активе.",
     "rule_refs": [
@@ -1809,14 +1807,14 @@
       0
     ],
     "answer": "needed",
-    "summary": "At my friend's housewarming, the new cream sofa needed cleaning after someone spilled red wine on it.",
-    "answer_text": "At my friend's housewarming, the new cream sofa needed cleaning after someone spilled red wine on it."
+    "summary": "At my friend's party, the new cream sofa needed cleaning after someone spilled red wine on it.",
+    "answer_text": "At my friend's party, the new cream sofa needed cleaning after someone spilled red wine on it."
   },
   {
     "id": "pv7-D9-026",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A giant inflatable duck ___ on a Milton Keynes roundabout overnight, and nobody has claimed it.",
@@ -1858,7 +1856,7 @@
     "id": "pv7-D9-027",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The first wild beavers ___ in that Scottish forest in four hundred years are already building dams.",
@@ -1900,7 +1898,7 @@
     "id": "pv7-D9-028",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Hong Kong double-decker buses ___ a windscreen transponder that pays the harbour tunnel toll automatically.",
@@ -1942,7 +1940,7 @@
     "id": "pv7-D9-029",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In that Cardiff pharmacy, the automated picking robot ___ any human help to find the right carton.",
@@ -1984,10 +1982,10 @@
     "id": "pv7-D9-030",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Three hundred vintage Swiss watches ___ inside hollow plaster garden gnomes at Harwich port.",
+    "prompt": "Three hundred old Swiss watches ___ inside hollow plastic garden toys at Harwich port.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Часы находились спрятанными внутри гномов (состояние: were hidden).",
     "rule_refs": [
@@ -2019,19 +2017,19 @@
       0
     ],
     "answer": "were hidden",
-    "summary": "Three hundred vintage Swiss watches were hidden inside hollow plaster garden gnomes at Harwich port.",
-    "answer_text": "Three hundred vintage Swiss watches were hidden inside hollow plaster garden gnomes at Harwich port."
+    "summary": "Three hundred old Swiss watches were hidden inside hollow plastic garden toys at Harwich port.",
+    "answer_text": "Three hundred old Swiss watches were hidden inside hollow plastic garden toys at Harwich port."
   },
   {
     "id": "pv7-D9-031",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Fresh mackerel at the Leeds fishmonger's ___ quickly every Saturday morning, so get there early.",
+    "prompt": "Fresh fish at the Leeds market ___ quickly every Saturday morning, so get there early.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Активная форма с пассивным значением: sells quickly («быстро раскупается / хорошо продаётся»).",
+    "explanation_ru": "Активная форма с пассивным значением: fish sells quickly.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-boundaries"
     ],
@@ -2061,14 +2059,14 @@
       1
     ],
     "answer": "sells",
-    "summary": "Fresh mackerel at the Leeds fishmonger's sells quickly every Saturday morning, so get there early.",
-    "answer_text": "Fresh mackerel at the Leeds fishmonger's sells quickly every Saturday morning, so get there early."
+    "summary": "Fresh fish at the Leeds market sells quickly every Saturday morning, so get there early.",
+    "answer_text": "Fresh fish at the Leeds market sells quickly every Saturday morning, so get there early."
   },
   {
     "id": "pv7-D9-032",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Deep wheel ruts worn into the Northumberland sandstone ___ the exact width of Roman supply carts.",
@@ -2110,7 +2108,7 @@
     "id": "pv7-D9-033",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Six pinned beetles collected in Java in 1860 ___ tiny mites still preserved under their wing-cases.",
@@ -2152,7 +2150,7 @@
     "id": "pv7-D9-034",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My 2008 hatchback passed the brakes test, so I ___ when it failed over a pair of fluffy dice.",
@@ -2194,7 +2192,7 @@
     "id": "pv7-D9-035",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In 1940, a dog was fallen into a hole in southern France, leading teenagers to ancient cave paintings.",
@@ -2229,7 +2227,7 @@
     "id": "pv7-D9-036",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "On that Polish farm, the mushrooms need to pick every few hours in total darkness.",
@@ -2265,10 +2263,10 @@
     "id": "pv7-D9-037",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "During the nocturnal race in Dalarna, runners are not worried about getting lost in the marshy forest.",
+    "prompt": "During the night race in Dalarna, runners are not worried about getting lost in the wet forest.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Ошибки нет. Worried — прилагательное состояния (are not worried), а getting lost — устойчивое выражение.",
     "rule_refs": [
@@ -2289,18 +2287,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "During the nocturnal race in Dalarna, runners are not worried about getting lost in the marshy forest.",
+    "answer": "During the night race in Dalarna, runners are not worried about getting lost in the wet forest.",
     "accepted_answers": [
-      "During the nocturnal race in Dalarna, runners are not worried about getting lost in the marshy forest."
+      "During the night race in Dalarna, runners are not worried about getting lost in the wet forest."
     ],
-    "answer_text": "During the nocturnal race in Dalarna, runners are not worried about getting lost in the marshy forest.",
+    "answer_text": "During the night race in Dalarna, runners are not worried about getting lost in the wet forest.",
     "has_error": false
   },
   {
     "id": "pv7-D9-038",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Insulated silicone domes are cost very little, yet they keep hospital soup hot for forty minutes.",
@@ -2335,7 +2333,7 @@
     "id": "pv7-D9-039",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My carbon-fibre bike is lacked a heavy lock, so I hid an AirTag inside the handlebar stem.",
@@ -2370,7 +2368,7 @@
     "id": "pv7-D9-040",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "During the Swiss drought, the water level was dropped so low that prehistoric wooden posts appeared.",
@@ -2405,12 +2403,12 @@
     "id": "pv7-D9-041",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "If a fine-art shipping crate is tilted more than thirty degrees on the tarmac, its shock-recorder turns bright red.",
+    "prompt": "If a big shipping box is tilted more than thirty degrees on the ground, its warning light turns bright red.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Ошибки нет. Ящик наклоняют (пассив: is tilted), а датчик сам меняет цвет (глагол-связка: turns red).",
+    "explanation_ru": "Ошибки нет. Ящик наклоняют (пассив: is tilted), а лампочка загорается сама (актив: turns).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-boundaries"
     ],
@@ -2429,21 +2427,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "If a fine-art shipping crate is tilted more than thirty degrees on the tarmac, its shock-recorder turns bright red.",
+    "answer": "If a big shipping box is tilted more than thirty degrees on the ground, its warning light turns bright red.",
     "accepted_answers": [
-      "If a fine-art shipping crate is tilted more than thirty degrees on the tarmac, its shock-recorder turns bright red."
+      "If a big shipping box is tilted more than thirty degrees on the ground, its warning light turns bright red."
     ],
-    "answer_text": "If a fine-art shipping crate is tilted more than thirty degrees on the tarmac, its shock-recorder turns bright red.",
+    "answer_text": "If a big shipping box is tilted more than thirty degrees on the ground, its warning light turns bright red.",
     "has_error": false
   },
   {
     "id": "pv7-D9-042",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "During a Diwali party in Leicester, the streetlights went off, but hundreds of small lamps were already glowing along the road. Which sentence describes the state of the lamps?",
+    "prompt": "During a Diwali party in Leicester, all the lights in the street went off, but hundreds of small lamps were already shining along the road. Which sentence describes the state of the lamps?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
     "explanation_ru": "Were lit описывает уже существующее состояние (лампы горели / были зажжены), а не процесс зажигания (were being lit).",
     "rule_refs": [
@@ -2452,7 +2450,7 @@
     "cell": "D9",
     "genre": "news",
     "seed_id": "S5-084",
-    "skeleton": "w a w in w , the w , but w of w were ALREADY w the w . which w the w of the w ?",
+    "skeleton": "w a w in w , all the w in the w , but w of w were ALREADY w the w . which w the w of the w ?",
     "practice_tenses": [
       "pv_D9",
       "pv_state"
@@ -2482,7 +2480,7 @@
     "id": "pv7-D9-043",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "At Borough Market, aged Comté cheese is very popular and customers buy it very fast. Which sentence uses an active form with a passive meaning?",
@@ -2524,7 +2522,7 @@
     "id": "pv7-D9-044",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A guest left one riding boot in a Bath hotel in November. The reception supervisor sees it in the cupboard and notices it is covered in mud. What does she say?",
@@ -2566,12 +2564,12 @@
     "id": "pv7-D9-045",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "In a Dresden semiconductor fab, silicon wafers travel in airtight nitrogen pods. No dust can enter them because the lids stay tightly shut. Which sentence is natural and correct?",
+    "prompt": "In a Dresden computer factory, small silicon discs travel in airtight boxes. No dust can enter them because the lids stay tightly shut. Which sentence is natural and correct?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
-    "explanation_ru": "Активная форма с пассивным значением: pods seal tightly («герметично закрываются»).",
+    "explanation_ru": "Активная форма с пассивным значением: boxes close tightly (коробки плотно закрываются).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-boundaries"
     ],
@@ -2591,24 +2589,24 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "The nitrogen pods seal tightly to keep dust out.",
-      "The nitrogen pods are sealed tightly themselves.",
-      "The nitrogen pods are lacked any dust inside.",
-      "The nitrogen pods need sealing themselves."
+      "The boxes close tightly to keep dust out.",
+      "The boxes are closed tightly themselves.",
+      "The boxes are lacked any dust inside.",
+      "The boxes need closing themselves."
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "The nitrogen pods seal tightly to keep dust out.",
-    "summary": "The nitrogen pods seal tightly to keep dust out.",
-    "answer_text": "The nitrogen pods seal tightly to keep dust out."
+    "answer": "The boxes close tightly to keep dust out.",
+    "summary": "The boxes close tightly to keep dust out.",
+    "answer_text": "The boxes close tightly to keep dust out."
   },
   {
     "id": "pv7-D9-046",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "On Lake Constance, the orchestra sits indoors while the stage floats outside. The musicians are watching the conductor on six screens right now. Which sentence describes the state of the stage?",
@@ -2650,7 +2648,7 @@
     "id": "pv7-D10-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Our kitchen fridge in Bordeaux is completely covered ___ our children's drawings.",
@@ -2692,7 +2690,7 @@
     "id": "pv7-D10-002",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "By the end of the Edinburgh street show, my hat was filled ___ coins and a spare theatre ticket.",
@@ -2734,12 +2732,12 @@
     "id": "pv7-D10-003",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "On my uncle's Welsh farm, the sheep are counted ___ a drone every morning.",
+    "prompt": "On my uncle's Welsh farm, the sheep are counted ___ a machine every morning.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Дрон здесь выступает как самостоятельный исполнитель действия (агент), поэтому используется by.",
+    "explanation_ru": "Машина здесь выступает как исполнитель действия, поэтому by.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-agent"
     ],
@@ -2769,17 +2767,17 @@
       0
     ],
     "answer": "by",
-    "summary": "On my uncle's Welsh farm, the sheep are counted by a drone every morning.",
-    "answer_text": "On my uncle's Welsh farm, the sheep are counted by a drone every morning."
+    "summary": "On my uncle's Welsh farm, the sheep are counted by a machine every morning.",
+    "answer_text": "On my uncle's Welsh farm, the sheep are counted by a machine every morning."
   },
   {
     "id": "pv7-D10-004",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "At the Newcastle hospital laundry, soiled linen bags are tied ___ special string that dissolves in cold water.",
+    "prompt": "At the hospital, bags of dirty clothes are tied ___ a special string that melts in cold water.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Специальная верёвка — это материал/инструмент, с помощью которого завязывают мешки, поэтому нужен предлог with.",
     "rule_refs": [
@@ -2788,7 +2786,7 @@
     "cell": "D10",
     "genre": "process",
     "seed_id": "S4-103",
-    "skeleton": "at the w , w are w G w that w in w .",
+    "skeleton": "at the w , w of w are w G a w that w in w .",
     "practice_tenses": [
       "pv_D10",
       "pv_agent"
@@ -2811,26 +2809,26 @@
       2
     ],
     "answer": "with",
-    "summary": "At the Newcastle hospital laundry, soiled linen bags are tied with special string that dissolves in cold water.",
-    "answer_text": "At the Newcastle hospital laundry, soiled linen bags are tied with special string that dissolves in cold water."
+    "summary": "At the hospital, bags of dirty clothes are tied with a special string that melts in cold water.",
+    "answer_text": "At the hospital, bags of dirty clothes are tied with a special string that melts in cold water."
   },
   {
     "id": "pv7-D10-005",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Isn't the newsroom teleprompter controlled ___ a foot pedal under the operator's desk?",
+    "prompt": "Isn't the text on the TV screen controlled ___ a button under the desk?",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Педаль выступает как механизм, управляющий скоростью (причина/агент), поэтому используется controlled by.",
+    "explanation_ru": "Кнопка — механизм, управляющий текстом, поэтому by.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-agent"
     ],
     "cell": "D10",
     "genre": "chat",
     "seed_id": "S3-193",
-    "skeleton": "w the w G a w the w ?",
+    "skeleton": "w the w on the w G a w the w ?",
     "practice_tenses": [
       "pv_D10",
       "pv_agent"
@@ -2853,14 +2851,14 @@
       2
     ],
     "answer": "by",
-    "summary": "Isn't the newsroom teleprompter controlled by a foot pedal under the operator's desk?",
-    "answer_text": "Isn't the newsroom teleprompter controlled by a foot pedal under the operator's desk?"
+    "summary": "Isn't the text on the TV screen controlled by a button under the desk?",
+    "answer_text": "Isn't the text on the TV screen controlled by a button under the desk?"
   },
   {
     "id": "pv7-D10-006",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "That tiny corner shop in Belfast has been run ___ the same family for three generations.",
@@ -2902,7 +2900,7 @@
     "id": "pv7-D10-007",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The brass handle on our Bristol museum generator was worn down ___ thousands of enthusiastic school fingers.",
@@ -2944,10 +2942,10 @@
     "id": "pv7-D10-008",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Two hundred years of handwritten ship's logbooks were transcribed ___ online volunteers to map old monsoon winds.",
+    "prompt": "Two hundred years of old ship diaries were copied ___ online volunteers to study old weather patterns.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Волонтёры — исполнители действия (кто расшифровал журналы), поэтому требуется предлог by.",
     "rule_refs": [
@@ -2979,19 +2977,19 @@
       2
     ],
     "answer": "by",
-    "summary": "Two hundred years of handwritten ship's logbooks were transcribed by online volunteers to map old monsoon winds.",
-    "answer_text": "Two hundred years of handwritten ship's logbooks were transcribed by online volunteers to map old monsoon winds."
+    "summary": "Two hundred years of old ship diaries were copied by online volunteers to study old weather patterns.",
+    "answer_text": "Two hundred years of old ship diaries were copied by online volunteers to study old weather patterns."
   },
   {
     "id": "pv7-D10-009",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Every parcel of Antwerp diamonds left in the safe overnight is sprinkled ___ invisible fluorescent powder.",
+    "prompt": "Every parcel of diamonds left in the safe overnight is covered ___ invisible powder.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Порошок — это вещество, которым посыпают бриллианты (sprinkled with), а не исполнитель действия.",
+    "explanation_ru": "Порошок — это вещество, которым покрывают посылку: covered with.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-agent"
     ],
@@ -3021,14 +3019,14 @@
       1
     ],
     "answer": "with",
-    "summary": "Every parcel of Antwerp diamonds left in the safe overnight is sprinkled with invisible fluorescent powder.",
-    "answer_text": "Every parcel of Antwerp diamonds left in the safe overnight is sprinkled with invisible fluorescent powder."
+    "summary": "Every parcel of diamonds left in the safe overnight is covered with invisible powder.",
+    "answer_text": "Every parcel of diamonds left in the safe overnight is covered with invisible powder."
   },
   {
     "id": "pv7-D10-010",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "To make a sunny Oxfordshire village look like Christmas, paper snow flakes are wetted down ___ a fine mist.",
@@ -3070,19 +3068,19 @@
     "id": "pv7-D10-011",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Thirty-two thousand breastplates in the Graz armoury are rubbed ___ mineral oil every second winter to prevent rust.",
+    "prompt": "Thirty-two thousand pieces of armour in the Graz museum are covered ___ oil every second winter to prevent rust.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Минеральное масло — вещество, которым натирают доспехи (rubbed with).",
+    "explanation_ru": "Масло — вещество, которым покрывают доспехи: covered with.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-agent"
     ],
     "cell": "D10",
     "genre": "process",
     "seed_id": "S4-023",
-    "skeleton": "w in the w are w G w EVERY_SECOND w to w .",
+    "skeleton": "w of w in the w are w G w EVERY_SECOND w to w .",
     "practice_tenses": [
       "pv_D10",
       "pv_agent"
@@ -3105,14 +3103,14 @@
       1
     ],
     "answer": "with",
-    "summary": "Thirty-two thousand breastplates in the Graz armoury are rubbed with mineral oil every second winter to prevent rust.",
-    "answer_text": "Thirty-two thousand breastplates in the Graz armoury are rubbed with mineral oil every second winter to prevent rust."
+    "summary": "Thirty-two thousand pieces of armour in the Graz museum are covered with oil every second winter to prevent rust.",
+    "answer_text": "Thirty-two thousand pieces of armour in the Graz museum are covered with oil every second winter to prevent rust."
   },
   {
     "id": "pv7-D10-012",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "After 1980s cassette audio is fed into a modern soundcard, any signal dropouts are cleaned up ___ a custom script.",
@@ -3154,7 +3152,7 @@
     "id": "pv7-D10-013",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The ancient Cairo curator was surprised ___ a single grain of barley stuck in the paint of the wooden boat.",
@@ -3196,7 +3194,7 @@
     "id": "pv7-D10-014",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Three new species of Yunnan primrose were identified ___ a plant geneticist who sequenced DNA from dry 1922 stems.",
@@ -3238,7 +3236,7 @@
     "id": "pv7-D10-015",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Oak timbers raised from the Solent seabed were sprayed continuously ___ cold water and wax for nineteen years.",
@@ -3280,7 +3278,7 @@
     "id": "pv7-D10-016",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Why were the Borneo documentary hides hoisted forty metres into the canopy ___ climbing ropes two months early?",
@@ -3322,10 +3320,10 @@
     "id": "pv7-D10-017",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Before a Utah dinosaur fossil is moved onto a sledge, the fragile vertebrae are wrapped in burlap soaked ___ plaster.",
+    "prompt": "Before a big dinosaur skeleton is moved onto a truck, the old bones are wrapped in cloth soaked ___ plaster.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Устойчивое управление глагола soak — soaked in (пропитанный чем-то).",
     "rule_refs": [
@@ -3357,14 +3355,14 @@
       2
     ],
     "answer": "in",
-    "summary": "Before a Utah dinosaur fossil is moved onto a sledge, the fragile vertebrae are wrapped in burlap soaked in plaster.",
-    "answer_text": "Before a Utah dinosaur fossil is moved onto a sledge, the fragile vertebrae are wrapped in burlap soaked in plaster."
+    "summary": "Before a big dinosaur skeleton is moved onto a truck, the old bones are wrapped in cloth soaked in plaster.",
+    "answer_text": "Before a big dinosaur skeleton is moved onto a truck, the old bones are wrapped in cloth soaked in plaster."
   },
   {
     "id": "pv7-D10-018",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A fragile Fair Isle jumper found in a peat-cutter's trunk was copied stitch by stitch ___ local Shetland knitters.",
@@ -3406,7 +3404,7 @@
     "id": "pv7-D10-019",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "We organised a secret farewell card for our manager in Leeds. It was passed round the whole office and signed (preposition) everyone. We weren't worried (preposition) her finding out, until she accidentally signed it herself!",
@@ -3473,7 +3471,7 @@
     "id": "pv7-D10-020",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A huge parcel arrived at our Bristol front door this morning. It was addressed to us, so I opened it (preposition) a pair of kitchen scissors. Inside, the box was filled (preposition) twenty kilos of dog food — and we don't even have a dog!",
@@ -3540,10 +3538,10 @@
     "id": "pv7-D10-021",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "I tried on a brand-new linen blazer in a Paris department store today. When I reached into the breast pocket, I found a metro ticket and a shopping list written (preposition) pencil. Clearly, it had been left there (preposition) a previous shopper.",
+    "prompt": "I tried on a brand-new jacket in a Paris department store today. When I reached into the pocket, I found a train ticket and a shopping list written (preposition) pencil. Clearly, it had been left there (preposition) a previous shopper.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Written in pencil — устойчивое выражение для материала письма (допустимо with a pencil, но без артикля чаще in). Left by a shopper — исполнитель действия.",
     "rule_refs": [
@@ -3601,16 +3599,16 @@
         ]
       }
     ],
-    "answer_text": "I tried on a brand-new linen blazer in a Paris department store today. When I reached into the breast pocket, I found a metro ticket and a shopping list written in pencil. Clearly, it had been left there by a previous shopper."
+    "answer_text": "I tried on a brand-new jacket in a Paris department store today. When I reached into the pocket, I found a train ticket and a shopping list written in pencil. Clearly, it had been left there by a previous shopper."
   },
   {
     "id": "pv7-D10-022",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Museum staff in Vienna avoid using harsh chemicals on taxidermy. Every five years, the stuffed bird cases are frozen to minus thirty degrees inside a walk-in chamber. That way, any carpet-beetle larvae are killed (preposition) the extreme cold rather than (preposition) toxic sprays.",
+    "prompt": "Museum staff in Vienna avoid using strong chemicals on old stuffed animals. Every five years, the glass cases are frozen to minus thirty degrees inside a big room. That way, any insects are killed (preposition) the extreme cold rather than (preposition) poison.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Холод — природная причина (killed by the cold), а спреи — средство/инструмент (with sprays).",
     "rule_refs": [
@@ -3619,7 +3617,7 @@
     "cell": "D10",
     "genre": "process",
     "seed_id": "S4-017",
-    "skeleton": "w in w on w . EVERY_FIVE w , the w are w to w a w in w . that w , any w are w G the w than G w .",
+    "skeleton": "w in w on w . EVERY_FIVE w , the w are w to w a w . that w , any w are w G the w than G w .",
     "practice_tenses": [
       "pv_D10",
       "pv_agent"
@@ -3669,16 +3667,16 @@
         ]
       }
     ],
-    "answer_text": "Museum staff in Vienna avoid using harsh chemicals on taxidermy. Every five years, the stuffed bird cases are frozen to minus thirty degrees inside a walk-in chamber. That way, any carpet-beetle larvae are killed by the extreme cold rather than with toxic sprays."
+    "answer_text": "Museum staff in Vienna avoid using strong chemicals on old stuffed animals. Every five years, the glass cases are frozen to minus thirty degrees inside a big room. That way, any insects are killed by the extreme cold rather than with poison."
   },
   {
     "id": "pv7-D10-023",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Engineers in Zurich recently tested a four-legged climbing robot on a wet granite quarry wall. Halfway up, its safety tether was tugged sharply (preposition) a postgraduate researcher. The team were impressed (preposition) how calmly the machine re-attached its suction feet.",
+    "prompt": "Engineers in Zurich recently tested a four-legged climbing robot on a wet stone wall. Halfway up, its safety rope was pulled sharply (preposition) a student researcher. The team were impressed (preposition) how calmly the machine re-attached its feet.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "В первом пропуске исследователь — исполнитель действия (by). Во втором — управление impressed by/with.",
     "rule_refs": [
@@ -3738,16 +3736,16 @@
         ]
       }
     ],
-    "answer_text": "Engineers in Zurich recently tested a four-legged climbing robot on a wet granite quarry wall. Halfway up, its safety tether was tugged sharply by a postgraduate researcher. The team were impressed by how calmly the machine re-attached its suction feet."
+    "answer_text": "Engineers in Zurich recently tested a four-legged climbing robot on a wet stone wall. Halfway up, its safety rope was pulled sharply by a student researcher. The team were impressed by how calmly the machine re-attached its feet."
   },
   {
     "id": "pv7-D10-024",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Lost-wax bronze casting at the Glasgow art college is fascinating to watch. First, the hollow ceramic shell is heated in a kiln until the wax model melts out. Next, the empty mould is filled (preposition) molten bronze, which is poured carefully (preposition) a skilled foundry technician.",
+    "prompt": "Making metal statues at the Glasgow art college is fascinating to watch. First, the hollow clay shell is heated in an oven until the wax model melts out. Next, the empty mould is filled (preposition) hot liquid bronze, which is poured carefully (preposition) a skilled worker.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Filled with — устойчивое управление для наполнения веществом. Poured by a technician — указание исполнителя.",
     "rule_refs": [
@@ -3756,7 +3754,7 @@
     "cell": "D10",
     "genre": "process",
     "seed_id": "S4-034",
-    "skeleton": "w at the w is w to w . w , the w is w in a w until the w . w , the w is w G w , which is w G a w .",
+    "skeleton": "w at the w is w to w . w , the w is w in an w until the w . w , the w is w G w , which is w G a w .",
     "practice_tenses": [
       "pv_D10",
       "pv_agent"
@@ -3805,16 +3803,16 @@
         ]
       }
     ],
-    "answer_text": "Lost-wax bronze casting at the Glasgow art college is fascinating to watch. First, the hollow ceramic shell is heated in a kiln until the wax model melts out. Next, the empty mould is filled with molten bronze, which is poured carefully by a skilled foundry technician."
+    "answer_text": "Making metal statues at the Glasgow art college is fascinating to watch. First, the hollow clay shell is heated in an oven until the wax model melts out. Next, the empty mould is filled with hot liquid bronze, which is poured carefully by a skilled worker."
   },
   {
     "id": "pv7-D10-025",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "In our Kent orchard, apples that fall to the ground are sent to make cider by people.",
+    "prompt": "In our Kent garden, apples that fall to the ground are sent to make juice by people.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Добавление by people не несёт никакой новой информации и звучит неестественно в пассиве — его нужно убрать.",
     "rule_refs": [
@@ -3835,21 +3833,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "In our Kent orchard, apples that fall to the ground are sent to make cider.",
+    "answer": "In our Kent garden, apples that fall to the ground are sent to make juice.",
     "accepted_answers": [
-      "In our Kent orchard, apples that fall to the ground are sent to make cider."
+      "In our Kent garden, apples that fall to the ground are sent to make juice."
     ],
-    "answer_text": "In our Kent orchard, apples that fall to the ground are sent to make cider.",
+    "answer_text": "In our Kent garden, apples that fall to the ground are sent to make juice.",
     "has_error": true
   },
   {
     "id": "pv7-D10-026",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "At seven a.m., every Coventry ambulance kitbag seal is checked against a checklist before the shift begins.",
+    "prompt": "At seven a.m., every Coventry ambulance bag is checked against a list before the shift begins.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Ошибки нет. Исполнитель (парамедики) понятен из контекста, поэтому его правильно опустили.",
     "rule_refs": [
@@ -3870,18 +3868,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "At seven a.m., every Coventry ambulance kitbag seal is checked against a checklist before the shift begins.",
+    "answer": "At seven a.m., every Coventry ambulance bag is checked against a list before the shift begins.",
     "accepted_answers": [
-      "At seven a.m., every Coventry ambulance kitbag seal is checked against a checklist before the shift begins."
+      "At seven a.m., every Coventry ambulance bag is checked against a list before the shift begins."
     ],
-    "answer_text": "At seven a.m., every Coventry ambulance kitbag seal is checked against a checklist before the shift begins.",
+    "answer_text": "At seven a.m., every Coventry ambulance bag is checked against a list before the shift begins.",
     "has_error": false
   },
   {
     "id": "pv7-D10-027",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Waste heat from the Luleå server farm is piped under the streets by someone to warm three thousand flats.",
@@ -3916,7 +3914,7 @@
     "id": "pv7-D10-028",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "To stop two hundred Besançon clocks chiming at once, the striking trains are wound half an hour apart with the curator.",
@@ -3951,10 +3949,10 @@
     "id": "pv7-D10-029",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "During the November full moon on Heron Island, mesh traps are tethered over brain-coral heads by people at dusk.",
+    "prompt": "During the November full moon on Heron Island, nets are tied over the coral in the evening by people.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "В описании научного процесса by people — лишнее и неестественное дополнение.",
     "rule_refs": [
@@ -3963,7 +3961,7 @@
     "cell": "D10",
     "genre": "process",
     "seed_id": "S4-060",
-    "skeleton": "w the w on w , w are w over w by w at w .",
+    "skeleton": "w the w on w , w are w over the w in the w by w .",
     "practice_tenses": [
       "pv_D10",
       "pv_agent"
@@ -3975,18 +3973,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "During the November full moon on Heron Island, mesh traps are tethered over brain-coral heads at dusk.",
+    "answer": "During the November full moon on Heron Island, nets are tied over the coral in the evening.",
     "accepted_answers": [
-      "During the November full moon on Heron Island, mesh traps are tethered over brain-coral heads at dusk."
+      "During the November full moon on Heron Island, nets are tied over the coral in the evening."
     ],
-    "answer_text": "During the November full moon on Heron Island, mesh traps are tethered over brain-coral heads at dusk.",
+    "answer_text": "During the November full moon on Heron Island, nets are tied over the coral in the evening.",
     "has_error": true
   },
   {
     "id": "pv7-D10-030",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A local news article mentions how many bikes are pulled out of Amsterdam's canals each year. It does not matter who pulls them out. Which sentence sounds most natural?",
@@ -4028,7 +4026,7 @@
     "id": "pv7-D10-031",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A PhD student in Uppsala found an uncatalogued Viking comb in a shoebox. Nobody knows who put it there decades ago. Which sentence fits a news report best?",
@@ -4070,7 +4068,7 @@
     "id": "pv7-D10-032",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A York theatre posts backstage closing instructions. Every night at midnight, a single bare bulb on a stand (the ghost light) must be moved to the centre of the stage. Which sentence fits a formal notice?",
@@ -4112,10 +4110,10 @@
     "id": "pv7-D10-033",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A seventeenth-century atlas was stolen from a Lund library in 1998. Twelve years later, a sharp-eyed auction expert recognised it by a wormhole on page 44. Which sentence highlights the expert naturally?",
+    "prompt": "A seventeenth-century book of maps was stolen from a Lund library in 1998. Twelve years later, a sharp-eyed expert recognised it by a small hole on page 44. Which sentence highlights the expert naturally?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
     "explanation_ru": "Когда исполнитель несёт важную новую информацию (a sharp-eyed expert), он вводится предлогом by.",
     "rule_refs": [
@@ -4124,7 +4122,7 @@
     "cell": "D10",
     "genre": "news",
     "seed_id": "S4-179",
-    "skeleton": "a w was w from a w IN_1998 . w , a w it by a w on w 44 . which w the w ?",
+    "skeleton": "a w of w was w from a w IN_1998 . w , a w it by a w on w 44 . which w the w ?",
     "practice_tenses": [
       "pv_D10",
       "pv_agent"
@@ -4137,24 +4135,24 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "The stolen atlas was spotted at a New York auction with a sharp-eyed expert.",
-      "The stolen atlas was spotted at a New York auction by a sharp-eyed expert.",
-      "The stolen atlas was spotted at a New York auction by someone.",
-      "The stolen atlas spotted a sharp-eyed expert at a New York auction."
+      "The stolen book was spotted at a New York sale with a sharp-eyed expert.",
+      "The stolen book was spotted at a New York sale by a sharp-eyed expert.",
+      "The stolen book was spotted at a New York sale by someone.",
+      "The stolen book spotted a sharp-eyed expert at a New York sale."
     ],
     "correct_option_index": 1,
     "accepted_option_indices": [
       1
     ],
-    "answer": "The stolen atlas was spotted at a New York auction by a sharp-eyed expert.",
-    "summary": "The stolen atlas was spotted at a New York auction by a sharp-eyed expert.",
-    "answer_text": "The stolen atlas was spotted at a New York auction by a sharp-eyed expert."
+    "answer": "The stolen book was spotted at a New York sale by a sharp-eyed expert.",
+    "summary": "The stolen book was spotted at a New York sale by a sharp-eyed expert.",
+    "answer_text": "The stolen book was spotted at a New York sale by a sharp-eyed expert."
   },
   {
     "id": "pv7-D10-034",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "You are writing a review of the Brussels musical-instrument museum. When you step in front of a case, your infrared headphones automatically play a recording of that instrument. Which sentence sounds best?",
@@ -4196,7 +4194,7 @@
     "id": "pv7-D10-035",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A film magazine explains how a Wellington studio makes a miniature castle collapse realistically on screen. The exact cameraman is unimportant. Which sentence fits the article?",
@@ -4238,10 +4236,10 @@
     "id": "pv7-D11-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "How (vegan boxes / to mark) at the Wicklow film crew's catering van?",
+    "prompt": "How (vegetarian boxes / to mark) at the film crew's catering van?",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "В вопросе в Present Simple Passive вспомогательный глагол are ставится перед подлежащим: are vegan boxes marked.",
     "rule_refs": [
@@ -4266,14 +4264,14 @@
     "blanks": [
       {
         "id": "pv7-D11-001-b1",
-        "answer": "are vegan boxes marked",
+        "answer": "are vegetarian boxes marked",
         "accepted_answers": [
-          "are vegan boxes marked",
-          "'re vegan boxes marked"
+          "are vegetarian boxes marked",
+          "'re vegetarian boxes marked"
         ],
-        "base_verb": "vegan boxes / to mark",
+        "base_verb": "vegetarian boxes / to mark",
         "supplied_words": [
-          "vegan boxes"
+          "vegetarian boxes"
         ],
         "tense_or_construction": "pv_question",
         "voice": "passive",
@@ -4283,16 +4281,16 @@
         ]
       }
     ],
-    "answer_text": "How are vegan boxes marked at the Wicklow film crew's catering van?"
+    "answer_text": "How are vegetarian boxes marked at the film crew's catering van?"
   },
   {
     "id": "pv7-D11-002",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "When (those tiny paper numbers / to paste) under the Dresden porcelain vases?",
+    "prompt": "When (those tiny paper numbers / to paste) under the Dresden vases?",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Вопрос о событии в прошлом (Past Simple Passive): вспомогательный глагол were идёт перед подлежащим, а причастие pasted — после.",
     "rule_refs": [
@@ -4333,13 +4331,13 @@
         ]
       }
     ],
-    "answer_text": "When were those tiny paper numbers pasted under the Dresden porcelain vases?"
+    "answer_text": "When were those tiny paper numbers pasted under the Dresden vases?"
   },
   {
     "id": "pv7-D11-003",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "What (that dark scar on Jupiter / to cause) by?",
@@ -4389,10 +4387,10 @@
     "id": "pv7-D11-004",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "All the crosswords in our Bath GP waiting room (already / to fill in) with the wrong answers.",
+    "prompt": "All the puzzles in our waiting room (already / to fill in) with the wrong answers.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Наречие already в Present Perfect Passive ставится между первым вспомогательным глаголом (have) и been.",
     "rule_refs": [
@@ -4434,16 +4432,16 @@
         ]
       }
     ],
-    "answer_text": "All the crosswords in our Bath GP waiting room have already been filled in with the wrong answers."
+    "answer_text": "All the puzzles in our waiting room have already been filled in with the wrong answers."
   },
   {
     "id": "pv7-D11-005",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Why (the new parents / to give) four identical baby monitors and no nappies?",
+    "prompt": "Why (the new parents / to give) four baby monitors and no baby clothes?",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Прямой вопрос в Past Simple Passive: were выносится перед подлежащим the new parents.",
     "rule_refs": [
@@ -4484,13 +4482,13 @@
         ]
       }
     ],
-    "answer_text": "Why were the new parents given four identical baby monitors and no nappies?"
+    "answer_text": "Why were the new parents given four baby monitors and no baby clothes?"
   },
   {
     "id": "pv7-D11-006",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "What (your Edinburgh neighbour / to fine) for outside his own house?",
@@ -4540,7 +4538,7 @@
     "id": "pv7-D11-007",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Who (that cartoon potato filter / to switch on) by before your video pitch?",
@@ -4590,7 +4588,7 @@
     "id": "pv7-D11-008",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Our Edinburgh ghost-tour guide insists that the lost piper's music (still / can / to hear) under the Royal Mile.",

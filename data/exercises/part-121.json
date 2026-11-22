@@ -3,7 +3,7 @@
     "id": "pv7-D1-074",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "That smart bench in Seoul charges phones and is power by sunlight.",
@@ -39,7 +39,7 @@
     "id": "pv7-D1-075",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My lost cat poster on the Cambridge noticeboard were answered by twelve people claiming to see a different cat.",
@@ -75,7 +75,7 @@
     "id": "pv7-D1-076",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Over a single weekend in Nottingham, a mysterious knitted hat had been placed on every postbox in the area.",
@@ -111,7 +111,7 @@
     "id": "pv7-D1-077",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "You are stuck in a huge Mexico City traffic jam right now, watching street vendors walk between the cars with snacks and phone chargers. What do you text your friend?",
@@ -154,7 +154,7 @@
     "id": "pv7-D1-078",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Your father opens a kitchen drawer crammed with mystery keys. Nobody in the family has touched them for years, and nobody knows which doors they fit. Which sentence best describes this?",
@@ -197,10 +197,10 @@
     "id": "pv7-D1-079",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A man in Kraków (to fine) whenever he feeds the square's pigeons.",
+    "prompt": "A man in Kraków (to fine) whenever he feeds the birds in the square.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Регулярно повторяющееся действие в настоящем времени (whenever): Present Simple Passive.",
     "rule_refs": [
@@ -210,7 +210,7 @@
     "cell": "D1",
     "genre": "news",
     "seed_id": "S5-160",
-    "skeleton": "a w in w G w he w the w .",
+    "skeleton": "a w in w G w he w the w in the w .",
     "practice_tenses": [
       "pv_D1",
       "pv_present_simple"
@@ -242,16 +242,16 @@
         ]
       }
     ],
-    "answer_text": "A man in Kraków is fined whenever he feeds the square's pigeons."
+    "answer_text": "A man in Kraków is fined whenever he feeds the birds in the square."
   },
   {
     "id": "pv7-D1-080",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "How (wastewater / to recycle) into drinking water aboard the Space Station?",
+    "prompt": "How (dirty water / to recycle) into drinking water aboard the Space Station?",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Вопрос о постоянном научном процессе в Present Simple Passive: is + подлежащее + V3.",
     "rule_refs": [
@@ -277,14 +277,14 @@
     "blanks": [
       {
         "id": "pv7-D1-080-b1",
-        "answer": "is wastewater recycled",
+        "answer": "is dirty water recycled",
         "accepted_answers": [
-          "is wastewater recycled",
-          "'s wastewater recycled"
+          "is dirty water recycled",
+          "'s dirty water recycled"
         ],
-        "base_verb": "wastewater / to recycle",
+        "base_verb": "dirty water / to recycle",
         "supplied_words": [
-          "wastewater"
+          "dirty water"
         ],
         "tense_or_construction": "pv_question",
         "voice": "passive",
@@ -295,16 +295,16 @@
         ]
       }
     ],
-    "answer_text": "How is wastewater recycled into drinking water aboard the Space Station?"
+    "answer_text": "How is dirty water recycled into drinking water aboard the Space Station?"
   },
   {
     "id": "pv7-D1-081",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "At Italian village weddings, every guest (to give) five sugared almonds.",
+    "prompt": "At Italian village weddings, every guest (to give) five sweet nuts.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Устоявшаяся свадебная традиция: Present Simple Passive с подлежащим в единственном числе (every guest).",
     "rule_refs": [
@@ -346,13 +346,13 @@
         ]
       }
     ],
-    "answer_text": "At Italian village weddings, every guest is given five sugared almonds."
+    "answer_text": "At Italian village weddings, every guest is given five sweet nuts."
   },
   {
     "id": "pv7-D1-082",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "When my old radio died in Canada, I (to hand) a satellite phone.",
@@ -402,10 +402,10 @@
     "id": "pv7-D1-083",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Look at our Cardiff hedge — it (to trim) into a giant dinosaur!",
+    "prompt": "Look at the tree in our garden — it (to cut) into a giant dinosaur!",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Результат виден прямо сейчас (Look at...): Present Perfect Passive.",
     "rule_refs": [
@@ -415,7 +415,7 @@
     "cell": "D1",
     "genre": "chat",
     "seed_id": "S5-079",
-    "skeleton": "w at our w — it G into a w !",
+    "skeleton": "w at the w in our w — it G into a w !",
     "practice_tenses": [
       "pv_D1",
       "pv_present_perfect"
@@ -431,12 +431,12 @@
     "blanks": [
       {
         "id": "pv7-D1-083-b1",
-        "answer": "has been trimmed",
+        "answer": "has been cut",
         "accepted_answers": [
-          "has been trimmed",
-          "'s been trimmed"
+          "has been cut",
+          "'s been cut"
         ],
-        "base_verb": "to trim",
+        "base_verb": "to cut",
         "supplied_words": [],
         "tense_or_construction": "pv_present_perfect",
         "voice": "passive",
@@ -447,13 +447,13 @@
         ]
       }
     ],
-    "answer_text": "Look at our Cardiff hedge — it has been trimmed into a giant dinosaur!"
+    "answer_text": "Look at the tree in our garden — it has been cut into a giant dinosaur!"
   },
   {
     "id": "pv7-D1-084",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Why (the Wright brothers' twelve-second flight / to watch) by only five people at Kitty Hawk?",
@@ -505,7 +505,7 @@
     "id": "pv7-D1-085",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Wait a second — (holiday photos / to beam) straight to Grandma's frame in Cork right now?",
@@ -558,10 +558,10 @@
     "id": "pv7-D1-086",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "While our family breakfast (to serve) on the Albuquerque patio, a stray hot-air balloon landed beside the table.",
+    "prompt": "While our family breakfast (to serve) on the Albuquerque terrace, a big hot-air balloon landed beside the table.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Фоновый процесс в прошлом (While...), на фоне которого приземлился воздушный шар: Past Continuous Passive.",
     "rule_refs": [
@@ -602,13 +602,13 @@
         ]
       }
     ],
-    "answer_text": "While our family breakfast was being served on the Albuquerque patio, a stray hot-air balloon landed beside the table."
+    "answer_text": "While our family breakfast was being served on the Albuquerque terrace, a big hot-air balloon landed beside the table."
   },
   {
     "id": "pv7-D1-087",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Free parking was promised at Hull hospital, yet the ticket machines (not / to switch off)!",
@@ -662,10 +662,10 @@
     "id": "pv7-D1-088",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Before that private jet leaves the Geneva hangar at six, every turbine blade (to inspect) by two mechanics.",
+    "prompt": "Before that plane leaves the airport at six, every engine (to inspect) by two workers.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Указан конкретный срок в будущем (Before ... leaves at six), к которому проверка завершится: Future Perfect Passive.",
     "rule_refs": [
@@ -675,7 +675,7 @@
     "cell": "D1",
     "genre": "process",
     "seed_id": "S5-194",
-    "skeleton": "before that w the w at w , EVERY_TURBINE w G by w .",
+    "skeleton": "before that w the w at w , EVERY_ENGINE G by w .",
     "practice_tenses": [
       "pv_D1",
       "pv_future_perfect"
@@ -709,16 +709,16 @@
         ]
       }
     ],
-    "answer_text": "Before that private jet leaves the Geneva hangar at six, every turbine blade will have been inspected by two mechanics."
+    "answer_text": "Before that plane leaves the airport at six, every engine will have been inspected by two workers."
   },
   {
     "id": "pv7-D1-089",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Have your grandfather's Cornwall lighthouse logbooks ever (to display) to museum visitors, or are they kept in storage?",
+    "prompt": "Have your grandfather's old sea diaries ever (to display) to museum visitors, or are they kept in storage?",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Вопрос об опыте за всё время до настоящего момента (Have ... ever): Present Perfect Passive.",
     "rule_refs": [
@@ -759,13 +759,13 @@
         ]
       }
     ],
-    "answer_text": "Have your grandfather's Cornwall lighthouse logbooks ever been displayed to museum visitors, or are they kept in storage?"
+    "answer_text": "Have your grandfather's old sea diaries ever been displayed to museum visitors, or are they kept in storage?"
   },
   {
     "id": "pv7-D1-090",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "We craned our necks at the Fairford air show as a giant pink heart (to trace) across the cloudless sky in coloured smoke.",
@@ -815,7 +815,7 @@
     "id": "pv7-D1-091",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because her old handset (not / to back up) before IT wiped it, she needed a temporary bypass code over a video call.",
@@ -869,7 +869,7 @@
     "id": "pv7-D1-092",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Before the supply ship reaches Antarctica in November, the snow-buried weather station (to dig out) by the summer crew.",
@@ -922,10 +922,10 @@
     "id": "pv7-D1-093",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our elderly neighbours in Riga never struggle with heavy bags. Every Thursday, their groceries (to bring) up the stairs by a church volunteer. Look into the hallway — today's crate (to unpack) right now.",
+    "prompt": "Our elderly neighbours in Riga never struggle with heavy bags. Every Thursday, their shopping (to bring) up the stairs by a church volunteer. Look into the hallway — today's box (to unpack) right now.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Регулярная помощь по четвергам (Present Simple Passive) противопоставлена процессу прямо сейчас (Present Continuous Passive).",
     "rule_refs": [
@@ -986,16 +986,16 @@
         ]
       }
     ],
-    "answer_text": "Our elderly neighbours in Riga never struggle with heavy bags. Every Thursday, their groceries are brought up the stairs by a church volunteer. Look into the hallway — today's crate is being unpacked right now."
+    "answer_text": "Our elderly neighbours in Riga never struggle with heavy bags. Every Thursday, their shopping are brought up the stairs by a church volunteer. Look into the hallway — today's box is being unpacked right now."
   },
   {
     "id": "pv7-D1-094",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our Manchester class visited the planetarium this week. The pupils are thrilled because their names (to engrave) on a tiny microchip. Next summer, that chip (to fly) to Mars aboard a rover.",
+    "prompt": "Our Manchester class visited the science centre this week. The pupils are thrilled because their names (to write) on a tiny chip. Next summer, that chip (to send) to Mars on a spaceship.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Ученики рады результату, который уже есть сейчас (have been engraved), а полёт запланирован на будущее (will be flown).",
     "rule_refs": [
@@ -1005,7 +1005,7 @@
     "cell": "D1",
     "genre": "news",
     "seed_id": "S5-184",
-    "skeleton": "our w the w this w . the w are w because their w G on a w . NEXT_SUMMER , that w G to w a w .",
+    "skeleton": "our w the w this w . the w are w because their w G on a w . NEXT_SUMMER , that w G to w on a w .",
     "practice_tenses": [
       "pv_D1",
       "pv_present_perfect",
@@ -1023,12 +1023,12 @@
     "blanks": [
       {
         "id": "pv7-D1-094-b1",
-        "answer": "have been engraved",
+        "answer": "have been written",
         "accepted_answers": [
-          "have been engraved",
-          "'ve been engraved"
+          "have been written",
+          "'ve been written"
         ],
-        "base_verb": "to engrave",
+        "base_verb": "to write",
         "supplied_words": [],
         "tense_or_construction": "pv_present_perfect",
         "voice": "passive",
@@ -1040,14 +1040,14 @@
       },
       {
         "id": "pv7-D1-094-b2",
-        "answer": "will be flown",
+        "answer": "will be sent",
         "accepted_answers": [
-          "will be flown",
-          "'ll be flown",
-          "is going to be flown",
-          "'s going to be flown"
+          "will be sent",
+          "'ll be sent",
+          "is going to be sent",
+          "'s going to be sent"
         ],
-        "base_verb": "to fly",
+        "base_verb": "to send",
         "supplied_words": [],
         "tense_or_construction": "pv_future_simple",
         "voice": "passive",
@@ -1058,13 +1058,13 @@
         ]
       }
     ],
-    "answer_text": "Our Manchester class visited the planetarium this week. The pupils are thrilled because their names have been engraved on a tiny microchip. Next summer, that chip will be flown to Mars aboard a rover."
+    "answer_text": "Our Manchester class visited the science centre this week. The pupils are thrilled because their names have been written on a tiny chip. Next summer, that chip will be sent to Mars on a spaceship."
   },
   {
     "id": "pv7-D1-095",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "I walked into my Bristol kitchen at six and froze. Half a pint of milk (to drink), and a strange mug was sitting neatly inside the dishwasher. Surprisingly, nothing valuable (to take), though the burglar had left his woollen hat on the table.",
@@ -1133,10 +1133,10 @@
     "id": "pv7-D1-096",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Japanese greenhouse strawberries fetch astonishing prices. Inside the warm glasshouses, every white blossom (to pollinate) by bumblebees rather than by hand. Tomorrow morning, the ripest berries (to wrap) individually in soft foam boxes for Tokyo shops.",
+    "prompt": "Japanese greenhouse strawberries sell for very high prices. Inside the warm greenhouses, every white flower (to visit) by bees rather than touched by hand. Tomorrow morning, the ripest berries (to wrap) one by one in soft boxes for Tokyo shops.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Постоянный процесс выращивания (is pollinated) и конкретный план на завтрашнее утро (will be wrapped).",
     "rule_refs": [
@@ -1146,7 +1146,7 @@
     "cell": "D1",
     "genre": "process",
     "seed_id": "S5-189",
-    "skeleton": "w . w the w , EVERY_WHITE w G by w than by w . TOMORROW w , the w G w in w for w .",
+    "skeleton": "w for w . w the w , EVERY_WHITE w G by w than w by w . TOMORROW w , the w G w by w in w for w .",
     "practice_tenses": [
       "pv_D1",
       "pv_present_simple",
@@ -1164,12 +1164,12 @@
     "blanks": [
       {
         "id": "pv7-D1-096-b1",
-        "answer": "is pollinated",
+        "answer": "is visited",
         "accepted_answers": [
-          "is pollinated",
-          "'s pollinated"
+          "is visited",
+          "'s visited"
         ],
-        "base_verb": "to pollinate",
+        "base_verb": "to visit",
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
@@ -1199,16 +1199,16 @@
         ]
       }
     ],
-    "answer_text": "Japanese greenhouse strawberries fetch astonishing prices. Inside the warm glasshouses, every white blossom is pollinated by bumblebees rather than by hand. Tomorrow morning, the ripest berries will be wrapped individually in soft foam boxes for Tokyo shops."
+    "answer_text": "Japanese greenhouse strawberries sell for very high prices. Inside the warm greenhouses, every white flower is visited by bees rather than touched by hand. Tomorrow morning, the ripest berries will be wrapped one by one in soft boxes for Tokyo shops."
   },
   {
     "id": "pv7-D1-097",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My brother panicked an hour before his Manchester school prom. His date's corsage (to deliver) to the wrong street by the florist. Luckily, Mum raided the garden, and a fresh bouquet (to tie) with silk ribbon in ten minutes.",
+    "prompt": "My brother panicked an hour before his school party. His date's flowers (to deliver) to the wrong street by the shop. Luckily, Mum took flowers from the garden, and a fresh bunch (to tie) with silk ribbon in ten minutes.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Букет доставили по ошибке ещё до того, как брат запаниковал (had been delivered), а новый сделали уже после (was tied).",
     "rule_refs": [
@@ -1218,7 +1218,7 @@
     "cell": "D1",
     "genre": "chat",
     "seed_id": "S5-106",
-    "skeleton": "my w an w before his w . his w G to the w by the w . w , w the w , and a w G with w in w .",
+    "skeleton": "my w an w before his w . his w G to the w by the w . w , w from the w , and a w G with w in w .",
     "practice_tenses": [
       "pv_D1",
       "pv_past_perfect",
@@ -1268,13 +1268,13 @@
         ]
       }
     ],
-    "answer_text": "My brother panicked an hour before his Manchester school prom. His date's corsage had been delivered to the wrong street by the florist. Luckily, Mum raided the garden, and a fresh bouquet was tied with silk ribbon in ten minutes."
+    "answer_text": "My brother panicked an hour before his school party. His date's flowers had been delivered to the wrong street by the shop. Luckily, Mum took flowers from the garden, and a fresh bunch was tied with silk ribbon in ten minutes."
   },
   {
     "id": "pv7-D1-098",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Our flight from Glasgow barely reached cruising altitude before the captain made a weary announcement. While the suitcases (to load) into the cargo hold, a passenger's terrier had slipped out of its crate. Consequently, the entire plane (to turn back) to the gate so handlers could catch the dog.",
@@ -1342,7 +1342,7 @@
     "id": "pv7-D1-099",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My smart doorbell in Nottingham nearly drove me mad during lunch. Thirty-two 'person at front door' alerts (to send) to my watch since noon. I just opened the live feed — the camera lens (to cover) by a huge spider spinning a web!",
@@ -1412,12 +1412,12 @@
     "id": "pv7-D1-100",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Desert hunters in Morocco bring newly found meteorite fragments to a small town lab. First, each dark stone (to check) under a microscope to confirm its metallic crust. Before the weekend auction closes, the rarest pieces (to buy) by overseas collectors.",
+    "prompt": "Desert hunters in Morocco bring newly found space rocks to a small town lab. First, each dark stone (to test) under a microscope to confirm its metal surface. Before the weekend sale closes, the rarest pieces (to buy) by overseas collectors.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Обычный порядок проверки (is checked) и завершение продаж к будущему сроку (Before the auction closes — will have been bought).",
+    "explanation_ru": "Обычный порядок проверки (is tested) и завершение продаж к будущему сроку (Before the sale closes — will have been bought).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-table",
       "content/passive/07-passive.md#pv-aspect"
@@ -1443,16 +1443,16 @@
     "blanks": [
       {
         "id": "pv7-D1-100-b1",
-        "answer": "is checked",
+        "answer": "is tested",
         "accepted_answers": [
-          "is checked",
-          "'s checked"
+          "is tested",
+          "'s tested"
         ],
-        "base_verb": "to check",
+        "base_verb": "to test",
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Обычный порядок проверки (is checked) и завершение продаж к будущему сроку (Before the auction closes — will have been bought).",
+        "explanation_ru": "Обычный порядок проверки (is tested) и завершение продаж к будущему сроку (Before the sale closes — will have been bought).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-table",
           "content/passive/07-passive.md#pv-aspect"
@@ -1471,23 +1471,23 @@
         "supplied_words": [],
         "tense_or_construction": "pv_future_perfect",
         "voice": "passive",
-        "explanation_ru": "Обычный порядок проверки (is checked) и завершение продаж к будущему сроку (Before the auction closes — will have been bought).",
+        "explanation_ru": "Обычный порядок проверки (is tested) и завершение продаж к будущему сроку (Before the sale closes — will have been bought).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-table",
           "content/passive/07-passive.md#pv-aspect"
         ]
       }
     ],
-    "answer_text": "Desert hunters in Morocco bring newly found meteorite fragments to a small town lab. First, each dark stone is checked under a microscope to confirm its metallic crust. Before the weekend auction closes, the rarest pieces will have been bought by overseas collectors."
+    "answer_text": "Desert hunters in Morocco bring newly found space rocks to a small town lab. First, each dark stone is tested under a microscope to confirm its metal surface. Before the weekend sale closes, the rarest pieces will have been bought by overseas collectors."
   },
   {
     "id": "pv7-D1-101",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "In ninth-century Ireland, precious monastery books ___ inside tall round towers with high doors.",
+    "prompt": "In old Ireland, precious church books ___ inside tall round towers with high doors.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Книги хранились (множественное число, Past Simple Passive): were + третья форма kept.",
     "rule_refs": [
@@ -1520,17 +1520,17 @@
       1
     ],
     "answer": "were kept",
-    "summary": "In ninth-century Ireland, precious monastery books were kept inside tall round towers with high doors.",
-    "answer_text": "In ninth-century Ireland, precious monastery books were kept inside tall round towers with high doors."
+    "summary": "In old Ireland, precious church books were kept inside tall round towers with high doors.",
+    "answer_text": "In old Ireland, precious church books were kept inside tall round towers with high doors."
   },
   {
     "id": "pv7-D1-102",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Look out of the plane window — those huge circular Kansas fields ___ by giant rotating sprinklers.",
+    "prompt": "Look out of the plane window — those huge circular Kansas fields ___ by giant water machines.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Действие видно прямо сейчас из иллюминатора (Look out...): Present Continuous Passive (are being watered).",
     "rule_refs": [
@@ -1563,14 +1563,14 @@
       2
     ],
     "answer": "are being watered",
-    "summary": "Look out of the plane window — those huge circular Kansas fields are being watered by giant rotating sprinklers.",
-    "answer_text": "Look out of the plane window — those huge circular Kansas fields are being watered by giant rotating sprinklers."
+    "summary": "Look out of the plane window — those huge circular Kansas fields are being watered by giant water machines.",
+    "answer_text": "Look out of the plane window — those huge circular Kansas fields are being watered by giant water machines."
   },
   {
     "id": "pv7-D1-103",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "When the Ohio alumni opened their 1960s time capsule, they saw the letters ___ by damp.",
@@ -1613,7 +1613,7 @@
     "id": "pv7-D1-104",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The Sheffield 999 operator didn't realise the frantic shouting ___ from inside a coat pocket on a fairground ride.",
@@ -1656,7 +1656,7 @@
     "id": "pv7-D1-105",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "His birthday cake in Moscow was decorate with his worst school photo.",
@@ -1692,7 +1692,7 @@
     "id": "pv7-D1-106",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The ancient bronze gear device in Athens had been crafted to predict eclipses long before modern clocks existed.",
@@ -1728,7 +1728,7 @@
     "id": "pv7-D1-107",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Two tourists in Kyoto are laughing over dinner because their phone app just turned 'braised winter radish' into 'exhausted December turnip'. What do they text their friend?",
@@ -1771,7 +1771,7 @@
     "id": "pv7-D1-108",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A drone pilot in Wales flew over brown summer grass and spotted the outline of a lost hill fort. Nobody had ever noticed it before that drought. Which sentence fits best?",

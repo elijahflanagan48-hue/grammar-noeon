@@ -511,7 +511,7 @@
     "content_version": "passive-2026-11-09.1",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Look! Our car (to tow) away!",
+    "prompt": "Look! Our car (to take) away!",
     "instruction_ru": "Раскройте скобки.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-table",
@@ -520,26 +520,26 @@
     "blanks": [
       {
         "id": "pv5-s012-b1",
-        "answer": "is being towed",
+        "answer": "is being taken",
         "accepted_answers": [
-          "is being towed",
-          "'s being towed"
+          "is being taken",
+          "'s being taken"
         ],
-        "explanation_ru": "Present Continuous Passive — Look! — происходит на глазах: is being towed.",
+        "explanation_ru": "Present Continuous Passive — Look! — происходит на глазах: is being taken.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-table",
           "content/passive/07-passive.md#pv-aspect"
         ],
         "tense_or_construction": "pv_present_continuous",
-        "base_verb": "to tow",
+        "base_verb": "to take",
         "supplied_words": []
       }
     ],
     "layout": "sentence",
     "practice_group": "sentence",
     "practice_weight": 40,
-    "answer_text": "Look! Our car is being towed away!",
-    "explanation_ru": "Present Continuous Passive — Look! — происходит на глазах: is being towed.",
+    "answer_text": "Look! Our car is being taken away!",
+    "explanation_ru": "Present Continuous Passive — Look! — происходит на глазах: is being taken.",
     "practice_tenses": [
       "pv_D1",
       "pv_present_continuous"

@@ -3,10 +3,10 @@
     "id": "pv7-D2-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A terrible storm (to hit) our campsite last night. Our tent (to disappear) into a neighbouring field while we slept. Luckily, it (to bring) back at breakfast by a local farmer, neatly folded.",
+    "prompt": "A bad storm (to hit) our camp last night. Our tent (to disappear) into a field while we slept. Luckily, it (to bring) back at breakfast by a farmer.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Шторм сам ударил, палатка сама исчезла — это актив (disappear вообще не имеет пассива). Палатку принёс фермер, над ней совершили действие — пассив.",
     "rule_refs": [
@@ -16,7 +16,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S1-001",
-    "skeleton": "a w G our w LAST_NIGHT . our w G into a w while we w . w , it G w at w by a w , w .",
+    "skeleton": "a w G our w LAST_NIGHT . our w G into a w while we w . w , it G w at w by a w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple",
@@ -81,13 +81,13 @@
         ]
       }
     ],
-    "answer_text": "A terrible storm hit our campsite last night. Our tent disappeared into a neighbouring field while we slept. Luckily, it was brought back at breakfast by a local farmer, neatly folded."
+    "answer_text": "A bad storm hit our camp last night. Our tent disappeared into a field while we slept. Luckily, it was brought back at breakfast by a farmer."
   },
   {
     "id": "pv7-D2-002",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Commuters faced a two-hour delay this morning after sea spray (to freeze) on the overhead railway cables overnight.",
@@ -139,12 +139,12 @@
     "id": "pv7-D2-003",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Humidity at the Atacama observatory (to rise) above forty per cent for the first time in three years. As a result, the automatic dome shutters (to lock) until dawn to protect the delicate lenses.",
+    "prompt": "The temperature at the mountain station (to rise) above thirty degrees for the first time in three years. As a result, the windows (to lock) until evening to protect the equipment.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Влажность поднялась сама (глагол rise не имеет пассива). Створки купола были заблокированы системой (над ними совершили действие) — пассив.",
+    "explanation_ru": "Температура поднялась сама (rise не имеет пассива). Окна были заперты (над ними совершили действие) — пассив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -152,7 +152,7 @@
     "cell": "D2",
     "genre": "report",
     "seed_id": "S1-003",
-    "skeleton": "w at the w G w for the w in w . as a w , the w G until w to w the w .",
+    "skeleton": "the w at the w G w for the w in w . as a w , the w G until w to w the w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple",
@@ -180,7 +180,7 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Влажность поднялась сама (глагол rise не имеет пассива). Створки купола были заблокированы системой (над ними совершили действие) — пассив.",
+        "explanation_ru": "Температура поднялась сама (rise не имеет пассива). Окна были заперты (над ними совершили действие) — пассив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -200,23 +200,23 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Влажность поднялась сама (глагол rise не имеет пассива). Створки купола были заблокированы системой (над ними совершили действие) — пассив.",
+        "explanation_ru": "Температура поднялась сама (rise не имеет пассива). Окна были заперты (над ними совершили действие) — пассив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Humidity at the Atacama observatory rose above forty per cent for the first time in three years. As a result, the automatic dome shutters were locked until dawn to protect the delicate lenses."
+    "answer_text": "The temperature at the mountain station rose above thirty degrees for the first time in three years. As a result, the windows were locked until evening to protect the equipment."
   },
   {
     "id": "pv7-D2-004",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Five years ago, a stray ginger cat (to wander) into a public library during a rainstorm.",
+    "prompt": "Five years ago, a little orange cat (to wander) into a public library during a storm.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Кот сам забрел в библиотеку, действие выполняет подлежащее — активный залог.",
     "rule_refs": [
@@ -257,13 +257,13 @@
         ]
       }
     ],
-    "answer_text": "Five years ago, a stray ginger cat wandered into a public library during a rainstorm."
+    "answer_text": "Five years ago, a little orange cat wandered into a public library during a storm."
   },
   {
     "id": "pv7-D2-005",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "While the developer was in the shower, four kilos of sunflower seeds ___ by his African grey parrot using a voice assistant.",
@@ -306,7 +306,7 @@
     "id": "pv7-D2-006",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "— Did you find out what happened to my socks?\n— Yes, an X-ray (to reveal) all three of them inside your beagle! They (to remove) by the vet without a single stitch.",
@@ -374,12 +374,12 @@
     "id": "pv7-D2-007",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "We (to scold) gently by the nonna when we asked for grated parmesan on our seafood starter.",
+    "prompt": "We (to laugh at) by the waiter when we asked for cheese on our fish pasta.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Нас отругали — действие совершили над нами, есть указание кем (by the nonna), поэтому нужен пассив.",
+    "explanation_ru": "Над нами посмеялись — действие совершили над нами, есть указание кем (by the waiter), поэтому нужен пассив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -387,7 +387,7 @@
     "cell": "D2",
     "genre": "review",
     "seed_id": "S1-081",
-    "skeleton": "we G w by the w when we w for w on our w .",
+    "skeleton": "we G by the w when we w for w on our w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple"
@@ -403,28 +403,28 @@
     "blanks": [
       {
         "id": "pv7-D2-007-b1",
-        "answer": "were scolded",
+        "answer": "were laughed at",
         "accepted_answers": [
-          "were scolded"
+          "were laughed at"
         ],
-        "base_verb": "to scold",
+        "base_verb": "to laugh at",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Нас отругали — действие совершили над нами, есть указание кем (by the nonna), поэтому нужен пассив.",
+        "explanation_ru": "Над нами посмеялись — действие совершили над нами, есть указание кем (by the waiter), поэтому нужен пассив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "We were scolded gently by the nonna when we asked for grated parmesan on our seafood starter."
+    "answer_text": "We were laughed at by the waiter when we asked for cheese on our fish pasta."
   },
   {
     "id": "pv7-D2-008",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The very last toasted cheese sandwich (to sell) just before Darlington, leaving the hungry passenger with nothing but a packet of shortbread.",
@@ -476,12 +476,12 @@
     "id": "pv7-D2-009",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A delicate truffle soufflé was collapsed at the table because a careless waiter opened the terrace door.",
+    "prompt": "A big chocolate cake was collapsed at the table because a careless waiter opened the door.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Суфле опало само из-scale сквозняка. Глагол collapse в этом значении не имеет пассивного залога.",
+    "explanation_ru": "Торт опал сам из-за сквозняка. Глагол collapse в этом значении не имеет пассивного залога.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -501,23 +501,23 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "A delicate truffle soufflé collapsed at the table because a careless waiter opened the terrace door.",
+    "answer": "A big chocolate cake collapsed at the table because a careless waiter opened the door.",
     "accepted_answers": [
-      "A delicate truffle soufflé collapsed at the table because a careless waiter opened the terrace door."
+      "A big chocolate cake collapsed at the table because a careless waiter opened the door."
     ],
-    "answer_text": "A delicate truffle soufflé collapsed at the table because a careless waiter opened the terrace door.",
+    "answer_text": "A big chocolate cake collapsed at the table because a careless waiter opened the door.",
     "has_error": true
   },
   {
     "id": "pv7-D2-010",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My flatmate tried to boil an egg in the electric kettle. The shell (to crack), and everyone's morning tea (to taste) of sulphur.",
+    "prompt": "My flatmate tried to boil an egg in the electric kettle. The shell (to crack), and everyone's morning tea (to taste) of egg.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Скорлупа треснула сама, а чай имел вкус серы (taste в значении 'иметь вкус' не используется в пассиве).",
+    "explanation_ru": "Скорлупа треснула сама, а чай имел вкус яйца (taste в значении 'иметь вкус' не используется в пассиве).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -549,7 +549,7 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Скорлупа треснула сама, а чай имел вкус серы (taste в значении 'иметь вкус' не используется в пассиве).",
+        "explanation_ru": "Скорлупа треснула сама, а чай имел вкус яйца (taste в значении 'иметь вкус' не используется в пассиве).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -565,25 +565,25 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Скорлупа треснула сама, а чай имел вкус серы (taste в значении 'иметь вкус' не используется в пассиве).",
+        "explanation_ru": "Скорлупа треснула сама, а чай имел вкус яйца (taste в значении 'иметь вкус' не используется в пассиве).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "My flatmate tried to boil an egg in the electric kettle. The shell cracked, and everyone's morning tea tasted of sulphur."
+    "answer_text": "My flatmate tried to boil an egg in the electric kettle. The shell cracked, and everyone's morning tea tasted of egg."
   },
   {
     "id": "pv7-D2-011",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Traditional satsivi sauce requires that the walnuts ___ in a wooden mortar with marigold petals rather than blended.",
+    "prompt": "Traditional recipes require that the nuts ___ by hand rather than in a machine.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Орехи толкут — над ними совершается действие (пассив). После require that используется сослагательное наклонение (базовая форма глагола).",
+    "explanation_ru": "Орехи измельчают — над ними совершается действие (пассив). После require that используется сослагательное наклонение (базовая форма глагола).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -591,7 +591,7 @@
     "cell": "D2",
     "genre": "process",
     "seed_id": "S1-123",
-    "skeleton": "w that the w G in a w with w than w .",
+    "skeleton": "w that the w G by w than in a w .",
     "practice_tenses": [
       "pv_D2",
       "pv_infinitive"
@@ -604,29 +604,29 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "be pounded",
-      "pound",
-      "are pounding",
-      "pounded"
+      "be crushed",
+      "crush",
+      "are crushing",
+      "crushed"
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "be pounded",
-    "summary": "Traditional satsivi sauce requires that the walnuts be pounded in a wooden mortar with marigold petals rather than blended.",
-    "answer_text": "Traditional satsivi sauce requires that the walnuts be pounded in a wooden mortar with marigold petals rather than blended."
+    "answer": "be crushed",
+    "summary": "Traditional recipes require that the nuts be crushed by hand rather than in a machine.",
+    "answer_text": "Traditional recipes require that the nuts be crushed by hand rather than in a machine."
   },
   {
     "id": "pv7-D2-012",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A cookbook editor is explaining why readers ruined their lemon desserts. What does she say?",
+    "prompt": "A magazine editor is explaining why readers ruined their lemon cakes. What does she say?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
-    "explanation_ru": "Десятичную запятую поставили не там (кто-то ошибся) в прошлом. Нужен пассив Past Simple.",
+    "explanation_ru": "Число напечатали неправильно (кто-то ошибся) в прошлом. Нужен пассив Past Simple.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -647,29 +647,29 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "A decimal point was misplaced in the manuscript.",
-      "A decimal point misplaced in the manuscript.",
-      "A decimal point has misplaced in the manuscript.",
-      "A decimal point is misplaced in the manuscript."
+      "An important number was printed wrongly in the recipe.",
+      "An important number printed wrongly in the recipe.",
+      "An important number has printed wrongly in the recipe.",
+      "An important number is printed wrongly in the recipe."
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "A decimal point was misplaced in the manuscript.",
-    "summary": "A decimal point was misplaced in the manuscript.",
-    "answer_text": "A decimal point was misplaced in the manuscript."
+    "answer": "An important number was printed wrongly in the recipe.",
+    "summary": "An important number was printed wrongly in the recipe.",
+    "answer_text": "An important number was printed wrongly in the recipe."
   },
   {
     "id": "pv7-D2-013",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Safety goggles and lab coats (to make) compulsory for all chemistry demonstrations after a glass beaker shattered yesterday.",
+    "prompt": "Safety glasses (to make) compulsory for all science lessons after a glass bottle broke yesterday.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Очки и халаты сделали обязательными — это решение администрации, действие совершено над предметами.",
+    "explanation_ru": "Очки сделали обязательными — это решение администрации, действие совершено над предметами.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -677,7 +677,7 @@
     "cell": "D2",
     "genre": "notice",
     "seed_id": "S1-161",
-    "skeleton": "w and w G w for all w after a w YESTERDAY .",
+    "skeleton": "w G w for all w after a w YESTERDAY .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple"
@@ -703,25 +703,25 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Очки и халаты сделали обязательными — это решение администрации, действие совершено над предметами.",
+        "explanation_ru": "Очки сделали обязательными — это решение администрации, действие совершено над предметами.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Safety goggles and lab coats were made compulsory for all chemistry demonstrations after a glass beaker shattered yesterday."
+    "answer_text": "Safety glasses were made compulsory for all science lessons after a glass bottle broke yesterday."
   },
   {
     "id": "pv7-D2-014",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "— Where is your left football boot?\n— It (to vanish) from my peg in November, but it (to find) yesterday in the lost-property chest.",
+    "prompt": "— Where is your left football boot?\n— It (to disappear) from my bag in November, but it (to find) yesterday in the lost-property box.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Ботинок исчез сам (vanish не имеет пассива), но нашли его люди — это пассив.",
+    "explanation_ru": "Ботинок исчез сам (disappear не имеет пассива), но нашли его люди — это пассив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -747,15 +747,15 @@
     "blanks": [
       {
         "id": "pv7-D2-014-b1",
-        "answer": "vanished",
+        "answer": "disappeared",
         "accepted_answers": [
-          "vanished"
+          "disappeared"
         ],
-        "base_verb": "to vanish",
+        "base_verb": "to disappear",
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Ботинок исчез сам (vanish не имеет пассива), но нашли его люди — это пассив.",
+        "explanation_ru": "Ботинок исчез сам (disappear не имеет пассива), но нашли его люди — это пассив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -771,20 +771,20 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Ботинок исчез сам (vanish не имеет пассива), но нашли его люди — это пассив.",
+        "explanation_ru": "Ботинок исчез сам (disappear не имеет пассива), но нашли его люди — это пассив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "— Where is your left football boot?\n— It vanished from my peg in November, but it was found yesterday in the lost-property chest."
+    "answer_text": "— Where is your left football boot?\n— It disappeared from my bag in November, but it was found yesterday in the lost-property box."
   },
   {
     "id": "pv7-D2-015",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "My seven-year-old son (to give) the part of the Third Lobster because the school ran out of sheep outfits.",
@@ -834,12 +834,12 @@
     "id": "pv7-D2-016",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Halfway through the law exam, a herring gull flew in through a skylight and refused to leave until it (to lure) out with a biscuit.",
+    "prompt": "Halfway through the exam, a big seagull flew in through a window and refused to leave until it (to chase) out by the teacher.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Чайку выманили печеньем — действие совершили над ней, поэтому пассив.",
+    "explanation_ru": "Чайку прогнали — действие совершили над ней, поэтому пассив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -847,7 +847,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S2-001",
-    "skeleton": "w the w , a w in w a w and w to w until it G w with a w .",
+    "skeleton": "w the w , a w in w a w and w to w until it G w by the w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple"
@@ -863,28 +863,28 @@
     "blanks": [
       {
         "id": "pv7-D2-016-b1",
-        "answer": "was lured",
+        "answer": "was chased",
         "accepted_answers": [
-          "was lured"
+          "was chased"
         ],
-        "base_verb": "to lure",
+        "base_verb": "to chase",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Чайку выманили печеньем — действие совершили над ней, поэтому пассив.",
+        "explanation_ru": "Чайку прогнали — действие совершили над ней, поэтому пассив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Halfway through the law exam, a herring gull flew in through a skylight and refused to leave until it was lured out with a biscuit."
+    "answer_text": "Halfway through the exam, a big seagull flew in through a window and refused to leave until it was chased out by the teacher."
   },
   {
     "id": "pv7-D2-017",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Before readers ___ to the historical reading room, they must promise never to bring a pen near the manuscripts.",
@@ -927,12 +927,12 @@
     "id": "pv7-D2-018",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "I made a huge mistake with the laundry. I (to put) my woollen scarf into a hot wash, and it (to shrink) to the size of a bookmark.",
+    "prompt": "I made a huge mistake with the washing. I (to wash) my wool scarf in hot water, and it (to become) tiny.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Я сам положил шарф (актив). Шарф сел/уменьшился в размере сам в процессе стирки (актив).",
+    "explanation_ru": "Я сам постирал шарф (актив). Шарф стал крошечным сам (become не имеет пассива, актив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -940,7 +940,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S2-003",
-    "skeleton": "i w a w with the w . i G my w into a w , and it G to the w of a w .",
+    "skeleton": "i w a w with the w . i G my w in w , and it G w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple"
@@ -956,15 +956,15 @@
     "blanks": [
       {
         "id": "pv7-D2-018-b1",
-        "answer": "put",
+        "answer": "washed",
         "accepted_answers": [
-          "put"
+          "washed"
         ],
-        "base_verb": "to put",
+        "base_verb": "to wash",
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Я сам положил шарф (актив). Шарф сел/уменьшился в размере сам в процессе стирки (актив).",
+        "explanation_ru": "Я сам постирал шарф (актив). Шарф стал крошечным сам (become не имеет пассива, актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -972,30 +972,30 @@
       },
       {
         "id": "pv7-D2-018-b2",
-        "answer": "shrank",
+        "answer": "became",
         "accepted_answers": [
-          "shrank",
-          "has shrunk",
-          "'s shrunk"
+          "became",
+          "has become",
+          "'s become"
         ],
-        "base_verb": "to shrink",
+        "base_verb": "to become",
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Я сам положил шарф (актив). Шарф сел/уменьшился в размере сам в процессе стирки (актив).",
+        "explanation_ru": "Я сам постирал шарф (актив). Шарф стал крошечным сам (become не имеет пассива, актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "I made a huge mistake with the laundry. I put my woollen scarf into a hot wash, and it shrank to the size of a bookmark."
+    "answer_text": "I made a huge mistake with the washing. I washed my wool scarf in hot water, and it became tiny."
   },
   {
     "id": "pv7-D2-019",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Meeting Room 3B (to book) every Tuesday for six months by someone who just wanted to read novels in peace.",
@@ -1047,12 +1047,12 @@
     "id": "pv7-D2-020",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "— Why does the coffee taste so awful today?\n— The espresso machine (to descale) on Friday, but the trainee (to forget) to flush the tank afterwards.",
+    "prompt": "— Why does the coffee taste so awful today?\n— The coffee machine (to clean) on Friday, but the new worker (to forget) to wash out the tank afterwards.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Машину почистили от накипи (пассив), а стажер сам забыл её промыть (актив).",
+    "explanation_ru": "Машину почистили (пассив), а новый сотрудник сам забыл промыть её (актив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1078,17 +1078,17 @@
     "blanks": [
       {
         "id": "pv7-D2-020-b1",
-        "answer": "was descaled",
+        "answer": "was cleaned",
         "accepted_answers": [
-          "was descaled",
-          "had been descaled",
-          "'d been descaled"
+          "was cleaned",
+          "had been cleaned",
+          "'d been cleaned"
         ],
-        "base_verb": "to descale",
+        "base_verb": "to clean",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Машину почистили от накипи (пассив), а стажер сам забыл её промыть (актив).",
+        "explanation_ru": "Машину почистили (пассив), а новый сотрудник сам забыл промыть её (актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -1104,25 +1104,25 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Машину почистили от накипи (пассив), а стажер сам забыл её промыть (актив).",
+        "explanation_ru": "Машину почистили (пассив), а новый сотрудник сам забыл промыть её (актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "— Why does the coffee taste so awful today?\n— The espresso machine was descaled on Friday, but the trainee forgot to flush the tank afterwards."
+    "answer_text": "— Why does the coffee taste so awful today?\n— The coffee machine was cleaned on Friday, but the new worker forgot to wash out the tank afterwards."
   },
   {
     "id": "pv7-D2-021",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Three hundred pages of court exhibits were fed into the scanner upside down.",
+    "prompt": "Three hundred pages of the contract were put into the scanner upside down.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Ошибки нет. Страницы были загружены в сканер (кем-то), это корректный пассивный залог.",
+    "explanation_ru": "Ошибки нет. Страницы положили в сканер (кто-то), это корректный пассивный залог.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1130,7 +1130,7 @@
     "cell": "D2",
     "genre": "email",
     "seed_id": "S2-043",
-    "skeleton": "w of w were w into the w .",
+    "skeleton": "w of the w were w into the w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple"
@@ -1142,18 +1142,18 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Three hundred pages of court exhibits were fed into the scanner upside down.",
+    "answer": "Three hundred pages of the contract were put into the scanner upside down.",
     "accepted_answers": [
-      "Three hundred pages of court exhibits were fed into the scanner upside down."
+      "Three hundred pages of the contract were put into the scanner upside down."
     ],
-    "answer_text": "Three hundred pages of court exhibits were fed into the scanner upside down.",
+    "answer_text": "Three hundred pages of the contract were put into the scanner upside down.",
     "has_error": false
   },
   {
     "id": "pv7-D2-022",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Ten minutes into her video interview, her upstairs neighbour (to start) drilling into the wall.",
@@ -1203,7 +1203,7 @@
     "id": "pv7-D2-023",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A job applicant is complaining about an automated system. What does he say?",
@@ -1246,12 +1246,12 @@
     "id": "pv7-D2-024",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The moment he (to resign) to join a rival firm, his security pass (to deactivate) by the IT department.",
+    "prompt": "The moment he (to quit) to join another company, his security pass (to block) by the IT department.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Он уволился сам (актив). Пропуск был деактивирован отделом (пассив).",
+    "explanation_ru": "Он ушёл сам (актив). Пропуск был заблокирован отделом (пассив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1259,7 +1259,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S2-085",
-    "skeleton": "the w he G to w a w , his w G by the it w .",
+    "skeleton": "the w he G to w , his w G by the it w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple",
@@ -1277,15 +1277,15 @@
     "blanks": [
       {
         "id": "pv7-D2-024-b1",
-        "answer": "resigned",
+        "answer": "quit",
         "accepted_answers": [
-          "resigned"
+          "quit"
         ],
-        "base_verb": "to resign",
+        "base_verb": "to quit",
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Он уволился сам (актив). Пропуск был деактивирован отделом (пассив).",
+        "explanation_ru": "Он ушёл сам (актив). Пропуск был заблокирован отделом (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -1293,31 +1293,31 @@
       },
       {
         "id": "pv7-D2-024-b2",
-        "answer": "was deactivated",
+        "answer": "was blocked",
         "accepted_answers": [
-          "was deactivated"
+          "was blocked"
         ],
-        "base_verb": "to deactivate",
+        "base_verb": "to block",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Он уволился сам (актив). Пропуск был деактивирован отделом (пассив).",
+        "explanation_ru": "Он ушёл сам (актив). Пропуск был заблокирован отделом (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "The moment he resigned to join a rival firm, his security pass was deactivated by the IT department."
+    "answer_text": "The moment he quit to join another company, his security pass was blocked by the IT department."
   },
   {
     "id": "pv7-D2-025",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "An undeveloped roll of film (to discover) still inside the vintage camera when the technician opened the back.",
+    "prompt": "An undeveloped roll of film (to discover) still inside the old camera when the shop assistant opened the back.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Пленку обнаружили — действие совершено над предметом, нужен пассив.",
     "rule_refs": [
@@ -1358,13 +1358,13 @@
         ]
       }
     ],
-    "answer_text": "An undeveloped roll of film was discovered still inside the vintage camera when the technician opened the back."
+    "answer_text": "An undeveloped roll of film was discovered still inside the old camera when the shop assistant opened the back."
   },
   {
     "id": "pv7-D2-026",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Every time she (to place) her own reusable bag on the checkout scale, the machine flashed red and announced that an attendant (to notify).",
@@ -1434,10 +1434,10 @@
     "id": "pv7-D2-027",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Instead of a matching pair, two left shoes (to dispatch) in the same box four days before my wedding.",
+    "prompt": "Instead of a matching pair, two left shoes (to send) in the same box four days before my wedding.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Обувь была отправлена складом — пассив.",
     "rule_refs": [
@@ -1463,11 +1463,11 @@
     "blanks": [
       {
         "id": "pv7-D2-027-b1",
-        "answer": "were dispatched",
+        "answer": "were sent",
         "accepted_answers": [
-          "were dispatched"
+          "were sent"
         ],
-        "base_verb": "to dispatch",
+        "base_verb": "to send",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
@@ -1478,13 +1478,13 @@
         ]
       }
     ],
-    "answer_text": "Instead of a matching pair, two left shoes were dispatched in the same box four days before my wedding."
+    "answer_text": "Instead of a matching pair, two left shoes were sent in the same box four days before my wedding."
   },
   {
     "id": "pv7-D2-028",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because the regional jet was full, all cabin bags belonging to Boarding Group 4 ___ at the gate free of charge.",
@@ -1527,7 +1527,7 @@
     "id": "pv7-D2-029",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "— Did your luggage arrive safely?\n— Almost all of it. My golf bag (to load) onto a cargo plane bound for Reykjavik by mistake, so I (to play) with rented clubs yesterday.",
@@ -1597,7 +1597,7 @@
     "id": "pv7-D2-030",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The automated e-gate refused to open for him because he (to shave) off his thick beard since his passport photo was taken.",
@@ -1648,12 +1648,12 @@
     "id": "pv7-D2-031",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Every morning, a gull (to tap) on our balcony glass until the chambermaid finally explained the mystery. The previous guest's habit of leaving half a buttered crumpet on the sill (to establish) the bird's routine.",
+    "prompt": "Every morning, a seagull (to tap) on our balcony window until the hotel cleaner finally explained the mystery. The previous guest's habit of leaving bread on the balcony (to teach) the bird its routine.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Чайка стучала сама (актив). Привычка гостя сама сформировала рутину птицы (актив, Past Perfect для предшествования).",
+    "explanation_ru": "Чайка стучала сама (актив). Привычка гостя сама научила птицу (актив, Past Perfect для предшествования).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1661,7 +1661,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S3-001",
-    "skeleton": "EVERY_MORNING , a w G on our w until the w the w . the w of w a w on the w G the w .",
+    "skeleton": "EVERY_MORNING , a w G on our w until the w the w . the w of w on the w G the w its w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple",
@@ -1688,7 +1688,7 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Чайка стучала сама (актив). Привычка гостя сама сформировала рутину птицы (актив, Past Perfect для предшествования).",
+        "explanation_ru": "Чайка стучала сама (актив). Привычка гостя сама научила птицу (актив, Past Perfect для предшествования).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -1696,34 +1696,34 @@
       },
       {
         "id": "pv7-D2-031-b2",
-        "answer": "had established",
+        "answer": "had taught",
         "accepted_answers": [
-          "had established",
-          "'d established"
+          "had taught",
+          "'d taught"
         ],
-        "base_verb": "to establish",
+        "base_verb": "to teach",
         "supplied_words": [],
         "tense_or_construction": "active_past_perfect",
         "voice": "active",
-        "explanation_ru": "Чайка стучала сама (актив). Привычка гостя сама сформировала рутину птицы (актив, Past Perfect для предшествования).",
+        "explanation_ru": "Чайка стучала сама (актив). Привычка гостя сама научила птицу (актив, Past Perfect для предшествования).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Every morning, a gull tapped on our balcony glass until the chambermaid finally explained the mystery. The previous guest's habit of leaving half a buttered crumpet on the sill had established the bird's routine."
+    "answer_text": "Every morning, a seagull tapped on our balcony window until the hotel cleaner finally explained the mystery. The previous guest's habit of leaving bread on the balcony had taught the bird its routine."
   },
   {
     "id": "pv7-D2-032",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The apartment keys (to leave) inside on the hall table, so the landlord's father climbed a tree to unlatch the kitchen shutter.",
+    "prompt": "The apartment keys (to forget) inside on the hall table, so the landlord's father climbed a tree to open the kitchen window.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Ключи были оставлены (кем-то внутри) — над ними совершено действие, пассив.",
+    "explanation_ru": "Ключи забыли внутри — над ними совершено действие, пассив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1747,35 +1747,35 @@
     "blanks": [
       {
         "id": "pv7-D2-032-b1",
-        "answer": "were left",
+        "answer": "were forgotten",
         "accepted_answers": [
-          "were left",
-          "had been left",
-          "'d been left"
+          "were forgotten",
+          "had been forgotten",
+          "'d been forgotten"
         ],
-        "base_verb": "to leave",
+        "base_verb": "to forget",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Ключи были оставлены (кем-то внутри) — над ними совершено действие, пассив.",
+        "explanation_ru": "Ключи забыли внутри — над ними совершено действие, пассив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "The apartment keys were left inside on the hall table, so the landlord's father climbed a tree to unlatch the kitchen shutter."
+    "answer_text": "The apartment keys were forgotten inside on the hall table, so the landlord's father climbed a tree to open the kitchen window."
   },
   {
     "id": "pv7-D2-033",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Breakfast croissants were lowered from the balcony in a basket because the snowplough piled a drift against the door.",
+    "prompt": "Our breakfast was lowered from the balcony in a basket because the snow was too deep at the door.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Ошибки нет. Круассаны спустили вниз (пассив).",
+    "explanation_ru": "Ошибки нет. Завтрак спустили вниз (пассив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -1783,7 +1783,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S3-006",
-    "skeleton": "w were w from the w in a w because the w NOW w a w the w .",
+    "skeleton": "our w was w from the w in a w because the w NOW was w at the w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple"
@@ -1795,21 +1795,21 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Breakfast croissants were lowered from the balcony in a basket because the snowplough piled a drift against the door.",
+    "answer": "Our breakfast was lowered from the balcony in a basket because the snow was too deep at the door.",
     "accepted_answers": [
-      "Breakfast croissants were lowered from the balcony in a basket because the snowplough piled a drift against the door."
+      "Our breakfast was lowered from the balcony in a basket because the snow was too deep at the door."
     ],
-    "answer_text": "Breakfast croissants were lowered from the balcony in a basket because the snowplough piled a drift against the door.",
+    "answer_text": "Our breakfast was lowered from the balcony in a basket because the snow was too deep at the door.",
     "has_error": false
   },
   {
     "id": "pv7-D2-034",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A saloon car (to cut off) by the rising tide two hours before high water. The occupants safely (to reach) the wooden refuge box in time.",
+    "prompt": "A car (to cut off) by the rising sea on the beach road. The people safely (to reach) a wooden shelter in time.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Машина была отрезана приливом (пассив). Люди сами добрались до убежища (актив).",
     "rule_refs": [
@@ -1819,7 +1819,7 @@
     "cell": "D2",
     "genre": "news",
     "seed_id": "S3-042",
-    "skeleton": "a w G by the w before w . the w G the w in w .",
+    "skeleton": "a w G by the w on the w . the w G a w in w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple",
@@ -1868,13 +1868,13 @@
         ]
       }
     ],
-    "answer_text": "A saloon car was cut off by the rising tide two hours before high water. The occupants safely reached the wooden refuge box in time."
+    "answer_text": "A car was cut off by the rising sea on the beach road. The people safely reached a wooden shelter in time."
   },
   {
     "id": "pv7-D2-035",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "No electric motors ___ on the cliff railway; it runs entirely on water power.",
@@ -1917,7 +1917,7 @@
     "id": "pv7-D2-036",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "When the Wednesday market bus (to divert) round a fallen tree, the driver kindly telephoned ahead to warn the waiting passengers.",
@@ -1967,10 +1967,10 @@
     "id": "pv7-D2-037",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Before each match, droplets of warm de-ionised water (to sprinkle) across the ice sheet. They instantly freeze into tiny pebbles, ensuring the heavy granite stones (to glide) properly over the surface.",
+    "prompt": "Before each match, warm water (to spray) onto the ice. It freezes into tiny bumps, so the heavy stones (to slide) smoothly across it.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Воду разбрызгивают (пассив). Камни скользят сами (актив).",
     "rule_refs": [
@@ -1980,7 +1980,7 @@
     "cell": "D2",
     "genre": "process",
     "seed_id": "S3-082",
-    "skeleton": "before each w , w of w G w the w . they w into w , w the w G w over the w .",
+    "skeleton": "before each w , w G w the w . it w into w , so the w G w it .",
     "practice_tenses": [
       "pv_D2",
       "pv_present_simple",
@@ -1998,12 +1998,12 @@
     "blanks": [
       {
         "id": "pv7-D2-037-b1",
-        "answer": "are sprinkled",
+        "answer": "are sprayed",
         "accepted_answers": [
-          "are sprinkled",
-          "'re sprinkled"
+          "are sprayed",
+          "'re sprayed"
         ],
-        "base_verb": "to sprinkle",
+        "base_verb": "to spray",
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
@@ -2015,11 +2015,11 @@
       },
       {
         "id": "pv7-D2-037-b2",
-        "answer": "glide",
+        "answer": "slide",
         "accepted_answers": [
-          "glide"
+          "slide"
         ],
-        "base_verb": "to glide",
+        "base_verb": "to slide",
         "supplied_words": [],
         "tense_or_construction": "active_present_simple",
         "voice": "active",
@@ -2030,13 +2030,13 @@
         ]
       }
     ],
-    "answer_text": "Before each match, droplets of warm de-ionised water are sprinkled across the ice sheet. They instantly freeze into tiny pebbles, ensuring the heavy granite stones glide properly over the surface."
+    "answer_text": "Before each match, warm water are sprayed onto the ice. It freezes into tiny bumps, so the heavy stones slide smoothly across it."
   },
   {
     "id": "pv7-D2-038",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Kick-off had to wait twenty minutes because all eleven team shirts (to forget) in the captain's tumble dryer back home.",
@@ -2088,7 +2088,7 @@
     "id": "pv7-D2-039",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Any cox weighing under fifty-five kilos (to weigh) again immediately after crossing the finish line.",
@@ -2142,10 +2142,10 @@
     "id": "pv7-D2-040",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Baroque harpsichord strings frequently (to slip) out of tune when the hall warms up. Therefore, the delicate instrument (to retune) carefully during the interval by a specialist.",
+    "prompt": "Old piano strings often (to go) out of tune when the hall gets warm. So the instrument (to tune) carefully during the break by an expert.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Струны расстраиваются сами (актив). Инструмент настраивают (специалист) — пассив.",
     "rule_refs": [
@@ -2155,7 +2155,7 @@
     "cell": "D2",
     "genre": "report",
     "seed_id": "S3-121",
-    "skeleton": "w G w of w when the w . w , the w G w the w by a w .",
+    "skeleton": "w G w of w when the w . so the w G w the w by an w .",
     "practice_tenses": [
       "pv_D2",
       "active_present_simple",
@@ -2173,11 +2173,11 @@
     "blanks": [
       {
         "id": "pv7-D2-040-b1",
-        "answer": "slip",
+        "answer": "go",
         "accepted_answers": [
-          "slip"
+          "go"
         ],
-        "base_verb": "to slip",
+        "base_verb": "to go",
         "supplied_words": [],
         "tense_or_construction": "active_present_simple",
         "voice": "active",
@@ -2189,15 +2189,15 @@
       },
       {
         "id": "pv7-D2-040-b2",
-        "answer": "is retuned",
+        "answer": "is tuned",
         "accepted_answers": [
-          "is retuned",
-          "'s retuned",
-          "must be retuned",
-          "has to be retuned",
-          "'s to be retuned"
+          "is tuned",
+          "'s tuned",
+          "must be tuned",
+          "has to be tuned",
+          "'s to be tuned"
         ],
-        "base_verb": "to retune",
+        "base_verb": "to tune",
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
@@ -2208,16 +2208,16 @@
         ]
       }
     ],
-    "answer_text": "Baroque harpsichord strings frequently slip out of tune when the hall warms up. Therefore, the delicate instrument is retuned carefully during the interval by a specialist."
+    "answer_text": "Old piano strings often go out of tune when the hall gets warm. So the instrument is tuned carefully during the break by an expert."
   },
   {
     "id": "pv7-D2-041",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Heavy snow (to bend) the pines over our road, so food was brought on snowmobiles.",
+    "prompt": "Heavy snow (to bend) the trees over our road, so food was brought by car.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Снег сам наклонил сосны (активный залог).",
     "rule_refs": [
@@ -2227,7 +2227,7 @@
     "cell": "D2",
     "genre": "news",
     "seed_id": "S1-005",
-    "skeleton": "w NOW G the w over our w , so w was w on w NOW w .",
+    "skeleton": "w NOW G the w over our w , so w was w by w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple"
@@ -2260,18 +2260,18 @@
         ]
       }
     ],
-    "answer_text": "Heavy snow bent the pines over our road, so food was brought on snowmobiles."
+    "answer_text": "Heavy snow bent the trees over our road, so food was brought by car."
   },
   {
     "id": "pv7-D2-042",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My neighbour's rain gauge (to overflow) in minutes, but the official station didn't catch a drop.",
+    "prompt": "The stream behind my neighbour's house (to rise) in minutes, but the official station didn't catch a drop.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Глагол overflow не имеет пассивного залога, прибор переполнился сам (актив).",
+    "explanation_ru": "Глагол rise не имеет пассивного залога, ручей поднялся сам (актив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -2279,7 +2279,7 @@
     "cell": "D2",
     "genre": "dialogue",
     "seed_id": "S1-007",
-    "skeleton": "my w G in w , but the w a w .",
+    "skeleton": "the w my w G in w , but the w a w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple"
@@ -2295,33 +2295,35 @@
     "blanks": [
       {
         "id": "pv7-D2-042-b1",
-        "answer": "overflowed",
+        "answer": "rose",
         "accepted_answers": [
-          "overflowed"
+          "rose",
+          "has risen",
+          "'s risen"
         ],
-        "base_verb": "to overflow",
+        "base_verb": "to rise",
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Глагол overflow не имеет пассивного залога, прибор переполнился сам (актив).",
+        "explanation_ru": "Глагол rise не имеет пассивного залога, ручей поднялся сам (актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "My neighbour's rain gauge overflowed in minutes, but the official station didn't catch a drop."
+    "answer_text": "The stream behind my neighbour's house rose in minutes, but the official station didn't catch a drop."
   },
   {
     "id": "pv7-D2-043",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A sudden gust of wind (to lift) the canvas roof, so we had to hold the ropes.",
+    "prompt": "A strong wind (to lift) the cover of our stall, so we had to hold the ropes.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Ветер сам поднял крышу (активный залог).",
+    "explanation_ru": "Ветер сам поднял покрытие (активный залог).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -2329,7 +2331,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S1-008",
-    "skeleton": "a w of w G the w , so we had to w the w .",
+    "skeleton": "a w G the w of our w , so we had to w the w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple"
@@ -2353,25 +2355,25 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Ветер сам поднял крышу (активный залог).",
+        "explanation_ru": "Ветер сам поднял покрытие (активный залог).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "A sudden gust of wind lifted the canvas roof, so we had to hold the ropes."
+    "answer_text": "A strong wind lifted the cover of our stall, so we had to hold the ropes."
   },
   {
     "id": "pv7-D2-044",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The pet passport (to check) again because a clerk had typed the chip number backwards.",
+    "prompt": "The form (to correct) again because a clerk had typed the number wrongly.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Паспорт проверили сотрудники (пассивный залог).",
+    "explanation_ru": "Форму исправили сотрудники (пассивный залог).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -2395,33 +2397,33 @@
     "blanks": [
       {
         "id": "pv7-D2-044-b1",
-        "answer": "was checked",
+        "answer": "was corrected",
         "accepted_answers": [
-          "was checked",
-          "had to be checked",
-          "'d to be checked"
+          "was corrected",
+          "had to be corrected",
+          "'d to be corrected"
         ],
-        "base_verb": "to check",
+        "base_verb": "to correct",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Паспорт проверили сотрудники (пассивный залог).",
+        "explanation_ru": "Форму исправили сотрудники (пассивный залог).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "The pet passport was checked again because a clerk had typed the chip number backwards."
+    "answer_text": "The form was corrected again because a clerk had typed the number wrongly."
   },
   {
     "id": "pv7-D2-045",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "During the rains, tree frogs (to move) gently from the ticket barriers to the bushes by the staff.",
+    "prompt": "During the rains, frogs (to move) from the ticket gates to the bushes by the staff.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Лягушек регулярно перемещает персонал (пассивный залог).",
     "rule_refs": [
@@ -2431,7 +2433,7 @@
     "cell": "D2",
     "genre": "report",
     "seed_id": "S1-047",
-    "skeleton": "w the w , w G w from the w to the w by the w .",
+    "skeleton": "w the w , w G from the w to the w by the w .",
     "practice_tenses": [
       "pv_D2",
       "pv_present_simple"
@@ -2463,16 +2465,16 @@
         ]
       }
     ],
-    "answer_text": "During the rains, tree frogs are moved gently from the ticket barriers to the bushes by the staff."
+    "answer_text": "During the rains, frogs are moved from the ticket gates to the bushes by the staff."
   },
   {
     "id": "pv7-D2-046",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "His new collie (to buy) cheap at the market, but it only understood Welsh whistles.",
+    "prompt": "His new dog (to buy) cheap at the market, but it only understood Welsh.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Собаку купили, действие совершено над ней (пассивный залог).",
     "rule_refs": [
@@ -2515,13 +2517,13 @@
         ]
       }
     ],
-    "answer_text": "His new collie was bought cheap at the market, but it only understood Welsh whistles."
+    "answer_text": "His new dog was bought cheap at the market, but it only understood Welsh."
   },
   {
     "id": "pv7-D2-047",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Someone kept taking her milk until the bottle (to label) 'Horseradish Broth'.",
@@ -2572,10 +2574,10 @@
     "id": "pv7-D2-048",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Unless vegetable oil (to request) at the till, all our fish is fried in beef dripping.",
+    "prompt": "Unless vegetable oil (to request) at the till, all our fish is fried in animal fat.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Масло запрашивается покупателями, само оно попросить не может (пассив).",
     "rule_refs": [
@@ -2617,16 +2619,16 @@
         ]
       }
     ],
-    "answer_text": "Unless vegetable oil is requested at the till, all our fish is fried in beef dripping."
+    "answer_text": "Unless vegetable oil is requested at the till, all our fish is fried in animal fat."
   },
   {
     "id": "pv7-D2-049",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Seven plates of eel (to arrive) at once because I accidentally tapped the plus button on the screen.",
+    "prompt": "Seven plates of fish (to arrive) at once because I accidentally tapped the plus button on the screen.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Глагол arrive непереходный и не имеет пассивного залога.",
     "rule_refs": [
@@ -2667,13 +2669,13 @@
         ]
       }
     ],
-    "answer_text": "Seven plates of eel arrived at once because I accidentally tapped the plus button on the screen."
+    "answer_text": "Seven plates of fish arrived at once because I accidentally tapped the plus button on the screen."
   },
   {
     "id": "pv7-D2-050",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because the hot mixture (to pour) directly into the cold jars, four of them cracked.",
@@ -2725,10 +2727,10 @@
     "id": "pv7-D2-051",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A copper coin (to hide) in two random dumplings to bring luck to whoever finds them.",
+    "prompt": "A copper coin (to hide) in two random pies to bring luck to whoever finds them.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Монетку прячут в пельмени (пассивный залог), действие регулярно и совершается поварами.",
     "rule_refs": [
@@ -2770,18 +2772,18 @@
         ]
       }
     ],
-    "answer_text": "A copper coin is hidden in two random dumplings to bring luck to whoever finds them."
+    "answer_text": "A copper coin is hidden in two random pies to bring luck to whoever finds them."
   },
   {
     "id": "pv7-D2-052",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Two huge steaks (to sear) in a dry skillet, which set off the hall smoke alarm immediately.",
+    "prompt": "Two huge steaks (to fry) in a dry pan, which set off the hall smoke alarm immediately.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Стейки обжаривали (пассивный залог), действие над объектом.",
+    "explanation_ru": "Стейки жарили (пассивный залог), действие над объектом.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -2805,28 +2807,28 @@
     "blanks": [
       {
         "id": "pv7-D2-052-b1",
-        "answer": "were seared",
+        "answer": "were fried",
         "accepted_answers": [
-          "were seared"
+          "were fried"
         ],
-        "base_verb": "to sear",
+        "base_verb": "to fry",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Стейки обжаривали (пассивный залог), действие над объектом.",
+        "explanation_ru": "Стейки жарили (пассивный залог), действие над объектом.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Two huge steaks were seared in a dry skillet, which set off the hall smoke alarm immediately."
+    "answer_text": "Two huge steaks were fried in a dry pan, which set off the hall smoke alarm immediately."
   },
   {
     "id": "pv7-D2-053",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Four hundred copies of the worksheet (to print) on bright pink card by mistake, jamming all three trays.",
@@ -2876,7 +2878,7 @@
     "id": "pv7-D2-054",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The school's heavy brass tuba (to damage) during the autumn concert when it rolled off the stage.",
@@ -2927,7 +2929,7 @@
     "id": "pv7-D2-055",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "That drinks machine (to unplug) yesterday after it started giving out ginger beer instead of water.",
@@ -2978,10 +2980,10 @@
     "id": "pv7-D2-056",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Three copies of my dissertation (to bind) beautifully in navy buckram, but I still spotted a typo on the cover.",
+    "prompt": "Three copies of my final project (to bind) beautifully in blue cloth, but I still saw a mistake on the cover.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Копии были переплетены кем-то другим (пассивный залог).",
     "rule_refs": [
@@ -3024,16 +3026,16 @@
         ]
       }
     ],
-    "answer_text": "Three copies of my dissertation were bound beautifully in navy buckram, but I still spotted a typo on the cover."
+    "answer_text": "Three copies of my final project were bound beautifully in blue cloth, but I still saw a mistake on the cover."
   },
   {
     "id": "pv7-D2-057",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our concrete boat (to build) carefully, and it (to stay) afloat for twenty minutes. Then a tiny crack (to appear) along the bottom.",
+    "prompt": "Our concrete boat (to build) carefully, and it (to stay) on the water for twenty minutes. Then a tiny crack (to appear) along the bottom.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Лодку построили (пассив), а оставалась на плаву и треснула она сама (актив, непереходные глаголы).",
     "rule_refs": [
@@ -3043,7 +3045,7 @@
     "cell": "D2",
     "genre": "report",
     "seed_id": "S2-005",
-    "skeleton": "our w G w , and it G w for w . w a w G w the w .",
+    "skeleton": "our w G w , and it G on the w for w . w a w G w the w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple",
@@ -3110,16 +3112,16 @@
         ]
       }
     ],
-    "answer_text": "Our concrete boat was built carefully, and it stayed afloat for twenty minutes. Then a tiny crack appeared along the bottom."
+    "answer_text": "Our concrete boat was built carefully, and it stayed on the water for twenty minutes. Then a tiny crack appeared along the bottom."
   },
   {
     "id": "pv7-D2-058",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My exam screen (to lock) by the automated software twice. A ginger cat (to keep) jumping onto the bookshelf behind me.",
+    "prompt": "My exam screen (to lock) by the computer program twice. A big orange cat (to keep) jumping onto the bookshelf behind me.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Экран заблокировался программой (пассив), а кот продолжал прыгать сам (актив).",
     "rule_refs": [
@@ -3179,13 +3181,13 @@
         ]
       }
     ],
-    "answer_text": "My exam screen was locked by the automated software twice. A ginger cat kept jumping onto the bookshelf behind me."
+    "answer_text": "My exam screen was locked by the computer program twice. A big orange cat kept jumping onto the bookshelf behind me."
   },
   {
     "id": "pv7-D2-059",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "When the air-conditioning (to fail) in July, we didn't suffer. Every adviser (to give) a desk fan and sent home early.",
@@ -3253,12 +3255,12 @@
     "id": "pv7-D2-060",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "If a workstation (to leave) unlocked, you might get a surprise. Usually, the desktop wallpaper (to replace) with a photo of a dog by your colleagues. This joke (to happen) every week.",
+    "prompt": "If a computer (to leave) unlocked, you might get a surprise. Usually, the picture on the screen (to replace) with a photo of a dog by your colleagues. This joke (to happen) every week.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Компьютер оставляют и обои заменяют (пассив), а шутка происходит сама (глагол happen не имеет пассива).",
+    "explanation_ru": "Компьютер оставляют и картинку заменяют (пассив), а шутка происходит сама (глагол happen не имеет пассива).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -3266,7 +3268,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S2-047",
-    "skeleton": "if a w G w , you might w a w . w , the w G with a w of a w by your w . this w G EVERY_WEEK .",
+    "skeleton": "if a w G w , you might w a w . w , the w on the w G with a w of a w by your w . this w G EVERY_WEEK .",
     "practice_tenses": [
       "pv_D2",
       "pv_present_simple",
@@ -3293,7 +3295,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Компьютер оставляют и обои заменяют (пассив), а шутка происходит сама (глагол happen не имеет пассива).",
+        "explanation_ru": "Компьютер оставляют и картинку заменяют (пассив), а шутка происходит сама (глагол happen не имеет пассива).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -3310,7 +3312,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Компьютер оставляют и обои заменяют (пассив), а шутка происходит сама (глагол happen не имеет пассива).",
+        "explanation_ru": "Компьютер оставляют и картинку заменяют (пассив), а шутка происходит сама (глагол happen не имеет пассива).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -3326,23 +3328,23 @@
         "supplied_words": [],
         "tense_or_construction": "active_present_simple",
         "voice": "active",
-        "explanation_ru": "Компьютер оставляют и обои заменяют (пассив), а шутка происходит сама (глагол happen не имеет пассива).",
+        "explanation_ru": "Компьютер оставляют и картинку заменяют (пассив), а шутка происходит сама (глагол happen не имеет пассива).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "If a workstation is left unlocked, you might get a surprise. Usually, the desktop wallpaper is replaced with a photo of a dog by your colleagues. This joke happens every week."
+    "answer_text": "If a computer is left unlocked, you might get a surprise. Usually, the picture on the screen is replaced with a photo of a dog by your colleagues. This joke happens every week."
   },
   {
     "id": "pv7-D2-061",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Visitor passes (to print) on special chemical paper at reception. After eight hours, they (to turn) bright blue. So you can't reuse yesterday's badge.",
+    "prompt": "Visitor passes (to print) on special paper at reception. After eight hours, they (to turn) bright blue. So you can't use yesterday's pass again.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Пропуска печатают (пассив), а цвет они меняют сами (актив).",
     "rule_refs": [
@@ -3404,18 +3406,18 @@
         ]
       }
     ],
-    "answer_text": "Visitor passes are printed on special chemical paper at reception. After eight hours, they turn bright blue. So you can't reuse yesterday's badge."
+    "answer_text": "Visitor passes are printed on special paper at reception. After eight hours, they turn bright blue. So you can't use yesterday's pass again."
   },
   {
     "id": "pv7-D2-062",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "At her trial, she (to ask) to prepare croissant dough by hand. The butter layer (not / to crack), so the owner hired her immediately.",
+    "prompt": "At her job test, she (to ask) to make a cake by hand. The cake (not / to burn), so the owner hired her immediately.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Девушку попросили (пассив), а слой масла не треснул сам (актив, в данном контексте).",
+    "explanation_ru": "Девушку попросили (пассив), а торт не подгорел сам (актив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -3423,7 +3425,7 @@
     "cell": "D2",
     "genre": "dialogue",
     "seed_id": "S2-086",
-    "skeleton": "at her w , she G to w by w . the w G , so the w her w .",
+    "skeleton": "at her w , she G to w a w by w . the w G , so the w her w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple",
@@ -3449,7 +3451,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Девушку попросили (пассив), а слой масла не треснул сам (актив, в данном контексте).",
+        "explanation_ru": "Девушку попросили (пассив), а торт не подгорел сам (актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -3457,36 +3459,36 @@
       },
       {
         "id": "pv7-D2-062-b2",
-        "answer": "did not crack",
+        "answer": "did not burn",
         "accepted_answers": [
-          "did not crack",
-          "didn't crack"
+          "did not burn",
+          "didn't burn"
         ],
-        "base_verb": "not / to crack",
+        "base_verb": "not / to burn",
         "supplied_words": [
           "not"
         ],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Девушку попросили (пассив), а слой масла не треснул сам (актив, в данном контексте).",
+        "explanation_ru": "Девушку попросили (пассив), а торт не подгорел сам (актив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "At her trial, she was asked to prepare croissant dough by hand. The butter layer did not crack, so the owner hired her immediately."
+    "answer_text": "At her job test, she was asked to make a cake by hand. The cake did not burn, so the owner hired her immediately."
   },
   {
     "id": "pv7-D2-063",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Next month, Fiona (to retire) after forty years at the gardens. Instead of a clock, a new rhododendron (to just / name) after her by the apprentices.",
+    "prompt": "Next month, Fiona (to retire) after forty years at the gardens. Instead of a clock, a new flower (to just / name) after her by the young gardeners.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Фиона уходит на пенсию сама (актив), а сорт цветка назван в её честь другими (пассив).",
+    "explanation_ru": "Фиона уходит на пенсию сама (актив), а цветок назвали в её честь другие люди (пассив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -3524,7 +3526,7 @@
         "supplied_words": [],
         "tense_or_construction": "active_present_continuous",
         "voice": "active",
-        "explanation_ru": "Фиона уходит на пенсию сама (актив), а сорт цветка назван в её честь другими (пассив).",
+        "explanation_ru": "Фиона уходит на пенсию сама (актив), а цветок назвали в её честь другие люди (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -3543,23 +3545,23 @@
         ],
         "tense_or_construction": "pv_present_perfect",
         "voice": "passive",
-        "explanation_ru": "Фиона уходит на пенсию сама (актив), а сорт цветка назван в её честь другими (пассив).",
+        "explanation_ru": "Фиона уходит на пенсию сама (актив), а цветок назвали в её честь другие люди (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "Next month, Fiona is retiring after forty years at the gardens. Instead of a clock, a new rhododendron has just been named after her by the apprentices."
+    "answer_text": "Next month, Fiona is retiring after forty years at the gardens. Instead of a clock, a new flower has just been named after her by the young gardeners."
   },
   {
     "id": "pv7-D2-064",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A temporary driver (to dismiss) last week. CCTV footage (to show) him lifting his mate's lunchbox onto a high shelf with the forklift.",
+    "prompt": "A temporary driver (to fire) last week. The camera video (to show) him lifting his friend's lunchbox onto a high shelf with the warehouse truck.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Водителя уволили (пассив), а камеры сами показали запись (актив).",
     "rule_refs": [
@@ -3569,7 +3571,7 @@
     "cell": "D2",
     "genre": "news",
     "seed_id": "S2-088",
-    "skeleton": "a w G LAST_WEEK . w G him w his w a w with the w .",
+    "skeleton": "a w G LAST_WEEK . the w G him w his w a w with the w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple",
@@ -3587,12 +3589,12 @@
     "blanks": [
       {
         "id": "pv7-D2-064-b1",
-        "answer": "was dismissed",
+        "answer": "was fired",
         "accepted_answers": [
-          "was dismissed",
-          "got dismissed"
+          "was fired",
+          "got fired"
         ],
-        "base_verb": "to dismiss",
+        "base_verb": "to fire",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
@@ -3619,13 +3621,13 @@
         ]
       }
     ],
-    "answer_text": "A temporary driver was dismissed last week. CCTV footage showed him lifting his mate's lunchbox onto a high shelf with the forklift."
+    "answer_text": "A temporary driver was fired last week. The camera video showed him lifting his friend's lunchbox onto a high shelf with the warehouse truck."
   },
   {
     "id": "pv7-D2-065",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "We ordered three sample pots from the machine. They (to mix) perfectly at the shop, but they all (to dry) a different shade on our wall.",
@@ -3693,7 +3695,7 @@
     "id": "pv7-D2-066",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "In the courtyard stalls, second-hand books (to price) at just two pounds. Nobody (to watch) you while you browse, and the money (to drop) directly into an honesty box chained to the wall.",
@@ -3781,10 +3783,10 @@
     "id": "pv7-D2-067",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "When I scanned my code, Door 19 (to pop) open. However, my pharmacology textbook (not / to lie) inside. Instead, the space (to fill) with dried mealworms.",
+    "prompt": "When I scanned my code, Door 19 (to pop) open. However, my chemistry textbook (not / to lie) inside. Instead, the space (to fill) with dried fruit.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Дверца открылась и учебник не лежал (актив, самостоятельные действия), пространство было заполнено кем-то другим (пассив).",
     "rule_refs": [
@@ -3866,13 +3868,13 @@
         ]
       }
     ],
-    "answer_text": "When I scanned my code, Door 19 popped open. However, my pharmacology textbook was not lying inside. Instead, the space was filled with dried mealworms."
+    "answer_text": "When I scanned my code, Door 19 popped open. However, my chemistry textbook was not lying inside. Instead, the space was filled with dried fruit."
   },
   {
     "id": "pv7-D2-068",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "On the steepest hills, dry sand (to scatter) onto the wet rails by hand. This ensures the locomotive wheels (not / to slip).",
@@ -3944,7 +3946,7 @@
     "id": "pv7-D2-069",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Because all the small manual cars (to hire out) during the strike, we got a free upgrade. We (to drive) a huge minibus down the narrow village lanes now!",
@@ -4015,10 +4017,10 @@
     "id": "pv7-D2-070",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Her violin case (to swab) for trace explosives by a security officer. Then he (to enquire) what piece the orchestra was playing in Prague.",
+    "prompt": "Her violin case (to check) for explosives by a security officer. Then he (to ask) what piece the orchestra was playing in Prague.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Футляр проверили (пассив), а затем офицер сам спросил (актив).",
     "rule_refs": [
@@ -4046,11 +4048,11 @@
     "blanks": [
       {
         "id": "pv7-D2-070-b1",
-        "answer": "was swabbed",
+        "answer": "was checked",
         "accepted_answers": [
-          "was swabbed"
+          "was checked"
         ],
-        "base_verb": "to swab",
+        "base_verb": "to check",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
@@ -4062,11 +4064,11 @@
       },
       {
         "id": "pv7-D2-070-b2",
-        "answer": "enquired",
+        "answer": "asked",
         "accepted_answers": [
-          "enquired"
+          "asked"
         ],
-        "base_verb": "to enquire",
+        "base_verb": "to ask",
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
@@ -4077,16 +4079,16 @@
         ]
       }
     ],
-    "answer_text": "Her violin case was swabbed for trace explosives by a security officer. Then he enquired what piece the orchestra was playing in Prague."
+    "answer_text": "Her violin case was checked for explosives by a security officer. Then he asked what piece the orchestra was playing in Prague."
   },
   {
     "id": "pv7-D2-071",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "He asked to be moved away from the noisy street and ___ the bridal suite instead.",
+    "prompt": "He asked to be moved away from the noisy street and ___ the best room instead.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Ему дали номер (пассивный залог), а не он сам его дал.",
     "rule_refs": [
@@ -4119,19 +4121,19 @@
       0
     ],
     "answer": "was given",
-    "summary": "He asked to be moved away from the noisy street and was given the bridal suite instead.",
-    "answer_text": "He asked to be moved away from the noisy street and was given the bridal suite instead."
+    "summary": "He asked to be moved away from the noisy street and was given the best room instead.",
+    "answer_text": "He asked to be moved away from the noisy street and was given the best room instead."
   },
   {
     "id": "pv7-D2-072",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Those plastic slippers ___ gently for woven rush sandals by the hostess without a word.",
+    "prompt": "Those plastic shoes ___ quietly for old sandals by the owner without a word.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Тапочки были заменены хозяйкой (пассивный залог, мн.ч.).",
+    "explanation_ru": "Туфли были заменены хозяином (пассивный залог, мн.ч.).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -4162,14 +4164,14 @@
       1
     ],
     "answer": "were swapped",
-    "summary": "Those plastic slippers were swapped gently for woven rush sandals by the hostess without a word.",
-    "answer_text": "Those plastic slippers were swapped gently for woven rush sandals by the hostess without a word."
+    "summary": "Those plastic shoes were swapped quietly for old sandals by the owner without a word.",
+    "answer_text": "Those plastic shoes were swapped quietly for old sandals by the owner without a word."
   },
   {
     "id": "pv7-D2-073",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The private beach ___ by a lift bored straight through eighty metres of rock.",
@@ -4212,10 +4214,10 @@
     "id": "pv7-D2-074",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Her stolen bicycle ___ miraculously at the council depot after two weeks.",
+    "prompt": "Her stolen bicycle ___ suddenly at the council depot after two weeks.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "Глагол appear (появляться) не имеет пассивного залога, велосипед появился сам.",
     "rule_refs": [
@@ -4248,14 +4250,14 @@
       1
     ],
     "answer": "appeared",
-    "summary": "Her stolen bicycle appeared miraculously at the council depot after two weeks.",
-    "answer_text": "Her stolen bicycle appeared miraculously at the council depot after two weeks."
+    "summary": "Her stolen bicycle appeared suddenly at the council depot after two weeks.",
+    "answer_text": "Her stolen bicycle appeared suddenly at the council depot after two weeks."
   },
   {
     "id": "pv7-D2-075",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A strange incident ___ during the 1904 marathon: one runner travelled eleven miles in a car.",
@@ -4298,7 +4300,7 @@
     "id": "pv7-D2-076",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "If you stop pedalling on the steep banking, you will be thrown off.",
@@ -4334,12 +4336,12 @@
     "id": "pv7-D2-077",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A strong gust of wind was blown the sheet music off the grand piano desk.",
+    "prompt": "A strong wind was blown the music pages off the piano.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Порыв ветра сам сдул ноты — здесь нужен активный залог (blew).",
+    "explanation_ru": "Ветер сам сдул ноты — здесь нужен активный залог (blew).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -4347,7 +4349,7 @@
     "cell": "D2",
     "genre": "chat",
     "seed_id": "S3-124",
-    "skeleton": "a w of w was w the w the w .",
+    "skeleton": "a w was w the w the w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple"
@@ -4359,23 +4361,23 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "A strong gust of wind blew the sheet music off the grand piano desk.",
+    "answer": "A strong wind blew the music pages off the piano.",
     "accepted_answers": [
-      "A strong gust of wind blew the sheet music off the grand piano desk."
+      "A strong wind blew the music pages off the piano."
     ],
-    "answer_text": "A strong gust of wind blew the sheet music off the grand piano desk.",
+    "answer_text": "A strong wind blew the music pages off the piano.",
     "has_error": true
   },
   {
     "id": "pv7-D2-078",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Back in the 1840s, the organ bellows pumped by two choirboys hidden behind a screen.",
+    "prompt": "Back in the 1840s, the church bells rung by two boys from the village.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Меха накачивались мальчиками — требуется пассивный залог (were pumped).",
+    "explanation_ru": "В колокола звонили мальчики — требуется пассивный залог (were rung).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -4383,7 +4385,7 @@
     "cell": "D2",
     "genre": "history",
     "seed_id": "S3-125",
-    "skeleton": "w in the 1840 w , the w by w a w .",
+    "skeleton": "w in the 1840 w , the w by w from the w .",
     "practice_tenses": [
       "pv_D2",
       "pv_past_simple"
@@ -4395,23 +4397,23 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Back in the 1840s, the organ bellows were pumped by two choirboys hidden behind a screen.",
+    "answer": "Back in the 1840s, the church bells were rung by two boys from the village.",
     "accepted_answers": [
-      "Back in the 1840s, the organ bellows were pumped by two choirboys hidden behind a screen."
+      "Back in the 1840s, the church bells were rung by two boys from the village."
     ],
-    "answer_text": "Back in the 1840s, the organ bellows were pumped by two choirboys hidden behind a screen.",
+    "answer_text": "Back in the 1840s, the church bells were rung by two boys from the village.",
     "has_error": true
   },
   {
     "id": "pv7-D2-079",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The haulier's timber lorry was overweight because the pine logs were soaked with rain. What happened at the weighbridge?",
+    "prompt": "The driver's wood lorry was too heavy because the logs were wet with rain. What happened at the road check?",
     "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
-    "explanation_ru": "Грузовик направили на осмотр офицеры (пассивный залог над неодушевленным объектом).",
+    "explanation_ru": "Грузовик отправили на проверку полицейские (пассивный залог над неодушевленным объектом).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -4432,24 +4434,24 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "His lorry was waved into the inspection bay by traffic officers.",
-      "His lorry waved into the inspection bay by traffic officers.",
-      "Traffic officers were waved into the inspection bay by his lorry.",
-      "His lorry was waving into the inspection bay by traffic officers."
+      "His lorry was sent into the checking area by traffic police.",
+      "His lorry sent into the checking area by traffic police.",
+      "Traffic police were sent into the checking area by his lorry.",
+      "His lorry was sending into the checking area by traffic police."
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "His lorry was waved into the inspection bay by traffic officers.",
-    "summary": "His lorry was waved into the inspection bay by traffic officers.",
-    "answer_text": "His lorry was waved into the inspection bay by traffic officers."
+    "answer": "His lorry was sent into the checking area by traffic police.",
+    "summary": "His lorry was sent into the checking area by traffic police.",
+    "answer_text": "His lorry was sent into the checking area by traffic police."
   },
   {
     "id": "pv7-D2-080",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The passenger's phone battery died, so he couldn't show his digital ticket on the tram. He sent a screenshot to the transport office from home. What was the result?",
@@ -4492,7 +4494,7 @@
     "id": "pv7-D2-081",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The dry wind shrank the surface pools, and an ancient wooden path (to appear) in the mud.",
@@ -4542,7 +4544,7 @@
     "id": "pv7-D2-082",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "After the water temperature reached twenty-two degrees, free evening sessions (to offer) to all season ticket holders.",
@@ -4592,7 +4594,7 @@
     "id": "pv7-D2-083",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "When thick sea fog rolled in, everyone (to transfer) onto the large coastal steamer.",
@@ -4643,10 +4645,10 @@
     "id": "pv7-D2-084",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The customer paid by card, and immediately his wrapped salmon (to disappear) into the sky with a bold gull.",
+    "prompt": "The customer paid by card, and a minute later his fish (to disappear) from his plate. A bird took it!",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Лосось исчез (активный залог). Глагол disappear никогда не используется в пассиве.",
     "rule_refs": [
@@ -4656,7 +4658,7 @@
     "cell": "D2",
     "genre": "review",
     "seed_id": "S1-050",
-    "skeleton": "the w by w , and w his w G into the w with a w .",
+    "skeleton": "the w by w , and a w his w G from his w . a w it !",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple"
@@ -4687,13 +4689,13 @@
         ]
       }
     ],
-    "answer_text": "The customer paid by card, and immediately his wrapped salmon disappeared into the sky with a bold gull."
+    "answer_text": "The customer paid by card, and a minute later his fish disappeared from his plate. A bird took it!"
   },
   {
     "id": "pv7-D2-085",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A funny thing (to happen) at the fortress when a royal elephant refused to cross the new bridge.",
@@ -4743,12 +4745,12 @@
     "id": "pv7-D2-086",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My fresh sourdough rolls (to steal) by a magpie right off the kitchen windowsill!",
+    "prompt": "My fresh bread rolls (to steal) by a bird right off the kitchen table!",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Булочки были украдены сорокой — действие совершено над ними (пассивный залог).",
+    "explanation_ru": "Булочки были украдены птицей — действие совершено над ними (пассивный залог).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -4780,23 +4782,23 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Булочки были украдены сорокой — действие совершено над ними (пассивный залог).",
+        "explanation_ru": "Булочки были украдены птицей — действие совершено над ними (пассивный залог).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "My fresh sourdough rolls were stolen by a magpie right off the kitchen windowsill!"
+    "answer_text": "My fresh bread rolls were stolen by a bird right off the kitchen table!"
   },
   {
     "id": "pv7-D2-087",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Any unsold rye bread (to slice) and baked a second time to make crisp snacks.",
+    "prompt": "Any unsold brown bread (to slice) and baked a second time to make crisp snacks.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Хлеб нарезают пекари (пассивный залог).",
     "rule_refs": [
@@ -4838,18 +4840,18 @@
         ]
       }
     ],
-    "answer_text": "Any unsold rye bread is sliced and baked a second time to make crisp snacks."
+    "answer_text": "Any unsold brown bread is sliced and baked a second time to make crisp snacks."
   },
   {
     "id": "pv7-D2-088",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The tourist ate his coarse oatmeal cold, not realising it (to serve) hot from the kitchen.",
+    "prompt": "The tourist ate his porridge cold, not realising it (to serve) hot from the kitchen.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Каша подается горячей работниками отеля (пассивный залог).",
+    "explanation_ru": "Кашу подают горячей работники отеля (пассивный залог).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -4883,23 +4885,23 @@
         "supplied_words": [],
         "tense_or_construction": "pv_present_simple",
         "voice": "passive",
-        "explanation_ru": "Каша подается горячей работниками отеля (пассивный залог).",
+        "explanation_ru": "Кашу подают горячей работники отеля (пассивный залог).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "The tourist ate his coarse oatmeal cold, not realising it is served hot from the kitchen."
+    "answer_text": "The tourist ate his porridge cold, not realising it is served hot from the kitchen."
   },
   {
     "id": "pv7-D2-089",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Because of the freezing wind, the dark heather honey (to turn) completely solid in its jar.",
+    "prompt": "Because of the freezing wind, the dark honey (to turn) completely solid in its jar.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Мёд сам стал твердым из-за температуры (активный залог, изменение состояния).",
     "rule_refs": [
@@ -4942,18 +4944,18 @@
         ]
       }
     ],
-    "answer_text": "Because of the freezing wind, the dark heather honey turned completely solid in its jar."
+    "answer_text": "Because of the freezing wind, the dark honey turned completely solid in its jar."
   },
   {
     "id": "pv7-D2-090",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "His backyard fire died at four in the morning, so the brisket (to finish) in the indoor oven.",
+    "prompt": "His garden fire died at four in the morning, so the meat (to finish) in the indoor oven.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Грудинку доготовили в духовке (пассивный залог), она не могла сделать это сама.",
+    "explanation_ru": "Мясо доготовили в духовке (пассивный залог), оно не могло сделать это само.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -4987,20 +4989,20 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Грудинку доготовили в духовке (пассивный залог), она не могла сделать это сама.",
+        "explanation_ru": "Мясо доготовили в духовке (пассивный залог), оно не могло сделать это само.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "His backyard fire died at four in the morning, so the brisket was finished in the indoor oven."
+    "answer_text": "His garden fire died at four in the morning, so the meat was finished in the indoor oven."
   },
   {
     "id": "pv7-D2-091",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The first pancake (to stick) to the dry pan, but all the rest slid off beautifully.",
@@ -5050,10 +5052,10 @@
     "id": "pv7-D2-092",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Even when the cabin tilts thirty degrees, the minestrone (to stay) perfectly level in its special pot.",
+    "prompt": "Even when the ship leans to one side, the soup (to stay) perfectly level in its special pot.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Суп сам остается в горизонтальном положении (активный залог, глагол состояния).",
     "rule_refs": [
@@ -5063,7 +5065,7 @@
     "cell": "D2",
     "genre": "tech",
     "seed_id": "S1-138",
-    "skeleton": "w when the w , the w G w in its w .",
+    "skeleton": "w when the w to w , the w G w in its w .",
     "practice_tenses": [
       "pv_D2",
       "active_present_simple"
@@ -5094,13 +5096,13 @@
         ]
       }
     ],
-    "answer_text": "Even when the cabin tilts thirty degrees, the minestrone stays perfectly level in its special pot."
+    "answer_text": "Even when the ship leans to one side, the soup stays perfectly level in its special pot."
   },
   {
     "id": "pv7-D2-093",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Since a broken tractor blocked the narrow lane, the exam candidates (to drive) the last two miles in a postmistress's van.",
@@ -5152,10 +5154,10 @@
     "id": "pv7-D2-094",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Any clay sculptures containing trapped air pockets (to explode) violently inside the hot kiln, sending shards everywhere.",
+    "prompt": "Any clay sculptures containing trapped air (to explode) violently inside the hot oven, sending pieces everywhere.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Скульптуры взрываются сами под воздействием температуры (активный залог).",
     "rule_refs": [
@@ -5198,13 +5200,13 @@
         ]
       }
     ],
-    "answer_text": "Any clay sculptures containing trapped air pockets explode violently inside the hot kiln, sending shards everywhere."
+    "answer_text": "Any clay sculptures containing trapped air explode violently inside the hot oven, sending pieces everywhere."
   },
   {
     "id": "pv7-D2-095",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The nervous pupil expected a detention, but instead she (to hand) a national certificate for her cross-country running.",
@@ -5254,7 +5256,7 @@
     "id": "pv7-D2-096",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Undergraduates arriving after midnight (to fine) sixpence for every quarter-hour, which went straight into the library fund.",
@@ -5304,7 +5306,7 @@
     "id": "pv7-D2-097",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "We bring rock samples back from our field trips. Then, each rock (to cut) into thin slices. Finally, it (to go) onto a glass slide for the microscope.",
@@ -5373,12 +5375,12 @@
     "id": "pv7-D2-098",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "An overseas student (to arrive) in Scotland for graduation. Unfortunately, his airline lost his bags. Ten minutes before the ceremony, he (to lend) a dark kilt.",
+    "prompt": "An overseas student (to arrive) in Scotland for his graduation. Unfortunately, the airline lost his bags. Ten minutes before the ceremony, he (to lend) a smart jacket.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Студент приехал сам (актив), а килт ему одолжили другие люди (пассив).",
+    "explanation_ru": "Студент приехал сам (актив), а пиджак ему одолжили другие люди (пассив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -5386,7 +5388,7 @@
     "cell": "D2",
     "genre": "news",
     "seed_id": "S2-012",
-    "skeleton": "an w G in w for w . w , his w his w . w before the w , he G a w .",
+    "skeleton": "an w G in w for his w . w , the w his w . w before the w , he G a w .",
     "practice_tenses": [
       "pv_D2",
       "active_past_simple",
@@ -5412,7 +5414,7 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Студент приехал сам (актив), а килт ему одолжили другие люди (пассив).",
+        "explanation_ru": "Студент приехал сам (актив), а пиджак ему одолжили другие люди (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -5428,23 +5430,23 @@
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Студент приехал сам (актив), а килт ему одолжили другие люди (пассив).",
+        "explanation_ru": "Студент приехал сам (актив), а пиджак ему одолжили другие люди (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "An overseas student arrived in Scotland for graduation. Unfortunately, his airline lost his bags. Ten minutes before the ceremony, he was lent a dark kilt."
+    "answer_text": "An overseas student arrived in Scotland for his graduation. Unfortunately, the airline lost his bags. Ten minutes before the ceremony, he was lent a smart jacket."
   },
   {
     "id": "pv7-D2-099",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The project manager (to submit) his travel claim twice. Both times, it (to reject) by the portal. The system couldn't read his crumpled taxi receipt.",
+    "prompt": "The project manager (to send) his travel claim twice. Both times, it (to refuse) by the online system. The system couldn't read his old taxi receipt.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "Менеджер сам подал заявку (актив), но система её отклонила (пассив).",
     "rule_refs": [
@@ -5472,13 +5474,13 @@
     "blanks": [
       {
         "id": "pv7-D2-099-b1",
-        "answer": "submitted",
+        "answer": "sent",
         "accepted_answers": [
-          "submitted",
-          "has submitted",
-          "'s submitted"
+          "sent",
+          "has sent",
+          "'s sent"
         ],
-        "base_verb": "to submit",
+        "base_verb": "to send",
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
@@ -5490,13 +5492,13 @@
       },
       {
         "id": "pv7-D2-099-b2",
-        "answer": "was rejected",
+        "answer": "was refused",
         "accepted_answers": [
-          "was rejected",
-          "has been rejected",
-          "'s been rejected"
+          "was refused",
+          "has been refused",
+          "'s been refused"
         ],
-        "base_verb": "to reject",
+        "base_verb": "to refuse",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
@@ -5507,18 +5509,18 @@
         ]
       }
     ],
-    "answer_text": "The project manager submitted his travel claim twice. Both times, it was rejected by the portal. The system couldn't read his crumpled taxi receipt."
+    "answer_text": "The project manager sent his travel claim twice. Both times, it was refused by the online system. The system couldn't read his old taxi receipt."
   },
   {
     "id": "pv7-D2-100",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The main office (to get) too noisy. So, soundproof phone booths (to install) along the brick wall. Now people can take calls in peace.",
+    "prompt": "The main office (to get) too noisy. So, quiet phone rooms (to build) along the wall. Now people can take calls in peace.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Офис стал шумным (актив), а кабинки установили рабочие (пассив).",
+    "explanation_ru": "Офис стал шумным (актив), а комнаты построили рабочие (пассив).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-focus",
       "content/passive/07-passive.md#pv-boundaries"
@@ -5553,7 +5555,7 @@
         "supplied_words": [],
         "tense_or_construction": "active_past_simple",
         "voice": "active",
-        "explanation_ru": "Офис стал шумным (актив), а кабинки установили рабочие (пассив).",
+        "explanation_ru": "Офис стал шумным (актив), а комнаты построили рабочие (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
@@ -5561,21 +5563,21 @@
       },
       {
         "id": "pv7-D2-100-b2",
-        "answer": "were installed",
+        "answer": "were built",
         "accepted_answers": [
-          "were installed"
+          "were built"
         ],
-        "base_verb": "to install",
+        "base_verb": "to build",
         "supplied_words": [],
         "tense_or_construction": "pv_past_simple",
         "voice": "passive",
-        "explanation_ru": "Офис стал шумным (актив), а кабинки установили рабочие (пассив).",
+        "explanation_ru": "Офис стал шумным (актив), а комнаты построили рабочие (пассив).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-focus",
           "content/passive/07-passive.md#pv-boundaries"
         ]
       }
     ],
-    "answer_text": "The main office got too noisy. So, soundproof phone booths were installed along the brick wall. Now people can take calls in peace."
+    "answer_text": "The main office got too noisy. So, quiet phone rooms were built along the wall. Now people can take calls in peace."
   }
 ]

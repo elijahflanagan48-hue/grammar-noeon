@@ -73,7 +73,7 @@ def convert(rows, mapping, version, reserved_ids=()):
     return result
 
 def build(args):
-    version = 'passive-'+args.date+'.1'
+    version = 'passive-'+args.date+'.2'
     if args.fixture:
         if not args.output: raise ValueError('--fixture requires --output')
         output=Path(args.output).resolve()

@@ -3,10 +3,10 @@
     "id": "pv7-D3-064",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Every bucket of dry earth from the cellar (needs to / to shake) through a fine mesh so that tiny carnelian beads aren't missed.",
+    "prompt": "Every bucket of dry earth from the cellar (needs to / to shake) through a net so that tiny coins aren't missed.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "needs to be shaken — пассив (нужно просеивать).",
     "rule_refs": [
@@ -47,13 +47,13 @@
         ]
       }
     ],
-    "answer_text": "Every bucket of dry earth from the cellar needs to be shaken through a fine mesh so that tiny carnelian beads aren't missed."
+    "answer_text": "Every bucket of dry earth from the cellar needs to be shaken through a net so that tiny coins aren't missed."
   },
   {
     "id": "pv7-D3-065",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "These delicate dried specimens from the 1750s ___ with bone spatulas, as natural oils from human hands will destroy the plant tissue.",
@@ -95,7 +95,7 @@
     "id": "pv7-D3-066",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Decommissioned bank hard drives (must / never / to post) off site; they require immediate crushing under the basement hydraulic ram.",
@@ -146,10 +146,10 @@
     "id": "pv7-D3-067",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "We have run out of cutlery again, so the missing silver teaspoons are going to be bring back to the fourth-floor kitchen immediately.",
+    "prompt": "We have run out of spoons again, so the missing silver spoons are going to be bring back to the fourth-floor kitchen immediately.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Глагол bring неправильный, в пассивном залоге нужна третья форма: brought.",
     "rule_refs": [
@@ -170,19 +170,19 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "We have run out of cutlery again, so the missing silver teaspoons are going to be brought back to the fourth-floor kitchen immediately.",
+    "answer": "We have run out of spoons again, so the missing silver spoons are going to be brought back to the fourth-floor kitchen immediately.",
     "accepted_answers": [
-      "We have run out of cutlery again, so the missing silver teaspoons are going to be brought back to the fourth-floor kitchen immediately.",
-      "We've run out of cutlery again, so the missing silver teaspoons are going to be brought back to the fourth-floor kitchen immediately."
+      "We have run out of spoons again, so the missing silver spoons are going to be brought back to the fourth-floor kitchen immediately.",
+      "We've run out of spoons again, so the missing silver spoons are going to be brought back to the fourth-floor kitchen immediately."
     ],
-    "answer_text": "We have run out of cutlery again, so the missing silver teaspoons are going to be brought back to the fourth-floor kitchen immediately.",
+    "answer_text": "We have run out of spoons again, so the missing silver spoons are going to be brought back to the fourth-floor kitchen immediately.",
     "has_error": true
   },
   {
     "id": "pv7-D3-068",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The forty-page merger contract is finally ready. Every single sheet (has to / to initial) in blue ink by all three directors. Furthermore, no clauses (can / to alter) after the notary reads the text aloud. The executives (going to / to sign) the final page at noon.",
@@ -272,19 +272,19 @@
     "id": "pv7-D3-069",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Before their probation is officially confirmed, the trainee evaluators (will have to / to test) blind on five hundred glass vials of raw floral absolutes.",
+    "prompt": "Before their trial period is over, the new workers (will have to / to test) on five hundred bottles of perfume.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "will have to be tested — пассив в будущем времени (должны будут пройти тест / будут протестированы).",
+    "explanation_ru": "will have to be tested — пассив в будущем времени (должны будут проверить).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "report",
     "seed_id": "S2-099",
-    "skeleton": "before their w is w , the w G w on w of w .",
+    "skeleton": "before their w is over , the w G on w of w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -311,19 +311,19 @@
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "will have to be tested — пассив в будущем времени (должны будут пройти тест / будут протестированы).",
+        "explanation_ru": "will have to be tested — пассив в будущем времени (должны будут проверить).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Before their probation is officially confirmed, the trainee evaluators will have to be tested blind on five hundred glass vials of raw floral absolutes."
+    "answer_text": "Before their trial period is over, the new workers will have to be tested on five hundred bottles of perfume."
   },
   {
     "id": "pv7-D3-070",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "A Savile Row apprentice has just started his training. What rule applies to him regarding expensive fabrics?",
@@ -365,7 +365,7 @@
     "id": "pv7-D3-071",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "As a new recruit, you (can / not / to send) on a night call-out in the mountains until your basic training is complete.",
@@ -417,10 +417,10 @@
     "id": "pv7-D3-072",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Your empty glass milk bottles ___ back into the wire crate by the farm shop door.",
+    "prompt": "Your empty glass milk bottles ___ back into the box by the farm shop door.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "should be slotted — инструкция в пассивном залоге (следует вставить).",
     "rule_refs": [
@@ -442,29 +442,29 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "should have slotted",
-      "should slot",
-      "should be slot",
-      "should be slotted"
+      "should have put",
+      "should put",
+      "should be put",
+      "should be putting"
     ],
-    "correct_option_index": 3,
+    "correct_option_index": 2,
     "accepted_option_indices": [
-      3
+      2
     ],
-    "answer": "should be slotted",
-    "summary": "Your empty glass milk bottles should be slotted back into the wire crate by the farm shop door.",
-    "answer_text": "Your empty glass milk bottles should be slotted back into the wire crate by the farm shop door."
+    "answer": "should be put",
+    "summary": "Your empty glass milk bottles should be put back into the box by the farm shop door.",
+    "answer_text": "Your empty glass milk bottles should be put back into the box by the farm shop door."
   },
   {
     "id": "pv7-D3-073",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Welcome to our zero-waste grocery store! First, your empty glass jars (need to / to weigh) on the entrance scale. A barcode sticker (going to / to print) for each one. After that, you (can / to scoop) as many almonds or lentils as you like.",
+    "prompt": "Welcome to our zero-waste shop! First, your empty glass jars (need to / to weigh) on the entrance scale. A sticker (going to / to print) for each one. After that, you (can / to take) as many nuts or beans as you like.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "need to be weighed и is going to be printed — пассивный залог. can scoop — активный, так как насыпать продукты вы будете сами.",
+    "explanation_ru": "need to be weighed и is going to be printed — пассивный залог. you can take — актив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -501,7 +501,7 @@
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "need to be weighed и is going to be printed — пассивный залог. can scoop — активный, так как насыпать продукты вы будете сами.",
+        "explanation_ru": "need to be weighed и is going to be printed — пассивный залог. you can take — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -519,39 +519,39 @@
         ],
         "tense_or_construction": "pv_going_to",
         "voice": "passive",
-        "explanation_ru": "need to be weighed и is going to be printed — пассивный залог. can scoop — активный, так как насыпать продукты вы будете сами.",
+        "explanation_ru": "need to be weighed и is going to be printed — пассивный залог. you can take — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       },
       {
         "id": "pv7-D3-073-b3",
-        "answer": "can scoop",
+        "answer": "can take",
         "accepted_answers": [
-          "can scoop"
+          "can take"
         ],
-        "base_verb": "can / to scoop",
+        "base_verb": "can / to take",
         "supplied_words": [
           "can"
         ],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "need to be weighed и is going to be printed — пассивный залог. can scoop — активный, так как насыпать продукты вы будете сами.",
+        "explanation_ru": "need to be weighed и is going to be printed — пассивный залог. you can take — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Welcome to our zero-waste grocery store! First, your empty glass jars need to be weighed on the entrance scale. A barcode sticker is going to be printed for each one. After that, you can scoop as many almonds or lentils as you like."
+    "answer_text": "Welcome to our zero-waste shop! First, your empty glass jars need to be weighed on the entrance scale. A sticker is going to be printed for each one. After that, you can take as many nuts or beans as you like."
   },
   {
     "id": "pv7-D3-074",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Any porcelain teacup bearing a smudged logo (going to / to mark) with two tiny wheel cuts so it cannot be sold as first quality.",
+    "prompt": "Any cup with a badly printed logo (going to / to mark) with two tiny cuts so it cannot be sold as first quality.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "is going to be marked — пассив с going to (будет помечена).",
     "rule_refs": [
@@ -560,7 +560,7 @@
     "cell": "D3",
     "genre": "report",
     "seed_id": "S2-143",
-    "skeleton": "any w a w G with w so it w be w as w .",
+    "skeleton": "any w with a w G with w so it w be w as w .",
     "practice_tenses": [
       "pv_D3",
       "pv_going_to"
@@ -593,16 +593,16 @@
         ]
       }
     ],
-    "answer_text": "Any porcelain teacup bearing a smudged logo is going to be marked with two tiny wheel cuts so it cannot be sold as first quality."
+    "answer_text": "Any cup with a badly printed logo is going to be marked with two tiny cuts so it cannot be sold as first quality."
   },
   {
     "id": "pv7-D3-075",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Unclaimed items from overhead lockers are going to be wiped of personal data before the public auction.",
+    "prompt": "Unclaimed items from overhead lockers are going to be wiped of personal data before the public sale.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
     "explanation_ru": "Ошибок нет. are going to be wiped — правильная форма пассивного залога.",
     "rule_refs": [
@@ -623,23 +623,23 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Unclaimed items from overhead lockers are going to be wiped of personal data before the public auction.",
+    "answer": "Unclaimed items from overhead lockers are going to be wiped of personal data before the public sale.",
     "accepted_answers": [
-      "Unclaimed items from overhead lockers are going to be wiped of personal data before the public auction."
+      "Unclaimed items from overhead lockers are going to be wiped of personal data before the public sale."
     ],
-    "answer_text": "Unclaimed items from overhead lockers are going to be wiped of personal data before the public auction.",
+    "answer_text": "Unclaimed items from overhead lockers are going to be wiped of personal data before the public sale.",
     "has_error": false
   },
   {
     "id": "pv7-D3-076",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Your digital room key (cannot / to encode) until your passport photo page has been successfully scanned on the glass plate.",
+    "prompt": "Your digital room key (cannot / to program) until your passport page has been successfully scanned on the glass plate.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "cannot be encoded — пассивный залог (не может быть закодирован).",
+    "explanation_ru": "cannot be programmed — пассивный залог (ключ нельзя запрограммировать).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -662,30 +662,30 @@
     "blanks": [
       {
         "id": "pv7-D3-076-b1",
-        "answer": "cannot be encoded",
+        "answer": "cannot be programmed",
         "accepted_answers": [
-          "cannot be encoded",
-          "can't be encoded"
+          "cannot be programmed",
+          "can't be programmed"
         ],
-        "base_verb": "cannot / to encode",
+        "base_verb": "cannot / to program",
         "supplied_words": [
           "cannot"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "cannot be encoded — пассивный залог (не может быть закодирован).",
+        "explanation_ru": "cannot be programmed — пассивный залог (ключ нельзя запрограммировать).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Your digital room key cannot be encoded until your passport photo page has been successfully scanned on the glass plate."
+    "answer_text": "Your digital room key cannot be programmed until your passport page has been successfully scanned on the glass plate."
   },
   {
     "id": "pv7-D3-077",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "I am on the way to Dover instead of Cardiff! The windscreen destination board (ought to / to check) before I boarded the coach at Victoria. My original ticket (can / no longer / to use). I (will have to / to buy) a new one to get back to London.",
@@ -775,10 +775,10 @@
     "id": "pv7-D3-078",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The guest's silk pyjamas (must / to gather up) with the heavy duvet covers by accident. Today, they (could / to see) sitting neatly starched in the linen cupboard. The housekeeper (going to / to return) them immediately.",
+    "prompt": "The guest's clean shirts (must / to gather up) with the dirty sheets by accident. Today, they (could / to see) lying in the laundry cupboard. The cleaner (going to / to return) them immediately.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "must have been gathered up — логический вывод о прошлом (должно быть, собрали вместе с...). could be seen — пассив в настоящем/прошедшем. return — актив.",
     "rule_refs": [
@@ -858,16 +858,16 @@
         ]
       }
     ],
-    "answer_text": "The guest's silk pyjamas must have been gathered up with the heavy duvet covers by accident. Today, they could be seen sitting neatly starched in the linen cupboard. The housekeeper is going to return them immediately."
+    "answer_text": "The guest's clean shirts must have been gathered up with the dirty sheets by accident. Today, they could be seen lying in the laundry cupboard. The cleaner is going to return them immediately."
   },
   {
     "id": "pv7-D3-079",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "I specifically booked this lighthouse cottage for a digital detox; I ___ that a massive 5G mast had been erected in the turnip field last week!",
+    "prompt": "I specifically booked this cottage for a digital break; I ___ that a huge phone tower had been built in the field last week!",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "should have been warned — сожаление о прошлом в пассивном залоге (меня должны были предупредить).",
     "rule_refs": [
@@ -876,7 +876,7 @@
     "cell": "D3",
     "genre": "chat",
     "seed_id": "S3-013",
-    "skeleton": "i w this w for a w ; i G that a w 5 w had been w in the w LAST_WEEK !",
+    "skeleton": "i w this w for a w ; i G that a w had been w in the w LAST_WEEK !",
     "practice_tenses": [
       "pv_D3",
       "pv_modal_perfect"
@@ -899,14 +899,14 @@
       2
     ],
     "answer": "should have been warned",
-    "summary": "I specifically booked this lighthouse cottage for a digital detox; I should have been warned that a massive 5G mast had been erected in the turnip field last week!",
-    "answer_text": "I specifically booked this lighthouse cottage for a digital detox; I should have been warned that a massive 5G mast had been erected in the turnip field last week!"
+    "summary": "I specifically booked this cottage for a digital break; I should have been warned that a huge phone tower had been built in the field last week!",
+    "answer_text": "I specifically booked this cottage for a digital break; I should have been warned that a huge phone tower had been built in the field last week!"
   },
   {
     "id": "pv7-D3-080",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Do not reserve sun-loungers before breakfast. Any unattended beach towel (going to / to remove) by the pool attendant at eight o'clock. It (will have to / to collect) from the wooden towel hut later. Guests (must / to respect) the rules.",
@@ -996,19 +996,19 @@
     "id": "pv7-D3-081",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Tunnel fires are incredibly dangerous. Because of this, lorry brakes (have to / to scan) at the tollgate. An infrared camera (can / to use) for the job. Any overheating truck (going to / to stop) before it enters the mountain.",
+    "prompt": "Fires in tunnels are very dangerous. Because of this, truck brakes (have to / to check) at the entrance. A special camera (can / to use) for the job. Any hot truck (going to / to stop) before it enters the tunnel.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "Во всех пропусках нужен пассивный залог, так как действия совершаются над предметами: тормоза нужно сканировать, камеру можно использовать, грузовик будет остановлен.",
+    "explanation_ru": "Во всех пропусках нужен пассивный залог: действия совершаются над тормозами, камерой и грузовиком.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "process",
     "seed_id": "S3-052",
-    "skeleton": "w are w . because of this , w G at the w . an w G for the w . any w G before it w the w .",
+    "skeleton": "w in w are w . because of this , w G at the w . a w G for the w . any w G before it w the w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal",
@@ -1026,18 +1026,18 @@
     "blanks": [
       {
         "id": "pv7-D3-081-b1",
-        "answer": "have to be scanned",
+        "answer": "have to be checked",
         "accepted_answers": [
-          "have to be scanned",
-          "'ve to be scanned"
+          "have to be checked",
+          "'ve to be checked"
         ],
-        "base_verb": "have to / to scan",
+        "base_verb": "have to / to check",
         "supplied_words": [
           "have to"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "Во всех пропусках нужен пассивный залог, так как действия совершаются над предметами: тормоза нужно сканировать, камеру можно использовать, грузовик будет остановлен.",
+        "explanation_ru": "Во всех пропусках нужен пассивный залог: действия совершаются над тормозами, камерой и грузовиком.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -1054,7 +1054,7 @@
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "Во всех пропусках нужен пассивный залог, так как действия совершаются над предметами: тормоза нужно сканировать, камеру можно использовать, грузовик будет остановлен.",
+        "explanation_ru": "Во всех пропусках нужен пассивный залог: действия совершаются над тормозами, камерой и грузовиком.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -1072,19 +1072,19 @@
         ],
         "tense_or_construction": "pv_going_to",
         "voice": "passive",
-        "explanation_ru": "Во всех пропусках нужен пассивный залог, так как действия совершаются над предметами: тормоза нужно сканировать, камеру можно использовать, грузовик будет остановлен.",
+        "explanation_ru": "Во всех пропусках нужен пассивный залог: действия совершаются над тормозами, камерой и грузовиком.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "Tunnel fires are incredibly dangerous. Because of this, lorry brakes have to be scanned at the tollgate. An infrared camera can be used for the job. Any overheating truck is going to be stopped before it enters the mountain."
+    "answer_text": "Fires in tunnels are very dangerous. Because of this, truck brakes have to be checked at the entrance. A special camera can be used for the job. Any hot truck is going to be stopped before it enters the tunnel."
   },
   {
     "id": "pv7-D3-082",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Long coats and dog leads (must / to lift) completely clear of the escalator's yellow comb plate.",
@@ -1134,7 +1134,7 @@
     "id": "pv7-D3-083",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The warning cones had been visible since dusk, so those three cars parked over the drains should have winched down the road without complaint.",
@@ -1169,10 +1169,10 @@
     "id": "pv7-D3-084",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Saturday's parkrun was chaotic. Token 142 (must / to drop) into my shorts pocket by mistake. It (going to / to post) back to you in a padded envelope tomorrow. I promise I (will / not / to do) it again!",
+    "prompt": "Saturday's race was a mess. Number 142 (must / to drop) into my shorts pocket by mistake. It (going to / to post) back to you in a thick envelope tomorrow. I promise I (will / not / to do) it again!",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "must have been dropped — вывод о прошлом в пассиве. is going to be posted — пассив с going to. I won't do it — активный залог.",
     "rule_refs": [
@@ -1181,7 +1181,7 @@
     "cell": "D3",
     "genre": "email",
     "seed_id": "S3-096",
-    "skeleton": "w was w . w 142 G into my w by w . it G w to you in a w TOMORROW . i w i G it w !",
+    "skeleton": "w was a w . w 142 G into my w by w . it G w to you in a w TOMORROW . i w i G it w !",
     "practice_tenses": [
       "pv_D3",
       "pv_modal_perfect",
@@ -1255,25 +1255,25 @@
         ]
       }
     ],
-    "answer_text": "Saturday's parkrun was chaotic. Token 142 must have been dropped into my shorts pocket by mistake. It is going to be posted back to you in a padded envelope tomorrow. I promise I will not do it again!"
+    "answer_text": "Saturday's race was a mess. Number 142 must have been dropped into my shorts pocket by mistake. It is going to be posted back to you in a thick envelope tomorrow. I promise I will not do it again!"
   },
   {
     "id": "pv7-D3-085",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The volatile-vapour box indicated a chemical residue, suggesting that banned speed solvents (might / to apply) to the rubber sheets of the bat.",
+    "prompt": "The test showed chemical traces, suggesting that banned chemicals (might / to add) to the rubber part of the bat.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "might have been applied — предположение о том, что случилось в прошлом (возможно, были нанесены).",
+    "explanation_ru": "might have been added — предположение о том, что случилось в прошлом (химикаты, возможно, добавили).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "report",
     "seed_id": "S3-105",
-    "skeleton": "the w a w , w that w G to the w of the w .",
+    "skeleton": "the w , w that w G to the w of the w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal_perfect"
@@ -1289,29 +1289,29 @@
     "blanks": [
       {
         "id": "pv7-D3-085-b1",
-        "answer": "might have been applied",
+        "answer": "might have been added",
         "accepted_answers": [
-          "might have been applied"
+          "might have been added"
         ],
-        "base_verb": "might / to apply",
+        "base_verb": "might / to add",
         "supplied_words": [
           "might"
         ],
         "tense_or_construction": "pv_modal_perfect",
         "voice": "passive",
-        "explanation_ru": "might have been applied — предположение о том, что случилось в прошлом (возможно, были нанесены).",
+        "explanation_ru": "might have been added — предположение о том, что случилось в прошлом (химикаты, возможно, добавили).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "The volatile-vapour box indicated a chemical residue, suggesting that banned speed solvents might have been applied to the rubber sheets of the bat."
+    "answer_text": "The test showed chemical traces, suggesting that banned chemicals might have been added to the rubber part of the bat."
   },
   {
     "id": "pv7-D3-086",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The vaulter was forced to borrow a stiffer pole from the defending champion because his own bags never arrived in Eugene. What happened in Chicago?",
@@ -1353,7 +1353,7 @@
     "id": "pv7-D3-087",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Those orchestral parts wrapped in brown butcher's paper (cannot / to open) since 1911, preserving Mahler's original blue-pencil marks perfectly.",
@@ -1404,12 +1404,12 @@
     "id": "pv7-D3-088",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "We spent three hours trying to program a dry digital thud. Honestly, the snare drum (could / to muffle) with a wallet and some beer mats right from the start. So much studio time (should / not / to waste) on overthinking. Next time, I (going to / to trust) acoustic tricks.",
+    "prompt": "We spent three hours trying to make a dry digital sound. Honestly, the drum (could / to cover) with a wallet and some paper right from the start. So much studio time (should / not / to waste) on overthinking. Next time, I (going to / to trust) simple tricks.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "could have been muffled (можно было приглушить) и shouldn't have been wasted (не следовало тратить) — упрёки себе о прошлом в пассивном залоге. am going to trust — актив, так как доверять буду я.",
+    "explanation_ru": "could have been covered (можно было накрыть) и shouldn't have been wasted (не следовало тратить) — пассив в прошлом. am going to trust — актив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
@@ -1434,17 +1434,17 @@
     "blanks": [
       {
         "id": "pv7-D3-088-b1",
-        "answer": "could have been muffled",
+        "answer": "could have been covered",
         "accepted_answers": [
-          "could have been muffled"
+          "could have been covered"
         ],
-        "base_verb": "could / to muffle",
+        "base_verb": "could / to cover",
         "supplied_words": [
           "could"
         ],
         "tense_or_construction": "pv_modal_perfect",
         "voice": "passive",
-        "explanation_ru": "could have been muffled (можно было приглушить) и shouldn't have been wasted (не следовало тратить) — упрёки себе о прошлом в пассивном залоге. am going to trust — актив, так как доверять буду я.",
+        "explanation_ru": "could have been covered (можно было накрыть) и shouldn't have been wasted (не следовало тратить) — пассив в прошлом. am going to trust — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -1463,7 +1463,7 @@
         ],
         "tense_or_construction": "pv_modal_perfect",
         "voice": "passive",
-        "explanation_ru": "could have been muffled (можно было приглушить) и shouldn't have been wasted (не следовало тратить) — упрёки себе о прошлом в пассивном залоге. am going to trust — актив, так как доверять буду я.",
+        "explanation_ru": "could have been covered (можно было накрыть) и shouldn't have been wasted (не следовало тратить) — пассив в прошлом. am going to trust — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
@@ -1481,19 +1481,19 @@
         ],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "could have been muffled (можно было приглушить) и shouldn't have been wasted (не следовало тратить) — упрёки себе о прошлом в пассивном залоге. am going to trust — актив, так как доверять буду я.",
+        "explanation_ru": "could have been covered (можно было накрыть) и shouldn't have been wasted (не следовало тратить) — пассив в прошлом. am going to trust — актив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "We spent three hours trying to program a dry digital thud. Honestly, the snare drum could have been muffled with a wallet and some beer mats right from the start. So much studio time should not have been wasted on overthinking. Next time, I am going to trust acoustic tricks."
+    "answer_text": "We spent three hours trying to make a dry digital sound. Honestly, the drum could have been covered with a wallet and some paper right from the start. So much studio time should not have been wasted on overthinking. Next time, I am going to trust simple tricks."
   },
   {
     "id": "pv7-D3-089",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The priceless seventeenth-century cello (has to / to bring) in for a professional bridge check every six months.",
@@ -1544,7 +1544,7 @@
     "id": "pv7-D3-090",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Three differently coloured shirts ___ to the quiz studio today, so the viewers will think a whole week has passed between episodes.",
@@ -1586,7 +1586,7 @@
     "id": "pv7-D3-091",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Coloured polycarbonate filter sheets (must / to chain) securely to the lighting bar so that nothing drops onto the audience in the stalls.",
@@ -1636,7 +1636,7 @@
     "id": "pv7-D3-092",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "All the wedding-vow lines (will have to / to re-record) in a darkened studio because an ice-cream van ruined the location audio.",
@@ -1687,10 +1687,10 @@
     "id": "pv7-D3-093",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "White cotton gloves (going to / to hand out) at the curator's trolley. They (must / to wear) at all times during the gallery trail. Otherwise, the brass astrolabe (might / to damage) by moisture from your fingers.",
+    "prompt": "White cotton gloves (going to / to hand out) at the desk by the door. They (must / to wear) at all times in the gallery. Otherwise, the old brass instrument (might / to damage) by moisture from your fingers.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "are going to be handed out (будут выданы), must be worn (должны быть надеты) и might be damaged (может быть повреждена) — пассивный залог.",
     "rule_refs": [
@@ -1699,7 +1699,7 @@
     "cell": "D3",
     "genre": "instructions",
     "seed_id": "S4-005",
-    "skeleton": "w G at the w . they G at all w the w . w , the w G by w from your w .",
+    "skeleton": "w G at the w by the w . they G at all w in the w . w , the w G by w from your w .",
     "practice_tenses": [
       "pv_D3",
       "pv_going_to",
@@ -1768,25 +1768,25 @@
         ]
       }
     ],
-    "answer_text": "White cotton gloves are going to be handed out at the curator's trolley. They must be worn at all times during the gallery trail. Otherwise, the brass astrolabe might be damaged by moisture from your fingers."
+    "answer_text": "White cotton gloves are going to be handed out at the desk by the door. They must be worn at all times in the gallery. Otherwise, the old brass instrument might be damaged by moisture from your fingers."
   },
   {
     "id": "pv7-D3-094",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "A flock of Swaledale ewes (had to / to pen) safely in the lower paddock before the six-tonne corten-steel arch could be craned onto the plinth.",
+    "prompt": "A flock of sheep (had to / to move) safely into the lower field before the huge steel arch could be lifted onto its base.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "had to be penned — необходимость в прошедшем времени, пассивный залог (пришлось загнать в загон).",
+    "explanation_ru": "had to be moved — необходимость в прошедшем времени, пассив (овец нужно было перегнать).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-modals"
     ],
     "cell": "D3",
     "genre": "report",
     "seed_id": "S4-006",
-    "skeleton": "a w of w G w in the w before the w could be w the w .",
+    "skeleton": "a w of w G w into the w before the w could be w its w .",
     "practice_tenses": [
       "pv_D3",
       "pv_modal"
@@ -1802,30 +1802,30 @@
     "blanks": [
       {
         "id": "pv7-D3-094-b1",
-        "answer": "had to be penned",
+        "answer": "had to be moved",
         "accepted_answers": [
-          "had to be penned",
-          "'d to be penned"
+          "had to be moved",
+          "'d to be moved"
         ],
-        "base_verb": "had to / to pen",
+        "base_verb": "had to / to move",
         "supplied_words": [
           "had to"
         ],
         "tense_or_construction": "pv_modal",
         "voice": "passive",
-        "explanation_ru": "had to be penned — необходимость в прошедшем времени, пассивный залог (пришлось загнать в загон).",
+        "explanation_ru": "had to be moved — необходимость в прошедшем времени, пассив (овец нужно было перегнать).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-modals"
         ]
       }
     ],
-    "answer_text": "A flock of Swaledale ewes had to be penned safely in the lower paddock before the six-tonne corten-steel arch could be craned onto the plinth."
+    "answer_text": "A flock of sheep had to be moved safely into the lower field before the huge steel arch could be lifted onto its base."
   },
   {
     "id": "pv7-D3-095",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The dark nineteenth-century portrait ___ before framing, which is how the gallery discovered a hidden outline of a spaniel beside the sitter's knee.",
@@ -1867,12 +1867,12 @@
     "id": "pv7-D4-001",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The harbour seal needed (to coax) back into the Maas with three fresh mackerel because it refused to leave the warm engine cover.",
+    "prompt": "The seal needed (to lead) back into the sea with three fresh fish because it refused to leave the warm engine cover.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "need to be coaxed — пассивный инфинитив после глагола need (тюленя нужно было выманить).",
+    "explanation_ru": "need to be led — пассивный инфинитив после глагола need (тюленя нужно было отвести).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -1895,31 +1895,31 @@
     "blanks": [
       {
         "id": "pv7-D4-001-b1",
-        "answer": "to be coaxed",
+        "answer": "to be led",
         "accepted_answers": [
-          "to be coaxed",
-          "coaxing"
+          "to be led",
+          "leading"
         ],
-        "base_verb": "to coax",
+        "base_verb": "to lead",
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "need to be coaxed — пассивный инфинитив после глагола need (тюленя нужно было выманить).",
+        "explanation_ru": "need to be led — пассивный инфинитив после глагола need (тюленя нужно было отвести).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "The harbour seal needed to be coaxed back into the Maas with three fresh mackerel because it refused to leave the warm engine cover."
+    "answer_text": "The seal needed to be led back into the sea with three fresh fish because it refused to leave the warm engine cover."
   },
   {
     "id": "pv7-D4-002",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My poodle expected ___ a light summer trim, but the apprentice completely misread the ticket and clipped him like a miniature lion.",
+    "prompt": "My dog expected ___ a light summer haircut, but the new worker completely misread the ticket and cut him like a lion.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "to be given — после expect используется инфинитив; пудель ожидал, что ему сделают стрижку (пассив).",
     "rule_refs": [
@@ -1951,14 +1951,14 @@
       1
     ],
     "answer": "to be given",
-    "summary": "My poodle expected to be given a light summer trim, but the apprentice completely misread the ticket and clipped him like a miniature lion.",
-    "answer_text": "My poodle expected to be given a light summer trim, but the apprentice completely misread the ticket and clipped him like a miniature lion."
+    "summary": "My dog expected to be given a light summer haircut, but the new worker completely misread the ticket and cut him like a lion.",
+    "answer_text": "My dog expected to be given a light summer haircut, but the new worker completely misread the ticket and cut him like a lion."
   },
   {
     "id": "pv7-D4-003",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Every November, sixty mute swans are rounded up by boat. The city swan-master wants to avoid them (to freeze) into the lake ice. They absolutely need (to move) to a heated canal. This is achieved by (to tempt) the birds with grain.",
@@ -2042,7 +2042,7 @@
     "id": "pv7-D4-004",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The secret text message seems to be sent to the diners just two hours before dinner.",
@@ -2077,7 +2077,7 @@
     "id": "pv7-D4-005",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Charles Darwin claimed (to scold) severely by his headmaster for wasting evenings on chemistry experiments in the garden shed instead of Latin verse.",
@@ -2125,7 +2125,7 @@
     "id": "pv7-D4-006",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Children without a sunhat must sit under the shaded veranda during break. What rule applies to them?",
@@ -2167,7 +2167,7 @@
     "id": "pv7-D4-007",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "This fifteen-year-old contestant certainly deserves (to award) full marks for his brilliant, off-syllabus solution to Question 4.",
@@ -2215,12 +2215,12 @@
     "id": "pv7-D4-008",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The twins specifically asked (to house) in different blocks. Instead, they ended up (to pair) in a twin room on the top floor. The algorithm simply matched them by surname without (to check) their preferences.",
+    "prompt": "The twins specifically asked (to house) in different blocks. Instead, they ended up (to put) in a twin room on the top floor. The computer simply matched them by surname without (to check) their wishes.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "asked to be housed — пассивный инфинитив (попросили, чтобы их поселили). ended up being paired — пассивный герундий. without checking — активный герундий после предлога.",
+    "explanation_ru": "asked to be housed — пассивный инфинитив; ended up being put — пассивный герундий; without checking — активный герундий.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -2255,22 +2255,22 @@
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "asked to be housed — пассивный инфинитив (попросили, чтобы их поселили). ended up being paired — пассивный герундий. without checking — активный герундий после предлога.",
+        "explanation_ru": "asked to be housed — пассивный инфинитив; ended up being put — пассивный герундий; without checking — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       },
       {
         "id": "pv7-D4-008-b2",
-        "answer": "being paired",
+        "answer": "being put",
         "accepted_answers": [
-          "being paired"
+          "being put"
         ],
-        "base_verb": "to pair",
+        "base_verb": "to put",
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "asked to be housed — пассивный инфинитив (попросили, чтобы их поселили). ended up being paired — пассивный герундий. without checking — активный герундий после предлога.",
+        "explanation_ru": "asked to be housed — пассивный инфинитив; ended up being put — пассивный герундий; without checking — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
@@ -2285,19 +2285,19 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "asked to be housed — пассивный инфинитив (попросили, чтобы их поселили). ended up being paired — пассивный герундий. without checking — активный герундий после предлога.",
+        "explanation_ru": "asked to be housed — пассивный инфинитив; ended up being put — пассивный герундий; without checking — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "The twins specifically asked to be housed in different blocks. Instead, they ended up being paired in a twin room on the top floor. The algorithm simply matched them by surname without checking their preferences."
+    "answer_text": "The twins specifically asked to be housed in different blocks. Instead, they ended up being put in a twin room on the top floor. The computer simply matched them by surname without checking their wishes."
   },
   {
     "id": "pv7-D4-009",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Any member of the public can stand up and question the candidate after (to invite) to do so by the official examiners.",
@@ -2345,10 +2345,10 @@
     "id": "pv7-D4-010",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The students actually enjoyed ___ the final rooftop scene acted out by the lecturer when the projector belt snapped.",
+    "prompt": "The students actually enjoyed ___ the final scene acted out by their teacher when the screen broke.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "enjoy watching — активный герундий после глагола enjoy (студенты сами наслаждались просмотром).",
     "rule_refs": [
@@ -2357,7 +2357,7 @@
     "cell": "D4",
     "genre": "review",
     "seed_id": "S2-034",
-    "skeleton": "the w G the w by the w when the w .",
+    "skeleton": "the w G the w by their w when the w .",
     "practice_tenses": [
       "pv_D4",
       "active_other"
@@ -2380,14 +2380,14 @@
       0
     ],
     "answer": "watching",
-    "summary": "The students actually enjoyed watching the final rooftop scene acted out by the lecturer when the projector belt snapped.",
-    "answer_text": "The students actually enjoyed watching the final rooftop scene acted out by the lecturer when the projector belt snapped."
+    "summary": "The students actually enjoyed watching the final scene acted out by their teacher when the screen broke.",
+    "answer_text": "The students actually enjoyed watching the final scene acted out by their teacher when the screen broke."
   },
   {
     "id": "pv7-D4-011",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Guests cannot enter the Salford broadcast headquarters without (to hold) at reception if their names were not submitted the day before.",
@@ -2435,7 +2435,7 @@
     "id": "pv7-D4-012",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The voice actor didn't mind to be asked to stay all afternoon after the lead actor lost his voice.",
@@ -2470,10 +2470,10 @@
     "id": "pv7-D4-013",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "She clearly remembers (to interview) for the UX designer job back in 2021. Now her portfolio appears (to reject) entirely by a bot. They sent an automated email at 3 a.m. instead of (to offer) a real explanation.",
+    "prompt": "She clearly remembers (to interview) for the designer job back in 2021. Now her application appears (to reject) entirely by a computer. They sent a standard email at 3 a.m. instead of (to offer) a real explanation.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "remembers being interviewed — пассивный герундий для воспоминаний о прошлом. appears to have been rejected — перфектный пассивный инфинитив. instead of offering — активный герундий после предлога.",
     "rule_refs": [
@@ -2482,7 +2482,7 @@
     "cell": "D4",
     "genre": "chat",
     "seed_id": "S2-109",
-    "skeleton": "she w G for the w IN_2021 . NOW her w G w by a w . they w an w at 3 a . w . w of G a w .",
+    "skeleton": "she w G for the w IN_2021 . NOW her w G w by a w . they w a w at 3 a . w . w of G a w .",
     "practice_tenses": [
       "pv_D4",
       "pv_gerund",
@@ -2546,13 +2546,13 @@
         ]
       }
     ],
-    "answer_text": "She clearly remembers being interviewed for the UX designer job back in 2021. Now her portfolio appears to have been rejected entirely by a bot. They sent an automated email at 3 a.m. instead of offering a real explanation."
+    "answer_text": "She clearly remembers being interviewed for the designer job back in 2021. Now her application appears to have been rejected entirely by a computer. They sent a standard email at 3 a.m. instead of offering a real explanation."
   },
   {
     "id": "pv7-D4-014",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Applicants for the consular clerk post should expect (to telephone) unannounced in Spanish to test their calmness under pressure.",
@@ -2600,7 +2600,7 @@
     "id": "pv7-D4-015",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "If you want a ripe fig (to place) in your paper bag, you must let the Palermo seller pick it himself.",
@@ -2648,7 +2648,7 @@
     "id": "pv7-D4-016",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The departure platform for the Venice train was changed three minutes before arrival. Sixty people are now sprinting down the subway. What can we say about them?",
@@ -2690,7 +2690,7 @@
     "id": "pv7-D4-017",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Completely (to cut off) by a massive Atlantic swell, the four guests were given an extra night's stay on the house and taught to bake soda farls.",
@@ -2739,12 +2739,12 @@
     "id": "pv7-D4-018",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "I can't stand (to lecture) about road rules while on holiday. However, I hoped (to forgive) by the French farmer because I was obviously a tourist. I just sat on my Vespa without (to say) a single word.",
+    "prompt": "I can't stand (to tell) about road rules while on holiday. However, I hoped (to forgive) by the French farmer because I was obviously a tourist. I just sat on my bike without (to say) a single word.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "can't stand being lectured — пассивный герундий. hoped to be forgiven — пассивный инфинитив. without saying — активный герундий.",
+    "explanation_ru": "can't stand being told — пассивный герундий. hoped to be forgiven — пассивный инфинитив. without saying — активный герундий.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -2771,16 +2771,16 @@
     "blanks": [
       {
         "id": "pv7-D4-018-b1",
-        "answer": "being lectured",
+        "answer": "being told",
         "accepted_answers": [
-          "being lectured",
-          "to be lectured"
+          "being told",
+          "to be told"
         ],
-        "base_verb": "to lecture",
+        "base_verb": "to tell",
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "can't stand being lectured — пассивный герундий. hoped to be forgiven — пассивный инфинитив. without saying — активный герундий.",
+        "explanation_ru": "can't stand being told — пассивный герундий. hoped to be forgiven — пассивный инфинитив. without saying — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
@@ -2795,7 +2795,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "can't stand being lectured — пассивный герундий. hoped to be forgiven — пассивный инфинитив. without saying — активный герундий.",
+        "explanation_ru": "can't stand being told — пассивный герундий. hoped to be forgiven — пассивный инфинитив. without saying — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
@@ -2810,19 +2810,19 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "can't stand being lectured — пассивный герундий. hoped to be forgiven — пассивный инфинитив. without saying — активный герундий.",
+        "explanation_ru": "can't stand being told — пассивный герундий. hoped to be forgiven — пассивный инфинитив. without saying — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "I can't stand being lectured about road rules while on holiday. However, I hoped to be forgiven by the French farmer because I was obviously a tourist. I just sat on my Vespa without saying a single word."
+    "answer_text": "I can't stand being told about road rules while on holiday. However, I hoped to be forgiven by the French farmer because I was obviously a tourist. I just sat on my bike without saying a single word."
   },
   {
     "id": "pv7-D4-019",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The removal van driver claimed (to guide) down the sunken lane by his satnav, which he had accidentally left in 'Car' mode.",
@@ -2870,7 +2870,7 @@
     "id": "pv7-D4-020",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Elderly shoppers carrying heavy bags would usually like ___ to the bus stop in one of those free electric golf buggies.",
@@ -2912,19 +2912,19 @@
     "id": "pv7-D4-021",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Referees want players' fingernails (to inspect) on the pool deck so nobody gets scratched during the water-polo match.",
+    "prompt": "The coach wants the players' shoes (to clean) before the match so nobody slips.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "want to be inspected — пассивный инфинитив (хотят, чтобы ногти были проверены).",
+    "explanation_ru": "want to be cleaned — пассивный инфинитив (хочет, чтобы обувь почистили).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
     "cell": "D4",
     "genre": "instructions",
     "seed_id": "S3-116",
-    "skeleton": "w G on the w so w the w .",
+    "skeleton": "the w the w G before the w so w .",
     "practice_tenses": [
       "pv_D4",
       "pv_infinitive"
@@ -2940,39 +2940,39 @@
     "blanks": [
       {
         "id": "pv7-D4-021-b1",
-        "answer": "to be inspected",
+        "answer": "to be cleaned",
         "accepted_answers": [
-          "to be inspected"
+          "to be cleaned"
         ],
-        "base_verb": "to inspect",
+        "base_verb": "to clean",
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "want to be inspected — пассивный инфинитив (хотят, чтобы ногти были проверены).",
+        "explanation_ru": "want to be cleaned — пассивный инфинитив (хочет, чтобы обувь почистили).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "Referees want players' fingernails to be inspected on the pool deck so nobody gets scratched during the water-polo match."
+    "answer_text": "The coach wants the players' shoes to be cleaned before the match so nobody slips."
   },
   {
     "id": "pv7-D4-022",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Being disqualified for digging trenches in the turf with a trowel, the anchor man finally apologized to his tug-of-war team.",
+    "prompt": "Being disqualified for cheating in the race, the captain finally apologized to his team.",
     "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
-    "explanation_ru": "Дисквалификация произошла до извинений, поэтому в начале предложения требуется перфектное причастие: Having been disqualified.",
+    "explanation_ru": "Дисквалификация произошла до извинений, поэтому в начале предложения нужна перфектная форма (Having been disqualified).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
     "cell": "D4",
     "genre": "news",
     "seed_id": "S3-117",
-    "skeleton": "being w for w in the w with a w , the w to his w of w .",
+    "skeleton": "being w for w in the w , the w to his w .",
     "practice_tenses": [
       "pv_D4",
       "pv_perfect_participle"
@@ -2984,24 +2984,23 @@
     "practice_group": "error_fix",
     "practice_weight": 7,
     "type": "error_fix",
-    "answer": "Having been disqualified for digging trenches in the turf with a trowel, the anchor man finally apologized to his tug-of-war team.",
+    "answer": "Having been disqualified for cheating in the race, the captain finally apologized to his team.",
     "accepted_answers": [
-      "Having been disqualified for digging trenches in the turf with a trowel, the anchor man finally apologized to his tug-of-war team.",
-      "Disqualified for digging trenches in the turf with a trowel, the anchor man finally apologized to his tug-of-war team."
+      "Having been disqualified for cheating in the race, the captain finally apologized to his team."
     ],
-    "answer_text": "Having been disqualified for digging trenches in the turf with a trowel, the anchor man finally apologized to his tug-of-war team.",
+    "answer_text": "Having been disqualified for cheating in the race, the captain finally apologized to his team.",
     "has_error": true
   },
   {
     "id": "pv7-D4-023",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Buskers in Granada must audition at the town hall before (to allocate) a two-hour slot on a specific historic square.",
+    "prompt": "Street musicians in Granada must audition at the town hall before (to give) a two-hour slot on a famous square.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "before being allocated — пассивный герундий после предлога before (до того, как им выделят место).",
+    "explanation_ru": "before being given — пассивный герундий после предлога before.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -3024,27 +3023,27 @@
     "blanks": [
       {
         "id": "pv7-D4-023-b1",
-        "answer": "being allocated",
+        "answer": "being given",
         "accepted_answers": [
-          "being allocated"
+          "being given"
         ],
-        "base_verb": "to allocate",
+        "base_verb": "to give",
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "before being allocated — пассивный герундий после предлога before (до того, как им выделят место).",
+        "explanation_ru": "before being given — пассивный герундий после предлога before.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "Buskers in Granada must audition at the town hall before being allocated a two-hour slot on a specific historic square."
+    "answer_text": "Street musicians in Granada must audition at the town hall before being given a two-hour slot on a famous square."
   },
   {
     "id": "pv7-D4-024",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Neighbours on the stair genuinely appreciate (to spare) the terrible noise of the highland pipes. Beginners need (to teach) on a quiet wooden chanter for the first year. They master the fingerings by (to practice) silently.",
@@ -3127,7 +3126,7 @@
     "id": "pv7-D4-025",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Those background extras in Almería were extremely lucky (to give) cooling vests of ice-packs under their woollen cavalry tunics.",
@@ -3176,7 +3175,7 @@
     "id": "pv7-D4-026",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "___ gently that their tickets were for the previous Wednesday, the elderly couple slowly walked away from the Chichester box office.",
@@ -3218,19 +3217,19 @@
     "id": "pv7-D4-027",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "He can't stand (to glue) into silicone prosthetic pieces from four in the morning just to play an eighty-year-old on screen.",
+    "prompt": "He can't stand (to cover) in thick make-up from four in the morning just to play an eighty-year-old on screen.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "can't stand being glued — пассивный герундий после выражения can't stand (терпеть не может, когда его вклеивают).",
+    "explanation_ru": "can't stand being covered — пассивный герундий после выражения can't stand.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
     "cell": "D4",
     "genre": "chat",
     "seed_id": "S3-176",
-    "skeleton": "he w G into w from w in the w JUST to w an w on w .",
+    "skeleton": "he w G in w from w in the w JUST to w an w on w .",
     "practice_tenses": [
       "pv_D4",
       "pv_gerund"
@@ -3246,27 +3245,27 @@
     "blanks": [
       {
         "id": "pv7-D4-027-b1",
-        "answer": "being glued",
+        "answer": "being covered",
         "accepted_answers": [
-          "being glued"
+          "being covered"
         ],
-        "base_verb": "to glue",
+        "base_verb": "to cover",
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "can't stand being glued — пассивный герундий после выражения can't stand (терпеть не может, когда его вклеивают).",
+        "explanation_ru": "can't stand being covered — пассивный герундий после выражения can't stand.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "He can't stand being glued into silicone prosthetic pieces from four in the morning just to play an eighty-year-old on screen."
+    "answer_text": "He can't stand being covered in thick make-up from four in the morning just to play an eighty-year-old on screen."
   },
   {
     "id": "pv7-D4-028",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The audio guide seems to have confused by the room number, playing ten minutes of diesel locomotive history instead of Flemish art.",
@@ -3301,12 +3300,12 @@
     "id": "pv7-D4-029",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The retired metal-detectorist was thrilled (to award) half the market valuation for the gold signet ring. (to declare) Treasure by the coroner, the rare item was placed in the town museum. He plans to keep (to search) the same turnip field next spring.",
+    "prompt": "The retired treasure hunter was thrilled (to give) half the market value for the gold ring. (to declare) Treasure by the court, the rare item was placed in the town museum. He plans to keep (to search) the same field next spring.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "thrilled to be awarded — пассивный инфинитив. Having been declared — перфектное причастие в начале фразы. keep searching — активный герундий.",
+    "explanation_ru": "thrilled to be given — пассивный инфинитив. Having been declared — причастие (признанное сокровищем). keep searching — активный герундий.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -3333,16 +3332,16 @@
     "blanks": [
       {
         "id": "pv7-D4-029-b1",
-        "answer": "to be awarded",
+        "answer": "to be given",
         "accepted_answers": [
-          "to be awarded",
-          "to have been awarded"
+          "to be given",
+          "to have been given"
         ],
-        "base_verb": "to award",
+        "base_verb": "to give",
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "thrilled to be awarded — пассивный инфинитив. Having been declared — перфектное причастие в начале фразы. keep searching — активный герундий.",
+        "explanation_ru": "thrilled to be given — пассивный инфинитив. Having been declared — причастие (признанное сокровищем). keep searching — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
@@ -3358,7 +3357,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_perfect_participle",
         "voice": "passive",
-        "explanation_ru": "thrilled to be awarded — пассивный инфинитив. Having been declared — перфектное причастие в начале фразы. keep searching — активный герундий.",
+        "explanation_ru": "thrilled to be given — пассивный инфинитив. Having been declared — причастие (признанное сокровищем). keep searching — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
@@ -3373,19 +3372,19 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "thrilled to be awarded — пассивный инфинитив. Having been declared — перфектное причастие в начале фразы. keep searching — активный герундий.",
+        "explanation_ru": "thrilled to be given — пассивный инфинитив. Having been declared — причастие (признанное сокровищем). keep searching — активный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "The retired metal-detectorist was thrilled to be awarded half the market valuation for the gold signet ring. Having been declared Treasure by the coroner, the rare item was placed in the town museum. He plans to keep searching the same turnip field next spring."
+    "answer_text": "The retired treasure hunter was thrilled to be given half the market value for the gold ring. Having been declared Treasure by the court, the rare item was placed in the town museum. He plans to keep searching the same field next spring."
   },
   {
     "id": "pv7-D4-030",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Canvases rejected by the official academy jury are reported (to stamp) with a red letter R before returning to the painters' studios.",
@@ -3433,10 +3432,10 @@
     "id": "pv7-D4-031",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Maintenance engineers actually enjoy ___ with yellow bicycles to ride between vacuum sectors of the massive accelerator tunnel.",
+    "prompt": "Maintenance engineers actually enjoy ___ with yellow bicycles to ride between sections of the huge science tunnel.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "enjoy being issued — пассивный герундий после глагола enjoy (им нравится, когда им выдают велосипеды).",
     "rule_refs": [
@@ -3468,14 +3467,14 @@
       0
     ],
     "answer": "being issued",
-    "summary": "Maintenance engineers actually enjoy being issued with yellow bicycles to ride between vacuum sectors of the massive accelerator tunnel.",
-    "answer_text": "Maintenance engineers actually enjoy being issued with yellow bicycles to ride between vacuum sectors of the massive accelerator tunnel."
+    "summary": "Maintenance engineers actually enjoy being issued with yellow bicycles to ride between sections of the huge science tunnel.",
+    "answer_text": "Maintenance engineers actually enjoy being issued with yellow bicycles to ride between sections of the huge science tunnel."
   },
   {
     "id": "pv7-D4-032",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Volunteers left inside the acoustic chamber for ten minutes often report (to overwhelm) entirely by the deafening sound of their own heartbeat.",
@@ -3523,7 +3522,7 @@
     "id": "pv7-D4-033",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Female scientists certainly deserve (to remember), according to the Astronomical Union. The committee avoids (to influence) by current events, so living people are never chosen for Venus craters. They focus entirely on (to honour) historical contributions.",
@@ -3605,10 +3604,10 @@
     "id": "pv7-D4-034",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "I really appreciated (to show) a nature documentary about penguins on the ceiling tiles while the dentist used that terrible ultrasonic scaler.",
+    "prompt": "I really appreciated (to show) a nature film about penguins on the ceiling while the dentist did the horrible cleaning.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "appreciate being shown — пассивный герундий после глагола appreciate (был признателен, что мне показали).",
     "rule_refs": [
@@ -3617,7 +3616,7 @@
     "cell": "D4",
     "genre": "review",
     "seed_id": "S4-081",
-    "skeleton": "i w G a w about w on the w while the w that w .",
+    "skeleton": "i w G a w about w on the w while the w did the w .",
     "practice_tenses": [
       "pv_D4",
       "pv_gerund"
@@ -3647,13 +3646,13 @@
         ]
       }
     ],
-    "answer_text": "I really appreciated being shown a nature documentary about penguins on the ceiling tiles while the dentist used that terrible ultrasonic scaler."
+    "answer_text": "I really appreciated being shown a nature film about penguins on the ceiling while the dentist did the horrible cleaning."
   },
   {
     "id": "pv7-D4-035",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "First-time blood donors must drink a pint of water and eat a chocolate biscuit before leaving the recovery table.",
@@ -3695,7 +3694,7 @@
     "id": "pv7-D4-036",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "She didn't mind (to photograph) at the optician's, but wearing wrap-around sunglasses on the bus in the pouring rain was deeply humiliating.",
@@ -3743,10 +3742,10 @@
     "id": "pv7-D4-037",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Our history society's post about the Siege of Colchester appears ___ by an automated safety filter that mistook muskets for an active threat.",
+    "prompt": "Our history society's post about the old war appears ___ by an automatic safety filter that mistook old guns for a real threat.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "appears to have been hidden — перфектный пассивный инфинитив (кажется, был скрыт в прошлом).",
     "rule_refs": [
@@ -3755,7 +3754,7 @@
     "cell": "D4",
     "genre": "news",
     "seed_id": "S4-125",
-    "skeleton": "our w about the w of w G by an w that w for an w .",
+    "skeleton": "our w about the w G by an w that w for a w .",
     "practice_tenses": [
       "pv_D4",
       "pv_perfect_infinitive"
@@ -3778,14 +3777,14 @@
       0
     ],
     "answer": "to have been hidden",
-    "summary": "Our history society's post about the Siege of Colchester appears to have been hidden by an automated safety filter that mistook muskets for an active threat.",
-    "answer_text": "Our history society's post about the Siege of Colchester appears to have been hidden by an automated safety filter that mistook muskets for an active threat."
+    "summary": "Our history society's post about the old war appears to have been hidden by an automatic safety filter that mistook old guns for a real threat.",
+    "answer_text": "Our history society's post about the old war appears to have been hidden by an automatic safety filter that mistook old guns for a real threat."
   },
   {
     "id": "pv7-D4-038",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "His bank card is highly likely (to freeze) automatically because he bought a coffee and a sleeper ticket in two different cities within three minutes.",
@@ -3834,7 +3833,7 @@
     "id": "pv7-D4-039",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The independent folk guitarist was incredibly lucky (to add) to the 'Deep Focus Coding' playlist. Now he enjoys (to stream) by four hundred thousand new fans. Of course, he pretends (to plan) this marketing genius all along.",
@@ -3917,10 +3916,10 @@
     "id": "pv7-D4-040",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Easily (to track) for two kilometres in the snow thanks to his distinctive Michelin-tyre soles, the burglar surrendered the brass sundial.",
+    "prompt": "Easily (to track) for two kilometres in the snow thanks to his big boot prints, the burglar gave back the brass clock.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "having been tracked (или tracked) — причастие прошедшего времени в пассивном залоге.",
     "rule_refs": [
@@ -3960,16 +3959,16 @@
         ]
       }
     ],
-    "answer_text": "Easily having been tracked for two kilometres in the snow thanks to his distinctive Michelin-tyre soles, the burglar surrendered the brass sundial."
+    "answer_text": "Easily having been tracked for two kilometres in the snow thanks to his big boot prints, the burglar gave back the brass clock."
   },
   {
     "id": "pv7-D4-041",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The forgery claimed ___ in the seventeenth century, but forensic chemists quickly detected titanium white pigment invented in 1921.",
+    "prompt": "The picture claimed ___ in the seventeenth century, but experts quickly found a white paint invented in 1921.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "claimed to have been painted — перфектный пассивный инфинитив (заявлялось, что была написана ранее).",
     "rule_refs": [
@@ -3978,7 +3977,7 @@
     "cell": "D4",
     "genre": "report",
     "seed_id": "S4-162",
-    "skeleton": "the w G in the w , but w IN_1921 .",
+    "skeleton": "the w G in the w , but w a w IN_1921 .",
     "practice_tenses": [
       "pv_D4",
       "pv_perfect_infinitive"
@@ -4001,19 +4000,19 @@
       0
     ],
     "answer": "to have been painted",
-    "summary": "The forgery claimed to have been painted in the seventeenth century, but forensic chemists quickly detected titanium white pigment invented in 1921.",
-    "answer_text": "The forgery claimed to have been painted in the seventeenth century, but forensic chemists quickly detected titanium white pigment invented in 1921."
+    "summary": "The picture claimed to have been painted in the seventeenth century, but experts quickly found a white paint invented in 1921.",
+    "answer_text": "The picture claimed to have been painted in the seventeenth century, but experts quickly found a white paint invented in 1921."
   },
   {
     "id": "pv7-D4-042",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The spaniel risked (to discharge) from the police sniffer-dog programme because he kept happily licking every suspect's shoes.",
+    "prompt": "The dog risked (to remove) from the police dog programme because he kept happily licking every suspect's shoes.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "risk being discharged — пассивный герундий после глагола risk (рисковал быть отчисленным).",
+    "explanation_ru": "risk being removed — пассивный герундий после глагола risk (собаку могут исключить).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -4036,27 +4035,27 @@
     "blanks": [
       {
         "id": "pv7-D4-042-b1",
-        "answer": "being discharged",
+        "answer": "being removed",
         "accepted_answers": [
-          "being discharged"
+          "being removed"
         ],
-        "base_verb": "to discharge",
+        "base_verb": "to remove",
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "risk being discharged — пассивный герундий после глагола risk (рисковал быть отчисленным).",
+        "explanation_ru": "risk being removed — пассивный герундий после глагола risk (собаку могут исключить).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "The spaniel risked being discharged from the police sniffer-dog programme because he kept happily licking every suspect's shoes."
+    "answer_text": "The dog risked being removed from the police dog programme because he kept happily licking every suspect's shoes."
   },
   {
     "id": "pv7-D4-043",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "He bought his metal detector hoping (to reward) with Roman gold. Instead, he ended up (to find) nothing but bottle caps. Only after (to mock) by his friends for eleven years did he finally dig up a silver coin.",
@@ -4138,7 +4137,7 @@
     "id": "pv7-D4-044",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "This letter from 1912 appears (to hide) inside the atlas by a pupil and completely forgotten for a century.",
@@ -4186,7 +4185,7 @@
     "id": "pv7-D4-045",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Visitors expect (to tell) that the giant fireplace once roasted a whole ox, even though no historical record proves it.",
@@ -4234,7 +4233,7 @@
     "id": "pv7-D4-046",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "She absolutely hates her private diary (to read) out loud at the dinner table by her younger brother.",
@@ -4283,12 +4282,12 @@
     "id": "pv7-D4-047",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "My aunt keeps (to send) every photo twice to the family WhatsApp group. She doesn't know how to avoid (to duplicate) by the software glitch. Our phones run out of memory within a week!",
+    "prompt": "My aunt keeps (to send) every photo twice to the family chat. She doesn't know how to avoid (to copy) by the app. Our phones run out of memory within a week!",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "keeps sending — активный герундий (продолжает отправлять). avoid being duplicated — пассивный герундий (избежать дублирования).",
+    "explanation_ru": "keeps sending — активный герундий (продолжает отправлять). avoid being copied — пассивный герундий (фото копируются приложением).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -4321,34 +4320,34 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "keeps sending — активный герундий (продолжает отправлять). avoid being duplicated — пассивный герундий (избежать дублирования).",
+        "explanation_ru": "keeps sending — активный герундий (продолжает отправлять). avoid being copied — пассивный герундий (фото копируются приложением).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       },
       {
         "id": "pv7-D4-047-b2",
-        "answer": "being duplicated",
+        "answer": "being copied",
         "accepted_answers": [
-          "being duplicated"
+          "being copied"
         ],
-        "base_verb": "to duplicate",
+        "base_verb": "to copy",
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "keeps sending — активный герундий (продолжает отправлять). avoid being duplicated — пассивный герундий (избежать дублирования).",
+        "explanation_ru": "keeps sending — активный герундий (продолжает отправлять). avoid being copied — пассивный герундий (фото копируются приложением).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "My aunt keeps sending every photo twice to the family WhatsApp group. She doesn't know how to avoid being duplicated by the software glitch. Our phones run out of memory within a week!"
+    "answer_text": "My aunt keeps sending every photo twice to the family chat. She doesn't know how to avoid being copied by the app. Our phones run out of memory within a week!"
   },
   {
     "id": "pv7-D4-048",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The identical twins both remember (to give) identical bikes for their birthday, which is why they constantly argue over whose is whose.",
@@ -4397,10 +4396,10 @@
     "id": "pv7-D4-049",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The Lagos applicant expects (to offer) an unconditional place because of her brilliant robotics project.",
+    "prompt": "The applicant from Lagos expects (to offer) a place because of her brilliant robot project.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Глагол expect требует инфинитива. Девушка ожидает, что ей предложат место (пассив).",
     "rule_refs": [
@@ -4409,7 +4408,7 @@
     "cell": "D4",
     "genre": "email",
     "seed_id": "S1-197",
-    "skeleton": "the w AGO w G an w because of her w .",
+    "skeleton": "the w from w AGO w G a w because of her w .",
     "practice_tenses": [
       "pv_D4",
       "pv_infinitive"
@@ -4439,13 +4438,13 @@
         ]
       }
     ],
-    "answer_text": "The Lagos applicant expects to be offered an unconditional place because of her brilliant robotics project."
+    "answer_text": "The applicant from Lagos expects to be offered a place because of her brilliant robot project."
   },
   {
     "id": "pv7-D4-050",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Mr Davies hates (to block in) by delivery lorries in the staff car park.",
@@ -4494,12 +4493,12 @@
     "id": "pv7-D4-051",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Instead of (to read) the map properly, the tree surgeon felled three healthy firs.",
+    "prompt": "Instead of (to read) the map properly, the tree worker cut down three healthy trees.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Предлог instead of требует герундия. Хирург сам должен был читать карту (актив).",
+    "explanation_ru": "Предлог instead of требует герундия. Рабочий сам должен был читать карту (активный герундий).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -4530,24 +4529,24 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "Предлог instead of требует герундия. Хирург сам должен был читать карту (актив).",
+        "explanation_ru": "Предлог instead of требует герундия. Рабочий сам должен был читать карту (активный герундий).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "Instead of reading the map properly, the tree surgeon felled three healthy firs."
+    "answer_text": "Instead of reading the map properly, the tree worker cut down three healthy trees."
   },
   {
     "id": "pv7-D4-052",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Freelance illustrators do not want (to commission) for a gin label only to discover the brand has switched to kombucha.",
+    "prompt": "Artists do not want (to hire) for a coffee label only to discover the brand has switched to tea.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "После want нужен инфинитив. Иллюстраторов нанимают другие люди (пассив).",
+    "explanation_ru": "После want нужен инфинитив. Художников нанимают другие люди — нужен пассивный инфинитив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -4570,39 +4569,39 @@
     "blanks": [
       {
         "id": "pv7-D4-052-b1",
-        "answer": "to be commissioned",
+        "answer": "to be hired",
         "accepted_answers": [
-          "to be commissioned"
+          "to be hired"
         ],
-        "base_verb": "to commission",
+        "base_verb": "to hire",
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "После want нужен инфинитив. Иллюстраторов нанимают другие люди (пассив).",
+        "explanation_ru": "После want нужен инфинитив. Художников нанимают другие люди — нужен пассивный инфинитив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "Freelance illustrators do not want to be commissioned for a gin label only to discover the brand has switched to kombucha."
+    "answer_text": "Artists do not want to be hired for a coffee label only to discover the brand has switched to tea."
   },
   {
     "id": "pv7-D4-053",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "That seasonal Santa Claus risks (to sack) if he tells another child that reindeer prefer oatcakes.",
+    "prompt": "That Santa Claus at the shopping centre risks (to fire) if he tells another child that Christmas is cancelled.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Глагол risk управляет герундием. Санту увольняет руководство (пассив).",
+    "explanation_ru": "Глагол risk управляет герундием. Санту увольняет руководство — пассивный герундий.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
     "cell": "D4",
     "genre": "news",
     "seed_id": "S2-119",
-    "skeleton": "that w G if he w that w .",
+    "skeleton": "that w at the w G if he w that w is w .",
     "practice_tenses": [
       "pv_D4",
       "pv_gerund"
@@ -4618,27 +4617,27 @@
     "blanks": [
       {
         "id": "pv7-D4-053-b1",
-        "answer": "being sacked",
+        "answer": "being fired",
         "accepted_answers": [
-          "being sacked"
+          "being fired"
         ],
-        "base_verb": "to sack",
+        "base_verb": "to fire",
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "Глагол risk управляет герундием. Санту увольняет руководство (пассив).",
+        "explanation_ru": "Глагол risk управляет герундием. Санту увольняет руководство — пассивный герундий.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "That seasonal Santa Claus risks being sacked if he tells another child that reindeer prefer oatcakes."
+    "answer_text": "That Santa Claus at the shopping centre risks being fired if he tells another child that Christmas is cancelled."
   },
   {
     "id": "pv7-D4-054",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Our stage manager asked the understudy (to get) ready quickly because the lead actress was trapped in a lift.",
@@ -4686,19 +4685,19 @@
     "id": "pv7-D4-055",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Stunt actors need breakaway glass (to cast) flawlessly from sugar resin so they avoid injuries on set.",
+    "prompt": "Film actors need fake glass (to make) from sugar so they avoid injuries on set.",
     "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Здесь конструкция need something to be done. Стекло отливают мастера (пассивный инфинитив).",
+    "explanation_ru": "Здесь конструкция need something to be done. Стекло делают из сахара — пассивный инфинитив.",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
     "cell": "D4",
     "genre": "report",
     "seed_id": "S3-181",
-    "skeleton": "w G w from w so they w on w .",
+    "skeleton": "w G from w so they w on w .",
     "practice_tenses": [
       "pv_D4",
       "pv_infinitive"
@@ -4714,30 +4713,30 @@
     "blanks": [
       {
         "id": "pv7-D4-055-b1",
-        "answer": "to be cast",
+        "answer": "to be made",
         "accepted_answers": [
-          "to be cast"
+          "to be made"
         ],
-        "base_verb": "to cast",
+        "base_verb": "to make",
         "supplied_words": [],
         "tense_or_construction": "pv_infinitive",
         "voice": "passive",
-        "explanation_ru": "Здесь конструкция need something to be done. Стекло отливают мастера (пассивный инфинитив).",
+        "explanation_ru": "Здесь конструкция need something to be done. Стекло делают из сахара — пассивный инфинитив.",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "Stunt actors need breakaway glass to be cast flawlessly from sugar resin so they avoid injuries on set."
+    "answer_text": "Film actors need fake glass to be made from sugar so they avoid injuries on set."
   },
   {
     "id": "pv7-D4-056",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The Globe's thatched gallery is believed (to set) alight by a cannon wadding back in 1613.",
+    "prompt": "The old theatre is believed (to set) on fire by a cannon back in 1613.",
     "instruction_ru": "Раскройте скобки.",
     "explanation_ru": "Действие произошло в прошлом (в 1613 году), поэтому нужен перфектный инфинитив в пассиве.",
     "rule_refs": [
@@ -4746,7 +4745,7 @@
     "cell": "D4",
     "genre": "history",
     "seed_id": "S3-189",
-    "skeleton": "the w is w G w by a w IN_1613 .",
+    "skeleton": "the w is w G on w by a w IN_1613 .",
     "practice_tenses": [
       "pv_D4",
       "pv_perfect_infinitive"
@@ -4776,13 +4775,13 @@
         ]
       }
     ],
-    "answer_text": "The Globe's thatched gallery is believed to have been set alight by a cannon wadding back in 1613."
+    "answer_text": "The old theatre is believed to have been set on fire by a cannon back in 1613."
   },
   {
     "id": "pv7-D4-057",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "By accidentally double-clicking his mouse, the online bidder ended up (to force) to pay twelve thousand francs.",
@@ -4830,7 +4829,7 @@
     "id": "pv7-D4-058",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "(to uncover) as a piece of authentic 1735 silver, the teapot was immediately withdrawn from the Victorian auction.",
@@ -4879,7 +4878,7 @@
     "id": "pv7-D4-059",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Would you like (to seat) behind the glass screen? It helps visitors (to avoid) the intense heat from the furnace.",
@@ -4945,10 +4944,10 @@
     "id": "pv7-D4-060",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "These volunteers don't mind (to place) in red-lit booths. They actually enjoy (to sort) crisps by their crunch volume.",
+    "prompt": "These volunteers don't mind (to place) in red-lit booths. They actually enjoy (to sort) apples by size.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "После mind и enjoy идёт герундий. В первом случае волонтёров сажают (пассив), во втором они сами сортируют (актив).",
     "rule_refs": [
@@ -4957,7 +4956,7 @@
     "cell": "D4",
     "genre": "report",
     "seed_id": "S4-065",
-    "skeleton": "these w G in w . they w G w by their w .",
+    "skeleton": "these w G in w . they w G w by w .",
     "practice_tenses": [
       "pv_D4",
       "pv_gerund",
@@ -5004,16 +5003,16 @@
         ]
       }
     ],
-    "answer_text": "These volunteers don't mind being placed in red-lit booths. They actually enjoy sorting crisps by their crunch volume."
+    "answer_text": "These volunteers don't mind being placed in red-lit booths. They actually enjoy sorting apples by size."
   },
   {
     "id": "pv7-D4-061",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "The author was shocked (to ask) to cite a specific article about barnacle glue. She clearly remembered (to write) that exact paper herself three years earlier.",
+    "prompt": "The author was shocked (to ask) to name a specific article about sea animals. She clearly remembered (to write) that exact paper herself three years earlier.",
     "instruction_ru": "Раскройте скобки в тексте.",
     "explanation_ru": "После прилагательных эмоций (shocked) идёт инфинитив. Remember + герундий означает воспоминание о прошлом действии.",
     "rule_refs": [
@@ -5070,18 +5069,18 @@
         ]
       }
     ],
-    "answer_text": "The author was shocked to be asked to cite a specific article about barnacle glue. She clearly remembered writing that exact paper herself three years earlier."
+    "answer_text": "The author was shocked to be asked to name a specific article about sea animals. She clearly remembered writing that exact paper herself three years earlier."
   },
   {
     "id": "pv7-D4-062",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Citizen scientists look forward to (to send) a magnifying loupe. They plan (to record) crusty lichens on gravestones across the Cairngorms.",
+    "prompt": "Young scientists look forward to (to send) a small magnifying glass. They plan (to record) plants on old stones across the mountains.",
     "instruction_ru": "Раскройте скобки в тексте.",
-    "explanation_ru": "После look forward to нужен герундий (им пришлют лупу — пассив). После plan — инфинитив (они сами будут записывать — актив).",
+    "explanation_ru": "После look forward to нужен герундий (им пришлют лупу — пассив). После plan идёт инфинитив (активный).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -5114,7 +5113,7 @@
         "supplied_words": [],
         "tense_or_construction": "pv_gerund",
         "voice": "passive",
-        "explanation_ru": "После look forward to нужен герундий (им пришлют лупу — пассив). После plan — инфинитив (они сами будут записывать — актив).",
+        "explanation_ru": "После look forward to нужен герундий (им пришлют лупу — пассив). После plan идёт инфинитив (активный).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
@@ -5129,19 +5128,19 @@
         "supplied_words": [],
         "tense_or_construction": "active_other",
         "voice": "active",
-        "explanation_ru": "После look forward to нужен герундий (им пришлют лупу — пассив). После plan — инфинитив (они сами будут записывать — актив).",
+        "explanation_ru": "После look forward to нужен герундий (им пришлют лупу — пассив). После plan идёт инфинитив (активный).",
         "rule_refs": [
           "content/passive/07-passive.md#pv-nonfinite"
         ]
       }
     ],
-    "answer_text": "Citizen scientists look forward to being sent a magnifying loupe. They plan to record crusty lichens on gravestones across the Cairngorms."
+    "answer_text": "Young scientists look forward to being sent a small magnifying glass. They plan to record plants on old stones across the mountains."
   },
   {
     "id": "pv7-D4-063",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "(to place) first in the phone queue, the patient felt relieved. He had finally managed (to secure) an early morning appointment.",
@@ -5207,12 +5206,12 @@
     "id": "pv7-D4-064",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "New grandparents expect ___ into the postnatal ward immediately, but they must wait in the sunroom during quiet hours.",
+    "prompt": "New grandparents expect ___ into the baby ward immediately, but they must wait in the waiting room during quiet hours.",
     "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Глагол expect требует инфинитива. Бабушек и дедушек должны впустить медсёстры, поэтому нужен пассив.",
+    "explanation_ru": "Глагол expect требует инфинитива. Бабушек и дедушек должны пустить — пассивный инфинитив (to be let in).",
     "rule_refs": [
       "content/passive/07-passive.md#pv-nonfinite"
     ],
@@ -5232,27 +5231,27 @@
     "practice_weight": 20,
     "type": "multiple_choice",
     "options": [
-      "to be buzzed",
-      "being buzzed",
-      "to buzz",
-      "to have buzzed"
+      "to be let in",
+      "being let in",
+      "to let in",
+      "to have let in"
     ],
     "correct_option_index": 0,
     "accepted_option_indices": [
       0
     ],
-    "answer": "to be buzzed",
-    "summary": "New grandparents expect to be buzzed into the postnatal ward immediately, but they must wait in the sunroom during quiet hours.",
-    "answer_text": "New grandparents expect to be buzzed into the postnatal ward immediately, but they must wait in the sunroom during quiet hours."
+    "answer": "to be let in",
+    "summary": "New grandparents expect to be let in into the baby ward immediately, but they must wait in the waiting room during quiet hours.",
+    "answer_text": "New grandparents expect to be let in into the baby ward immediately, but they must wait in the waiting room during quiet hours."
   },
   {
     "id": "pv7-D4-065",
     "topic": "passive",
     "level": "basic",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
-    "prompt": "Professional cyclists are used to ___ to the absolute limit on a stationary bike to measure their oxygen uptake.",
+    "prompt": "Professional cyclists are used to ___ to the limit on an indoor bike to measure their fitness.",
     "instruction_ru": "Выберите правильный вариант.",
     "explanation_ru": "После конструкции be used to (привыкнуть к чему-то) используется герундий. Велосипедистов тестируют другие люди — пассив.",
     "rule_refs": [
@@ -5261,7 +5260,7 @@
     "cell": "D4",
     "genre": "report",
     "seed_id": "S4-095",
-    "skeleton": "w are w to G to the w on a w to w their w .",
+    "skeleton": "w are w to G to the w on an w to w their w .",
     "practice_tenses": [
       "pv_D4",
       "pv_gerund"
@@ -5284,14 +5283,14 @@
       0
     ],
     "answer": "being pushed",
-    "summary": "Professional cyclists are used to being pushed to the absolute limit on a stationary bike to measure their oxygen uptake.",
-    "answer_text": "Professional cyclists are used to being pushed to the absolute limit on a stationary bike to measure their oxygen uptake."
+    "summary": "Professional cyclists are used to being pushed to the limit on an indoor bike to measure their fitness.",
+    "answer_text": "Professional cyclists are used to being pushed to the limit on an indoor bike to measure their fitness."
   },
   {
     "id": "pv7-D4-066",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The club cyclist completely forgot ___ his GPS watch before loading his bike onto the car roof.",
@@ -5333,7 +5332,7 @@
     "id": "pv7-D4-067",
     "topic": "passive",
     "level": "medium",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "The amateur player's account appears ___ for fair-play review after a string of suspiciously perfect engine moves.",
@@ -5375,7 +5374,7 @@
     "id": "pv7-D4-068",
     "topic": "passive",
     "level": "advanced",
-    "content_version": "passive-2026-11-22.1",
+    "content_version": "passive-2026-11-22.2",
     "response_contract": "bounded-v1",
     "answer_profile": "english-standard-v2",
     "prompt": "Users connecting to unencrypted station networks risk their session cookies ___ by someone sitting at the next table.",
