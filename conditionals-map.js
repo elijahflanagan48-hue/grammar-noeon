@@ -152,13 +152,6 @@ function cdmPanelHtml(id) {
     <ul class="cdm-exs">${it.ex.map(([e, r]) => `<li><span class="cdm-ex">${cdmEsc(e)}</span><span class="cdm-ru">${cdmEsc(r)}</span></li>`).join('')}</ul>
     ${note}${cdmCheck(it.check)}<a class="cdm-rule" href="#theory/conditionals/${it.ref}" data-cdm-rule="${it.ref}">Подробно в правиле →</a>`;
 }
-function cdmLabels() {
-  const { UY, UB, RY, RB, MY, MH } = CDM;
-  const out = CDM.zones.map(z => ({ x: z.x + z.w / 2, y: z.y + Math.min(z.h / 2, 320), text: `${z.icon} ${z.title}`, maxK: 0.11, fx: z.x + z.w / 2, fy: z.y + z.h / 2, k: 0.3, fitW: z.w + 80, cls: 'cdm-lab cdm-lab-' + z.world }));
-  out.push({ x: CDM.W / 2, y: MY + MH / 2, text: '🪞 Зеркало: шаг назад', maxK: 0.11, fx: CDM.W / 2, fy: MY + MH / 2, k: 0.2, cls: 'cdm-lab cdm-lab-m' });
-  return out;
-}
-
 /* ---------- запуск ---------- */
 let conditionalsMapAbort = null;
 function initialiseConditionalsMap(root) {
@@ -184,7 +177,7 @@ function initialiseConditionalsMap(root) {
   const game$ = { on: false, kind: null, answered: false };
   let lodT = 0, lodT0 = 0;
   const api = initialiseNoeonCanvas(box, {
-    W: CDM.W, H: CDM.H, signal, minK: 0.05, maxK: 1.6, labels: cdmLabels(),
+    W: CDM.W, H: CDM.H, signal, minK: 0.05, maxK: 1.6,
     onZoom: k => { clearTimeout(lodT); lodT = setTimeout(() => { const lo = k < 0.26, ti = k < 0.13; if (box.classList.contains('lod-low') !== lo) box.classList.toggle('lod-low', lo); if (box.classList.contains('lod-tiny') !== ti) box.classList.toggle('lod-tiny', ti); }, lodT0 ? 220 : 0); lodT0 = 1; },
     onTap: e => { const st = e.target?.closest?.('[data-st]'); if (st) { if (game$.on && game$.kind && !game$.answered) return; open(st.dataset.st); } else if (!panel.hidden) close(); },
     start: ({ v, apply, fit, box: b }) => { if (b.clientWidth < 700) { v.k = 0.12; v.x = 8 - CDM_X0 * 0.12; v.y = 40 - 280 * 0.12; apply(); } else fit(); },
