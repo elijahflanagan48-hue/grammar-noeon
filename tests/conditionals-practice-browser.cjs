@@ -35,7 +35,7 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
         ok(!(await page.locator('#answer-form').textContent()).includes(item.explanation_ru),'explanation hidden');
         if(item.options){
           const radio=page.locator(`#answer-form input[name="choice"][value="${item.correct_option_index}"]`);
-          await page.locator('#answer-form .choice-list label').filter({has:radio}).click();
+          await radio.locator('..').click();
           ok(await radio.isChecked(),'visible choice label selects its radio');
         }
         else if(type==='error_fix')await page.fill('#answer',item.answer);
