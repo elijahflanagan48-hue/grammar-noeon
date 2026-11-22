@@ -227,8 +227,10 @@ def assign_seeds(topic, plan, seeds):
     sp = spec_of(topic)
     hooks = {c["id"]: set(c["hooks"]) for c in sp["cells"]}
     used, out = set(), {}
+    total = sum(b["size"] for b in plan["batches"])
+    ratio = min(1.3, len(seeds) / total)  # fewer seeds than 1.3x the target: spread them evenly
     for b in plan["batches"]:
-        want = math.ceil(b["size"] * 1.3)
+        want = math.floor(b["size"] * ratio) if ratio < 1.3 else math.ceil(b["size"] * 1.3)
         pool = [s for s in seeds.values() if s["seed_id"] not in used and hooks[b["cell"]] & set(s.get("hooks", []))]
         rest = [s for s in seeds.values() if s["seed_id"] not in used and s not in pool]
         by = collections.defaultdict(list)
