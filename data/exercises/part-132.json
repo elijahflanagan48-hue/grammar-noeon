@@ -1,0 +1,402 @@
+[
+  {
+    "id": "CD29-46",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Maybe Lamar has my new number. If he ___ it, he will call me tonight.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Это реальная возможность (я не знаю), поэтому после if — Present Simple: has.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "had",
+      "would have",
+      "has",
+      "had had"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "has"
+  },
+  {
+    "id": "CD29-47",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The party was great! If you ___ with us, you would have enjoyed it.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Вечеринка уже прошла, поэтому в придаточном нужен Past Perfect: had come.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "had come",
+      "came",
+      "would come",
+      "come"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "had come"
+  },
+  {
+    "id": "CD29-48",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Pilar had taken the job in Madrid, she would be living near her sister now.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Условие о прошлом (не взяла работу), результат о настоящем (не живёт рядом): в реальности обе части отрицательные, каждая в своём времени.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_mixed_choose"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "Pilar took the job in Madrid and lives near her sister.",
+      "Pilar didn't take the job in Madrid, but she lives near her sister.",
+      "Pilar didn't take the job in Madrid and doesn't live near her sister.",
+      "Pilar didn't take the job in Madrid and didn't live near her sister then."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "Pilar didn't take the job in Madrid and doesn't live near her sister."
+  },
+  {
+    "id": "CD29-49",
+    "topic": "conditionals",
+    "type": "match",
+    "source_format": "match",
+    "cell": "C11",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Match the halves about a snowy week in the village.",
+    "instruction_ru": "Соедините каждое начало с одним окончанием.",
+    "explanation_ru": "Каждая часть задаёт свой мир: реальное будущее — will, нереальное сейчас — would, нереальное прошлое — would have + V3, раздражение — wish + would.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "starts": [
+      "If it snows tonight,",
+      "If it snowed more often here,",
+      "If it had snowed last night,",
+      "I wish it"
+    ],
+    "endings": [
+      "the children would be happier.",
+      "would stop snowing.",
+      "we will stay at home.",
+      "the school would have been closed."
+    ],
+    "blanks": [
+      {
+        "id": "CD29-49-b1",
+        "answer": "we will stay at home.",
+        "accepted_answers": [
+          "we will stay at home."
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-49-b2",
+        "answer": "the children would be happier.",
+        "accepted_answers": [
+          "the children would be happier."
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-49-b3",
+        "answer": "the school would have been closed.",
+        "accepted_answers": [
+          "the school would have been closed."
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-49-b4",
+        "answer": "would stop snowing.",
+        "accepted_answers": [
+          "would stop snowing."
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      }
+    ],
+    "answer_text": "If it snows tonight, we will stay at home. · If it snowed more often here, the children would be happier. · If it had snowed last night, the school would have been closed. · I wish it would stop snowing."
+  },
+  {
+    "id": "CD29-50",
+    "topic": "conditionals",
+    "type": "hunt",
+    "source_format": "hunt",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "A message about a missed wedding.",
+    "instruction_ru": "Нажмите на все предложения с ошибкой.",
+    "explanation_ru": "В предложении 2 после if нельзя would: встреча возможна, нужен Present Simple; в предложении 3 сожаление о прошлом — wish + Past Perfect, а не would have.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "sentences": [
+      "Last Saturday I missed my cousin's wedding because my car broke down.",
+      "If I had checked the oil before the trip, the engine would not have failed.",
+      "She is angry with me now, and if I would see her tomorrow, I will have to apologise.",
+      "I wish I would have called her at once.",
+      "From now on, I will check the car before every long trip."
+    ],
+    "fixes": {
+      "2": "She is angry with me now, and if I see her tomorrow, I will have to apologise.",
+      "3": "I wish I had called her at once."
+    },
+    "blanks": [
+      {
+        "id": "CD29-50-b1",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-50-b2",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-50-b3",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-50-b4",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-50-b5",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      }
+    ],
+    "answer_text": "Sentence 3: She is angry with me now, and if I see her tomorrow, I will have to apologise. · Sentence 4: I wish I had called her at once."
+  },
+  {
+    "id": "CD29-51",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If the delivery had arrived on time, we would be using the new table now.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Ошибки нет: условие относится к прошлому (had arrived), результат — к настоящему (would be using).",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_mixed_choose"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "answer": "If the delivery had arrived on time, we would be using the new table now.",
+    "accepted_answers": [
+      "If the delivery had arrived on time, we would be using the new table now."
+    ]
+  },
+  {
+    "id": "CD29-52",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Last Friday Rowan's phone died on the way to the airport because he forgot to charge it. 'If I {{1:to charge}} it the night before, I {{2:to find}} the right gate easily,' he says now. 'Next time I {{3:to check}} the battery before I {{4:to leave}} home,' he adds.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Прошлое, которое нельзя изменить: had charged … would have found; реальный план на будущее: will check, а после before — Present Simple (leave).",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "blanks": [
+      {
+        "id": "CD29-52-b1",
+        "answer": "had charged",
+        "accepted_answers": [
+          "had charged"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "charge"
+      },
+      {
+        "id": "CD29-52-b2",
+        "answer": "would have found",
+        "accepted_answers": [
+          "would have found",
+          "'d have found"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "find"
+      },
+      {
+        "id": "CD29-52-b3",
+        "answer": "will check",
+        "accepted_answers": [
+          "will check",
+          "'ll check",
+          "am going to check"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "check"
+      },
+      {
+        "id": "CD29-52-b4",
+        "answer": "leave",
+        "accepted_answers": [
+          "leave"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "leave"
+      }
+    ],
+    "answer_text": "Last Friday Rowan's phone died on the way to the airport because he forgot to charge it. 'If I had charged it the night before, I would have found the right gate easily,' he says now. 'Next time I will check the battery before I leave home,' he adds."
+  }
+]

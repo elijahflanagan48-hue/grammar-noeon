@@ -6,7 +6,7 @@
     "source_format": "mc",
     "cell": "C6",
     "level": "medium",
-    "content_version": "conditionals-2026-11-22.1",
+    "content_version": "conditionals-2026-11-23.1",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I turned down the job in Leeds, so I still live far from my sister. If I had taken the job, I ___ near her now.",
@@ -41,7 +41,7 @@
     "source_format": "which",
     "cell": "C6",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-22.1",
+    "content_version": "conditionals-2026-11-23.1",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Last week Idris did not back up his files, so he lost his essay. Now he is very stressed.",
@@ -76,7 +76,7 @@
     "source_format": "order",
     "cell": "C1",
     "level": "basic",
-    "content_version": "conditionals-2026-11-22.1",
+    "content_version": "conditionals-2026-11-23.1",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Put the words in order.",
@@ -127,7 +127,7 @@
     "source_format": "fact",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-22.1",
+    "content_version": "conditionals-2026-11-23.1",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Hamid wishes he could play in the school team.",
@@ -154,5 +154,4469 @@
       1
     ],
     "answer": "Hamid can't play in the school team now, and he is sorry."
+  },
+  {
+    "id": "CD26-01",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C1",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If the fire alarm rings, (to leave) the room at once and (not / to use) the lift.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В инструкции после if + Present Simple результат выражается повелительным наклонением: leave и отрицательное do not use.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-01-b1",
+        "answer": "leave",
+        "accepted_answers": [
+          "leave"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "leave"
+      },
+      {
+        "id": "CD26-01-b2",
+        "answer": "do not use",
+        "accepted_answers": [
+          "do not use",
+          "don't use",
+          "don’t use"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "use"
+      }
+    ],
+    "answer_text": "If the fire alarm rings, leave the room at once and do not use the lift."
+  },
+  {
+    "id": "CD26-02",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C1",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Label on a shampoo bottle: If it gets into your eyes, ___ them with clean water.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В инструкции после if + Present Simple ставится повелительная форма без to и без will: wash.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "options": [
+      "washing",
+      "will wash",
+      "to wash",
+      "wash"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "wash"
+  },
+  {
+    "id": "CD26-03",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C1",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If you will feel ill on the bus, tell the driver.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if нельзя ставить will: в инструкции нужно Present Simple (feel) и повелительная форма в главной части.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "answer": "If you feel ill on the bus, tell the driver.",
+    "accepted_answers": [
+      "If you feel ill on the bus, tell the driver."
+    ]
+  },
+  {
+    "id": "CD26-04",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C1",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Build the sentence.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "Инструкция строится как if + Present Simple, затем повелительная форма: If you hear …, stop …",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-04-b1",
+        "answer": "If you hear a strange noise, stop the machine.",
+        "accepted_answers": [
+          "If you hear a strange noise, stop the machine."
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      }
+    ],
+    "answer_text": "If you hear a strange noise, stop the machine.",
+    "blocks": [
+      "stop",
+      "noise,",
+      "the",
+      "If",
+      "strange",
+      "you",
+      "a",
+      "machine.",
+      "hear"
+    ]
+  },
+  {
+    "id": "CD26-05",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C1",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "A note on the washing machine in a shared flat: If the door {{1:to stay}} locked after a wash, {{2:to wait}} two minutes and try again. If it still does not open, {{3:to call}} the landlord. Please never force it.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Это правила: после if идёт Present Simple (stays), а в главной части — повелительное наклонение (wait, call).",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-05-b1",
+        "answer": "stays",
+        "accepted_answers": [
+          "stays"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "stay"
+      },
+      {
+        "id": "CD26-05-b2",
+        "answer": "wait",
+        "accepted_answers": [
+          "wait"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "wait"
+      },
+      {
+        "id": "CD26-05-b3",
+        "answer": "call",
+        "accepted_answers": [
+          "call"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "call"
+      }
+    ],
+    "answer_text": "A note on the washing machine in a shared flat: If the door stays locked after a wash, wait two minutes and try again. If it still does not open, call the landlord. Please never force it."
+  },
+  {
+    "id": "CD26-06",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C1",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "— My phone app keeps freezing. — Well, if an app (to freeze) like that, (to delete) it and install it again.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Это общий совет-инструкция: после if — Present Simple (freezes), в главной части — повелительное наклонение (delete).",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-06-b1",
+        "answer": "freezes",
+        "accepted_answers": [
+          "freezes"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "freeze"
+      },
+      {
+        "id": "CD26-06-b2",
+        "answer": "delete",
+        "accepted_answers": [
+          "delete"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "delete"
+      }
+    ],
+    "answer_text": "— My phone app keeps freezing. — Well, if an app freezes like that, delete it and install it again."
+  },
+  {
+    "id": "CD26-09",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C1",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Saturday is market day, so ___ Saturday comes, the whole square fills with stalls.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Суббота наступает наверняка, поэтому нужно when; if означало бы, что суббота может не наступить.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_if_when"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "options": [
+      "unless",
+      "when",
+      "if",
+      "in case"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "when"
+  },
+  {
+    "id": "CD26-10",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C1",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "___ you are allergic to any food, please tell the waiter before you order.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Аллергия — лишь возможность, а не гарантированное событие, поэтому нужно if; when означало бы, что аллергия точно есть.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_if_when"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "options": [
+      "When",
+      "Unless",
+      "While",
+      "If"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "If"
+  },
+  {
+    "id": "CD26-11",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C1",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Milk always (to go) bad quickly if you (to leave) it outside the fridge on a hot day.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Это общий факт, поэтому и в главной части, и после if используется Present Simple: goes, leave.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_fact"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-11-b1",
+        "answer": "goes",
+        "accepted_answers": [
+          "goes"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "go"
+      },
+      {
+        "id": "CD26-11-b2",
+        "answer": "leave",
+        "accepted_answers": [
+          "leave"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "leave"
+      }
+    ],
+    "answer_text": "Milk always goes bad quickly if you leave it outside the fridge on a hot day."
+  },
+  {
+    "id": "CD26-12",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C1",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My cousin Hamza drives a delivery lorry, and he checks his tyres every Monday. He says that if the air {{1:to get}} colder, the pressure in a tyre {{2:to go}} down. If you {{3:not / to check}} it, the tyre wears out faster, and that costs money. So he always fills it up before a long trip.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Это общие факты, поэтому после if и в главной части стоит Present Simple: gets, goes; отрицание — do not check.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_fact"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-12-b1",
+        "answer": "gets",
+        "accepted_answers": [
+          "gets"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "get"
+      },
+      {
+        "id": "CD26-12-b2",
+        "answer": "goes",
+        "accepted_answers": [
+          "goes"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "go"
+      },
+      {
+        "id": "CD26-12-b3",
+        "answer": "do not check",
+        "accepted_answers": [
+          "do not check",
+          "don't check",
+          "don’t check"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ],
+        "base_verb": "check"
+      }
+    ],
+    "answer_text": "My cousin Hamza drives a delivery lorry, and he checks his tyres every Monday. He says that if the air gets colder, the pressure in a tyre goes down. If you do not check it, the tyre wears out faster, and that costs money. So he always fills it up before a long trip."
+  },
+  {
+    "id": "CD26-13",
+    "topic": "conditionals",
+    "type": "sort",
+    "source_format": "sort",
+    "cell": "C1",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Is each sentence a fact or a piece of advice?",
+    "instruction_ru": "Выберите группу для каждого предложения.",
+    "explanation_ru": "Если в главной части глагол в Present Simple — это факт или привычка; если повелительное наклонение — это совет.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_fact"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "groups": [
+      "Fact or habit",
+      "Advice"
+    ],
+    "sort_items": [
+      "If you press this key, the screen goes dark.",
+      "If a dog is scared, it hides under the table.",
+      "If I drink coffee late, I cannot sleep.",
+      "If the screen goes dark, press this key.",
+      "If a dog runs at you, stand still and stay calm.",
+      "If you cannot sleep, get up and read for a while."
+    ],
+    "blanks": [
+      {
+        "id": "CD26-13-b1",
+        "answer": "Fact or habit",
+        "accepted_answers": [
+          "Fact or habit"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-13-b2",
+        "answer": "Fact or habit",
+        "accepted_answers": [
+          "Fact or habit"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-13-b3",
+        "answer": "Fact or habit",
+        "accepted_answers": [
+          "Fact or habit"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-13-b4",
+        "answer": "Advice",
+        "accepted_answers": [
+          "Advice"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-13-b5",
+        "answer": "Advice",
+        "accepted_answers": [
+          "Advice"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-13-b6",
+        "answer": "Advice",
+        "accepted_answers": [
+          "Advice"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      }
+    ],
+    "answer_text": "If you press this key, the screen goes dark. → Fact or habit · If a dog is scared, it hides under the table. → Fact or habit · If I drink coffee late, I cannot sleep. → Fact or habit · If the screen goes dark, press this key. → Advice · If a dog runs at you, stand still and stay calm. → Advice · If you cannot sleep, get up and read for a while. → Advice"
+  },
+  {
+    "id": "CD26-14",
+    "topic": "conditionals",
+    "type": "hunt",
+    "source_format": "hunt",
+    "cell": "C1",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Rules on a library notice board.",
+    "instruction_ru": "Нажмите на все предложения с ошибкой.",
+    "explanation_ru": "В предложениях 2 и 5 после if стоят will и would; в общих правилах после if нужен Present Simple: lose, ask.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_fact"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "sentences": [
+      "If you return a book late, you pay a small fine.",
+      "If you will lose a book, you pay for a new one.",
+      "You can borrow up to six books if you have a library card.",
+      "If a book is very popular, the library lends it for one week only.",
+      "The staff always help you if you would ask them."
+    ],
+    "fixes": {
+      "1": "If you lose a book, you pay for a new one.",
+      "4": "The staff always help you if you ask them."
+    },
+    "blanks": [
+      {
+        "id": "CD26-14-b1",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-14-b2",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-14-b3",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-14-b4",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      },
+      {
+        "id": "CD26-14-b5",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_fact",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      }
+    ],
+    "answer_text": "Sentence 2: If you lose a book, you pay for a new one. · Sentence 5: The staff always help you if you ask them."
+  },
+  {
+    "id": "CD26-15",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C2",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Jorge, I am leaving now. If Dad (to call), (to tell) him I will be back at six.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Это просьба о конкретном будущем случае: после if — Present Simple (calls), а в главной части — повелительное наклонение (tell).",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-15-b1",
+        "answer": "calls",
+        "accepted_answers": [
+          "calls"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "call"
+      },
+      {
+        "id": "CD26-15-b2",
+        "answer": "tell",
+        "accepted_answers": [
+          "tell"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "tell"
+      }
+    ],
+    "answer_text": "Jorge, I am leaving now. If Dad calls, tell him I will be back at six."
+  },
+  {
+    "id": "CD26-16",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C2",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "— I might miss the last bus. — Then, if you ___ it, call me and I will pick you up.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После if в реальном будущем нельзя ставить will или would: нужен Present Simple (miss).",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "will miss",
+      "miss",
+      "missed",
+      "would miss"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "miss"
+  },
+  {
+    "id": "CD26-17",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Tell Kiran to call me if you will see him at the party.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if нельзя ставить will; в условии о будущем используется Present Simple: if you see him.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "answer": "Tell Kiran to call me if you see him at the party.",
+    "accepted_answers": [
+      "Tell Kiran to call me if you see him at the party."
+    ]
+  },
+  {
+    "id": "CD26-18",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C2",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Put the words in the right order.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "Просьба с условием о будущем: повелительная форма, затем if + Present Simple (is).",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-18-b1",
+        "answer": "Please phone me if the train is late tomorrow.",
+        "accepted_answers": [
+          "Please phone me if the train is late tomorrow."
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ]
+      }
+    ],
+    "answer_text": "Please phone me if the train is late tomorrow.",
+    "blocks": [
+      "late",
+      "Please",
+      "me",
+      "tomorrow.",
+      "if",
+      "the",
+      "phone",
+      "is",
+      "train"
+    ]
+  },
+  {
+    "id": "CD26-19",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Odile is leaving for a week. She writes a note for her neighbour: Thank you for helping! If the weather {{1:to be}} hot, {{2:to water}} the plants twice a day. If a parcel {{3:to arrive}} for me, {{4:to keep}} it at your flat. I will be back next Sunday.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "После if о возможном будущем нужен Present Simple (is, arrives), а просьбы в главной части — повелительное наклонение (water, keep).",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-19-b1",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD26-19-b2",
+        "answer": "water",
+        "accepted_answers": [
+          "water"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "water"
+      },
+      {
+        "id": "CD26-19-b3",
+        "answer": "arrives",
+        "accepted_answers": [
+          "arrives"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "arrive"
+      },
+      {
+        "id": "CD26-19-b4",
+        "answer": "keep",
+        "accepted_answers": [
+          "keep"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "keep"
+      }
+    ],
+    "answer_text": "Odile is leaving for a week. She writes a note for her neighbour: Thank you for helping! If the weather is hot, water the plants twice a day. If a parcel arrives for me, keep it at your flat. I will be back next Sunday."
+  },
+  {
+    "id": "CD26-20",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C2",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Wojtek will be away on Saturday and may lose his keys during the hike. His flatmate, who will stay at home, tells him what to do.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Возможное будущее: Present Simple после if, повелительное ring me и will bring в главной части.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "If you will lose your keys, ring me and I bring you another key.",
+      "If you lose your keys, you rang me and I will bring the spare ones.",
+      "If you lose your keys, ring me and I will bring you another key.",
+      "If you lost your keys, ring me and I will bring you another key."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "If you lose your keys, ring me and I will bring you another key."
+  },
+  {
+    "id": "CD26-21",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C2",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If it (to be) sunny on Sunday, we can have lunch in the garden.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После if о возможном будущем нужен Present Simple (is); can стоит в главной части.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_modal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-21-b1",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_modal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "be"
+      }
+    ],
+    "answer_text": "If it is sunny on Sunday, we can have lunch in the garden."
+  },
+  {
+    "id": "CD26-22",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C2",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Dilnoza says: You might get a discount if you (to ask) the manager nicely.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После if нужен Present Simple (ask), а might стоит в главной части.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_modal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-22-b1",
+        "answer": "ask",
+        "accepted_answers": [
+          "ask"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_modal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "ask"
+      }
+    ],
+    "answer_text": "Dilnoza says: You might get a discount if you ask the manager nicely."
+  },
+  {
+    "id": "CD26-23",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If my flight ___ on time, I might see you for dinner.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В условии о возможном будущем после if стоит Present Simple (lands); will и would после if не употребляются.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_modal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "will land",
+      "would land",
+      "lands",
+      "to land"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "lands"
+  },
+  {
+    "id": "CD26-24",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C2",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Sipho is planning a weekend trip with friends. I am not sure about the camp site. If it {{1:to be}} full, we can sleep in the car. If the weather {{2:to turn}} bad, we may come home early. And if nobody {{3:to bring}} a tent, we should book a cheap hotel. I will let you know on Friday.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Во всех условиях о возможном будущем после if стоит Present Simple (is, turns, brings), а модальные глаголы стоят в главной части.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_modal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-24-b1",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_modal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD26-24-b2",
+        "answer": "turns",
+        "accepted_answers": [
+          "turns"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_modal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "turn"
+      },
+      {
+        "id": "CD26-24-b3",
+        "answer": "brings",
+        "accepted_answers": [
+          "brings"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_modal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "bring"
+      }
+    ],
+    "answer_text": "Sipho is planning a weekend trip with friends. I am not sure about the camp site. If it is full, we can sleep in the car. If the weather turns bad, we may come home early. And if nobody brings a tent, we should book a cheap hotel. I will let you know on Friday."
+  },
+  {
+    "id": "CD26-25",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "You can watch a film tonight if you finish your homework early.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Предложение верно: после if стоит Present Simple (finish), а can — в главной части.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_modal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "answer": "You can watch a film tonight if you finish your homework early.",
+    "accepted_answers": [
+      "You can watch a film tonight if you finish your homework early."
+    ]
+  },
+  {
+    "id": "CD26-26",
+    "topic": "conditionals",
+    "type": "sort",
+    "source_format": "sort",
+    "cell": "C2",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Is it a habit or a plan for one future moment?",
+    "instruction_ru": "Выберите группу для каждого предложения.",
+    "explanation_ru": "Привычка выражается Present Simple в обеих частях, а для одного будущего случая в главной части нужен will.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_vs_zero"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "groups": [
+      "Habit",
+      "One future event"
+    ],
+    "sort_items": [
+      "If my brother misses the bus, he walks to school.",
+      "If it snows, the trains usually run late.",
+      "If I am hungry at night, I eat bread and cheese.",
+      "If the weather is nice on Sunday, we will go to the lake.",
+      "If Mum calls this evening, I will tell her the news.",
+      "If the shop is still open when I get there, I will buy some bread."
+    ],
+    "blanks": [
+      {
+        "id": "CD26-26-b1",
+        "answer": "Habit",
+        "accepted_answers": [
+          "Habit"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_vs_zero",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ]
+      },
+      {
+        "id": "CD26-26-b2",
+        "answer": "Habit",
+        "accepted_answers": [
+          "Habit"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_vs_zero",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ]
+      },
+      {
+        "id": "CD26-26-b3",
+        "answer": "Habit",
+        "accepted_answers": [
+          "Habit"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_vs_zero",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ]
+      },
+      {
+        "id": "CD26-26-b4",
+        "answer": "One future event",
+        "accepted_answers": [
+          "One future event"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_vs_zero",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ]
+      },
+      {
+        "id": "CD26-26-b5",
+        "answer": "One future event",
+        "accepted_answers": [
+          "One future event"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_vs_zero",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ]
+      },
+      {
+        "id": "CD26-26-b6",
+        "answer": "One future event",
+        "accepted_answers": [
+          "One future event"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_vs_zero",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ]
+      }
+    ],
+    "answer_text": "If my brother misses the bus, he walks to school. → Habit · If it snows, the trains usually run late. → Habit · If I am hungry at night, I eat bread and cheese. → Habit · If the weather is nice on Sunday, we will go to the lake. → One future event · If Mum calls this evening, I will tell her the news. → One future event · If the shop is still open when I get there, I will buy some bread. → One future event"
+  },
+  {
+    "id": "CD26-27",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Our boss is strict about phones. If anyone ___ one in a meeting, he always takes it away.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Слово always показывает привычное действие, поэтому в обеих частях Present Simple: uses, takes.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_vs_zero"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "to use",
+      "will use",
+      "uses",
+      "would use"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "uses"
+  },
+  {
+    "id": "CD26-28",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Next Monday, if the lift is still broken, I walk up to the sixth floor.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Речь об одном конкретном будущем случае, поэтому в главной части нужен will (walk), а не Present Simple.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_vs_zero"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "answer": "Next Monday, if the lift is still broken, I will walk up to the sixth floor.",
+    "accepted_answers": [
+      "Next Monday, if the lift is still broken, I will walk up to the sixth floor.",
+      "Next Monday, if the lift is still broken, I'll walk up to the sixth floor.",
+      "Next Monday, if the lift is still broken, I am going to walk up to the sixth floor.",
+      "Next Monday, if the lift is still broken, I'm going to walk up to the sixth floor."
+    ]
+  },
+  {
+    "id": "CD26-29",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C2",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Mum (to say) yes, I (to go) to Zubair's party on Saturday.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После if ставится Present Simple (says), а результат в будущем — will go.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_no_will_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-29-b1",
+        "answer": "says",
+        "accepted_answers": [
+          "says"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_no_will_after_if",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "say"
+      },
+      {
+        "id": "CD26-29-b2",
+        "answer": "will go",
+        "accepted_answers": [
+          "will go",
+          "'ll go",
+          "am going to go",
+          "'m going to go"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_no_will_after_if",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "go"
+      }
+    ],
+    "answer_text": "If Mum says yes, I will go to Zubair's party on Saturday."
+  },
+  {
+    "id": "CD26-30",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C2",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I ___ you a message tonight if you give me your number.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В главной части реального условия нужен will (will send); в условной части — Present Simple.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_will"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "send",
+      "sent",
+      "will send",
+      "would send"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "will send"
+  },
+  {
+    "id": "CD26-31",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Chidi might get a day off next week. ___ he gets one, he will drive to Ibadan to see his aunt.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Выходной может и не появиться, поэтому нужен if; when означало бы, что выходной точно будет.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_when_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "When",
+      "If",
+      "While",
+      "Unless"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "If"
+  },
+  {
+    "id": "CD26-32",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My brother turns eighteen in March. ___ he turns eighteen, he will learn to drive.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Восемнадцатилетие наступит обязательно, поэтому нужен when, а не if.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_when_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "If",
+      "When",
+      "Unless",
+      "Even if"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "When"
+  },
+  {
+    "id": "CD26-33",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I will tell you if I will find a cheaper flight to Venice.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if будущее выражается Present Simple: if I find, а не if I will find.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_no_will_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "answer": "I will tell you if I find a cheaper flight to Venice.",
+    "accepted_answers": [
+      "I will tell you if I find a cheaper flight to Venice.",
+      "I'll tell you if I find a cheaper flight to Venice.",
+      "I’ll tell you if I find a cheaper flight to Venice."
+    ]
+  },
+  {
+    "id": "CD26-34",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Hurry up, or you will miss your train. → If you …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Реальное условие о будущем: после if — Present Simple (do not hurry), а результат — will miss.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_will"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-34-b1",
+        "answer": "If you do not hurry up, you will miss your train.",
+        "accepted_answers": [
+          "If you do not hurry up, you will miss your train.",
+          "If you do not hurry up, you'll miss your train.",
+          "If you do not hurry, you will miss your train.",
+          "If you do not hurry, you'll miss your train.",
+          "If you don't hurry up, you will miss your train.",
+          "If you don't hurry up, you'll miss your train.",
+          "If you don't hurry, you will miss your train.",
+          "If you don't hurry, you'll miss your train.",
+          "If you don’t hurry up, you will miss your train.",
+          "If you don’t hurry up, you'll miss your train.",
+          "If you don’t hurry, you will miss your train.",
+          "If you don’t hurry, you'll miss your train."
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_will",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ]
+      }
+    ],
+    "answer_text": "If you do not hurry up, you will miss your train."
+  },
+  {
+    "id": "CD26-35",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I can send the form to the office for you if you ___ it by Friday.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "К пятнице действие должно быть завершено, поэтому после if нужен Present Perfect (have finished); will и would после if нельзя.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_no_will_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "will finish",
+      "have finished",
+      "finished",
+      "would finish"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "have finished"
+  },
+  {
+    "id": "CD26-36",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "— Where will you stay in Wroclaw? — If the hotel (to be) full, we (to stay) with my aunt.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После if — Present Simple (is), а результат — will stay.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_will"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-36-b1",
+        "answer": "is",
+        "accepted_answers": [
+          "is"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_will",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD26-36-b2",
+        "answer": "will stay",
+        "accepted_answers": [
+          "will stay",
+          "'ll stay",
+          "are going to stay",
+          "'re going to stay"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_will",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "stay"
+      }
+    ],
+    "answer_text": "— Where will you stay in Wroclaw? — If the hotel is full, we will stay with my aunt."
+  },
+  {
+    "id": "CD26-37",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C2",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Parisa asked an engineer to repair her heating. He may come today, but he may not. She is going shopping for an hour and talks to her neighbour.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Приход мастера неизвестен, поэтому if; после if нужен Present Simple (comes), а не will.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_when_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "options": [
+      "If the engineer will come, please give him my key.",
+      "When the engineer will come, please give him my key.",
+      "If the engineer comes, please give him my key.",
+      "When the engineer came, please give him my key."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "If the engineer comes, please give him my key."
+  },
+  {
+    "id": "CD26-38",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C2",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The teacher says to the class: The coach leaves at eight tomorrow. If you {{1:to be}} late, we {{2:not / to wait}} for you. Please ring me if you {{3:to have}} a problem. I will give the list to the driver at half past seven.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "После if — Present Simple (are, have), а результат — will not wait.",
+    "practice_tenses": [
+      "cd_first"
+    ],
+    "tags": [
+      "cd_first",
+      "cd_first_will"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-first"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-38-b1",
+        "answer": "are",
+        "accepted_answers": [
+          "are"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_will",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD26-38-b2",
+        "answer": "will not wait",
+        "accepted_answers": [
+          "will not wait",
+          "won't wait",
+          "won’t wait",
+          "are not going to wait",
+          "aren't going to wait"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_will",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "wait"
+      },
+      {
+        "id": "CD26-38-b3",
+        "answer": "have",
+        "accepted_answers": [
+          "have"
+        ],
+        "tense_or_construction": "cd_first",
+        "construction": "cd_first_will",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-first"
+        ],
+        "base_verb": "have"
+      }
+    ],
+    "answer_text": "The teacher says to the class: The coach leaves at eight tomorrow. If you are late, we will not wait for you. Please ring me if you have a problem. I will give the list to the driver at half past seven."
+  },
+  {
+    "id": "CD26-39",
+    "topic": "conditionals",
+    "type": "sort",
+    "source_format": "sort",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Sort the sentences from Yasmin's holiday chat: real world or inside-out world?",
+    "instruction_ru": "Выберите группу для каждого предложения.",
+    "explanation_ru": "Present Simple и will описывают реальный мир, а Past Simple + would и Past Perfect + would have — нереальный мир (сейчас или в прошлом).",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "groups": [
+      "Real world",
+      "Inside-out world"
+    ],
+    "sort_items": [
+      "If it is cold tomorrow, we will wear coats.",
+      "If the ferry is late, we take the next one.",
+      "If you press that button, the lift goes down.",
+      "If we had a bigger car, we would take your parents too.",
+      "If I were taller, I could reach the top shelf.",
+      "If we had left earlier, we would have caught the ferry."
+    ],
+    "blanks": [
+      {
+        "id": "CD26-39-b1",
+        "answer": "Real world",
+        "accepted_answers": [
+          "Real world"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-39-b2",
+        "answer": "Real world",
+        "accepted_answers": [
+          "Real world"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-39-b3",
+        "answer": "Real world",
+        "accepted_answers": [
+          "Real world"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-39-b4",
+        "answer": "Inside-out world",
+        "accepted_answers": [
+          "Inside-out world"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-39-b5",
+        "answer": "Inside-out world",
+        "accepted_answers": [
+          "Inside-out world"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-39-b6",
+        "answer": "Inside-out world",
+        "accepted_answers": [
+          "Inside-out world"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      }
+    ],
+    "answer_text": "If it is cold tomorrow, we will wear coats. → Real world · If the ferry is late, we take the next one. → Real world · If you press that button, the lift goes down. → Real world · If we had a bigger car, we would take your parents too. → Inside-out world · If I were taller, I could reach the top shelf. → Inside-out world · If we had left earlier, we would have caught the ferry. → Inside-out world"
+  },
+  {
+    "id": "CD26-40",
+    "topic": "conditionals",
+    "type": "sort",
+    "source_format": "sort",
+    "cell": "C11",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Which group does each sentence belong to?",
+    "instruction_ru": "Выберите группу для каждого предложения.",
+    "explanation_ru": "Present Simple в обеих частях — привычка, if + Present Simple и will — возможное будущее, Past Simple и would — воображаемая ситуация сейчас.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "groups": [
+      "Habit or fact",
+      "Possible future",
+      "Imaginary now"
+    ],
+    "sort_items": [
+      "If I drink tea at night, I cannot sleep.",
+      "If the baby hears music, she stops crying.",
+      "If the rain stops, we will go for a walk.",
+      "If Dad is late, I will start dinner.",
+      "If I had a dog, I would walk it every day.",
+      "If my room were bigger, I would have a desk."
+    ],
+    "blanks": [
+      {
+        "id": "CD26-40-b1",
+        "answer": "Habit or fact",
+        "accepted_answers": [
+          "Habit or fact"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-40-b2",
+        "answer": "Habit or fact",
+        "accepted_answers": [
+          "Habit or fact"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-40-b3",
+        "answer": "Possible future",
+        "accepted_answers": [
+          "Possible future"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-40-b4",
+        "answer": "Possible future",
+        "accepted_answers": [
+          "Possible future"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-40-b5",
+        "answer": "Imaginary now",
+        "accepted_answers": [
+          "Imaginary now"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-40-b6",
+        "answer": "Imaginary now",
+        "accepted_answers": [
+          "Imaginary now"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      }
+    ],
+    "answer_text": "If I drink tea at night, I cannot sleep. → Habit or fact · If the baby hears music, she stops crying. → Habit or fact · If the rain stops, we will go for a walk. → Possible future · If Dad is late, I will start dinner. → Possible future · If I had a dog, I would walk it every day. → Imaginary now · If my room were bigger, I would have a desk. → Imaginary now"
+  },
+  {
+    "id": "CD26-41",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Wanjiru's train was cancelled this morning, so she missed an important meeting. Now she talks to her friend.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Речь о прошлом, которое нельзя изменить, поэтому нужны Past Perfect и would have + V3.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "If the train weren't cancelled, I would reach the meeting.",
+      "If the train hadn't been cancelled, I would have reached the meeting.",
+      "If the train isn't cancelled, I will reach the meeting.",
+      "If the train wouldn't be cancelled, I would have reached the meeting."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "If the train hadn't been cancelled, I would have reached the meeting."
+  },
+  {
+    "id": "CD26-42",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The bus drivers might go on strike tomorrow, but nobody knows yet. Teodor must be at the airport by nine, and he is deciding what to do.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Забастовка реально возможна, поэтому нужно реальное условие: if + Present Simple, will в главной части.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "If the buses stopped running, I will take a taxi.",
+      "If the buses will stop running, I take a taxi.",
+      "If the buses had stopped running, I would take a taxi.",
+      "If the buses stop running, I will take a taxi."
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "If the buses stop running, I will take a taxi."
+  },
+  {
+    "id": "CD26-43",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C11",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Rasa's school finishes in July. Her uncle asks about her summer plans.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Конец учёбы наступит наверняка, поэтому when; после when — Present Simple (finishes), а в главной части — will visit.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_if_when"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "When school will finish, I will visit my cousin in Wales.",
+      "When school finishes, I would visit my cousin in Wales.",
+      "When school finishes, I will visit my cousin in Wales.",
+      "When school finished, I will visit my cousin in Wales."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "When school finishes, I will visit my cousin in Wales."
+  },
+  {
+    "id": "CD26-44",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Quentin's old bike has a broken brake, and he has no money for a new one. If he {{1:to have}} more money, he {{2:to buy}} a new bike today. He will ask his uncle for help on Saturday. If his uncle {{3:to say}} yes, Quentin {{4:to go}} to the shop on Sunday.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Денег сейчас нет — нереальное условие (had, would buy); просьба к дяде реальна — if + Present Simple (says) и will go.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-44-b1",
+        "answer": "had",
+        "accepted_answers": [
+          "had"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "have"
+      },
+      {
+        "id": "CD26-44-b2",
+        "answer": "would buy",
+        "accepted_answers": [
+          "would buy",
+          "'d buy"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "buy"
+      },
+      {
+        "id": "CD26-44-b3",
+        "answer": "says",
+        "accepted_answers": [
+          "says"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "say"
+      },
+      {
+        "id": "CD26-44-b4",
+        "answer": "will go",
+        "accepted_answers": [
+          "will go",
+          "'ll go",
+          "is going to go"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "go"
+      }
+    ],
+    "answer_text": "Quentin's old bike has a broken brake, and he has no money for a new one. If he had more money, he would buy a new bike today. He will ask his uncle for help on Saturday. If his uncle says yes, Quentin will go to the shop on Sunday."
+  },
+  {
+    "id": "CD26-45",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Zsofia missed the last train home on Friday night. If she {{1:to leave}} the party ten minutes earlier, she {{2:to catch}} it. Instead, she had to walk home in the rain. Next weekend there is another party. If it {{3:to finish}} after eleven, she {{4:to sleep}} at her friend's flat.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Прошлое, которое нельзя изменить, требует Past Perfect и would have caught; возможное будущее — if + Present Simple и will sleep.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-45-b1",
+        "answer": "had left",
+        "accepted_answers": [
+          "had left"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "leave"
+      },
+      {
+        "id": "CD26-45-b2",
+        "answer": "would have caught",
+        "accepted_answers": [
+          "would have caught",
+          "'d have caught"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "catch"
+      },
+      {
+        "id": "CD26-45-b3",
+        "answer": "finishes",
+        "accepted_answers": [
+          "finishes"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "finish"
+      },
+      {
+        "id": "CD26-45-b4",
+        "answer": "will sleep",
+        "accepted_answers": [
+          "will sleep",
+          "'ll sleep",
+          "is going to sleep"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "sleep"
+      }
+    ],
+    "answer_text": "Zsofia missed the last train home on Friday night. If she had left the party ten minutes earlier, she would have caught it. Instead, she had to walk home in the rain. Next weekend there is another party. If it finishes after eleven, she will sleep at her friend's flat."
+  },
+  {
+    "id": "CD26-46",
+    "topic": "conditionals",
+    "type": "hunt",
+    "source_format": "hunt",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Messages in a group chat about a picnic.",
+    "instruction_ru": "Нажмите на все предложения с ошибкой.",
+    "explanation_ru": "В предложении 2 после if стоит will вместо Present Simple, а в предложении 5 — would вместо Past Simple (If I knew).",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "sentences": [
+      "If the weather is fine on Saturday, we will have the picnic by the river.",
+      "If it will rain, we will move everything to Sadia's flat.",
+      "Her flat is small; if it were bigger, we would invite the whole class.",
+      "Last year it rained all day, and if we had brought umbrellas, we would have stayed dry.",
+      "If I would know the forecast now, I would tell you."
+    ],
+    "fixes": {
+      "1": "If it rains, we will move everything to Sadia's flat.",
+      "4": "If I knew the forecast now, I would tell you."
+    },
+    "blanks": [
+      {
+        "id": "CD26-46-b1",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-46-b2",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-46-b3",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-46-b4",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-46-b5",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      }
+    ],
+    "answer_text": "Sentence 2: If it rains, we will move everything to Sadia's flat. · Sentence 5: If I knew the forecast now, I would tell you."
+  },
+  {
+    "id": "CD26-47",
+    "topic": "conditionals",
+    "type": "hunt",
+    "source_format": "hunt",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "A worker's message to colleagues about the broken heating.",
+    "instruction_ru": "Нажмите на все предложения с ошибкой.",
+    "explanation_ru": "В предложении 4 условие относится к прошлому, а результат — к настоящему, поэтому в главной части нужно would not be, а не are not.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "sentences": [
+      "If the heating had worked on Monday, the office would not have been so cold.",
+      "If I were the manager, I would fix it today.",
+      "If the repair team comes tomorrow, we will have warm rooms by the evening.",
+      "If the team had come last week, we are not freezing now.",
+      "Anyway, I will bring a warm jumper tomorrow."
+    ],
+    "fixes": {
+      "3": "If the team had come last week, we would not be freezing now."
+    },
+    "blanks": [
+      {
+        "id": "CD26-47-b1",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-47-b2",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-47-b3",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-47-b4",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD26-47-b5",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      }
+    ],
+    "answer_text": "Sentence 4: If the team had come last week, we would not be freezing now."
+  },
+  {
+    "id": "CD26-48",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Mustafa does not know the way to the new office, so he cannot come. If he ___ the way, he would come.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Сейчас Мустафа не знает дорогу, поэтому нужно нереальное условие: if + Past Simple (knew).",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "will know",
+      "knew",
+      "knows",
+      "would know"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "knew"
+  },
+  {
+    "id": "CD26-49",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I am not sure the post office will be open on Monday. ___ it is open, I will send the parcel; otherwise I will try on Tuesday.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Неизвестно, будет ли почта открыта, поэтому нужно if; when означало бы, что она точно откроется.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_if_when"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "When",
+      "Unless",
+      "If",
+      "While"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "If"
+  },
+  {
+    "id": "CD26-50",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My neighbour is very noisy. If he would be quieter, I could sleep better.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if не ставится would: для нереальной ситуации сейчас нужен Past Simple (were или was).",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "answer": "My neighbour is very noisy. If he were quieter, I could sleep better.",
+    "accepted_answers": [
+      "My neighbour is very noisy. If he were quieter, I could sleep better.",
+      "My neighbour is very noisy. If he was quieter, I could sleep better."
+    ]
+  },
+  {
+    "id": "CD26-51",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Ismail did not wear his helmet and hurt his head. If he (to wear) it, he (not / to hurt) his head.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Это прошлое, которое нельзя изменить: Past Perfect после if и would not have + V3 в главной части.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "blanks": [
+      {
+        "id": "CD26-51-b1",
+        "answer": "had worn",
+        "accepted_answers": [
+          "had worn"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "wear"
+      },
+      {
+        "id": "CD26-51-b2",
+        "answer": "would not have hurt",
+        "accepted_answers": [
+          "would not have hurt",
+          "wouldn't have hurt",
+          "wouldn’t have hurt"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_real_or_unreal",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "hurt"
+      }
+    ],
+    "answer_text": "Ismail did not wear his helmet and hurt his head. If he had worn it, he would not have hurt his head."
+  },
+  {
+    "id": "CD26-52",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C11",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Dad had a car, he would drive us to school.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "If + Past Simple и would показывают нереальную ситуацию сейчас: на самом деле у папы нет машины, и он нас не возит.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_real_or_unreal"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "options": [
+      "Dad has a car and drives us to school.",
+      "Dad does not have a car, so he does not drive us to school.",
+      "Dad had a car but did not drive us to school.",
+      "Dad did not have a car, but he drove us to school."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "Dad does not have a car, so he does not drive us to school."
+  },
+  {
+    "id": "CD27-01",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C3",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Ilse cannot decide ___ to repaint her bedroom herself or ask a painter.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Перед инфинитивом и при выборе из двух вариантов («красить самой или нанять») нужен whether; if с to-инфинитивом не употребляется.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_whether"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "if",
+      "whether",
+      "unless",
+      "in case"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "whether"
+  },
+  {
+    "id": "CD27-02",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C3",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "We argued about ___ the school trip should go ahead in the rain.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После предлога about косвенный вопрос вводится словом whether («ли»); if после предлога не ставится.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_whether"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "unless",
+      "in case",
+      "whether",
+      "provided"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "whether"
+  },
+  {
+    "id": "CD27-03",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C3",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Taro will cook fish tonight, ___ his guests like it or not.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Конструкция «независимо от того, ... или нет» строится с whether ... or not; остальные союзы здесь не подходят по смыслу.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_whether"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "provided",
+      "unless",
+      "only if",
+      "whether"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "whether"
+  },
+  {
+    "id": "CD27-04",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C3",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Nobody knows whether the shop will be open on Sunday, so Kasimir is going to phone first.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Ошибки нет: after know в косвенном вопросе «ли» передаётся словом whether, и will здесь допустим, потому что это не условное придаточное.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_whether"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "answer": "Nobody knows whether the shop will be open on Sunday, so Kasimir is going to phone first.",
+    "accepted_answers": [
+      "Nobody knows whether the shop will be open on Sunday, so Kasimir is going to phone first."
+    ]
+  },
+  {
+    "id": "CD27-05",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C3",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "It does not matter if the weather is good or bad. We will have the picnic. → Whether …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Значение «независимо от того, ... или ...» передаёт whether ... or; после него Present Simple.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_whether"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-05-b1",
+        "answer": "Whether the weather is good or bad, we will have the picnic.",
+        "accepted_answers": [
+          "Whether the weather is good or bad, we will have the picnic.",
+          "Whether the weather is good or not, we will have the picnic."
+        ],
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_whether",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ]
+      }
+    ],
+    "answer_text": "Whether the weather is good or bad, we will have the picnic."
+  },
+  {
+    "id": "CD27-06",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C3",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Ayodele's parents let him go camping ___ he takes his phone and calls every night.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "On condition that значит «при условии, что»: разрешение зависит от выполнения условия.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_on_condition"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "on condition that",
+      "in case",
+      "even if",
+      "whether"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "on condition that"
+  },
+  {
+    "id": "CD27-07",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C3",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Zinaida got the weekend job under condition that she finished her exams first.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Правильное выражение — on condition that (а не under condition): типичная ошибка при переводе «при условии».",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_on_condition"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "answer": "Zinaida got the weekend job on condition that she finished her exams first.",
+    "accepted_answers": [
+      "Zinaida got the weekend job on condition that she finished her exams first."
+    ]
+  },
+  {
+    "id": "CD27-09",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C3",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Holly goes running every morning, ___ she has a cold.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Even if означает «даже если»: она бегает независимо от простуды. Only if и provided сделали бы простуду условием.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_even_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "only if",
+      "even if",
+      "in case",
+      "provided"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "even if"
+  },
+  {
+    "id": "CD27-10",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C3",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My sister will buy the red coat. It does not matter if it costs a lot. → My sister will buy the red coat even if …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Even if вводит условие, которое не мешает результату; после него — Present Simple (costs), не will.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_even_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-10-b1",
+        "answer": "My sister will buy the red coat even if it costs a lot.",
+        "accepted_answers": [
+          "My sister will buy the red coat even if it costs a lot.",
+          "My sister will buy the red coat even if it costs a lot of money.",
+          "My sister will buy the red coat even if it is expensive."
+        ],
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_even_if",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ]
+      }
+    ],
+    "answer_text": "My sister will buy the red coat even if it costs a lot."
+  },
+  {
+    "id": "CD27-11",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C3",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "You can take a free sticker only if you (to finish) the whole quiz.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После only if ставится Present Simple (finish) или Present Perfect; will после if и only if не употребляется.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_only_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-11-b1",
+        "answer": "finish",
+        "accepted_answers": [
+          "finish",
+          "have finished"
+        ],
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_only_if",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ],
+        "base_verb": "finish"
+      }
+    ],
+    "answer_text": "You can take a free sticker only if you finish the whole quiz."
+  },
+  {
+    "id": "CD27-12",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C3",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "___ the manager agrees will the shop change its opening hours.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Only if в начале предложения требует инверсии в главной части (will the shop change); так «только если менеджер согласится».",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_only_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "Even if",
+      "Only if",
+      "Unless",
+      "In case"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "Only if"
+  },
+  {
+    "id": "CD27-13",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C3",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Seun's dad says Seun may go to the football camp, but there is one condition: his school marks must be good this term.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Условие единственное, поэтому нужен only if + Present Simple; even if отменяет условие, in case означает предосторожность, а will после if неверно.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_only_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "Seun can go to the camp only if his marks are good this term.",
+      "Seun can go to the camp even if his marks are bad this term.",
+      "Seun can go to the camp only if his marks will be good this term.",
+      "Seun can go to the camp in case his marks are good this term."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "Seun can go to the camp only if his marks are good this term."
+  },
+  {
+    "id": "CD27-14",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C3",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Unless you don't hurry, we will miss the train.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Unless уже содержит отрицание («если не»), поэтому unless ... don't — двойное отрицание. Нужно unless you hurry или if you don't hurry.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_unless"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "answer": "Unless you hurry, we will miss the train.",
+    "accepted_answers": [
+      "Unless you hurry, we will miss the train.",
+      "If you don't hurry, we will miss the train."
+    ]
+  },
+  {
+    "id": "CD27-15",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C3",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Odile always packs a spare key ___ she loses the first one.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "In case — это предосторожность («на случай, если»): запасной ключ берут заранее, а не после потери.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_in_case"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "unless",
+      "as long as",
+      "in case",
+      "only if"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "in case"
+  },
+  {
+    "id": "CD27-16",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C3",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The school lets students use phones in the yard, provided they (to switch) them off in class.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После provided ставится Present Simple (switch), а не will: «при условии, что они выключают».",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_provided"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-16-b1",
+        "answer": "switch",
+        "accepted_answers": [
+          "switch"
+        ],
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_provided",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ],
+        "base_verb": "switch"
+      }
+    ],
+    "answer_text": "The school lets students use phones in the yard, provided they switch them off in class."
+  },
+  {
+    "id": "CD27-17",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Would you mind if I (to open) the window? It is so hot in here.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В вежливой просьбе после would you mind if используется прошедшая форма (opened) с настоящим значением.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_polite_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-17-b1",
+        "answer": "opened",
+        "accepted_answers": [
+          "opened",
+          "open"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_polite_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "open"
+      }
+    ],
+    "answer_text": "Would you mind if I opened the window? It is so hot in here."
+  },
+  {
+    "id": "CD27-18",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I would really appreciate it if you ___ me a lift to the station tomorrow.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В вежливой просьбе после I would appreciate it if нужно could/would + глагол; will после if — типичная ошибка.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_polite_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "could give",
+      "will give",
+      "have given",
+      "gives"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "could give"
+  },
+  {
+    "id": "CD27-19",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Do you think it would be OK if I will leave work an hour early on Friday?",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После would be OK if в вежливом вопросе нельзя ставить will; нужна форма left (вежливая) или leave.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_polite_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "Do you think it would be OK if I left work an hour early on Friday?",
+    "accepted_answers": [
+      "Do you think it would be OK if I left work an hour early on Friday?",
+      "Do you think it would be OK if I leave work an hour early on Friday?"
+    ]
+  },
+  {
+    "id": "CD27-20",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Please close the door. → It would be nice if you …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "В вежливой просьбе после it would be nice if идут прошедшая форма, could или would, но не will.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_polite_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-20-b1",
+        "answer": "It would be nice if you closed the door.",
+        "accepted_answers": [
+          "It would be nice if you closed the door.",
+          "It would be nice if you could close the door.",
+          "It would be nice if you would close the door."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_polite_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "It would be nice if you closed the door."
+  },
+  {
+    "id": "CD27-21",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Siv's new colleague plays loud music all day. Siv wants to ask him politely to turn it down.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "В вежливой просьбе после I would appreciate it if нужна прошедшая форма (turned); will, would turned и continuous неверны.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_polite_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "I would appreciate it if you turned the music down a little.",
+      "I would appreciate it if you will turn the music down a little.",
+      "I would appreciate it if you would turned the music down a little.",
+      "I would appreciate it if you are turning the music down a little."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "I would appreciate it if you turned the music down a little."
+  },
+  {
+    "id": "CD27-22",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I'd be very grateful if you (to send) me the contract today, because my bank closes at five.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После I'd be grateful if в вежливой просьбе используется sent, could send или would send, но не will send.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_polite_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-22-b1",
+        "answer": "sent",
+        "accepted_answers": [
+          "sent",
+          "could send",
+          "would send"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_polite_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "send"
+      }
+    ],
+    "answer_text": "I'd be very grateful if you sent me the contract today, because my bank closes at five."
+  },
+  {
+    "id": "CD27-23",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "What (you / to do) if your boss asked you to work every Saturday?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Вопрос о воображаемой ситуации: if + Past Simple (asked), в главной части would + подлежащее + инфинитив: would you do.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-23-b1",
+        "answer": "would you do",
+        "accepted_answers": [
+          "would you do"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_question",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "do"
+      }
+    ],
+    "answer_text": "What would you do if your boss asked you to work every Saturday?"
+  },
+  {
+    "id": "CD27-24",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "— Imagine you found a wallet full of cash outside the post office. What {{1:you / to do}}?\n— I {{2:to take}} it to the police, of course.\n— Even if nobody {{3:to see}} you?\n— Even then. I could not sleep otherwise.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Воображаемая ситуация: вопрос — would you do, результат — would take, а условие after even if — Past Simple (saw).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_question",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-24-b1",
+        "answer": "would you do",
+        "accepted_answers": [
+          "would you do"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_question",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "do"
+      },
+      {
+        "id": "CD27-24-b2",
+        "answer": "would take",
+        "accepted_answers": [
+          "would take",
+          "'d take"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "take"
+      },
+      {
+        "id": "CD27-24-b3",
+        "answer": "saw",
+        "accepted_answers": [
+          "saw"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "see"
+      }
+    ],
+    "answer_text": "— Imagine you found a wallet full of cash outside the post office. What would you do?\n— I would take it to the police, of course.\n— Even if nobody saw you?\n— Even then. I could not sleep otherwise."
+  },
+  {
+    "id": "CD27-25",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "How would you feel if your neighbours ___ a noisy motorbike and parked it under your window?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В вопросе о воображаемой ситуации после if нужен Past Simple (bought); would и will после if — типичная ошибка.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "bought",
+      "would buy",
+      "will buy",
+      "buy"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "bought"
+  },
+  {
+    "id": "CD27-26",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Imagine the lift in your building stopped working for a week. How would you carry the shopping? → How would you carry the shopping if …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Вопрос с воображаемым условием: if + Past Simple (stopped), а would стоит только в главной части.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-26-b1",
+        "answer": "How would you carry the shopping if the lift in your building stopped working for a week?",
+        "accepted_answers": [
+          "How would you carry the shopping if the lift in your building stopped working for a week?",
+          "How would you carry the shopping if the lift stopped working for a week?"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_question",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "How would you carry the shopping if the lift in your building stopped working for a week?"
+  },
+  {
+    "id": "CD27-27",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Honestly, would you be happy if you worked only three days a week but earned much less?",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Ошибки нет: в воображаемом вопросе after if стоит Past Simple (worked, earned), в главной части — would you be.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_question"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "Honestly, would you be happy if you worked only three days a week but earned much less?",
+    "accepted_answers": [
+      "Honestly, would you be happy if you worked only three days a week but earned much less?"
+    ]
+  },
+  {
+    "id": "CD27-28",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Build the sentence.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "Это инверсия от «If the café were to raise its prices»: Were + подлежащее + to + глагол, в главной части would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were_to"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-28-b1",
+        "answer": "Were the café to raise its prices, we would go somewhere else.",
+        "accepted_answers": [
+          "Were the café to raise its prices, we would go somewhere else."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were_to",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "Were the café to raise its prices, we would go somewhere else.",
+    "blocks": [
+      "we",
+      "would",
+      "go",
+      "somewhere",
+      "else.",
+      "prices,",
+      "Were",
+      "the",
+      "café",
+      "to",
+      "raise",
+      "its"
+    ]
+  },
+  {
+    "id": "CD27-29",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "It is very unlikely, but the bank may refuse our loan. In that case we will have to sell the car. → If the bank were to …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Were to выражает маловероятное будущее; в главной части would + инфинитив (would have to sell).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were_to"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-29-b1",
+        "answer": "If the bank were to refuse our loan, we would have to sell the car.",
+        "accepted_answers": [
+          "If the bank were to refuse our loan, we would have to sell the car.",
+          "If the bank were to refuse our loan, we'd have to sell the car."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were_to",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If the bank were to refuse our loan, we would have to sell the car."
+  },
+  {
+    "id": "CD27-30",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My family lives here, so if the company (to offer) me a job in Dubai tomorrow, I (not / to take) it.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Маловероятное будущее: were to offer (или Past Simple offered) и would not take; will здесь не подходит.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were_to"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-30-b1",
+        "answer": "were to offer",
+        "accepted_answers": [
+          "were to offer",
+          "was to offer",
+          "offered"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were_to",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "offer"
+      },
+      {
+        "id": "CD27-30-b2",
+        "answer": "would not take",
+        "accepted_answers": [
+          "would not take",
+          "wouldn't take"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were_to",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "take"
+      }
+    ],
+    "answer_text": "My family lives here, so if the company were to offer me a job in Dubai tomorrow, I would not take it."
+  },
+  {
+    "id": "CD27-31",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Gethin's village team has almost no chance of winning the cup, but the coach likes to dream.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Шанс почти нулевой, поэтому используется were to + would; would после if и will в главной части — ошибки.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were_to"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "If we were to win the cup, the club would build a new pitch.",
+      "If we would win the cup, the club would build a new pitch.",
+      "If we were to win the cup, the club will build a new pitch.",
+      "If we are to win the cup, the club would build a new pitch."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "If we were to win the cup, the club would build a new pitch."
+  },
+  {
+    "id": "CD27-32",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My flat is far from the station. If it (to be) closer, I could walk to work.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Ситуация нереальна сейчас: после if нужна форма were/was, в главной части could + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-32-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "was"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      }
+    ],
+    "answer_text": "My flat is far from the station. If it were closer, I could walk to work."
+  },
+  {
+    "id": "CD27-33",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Vusi lived next to the gym, he ___ there every morning before work.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В главной части второго условного после modal нужен инфинитив без to: might go; can и формы went неверны.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "can go",
+      "might went",
+      "might go",
+      "would went"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "might go"
+  },
+  {
+    "id": "CD27-34",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Jorge would have a bigger room, he could invite his friends for a film night.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if нельзя ставить would: нужен Past Simple (had). Would и could стоят только в главной части.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "If Jorge had a bigger room, he could invite his friends for a film night.",
+    "accepted_answers": [
+      "If Jorge had a bigger room, he could invite his friends for a film night."
+    ]
+  },
+  {
+    "id": "CD27-35",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Dariusz's farm is far from any town and has no phone signal. If it {{1:to have}} a signal, he could video-call his sister every evening. If the farm {{2:to be}} closer to the village, his friends might {{3:to visit}} more often. It is a quiet life, but he says he would not change it.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "После if в нереальных условиях — Past Simple (had, were/was), а после could/might — инфинитив (visit).",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-35-b1",
+        "answer": "had",
+        "accepted_answers": [
+          "had"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "have"
+      },
+      {
+        "id": "CD27-35-b2",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "was"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD27-35-b3",
+        "answer": "visit",
+        "accepted_answers": [
+          "visit"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "visit"
+      }
+    ],
+    "answer_text": "Dariusz's farm is far from any town and has no phone signal. If it had a signal, he could video-call his sister every evening. If the farm were closer to the village, his friends might visit more often. It is a quiet life, but he says he would not change it."
+  },
+  {
+    "id": "CD27-36",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My laptop is making a strange noise. If I (to be) you, I would take it to a shop.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В совете «на твоём месте» используется только If I were you, а не was.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-36-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_if_i_were_you",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      }
+    ],
+    "answer_text": "My laptop is making a strange noise. If I were you, I would take it to a shop."
+  },
+  {
+    "id": "CD27-37",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If I was you, I would not pay for that online course.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "В устойчивом совете If I were you употребляется were, а не was.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "If I were you, I would not pay for that online course.",
+    "accepted_answers": [
+      "If I were you, I would not pay for that online course.",
+      "If I were you, I wouldn't pay for that online course."
+    ]
+  },
+  {
+    "id": "CD27-38",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "You should tell Mr Banerjee about the leak. → If I were you, …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Совет оформляется как If I were you + would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-38-b1",
+        "answer": "If I were you, I would tell Mr Banerjee about the leak.",
+        "accepted_answers": [
+          "If I were you, I would tell Mr Banerjee about the leak.",
+          "If I were you, I'd tell Mr Banerjee about the leak."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_if_i_were_you",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If I were you, I would tell Mr Banerjee about the leak."
+  },
+  {
+    "id": "CD27-39",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Kalani loves basketball. If she (to be) taller, she (to join) the school team.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Нереальная ситуация сейчас: if + were/was, в главной части would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-39-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "was"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD27-39-b2",
+        "answer": "would join",
+        "accepted_answers": [
+          "would join",
+          "'d join"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "join"
+      }
+    ],
+    "answer_text": "Kalani loves basketball. If she were taller, she would join the school team."
+  },
+  {
+    "id": "CD27-40",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Tobias works from home, and his flat is tiny. If it {{1:to be}} bigger, he {{2:to buy}} a proper desk. If his sister {{3:to live}} nearby, she could lend him one. For now he works at the kitchen table.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Нереальные условия: if + were/was и Past Simple (lived), в главной части would + инфинитив.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-40-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "was"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD27-40-b2",
+        "answer": "would buy",
+        "accepted_answers": [
+          "would buy",
+          "'d buy"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "buy"
+      },
+      {
+        "id": "CD27-40-b3",
+        "answer": "lived",
+        "accepted_answers": [
+          "lived"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "live"
+      }
+    ],
+    "answer_text": "Tobias works from home, and his flat is tiny. If it were bigger, he would buy a proper desk. If his sister lived nearby, she could lend him one. For now he works at the kitchen table."
+  },
+  {
+    "id": "CD27-41",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If the tickets ___ cheaper, more students would come to the school concert.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После if в нереальном условии нужна форма were; would после if ставить нельзя.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "would be",
+      "were",
+      "are being",
+      "had"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "were"
+  },
+  {
+    "id": "CD27-42",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Beata were less shy, she would join the debating club.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Второе условное описывает нереальное настоящее: Beata is shy и does not join. Прошедшая форма were передаёт настоящее время.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "Beata was shy, so she did not join the debating club.",
+      "Beata is not shy, so she joins the debating club.",
+      "Beata is shy, so she does not join the debating club.",
+      "Beata is shy, but she joins the debating club."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "Beata is shy, so she does not join the debating club."
+  },
+  {
+    "id": "CD27-43",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C10",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Ayaan stares at an old photo of his first office. 'What if I (not / to move) to this city ten years ago? My life would be completely different.'",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Речь о прошлом событии, которое нельзя изменить: what if + Past Perfect (hadn't moved).",
+    "practice_tenses": [
+      "cd_unreal"
+    ],
+    "tags": [
+      "cd_unreal",
+      "cd_what_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-unreal"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-43-b1",
+        "answer": "hadn't moved",
+        "accepted_answers": [
+          "hadn't moved",
+          "had not moved"
+        ],
+        "tense_or_construction": "cd_unreal",
+        "construction": "cd_what_if",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-unreal"
+        ],
+        "base_verb": "move"
+      }
+    ],
+    "answer_text": "Ayaan stares at an old photo of his first office. 'What if I hadn't moved to this city ten years ago? My life would be completely different.'"
+  },
+  {
+    "id": "CD27-44",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C10",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "'We took the shortcut and got lost. What if we ___ the main road instead?' Bastien asked.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "О прошлом событии, которое нельзя изменить, after what if нужен Past Perfect (had taken).",
+    "practice_tenses": [
+      "cd_unreal"
+    ],
+    "tags": [
+      "cd_unreal",
+      "cd_what_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-unreal"
+    ],
+    "options": [
+      "take",
+      "would have taken",
+      "had taken",
+      "would take"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "had taken"
+  },
+  {
+    "id": "CD27-45",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C10",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Dad laughs at the cartoon. 'What if cats (to rule) the world? They would just sleep all day.'",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Фантазия о невозможном: what if + Past Simple (ruled), а не настоящее или will.",
+    "practice_tenses": [
+      "cd_unreal"
+    ],
+    "tags": [
+      "cd_unreal",
+      "cd_what_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-unreal"
+    ],
+    "blanks": [
+      {
+        "id": "CD27-45-b1",
+        "answer": "ruled",
+        "accepted_answers": [
+          "ruled"
+        ],
+        "tense_or_construction": "cd_unreal",
+        "construction": "cd_what_if",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-unreal"
+        ],
+        "base_verb": "rule"
+      }
+    ],
+    "answer_text": "Dad laughs at the cartoon. 'What if cats ruled the world? They would just sleep all day.'"
+  },
+  {
+    "id": "CD27-46",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C10",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "'What if I would have asked for her number at the party last night?' Jaden wonders.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После what if о прошлом нужен Past Perfect (had asked); would have после what if — типичная ошибка.",
+    "practice_tenses": [
+      "cd_unreal"
+    ],
+    "tags": [
+      "cd_unreal",
+      "cd_what_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-unreal"
+    ],
+    "answer": "'What if I had asked for her number at the party last night?' Jaden wonders.",
+    "accepted_answers": [
+      "'What if I had asked for her number at the party last night?' Jaden wonders."
+    ]
+  },
+  {
+    "id": "CD27-47",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C10",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Rasa and her brother look at a photo of the house their grandparents sold years ago. Rasa imagines a different past.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Продажа дома — факт прошлого, поэтому what if + Past Perfect (had kept); другие варианты строятся неверно.",
+    "practice_tenses": [
+      "cd_unreal"
+    ],
+    "tags": [
+      "cd_unreal",
+      "cd_what_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-unreal"
+    ],
+    "options": [
+      "What if we keep the house? We could still spend every summer there.",
+      "What if we would have kept the house? We could still spend every summer there.",
+      "What if we had kept the house? We could still spend every summer there.",
+      "What if we will keep the house? We could still spend every summer there."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "What if we had kept the house? We could still spend every summer there."
   }
 ]

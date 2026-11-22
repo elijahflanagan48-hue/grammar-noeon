@@ -25,7 +25,7 @@ local_current = local.get('content_versions') == index['content_versions']
 release_status = (release.get('description', 'Опубликована итоговая редакция v8: без shall, не более двух принимаемых форм на пропуск, три уровня сложности. После проверки ответа открывается объяснение; кнопка «Далее» остаётся видимой.') if published else local.get('description', 'Локально подготовлены изменения банка; они ещё не опубликованы.') if local_current else 'Локально подготовлены изменения банка; они ещё не опубликованы.')
 release_status += (' [Отчёт о выпуске](' + release.get('report', 'docs/reports/RELEASE-V8-FINAL-2026-10-30.md') + ').') if published else ' [Отчёт о проверке](' + (local.get('report', 'docs/review/V8-FINAL-2026-10-30/REPORT.md') if local_current else 'docs/review/V8-FINAL-2026-10-30/REPORT.md') + ').'
 readme = (ROOT / 'docs/README.template.md').read_text().replace('{{BANK_SUMMARY}}', '\n'.join(summary)).replace('{{RELEASE_STATUS}}', release_status)
-production = ('Рабочий сайт: https://grammar.noeon.org. Worker: ' + release['version'] + '. Трафик 100%; схема и исторические оценки сохранены.' if published else 'Локальные изменения не применены к рабочему сайту. Последний выпуск: ' + release.get('version', 'b60bd839-0891-4d19-9015-31e457d311d1') + '.')
+production = ('Рабочий сайт: https://grammar.noeon.org. Worker: ' + release['version'] + '. Трафик 100%; схема и исторические оценки сохранены.' if published else 'Применение этих изменений к рабочему сайту ещё не подтверждено. Последний подтверждённый выпуск: ' + release.get('version', 'b60bd839-0891-4d19-9015-31e457d311d1') + '.')
 v7_ready=all((ROOT/f'content/passive-bank/v7/final/B{n:02d}.jsonl').exists() for n in range(1,24)) and (ROOT/'content/passive-bank/v7/keep-v6.txt').exists()
 v7_status='банк собран; выпуск требует успешного npm run check и браузерной проверки' if v7_ready else 'движок подготовлен; выпуск заблокирован отсутствием проверенных B01–B23 и keep-v6.txt'
 status = '\n'.join(['# Текущее состояние', '',
@@ -34,7 +34,7 @@ status = '\n'.join(['# Текущее состояние', '',
     'Уровни: ' + ', '.join(f"{key} — {index['levels3'][key]}" for key in ['basic','medium','advanced']) + '.', '',
     'Работают теория и карта, кабинеты, назначения, свободная практика с разрешением учителя, серверная проверка, история, отчёты и «Сегодня». Новый подбор использует level; ранее выданные снимки и оценки сохраняются. Схема D1 не менялась.', '',
     production, '',
-    'Все 451 спорный пункт закрыты редакторскими решениями по поручению владельца. ' + ('Следующий шаг — наблюдение за выпуском.' if published else 'Следующий шаг — приёмка локального выпуска; публикация требует отдельной команды.'), '',
+    'Все 451 спорный пункт закрыты редакторскими решениями по поручению владельца. ' + ('Следующий шаг — наблюдение за выпуском.' if published else local.get('next_step', 'Следующий шаг — приёмка локального выпуска; публикация требует отдельной команды.') if local_current else 'Следующий шаг — приёмка локального выпуска; публикация требует отдельной команды.'), '',
     'Passive v7: '+v7_status+'. [Проверки и ограничения](docs/variety/passive-v7/RELEASE.md).', '',
     '[Итоговая редакция и проверки](docs/review/V8-FINAL-2026-10-30/REPORT.md) · [Как запустить](README.md) · [Журнал выпусков](docs/CHANGELOG.md)', ''])
 

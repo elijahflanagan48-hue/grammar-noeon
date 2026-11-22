@@ -1,0 +1,352 @@
+{
+  "version": "conditionals-2026-11-23.1",
+  "source_head": "25639f793301bb1b2c3b1a7f803a700d8f5a7386",
+  "counts": {
+    "tasks": 1007,
+    "answer_slots": 1650,
+    "total_tasks": 12861,
+    "total_answer_slots": 16609,
+    "accepted_variants": 2213,
+    "negative_submissions": 3951
+  },
+  "functional": "PASS",
+  "python_unit_tests": {
+    "status": "PASS",
+    "count": 44
+  },
+  "check_all": {
+    "failed": [
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/cloudflare-check.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/conditionals-bank.mjs --coverage",
+        "reason": "author coverage: cd_inversion lacks basic; eight sort sources have three groups"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/fixed-assessments.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/free-vs-assigned.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/light-history.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/local-worker.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/manual-review.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/modal-workflows.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/remediation.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/self-practice.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/task-issues.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/teacher-library.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/today.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      }
+    ],
+    "skipped": [
+      {
+        "command": "python3 -B scripts/lexical_audit.py passive --gate 0.05",
+        "reason": "wordfreq/cefrpy not installed"
+      },
+      {
+        "command": "python3 -B scripts/lexical_audit.py conditionals --gate 0.05",
+        "reason": "wordfreq/cefrpy not installed"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/adjective-clarity.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/adjective-constructions.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/adjective-mix.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/adjectives-300.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/adjectives-advanced.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/agreement.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/answer-checking.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/answer-cues.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/cloze-variety.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/course-context.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/distinct-cloze.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/final-answer-policy.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/frontend-check.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/future-reference.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/modal-bank.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/passive-assessments.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/passive-integration.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/practice-formats.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/reported-release.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/temporal-context.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/tense-balance.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/tense-clarity.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/training-context.mjs",
+        "reason": "historical audit/source archive missing"
+      },
+      {
+        "command": "node --import ./scripts/no-network.mjs tests/v8-review.mjs",
+        "reason": "historical audit/source archive missing"
+      }
+    ],
+    "summary": "13 failed checks."
+  },
+  "browser": {
+    "failed": [
+      {
+        "command": "node tests/adjective-clarity-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/adjective-constructions-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/adjectives-300-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/adjectives-advanced-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/assignment-preview.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/bank-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/comparison-tables-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/conditionals-practice-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/delete-own-practice-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/error-feedback-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/fixed-assessments-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/infinitive-map-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/infinitive-practice-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/manual-review-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/modals-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/passive-v7-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/practice-presets-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/practice-reference-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/pwa.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/remediation-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/roster-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/section-navigation-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/statistics-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/student-bank-counts-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/task-issues-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/teacher-library-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/tense-balance-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/test-skips-browser.cjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/self-practice.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/student-management-browser.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/today-browser.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/self-practice.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/student-management-browser.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/today-browser.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/self-practice.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/student-management-browser.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/today-browser.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/self-practice.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/student-management-browser.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      },
+      {
+        "command": "node tests/today-browser.mjs",
+        "reason": "listen EPERM: operation not permitted 127.0.0.1"
+      }
+    ],
+    "skipped": [],
+    "summary": "40 failed checks."
+  },
+  "escalation": {
+    "command": "node scripts/local-worker.mjs --smoke",
+    "status": "AUTOMATICALLY_REJECTED",
+    "reason": "sandbox_approval: false; the session approval policy prohibits requesting escalated permissions"
+  },
+  "lexical": "SKIP: wordfreq/cefrpy not installed"
+}

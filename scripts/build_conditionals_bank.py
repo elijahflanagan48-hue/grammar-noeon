@@ -8,7 +8,7 @@ from pathlib import Path
 from bankgen_specs import SPECS
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = 'conditionals-2026-11-22.1'
+VERSION = 'conditionals-2026-11-23.1'
 TARGETS = dict(zip((f'C{n}' for n in range(1, 12)), (
     'cd_zero', 'cd_first', 'cd_conj', 'cd_second', 'cd_third', 'cd_mixed',
     'cd_implied', 'cd_inversion', 'cd_wish', 'cd_unreal', 'cd_all')))
@@ -27,7 +27,7 @@ INSTRUCTIONS = dict(gap='Раскройте скобки.', mini='Заполни
 
 def load():
     paths = sorted((ROOT / 'content/bankgen/conditionals/final').glob('CD*.jsonl'))
-    assert len(paths) == 25, 'Expected CD01–CD25'
+    assert [p.name for p in paths] == [f'CD{n:02d}.jsonl' for n in range(1, 30)], 'Expected CD01–CD29'
     return [json.loads(line) for path in paths for line in path.read_text().splitlines()
             if line.strip() and not line.startswith('#')]
 
@@ -61,7 +61,13 @@ def site_item(row):
     elif fmt in ('gap', 'mini'):
         item['blanks'] = [blank(n, b['answer'], b['accepted_answers'], b['construction'], base_verb=b['cue'].split('/')[-1].strip().removeprefix('to '))
                           for n, b in enumerate(row['blanks'])]
-        prompt, completed = row['prompt'], row['prompt']
+        # Some author rows print both ___ and a bracket cue for the same slot.
+        # Keep the source intact; the site's bracket control replaces both markers.
+        source_prompt = row['prompt']
+        for b in row['blanks']:
+            source_prompt = re.sub(r'___\s*(?=' + re.escape('(' + b['cue'] + ')') + ')', '', source_prompt)
+        item['prompt'] = source_prompt
+        prompt, completed = source_prompt, source_prompt
         for n, b in enumerate(row['blanks'], 1):
             cue = '(' + b['cue'] + ')'
             assert cue in prompt, row['id']
@@ -117,7 +123,7 @@ def coverage(rows):
 
 def build():
     rows = load()
-    assert len(rows) == len({r['id'] for r in rows}) == 804
+    assert len(rows) == len({r['id'] for r in rows}) == 1007
     converted = [site_item(r) for r in rows]
     path = ROOT / 'data/exercises/index.json'
     manifest = json.loads(path.read_text())
