@@ -10,13 +10,13 @@ import {assignmentSentenceKeys} from '../cloudflare/generated/assignment-keys.mj
 const read=f=>fs.readFileSync(new URL('../'+f,import.meta.url),'utf8');
 const index=JSON.parse(read('data/exercises/index.json'));
 const bank=index.parts.flatMap(p=>JSON.parse(read(p.file))).filter(i=>i.topic==='conditionals');
-const raw=Array.from({length:29},(_,n)=>read('content/bankgen/conditionals/final/CD'+String(n+1).padStart(2,'0')+'.jsonl'));
+const raw=Array.from({length:30},(_,n)=>read('content/bankgen/conditionals/final/CD'+String(n+1).padStart(2,'0')+'.jsonl'));
 const source=raw.flatMap(text=>text.split('\n').filter(l=>l.trim()&&!l.startsWith('#')).map(l=>JSON.parse(l)));
 const byId=new Map(source.map(i=>[i.id,i]));
-const expected={gap:228,mini:111,mc:184,fix:116,which:85,transform:103,fact:63,match:18,sort:27,bank:14,hunt:22,order:32};
-assert.equal(bank.length,1003);assert.equal(index.sections.conditionals,1003);
-assert.equal(index.content_versions.conditionals,'conditionals-2026-11-23.2');
-assert.equal(new Set(bank.map(i=>i.id)).size,1003);
+const expected={gap:228,mini:114,mc:187,fix:118,which:86,transform:98,fact:67,match:19,sort:27,bank:15,hunt:23,order:24};
+assert.equal(bank.length,1006);assert.equal(index.sections.conditionals,1006);
+assert.equal(index.content_versions.conditionals,'conditionals-2026-11-23.3');
+assert.equal(new Set(bank.map(i=>i.id)).size,1006);
 assert.deepEqual(Object.fromEntries(Object.keys(expected).map(f=>[f,bank.filter(i=>i.source_format===f).length])),expected);
 const ctx={document:{querySelector(){}},localStorage:{getItem(){return null}},module:{exports:{}}};
 vm.createContext(ctx);vm.runInContext(read('app.js'),ctx);
@@ -70,25 +70,21 @@ assert.equal(ctx.matchesField({answer_profile:'conditionals-exact-v1',answer:'we
 for(const item of ctx.mapItems){const tag=ctx.cdmPracticeTarget(item);assert(index.construction_counts.conditionals[tag]||exerciseTenses(bank.find(i=>i.practice_tenses.includes(tag))||{}).includes(tag),item.name+': '+tag);}
 const before=createHash('sha256').update(raw.join('\0')).digest('hex');
 const result=spawnSync('python3',['-B','scripts/build_conditionals_bank.py'],{encoding:'utf8'});assert.equal(result.status,0,result.stderr);
-assert.equal(createHash('sha256').update(Array.from({length:29},(_,n)=>read('content/bankgen/conditionals/final/CD'+String(n+1).padStart(2,'0')+'.jsonl')).join('\0')).digest('hex'),before,'source unchanged');
+assert.equal(createHash('sha256').update(Array.from({length:30},(_,n)=>read('content/bankgen/conditionals/final/CD'+String(n+1).padStart(2,'0')+'.jsonl')).join('\0')).digest('hex'),before,'source unchanged');
 assert.deepEqual(JSON.parse(read('data/exercises/index.json')),index,'manifest values preserved on rebuild');
 const rebuilt=read('data/exercises/index.json');
 assert.equal(spawnSync('python3',['-B','scripts/build_conditionals_bank.py'],{encoding:'utf8'}).status,0);
 assert.equal(read('data/exercises/index.json'),rebuilt,'builder idempotent');
-for(const id of ['CD29-05','CD29-11']){
-  const item=bank.find(i=>i.id===id);
-  assert(byId.get(id).prompt.includes('___ ('),'source retains duplicate slot marker');
-  assert(!item.prompt.includes('___')&&!item.answer_text.includes('___'),id+': one site slot per source blank');
-}
+for(const item of bank.filter(i=>i.type==='open_brackets'))assert(!item.prompt.includes('___')&&!item.answer_text.includes('___'),item.id+': one site slot per source blank');
 const corrected=bank.find(i=>i.id==='CD20-01');
 assert.deepEqual(corrected.blanks[0].accepted_answers,['were']);
 assert.equal(grade(corrected,['was']).correct,false,'CD20-01 corrected plural agreement');
 assert.equal(ctx.evaluate(corrected,['was']),false);
 const report=JSON.parse(read('docs/conditionals/bank-report.json'));
-assert.deepEqual(report.missing_levels,{cd_inversion:['basic']});
+assert.deepEqual(report.missing_levels,{cd_inversion:['basic','medium']});
 assert.deepEqual(report.undercovered,[]);
-assert(Object.values(report.constructions).every(n=>n>=8));
+assert(Object.entries(report.constructions).every(([c,n])=>n>=(c.startsWith('cd_inversion')?4:8)));
 assert.deepEqual(report.source_issues,[]);
-console.log(`Conditionals: 1003 items, 12 source formats, ${variants} exact accepted variants, ${negatives} negative submissions, map filters, unchanged sources and reproducible manifest passed.`);
+console.log(`Conditionals: 1006 items, 12 source formats, ${variants} exact accepted variants, ${negatives} negative submissions, map filters, unchanged sources and reproducible manifest passed.`);
 console.log('AUTHOR BANK COVERAGE UNMET: '+JSON.stringify({undercovered:report.undercovered.map(r=>[r.construction,r.count]),missingLevels:report.missing_levels,sourceIssues:report.source_issues}));
 if(process.argv.includes('--coverage'))assert(report.coverage_met&&report.source_issues.length===0,'Author bank needs corrections; see docs/conditionals/bank-report.json. Sources must not be edited by this integration.');

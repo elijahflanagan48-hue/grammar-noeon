@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "content_version": "tenses-2026-11-09.1",
   "editorial_language": "British English",
-  "total_items": 12857,
-  "answer_slots": 16596,
+  "total_items": 12860,
+  "answer_slots": 16619,
   "excluded_non_publishable": 62,
   "levels": {
     "A1": 51,
@@ -13,25 +13,25 @@
     "B2": 1701,
     "C1": 784,
     "C2": 311,
-    "unrated": 7478
+    "unrated": 7481
   },
   "types": {
     "active_to_passive": 100,
-    "bank": 14,
-    "context_cloze": 554,
+    "bank": 15,
+    "context_cloze": 557,
     "direct_to_reported": 782,
-    "error_fix": 196,
-    "hunt": 22,
-    "match": 18,
+    "error_fix": 198,
+    "hunt": 23,
+    "match": 19,
     "modal_fix": 50,
     "modal_gap": 700,
     "modal_meaning": 50,
-    "multiple_choice": 1706,
+    "multiple_choice": 1714,
     "open_brackets": 8236,
     "sort": 27,
-    "transformation": 103,
+    "transformation": 98,
     "translation_ru_en": 267,
-    "word_order": 32
+    "word_order": 24
   },
   "parts": [
     {
@@ -2283,18 +2283,18 @@
       "section": "conditionals",
       "types": {
         "bank": 2,
-        "context_cloze": 8,
-        "error_fix": 11,
+        "context_cloze": 9,
+        "error_fix": 13,
         "match": 2,
-        "multiple_choice": 24,
-        "open_brackets": 17,
-        "transformation": 25,
-        "word_order": 11
+        "multiple_choice": 29,
+        "open_brackets": 20,
+        "transformation": 20,
+        "word_order": 5
       },
       "levels3": {
-        "advanced": 52,
-        "basic": 10,
-        "medium": 38
+        "advanced": 43,
+        "basic": 18,
+        "medium": 39
       },
       "levels": {
         "unrated": 100
@@ -2305,19 +2305,19 @@
       "count": 100,
       "section": "conditionals",
       "types": {
-        "context_cloze": 11,
-        "error_fix": 11,
-        "hunt": 1,
+        "context_cloze": 13,
+        "error_fix": 10,
+        "hunt": 4,
         "match": 2,
         "multiple_choice": 37,
-        "open_brackets": 24,
-        "sort": 6,
-        "transformation": 8
+        "open_brackets": 19,
+        "sort": 9,
+        "transformation": 6
       },
       "levels3": {
-        "advanced": 20,
-        "basic": 30,
-        "medium": 50
+        "advanced": 29,
+        "basic": 28,
+        "medium": 43
       },
       "levels": {
         "unrated": 100
@@ -2329,18 +2329,18 @@
       "section": "conditionals",
       "types": {
         "context_cloze": 10,
-        "error_fix": 11,
-        "hunt": 8,
-        "multiple_choice": 39,
-        "open_brackets": 14,
-        "sort": 7,
+        "error_fix": 12,
+        "hunt": 6,
+        "multiple_choice": 37,
+        "open_brackets": 17,
+        "sort": 5,
         "transformation": 9,
-        "word_order": 2
+        "word_order": 4
       },
       "levels3": {
-        "advanced": 32,
-        "basic": 26,
-        "medium": 42
+        "advanced": 25,
+        "basic": 29,
+        "medium": 46
       },
       "levels": {
         "unrated": 100
@@ -2351,19 +2351,19 @@
       "count": 100,
       "section": "conditionals",
       "types": {
-        "context_cloze": 10,
+        "context_cloze": 8,
         "error_fix": 14,
         "hunt": 3,
-        "multiple_choice": 35,
+        "multiple_choice": 37,
         "open_brackets": 22,
-        "sort": 4,
-        "transformation": 9,
-        "word_order": 3
+        "sort": 3,
+        "transformation": 11,
+        "word_order": 2
       },
       "levels3": {
-        "advanced": 24,
-        "basic": 32,
-        "medium": 44
+        "advanced": 28,
+        "basic": 26,
+        "medium": 46
       },
       "levels": {
         "unrated": 100
@@ -2374,20 +2374,20 @@
       "count": 100,
       "section": "conditionals",
       "types": {
-        "context_cloze": 5,
-        "error_fix": 12,
-        "hunt": 2,
-        "match": 1,
-        "multiple_choice": 37,
-        "open_brackets": 23,
+        "context_cloze": 8,
+        "error_fix": 11,
+        "hunt": 3,
+        "match": 2,
+        "multiple_choice": 39,
+        "open_brackets": 22,
         "sort": 2,
-        "transformation": 13,
-        "word_order": 5
+        "transformation": 11,
+        "word_order": 2
       },
       "levels3": {
-        "advanced": 26,
-        "basic": 26,
-        "medium": 48
+        "advanced": 29,
+        "basic": 28,
+        "medium": 43
       },
       "levels": {
         "unrated": 100
@@ -2395,19 +2395,21 @@
     },
     {
       "file": "data/exercises/part-132.json",
-      "count": 3,
+      "count": 6,
       "section": "conditionals",
       "types": {
-        "context_cloze": 1,
-        "error_fix": 1,
-        "hunt": 1
+        "bank": 1,
+        "error_fix": 2,
+        "multiple_choice": 1,
+        "transformation": 2
       },
       "levels3": {
         "advanced": 1,
-        "medium": 2
+        "basic": 1,
+        "medium": 4
       },
       "levels": {
-        "unrated": 3
+        "unrated": 6
       }
     }
   ],
@@ -2420,7 +2422,7 @@
     "nouns": 1000,
     "speaking": 500,
     "infinitive": 1000,
-    "conditionals": 1003
+    "conditionals": 1006
   },
   "content_versions": {
     "tenses": "tenses-2026-11-09.1",
@@ -2431,12 +2433,12 @@
     "nouns": "nouns-2026-11-07.1",
     "speaking": "speaking-2026-11-09.1",
     "infinitive": "infinitive-2026-11-13.1",
-    "conditionals": "conditionals-2026-11-23.2"
+    "conditionals": "conditionals-2026-11-23.3"
   },
   "levels3": {
     "advanced": 2859,
-    "basic": 4260,
-    "medium": 5738
+    "basic": 4266,
+    "medium": 5735
   },
   "section_types": {
     "comparison": {
@@ -2487,29 +2489,29 @@
       "translation_ru_en": 20
     },
     "conditionals": {
-      "bank": 14,
-      "context_cloze": 111,
-      "error_fix": 116,
-      "hunt": 22,
-      "match": 18,
-      "multiple_choice": 332,
+      "bank": 15,
+      "context_cloze": 114,
+      "error_fix": 118,
+      "hunt": 23,
+      "match": 19,
+      "multiple_choice": 340,
       "open_brackets": 228,
       "sort": 27,
-      "transformation": 103,
-      "word_order": 32
+      "transformation": 98,
+      "word_order": 24
     }
   },
   "construction_counts": {
     "conditionals": {
       "cd_as_if": 17,
-      "cd_conj_as_long_as": 13,
+      "cd_conj_as_long_as": 14,
       "cd_conj_even_if": 10,
-      "cd_conj_in_case": 13,
+      "cd_conj_in_case": 14,
       "cd_conj_on_condition": 11,
       "cd_conj_only_if": 11,
-      "cd_conj_provided": 14,
+      "cd_conj_provided": 15,
       "cd_conj_suppose": 8,
-      "cd_conj_unless": 18,
+      "cd_conj_unless": 19,
       "cd_conj_whether": 12,
       "cd_first_imperative": 13,
       "cd_first_modal": 13,
@@ -2518,44 +2520,44 @@
       "cd_first_when_if": 15,
       "cd_first_will": 46,
       "cd_id_prefer": 14,
-      "cd_if_only": 18,
+      "cd_if_only": 19,
       "cd_if_when": 12,
-      "cd_implied_but_for": 12,
+      "cd_implied_but_for": 13,
       "cd_implied_if_it_werent": 11,
-      "cd_implied_if_so": 11,
-      "cd_implied_imperative": 12,
-      "cd_implied_in_that_case": 11,
+      "cd_implied_if_so": 12,
+      "cd_implied_imperative": 14,
+      "cd_implied_in_that_case": 12,
       "cd_implied_otherwise": 20,
-      "cd_implied_without": 17,
-      "cd_inversion_had": 12,
-      "cd_inversion_negative": 14,
-      "cd_inversion_should": 14,
-      "cd_inversion_were": 12,
+      "cd_implied_without": 18,
+      "cd_inversion_had": 6,
+      "cd_inversion_negative": 6,
+      "cd_inversion_should": 5,
+      "cd_inversion_were": 6,
       "cd_its_time": 17,
       "cd_mixed_choose": 13,
-      "cd_mixed_past_present": 67,
-      "cd_mixed_present_past": 41,
+      "cd_mixed_past_present": 72,
+      "cd_mixed_present_past": 43,
       "cd_real_or_unreal": 20,
-      "cd_second_could_might": 12,
-      "cd_second_if_i_were_you": 11,
+      "cd_second_could_might": 13,
+      "cd_second_if_i_were_you": 12,
       "cd_second_polite_would": 11,
       "cd_second_question": 15,
-      "cd_second_were": 12,
+      "cd_second_were": 13,
       "cd_second_were_to": 12,
-      "cd_second_would": 57,
+      "cd_second_would": 60,
       "cd_third_contracted": 13,
-      "cd_third_could_might": 24,
-      "cd_third_form": 67,
-      "cd_third_negative": 49,
+      "cd_third_could_might": 25,
+      "cd_third_form": 70,
+      "cd_third_negative": 51,
       "cd_third_question": 16,
       "cd_trap_will_after_if": 21,
-      "cd_trap_would_after_if": 27,
+      "cd_trap_would_after_if": 28,
       "cd_type_choice": 17,
       "cd_what_if": 12,
       "cd_wish_could": 15,
-      "cd_wish_past": 28,
-      "cd_wish_past_perfect": 29,
-      "cd_wish_would": 26,
+      "cd_wish_past": 29,
+      "cd_wish_past_perfect": 31,
+      "cd_wish_would": 27,
       "cd_would_rather": 14,
       "cd_zero_fact": 13,
       "cd_zero_habit": 21,

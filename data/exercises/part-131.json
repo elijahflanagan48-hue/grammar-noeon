@@ -1,791 +1,12 @@
 [
   {
-    "id": "CD27-52",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "mc",
-    "cell": "C10",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Zoltan has never driven a car, but he talks as if he ___ a racing driver.",
-    "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Он не гонщик, поэтому после as if нужна прошедшая форма were (нереальное сравнение).",
-    "practice_tenses": [
-      "cd_unreal"
-    ],
-    "tags": [
-      "cd_unreal",
-      "cd_as_if"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-unreal"
-    ],
-    "options": [
-      "is",
-      "were",
-      "has been",
-      "would be"
-    ],
-    "correct_option_index": 1,
-    "accepted_option_indices": [
-      1
-    ],
-    "answer": "were"
-  },
-  {
-    "id": "CD28-01",
-    "topic": "conditionals",
-    "type": "open_brackets",
-    "source_format": "gap",
-    "cell": "C5",
-    "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Femi forgot to charge his phone, so he did not call his dad from the station. If he (to charge) it, he (to call) his dad.",
-    "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "О несостоявшемся прошлом: if + Past Perfect (had charged), в главной части would have + V3 (would have called).",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_form"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "blanks": [
-      {
-        "id": "CD28-01-b1",
-        "answer": "had charged",
-        "accepted_answers": [
-          "had charged"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "charge"
-      },
-      {
-        "id": "CD28-01-b2",
-        "answer": "would have called",
-        "accepted_answers": [
-          "would have called",
-          "'d have called",
-          "would've called"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "call"
-      }
-    ],
-    "answer_text": "Femi forgot to charge his phone, so he did not call his dad from the station. If he had charged it, he would have called his dad."
-  },
-  {
-    "id": "CD28-02",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "mc",
-    "cell": "C5",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Nobody washed the dishes after the party, so the kitchen was a mess on Sunday. If everybody had helped, it ___ a mess.",
-    "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Речь о прошлом, которое нельзя изменить: would not have been. Wouldn't be относится к настоящему, hadn't been — форма условия, а не результата.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_negative"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "options": [
-      "hadn't been",
-      "wouldn't be",
-      "wouldn't have been",
-      "won't have been"
-    ],
-    "correct_option_index": 2,
-    "accepted_option_indices": [
-      2
-    ],
-    "answer": "wouldn't have been"
-  },
-  {
-    "id": "CD28-03",
-    "topic": "conditionals",
-    "type": "error_fix",
-    "source_format": "fix",
-    "cell": "C5",
-    "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "If I would have known about the test, I would have studied.",
-    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
-    "explanation_ru": "После if нельзя ставить would have: в условной части нужен Past Perfect (had known), would have — только в главной части.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_form"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "answer": "If I had known about the test, I would have studied.",
-    "accepted_answers": [
-      "If I had known about the test, I would have studied.",
-      "If I'd known about the test, I would have studied.",
-      "If I had known about the test, I'd have studied.",
-      "If I'd known about the test, I'd have studied."
-    ]
-  },
-  {
-    "id": "CD28-04",
-    "topic": "conditionals",
-    "type": "open_brackets",
-    "source_format": "gap",
-    "cell": "C5",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "– Our bus broke down near Preston, but the driver found us a taxi. – Wow. What (you / to do) if he (not / to find) one?",
-    "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Вопрос о невозможном прошлом: What would you have done + if + Past Perfect (hadn't found).",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_question"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "blanks": [
-      {
-        "id": "CD28-04-b1",
-        "answer": "would you have done",
-        "accepted_answers": [
-          "would you have done"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_question",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "do"
-      },
-      {
-        "id": "CD28-04-b2",
-        "answer": "hadn't found",
-        "accepted_answers": [
-          "hadn't found",
-          "had not found"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_question",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "find"
-      }
-    ],
-    "answer_text": "– Our bus broke down near Preston, but the driver found us a taxi. – Wow. What would you have done if he hadn't found one?"
-  },
-  {
-    "id": "CD28-05",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "mc",
-    "cell": "C5",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "It rained all Saturday, so you stayed in. Where ___ if it hadn't rained?",
-    "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Вопрос о прошлом, которое не случилось: would + you + have + V3 (would you have gone). Did you go спрашивает о факте, а не о воображаемой ситуации.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_question"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "options": [
-      "did you go",
-      "would you have gone",
-      "would you go",
-      "had you gone"
-    ],
-    "correct_option_index": 1,
-    "accepted_option_indices": [
-      1
-    ],
-    "answer": "would you have gone"
-  },
-  {
-    "id": "CD28-06",
-    "topic": "conditionals",
-    "type": "transformation",
-    "source_format": "transform",
-    "cell": "C5",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Aoife didn't ask for help, so she failed the exam. → Would Aoife have failed the exam …",
-    "instruction_ru": "Перепишите целое предложение с заданным началом.",
-    "explanation_ru": "Вопрос в третьем типе: Would + подлежащее + have + V3, а в условной части — if + Past Perfect (had asked).",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_question"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "blanks": [
-      {
-        "id": "CD28-06-b1",
-        "answer": "Would Aoife have failed the exam if she had asked for help?",
-        "accepted_answers": [
-          "Would Aoife have failed the exam if she had asked for help?",
-          "Would Aoife have failed the exam if she'd asked for help?",
-          "Would Aoife have failed the exam if she had asked someone for help?",
-          "Would Aoife have failed the exam if she'd asked someone for help?"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_question",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ]
-      }
-    ],
-    "answer_text": "Would Aoife have failed the exam if she had asked for help?"
-  },
-  {
-    "id": "CD28-07",
-    "topic": "conditionals",
-    "type": "word_order",
-    "source_format": "order",
-    "cell": "C5",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Build the sentence.",
-    "instruction_ru": "Нажимайте слова в нужном порядке.",
-    "explanation_ru": "Вопрос про невозможное прошлое: What would you have done + if + Past Perfect (had been closed).",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_question"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "blanks": [
-      {
-        "id": "CD28-07-b1",
-        "answer": "What would you have done if the shop had been closed?",
-        "accepted_answers": [
-          "What would you have done if the shop had been closed?"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_question",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ]
-      }
-    ],
-    "answer_text": "What would you have done if the shop had been closed?",
-    "blocks": [
-      "done",
-      "you",
-      "What",
-      "if",
-      "would",
-      "have",
-      "the",
-      "been",
-      "closed?",
-      "shop",
-      "had"
-    ]
-  },
-  {
-    "id": "CD28-08",
-    "topic": "conditionals",
-    "type": "open_brackets",
-    "source_format": "gap",
-    "cell": "C5",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Elodie bought the small flat because she had not saved enough. If she had saved more, she could (to buy) the bigger one.",
-    "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "После could в третьем условном нужен have + V3: could have bought (возможность в прошлом, которой не было).",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_could_might"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "blanks": [
-      {
-        "id": "CD28-08-b1",
-        "answer": "have bought",
-        "accepted_answers": [
-          "have bought"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_could_might",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "buy"
-      }
-    ],
-    "answer_text": "Elodie bought the small flat because she had not saved enough. If she had saved more, she could have bought the bigger one."
-  },
-  {
-    "id": "CD28-09",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "mc",
-    "cell": "C5",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "The concert hall was half empty because hardly anyone knew about the show. If the organisers had advertised it better, more people ___ come.",
-    "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "В нереальном прошлом результат выражается might have + V3. May have и can have выражают реальное предположение, might had — грамматическая ошибка.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_could_might"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "options": [
-      "may have",
-      "might have",
-      "might had",
-      "can have"
-    ],
-    "correct_option_index": 1,
-    "accepted_option_indices": [
-      1
-    ],
-    "answer": "might have"
-  },
-  {
-    "id": "CD28-10",
-    "topic": "conditionals",
-    "type": "transformation",
-    "source_format": "transform",
-    "cell": "C5",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Kemal did not have a ticket, so he could not enter the stadium. → If Kemal had had a ticket, he could …",
-    "instruction_ru": "Перепишите целое предложение с заданным началом.",
-    "explanation_ru": "Условие — had had (Past Perfect от have), результат — could have + V3: возможность, которой не было в прошлом.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_could_might"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "blanks": [
-      {
-        "id": "CD28-10-b1",
-        "answer": "If Kemal had had a ticket, he could have entered the stadium.",
-        "accepted_answers": [
-          "If Kemal had had a ticket, he could have entered the stadium.",
-          "If Kemal had had a ticket, he could have got into the stadium.",
-          "If Kemal had had a ticket, he could have gotten into the stadium.",
-          "If Kemal had had a ticket, he could have gone into the stadium."
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_could_might",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ]
-      }
-    ],
-    "answer_text": "If Kemal had had a ticket, he could have entered the stadium."
-  },
-  {
-    "id": "CD28-11",
-    "topic": "conditionals",
-    "type": "open_brackets",
-    "source_format": "gap",
-    "cell": "C5",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Dorota reached her sister's wedding in time only because the taxi was so fast. If the taxi (not / to be) so fast, she (to miss) the ceremony.",
-    "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Факт был противоположным (такси было быстрым): условие с отрицанием hadn't been, результат would have missed.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_negative"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "blanks": [
-      {
-        "id": "CD28-11-b1",
-        "answer": "hadn't been",
-        "accepted_answers": [
-          "hadn't been",
-          "had not been"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_negative",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "be"
-      },
-      {
-        "id": "CD28-11-b2",
-        "answer": "would have missed",
-        "accepted_answers": [
-          "would have missed",
-          "'d have missed",
-          "would've missed"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_negative",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "miss"
-      }
-    ],
-    "answer_text": "Dorota reached her sister's wedding in time only because the taxi was so fast. If the taxi hadn't been so fast, she would have missed the ceremony."
-  },
-  {
-    "id": "CD28-12",
-    "topic": "conditionals",
-    "type": "context_cloze",
-    "source_format": "mini",
-    "cell": "C5",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Lukasz missed the last tram and walked home for an hour. If he {{1:to leave}} the party ten minutes earlier, he {{2:to catch}} it. Then he {{3:not / to be}} so tired at work the next morning.",
-    "instruction_ru": "Заполните каждый пропуск.",
-    "explanation_ru": "Все три пропуска о прошлом: had left, would have caught, wouldn't have been. Then в последнем предложении заменяет if-часть.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_form",
-      "cd_third_negative"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "blanks": [
-      {
-        "id": "CD28-12-b1",
-        "answer": "had left",
-        "accepted_answers": [
-          "had left",
-          "'d left"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "leave"
-      },
-      {
-        "id": "CD28-12-b2",
-        "answer": "would have caught",
-        "accepted_answers": [
-          "would have caught",
-          "'d have caught",
-          "would've caught"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "catch"
-      },
-      {
-        "id": "CD28-12-b3",
-        "answer": "wouldn't have been",
-        "accepted_answers": [
-          "wouldn't have been",
-          "would not have been"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_negative",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ],
-        "base_verb": "be"
-      }
-    ],
-    "answer_text": "Lukasz missed the last tram and walked home for an hour. If he had left the party ten minutes earlier, he would have caught it. Then he wouldn't have been so tired at work the next morning."
-  },
-  {
-    "id": "CD28-13",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "fact",
-    "cell": "C5",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "If Sunniva hadn't lost her keys, she'd have gone to the cinema with us.",
-    "instruction_ru": "Выберите, что произошло на самом деле.",
-    "explanation_ru": "Третий условный меняет полярность обоих частей: hadn't lost значит «потеряла», she'd have gone значит «не пошла».",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_contracted"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "options": [
-      "Sunniva lost her keys and went to the cinema with us.",
-      "Sunniva didn't lose her keys and went to the cinema with us.",
-      "Sunniva lost her keys and didn't go to the cinema with us.",
-      "Sunniva didn't lose her keys and didn't go to the cinema with us."
-    ],
-    "correct_option_index": 2,
-    "accepted_option_indices": [
-      2
-    ],
-    "answer": "Sunniva lost her keys and didn't go to the cinema with us."
-  },
-  {
-    "id": "CD28-14",
-    "topic": "conditionals",
-    "type": "error_fix",
-    "source_format": "fix",
-    "cell": "C5",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Gustavo got to the shop at ten past six, but it had closed ten minutes earlier. If Gustavo had known the shop closed at six, he'd gone earlier.",
-    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
-    "explanation_ru": "В главной части 'd означает would, поэтому после него нужен have + V3 (he'd have gone). He'd gone читается как he had gone — это не результат.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_contracted"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "answer": "Gustavo got to the shop at ten past six, but it had closed ten minutes earlier. If Gustavo had known the shop closed at six, he'd have gone earlier.",
-    "accepted_answers": [
-      "Gustavo got to the shop at ten past six, but it had closed ten minutes earlier. If Gustavo had known the shop closed at six, he'd have gone earlier.",
-      "Gustavo got to the shop at ten past six, but it had closed ten minutes earlier. If Gustavo had known the shop closed at six, he would have gone earlier."
-    ]
-  },
-  {
-    "id": "CD28-15",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "which",
-    "cell": "C5",
-    "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Ottilie forgot her umbrella and got wet on the way to school.",
-    "instruction_ru": "Выберите предложение по смыслу ситуации.",
-    "explanation_ru": "О прошлом нужно if + Past Perfect и would not have + V3. Would have после if — типичная ошибка.",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_form"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "options": [
-      "If Ottilie brought her umbrella, she wouldn't get wet.",
-      "If Ottilie had brought her umbrella, she wouldn't have got wet.",
-      "If Ottilie had brought her umbrella, she wouldn't get wet.",
-      "If Ottilie would have brought her umbrella, she wouldn't have got wet."
-    ],
-    "correct_option_index": 1,
-    "accepted_option_indices": [
-      1
-    ],
-    "answer": "If Ottilie had brought her umbrella, she wouldn't have got wet."
-  },
-  {
-    "id": "CD28-16",
-    "topic": "conditionals",
-    "type": "hunt",
-    "source_format": "hunt",
-    "cell": "C5",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Radka tells a friend about a job interview that went badly.",
-    "instruction_ru": "Нажмите на все предложения с ошибкой.",
-    "explanation_ru": "В предложении 3 после if стоит would have: условная часть третьего типа требует Past Perfect (had warned).",
-    "practice_tenses": [
-      "cd_third"
-    ],
-    "tags": [
-      "cd_third",
-      "cd_third_form"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-third"
-    ],
-    "sentences": [
-      "Radka's job interview went badly last Tuesday.",
-      "If she had slept more, she would have felt calmer.",
-      "If she hadn't lost the address, she wouldn't have arrived late.",
-      "If the receptionist would have warned her about the traffic, she would have left earlier.",
-      "Still, she says she learned a lot."
-    ],
-    "fixes": {
-      "3": "If the receptionist had warned her about the traffic, she would have left earlier."
-    },
-    "blanks": [
-      {
-        "id": "CD28-16-b1",
-        "answer": "0",
-        "accepted_answers": [
-          "0"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ]
-      },
-      {
-        "id": "CD28-16-b2",
-        "answer": "0",
-        "accepted_answers": [
-          "0"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ]
-      },
-      {
-        "id": "CD28-16-b3",
-        "answer": "0",
-        "accepted_answers": [
-          "0"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ]
-      },
-      {
-        "id": "CD28-16-b4",
-        "answer": "1",
-        "accepted_answers": [
-          "1"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ]
-      },
-      {
-        "id": "CD28-16-b5",
-        "answer": "0",
-        "accepted_answers": [
-          "0"
-        ],
-        "tense_or_construction": "cd_third",
-        "construction": "cd_third_form",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-third"
-        ]
-      }
-    ],
-    "answer_text": "Sentence 4: If the receptionist had warned her about the traffic, she would have left earlier."
-  },
-  {
     "id": "CD28-17",
     "topic": "conditionals",
     "type": "open_brackets",
     "source_format": "gap",
     "cell": "C6",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Lubna ate too much cake yesterday. If she (not / to eat) so much, she (not / to feel) sick now.",
@@ -842,7 +63,7 @@
     "source_format": "gap",
     "cell": "C6",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "This morning Casper left his key at home. Now he is standing outside the door. If he (to take) his key, he (to be) inside now.",
@@ -897,7 +118,7 @@
     "source_format": "mc",
     "cell": "C6",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I can't swim well. Yesterday my friends went in the sea, but I stayed on the beach. If I ___ a good swimmer, I would have gone in too.",
@@ -932,7 +153,7 @@
     "source_format": "which",
     "cell": "C6",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Ayla did not do her homework yesterday. Now she is in trouble with the teacher.",
@@ -967,7 +188,7 @@
     "source_format": "fact",
     "cell": "C6",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If Zuri had gone to bed early yesterday, she wouldn't be so tired now.",
@@ -1002,7 +223,7 @@
     "source_format": "mini",
     "cell": "C6",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Pita is afraid of dogs. Yesterday a big dog ran to her in the park. She ran away and lost her hat. If she {{1:not / to be}} afraid of dogs, she {{2:not / to run}} away.",
@@ -1059,7 +280,7 @@
     "source_format": "gap",
     "cell": "C6",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Kasper is a very calm person, so he stayed calm when the plane began to shake. If he (to be) a nervous person, he (not / to stay) calm.",
@@ -1114,7 +335,7 @@
     "source_format": "mc",
     "cell": "C6",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Vasil took a job in Cork ten years ago, and he lives far from his parents. If he ___ that job, he would live near them.",
@@ -1149,7 +370,7 @@
     "source_format": "transform",
     "cell": "C6",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I did not learn to drive when I was young, so I need lifts from friends. → If I had learned to drive when I was young, I …",
@@ -1190,7 +411,7 @@
     "source_format": "mini",
     "cell": "C6",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Rishi runs a small café. Last spring a good cook applied for a job, but he said no because he is very careful with money. His kitchen is a mess and customers are leaving. \"If I {{1:to hire}} her last spring, we {{2:to have}} a proper kitchen,\" he says. \"And if I {{3:not / to be}} so careful with money, I {{4:to hire}} her.\"",
@@ -1277,7 +498,7 @@
     "source_format": "mc",
     "cell": "C6",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My uncle is so proud that he refused our offer to drive him to the airport. If he ___ a little less proud, he would have accepted it.",
@@ -1312,7 +533,7 @@
     "source_format": "transform",
     "cell": "C6",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Ilir is too shy to speak to strangers, so he did not ask the way in Antwerp. → If Ilir were less shy, he …",
@@ -1354,7 +575,7 @@
     "source_format": "fact",
     "cell": "C6",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If Alasdair had remembered the meeting, he wouldn't be sitting alone in an empty office now.",
@@ -1389,7 +610,7 @@
     "source_format": "fact",
     "cell": "C6",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If Teodora weren't so stubborn, she would have accepted our help.",
@@ -1424,7 +645,7 @@
     "source_format": "hunt",
     "cell": "C6",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Pradeep talks about his life abroad.",
@@ -1522,7 +743,7 @@
     "source_format": "mc",
     "cell": "C6",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I don't have a driving licence, so I did not drive the van to the market on Saturday. If I ___ a driving licence, I would have driven it myself.",
@@ -1557,7 +778,7 @@
     "source_format": "fix",
     "cell": "C6",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If Adriana had taken the earlier flight, she would be sitting in the meeting now.",
@@ -1585,7 +806,7 @@
     "source_format": "mini",
     "cell": "C6",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Mbali's village shop lost many customers after a supermarket opened nearby last year. \"If I {{1:to change}} my opening hours back then, I {{2:to keep}} my regular customers,\" she says. \"I would still have the same income, and I {{3:not / to worry}} about the rent today.\" Business is slow this winter.",
@@ -1659,7 +880,7 @@
     "source_format": "gap",
     "cell": "C7",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– I haven't got any cash for the tickets. – In that case, I (to pay) for them.",
@@ -1701,7 +922,7 @@
     "source_format": "mc",
     "cell": "C7",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– A fallen tree is blocking the road to the lake. – In that case, ___ the long way round.",
@@ -1736,7 +957,7 @@
     "source_format": "gap",
     "cell": "C7",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– The council has announced that the only bridge into the old town will stay closed until March. – In that case, a lot of small shops on our side (to lose) customers all winter, and some may close.",
@@ -1781,7 +1002,7 @@
     "source_format": "mc",
     "cell": "C7",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Do you live near the school? If ___, you can walk to the lesson.",
@@ -1816,7 +1037,7 @@
     "source_format": "fix",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Is your phone less than a year old? If yes, the shop will repair it for free.",
@@ -1845,7 +1066,7 @@
     "source_format": "transform",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– Are you at home on Friday? – Yes. – Then I will bring the keys round. → Rewrite the last line: If so, …",
@@ -1885,7 +1106,7 @@
     "source_format": "gap",
     "cell": "C7",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My sister warned me that the cheaper laptop was very slow, and I listened to her. But for her advice, I (to buy) the wrong one and wasted my money.",
@@ -1927,7 +1148,7 @@
     "source_format": "transform",
     "cell": "C7",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Because the volunteers helped us, we finished the cleaning before dark. → But for the volunteers, we …",
@@ -1969,7 +1190,7 @@
     "source_format": "mc",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "But for the lucky goal in the last minute, we ___ the match.",
@@ -2004,7 +1225,7 @@
     "source_format": "mc",
     "cell": "C7",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My little brother helped me with the heavy bags. Without him, I ___ them to the car.",
@@ -2039,7 +1260,7 @@
     "source_format": "fix",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Without you helped me, I would have failed the exam.",
@@ -2070,7 +1291,7 @@
     "source_format": "order",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Put the words in the right order.",
@@ -2121,7 +1342,7 @@
     "source_format": "gap",
     "cell": "C7",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Habib gets home from work in half an hour because of the night bus. If it weren't for the night bus, his journey (to take) two hours.",
@@ -2163,7 +1384,7 @@
     "source_format": "transform",
     "cell": "C7",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My parents pay for my flat, so I can study full-time. → If it weren't for my parents, I …",
@@ -2205,7 +1426,7 @@
     "source_format": "gap",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Turn left at the lights and you (to see) the school on your right.",
@@ -2248,7 +1469,7 @@
     "source_format": "mc",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Come ten minutes early ___ you will get the best seats.",
@@ -2277,497 +1498,13 @@
     "answer": "and"
   },
   {
-    "id": "CD29-01",
-    "topic": "conditionals",
-    "type": "transformation",
-    "source_format": "transform",
-    "cell": "C8",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "If you have any problem with your parcel, please call our helpline. → Should you …",
-    "instruction_ru": "Перепишите целое предложение с заданным началом.",
-    "explanation_ru": "В формальном стиле if в условии с возможным событием заменяется инверсией: Should you have … (без will и без do).",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_should"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "blanks": [
-      {
-        "id": "CD29-01-b1",
-        "answer": "Should you have any problem with your parcel, please call our helpline.",
-        "accepted_answers": [
-          "Should you have any problem with your parcel, please call our helpline."
-        ],
-        "tense_or_construction": "cd_inversion",
-        "construction": "cd_inversion_should",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-inversion"
-        ]
-      }
-    ],
-    "answer_text": "Should you have any problem with your parcel, please call our helpline."
-  },
-  {
-    "id": "CD29-02",
-    "topic": "conditionals",
-    "type": "word_order",
-    "source_format": "order",
-    "cell": "C8",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Make one correct sentence.",
-    "instruction_ru": "Нажимайте слова в нужном порядке.",
-    "explanation_ru": "Это нереальное прошлое: вместо If I had known ставится Had I known, затем would have + V3.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_had"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "blanks": [
-      {
-        "id": "CD29-02-b1",
-        "answer": "Had I known about the strike, I would have cycled to work.",
-        "accepted_answers": [
-          "Had I known about the strike, I would have cycled to work."
-        ],
-        "tense_or_construction": "cd_inversion",
-        "construction": "cd_inversion_had",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-inversion"
-        ]
-      }
-    ],
-    "answer_text": "Had I known about the strike, I would have cycled to work.",
-    "blocks": [
-      "cycled",
-      "I",
-      "Had",
-      "known",
-      "would",
-      "about",
-      "the",
-      "strike,",
-      "have",
-      "to",
-      "I",
-      "work."
-    ]
-  },
-  {
-    "id": "CD29-03",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "mc",
-    "cell": "C8",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "___ the taxi driver's phone call, we would have missed our flight.",
-    "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Речь о прошлом (would have missed), поэтому нужно Had it not been for; Were it not for относится к настоящему, а Had not it — неверный порядок слов.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_negative"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "options": [
-      "Were it not for",
-      "Had not it been for",
-      "Had it not been for",
-      "If it would not have been for"
-    ],
-    "correct_option_index": 2,
-    "accepted_option_indices": [
-      2
-    ],
-    "answer": "Had it not been for"
-  },
-  {
-    "id": "CD29-04",
-    "topic": "conditionals",
-    "type": "error_fix",
-    "source_format": "fix",
-    "cell": "C8",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Should you will need a receipt, please ask at the front desk.",
-    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
-    "explanation_ru": "После инверсии Should you стоит глагол в основной форме: need, без will.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_should"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "answer": "Should you need a receipt, please ask at the front desk.",
-    "accepted_answers": [
-      "Should you need a receipt, please ask at the front desk."
-    ]
-  },
-  {
-    "id": "CD29-05",
-    "topic": "conditionals",
-    "type": "open_brackets",
-    "source_format": "gap",
-    "cell": "C8",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Dear parents, (it / to be possible), we would gladly change the date of the school trip, but the coach company has no free buses in May.",
-    "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Автобусов нет, значит условие нереально сейчас: If it were possible превращается в Were it possible.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_were"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "blanks": [
-      {
-        "id": "CD29-05-b1",
-        "answer": "Were it possible",
-        "accepted_answers": [
-          "Were it possible",
-          "Were it to be possible"
-        ],
-        "tense_or_construction": "cd_inversion",
-        "construction": "cd_inversion_were",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-inversion"
-        ],
-        "base_verb": "be possible"
-      }
-    ],
-    "answer_text": "Dear parents, Were it possible, we would gladly change the date of the school trip, but the coach company has no free buses in May."
-  },
-  {
-    "id": "CD29-06",
-    "topic": "conditionals",
-    "type": "word_order",
-    "source_format": "order",
-    "cell": "C8",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Build the sentence.",
-    "instruction_ru": "Нажимайте слова в нужном порядке.",
-    "explanation_ru": "Had it not been for … — инверсия вместо If it hadn't been for …; отрицание not стоит после it.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_negative"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "blanks": [
-      {
-        "id": "CD29-06-b1",
-        "answer": "Had it not been for Mustafa, we would have got lost.",
-        "accepted_answers": [
-          "Had it not been for Mustafa, we would have got lost."
-        ],
-        "tense_or_construction": "cd_inversion",
-        "construction": "cd_inversion_negative",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-inversion"
-        ]
-      }
-    ],
-    "answer_text": "Had it not been for Mustafa, we would have got lost.",
-    "blocks": [
-      "we",
-      "Had",
-      "been",
-      "would",
-      "for",
-      "it",
-      "got",
-      "Mustafa,",
-      "not",
-      "lost.",
-      "have"
-    ]
-  },
-  {
-    "id": "CD29-07",
-    "topic": "conditionals",
-    "type": "transformation",
-    "source_format": "transform",
-    "cell": "C8",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "If I had checked the weather forecast, we wouldn't have got wet on the hill. → Had I …",
-    "instruction_ru": "Перепишите целое предложение с заданным началом.",
-    "explanation_ru": "If опускается, had выходит на первое место перед подлежащим; главная часть остаётся без изменений.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_had"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "blanks": [
-      {
-        "id": "CD29-07-b1",
-        "answer": "Had I checked the weather forecast, we wouldn't have got wet on the hill.",
-        "accepted_answers": [
-          "Had I checked the weather forecast, we wouldn't have got wet on the hill.",
-          "Had I checked the weather forecast, we would not have got wet on the hill.",
-          "Had I checked the weather forecast, we wouldn't have gotten wet on the hill.",
-          "Had I checked the weather forecast, we would not have gotten wet on the hill."
-        ],
-        "tense_or_construction": "cd_inversion",
-        "construction": "cd_inversion_had",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-inversion"
-        ]
-      }
-    ],
-    "answer_text": "Had I checked the weather forecast, we wouldn't have got wet on the hill."
-  },
-  {
-    "id": "CD29-08",
-    "topic": "conditionals",
-    "type": "transformation",
-    "source_format": "transform",
-    "cell": "C8",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "I would ban sweet drinks if I were in charge of the school canteen. → Were I …",
-    "instruction_ru": "Перепишите целое предложение с заданным началом.",
-    "explanation_ru": "Во втором условном If I were превращается в Were I; главная часть не меняется.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_were"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "blanks": [
-      {
-        "id": "CD29-08-b1",
-        "answer": "Were I in charge of the school canteen, I would ban sweet drinks.",
-        "accepted_answers": [
-          "Were I in charge of the school canteen, I would ban sweet drinks.",
-          "Were I in charge of the school canteen, I'd ban sweet drinks."
-        ],
-        "tense_or_construction": "cd_inversion",
-        "construction": "cd_inversion_were",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-inversion"
-        ]
-      }
-    ],
-    "answer_text": "Were I in charge of the school canteen, I would ban sweet drinks."
-  },
-  {
-    "id": "CD29-09",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "mc",
-    "cell": "C8",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Honestly, ___ the museum closed at four, I would have gone in the morning.",
-    "instruction_ru": "Выберите правильный вариант.",
-    "explanation_ru": "Инверсия для нереального прошлого: Had + подлежащее + V3. Did I know, If had I и Had known I — неверные формы.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_had"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "options": [
-      "Did I know",
-      "Had I known",
-      "If had I known",
-      "Had known I"
-    ],
-    "correct_option_index": 1,
-    "accepted_option_indices": [
-      1
-    ],
-    "answer": "Had I known"
-  },
-  {
-    "id": "CD29-10",
-    "topic": "conditionals",
-    "type": "error_fix",
-    "source_format": "fix",
-    "cell": "C8",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Had not I seen the sign, I would have driven straight into the closed road.",
-    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
-    "explanation_ru": "В инверсии not ставится после подлежащего: Had I not seen, а не Had not I seen.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_negative"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "answer": "Had I not seen the sign, I would have driven straight into the closed road.",
-    "accepted_answers": [
-      "Had I not seen the sign, I would have driven straight into the closed road."
-    ]
-  },
-  {
-    "id": "CD29-11",
-    "topic": "conditionals",
-    "type": "open_brackets",
-    "source_format": "gap",
-    "cell": "C8",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "The ferry left without us. (we / to leave) ten minutes earlier, we would have caught it.",
-    "instruction_ru": "Раскройте скобки.",
-    "explanation_ru": "Паром уже ушёл, это нереальное прошлое: If we had left → Had we left.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_had"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "blanks": [
-      {
-        "id": "CD29-11-b1",
-        "answer": "Had we left",
-        "accepted_answers": [
-          "Had we left"
-        ],
-        "tense_or_construction": "cd_inversion",
-        "construction": "cd_inversion_had",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-inversion"
-        ],
-        "base_verb": "leave"
-      }
-    ],
-    "answer_text": "The ferry left without us. Had we left ten minutes earlier, we would have caught it."
-  },
-  {
-    "id": "CD29-12",
-    "topic": "conditionals",
-    "type": "word_order",
-    "source_format": "order",
-    "cell": "C8",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Build the sentence.",
-    "instruction_ru": "Нажимайте слова в нужном порядке.",
-    "explanation_ru": "Should you + глагол — формальное «если вдруг»; после запятой идёт повелительное наклонение.",
-    "practice_tenses": [
-      "cd_inversion"
-    ],
-    "tags": [
-      "cd_inversion",
-      "cd_inversion_should"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-inversion"
-    ],
-    "blanks": [
-      {
-        "id": "CD29-12-b1",
-        "answer": "Should you lose your key, call the office at once.",
-        "accepted_answers": [
-          "Should you lose your key, call the office at once."
-        ],
-        "tense_or_construction": "cd_inversion",
-        "construction": "cd_inversion_should",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-inversion"
-        ]
-      }
-    ],
-    "answer_text": "Should you lose your key, call the office at once.",
-    "blocks": [
-      "lose",
-      "Should",
-      "you",
-      "key,",
-      "your",
-      "call",
-      "the",
-      "at",
-      "office",
-      "once."
-    ]
-  },
-  {
     "id": "CD29-13",
     "topic": "conditionals",
     "type": "open_brackets",
     "source_format": "gap",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My phone is very slow. I wish I (to have) a new one.",
@@ -2807,7 +1544,7 @@
     "source_format": "transform",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I can't open this jar. → I wish I …",
@@ -2848,7 +1585,7 @@
     "source_format": "mc",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The ticket machine only takes coins, and I have only a card. I wish I ___ a ticket from it.",
@@ -2883,7 +1620,7 @@
     "source_format": "gap",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Priti works until nine every evening, so she can't go to the language classes. She wishes she (to be able to / attend) them.",
@@ -2925,7 +1662,7 @@
     "source_format": "fix",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My grandmother speaks Polish beautifully. I wish I can speak it like her.",
@@ -2953,7 +1690,7 @@
     "source_format": "which",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Jude lives in a small village where only one bus a day goes to town, and he finds this very inconvenient. Which sentence fits?",
@@ -2988,7 +1725,7 @@
     "source_format": "fact",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I wish my brother lived closer to us.",
@@ -3023,7 +1760,7 @@
     "source_format": "mini",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Ines moved to Cardiff in September. 'I wish I {{1:to know}} more people here,' she tells her mum on the phone. 'And I wish I {{2:not / to sell}} my old flat last spring. I could still be living there!' Her mum says, 'You can always come home for the weekend.' 'I wish I {{3:to be able to / do}} that, but the train costs too much,' says Ines.",
@@ -3094,7 +1831,7 @@
     "source_format": "gap",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I didn't take an umbrella this morning, and now I'm wet. I wish I (to take) one.",
@@ -3134,7 +1871,7 @@
     "source_format": "fix",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I miss the old bike I sold last year; it was perfect. I wish I didn't sell it.",
@@ -3163,7 +1900,7 @@
     "source_format": "mc",
     "cell": "C9",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Olumide stayed at the party until three in the morning and then overslept on the day of his driving test. Now he wishes he ___ home earlier.",
@@ -3198,7 +1935,7 @@
     "source_format": "gap",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "We lost the match 1–0, and our goalkeeper dropped an easy ball. If only he (to catch) it!",
@@ -3238,7 +1975,7 @@
     "source_format": "transform",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I don't remember Marit's phone number. → If only I …",
@@ -3278,7 +2015,7 @@
     "source_format": "mc",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My laptop freezes every ten minutes. If only I ___ enough money for a new one.",
@@ -3313,7 +2050,7 @@
     "source_format": "mc",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My brother never answers my messages. I wish he ___ back sometimes.",
@@ -3348,7 +2085,7 @@
     "source_format": "fix",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Quentin, you always talk over me. I wish you will stop doing it.",
@@ -3376,7 +2113,7 @@
     "source_format": "which",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "It has rained for six days, and Wendell is tired of it. What does he say?",
@@ -3411,7 +2148,7 @@
     "source_format": "gap",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Sasha keeps borrowing my charger and never gives it back. I wish he (to give) it back for once!",
@@ -3452,7 +2189,7 @@
     "source_format": "gap",
     "cell": "C10",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "It's late, Sunil. It's time you (to turn) off the computer and (to go) to bed.",
@@ -3505,7 +2242,7 @@
     "source_format": "mc",
     "cell": "C10",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Look at the clock, children! It's time you ___ to bed.",
@@ -3540,7 +2277,7 @@
     "source_format": "fix",
     "cell": "C10",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "It is high time the council repairs this road, because the holes have been getting bigger every week and nobody seems to care.",
@@ -3568,7 +2305,7 @@
     "source_format": "gap",
     "cell": "C10",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I'd rather you (to park) round the corner, please. The delivery van needs space in front of the gate.",
@@ -3609,7 +2346,7 @@
     "source_format": "mc",
     "cell": "C10",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Honestly, I'd rather ___ at home tonight than go to the cinema.",
@@ -3644,7 +2381,7 @@
     "source_format": "transform",
     "cell": "C10",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Please don't use my laptop without asking. → I'd rather you …",
@@ -3688,7 +2425,7 @@
     "source_format": "gap",
     "cell": "C10",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Ezra talks to me as if I (to be) a child, but I am thirty-five.",
@@ -3729,7 +2466,7 @@
     "source_format": "mc",
     "cell": "C10",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Bethan came out of the exam smiling as if she ___ the best mark in the class, but later we heard she had failed.",
@@ -3764,7 +2501,7 @@
     "source_format": "fix",
     "cell": "C10",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "She spoke to the waiter as if he is her servant.",
@@ -3793,7 +2530,7 @@
     "source_format": "gap",
     "cell": "C10",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Lenka stood in the doorway as though she (not / to hear) a word of our argument, but we all knew she had been listening at the door.",
@@ -3834,7 +2571,7 @@
     "source_format": "sort",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Which world is each sentence about?",
@@ -3958,7 +2695,7 @@
     "source_format": "sort",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Which situation is each sentence about?",
@@ -4083,7 +2820,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Gwen forgot her wallet yesterday, so she walked to work instead of taking the bus. Which sentence fits?",
@@ -4118,7 +2855,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Kieran's sister texted that she is probably coming on Saturday. He is planning the day. Which sentence fits?",
@@ -4153,7 +2890,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Gideon didn't study architecture, so he works in a bank now, and he is bored. Which sentence fits?",
@@ -4188,7 +2925,7 @@
     "source_format": "mc",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Maybe Lamar has my new number. If he ___ it, he will call me tonight.",
@@ -4223,7 +2960,7 @@
     "source_format": "mc",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The party was great! If you ___ with us, you would have enjoyed it.",
@@ -4258,7 +2995,7 @@
     "source_format": "fact",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If Pilar had taken the job in Madrid, she would be living near her sister now.",
@@ -4293,7 +3030,7 @@
     "source_format": "match",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Match the halves about a snowy week in the village.",
@@ -4372,5 +3109,1457 @@
       }
     ],
     "answer_text": "If it snows tonight, we will stay at home. · If it snowed more often here, the children would be happier. · If it had snowed last night, the school would have been closed. · I wish it would stop snowing."
+  },
+  {
+    "id": "CD29-50",
+    "topic": "conditionals",
+    "type": "hunt",
+    "source_format": "hunt",
+    "cell": "C11",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "A message about a missed wedding.",
+    "instruction_ru": "Нажмите на все предложения с ошибкой.",
+    "explanation_ru": "В предложении 2 после if нельзя would: встреча возможна, нужен Present Simple; в предложении 3 сожаление о прошлом — wish + Past Perfect, а не would have.",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "sentences": [
+      "Last Saturday I missed my cousin's wedding because my car broke down.",
+      "If I had checked the oil before the trip, the engine would not have failed.",
+      "She is angry with me now, and if I would see her tomorrow, I will have to apologise.",
+      "I wish I would have called her at once.",
+      "From now on, I will check the car before every long trip."
+    ],
+    "fixes": {
+      "2": "She is angry with me now, and if I see her tomorrow, I will have to apologise.",
+      "3": "I wish I had called her at once."
+    },
+    "blanks": [
+      {
+        "id": "CD29-50-b1",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-50-b2",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-50-b3",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-50-b4",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      },
+      {
+        "id": "CD29-50-b5",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ]
+      }
+    ],
+    "answer_text": "Sentence 3: She is angry with me now, and if I see her tomorrow, I will have to apologise. · Sentence 4: I wish I had called her at once."
+  },
+  {
+    "id": "CD29-51",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If the delivery had arrived on time, we would be using the new table now.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "Ошибки нет: условие относится к прошлому (had arrived), результат — к настоящему (would be using).",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_mixed_choose"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "answer": "If the delivery had arrived on time, we would be using the new table now.",
+    "accepted_answers": [
+      "If the delivery had arrived on time, we would be using the new table now."
+    ]
+  },
+  {
+    "id": "CD29-52",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C11",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Last Friday Rowan's phone died on the way to the airport because he forgot to charge it. 'If I {{1:to charge}} it the night before, I {{2:to find}} the right gate easily,' he says now. 'Next time I {{3:to check}} the battery before I {{4:to leave}} home,' he adds.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Прошлое, которое нельзя изменить: had charged … would have found; реальный план на будущее: will check, а после before — Present Simple (leave).",
+    "practice_tenses": [
+      "cd_all"
+    ],
+    "tags": [
+      "cd_all",
+      "cd_type_choice"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-core"
+    ],
+    "blanks": [
+      {
+        "id": "CD29-52-b1",
+        "answer": "had charged",
+        "accepted_answers": [
+          "had charged"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "charge"
+      },
+      {
+        "id": "CD29-52-b2",
+        "answer": "would have found",
+        "accepted_answers": [
+          "would have found",
+          "'d have found"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "find"
+      },
+      {
+        "id": "CD29-52-b3",
+        "answer": "will check",
+        "accepted_answers": [
+          "will check",
+          "'ll check",
+          "am going to check"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "check"
+      },
+      {
+        "id": "CD29-52-b4",
+        "answer": "leave",
+        "accepted_answers": [
+          "leave"
+        ],
+        "tense_or_construction": "cd_all",
+        "construction": "cd_type_choice",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-core"
+        ],
+        "base_verb": "leave"
+      }
+    ],
+    "answer_text": "Last Friday Rowan's phone died on the way to the airport because he forgot to charge it. 'If I had charged it the night before, I would have found the right gate easily,' he says now. 'Next time I will check the battery before I leave home,' he adds."
+  },
+  {
+    "id": "CD30-01",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Our flat is very small. If we (to have) a bigger kitchen, we (to invite) friends for dinner more often.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Кухня маленькая, значит ситуация нереальна сейчас: в if-части Past Simple (had), в главной would + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-01-b1",
+        "answer": "had",
+        "accepted_answers": [
+          "had"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "have"
+      },
+      {
+        "id": "CD30-01-b2",
+        "answer": "would invite",
+        "accepted_answers": [
+          "would invite",
+          "'d invite",
+          "could invite"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "invite"
+      }
+    ],
+    "answer_text": "Our flat is very small. If we had a bigger kitchen, we would invite friends for dinner more often."
+  },
+  {
+    "id": "CD30-02",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C4",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Your laptop is always so slow. If I ___ you, I would buy a new one.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В совете If I were you после I всегда ставится were; am и will be после if не подходят.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_if_i_were_you"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "am",
+      "be",
+      "were",
+      "will be"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "were"
+  },
+  {
+    "id": "CD30-03",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If I would live closer to the sea, I would swim every morning.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После if нельзя ставить would («если бы» ≠ if + would): в условной части нужен Past Simple, lived.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_trap_would_after_if"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "answer": "If I lived closer to the sea, I would swim every morning.",
+    "accepted_answers": [
+      "If I lived closer to the sea, I would swim every morning.",
+      "If I lived closer to the sea, I'd swim every morning."
+    ]
+  },
+  {
+    "id": "CD30-04",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I don't have permission to change the timetable, so I can't help you. → If I …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Факт сейчас не верен, поэтому в if-части Past Simple (had), а в главной could или would + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-04-b1",
+        "answer": "If I had permission to change the timetable, I could help you.",
+        "accepted_answers": [
+          "If I had permission to change the timetable, I could help you.",
+          "If I had permission to change the timetable, I would help you.",
+          "If I had permission to change the timetable, I'd help you."
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ]
+      }
+    ],
+    "answer_text": "If I had permission to change the timetable, I could help you."
+  },
+  {
+    "id": "CD30-05",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C4",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If the app didn't crash every time I opened the camera, I would use it much more.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Второй тип про настоящее: didn't crash значит «на самом деле вылетает», would use more значит «пользуюсь мало».",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "options": [
+      "The app crashed once, so I stopped using the camera.",
+      "The app never crashes, but I still use it a lot.",
+      "The app crashes whenever I open the camera, so I don't use it much.",
+      "The app doesn't crash now, so I use it more than before."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "The app crashes whenever I open the camera, so I don't use it much."
+  },
+  {
+    "id": "CD30-06",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C4",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "A: Why don't you join the school choir? B: I'm not a good singer. If I {{1:to be}} better, I {{2:to join}} at once. A: But you sing in the shower every morning! B: That's different. If I {{3:to stand}} on a stage, I {{4:not / to remember}} a single word.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "Все четыре пропуска про воображаемое: в if-части Past Simple (were/was, stood), в главной would + глагол.",
+    "practice_tenses": [
+      "cd_second"
+    ],
+    "tags": [
+      "cd_second",
+      "cd_second_were",
+      "cd_second_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-second"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-06-b1",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "was"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_were",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD30-06-b2",
+        "answer": "would join",
+        "accepted_answers": [
+          "would join",
+          "'d join",
+          "could join"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "join"
+      },
+      {
+        "id": "CD30-06-b3",
+        "answer": "stood",
+        "accepted_answers": [
+          "stood"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "stand"
+      },
+      {
+        "id": "CD30-06-b4",
+        "answer": "would not remember",
+        "accepted_answers": [
+          "would not remember",
+          "wouldn't remember"
+        ],
+        "tense_or_construction": "cd_second",
+        "construction": "cd_second_would",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-second"
+        ],
+        "base_verb": "remember"
+      }
+    ],
+    "answer_text": "A: Why don't you join the school choir? B: I'm not a good singer. If I were better, I would join at once. A: But you sing in the shower every morning! B: That's different. If I stood on a stage, I would not remember a single word."
+  },
+  {
+    "id": "CD30-07",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C5",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "We missed the last train. If we (to leave) the café ten minutes earlier, we (to catch) it.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Поезд уже ушёл, прошлое не изменить: if + Past Perfect (had left), в главной would have + V3 (caught).",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-07-b1",
+        "answer": "had left",
+        "accepted_answers": [
+          "had left"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "leave"
+      },
+      {
+        "id": "CD30-07-b2",
+        "answer": "would have caught",
+        "accepted_answers": [
+          "would have caught",
+          "'d have caught",
+          "could have caught"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ],
+        "base_verb": "catch"
+      }
+    ],
+    "answer_text": "We missed the last train. If we had left the café ten minutes earlier, we would have caught it."
+  },
+  {
+    "id": "CD30-08",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The hotel gave us a free shuttle to the airport. If it hadn't, we ___ a taxi.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Условие в Past Perfect (hadn't) относится к прошлому, значит результат: would have + V3 (would have taken).",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "options": [
+      "had taken",
+      "would take",
+      "will have taken",
+      "would have taken"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "would have taken"
+  },
+  {
+    "id": "CD30-09",
+    "topic": "conditionals",
+    "type": "hunt",
+    "source_format": "hunt",
+    "cell": "C5",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "A lost bag on a bus.",
+    "instruction_ru": "Нажмите на все предложения с ошибкой.",
+    "explanation_ru": "В предложении 1 после if стоит would have вместо had + V3; в предложении 3 в if-части для прошлого нужен hadn't handed, а не didn't hand.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_form"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "sentences": [
+      "Rustam left his bag on the bus last Friday.",
+      "If he would have checked his seat before getting off, he would have noticed it.",
+      "Luckily, the driver took the bag to the station.",
+      "Rustam would have lost his passport if the driver didn't hand it in.",
+      "Now he says he will never travel without a checklist again."
+    ],
+    "fixes": {
+      "1": "If he had checked his seat before getting off, he would have noticed it.",
+      "3": "Rustam would have lost his passport if the driver hadn't handed it in."
+    },
+    "blanks": [
+      {
+        "id": "CD30-09-b1",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      },
+      {
+        "id": "CD30-09-b2",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      },
+      {
+        "id": "CD30-09-b3",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      },
+      {
+        "id": "CD30-09-b4",
+        "answer": "1",
+        "accepted_answers": [
+          "1"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      },
+      {
+        "id": "CD30-09-b5",
+        "answer": "0",
+        "accepted_answers": [
+          "0"
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_form",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      }
+    ],
+    "answer_text": "Sentence 2: If he had checked his seat before getting off, he would have noticed it. · Sentence 4: Rustam would have lost his passport if the driver hadn't handed it in."
+  },
+  {
+    "id": "CD30-10",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Our goalkeeper was ill, so we lost the match. → If our goalkeeper …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Реальность была: вратарь заболел и мы проиграли; в нереальном прошлом знаки меняются: hadn't been ill, wouldn't have lost.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-10-b1",
+        "answer": "If our goalkeeper hadn't been ill, we wouldn't have lost the match.",
+        "accepted_answers": [
+          "If our goalkeeper hadn't been ill, we wouldn't have lost the match.",
+          "If our goalkeeper had not been ill, we wouldn't have lost the match.",
+          "If our goalkeeper hadn't been ill, we would not have lost the match.",
+          "If our goalkeeper had not been ill, we would not have lost the match."
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_negative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      }
+    ],
+    "answer_text": "If our goalkeeper hadn't been ill, we wouldn't have lost the match."
+  },
+  {
+    "id": "CD30-11",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C5",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If Dad hadn't stopped to answer the phone in the hall, the cake wouldn't have burnt.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Оба отрицания в третьем типе меняют факт: отец остановился ответить, и пирог сгорел.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_negative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "options": [
+      "Dad answered the phone and the cake didn't burn.",
+      "Dad didn't answer the phone, so the cake burnt.",
+      "Dad stopped to answer the phone and the cake burnt.",
+      "Dad didn't answer the phone, and the cake didn't burn."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "Dad stopped to answer the phone and the cake burnt."
+  },
+  {
+    "id": "CD30-12",
+    "topic": "conditionals",
+    "type": "match",
+    "source_format": "match",
+    "cell": "C5",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Match the halves.",
+    "instruction_ru": "Соедините каждое начало с одним окончанием.",
+    "explanation_ru": "Во всех парах условие нереально в прошлом (had + V3), результат would/could have + V3; пары подбираются по смыслу.",
+    "practice_tenses": [
+      "cd_third"
+    ],
+    "tags": [
+      "cd_third",
+      "cd_third_could_might"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-third"
+    ],
+    "starts": [
+      "If the lift had been working,",
+      "If the plumber hadn't arrived so fast,",
+      "If I had remembered the code,",
+      "If the landlord had answered our emails,"
+    ],
+    "endings": [
+      "we wouldn't have climbed ten floors.",
+      "the kitchen would have flooded.",
+      "I could have opened the door myself.",
+      "we wouldn't have needed to call him."
+    ],
+    "blanks": [
+      {
+        "id": "CD30-12-b1",
+        "answer": "we wouldn't have climbed ten floors.",
+        "accepted_answers": [
+          "we wouldn't have climbed ten floors."
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      },
+      {
+        "id": "CD30-12-b2",
+        "answer": "the kitchen would have flooded.",
+        "accepted_answers": [
+          "the kitchen would have flooded."
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      },
+      {
+        "id": "CD30-12-b3",
+        "answer": "I could have opened the door myself.",
+        "accepted_answers": [
+          "I could have opened the door myself."
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      },
+      {
+        "id": "CD30-12-b4",
+        "answer": "we wouldn't have needed to call him.",
+        "accepted_answers": [
+          "we wouldn't have needed to call him."
+        ],
+        "tense_or_construction": "cd_third",
+        "construction": "cd_third_could_might",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-third"
+        ]
+      }
+    ],
+    "answer_text": "If the lift had been working, we wouldn't have climbed ten floors. · If the plumber hadn't arrived so fast, the kitchen would have flooded. · If I had remembered the code, I could have opened the door myself. · If the landlord had answered our emails, we wouldn't have needed to call him."
+  },
+  {
+    "id": "CD30-13",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C6",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My uncle Idowu grew up near the sea, so he is a strong swimmer. If he (to grow) up in the desert, he (not / to be) such a good swimmer.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Условие про прошлое (где вырос), результат про сегодняшний день: had grown + would not be.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_past_present"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-13-b1",
+        "answer": "had grown",
+        "accepted_answers": [
+          "had grown"
+        ],
+        "tense_or_construction": "cd_mixed",
+        "construction": "cd_mixed_past_present",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-mixed"
+        ],
+        "base_verb": "grow"
+      },
+      {
+        "id": "CD30-13-b2",
+        "answer": "would not be",
+        "accepted_answers": [
+          "would not be",
+          "wouldn't be"
+        ],
+        "tense_or_construction": "cd_mixed",
+        "construction": "cd_mixed_past_present",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-mixed"
+        ],
+        "base_verb": "be"
+      }
+    ],
+    "answer_text": "My uncle Idowu grew up near the sea, so he is a strong swimmer. If he had grown up in the desert, he would not be such a good swimmer."
+  },
+  {
+    "id": "CD30-14",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C6",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I never learned to drive, so I depend on buses. If I ___ to drive when I was younger, I wouldn't spend two hours commuting every day.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Условие относится к прошлому (when I was younger), результат к настоящему: if + Past Perfect, would + глагол.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_past_present"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "options": [
+      "learned",
+      "would learn",
+      "had learned",
+      "would have learned"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "had learned"
+  },
+  {
+    "id": "CD30-15",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C6",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "My sister is afraid of flying, so she didn't come with us to Spain last summer. Which sentence fits?",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Условие про постоянное свойство сейчас (weren't afraid), результат про прошлое (would have come); остальные варианты путают время.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_present_past"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "options": [
+      "If she weren't afraid of flying, she would have come with us.",
+      "If she hadn't been afraid of flying, she would come with us now.",
+      "If she isn't afraid of flying, she will come with us.",
+      "If she weren't afraid of flying, she would come with us last summer."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "If she weren't afraid of flying, she would have come with us."
+  },
+  {
+    "id": "CD30-16",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C6",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "If I had booked a room in advance, I wouldn't be sleeping on this sofa tonight.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Past Perfect показывает, что комнату не забронировали, а wouldn't be sleeping про сегодняшний вечер: сегодня спит на диване.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_past_present"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "options": [
+      "I booked a room, but I'm sleeping on this sofa tonight.",
+      "I didn't book a room, so I slept on the sofa last night.",
+      "I booked a room, so I'm not sleeping on the sofa tonight.",
+      "I didn't book a room, so I'm sleeping on this sofa tonight."
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "I didn't book a room, so I'm sleeping on this sofa tonight."
+  },
+  {
+    "id": "CD30-17",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C6",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Our village football team is bottom of the league. Last summer our best player moved abroad. If he {{1:to stay}}, we {{2:to be}} much higher in the table now. Our new goalkeeper is only sixteen. If he {{3:to be}} older, he {{4:not / to let}} in three easy goals on Sunday.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "В первой паре условие в прошлом, результат сейчас (had stayed + would be); во второй условие про нынешний возраст, результат в прошлом (were + would not have let).",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_past_present",
+      "cd_mixed_present_past"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-17-b1",
+        "answer": "had stayed",
+        "accepted_answers": [
+          "had stayed"
+        ],
+        "tense_or_construction": "cd_mixed",
+        "construction": "cd_mixed_past_present",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-mixed"
+        ],
+        "base_verb": "stay"
+      },
+      {
+        "id": "CD30-17-b2",
+        "answer": "would be",
+        "accepted_answers": [
+          "would be",
+          "'d be"
+        ],
+        "tense_or_construction": "cd_mixed",
+        "construction": "cd_mixed_past_present",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-mixed"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD30-17-b3",
+        "answer": "were",
+        "accepted_answers": [
+          "were",
+          "was"
+        ],
+        "tense_or_construction": "cd_mixed",
+        "construction": "cd_mixed_present_past",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-mixed"
+        ],
+        "base_verb": "be"
+      },
+      {
+        "id": "CD30-17-b4",
+        "answer": "would not have let",
+        "accepted_answers": [
+          "would not have let",
+          "wouldn't have let"
+        ],
+        "tense_or_construction": "cd_mixed",
+        "construction": "cd_mixed_present_past",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-mixed"
+        ],
+        "base_verb": "let"
+      }
+    ],
+    "answer_text": "Our village football team is bottom of the league. Last summer our best player moved abroad. If he had stayed, we would be much higher in the table now. Our new goalkeeper is only sixteen. If he were older, he would not have let in three easy goals on Sunday."
+  },
+  {
+    "id": "CD30-18",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C6",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "The neighbour's dog barked all night, so I'm exhausted today. → If the neighbour's dog …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Причина в прошлом (лай ночью), следствие сейчас: hadn't barked + wouldn't be.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_past_present"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-18-b1",
+        "answer": "If the neighbour's dog hadn't barked all night, I wouldn't be exhausted today.",
+        "accepted_answers": [
+          "If the neighbour's dog hadn't barked all night, I wouldn't be exhausted today.",
+          "If the neighbour's dog had not barked all night, I wouldn't be exhausted today.",
+          "If the neighbour's dog hadn't barked all night, I would not be exhausted today.",
+          "If the neighbour's dog had not barked all night, I would not be exhausted today."
+        ],
+        "tense_or_construction": "cd_mixed",
+        "construction": "cd_mixed_past_present",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-mixed"
+        ]
+      }
+    ],
+    "answer_text": "If the neighbour's dog hadn't barked all night, I wouldn't be exhausted today."
+  },
+  {
+    "id": "CD30-19",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C7",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Hurry up, or we (to miss) the last bus home.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Повелительное наклонение + or: скрытое условие «если не поторопимся», реальное будущее, поэтому will miss.",
+    "practice_tenses": [
+      "cd_implied"
+    ],
+    "tags": [
+      "cd_implied",
+      "cd_implied_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-implied"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-19-b1",
+        "answer": "will miss",
+        "accepted_answers": [
+          "will miss",
+          "'ll miss",
+          "are going to miss",
+          "'re going to miss"
+        ],
+        "tense_or_construction": "cd_implied",
+        "construction": "cd_implied_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-implied"
+        ],
+        "base_verb": "miss"
+      }
+    ],
+    "answer_text": "Hurry up, or we will miss the last bus home."
+  },
+  {
+    "id": "CD30-20",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C7",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I really enjoyed living in that flat. ___ the very high rent, I would never have moved out.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "But for + существительное значит «если бы не»; But и Unless не дают такого смысла, а Because нарушает логику.",
+    "practice_tenses": [
+      "cd_implied"
+    ],
+    "tags": [
+      "cd_implied",
+      "cd_implied_but_for"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-implied"
+    ],
+    "options": [
+      "Unless",
+      "But",
+      "But for",
+      "Because"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "But for"
+  },
+  {
+    "id": "CD30-21",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C7",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Without we had a map of the old town, we would have got lost in the first hour.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После without идёт существительное, а не целое предложение со сказуемым.",
+    "practice_tenses": [
+      "cd_implied"
+    ],
+    "tags": [
+      "cd_implied",
+      "cd_implied_without"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-implied"
+    ],
+    "answer": "Without a map of the old town, we would have got lost in the first hour.",
+    "accepted_answers": [
+      "Without a map of the old town, we would have got lost in the first hour.",
+      "Without a map of the old town, we would have gotten lost in the first hour.",
+      "Without a map of the old town, we'd have got lost in the first hour.",
+      "Without a map of the old town, we'd have gotten lost in the first hour.",
+      "If we hadn't had a map of the old town, we would have got lost in the first hour."
+    ]
+  },
+  {
+    "id": "CD30-22",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C7",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Build the sentence.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "Приказ + or + результат: скрытое условие «если не ответите».",
+    "practice_tenses": [
+      "cd_implied"
+    ],
+    "tags": [
+      "cd_implied",
+      "cd_implied_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-implied"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-22-b1",
+        "answer": "Reply by noon, or the offer will disappear.",
+        "accepted_answers": [
+          "Reply by noon, or the offer will disappear."
+        ],
+        "tense_or_construction": "cd_implied",
+        "construction": "cd_implied_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-implied"
+        ]
+      }
+    ],
+    "answer_text": "Reply by noon, or the offer will disappear.",
+    "blocks": [
+      "the",
+      "or",
+      "disappear.",
+      "offer",
+      "Reply",
+      "will",
+      "noon,",
+      "by"
+    ]
+  },
+  {
+    "id": "CD30-23",
+    "topic": "conditionals",
+    "type": "context_cloze",
+    "source_format": "mini",
+    "cell": "C7",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "A: Are you free after work? B: I might be. If so, I {{1:to call}} you from the bus stop. A: And if you can't make it? B: In that case, I {{2:to text}} you before six. A: Fine, see you.",
+    "instruction_ru": "Заполните каждый пропуск.",
+    "explanation_ru": "If so и in that case подразумевают условие по ситуации; будущее реально, поэтому will + глагол.",
+    "practice_tenses": [
+      "cd_implied"
+    ],
+    "tags": [
+      "cd_implied",
+      "cd_implied_if_so",
+      "cd_implied_in_that_case"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-implied"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-23-b1",
+        "answer": "will call",
+        "accepted_answers": [
+          "will call",
+          "'ll call",
+          "am going to call",
+          "'m going to call"
+        ],
+        "tense_or_construction": "cd_implied",
+        "construction": "cd_implied_if_so",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-implied"
+        ],
+        "base_verb": "call"
+      },
+      {
+        "id": "CD30-23-b2",
+        "answer": "will text",
+        "accepted_answers": [
+          "will text",
+          "'ll text",
+          "am going to text",
+          "'m going to text"
+        ],
+        "tense_or_construction": "cd_implied",
+        "construction": "cd_implied_in_that_case",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-implied"
+        ],
+        "base_verb": "text"
+      }
+    ],
+    "answer_text": "A: Are you free after work? B: I might be. If so, I will call you from the bus stop. A: And if you can't make it? B: In that case, I will text you before six. A: Fine, see you."
+  },
+  {
+    "id": "CD30-24",
+    "topic": "conditionals",
+    "type": "open_brackets",
+    "source_format": "gap",
+    "cell": "C9",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "It's freezing in here. I wish I (to have) a warmer jacket.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Сожаление о настоящем: после wish ставится Past Simple (had).",
+    "practice_tenses": [
+      "cd_wish"
+    ],
+    "tags": [
+      "cd_wish",
+      "cd_wish_past"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-wish"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-24-b1",
+        "answer": "had",
+        "accepted_answers": [
+          "had"
+        ],
+        "tense_or_construction": "cd_wish",
+        "construction": "cd_wish_past",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-wish"
+        ],
+        "base_verb": "have"
+      }
+    ],
+    "answer_text": "It's freezing in here. I wish I had a warmer jacket."
+  },
+  {
+    "id": "CD30-25",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C9",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "It has been raining since breakfast, and I want to go for a run. I wish it ___ .",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Раздражение или желание перемен: I wish + would + глагол; stops, will stop и has stopped после wish не используются.",
+    "practice_tenses": [
+      "cd_wish"
+    ],
+    "tags": [
+      "cd_wish",
+      "cd_wish_would"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-wish"
+    ],
+    "options": [
+      "would stop",
+      "stops",
+      "will stop",
+      "has stopped"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "would stop"
+  },
+  {
+    "id": "CD30-26",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C9",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I wish I had accepted the job in Edinburgh instead of staying in my old office.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Wish + Past Perfect значит сожаление о прошлом: работу не приняли, и теперь жалеют.",
+    "practice_tenses": [
+      "cd_wish"
+    ],
+    "tags": [
+      "cd_wish",
+      "cd_wish_past_perfect"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-wish"
+    ],
+    "options": [
+      "I accepted the job in Edinburgh, but I regret it.",
+      "I didn't accept the job in Edinburgh, and now I regret it.",
+      "I didn't accept the job in Edinburgh, and I hope to accept it.",
+      "I accepted the job in Edinburgh, and I am happy."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "I didn't accept the job in Edinburgh, and now I regret it."
   }
 ]

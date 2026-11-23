@@ -1,210 +1,256 @@
 [
   {
-    "id": "CD29-50",
+    "id": "CD30-27",
     "topic": "conditionals",
-    "type": "hunt",
-    "source_format": "hunt",
-    "cell": "C11",
-    "level": "advanced",
-    "content_version": "conditionals-2026-11-23.2",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C9",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
-    "prompt": "A message about a missed wedding.",
-    "instruction_ru": "Нажмите на все предложения с ошибкой.",
-    "explanation_ru": "В предложении 2 после if нельзя would: встреча возможна, нужен Present Simple; в предложении 3 сожаление о прошлом — wish + Past Perfect, а не would have.",
+    "prompt": "I'm sorry I didn't revise more for the exam. → I wish …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Сожаление о прошлом выражается через wish + Past Perfect.",
     "practice_tenses": [
-      "cd_all"
+      "cd_wish"
     ],
     "tags": [
-      "cd_all",
-      "cd_type_choice"
+      "cd_wish",
+      "cd_wish_past_perfect"
     ],
     "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-core"
+      "content/conditionals/12-conditionals-rule.html#cd-wish"
     ],
-    "sentences": [
-      "Last Saturday I missed my cousin's wedding because my car broke down.",
-      "If I had checked the oil before the trip, the engine would not have failed.",
-      "She is angry with me now, and if I would see her tomorrow, I will have to apologise.",
-      "I wish I would have called her at once.",
-      "From now on, I will check the car before every long trip."
-    ],
-    "fixes": {
-      "2": "She is angry with me now, and if I see her tomorrow, I will have to apologise.",
-      "3": "I wish I had called her at once."
-    },
     "blanks": [
       {
-        "id": "CD29-50-b1",
-        "answer": "0",
+        "id": "CD30-27-b1",
+        "answer": "I wish I had revised more for the exam.",
         "accepted_answers": [
-          "0"
+          "I wish I had revised more for the exam.",
+          "I wish I'd revised more for the exam."
         ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
+        "tense_or_construction": "cd_wish",
+        "construction": "cd_wish_past_perfect",
         "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD29-50-b2",
-        "answer": "0",
-        "accepted_answers": [
-          "0"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD29-50-b3",
-        "answer": "1",
-        "accepted_answers": [
-          "1"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD29-50-b4",
-        "answer": "1",
-        "accepted_answers": [
-          "1"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD29-50-b5",
-        "answer": "0",
-        "accepted_answers": [
-          "0"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
+          "content/conditionals/12-conditionals-rule.html#cd-wish"
         ]
       }
     ],
-    "answer_text": "Sentence 3: She is angry with me now, and if I see her tomorrow, I will have to apologise. · Sentence 4: I wish I had called her at once."
+    "answer_text": "I wish I had revised more for the exam."
   },
   {
-    "id": "CD29-51",
+    "id": "CD30-28",
     "topic": "conditionals",
     "type": "error_fix",
     "source_format": "fix",
-    "cell": "C11",
+    "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
-    "prompt": "If the delivery had arrived on time, we would be using the new table now.",
+    "prompt": "If only my brother were here; he would know how to fix this tap.",
     "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
-    "explanation_ru": "Ошибки нет: условие относится к прошлому (had arrived), результат — к настоящему (would be using).",
+    "explanation_ru": "Ошибки нет: If only + were про настоящее, would know в главной части.",
     "practice_tenses": [
-      "cd_all"
+      "cd_wish"
     ],
     "tags": [
-      "cd_all",
-      "cd_mixed_choose"
+      "cd_wish",
+      "cd_if_only"
     ],
     "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-core"
+      "content/conditionals/12-conditionals-rule.html#cd-wish"
     ],
-    "answer": "If the delivery had arrived on time, we would be using the new table now.",
+    "answer": "If only my brother were here; he would know how to fix this tap.",
     "accepted_answers": [
-      "If the delivery had arrived on time, we would be using the new table now."
+      "If only my brother were here; he would know how to fix this tap."
     ]
   },
   {
-    "id": "CD29-52",
+    "id": "CD30-29",
     "topic": "conditionals",
-    "type": "context_cloze",
-    "source_format": "mini",
-    "cell": "C11",
+    "type": "bank",
+    "source_format": "bank",
+    "cell": "C3",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.2",
+    "content_version": "conditionals-2026-11-23.3",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
-    "prompt": "Last Friday Rowan's phone died on the way to the airport because he forgot to charge it. 'If I {{1:to charge}} it the night before, I {{2:to find}} the right gate easily,' he says now. 'Next time I {{3:to check}} the battery before I {{4:to leave}} home,' he adds.",
-    "instruction_ru": "Заполните каждый пропуск.",
-    "explanation_ru": "Прошлое, которое нельзя изменить: had charged … would have found; реальный план на будущее: will check, а после before — Present Simple (leave).",
+    "prompt": "You can park here ___ you leave before eight. Take a sandwich ___ you get hungry on the train. I won't sign the contract ___ I read every page first. I'm going to the match ___ it rains; nothing will stop me.",
+    "instruction_ru": "Заполните пропуски словами из банка. Два варианта лишние.",
+    "explanation_ru": "As long as ставит условие, in case означает «на всякий случай», unless значит «если не», even if значит «даже если».",
     "practice_tenses": [
-      "cd_all"
+      "cd_conj"
     ],
     "tags": [
-      "cd_all",
-      "cd_type_choice"
+      "cd_conj",
+      "cd_conj_as_long_as"
     ],
     "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-core"
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "word_bank": [
+      "even if",
+      "unless",
+      "whether",
+      "in case",
+      "otherwise",
+      "as long as"
     ],
     "blanks": [
       {
-        "id": "CD29-52-b1",
-        "answer": "had charged",
+        "id": "CD30-29-b1",
+        "answer": "as long as",
         "accepted_answers": [
-          "had charged"
+          "as long as"
         ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_as_long_as",
         "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ],
-        "base_verb": "charge"
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ]
       },
       {
-        "id": "CD29-52-b2",
-        "answer": "would have found",
+        "id": "CD30-29-b2",
+        "answer": "in case",
         "accepted_answers": [
-          "would have found",
-          "'d have found"
+          "in case"
         ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_as_long_as",
         "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ],
-        "base_verb": "find"
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ]
       },
       {
-        "id": "CD29-52-b3",
-        "answer": "will check",
+        "id": "CD30-29-b3",
+        "answer": "unless",
         "accepted_answers": [
-          "will check",
-          "'ll check",
-          "am going to check"
+          "unless"
         ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_as_long_as",
         "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ],
-        "base_verb": "check"
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ]
       },
       {
-        "id": "CD29-52-b4",
-        "answer": "leave",
+        "id": "CD30-29-b4",
+        "answer": "even if",
         "accepted_answers": [
-          "leave"
+          "even if"
         ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_type_choice",
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_as_long_as",
         "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ],
-        "base_verb": "leave"
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ]
       }
     ],
-    "answer_text": "Last Friday Rowan's phone died on the way to the airport because he forgot to charge it. 'If I had charged it the night before, I would have found the right gate easily,' he says now. 'Next time I will check the battery before I leave home,' he adds."
+    "answer_text": "You can park here as long as you leave before eight. Take a sandwich in case you get hungry on the train. I won't sign the contract unless I read every page first. I'm going to the match even if it rains; nothing will stop me."
+  },
+  {
+    "id": "CD30-30",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C3",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Of course you can borrow my car for the weekend, ___ you promise to fill the tank before you bring it back.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Provided (that) задаёт условие «при условии, что»; unless значило бы обратное, in case не условие, whether не подходит по смыслу.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_provided"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "options": [
+      "unless",
+      "provided",
+      "in case",
+      "whether"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "provided"
+  },
+  {
+    "id": "CD30-31",
+    "topic": "conditionals",
+    "type": "transformation",
+    "source_format": "transform",
+    "cell": "C3",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "We will go camping only if the weather is dry. → We won't go camping unless …",
+    "instruction_ru": "Перепишите целое предложение с заданным началом.",
+    "explanation_ru": "Unless = if not: главная часть отрицательная, а после unless глагол в утвердительной форме.",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_unless"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "blanks": [
+      {
+        "id": "CD30-31-b1",
+        "answer": "We won't go camping unless the weather is dry.",
+        "accepted_answers": [
+          "We won't go camping unless the weather is dry.",
+          "We will not go camping unless the weather is dry."
+        ],
+        "tense_or_construction": "cd_conj",
+        "construction": "cd_conj_unless",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-conj"
+        ]
+      }
+    ],
+    "answer_text": "We won't go camping unless the weather is dry."
+  },
+  {
+    "id": "CD30-32",
+    "topic": "conditionals",
+    "type": "error_fix",
+    "source_format": "fix",
+    "cell": "C3",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.3",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Take your card with you in case you will need to pay for the tickets.",
+    "instruction_ru": "Исправьте ошибку. Верное предложение перепишите без изменений.",
+    "explanation_ru": "После in case будущее не ставится: нужно Present Simple (you need).",
+    "practice_tenses": [
+      "cd_conj"
+    ],
+    "tags": [
+      "cd_conj",
+      "cd_conj_in_case"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-conj"
+    ],
+    "answer": "Take your card with you in case you need to pay for the tickets.",
+    "accepted_answers": [
+      "Take your card with you in case you need to pay for the tickets."
+    ]
   }
 ]
