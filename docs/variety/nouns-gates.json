@@ -1,0 +1,20 @@
+{
+  "topic": "nouns",
+  "exclude_retired": true,
+  "max_opening_share": 0.015,
+  "max_by_the_share": 0,
+  "max_verb_uses": 75,
+  "max_time_marker_share": 0.25,
+  "cell_shares": {
+    "N1": 0.16,
+    "N2": 0.185,
+    "N3": 0.182,
+    "N4": 0.12,
+    "N5": 0.133,
+    "N6": 0.08,
+    "N7": 0.14
+  },
+  "cell_tolerance": 0.005,
+  "max_near_duplicate_pairs": 0,
+  "_note": "1000-task nouns bank (2026-11-23): no opening above 1.5%, time cues <= 25%, no near-duplicates, cell shares follow the approved plan."
+}

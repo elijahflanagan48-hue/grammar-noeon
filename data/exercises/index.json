@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "content_version": "tenses-2026-11-09.1",
   "editorial_language": "British English",
-  "total_items": 13860,
-  "answer_slots": 18173,
+  "total_items": 14860,
+  "answer_slots": 19771,
   "excluded_non_publishable": 62,
   "levels": {
     "A1": 51,
@@ -13,23 +13,23 @@
     "B2": 1701,
     "C1": 784,
     "C2": 311,
-    "unrated": 8481
+    "unrated": 9481
   },
   "types": {
     "active_to_passive": 100,
     "bank": 15,
     "context_cloze": 557,
     "direct_to_reported": 837,
-    "error_fix": 331,
+    "error_fix": 468,
     "hunt": 23,
     "match": 19,
     "modal_fix": 50,
     "modal_gap": 700,
     "modal_meaning": 50,
-    "multiple_choice": 1939,
-    "open_brackets": 8823,
+    "multiple_choice": 2165,
+    "open_brackets": 9418,
     "sort": 27,
-    "transformation": 98,
+    "transformation": 140,
     "translation_ru_en": 267,
     "word_order": 24
   },
@@ -2601,6 +2601,196 @@
       "levels": {
         "unrated": 100
       }
+    },
+    {
+      "file": "data/exercises/part-143.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 70,
+        "multiple_choice": 16,
+        "error_fix": 10,
+        "transformation": 4
+      },
+      "levels3": {
+        "basic": 31,
+        "medium": 41,
+        "advanced": 28
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-144.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 59,
+        "multiple_choice": 23,
+        "error_fix": 12,
+        "transformation": 6
+      },
+      "levels3": {
+        "advanced": 29,
+        "basic": 31,
+        "medium": 40
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-145.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 59,
+        "multiple_choice": 23,
+        "error_fix": 13,
+        "transformation": 5
+      },
+      "levels3": {
+        "advanced": 29,
+        "basic": 35,
+        "medium": 36
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-146.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 67,
+        "error_fix": 11,
+        "transformation": 5,
+        "multiple_choice": 17
+      },
+      "levels3": {
+        "medium": 44,
+        "advanced": 29,
+        "basic": 27
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-147.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 43,
+        "multiple_choice": 32,
+        "error_fix": 23,
+        "transformation": 2
+      },
+      "levels3": {
+        "medium": 39,
+        "advanced": 32,
+        "basic": 29
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-148.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "multiple_choice": 22,
+        "open_brackets": 66,
+        "error_fix": 9,
+        "transformation": 3
+      },
+      "levels3": {
+        "basic": 32,
+        "medium": 39,
+        "advanced": 29
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-149.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "error_fix": 12,
+        "multiple_choice": 17,
+        "transformation": 5,
+        "open_brackets": 66
+      },
+      "levels3": {
+        "medium": 41,
+        "advanced": 29,
+        "basic": 30
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-150.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "multiple_choice": 25,
+        "error_fix": 13,
+        "transformation": 7,
+        "open_brackets": 55
+      },
+      "levels3": {
+        "basic": 32,
+        "medium": 40,
+        "advanced": 28
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-151.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "open_brackets": 63,
+        "error_fix": 13,
+        "multiple_choice": 20,
+        "transformation": 4
+      },
+      "levels3": {
+        "basic": 31,
+        "medium": 40,
+        "advanced": 29
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-152.json",
+      "section": "nouns",
+      "count": 100,
+      "types": {
+        "multiple_choice": 31,
+        "open_brackets": 47,
+        "error_fix": 21,
+        "transformation": 1
+      },
+      "levels3": {
+        "medium": 40,
+        "advanced": 30,
+        "basic": 30
+      },
+      "levels": {
+        "unrated": 100
+      }
     }
   ],
   "sections": {
@@ -2609,7 +2799,7 @@
     "passive": 1935,
     "modals": 1040,
     "reported": 2000,
-    "nouns": 1000,
+    "nouns": 2000,
     "speaking": 500,
     "infinitive": 1000,
     "conditionals": 1006
@@ -2620,15 +2810,15 @@
     "passive": "passive-2026-11-22.2",
     "modals": "modals-2026-11-05.1",
     "reported": "reported-2026-11-23.1",
-    "nouns": "nouns-2026-11-07.1",
+    "nouns": "nouns-2026-11-23.1",
     "speaking": "speaking-2026-11-09.1",
     "infinitive": "infinitive-2026-11-13.1",
     "conditionals": "conditionals-2026-11-23.3"
   },
   "levels3": {
-    "advanced": 3149,
-    "basic": 4571,
-    "medium": 6140
+    "advanced": 3441,
+    "basic": 4879,
+    "medium": 6540
   },
   "section_types": {
     "comparison": {
@@ -2662,10 +2852,10 @@
       "direct_to_reported": 55
     },
     "nouns": {
-      "context_cloze": 107,
-      "multiple_choice": 250,
-      "open_brackets": 616,
-      "translation_ru_en": 27
+      "open_brackets": 595,
+      "multiple_choice": 226,
+      "error_fix": 137,
+      "transformation": 42
     },
     "speaking": {
       "context_cloze": 40,

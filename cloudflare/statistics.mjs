@@ -31,7 +31,7 @@ export async function statistics(db, ownerId, {all, materialize}) {
     for(const key of ['correct','checked','pending'])kind[key]+=counts[key];
   }
   for (const row of topicRows) {
-    const section=row.id.startsWith('ig_')?'infinitive':row.id.startsWith('sv_')?'speaking':row.id.startsWith('noun_')?'nouns':/^rs(?:\d|_)/.test(row.id)?'reported':row.id.startsWith('mv_')?'modals':row.id.startsWith('pv_')?'passive':row.id.startsWith('cmp_')?'comparison':'tenses';
+    const section=row.id.startsWith('ig_')?'infinitive':row.id.startsWith('sv_')?'speaking':(row.id.startsWith('noun_')||row.id.startsWith('nn_'))?'nouns':/^rs(?:\d|_)/.test(row.id)?'reported':row.id.startsWith('mv_')?'modals':row.id.startsWith('pv_')?'passive':row.id.startsWith('cmp_')?'comparison':'tenses';
     kinds[row.kind].sections.find(value=>value.id===section).topics.push({id:row.id,correct:Number(row.correct),checked:Number(row.checked),lastWork:iso(row.lastWork)});
   }
   return {scope:'completed',kinds};

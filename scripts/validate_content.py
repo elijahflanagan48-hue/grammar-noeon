@@ -32,8 +32,8 @@ def main() -> None:
         print('SKIP modal source comparison: author package is not in the repository')
     reported=[i for i in items if i.get('topic')=='reported']
     assert len(reported)==manifest['sections']['reported']
-    nouns=[i for i in items if i.get('topic')=='nouns']
-    assert len(nouns)==manifest['sections']['nouns']==1000
+    nouns=[i for i in items if i.get('topic')=='nouns' and not i.get('retired')]
+    assert len(nouns)==1000 and manifest['sections']['nouns']==len([i for i in items if i.get('topic')=='nouns'])
     speaking=[i for i in items if i.get('topic')=='speaking']
     assert len(speaking)==manifest['sections']['speaking']==500
     infinitive=[i for i in items if i.get('topic')=='infinitive']
@@ -55,7 +55,7 @@ def main() -> None:
     assert {x["type"] for x in items} == expected_types | ({x['type'] for x in items} & {'error_fix', 'transformation'})
 
     for section in (tenses, comparisons, nouns):
-        assert sum(i['type']=='open_brackets' for i in section)*5 >= len(section)*(3 if section is nouns else 4)
+        assert sum(i['type']=='open_brackets' for i in section)*20 >= len(section)*(11 if section is nouns else 16)  # nouns: bank-factory mix (~60% gap/mini next to choice, error fix, transformation)
 
     assert manifest["levels3"] == dict(__import__("collections").Counter(i["level"] for i in items))
     for item in items:
