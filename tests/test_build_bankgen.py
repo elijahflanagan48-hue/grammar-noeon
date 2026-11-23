@@ -19,9 +19,9 @@ class BankgenBuildTests(unittest.TestCase):
 
     def test_all_approved_answers_and_unchanged_editorial_fields(self):
         mapping = {}
-        items = builder.convert(self.rows, 'reported', mapping, 'reported-2026-11-22.1')
-        self.assertEqual(len(items), 700)
-        self.assertEqual(len(mapping), 700)
+        items = builder.convert(self.rows, 'reported', mapping, 'reported-2026-11-23.1')
+        self.assertEqual(len(items), 1000)
+        self.assertEqual(len(mapping), 1000)
         for row, item in zip(self.rows, items):
             self.assertEqual(item['prompt'], row['prompt'])
             self.assertEqual(item['explanation_ru'], row['explanation_ru'])
@@ -43,13 +43,13 @@ class BankgenBuildTests(unittest.TestCase):
                 values = canonical[:]
                 values[n] = 'this is a deliberately wrong answer'
                 self.assertFalse(grade(item, values)['correct'], row['id'])
-        backwards = builder.convert(list(reversed(self.rows)), 'reported', mapping, 'reported-2026-11-22.1')
+        backwards = builder.convert(list(reversed(self.rows)), 'reported', mapping, 'reported-2026-11-23.1')
         self.assertEqual({i['bankgen_id']: i['id'] for i in items},
                          {i['bankgen_id']: i['id'] for i in backwards})
         extra = copy.deepcopy(self.rows[0])
         extra['id'] = 'RP99-99'
         mapping['withdrawn-source'] = 'rp-R1-900'
-        self.assertEqual(builder.convert([extra], 'reported', mapping, 'reported-2026-11-22.1')[0]['id'], 'rp-R1-901')
+        self.assertEqual(builder.convert([extra], 'reported', mapping, 'reported-2026-11-23.1')[0]['id'], 'rp-R1-901')
 
     def fixture(self, root):
         base = root / 'content/bankgen/reported'
@@ -82,9 +82,9 @@ class BankgenBuildTests(unittest.TestCase):
             base, samples = self.fixture(root)
             before = (root / 'data/exercises/part-01.json').read_bytes()
             original_final = (base / 'final/RP99.jsonl').read_bytes()
-            items = builder.build('reported', '2026-11-22', root)
+            items = builder.build('reported', '2026-11-23', root)
             first = {str(p): p.read_bytes() for p in root.rglob('*') if p.is_file()}
-            builder.build('reported', '2026-11-22', root)
+            builder.build('reported', '2026-11-23', root)
             self.assertEqual(first, {str(p): p.read_bytes() for p in root.rglob('*') if p.is_file()})
             self.assertEqual(before, (root / 'data/exercises/part-01.json').read_bytes())
             self.assertEqual(original_final, (base / 'final/RP99.jsonl').read_bytes())
@@ -95,7 +95,7 @@ class BankgenBuildTests(unittest.TestCase):
                              'pending passive verification')
             # A withdrawn approved item keeps its ID and historical keys.
             (base / 'final/RP99.jsonl').write_text('\n'.join(json.dumps(r) for r in samples[1:])+'\n')
-            builder.build('reported', '2026-11-22', root)
+            builder.build('reported', '2026-11-23', root)
             output = {i['id']: i for i in json.loads((root / 'data/exercises/part-02.json').read_text())}
             self.assertTrue(output[items[0]['id']]['retired'])
             self.assertEqual(output[items[0]['id']]['blanks'], items[0]['blanks'])
@@ -117,7 +117,7 @@ class BankgenBuildTests(unittest.TestCase):
                 final.write_text('{broken' if mutation == 'bad-json' else '\n'.join(json.dumps(r) for r in samples)+'\n')
                 before = {str(p): p.read_bytes() for p in root.rglob('*') if p.is_file()}
                 with self.assertRaises(ValueError):
-                    builder.build('reported', '2026-11-22', root)
+                    builder.build('reported', '2026-11-23', root)
                 self.assertEqual(before, {str(p): p.read_bytes() for p in root.rglob('*') if p.is_file()})
 
 

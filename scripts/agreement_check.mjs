@@ -77,7 +77,7 @@ export function checkItems(items){const findings=[];
    const cue=markers[k][0].toLowerCase();
    if (/\b(?:not|never|no longer)\b/.test(cue) && !/\b(?:not|never|no longer|cannot)\b|n't/.test(a)) findings.push({id:i.id,blank:k+1,answer,kind:'negative_polarity_missing',prefix});
    if(disagrees(subject,answer,scoped))findings.push({id:i.id,blank:k+1,subject,answer,kind:'agreement',prefix});
-   if(q&&!a.includes(q.toLowerCase()))findings.push({id:i.id,blank:k+1,subject:q,answer,kind:'question_subject_missing',prefix});
+   if(q&&b.tense_or_construction!=='rp_pronouns'&&!a.includes(q.toLowerCase()))findings.push({id:i.id,blank:k+1,subject:q,answer,kind:'question_subject_missing',prefix});
    if(/\b(?:shrinked|rewrited|misreaded|transfered|begining|patroling|buyed|teached|catched|choosed|knowed|taked|drawed|swimmed|feeled|meaned|understanded)\b/i.test(answer))findings.push({id:i.id,blank:k+1,answer,kind:'known_bad_morphology',prefix});
   }
  }

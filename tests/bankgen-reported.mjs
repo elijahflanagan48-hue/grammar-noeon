@@ -14,10 +14,10 @@ const final = fs.readdirSync(new URL('../content/bankgen/reported/final/', impor
     .split('\n').filter(l => l.startsWith('{')).map(l => JSON.parse(l)));
 const bySource = new Map(final.map(r => [r.id, r]));
 const mapping = read('content/bankgen/reported/id-map.json');
-assert.equal(active.length, 700);
+assert.equal(active.length, 1000);
 assert.equal(reported.filter(i => i.retired).length, 1000);
-assert.equal(index.sections.reported, 1700);
-assert.equal(active.reduce((n, i) => n+(i.blanks?.length||1), 0), 1083);
+assert.equal(index.sections.reported, 2000);
+assert.equal(active.reduce((n, i) => n+(i.blanks?.length||1), 0), 1554);
 assert.equal(read('docs/current-release.json').passive_v7_status, 'built; deployment and verification pending');
 let variants = 0;
 for (const item of active) {
@@ -71,4 +71,4 @@ for (const item of active.filter(i => i.bankgen_format==='transform')) {
   assert(vm.runInContext('answerControls(item)', context).includes('<textarea'));
   assert(!vm.runInContext('needsReview(item)', context));
 }
-console.log(`Reviewed Reported: 700 active, 1000 archived, 1083 fields, ${variants} accepted variants, 30 selectable targets, 20 legacy links migrated.`);
+console.log(`Reviewed Reported: 1000 active, 1000 archived, 1554 fields, ${variants} accepted variants, 30 selectable targets, 20 legacy links migrated.`);

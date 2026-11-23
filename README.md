@@ -2,32 +2,32 @@
 
 Веб-приложение для практики английской грамматики для русскоязычных учеников A1–C2. Интерфейс — русский, учебный контент — British English. [Рабочий сайт](https://grammar-noeon.grammar-noeon.workers.dev).
 
-Банк: **13560 задания / 17702 полей**, 16 форматов.
+Банк: **13860 задания / 18173 полей**, 16 форматов.
 
 | Формат | Название | Заданий |
 |---|---|---|
-| `active_to_passive` | Active → Passive | 100 |
-| `bank` | Слова из банка | 15 |
+| `open_brackets` | Раскрытие скобок | 8823 |
+| `multiple_choice` | Выбор формы / предложения | 1939 |
 | `context_cloze` | Пропуски в контекстном тексте | 557 |
-| `direct_to_reported` | Direct → Reported | 821 |
-| `error_fix` | Исправить ошибку | 290 |
-| `hunt` | Найти неверные предложения | 23 |
-| `match` | Соединить половинки | 19 |
-| `modal_fix` | Исправление предложения | 50 |
-| `modal_gap` | Пропуск: модальная форма | 700 |
-| `modal_meaning` | Выбор значения в контексте | 50 |
-| `multiple_choice` | Выбор формы / предложения | 1873 |
-| `open_brackets` | Раскрытие скобок | 8646 |
-| `sort` | Распределить по группам | 27 |
-| `transformation` | Перефразирование | 98 |
 | `translation_ru_en` | Перевод | 267 |
+| `active_to_passive` | Active → Passive | 100 |
+| `modal_gap` | Пропуск: модальная форма | 700 |
+| `modal_fix` | Исправление предложения | 50 |
+| `modal_meaning` | Выбор значения в контексте | 50 |
+| `direct_to_reported` | Direct → Reported | 837 |
+| `error_fix` | Исправить ошибку | 331 |
+| `sort` | Распределить по группам | 27 |
+| `match` | Соединить половинки | 19 |
+| `transformation` | Перефразирование | 98 |
 | `word_order` | Сборка цепочки | 24 |
+| `bank` | Слова из банка | 15 |
+| `hunt` | Найти неверные предложения | 23 |
 
-Сложность: basic — 4482, medium — 6016, advanced — 3062.
+Сложность: basic — 4571, medium — 6140, advanced — 3149.
 
-Разделы: comparison — 1000, tenses — 4379, passive — 1935, modals — 1040, reported — 1700, nouns — 1000, speaking — 500, infinitive — 1000, conditionals — 1006.
+Разделы: comparison — 1000, tenses — 4379, passive — 1935, modals — 1040, reported — 2000, nouns — 1000, speaking — 500, infinitive — 1000, conditionals — 1006.
 
-Версии: `tenses-2026-11-09.1`, `comparison-2026-11-01.5`, `passive-2026-11-22.2`, `modals-2026-11-05.1`, `reported-2026-11-22.1`, `nouns-2026-11-07.1`, `speaking-2026-11-09.1`, `infinitive-2026-11-13.1`, `conditionals-2026-11-23.3`.
+Версии: `tenses-2026-11-09.1`, `comparison-2026-11-01.5`, `passive-2026-11-22.2`, `modals-2026-11-05.1`, `reported-2026-11-23.1`, `nouns-2026-11-07.1`, `speaking-2026-11-09.1`, `infinitive-2026-11-13.1`, `conditionals-2026-11-23.3`.
 
 Локально подготовлены изменения банка; они ещё не опубликованы. [Отчёт о проверке](docs/review/V8-FINAL-2026-10-30/REPORT.md).
 
