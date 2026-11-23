@@ -338,7 +338,9 @@ def lex_tools():
         import lexical_audit as la
         la.cefr("house")
         return la
-    except Exception:
+    except (Exception, SystemExit):
+        # lexical_audit exits when its optional dictionaries are unavailable.
+        # Structural validation must still run and write the batch report.
         return None
 
 
@@ -447,6 +449,8 @@ def cmd_validate(topic, only=None, stage="raw"):
     for f in files:
         bid = Path(f).stem; rows, bad = read_jsonl(f)
         errs, warns = collections.defaultdict(list), collections.defaultdict(list)
+        if la is None:
+            warns["(batch)"].append("lexical audit unavailable (install wordfreq and cefrpy)")
         for ln, msg in bad: errs["(file)"].append(f"line {ln}: not JSON ({msg})")
         ops, cnt_f, cnt_l, cnt_c = collections.Counter(), collections.Counter(), collections.Counter(), collections.Counter()
         names_seen, verbs, ids, markers, said, correct0, mcn = collections.Counter(), collections.Counter(), set(), 0, 0, 0, 0

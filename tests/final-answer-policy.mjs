@@ -11,12 +11,12 @@ for(const item of bank){
  assert(item.topic==='reported'||!shall.test(JSON.stringify(item)),item.id+': shall in current exercise');
  if(item.options){assert(!item.accepted_option_indices||item.accepted_option_indices.length===1||item.topic==='nouns'&&item.accepted_option_indices.includes(item.correct_option_index),item.id);continue;}
  if(item.response_contract==='manual-review-v1')continue;
- const submitted=item.blanks.map(b=>b.answer);
- for(const[n,b]of item.blanks.entries()){
+ const targets=item.blanks||[item], submitted=targets.map(b=>b.answer);
+ for(const[n,b]of targets.entries()){
   fields++;assert(b.accepted_answers.length>=1&&b.accepted_answers.length<=(item.answer_profile==='english-standard-v2'?64:2),item.id);
   assert.equal(new Set(b.accepted_answers).size,b.accepted_answers.length,item.id);
   assert(b.accepted_answers.includes(b.answer));
-  for(const answer of b.accepted_answers){const values=submitted.slice();values[n]=answer;assert(grade(item,values).correct,item.id);assert(evaluate(item,values),item.id);}
+  for(const answer of b.accepted_answers){const values=submitted.slice();values[n]=answer;assert(grade(item,values).correct,item.id);assert(evaluate(item,item.blanks?values:values[0]),item.id);}
  }
 }
 // The policy applies to newly selected records; persisted pre-policy keys still grade unchanged.

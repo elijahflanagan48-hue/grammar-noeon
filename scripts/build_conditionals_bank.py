@@ -134,12 +134,16 @@ def build():
     manifest = json.loads(path.read_text())
     existing = [p for p in manifest['parts'] if p.get('section') != 'conditionals']
     old = [i for p in existing for i in json.loads((ROOT / p['file']).read_text())]
+    # Rebuilds stay in place: reuse the existing conditionals part files and their manifest position.
+    files = [p['file'] for p in manifest['parts'] if p.get('section') == 'conditionals']
+    pos = next((k for k, p in enumerate(manifest['parts']) if p.get('section') == 'conditionals'), len(existing))
     first = max(int(Path(p['file']).stem.split('-')[1]) for p in existing) + 1
     freq = lambda xs, key, default=None: dict(sorted(Counter(x.get(key, default) for x in xs).items()))
     parts = []
     for off in range(0, len(converted), 100):
         chunk = converted[off:off+100]
-        file = f'data/exercises/part-{first+off//100:02d}.json'
+        n = off // 100
+        file = files[n] if n < len(files) else f'data/exercises/part-{first+n:02d}.json'
         dest = ROOT / file
         if dest.exists():
             assert all(i.get('topic') == 'conditionals' for i in json.loads(dest.read_text())), file
@@ -151,7 +155,7 @@ def build():
     manifest['section_types']['conditionals'] = freq(converted, 'type')
     manifest['content_versions']['conditionals'] = VERSION
     manifest.update(total_items=len(bank), answer_slots=sum(len(i.get('blanks', [])) or 1 for i in bank),
-                    parts=existing+parts, types=freq(bank, 'type'), levels3=freq(bank, 'level'),
+                    parts=existing[:pos]+parts+existing[pos:], types=freq(bank, 'type'), levels3=freq(bank, 'level'),
                     levels=freq(bank, 'cefr_estimate', 'unrated'))
     report = coverage(rows)
     manifest.setdefault('construction_counts', {})['conditionals'] = report['constructions']

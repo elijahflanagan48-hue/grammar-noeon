@@ -45,6 +45,10 @@ export function subjectBefore(prefix){
  if(/\b(?:(?:this|that|a|one) species)\s*$/i.test(text))return 'singular';
  if(/\b(?:(?:these|those|many|several|two|three|four|five) species)\s*$/i.test(text))return 'plural';
  if(/\bspecies\s*$/i.test(text))return null;
+ // Sheep/deer/fish have identical singular and plural forms; a bare possessive
+ // does not establish number. Planet names ending in -s are singular.
+ if(/\b(?:sheep|deer|fish)\s*$/i.test(text))return null;
+ if(/\b(?:Mars|Venus|Uranus)\s*$/.test(text))return 'singular';
  if(/\b(?:James|Charles|Chris|Thomas|Lucas|Lewis|Frances)\s*$/.test(text))return 'singular';
  if(collectives.test(text))return 'collective';
  const last=[...text.matchAll(/\{\{\d+:[^}]+}}|\([^()]*\)/g)].at(-1);

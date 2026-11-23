@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "content_version": "tenses-2026-11-09.1",
   "editorial_language": "British English",
-  "total_items": 12860,
-  "answer_slots": 16619,
+  "total_items": 13560,
+  "answer_slots": 17702,
   "excluded_non_publishable": 62,
   "levels": {
     "A1": 51,
@@ -13,21 +13,21 @@
     "B2": 1701,
     "C1": 784,
     "C2": 311,
-    "unrated": 7481
+    "unrated": 8181
   },
   "types": {
     "active_to_passive": 100,
     "bank": 15,
     "context_cloze": 557,
-    "direct_to_reported": 782,
-    "error_fix": 198,
+    "direct_to_reported": 821,
+    "error_fix": 290,
     "hunt": 23,
     "match": 19,
     "modal_fix": 50,
     "modal_gap": 700,
     "modal_meaning": 50,
-    "multiple_choice": 1714,
-    "open_brackets": 8236,
+    "multiple_choice": 1873,
+    "open_brackets": 8646,
     "sort": 27,
     "transformation": 98,
     "translation_ru_en": 267,
@@ -2411,6 +2411,139 @@
       "levels": {
         "unrated": 6
       }
+    },
+    {
+      "file": "data/exercises/part-133.json",
+      "section": "reported",
+      "count": 100,
+      "types": {
+        "open_brackets": 62,
+        "multiple_choice": 21,
+        "error_fix": 12,
+        "direct_to_reported": 5
+      },
+      "levels3": {
+        "basic": 32,
+        "medium": 39,
+        "advanced": 29
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-134.json",
+      "section": "reported",
+      "count": 100,
+      "types": {
+        "open_brackets": 62,
+        "multiple_choice": 21,
+        "error_fix": 12,
+        "direct_to_reported": 5
+      },
+      "levels3": {
+        "basic": 30,
+        "medium": 41,
+        "advanced": 29
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-135.json",
+      "section": "reported",
+      "count": 100,
+      "types": {
+        "open_brackets": 61,
+        "multiple_choice": 22,
+        "error_fix": 12,
+        "direct_to_reported": 5
+      },
+      "levels3": {
+        "basic": 32,
+        "medium": 39,
+        "advanced": 29
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-136.json",
+      "section": "reported",
+      "count": 100,
+      "types": {
+        "error_fix": 9,
+        "multiple_choice": 18,
+        "open_brackets": 70,
+        "direct_to_reported": 3
+      },
+      "levels3": {
+        "basic": 31,
+        "medium": 41,
+        "advanced": 28
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-137.json",
+      "section": "reported",
+      "count": 100,
+      "types": {
+        "multiple_choice": 24,
+        "error_fix": 16,
+        "direct_to_reported": 7,
+        "open_brackets": 53
+      },
+      "levels3": {
+        "medium": 42,
+        "advanced": 27,
+        "basic": 31
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-138.json",
+      "section": "reported",
+      "count": 100,
+      "types": {
+        "open_brackets": 67,
+        "multiple_choice": 22,
+        "error_fix": 9,
+        "direct_to_reported": 2
+      },
+      "levels3": {
+        "basic": 31,
+        "medium": 43,
+        "advanced": 26
+      },
+      "levels": {
+        "unrated": 100
+      }
+    },
+    {
+      "file": "data/exercises/part-139.json",
+      "section": "reported",
+      "count": 100,
+      "types": {
+        "open_brackets": 35,
+        "multiple_choice": 31,
+        "error_fix": 22,
+        "direct_to_reported": 12
+      },
+      "levels3": {
+        "advanced": 35,
+        "basic": 29,
+        "medium": 36
+      },
+      "levels": {
+        "unrated": 100
+      }
     }
   ],
   "sections": {
@@ -2418,7 +2551,7 @@
     "tenses": 4379,
     "passive": 1935,
     "modals": 1040,
-    "reported": 1000,
+    "reported": 1700,
     "nouns": 1000,
     "speaking": 500,
     "infinitive": 1000,
@@ -2429,16 +2562,16 @@
     "comparison": "comparison-2026-11-01.5",
     "passive": "passive-2026-11-22.2",
     "modals": "modals-2026-11-05.1",
-    "reported": "reported-2026-11-05.1",
+    "reported": "reported-2026-11-22.1",
     "nouns": "nouns-2026-11-07.1",
     "speaking": "speaking-2026-11-09.1",
     "infinitive": "infinitive-2026-11-13.1",
     "conditionals": "conditionals-2026-11-23.3"
   },
   "levels3": {
-    "advanced": 2859,
-    "basic": 4266,
-    "medium": 5735
+    "advanced": 3062,
+    "basic": 4482,
+    "medium": 6016
   },
   "section_types": {
     "comparison": {
@@ -2466,9 +2599,10 @@
       "multiple_choice": 200
     },
     "reported": {
-      "direct_to_reported": 782,
-      "open_brackets": 118,
-      "translation_ru_en": 100
+      "open_brackets": 410,
+      "multiple_choice": 159,
+      "error_fix": 92,
+      "direct_to_reported": 39
     },
     "nouns": {
       "context_cloze": 107,

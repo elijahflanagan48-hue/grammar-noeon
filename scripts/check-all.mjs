@@ -37,6 +37,8 @@ if(process.argv.includes('--live')) {
   run(python,['-B','scripts/audit_variety.py','--gate','docs/variety/passive-gates.json']);
   run(python,['-B','scripts/lexical_audit.py','passive','--gate','0.05']);
   run(python,['-B','scripts/lexical_audit.py','conditionals','--gate','0.05']);
+  run(python,['-B','scripts/audit_variety.py','--gate','docs/variety/reported-gates.json']);
+  run(python,['-B','scripts/lexical_audit.py','reported','--gate','0.05']);
   run(python,['-B','-m','unittest','discover','-s','tests','-p','test_*.py']);
   let miniflare=true;
   try {require.resolve('miniflare');}catch(error){if(error.code==='MODULE_NOT_FOUND')miniflare=false;else throw error;}

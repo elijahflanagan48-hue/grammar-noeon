@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v102-conditionals';
+const CACHE = 'grammar-v103-reported';
 const FILES = [
   "./",
   "styles.css",

@@ -31,11 +31,7 @@ def main() -> None:
     else:
         print('SKIP modal source comparison: author package is not in the repository')
     reported=[i for i in items if i.get('topic')=='reported']
-    assert len(reported)==manifest['sections']['reported']==1000
-    reported=[i for i in items if i.get('topic')=='reported']
-    assert len(reported)==manifest['sections']['reported']==1000
-    reported=[i for i in items if i.get('topic')=='reported']
-    assert len(reported)==manifest['sections']['reported']==1000
+    assert len(reported)==manifest['sections']['reported']
     nouns=[i for i in items if i.get('topic')=='nouns']
     assert len(nouns)==manifest['sections']['nouns']==1000
     speaking=[i for i in items if i.get('topic')=='speaking']
@@ -56,7 +52,7 @@ def main() -> None:
         "open_brackets", "multiple_choice", "context_cloze", "active_to_passive", "translation_ru_en", "direct_to_reported", "direct_to_reported", "direct_to_reported",
         "modal_gap", "modal_meaning", "modal_fix", "word_order", "transformation", "match", "sort", "bank", "hunt",
     }
-    assert {x["type"] for x in items} == expected_types | ({"error_fix"} if any(x["type"]=="error_fix" for x in items) else set())
+    assert {x["type"] for x in items} == expected_types | ({x['type'] for x in items} & {'error_fix', 'transformation'})
 
     for section in (tenses, comparisons, nouns):
         assert sum(i['type']=='open_brackets' for i in section)*5 >= len(section)*(3 if section is nouns else 4)

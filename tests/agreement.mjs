@@ -11,6 +11,10 @@ for(const prefix of ['The support team ','My family ','The government ','The com
 assert(!disagrees('he','were here','If he '));
 assert.equal(subjectBefore('They {{1:work}} all day and '),'they');
 assert.equal(subjectBefore('The number of people who (to take up) regular fitness activities '),'singular');
+assert.equal(subjectBefore('The speaker told us Mars '),'singular');
+assert.equal(subjectBefore('The farmer tells the vet his sheep '),null);
+assert(!disagrees(subjectBefore('The speaker told us Mars '),'has'));
+assert(disagrees(subjectBefore('The speaker told us Mars '),'have'));
 const broken=[{id:'fixture',prompt:'I (to work). It {{2:test}}.',blanks:[{answer:'has worked',accepted_answers:[]},{answer:'have tested',accepted_answers:[]}]}];assert.equal(checkItems(broken).length,2);
 assert(checkItems([{id:'name',prompt:'(Emily / to work) here?',blanks:[{answer:'Has Emily worked',accepted_answers:['Has worked']}]}]).some(x=>x.kind==='question_subject_missing'));
 // This subject heuristic was authored for the original active-tense bank.

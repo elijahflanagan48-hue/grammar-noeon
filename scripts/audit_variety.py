@@ -120,7 +120,7 @@ def gate(items, limits):
     maximum('time marker share',len(timed)/n,limits['max_time_marker_share'],timed)
     d2=[(i,b) for i in items if i.get('cell')=='D2' for b in i.get('blanks',[])]
     active=sum(b.get('voice')=='active' for _,b in d2)/max(1,len(d2))
-    if active<limits['min_active_share_in_D2']:
+    if 'min_active_share_in_D2' in limits and active<limits['min_active_share_in_D2']:
         failures.append(f'D2 active share: actual={active:.6g}, minimum={limits["min_active_share_in_D2"]}, shortfall={limits["min_active_share_in_D2"]-active:.6g}; items: '+', '.join(dict.fromkeys(i['id'] for i,_ in d2)))
     for cell, target in limits['cell_shares'].items():
         ids=[i['id'] for i in items if i.get('cell','D1')==cell]
