@@ -1,5 +1,5 @@
 {
-  "total": 1007,
+  "total": 1003,
   "formats": {
     "bank": 14,
     "fact": 63,
@@ -8,15 +8,15 @@
     "hunt": 22,
     "match": 18,
     "mc": 184,
-    "mini": 113,
+    "mini": 111,
     "order": 32,
-    "sort": 28,
+    "sort": 27,
     "transform": 103,
-    "which": 86
+    "which": 85
   },
   "levels": {
     "advanced": 293,
-    "basic": 275,
+    "basic": 271,
     "medium": 439
   },
   "constructions": {
@@ -35,7 +35,7 @@
     "cd_first_no_will_after_if": 49,
     "cd_first_vs_zero": 11,
     "cd_first_when_if": 15,
-    "cd_first_will": 47,
+    "cd_first_will": 46,
     "cd_id_prefer": 14,
     "cd_if_only": 18,
     "cd_if_when": 12,
@@ -56,12 +56,12 @@
     "cd_mixed_present_past": 41,
     "cd_real_or_unreal": 20,
     "cd_second_could_might": 12,
-    "cd_second_if_i_were_you": 12,
+    "cd_second_if_i_were_you": 11,
     "cd_second_polite_would": 11,
     "cd_second_question": 15,
     "cd_second_were": 12,
     "cd_second_were_to": 12,
-    "cd_second_would": 58,
+    "cd_second_would": 57,
     "cd_third_contracted": 13,
     "cd_third_could_might": 24,
     "cd_third_form": 67,
@@ -69,21 +69,21 @@
     "cd_third_question": 16,
     "cd_trap_will_after_if": 21,
     "cd_trap_would_after_if": 27,
-    "cd_type_choice": 18,
+    "cd_type_choice": 17,
     "cd_what_if": 12,
     "cd_wish_could": 15,
-    "cd_wish_past": 29,
+    "cd_wish_past": 28,
     "cd_wish_past_perfect": 29,
     "cd_wish_would": 26,
     "cd_would_rather": 14,
     "cd_zero_fact": 13,
-    "cd_zero_habit": 22,
+    "cd_zero_habit": 21,
     "cd_zero_if_when": 16,
-    "cd_zero_imperative": 13
+    "cd_zero_imperative": 12
   },
   "targets": {
     "cd_zero": {
-      "basic": 36,
+      "basic": 35,
       "medium": 20,
       "advanced": 5
     },
@@ -98,7 +98,7 @@
       "advanced": 28
     },
     "cd_second": {
-      "basic": 51,
+      "basic": 50,
       "medium": 54,
       "advanced": 26
     },
@@ -132,55 +132,14 @@
       "advanced": 20
     },
     "cd_all": {
-      "basic": 25,
+      "basic": 23,
       "medium": 37,
       "advanced": 27
     }
   },
-  "coverage_met": false,
+  "coverage_met": true,
   "undercovered": [],
-  "source_issues": [
-    {
-      "id": "CD23-11",
-      "field": "groups",
-      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
-    },
-    {
-      "id": "CD23-21",
-      "field": "groups",
-      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
-    },
-    {
-      "id": "CD23-28",
-      "field": "groups",
-      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
-    },
-    {
-      "id": "CD24-11",
-      "field": "groups",
-      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
-    },
-    {
-      "id": "CD24-17",
-      "field": "groups",
-      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
-    },
-    {
-      "id": "CD24-30",
-      "field": "groups",
-      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
-    },
-    {
-      "id": "CD26-40",
-      "field": "groups",
-      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
-    },
-    {
-      "id": "CD29-42",
-      "field": "groups",
-      "reason": "Source has 3 groups; integration brief specifies 2. All source groups are preserved."
-    }
-  ],
+  "source_issues": [],
   "missing_levels": {
     "cd_inversion": [
       "basic"

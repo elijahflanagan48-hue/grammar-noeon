@@ -1,159 +1,12 @@
 [
   {
-    "id": "CD23-20",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "fact",
-    "cell": "C11",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "I would pay my bills after work if the bank in Kragujevac did not close early on Fridays for training.",
-    "instruction_ru": "Выберите, что произошло на самом деле.",
-    "explanation_ru": "Second Conditional показывает нереальную ситуацию в настоящем: на деле банк закрывается рано по пятницам, поэтому счета после работы не оплачиваются.",
-    "practice_tenses": [
-      "cd_all"
-    ],
-    "tags": [
-      "cd_all",
-      "cd_real_or_unreal"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-core"
-    ],
-    "options": [
-      "The bank closes early on Fridays, so I do not pay my bills after work.",
-      "The bank closed early on Friday, so I did not pay my bills.",
-      "The bank does not close early on Fridays, so I pay my bills after work.",
-      "The bank closes early on Fridays, but I still pay my bills after work."
-    ],
-    "correct_option_index": 0,
-    "accepted_option_indices": [
-      0
-    ],
-    "answer": "The bank closes early on Fridays, so I do not pay my bills after work."
-  },
-  {
-    "id": "CD23-21",
-    "topic": "conditionals",
-    "type": "sort",
-    "source_format": "sort",
-    "cell": "C11",
-    "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Classify each sentence from Jing's tour of the old fort in Muscat.",
-    "instruction_ru": "Выберите группу для каждого предложения.",
-    "explanation_ru": "When употребляется для неизбежных регулярных событий, if + Present Simple — для возможных условий, а if + Past Simple / Past Perfect — для нереальных ситуаций.",
-    "practice_tenses": [
-      "cd_all"
-    ],
-    "tags": [
-      "cd_all",
-      "cd_if_when"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-core"
-    ],
-    "groups": [
-      "Certain (when)",
-      "Possible (if)",
-      "Unreal (if)"
-    ],
-    "sort_items": [
-      "When the afternoon sun drops behind the fort, the stone walls turn orange.",
-      "When Jing opens the tower door, visitors climb the narrow stairs.",
-      "If you leave your backpack at the desk, you may enter the tower.",
-      "If the wind gets stronger, Jing will close the roof for safety.",
-      "If the stairs were wider, large tour groups would move much faster.",
-      "If we had left our bags downstairs, we would not have dropped the camera."
-    ],
-    "blanks": [
-      {
-        "id": "CD23-21-b1",
-        "answer": "Certain (when)",
-        "accepted_answers": [
-          "Certain (when)"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_if_when",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD23-21-b2",
-        "answer": "Certain (when)",
-        "accepted_answers": [
-          "Certain (when)"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_if_when",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD23-21-b3",
-        "answer": "Possible (if)",
-        "accepted_answers": [
-          "Possible (if)"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_if_when",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD23-21-b4",
-        "answer": "Possible (if)",
-        "accepted_answers": [
-          "Possible (if)"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_if_when",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD23-21-b5",
-        "answer": "Unreal (if)",
-        "accepted_answers": [
-          "Unreal (if)"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_if_when",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      },
-      {
-        "id": "CD23-21-b6",
-        "answer": "Unreal (if)",
-        "accepted_answers": [
-          "Unreal (if)"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_if_when",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ]
-      }
-    ],
-    "answer_text": "When the afternoon sun drops behind the fort, the stone walls turn orange. → Certain (when) · When Jing opens the tower door, visitors climb the narrow stairs. → Certain (when) · If you leave your backpack at the desk, you may enter the tower. → Possible (if) · If the wind gets stronger, Jing will close the roof for safety. → Possible (if) · If the stairs were wider, large tour groups would move much faster. → Unreal (if) · If we had left our bags downstairs, we would not have dropped the camera. → Unreal (if)"
-  },
-  {
     "id": "CD23-22",
     "topic": "conditionals",
     "type": "hunt",
     "source_format": "hunt",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "An email from the spring fair organiser in Montevideo.",
@@ -251,7 +104,7 @@
     "source_format": "mini",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Baptiste loves the street parties near the beach in Zanzibar. Whenever the neighbours {{1:to plan}} a dinner, everyone brings extra plates, so nobody goes home hungry. Tomorrow evening we are cooking fish on the sand, and if the rain {{2:to stay}} away, we {{3:to eat}} under the stars. My cousin cannot come because he is working, and he says, \"I wish I {{4:to be}} there with you.\"",
@@ -335,7 +188,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "A junior technician in Taoyuan restarted the main server last night without backing up the files first, so the whole office is trying to recover lost data right now.",
@@ -370,7 +223,7 @@
     "source_format": "fact",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Had the passengers in Novi Pazar stepped away from the metro doors when the guard warned them, they would not be waiting for a night bus in the rain.",
@@ -405,7 +258,7 @@
     "source_format": "mc",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Jovan refused to start the riverside clean-up in Vientiane because the council never sent gloves or rubbish bags, and the volunteers are still sitting on the grass. \"We would not be sitting here doing nothing if the council ___ the gloves and bags,\" he mutters.",
@@ -440,7 +293,7 @@
     "source_format": "mini",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Saeed plays guitar near the main fountain in Skopje and knows everyone's habits. Whenever the square clock strikes twelve, the same old man {{1:to throw}} bread to the birds while Saeed plays a quiet tune. Today, however, the bench is empty and the birds look confused. \"If he {{2:to come}} by this afternoon, I {{3:to ask}} if he is feeling well,\" Saeed thinks. \"Still, if I {{4:to learn}} his name last summer, I would know who to ask about him today.\"",
@@ -526,7 +379,7 @@
     "source_format": "sort",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Match each sentence about campfires in Windhoek National Park to its exact conditional logic.",
@@ -638,7 +491,7 @@
     "source_format": "hunt",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Neda's camp notes from a windy evening in Patagonia.",
@@ -736,7 +589,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Aya leads walking tours in the Lake District, and she knows the lakeside path closes whenever heavy rain floods the bridge. Because it poured all morning, the path is shut and her group had to take the steep hill track instead.",
@@ -771,7 +624,7 @@
     "source_format": "hunt",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "A travel writer's diary from Ketut's riverboat in Borneo.",
@@ -868,7 +721,7 @@
     "source_format": "mini",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I play in a small band at a jazz café in Okayama, and the owner follows a lovely routine. Whenever nine o'clock comes round, he {{1:to turn}} down the lights right before our first slow song. Last Friday, however, the wall switch broke during the set, and he still has not called an electrician, so we are rehearsing in half-darkness tonight. \"If I {{2:to fix}} that switch earlier, the room {{3:not / to look}} like a dark cave right now,\" he groaned, adding, \"What {{4:you / to do}} if the power goes out mid-song tonight?\"",
@@ -953,7 +806,7 @@
     "source_format": "sort",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Sort these sentences about our old cat in Tartu: Reality or Inside-out?",
@@ -974,9 +827,9 @@
       "Inside-out"
     ],
     "sort_items": [
-      "When the doorbell rings, the cat hides under the sofa.",
+      "When the bell rings, the cat hides under the sofa.",
       "If a visitor comes in, she will stay under there.",
-      "When we open a tin of fish, she runs straight into the kitchen.",
+      "When we open a can of fish, she runs straight into the kitchen.",
       "If she were braver, she would greet our guests.",
       "I wish she liked meeting new people.",
       "If we lived on a quiet farm, she would sit by the door."
@@ -1055,42 +908,7 @@
         ]
       }
     ],
-    "answer_text": "When the doorbell rings, the cat hides under the sofa. → Reality · If a visitor comes in, she will stay under there. → Reality · When we open a tin of fish, she runs straight into the kitchen. → Reality · If she were braver, she would greet our guests. → Inside-out · I wish she liked meeting new people. → Inside-out · If we lived on a quiet farm, she would sit by the door. → Inside-out"
-  },
-  {
-    "id": "CD24-02",
-    "topic": "conditionals",
-    "type": "multiple_choice",
-    "source_format": "which",
-    "cell": "C11",
-    "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "Grandfather Tor wants his grandson to help in the kitchen in Bydgoszcz. He makes a real promise about his family bread recipe.",
-    "instruction_ru": "Выберите предложение по смыслу ситуации.",
-    "explanation_ru": "Дедушка даёт реальное обещание на будущее, поэтому нужен First Conditional: Present Simple после if и will в главной части. После if глагол will не ставится.",
-    "practice_tenses": [
-      "cd_all"
-    ],
-    "tags": [
-      "cd_all",
-      "cd_type_choice"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-core"
-    ],
-    "options": [
-      "If you will help me bake, I give you my bread recipe.",
-      "If you help me bake, I will give you my bread recipe.",
-      "If you helped me bake, I would give you my bread recipe.",
-      "If you had helped me bake, I would have given you my bread recipe."
-    ],
-    "correct_option_index": 1,
-    "accepted_option_indices": [
-      1
-    ],
-    "answer": "If you help me bake, I will give you my bread recipe."
+    "answer_text": "When the bell rings, the cat hides under the sofa. → Reality · If a visitor comes in, she will stay under there. → Reality · When we open a can of fish, she runs straight into the kitchen. → Reality · If she were braver, she would greet our guests. → Inside-out · I wish she liked meeting new people. → Inside-out · If we lived on a quiet farm, she would sit by the door. → Inside-out"
   },
   {
     "id": "CD24-03",
@@ -1099,7 +917,7 @@
     "source_format": "mc",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Your rabbit will get ill if you ___ him too many sweet treats.",
@@ -1134,7 +952,7 @@
     "source_format": "gap",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "In a small pot, pasta always (to stick) together if you (not / to stir) it.",
@@ -1182,83 +1000,13 @@
     "answer_text": "In a small pot, pasta always sticks together if you don't stir it."
   },
   {
-    "id": "CD24-05",
-    "topic": "conditionals",
-    "type": "context_cloze",
-    "source_format": "mini",
-    "cell": "C11",
-    "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
-    "response_contract": "bounded-v1",
-    "answer_profile": "conditionals-exact-v1",
-    "prompt": "The corner bakery in Poznan makes the best sweet buns. If you {{1:to come}} after ten, the trays are always empty. I promised my sister fresh buns on Sunday, so if I wake up early, I {{2:to bring}} two warm ones home. I wish I {{3:to live}} closer to that street.",
-    "instruction_ru": "Заполните каждый пропуск.",
-    "explanation_ru": "Первый пропуск — регулярный факт (Zero Conditional: come). Второй — реальное обещание на воскресенье (First Conditional: will bring). Третий — нереальное желание о настоящем после wish (Past Simple: lived).",
-    "practice_tenses": [
-      "cd_all"
-    ],
-    "tags": [
-      "cd_all",
-      "cd_first_will",
-      "cd_wish_past",
-      "cd_zero_habit"
-    ],
-    "rule_refs": [
-      "content/conditionals/12-conditionals-rule.html#cd-core"
-    ],
-    "blanks": [
-      {
-        "id": "CD24-05-b1",
-        "answer": "come",
-        "accepted_answers": [
-          "come"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_zero_habit",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ],
-        "base_verb": "come"
-      },
-      {
-        "id": "CD24-05-b2",
-        "answer": "will bring",
-        "accepted_answers": [
-          "will bring",
-          "'ll bring"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_first_will",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ],
-        "base_verb": "bring"
-      },
-      {
-        "id": "CD24-05-b3",
-        "answer": "lived",
-        "accepted_answers": [
-          "lived",
-          "were living"
-        ],
-        "tense_or_construction": "cd_all",
-        "construction": "cd_wish_past",
-        "rule_refs": [
-          "content/conditionals/12-conditionals-rule.html#cd-core"
-        ],
-        "base_verb": "live"
-      }
-    ],
-    "answer_text": "The corner bakery in Poznan makes the best sweet buns. If you come after ten, the trays are always empty. I promised my sister fresh buns on Sunday, so if I wake up early, I will bring two warm ones home. I wish I lived closer to that street."
-  },
-  {
     "id": "CD24-06",
     "topic": "conditionals",
     "type": "multiple_choice",
     "source_format": "which",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Bartek is looking at the messy playground in Derry. He wants to make a real deal with the children before the bell rings.",
@@ -1293,7 +1041,7 @@
     "source_format": "fix",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Mehdi can hold the last board game if you will call before six.",
@@ -1321,7 +1069,7 @@
     "source_format": "sort",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Put these sentences from the fruit market in Ghent into two groups: Real or Unreal.",
@@ -1342,12 +1090,12 @@
       "Unreal"
     ],
     "sort_items": [
-      "When light rain starts, the fruit sellers cover their tables.",
+      "When light rain starts, the fruit workers cover their tables.",
       "If the wind gets stronger, we will tie down the plastic sheet.",
-      "Unless it stops raining soon, fewer shoppers will walk past.",
+      "Unless it stops raining soon, fewer people will walk past.",
       "If this square had a roof, our boxes would stay dry.",
       "We wouldn't need big coats if the market were indoors.",
-      "I wish we had a dry indoor stall."
+      "I wish we had a dry indoor shop."
     ],
     "blanks": [
       {
@@ -1423,7 +1171,7 @@
         ]
       }
     ],
-    "answer_text": "When light rain starts, the fruit sellers cover their tables. → Real · If the wind gets stronger, we will tie down the plastic sheet. → Real · Unless it stops raining soon, fewer shoppers will walk past. → Real · If this square had a roof, our boxes would stay dry. → Unreal · We wouldn't need big coats if the market were indoors. → Unreal · I wish we had a dry indoor stall. → Unreal"
+    "answer_text": "When light rain starts, the fruit workers cover their tables. → Real · If the wind gets stronger, we will tie down the plastic sheet. → Real · Unless it stops raining soon, fewer people will walk past. → Real · If this square had a roof, our boxes would stay dry. → Unreal · We wouldn't need big coats if the market were indoors. → Unreal · I wish we had a dry indoor shop. → Unreal"
   },
   {
     "id": "CD24-09",
@@ -1432,7 +1180,7 @@
     "source_format": "mc",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I'm not sure about the cafe's hours. ___ the kitchen is closed, we'll eat at home.",
@@ -1467,7 +1215,7 @@
     "source_format": "mini",
     "cell": "C11",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Heavy rain is falling on our football pitch in Inverness. Our coach says we will cancel the match if the grass {{1:to stay}} too wet. We don't have a roof over the pitch. If we {{2:to have}} one, the grass {{3:not / to get}} so wet.",
@@ -1535,7 +1283,7 @@
     "source_format": "sort",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Classify these sentences from Saeed's newsroom in Coimbra: Zero, First, or Second conditional?",
@@ -1647,7 +1395,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Neda is making a concrete deal with her cafe manager in Santander about the coming term. Which sentence states her real offer correctly?",
@@ -1682,7 +1430,7 @@
     "source_format": "hunt",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Safety rules from a cookery class in Dundee.",
@@ -1779,7 +1527,7 @@
     "source_format": "mc",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "What happens if a student ___ their printed card to the exam hall in Nicosia?",
@@ -1814,7 +1562,7 @@
     "source_format": "fact",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If Isha had bought a loaf before her late shift started, she wouldn't have gone home empty-handed.",
@@ -1849,7 +1597,7 @@
     "source_format": "mini",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Astrid bakes country loaves in her farm kitchen in Burgundy. Her dough always {{1:to rise}} faster when the morning air is warm and damp. On Tuesday a cold breeze blew through the open window, so the batch came out flat. If she {{2:to close}} the window in time, the bread would have turned out soft. Astrid wishes the old kitchen {{3:to have}} better heating for winter baking.",
@@ -1918,7 +1666,7 @@
     "source_format": "sort",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Decide which time and world each sentence from Varun's hotel in Sharjah describes.",
@@ -2030,7 +1778,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "It is Wednesday morning at the dental clinic in Vigo. The dentist sees only emergency patients on Wednesdays, and your tooth feels completely fine.",
@@ -2065,7 +1813,7 @@
     "source_format": "hunt",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Notes after calling the vaccination centre in Oviedo.",
@@ -2163,7 +1911,7 @@
     "source_format": "gap",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "A: Why didn't you revise in the Verona school library? B: I missed the notice! If I (to read) it, I (not / to pack) my books so early.",
@@ -2219,7 +1967,7 @@
     "source_format": "fix",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Jovan says the shared drive locks at six; if it would stay open longer, we could finish comfortably.",
@@ -2247,7 +1995,7 @@
     "source_format": "mini",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "We met a park ranger on a steep path in the Julian Alps. \"These rocks always {{1:to freeze}} quickly when the sun drops,\" he warned. \"If you {{2:to keep}} climbing after dark, you will slip on the ice.\" We took his advice and turned back straight away. If we {{3:not / to listen}} to him, we would have been stuck on the cold slope.",
@@ -2316,7 +2064,7 @@
     "source_format": "mc",
     "cell": "C11",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Nobody follows the kitchen memo in our Aarhus office. What ___ if the manager locked the kettle away?",
@@ -2351,7 +2099,7 @@
     "source_format": "fact",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If Nicole hadn't accepted the steady post at the Budapest music academy years ago, she wouldn't still be teaching first-year students now.",
@@ -2386,7 +2134,7 @@
     "source_format": "mini",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Eoghan turned down a noisy city job five years ago and chose to drive the coastal airport shuttle in Costa Rica instead. If he {{1:to take}} that stressful office job, he {{2:not / to be}} nearly as calm and happy now. Whenever a flight {{3:to land}} late at night, he waits patiently outside arrivals with a flask of coffee. His friends in the capital often say they wish they {{4:to make}} the same bold move when they had the chance.",
@@ -2470,7 +2218,7 @@
     "source_format": "fact",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Joao's old flat in the northern city wouldn't be standing empty now if he hadn't moved to sunny Cascais for the weather.",
@@ -2505,7 +2253,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Edward worked part-time while studying in Basel, so today he holds a university degree and has healthy savings in the bank. Which sentence correctly imagines the opposite?",
@@ -2540,7 +2288,7 @@
     "source_format": "hunt",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "An email from Harry at the mountain lodge in Salzburg.",
@@ -2638,7 +2386,7 @@
     "source_format": "which",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The new technician in Mallow is usually careless about warnings. Yesterday he switched off the backup server mid-update, and the whole system crashed.",
@@ -2673,7 +2421,7 @@
     "source_format": "sort",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Group these sentences from the Snowdonia campsite guide by their conditional logic.",
@@ -2785,7 +2533,7 @@
     "source_format": "hunt",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "A student's message after the final exam in Bruges.",
@@ -2882,7 +2630,7 @@
     "source_format": "mini",
     "cell": "C11",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "In the campus office in Manama, the printer room always {{1:to run}} out of paper right before exam week. Baptiste forgot that rule and arrived ten minutes before his deadline with nothing printed. If he {{2:to print}} his report two evenings earlier, he {{3:not / to panic}} in the corridor. He has promised himself that if the campus trays are empty on Monday, he {{4:to walk}} straight to a print shop in town.",
@@ -2967,7 +2715,7 @@
     "source_format": "gap",
     "cell": "C4",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Excuse me, would it be OK if I (to sit) here? All the other seats are taken.",
@@ -3007,7 +2755,7 @@
     "source_format": "mc",
     "cell": "C4",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Dear Mr Hall, I would be very grateful if you ___ me a little more time to pay the bill.",
@@ -3042,7 +2790,7 @@
     "source_format": "fix",
     "cell": "C4",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Would you mind if I will bring my sister along to the cinema?",
@@ -3071,7 +2819,7 @@
     "source_format": "transform",
     "cell": "C4",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Please call me back after lunch. → I would be grateful if you …",
@@ -3115,7 +2863,7 @@
     "source_format": "gap",
     "cell": "C1",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If the printer shows a red light, (to turn) it off and on again.",
@@ -3155,7 +2903,7 @@
     "source_format": "mc",
     "cell": "C1",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Pool rules: If you feel ill, ___ the water and tell a lifeguard.",
@@ -3190,7 +2938,7 @@
     "source_format": "which",
     "cell": "C1",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "A leaflet from a bike-rental shop tells customers what to do about a loose chain.",
@@ -3225,7 +2973,7 @@
     "source_format": "fix",
     "cell": "C1",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Check the oil before a long drive, and if the warning light stays on after you start the engine, stop and call a mechanic.",
@@ -3253,7 +3001,7 @@
     "source_format": "gap",
     "cell": "C2",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Message to the new intern: If you see Mr Okafor in the corridor, (to give) him this form, please.",
@@ -3293,7 +3041,7 @@
     "source_format": "mini",
     "cell": "C2",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Dad's note on the fridge: I'm at the dentist until six. If you {{1:to get}} home first, {{2:to put}} the soup on the cooker. And if I {{3:to be}} late, I {{4:to call}} you.",
@@ -3376,7 +3124,7 @@
     "source_format": "transform",
     "cell": "C2",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Maybe you will go past the bakery. Please buy some bread. → If you go past the bakery, …",
@@ -3418,7 +3166,7 @@
     "source_format": "mc",
     "cell": "C2",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If you ___ any problems with the Wi-Fi, ask reception for a new password.",
@@ -3453,7 +3201,7 @@
     "source_format": "mc",
     "cell": "C2",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Mum's rule (it is allowed, not compulsory): if you finish your homework early, you ___ watch one episode before dinner.",
@@ -3488,7 +3236,7 @@
     "source_format": "mc",
     "cell": "C2",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The forecast says there is a fifty-fifty chance of a storm tonight. If it comes, the ferry ___ cancelled.",
@@ -3523,7 +3271,7 @@
     "source_format": "which",
     "cell": "C2",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The coach tells the team that Saturday's match is not certain: it all depends on whether the pitch is frozen.",
@@ -3558,7 +3306,7 @@
     "source_format": "fix",
     "cell": "C2",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If Jamal passes his driving test, his dad may to buy him a small car.",
@@ -3586,7 +3334,7 @@
     "source_format": "transform",
     "cell": "C2",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Perhaps the road will be closed. Then perhaps we will take the old bridge. → If the road is closed, …",
@@ -3627,7 +3375,7 @@
     "source_format": "mc",
     "cell": "C3",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I can't decide ___ to take the job in Bristol or stay here.",
@@ -3662,7 +3410,7 @@
     "source_format": "fix",
     "cell": "C3",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "If or not the lift is broken makes no difference to me; I always take the stairs.",
@@ -3691,7 +3439,7 @@
     "source_format": "transform",
     "cell": "C3",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Will Jun's flight be delayed? The airline cannot say. → The airline cannot say …",
@@ -3733,7 +3481,7 @@
     "source_format": "gap",
     "cell": "C4",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "What (you / to do) if you found a wallet full of money on the bus?",
@@ -3773,7 +3521,7 @@
     "source_format": "mini",
     "cell": "C4",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– Would you live abroad if a company {{1:to offer}} you a great job? – Honestly, I {{2:to stay}} here. My whole family lives in this town. – And {{3:you / to change}} your mind if they paid you double?",
@@ -3842,7 +3590,7 @@
     "source_format": "mc",
     "cell": "C4",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "How would you feel if your best friend ___ you a surprise party?",
@@ -3877,7 +3625,7 @@
     "source_format": "fix",
     "cell": "C4",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "What would happen to the city centre if everyone stopped driving to work?",
@@ -3905,7 +3653,7 @@
     "source_format": "gap",
     "cell": "C4",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Nobody thinks the council will really do it, but if it (to ban) all cars from the centre, how (shop owners / to react)?",
@@ -3960,7 +3708,7 @@
     "source_format": "order",
     "cell": "C4",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Build the sentence.",
@@ -4012,7 +3760,7 @@
     "source_format": "mc",
     "cell": "C4",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "That old bridge is very strong, but if it ___ to collapse one day, the only road to the farm would be cut off.",
@@ -4047,7 +3795,7 @@
     "source_format": "transform",
     "cell": "C4",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The bus company will probably not cancel route 9. Many old people would be stuck at home in that case. → If the bus company …",
@@ -4088,7 +3836,7 @@
     "source_format": "gap",
     "cell": "C10",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Heavy rain is forecast for the day of the school trip. What if it (to rain) all day? – Then we will use the sports hall.",
@@ -4128,7 +3876,7 @@
     "source_format": "mc",
     "cell": "C10",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Imagine that. What if dinosaurs ___ alive today?",
@@ -4163,7 +3911,7 @@
     "source_format": "fix",
     "cell": "C10",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "What if I will miss the last train home? I haven't got enough money for a taxi.",
@@ -4191,7 +3939,7 @@
     "source_format": "mc",
     "cell": "C1",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I'll text you ___ the plane lands. It is landing in ten minutes.",
@@ -4226,7 +3974,7 @@
     "source_format": "which",
     "cell": "C1",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Sana wants to show her cousin the photos from the trip. She is not sure he will come tonight.",
@@ -4261,7 +4009,7 @@
     "source_format": "fix",
     "cell": "C1",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My sister is not sure about the course. When she doesn't like it, she will change to another one.",
@@ -4290,7 +4038,7 @@
     "source_format": "gap",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– The 7.30 bus has already gone. – In that case, we (to take) a taxi. I can't be late for my exam.",
@@ -4334,7 +4082,7 @@
     "source_format": "mc",
     "cell": "C7",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– Every seat at the cinema is taken tonight. – In that case, we ___ to the café instead.",
@@ -4369,7 +4117,7 @@
     "source_format": "transform",
     "cell": "C7",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "We will visit the park instead if the museum is closed on Mondays. → The museum is closed on Mondays. In that case, …",
@@ -4410,7 +4158,7 @@
     "source_format": "transform",
     "cell": "C4",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My flat is too small, so I can't invite the whole team. → If my flat were bigger, …",
@@ -4451,7 +4199,7 @@
     "source_format": "mc",
     "cell": "C4",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "My laptop is too slow. If I had a new one, I ___ finish the video editing in an hour instead of three.",
@@ -4486,7 +4234,7 @@
     "source_format": "which",
     "cell": "C4",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Tamsin does not speak Spanish, so she can't read the menu in a small café in Seville.",
@@ -4521,7 +4269,7 @@
     "source_format": "gap",
     "cell": "C3",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The landlord will let us keep the dog on condition that we (to pay) a small deposit and (to keep) it off the sofa.",
@@ -4574,7 +4322,7 @@
     "source_format": "transform",
     "cell": "C3",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "You can use my camera, but you must not lend it to anyone. → You can use my camera on condition that …",
@@ -4616,7 +4364,7 @@
     "source_format": "mc",
     "cell": "C3",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The gym offers a free month on condition that you ___ for a year.",
@@ -4651,7 +4399,7 @@
     "source_format": "gap",
     "cell": "C3",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The exam date is fixed and cannot change. But suppose they (to move) it to tomorrow. What (you / to do)?",
@@ -4706,7 +4454,7 @@
     "source_format": "fix",
     "cell": "C3",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Suppose you will lose your phone on holiday. How will you contact your family?",
@@ -4734,7 +4482,7 @@
     "source_format": "gap",
     "cell": "C7",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– Is the library printer working today? – I'm not sure. If so, I (to print) my essay there; if not, I (to use) the one in the office.",
@@ -4791,7 +4539,7 @@
     "source_format": "mc",
     "cell": "C7",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "– Where is Iris? Is she still at her desk? – I think so. If ___, can you ask her to call me?",
@@ -4826,7 +4574,7 @@
     "source_format": "which",
     "cell": "C9",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Grandma lives ten hours away. Ola can only visit her twice a year.",
@@ -4861,7 +4609,7 @@
     "source_format": "mc",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The neighbours play loud music every night. I wish I ___ sleep with the window open.",
@@ -4896,7 +4644,7 @@
     "source_format": "transform",
     "cell": "C9",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Jamal cannot join the school trip because he has a cold. → Jamal wishes …",
@@ -4938,7 +4686,7 @@
     "source_format": "gap",
     "cell": "C1",
     "level": "basic",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "A phone battery (to run) down faster if you (to keep) the screen bright.",
@@ -4991,7 +4739,7 @@
     "source_format": "sort",
     "cell": "C1",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Is each sentence a general rule or one possible future event?",
@@ -5128,7 +4876,7 @@
     "source_format": "hunt",
     "cell": "C1",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "Office rules for the coffee machine.",
@@ -5226,7 +4974,7 @@
     "source_format": "gap",
     "cell": "C10",
     "level": "medium",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "The secretary says, \"The manager is on the phone. I'd prefer it if you (to wait) outside until she is free.\"",
@@ -5267,7 +5015,7 @@
     "source_format": "fix",
     "cell": "C10",
     "level": "advanced",
-    "content_version": "conditionals-2026-11-23.1",
+    "content_version": "conditionals-2026-11-23.2",
     "response_contract": "bounded-v1",
     "answer_profile": "conditionals-exact-v1",
     "prompt": "I would prefer you do not park in front of our garage, please.",
@@ -5291,5 +5039,161 @@
       "I would prefer you did not park in front of our garage, please.",
       "I would prefer you didn't park in front of our garage, please."
     ]
+  },
+  {
+    "id": "CD25-57",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "mc",
+    "cell": "C6",
+    "level": "medium",
+    "content_version": "conditionals-2026-11-23.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "I turned down the job in Leeds, so I still live far from my sister. If I had taken the job, I ___ near her now.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Условие относится к прошлому (had taken), а результат — к настоящему (now): would live, а не would have lived.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_choose"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "options": [
+      "would have lived",
+      "will live",
+      "would live",
+      "lived"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "would live"
+  },
+  {
+    "id": "CD25-58",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "which",
+    "cell": "C6",
+    "level": "advanced",
+    "content_version": "conditionals-2026-11-23.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Last week Idris did not back up his files, so he lost his essay. Now he is very stressed.",
+    "instruction_ru": "Выберите предложение по смыслу ситуации.",
+    "explanation_ru": "Прошлое условие (had backed up) и результат в настоящем (now): would not be, без have been.",
+    "practice_tenses": [
+      "cd_mixed"
+    ],
+    "tags": [
+      "cd_mixed",
+      "cd_mixed_choose"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-mixed"
+    ],
+    "options": [
+      "If Idris had backed up his files, he would not have been so stressed now.",
+      "If Idris backed up his files, he would not have been so stressed.",
+      "If Idris had backed up his files, he would not be so stressed now.",
+      "If Idris would back up his files, he would not be so stressed now."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "If Idris had backed up his files, he would not be so stressed now."
+  },
+  {
+    "id": "CD25-59",
+    "topic": "conditionals",
+    "type": "word_order",
+    "source_format": "order",
+    "cell": "C1",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Put the words in order.",
+    "instruction_ru": "Нажимайте слова в нужном порядке.",
+    "explanation_ru": "В инструкции после if + Present Simple идёт императив: leave the building.",
+    "practice_tenses": [
+      "cd_zero"
+    ],
+    "tags": [
+      "cd_zero",
+      "cd_zero_imperative"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-zero"
+    ],
+    "blanks": [
+      {
+        "id": "CD25-59-b1",
+        "answer": "If the alarm goes off, leave the building at once.",
+        "accepted_answers": [
+          "If the alarm goes off, leave the building at once."
+        ],
+        "tense_or_construction": "cd_zero",
+        "construction": "cd_zero_imperative",
+        "rule_refs": [
+          "content/conditionals/12-conditionals-rule.html#cd-zero"
+        ]
+      }
+    ],
+    "answer_text": "If the alarm goes off, leave the building at once.",
+    "blocks": [
+      "leave",
+      "If",
+      "the",
+      "off,",
+      "alarm",
+      "goes",
+      "building",
+      "the",
+      "at",
+      "once."
+    ]
+  },
+  {
+    "id": "CD25-60",
+    "topic": "conditionals",
+    "type": "multiple_choice",
+    "source_format": "fact",
+    "cell": "C9",
+    "level": "basic",
+    "content_version": "conditionals-2026-11-23.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "conditionals-exact-v1",
+    "prompt": "Hamid wishes he could play in the school team.",
+    "instruction_ru": "Выберите, что произошло на самом деле.",
+    "explanation_ru": "Wish + could означает, что сейчас сделать что-то нельзя, а хочется: Hamid не может играть в команде.",
+    "practice_tenses": [
+      "cd_wish"
+    ],
+    "tags": [
+      "cd_wish",
+      "cd_wish_could"
+    ],
+    "rule_refs": [
+      "content/conditionals/12-conditionals-rule.html#cd-wish"
+    ],
+    "options": [
+      "Hamid is able to play in the school team.",
+      "Hamid can't play in the school team now, and he is sorry.",
+      "Hamid couldn't play in the team last year, but he can now.",
+      "Hamid doesn't want to play in the school team."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "Hamid can't play in the school team now, and he is sorry."
   }
 ]

@@ -100,6 +100,13 @@ def find_names(items):
                 names[w] += 1
         for m in re.finditer(r"\b([A-Z][a-z]+)(?: to [A-Z][a-z]+)?\s*[:→]", p):
             names[m.group(1)] += 2
+    # a capitalised word whose lower-case form never occurs anywhere in the bank is a name
+    lower, upper = set(), set()
+    for _, x in items:
+        for m in WORD.finditer(lexical_text(x)):
+            (upper if m.group(0)[0].isupper() else lower).add(m.group(0))
+    low = {w.lower() for w in lower}
+    names.update(w for w in upper if w.lower() not in low and len(w) > 2)
     return set(names)
 
 

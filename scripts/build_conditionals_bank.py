@@ -8,7 +8,7 @@ from pathlib import Path
 from bankgen_specs import SPECS
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = 'conditionals-2026-11-23.1'
+VERSION = 'conditionals-2026-11-23.2'
 TARGETS = dict(zip((f'C{n}' for n in range(1, 12)), (
     'cd_zero', 'cd_first', 'cd_conj', 'cd_second', 'cd_third', 'cd_mixed',
     'cd_implied', 'cd_inversion', 'cd_wish', 'cd_unreal', 'cd_all')))
@@ -106,24 +106,28 @@ def site_item(row):
     return item
 
 
+# Editorial decision: inversion (Should/Were/Had + subject) is not taught at basic level.
+LEVEL_EXCEPTIONS = {'cd_inversion'}
+
+
 def coverage(rows):
     counts = Counter({c: 0 for cell in SPECS['conditionals']['cells'] for c in cell['cons']})
     counts.update(c for row in rows for c in constructions(row))
     levels = {t: dict(Counter(r['level'] for r in rows if r['cell'] == cell)) for cell, t in TARGETS.items()}
     return dict(total=len(rows), formats=dict(sorted(Counter(r['format'] for r in rows).items())),
         levels=dict(sorted(Counter(r['level'] for r in rows).items())), constructions=dict(sorted(counts.items())),
-        targets=levels, coverage_met=all(n >= 8 for n in counts.values()) and all(len(v) == 3 for v in levels.values()),
+        targets=levels, coverage_met=all(n >= 8 for n in counts.values()) and all(len(v) == 3 or t in LEVEL_EXCEPTIONS for t, v in levels.items()),
         undercovered=[dict(construction=c, count=n, ids=[r['id'] for r in rows if c in constructions(r)])
                       for c, n in sorted(counts.items()) if n < 8],
         source_issues=[*[dict(id='CD20-01', field='blanks[0].accepted_answers', reason='was is not grammatical with plural they; only were is valid. The reviewed source is preserved.')
                 for r in rows if r['id'] == 'CD20-01' and any('was' in b.get('accepted_answers', []) for b in r.get('blanks', []))],
-            *[dict(id=r['id'], field='groups', reason=f"Source has {len(r['groups'])} groups; integration brief specifies 2. All source groups are preserved.") for r in rows if r['format'] == 'sort' and len(r['groups']) != 2]],
+            *[dict(id=r['id'], field='groups', reason=f"Source has {len(r['groups'])} groups; integration brief allows 2 or 3. All source groups are preserved.") for r in rows if r['format'] == 'sort' and len(r['groups']) not in (2, 3)]],
         missing_levels={t: sorted({'basic', 'medium', 'advanced'} - set(ls)) for t, ls in levels.items() if len(ls) < 3})
 
 
 def build():
     rows = load()
-    assert len(rows) == len({r['id'] for r in rows}) == 1007
+    assert len(rows) == len({r['id'] for r in rows}) == 1003
     converted = [site_item(r) for r in rows]
     path = ROOT / 'data/exercises/index.json'
     manifest = json.loads(path.read_text())
