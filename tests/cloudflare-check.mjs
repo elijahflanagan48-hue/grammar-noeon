@@ -105,21 +105,21 @@ try{
   const needsVerification=await teacher.ok('teacher/invite',{name:'Проверка почты',email:'unverified@example.test'});
   const unverified=new Client();
   const unverifiedPayload={token:needsVerification.token,name:'Проверка почты',password:'FictionalPassword!2026'};
-  assert.equal((await unverified.call('auth/join',unverifiedPayload)).status,403);
-  assert.equal((await teacher.ok('teacher/students')).students.length,2,'Unverified email must not get an app role');
-  identities.get('unverified@example.test').verified=true;
-  await unverified.ok('auth/join',unverifiedPayload);
+  // Подтверждение почты не обязательно: ученик по приглашению входит сразу.
+  const quickJoin=await unverified.ok('auth/join',unverifiedPayload);
+  assert.equal(quickJoin.user.role,'student');
+  assert.equal((await teacher.ok('teacher/students')).students.length,3);
   {
     // Почта уже есть в общем Firebase (например, из другого приложения NOEON) — понятные ответы вместо общего «неверный пароль».
     identities.set('legacy@example.test',{id:'firebase-legacy-1',email:'legacy@example.test',password:'short1',token:'fictional-token-legacy',verified:true});
     const clash=await teacher.ok('teacher/invite',{name:'Старый аккаунт',email:'legacy@example.test'});
     const wrongOld=await new Client().call('auth/join',{token:clash.token,name:'Старый аккаунт',password:'AnotherFictional!2026'});
-    assert.equal(wrongOld.status,401);assert.match(wrongOld.data.error,/уже зарегистрирована в NOEON/);
+    assert.equal(wrongOld.status,401);assert.match(wrongOld.data.error,/уже зарегистрирована в Grammar/);
     const tooShort=await new Client().call('auth/join',{token:clash.token,name:'Старый аккаунт',password:'short2'});
-    assert.equal(tooShort.status,400);assert.match(tooShort.data.error,/от 12 до 256.*прежний пароль/);
+    assert.equal(tooShort.status,400);assert.match(tooShort.data.error,/не менее 8.*прежний пароль/);
     const fresh=await teacher.ok('teacher/invite',{name:'Новый',email:'fresh@example.test'});
     const weak=await new Client().call('auth/join',{token:fresh.token,name:'Новый',password:'short'});
-    assert.equal(weak.status,400);assert.match(weak.data.error,/от 12 до 256/);
+    assert.equal(weak.status,400);assert.match(weak.data.error,/не менее 8/);
     const legacy=await new Client().ok('auth/join',{token:clash.token,name:'Старый аккаунт',password:'short1'});
     assert.equal(legacy.user.email,'legacy@example.test');
     const login=await new Client().ok('auth/login',{email:'Legacy@Example.test ',password:'short1'});
@@ -129,9 +129,6 @@ try{
     identities.set('elsewhere@example.test',{id:'firebase-elsewhere-1',email:'elsewhere@example.test',password:'FictionalPassword!2026',token:'fictional-token-elsewhere',verified:true});
     const noProfile=await new Client().call('auth/login',{email:'elsewhere@example.test',password:'FictionalPassword!2026'});
     assert.equal(noProfile.status,403);assert.equal(noProfile.data.code,'NO_PROFILE');assert.match(noProfile.data.error,/аккаунт NOEON найден/);
-    identities.set('waiting@example.test',{id:'firebase-waiting-1',email:'waiting@example.test',password:'FictionalPassword!2026',token:'fictional-token-waiting',verified:false});
-    const quiet=await new Client().call('auth/login',{email:'waiting@example.test',password:'FictionalPassword!2026',resend:false});
-    assert.equal(quiet.data.code,'VERIFY_EMAIL');assert.match(quiet.data.error,/ещё не подтверждена/);
   }
   const openOne=await teacher.ok('teacher/invite',{}),openTwo=await teacher.ok('teacher/invite',{});
   const openClient=new Client(),openPayload={token:openOne.token,name:'Self-registered pupil',password:'FictionalPassword!2026',role:'teacher',teacher_id:'forged'};
@@ -139,9 +136,6 @@ try{
   assert.equal((await openClient.call('auth/join',{...openPayload,email:'not-an-email'})).status,400);
   assert.equal((await openClient.call('auth/join',{...openPayload,email:'anna@example.test'})).status,409);
   const pendingOpen={...openPayload,email:'unverified.open@example.test'};
-  assert.equal((await openClient.call('auth/join',pendingOpen)).data.code,'VERIFY_EMAIL');
-  assert.equal((await db.prepare('SELECT used FROM invites WHERE token=?').bind(require('node:crypto').createHash('sha256').update(openOne.token).digest('hex')).first()).used,0);
-  identities.get('unverified.open@example.test').verified=true;
   const openJoined=await openClient.ok('auth/join',{...pendingOpen,email:' UNVERIFIED.OPEN@example.test '});
   assert.equal(openJoined.user.role,'student');assert.equal(openJoined.user.email,'unverified.open@example.test');
   assert.equal((await teacher.ok('teacher/students/'+openJoined.user.id)).user.id,openJoined.user.id);

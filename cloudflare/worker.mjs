@@ -43,7 +43,7 @@ function equal(a, b) {
   return first.length === second.length && timingSafeEqual(first, second);
 }
 function validatePassword(value) {
-  if (typeof value !== 'string' || value.length < 12 || value.length > 256) throw new Problem('Пароль должен содержать от 12 до 256 символов.');
+  if (typeof value !== 'string' || value.length < 8 || value.length > 256) throw new Problem('Пароль должен содержать от 8 до 256 символов.');
 }
 const CREDENTIALS_HELP = 'Неверная почта или пароль. Если вы ещё не регистрировались, откройте ссылку-приглашение от учителя. Если забыли пароль, нажмите «Забыли пароль?».';
 class FirebaseProblem extends Problem {
@@ -53,7 +53,7 @@ class FirebaseProblem extends Problem {
     const wrong = /INVALID_LOGIN_CREDENTIALS|INVALID_PASSWORD|EMAIL_NOT_FOUND/.test(code);
     super(limited ? 'Слишком много запросов. Попробуйте позже.' : unavailable ? 'Сервис входа пока недоступен.'
       : wrong ? CREDENTIALS_HELP : code === 'USER_DISABLED' ? 'Этот аккаунт отключён. Напишите учителю.'
-      : code === 'INVALID_EMAIL' ? 'Введите корректный email.' : /WEAK_PASSWORD/.test(code) ? 'Пароль слишком простой. Используйте не менее 12 символов.'
+      : code === 'INVALID_EMAIL' ? 'Введите корректный email.' : /WEAK_PASSWORD/.test(code) ? 'Пароль слишком простой. Используйте не менее 8 символов.'
       : 'Не удалось выполнить вход. Проверьте почту и пароль.', limited ? 429 : unavailable ? 503 : 401);
     this.code = code;
   }
@@ -75,13 +75,13 @@ async function authenticate(env, address, password, signup = false, resend = tru
   if (typeof password !== 'string' || !password || password.length > 256) throw new Problem('Введите пароль.');
   const payload = { email: address, password, returnSecureToken: true };
   let signed;
-  // Минимум в 12 символов действует только при создании пароля. Войти можно с любым уже существующим
+  // Минимум в 8 символов действует только при создании пароля. Войти можно с любым уже существующим
   // (например, созданным раньше в другом приложении NOEON), иначе такие ученики не смогут даже попробовать.
-  const weak = password.length < 12;
+  const weak = password.length < 8;
   if (signup) {
     if (weak) {
       try { signed = await firebase(env, 'signInWithPassword', payload); }
-      catch (error) { if (error.status === 429 || error.status === 503) throw error; throw new Problem('Пароль должен содержать от 12 до 256 символов. Если эта почта уже есть в NOEON, введите свой прежний пароль.'); }
+      catch (error) { if (error.status === 429 || error.status === 503) throw error; throw new Problem('Пароль слишком короткий: нужно не менее 8 символов. Если вы уже регистрировались здесь, введите прежний пароль.'); }
     } else {
       try { signed = await firebase(env, 'signUp', payload); }
       catch (error) {
@@ -90,7 +90,7 @@ async function authenticate(env, address, password, signup = false, resend = tru
         try { signed = await firebase(env, 'signInWithPassword', payload); }
         catch (inner) {
           if (inner.status !== 401) throw inner;
-          throw new Problem('Эта почта уже зарегистрирована в NOEON (возможно, в другом приложении) с другим паролем. Введите тот же пароль или нажмите «Забыли пароль?».', 401);
+          throw new Problem('Эта почта уже зарегистрирована в Grammar с другим паролем. Введите прежний пароль или нажмите «Забыли пароль?» на странице входа.', 401);
         }
       }
     }
@@ -98,12 +98,9 @@ async function authenticate(env, address, password, signup = false, resend = tru
   const lookup = await firebase(env, 'lookup', { idToken: signed.idToken });
   const identity = lookup.users?.[0];
   if (!identity || identity.localId !== signed.localId || identity.email?.toLowerCase() !== address || identity.disabled) throw new Problem('Вход недоступен.', 403);
-  if (!identity.emailVerified) {
-    if (resend) await firebase(env, 'sendOobCode', { requestType: 'VERIFY_EMAIL', idToken: signed.idToken });
-    const pending = new Problem(resend ? 'Мы отправили письмо со ссылкой на вашу почту. Откройте его, подтвердите адрес и вернитесь сюда: вход продолжится сам. Не пришло — проверьте «Спам».' : 'Почта ещё не подтверждена. Откройте ссылку из письма и вернитесь сюда.', 403);
-    pending.code = 'VERIFY_EMAIL';
-    throw pending;
-  }
+  // Подтверждение почты не обязательно: доступ даёт ссылка-приглашение учителя. Для восстановления пароля письмо
+  // всё же отправляем один раз при создании аккаунта (без ожидания и без ошибок для ученика).
+  if (!identity.emailVerified && signup && resend) { try { await firebase(env, 'sendOobCode', { requestType: 'VERIFY_EMAIL', idToken: signed.idToken }); } catch {} }
   return { id: identity.localId, email: identity.email.toLowerCase() };
 }
 const prepare = (db, sql, values = []) => db.prepare(sql).bind(...values);
@@ -378,9 +375,10 @@ async function route(db, env, request, url, data, responseHeaders) {
     }
     if (path.endsWith('/login')) {
       const address = email(data.email);
-      const user = await one(db, 'SELECT * FROM users WHERE email=? AND active=1', [address]);
+      const row = await one(db, 'SELECT * FROM users WHERE email=?', [address]), user = row?.active ? row : null;
       const identity = await authenticate(env, address, data.password, false, data.resend !== false);
       // Пароль верный, но в Grammar профиля нет: единый аккаунт NOEON уже есть, не хватает связи с учителем.
+      if (row && !row.active) throw new Problem('Этот аккаунт отключён. Напишите учителю.', 401);
       if (!user) throw Object.assign(new Problem('Ваш аккаунт NOEON найден, но в Grammar вас ещё нет. Откройте ссылку-приглашение от учителя и войдите по ней с тем же паролем.', 403), { code: 'NO_PROFILE' });
       if (identity.id !== user.id) throw new Problem(CREDENTIALS_HELP, 401);
       return login(db, user);
@@ -396,7 +394,7 @@ async function route(db, env, request, url, data, responseHeaders) {
     }
     const inviteHash = digest(clean(data.token)), time = now();
     const invite = await one(db, 'SELECT i.* FROM invites i JOIN users u ON u.id=i.teacher_id WHERE i.token=? AND i.used=0 AND i.revoked=0 AND i.expires>? AND u.active=1', [inviteHash, time]);
-    if (!invite) throw new Problem('Приглашение недействительно или истекло.', 410);
+    if (!invite) throw new Problem('Эта ссылка уже использована или устарела. Если вы уже регистрировались, просто войдите. Если нет, попросите у учителя новую ссылку.', 410);
     const name = clean(data.name || invite.name);
     const studentEmail = email(invite.email || data.email);
     if (invite.email && data.email && email(data.email)!==studentEmail) throw new Problem('Эта ссылка приглашения выдана для другой почты. Получите новую ссылку у учителя.');
@@ -409,7 +407,7 @@ async function route(db, env, request, url, data, responseHeaders) {
         WHERE i.token=? AND i.used=0 AND i.revoked=0 AND i.expires>? AND EXISTS(SELECT 1 FROM users u WHERE u.id=i.teacher_id AND u.active=1)`, [id, studentEmail, name, time, inviteHash, now()]),
       prepare(db, 'UPDATE invites SET used=1 WHERE token=? AND EXISTS(SELECT 1 FROM users WHERE id=?)', [inviteHash, id])
     ]);
-    if (!result[0].meta.changes) throw new Problem('Приглашение недействительно или истекло.', 410);
+    if (!result[0].meta.changes) throw new Problem('Эта ссылка уже использована или устарела. Если вы уже регистрировались, просто войдите. Если нет, попросите у учителя новую ссылку.', 410);
     return login(db, await one(db, 'SELECT * FROM users WHERE id=?', [id]));
   }
   if (path === '/api/auth/demo') throw new Problem('Маршрут не найден.', 404);

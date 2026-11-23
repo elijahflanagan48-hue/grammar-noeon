@@ -51,7 +51,7 @@ def learner_item(item):
 
 def digest(s):return hashlib.sha256(s.encode()).hexdigest()
 def password_hash(value):
-    if not isinstance(value,str) or len(value)<12 or len(value)>256:raise Problem('Пароль должен содержать от 12 до 256 символов.')
+    if not isinstance(value,str) or len(value)<8 or len(value)>256:raise Problem('Пароль должен содержать от 8 до 256 символов.')
     salt=secrets.token_hex(16);iterations=600000
     encoded=hashlib.pbkdf2_hmac('sha256',value.encode(),salt.encode(),iterations).hex()
     return f'pbkdf2_sha256${iterations}${salt}${encoded}'
