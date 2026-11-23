@@ -109,6 +109,25 @@ try{
   assert.equal((await teacher.ok('teacher/students')).students.length,2,'Unverified email must not get an app role');
   identities.get('unverified@example.test').verified=true;
   await unverified.ok('auth/join',unverifiedPayload);
+  {
+    // Почта уже есть в общем Firebase (например, из другого приложения NOEON) — понятные ответы вместо общего «неверный пароль».
+    identities.set('legacy@example.test',{id:'firebase-legacy-1',email:'legacy@example.test',password:'short1',token:'fictional-token-legacy',verified:true});
+    const clash=await teacher.ok('teacher/invite',{name:'Старый аккаунт',email:'legacy@example.test'});
+    const wrongOld=await new Client().call('auth/join',{token:clash.token,name:'Старый аккаунт',password:'AnotherFictional!2026'});
+    assert.equal(wrongOld.status,401);assert.match(wrongOld.data.error,/уже зарегистрирована в NOEON/);
+    const tooShort=await new Client().call('auth/join',{token:clash.token,name:'Старый аккаунт',password:'short2'});
+    assert.equal(tooShort.status,400);assert.match(tooShort.data.error,/от 12 до 256.*прежний пароль/);
+    const fresh=await teacher.ok('teacher/invite',{name:'Новый',email:'fresh@example.test'});
+    const weak=await new Client().call('auth/join',{token:fresh.token,name:'Новый',password:'short'});
+    assert.equal(weak.status,400);assert.match(weak.data.error,/от 12 до 256/);
+    const legacy=await new Client().ok('auth/join',{token:clash.token,name:'Старый аккаунт',password:'short1'});
+    assert.equal(legacy.user.email,'legacy@example.test');
+    const login=await new Client().ok('auth/login',{email:'Legacy@Example.test ',password:'short1'});
+    assert.equal(login.user.email,'legacy@example.test');
+    const nobody=await new Client().call('auth/login',{email:'nobody@example.test',password:'FictionalPassword!2026'});
+    assert.equal(nobody.status,401);assert.match(nobody.data.error,/ссылку-приглашение/);
+    await teacher.ok('teacher/students/'+legacy.user.id+'/remove',{}).catch(()=>{});
+  }
   const openOne=await teacher.ok('teacher/invite',{}),openTwo=await teacher.ok('teacher/invite',{});
   const openClient=new Client(),openPayload={token:openOne.token,name:'Self-registered pupil',password:'FictionalPassword!2026',role:'teacher',teacher_id:'forged'};
   assert.equal((await openClient.call('auth/join',openPayload)).status,400);

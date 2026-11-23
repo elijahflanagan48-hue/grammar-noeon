@@ -45,11 +45,16 @@ function equal(a, b) {
 function validatePassword(value) {
   if (typeof value !== 'string' || value.length < 12 || value.length > 256) throw new Problem('Пароль должен содержать от 12 до 256 символов.');
 }
+const CREDENTIALS_HELP = 'Неверная почта или пароль. Если вы ещё не регистрировались, откройте ссылку-приглашение от учителя. Если забыли пароль, нажмите «Забыли пароль?».';
 class FirebaseProblem extends Problem {
   constructor(code, status) {
     const limited = /TOO_MANY|QUOTA_EXCEEDED/.test(code);
     const unavailable = /OPERATION_NOT_ALLOWED|CONFIGURATION_NOT_FOUND|API_KEY_INVALID/.test(code) || status >= 500;
-    super(limited ? 'Слишком много запросов. Попробуйте позже.' : unavailable ? 'Сервис входа пока недоступен.' : 'Проверьте почту и пароль.', limited ? 429 : unavailable ? 503 : 401);
+    const wrong = /INVALID_LOGIN_CREDENTIALS|INVALID_PASSWORD|EMAIL_NOT_FOUND/.test(code);
+    super(limited ? 'Слишком много запросов. Попробуйте позже.' : unavailable ? 'Сервис входа пока недоступен.'
+      : wrong ? CREDENTIALS_HELP : code === 'USER_DISABLED' ? 'Этот аккаунт отключён. Напишите учителю.'
+      : code === 'INVALID_EMAIL' ? 'Введите корректный email.' : /WEAK_PASSWORD/.test(code) ? 'Пароль слишком простой. Используйте не менее 12 символов.'
+      : 'Не удалось выполнить вход. Проверьте почту и пароль.', limited ? 429 : unavailable ? 503 : 401);
     this.code = code;
   }
 }
@@ -67,15 +72,27 @@ async function firebase(env, action, payload) {
   return result;
 }
 async function authenticate(env, address, password, signup = false) {
-  validatePassword(password);
+  if (typeof password !== 'string' || !password || password.length > 256) throw new Problem('Введите пароль.');
   const payload = { email: address, password, returnSecureToken: true };
   let signed;
+  // Минимум в 12 символов действует только при создании пароля. Войти можно с любым уже существующим
+  // (например, созданным раньше в другом приложении NOEON), иначе такие ученики не смогут даже попробовать.
+  const weak = password.length < 12;
   if (signup) {
-    try { signed = await firebase(env, 'signUp', payload); }
-    catch (error) {
-      // A verified identity may already exist after a retry or email confirmation.
-      if (error.code !== 'EMAIL_EXISTS') throw error;
-      signed = await firebase(env, 'signInWithPassword', payload);
+    if (weak) {
+      try { signed = await firebase(env, 'signInWithPassword', payload); }
+      catch (error) { if (error.status === 429 || error.status === 503) throw error; throw new Problem('Пароль должен содержать от 12 до 256 символов. Если эта почта уже есть в NOEON, введите свой прежний пароль.'); }
+    } else {
+      try { signed = await firebase(env, 'signUp', payload); }
+      catch (error) {
+        // A verified identity may already exist after a retry or email confirmation.
+        if (error.code !== 'EMAIL_EXISTS') throw error;
+        try { signed = await firebase(env, 'signInWithPassword', payload); }
+        catch (inner) {
+          if (inner.status !== 401) throw inner;
+          throw new Problem('Эта почта уже зарегистрирована в NOEON (возможно, в другом приложении) с другим паролем. Введите тот же пароль или нажмите «Забыли пароль?».', 401);
+        }
+      }
     }
   } else signed = await firebase(env, 'signInWithPassword', payload);
   const lookup = await firebase(env, 'lookup', { idToken: signed.idToken });
@@ -361,9 +378,9 @@ async function route(db, env, request, url, data, responseHeaders) {
     }
     if (path.endsWith('/login')) {
       const user = await one(db, 'SELECT * FROM users WHERE email=? AND active=1', [email(data.email)]);
-      if (!user) throw new Problem('Неверная почта или пароль.', 401);
+      if (!user) throw new Problem(CREDENTIALS_HELP, 401);
       const identity = await authenticate(env, user.email, data.password);
-      if (identity.id !== user.id) throw new Problem('Неверная почта или пароль.', 401);
+      if (identity.id !== user.id) throw new Problem(CREDENTIALS_HELP, 401);
       return login(db, user);
     }
     if (path.endsWith('/setup')) {
