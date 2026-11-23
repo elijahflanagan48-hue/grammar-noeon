@@ -19,6 +19,20 @@ function showAccountMessage(selector, message, neutral = false) {
   output.textContent=message;
   output.setAttribute('role',neutral?'status':'alert');
 }
+// После письма с подтверждением человек возвращается во вкладку: продолжаем сами, без повторного нажатия (не чаще раза в 5 секунд).
+function retryAfterVerification(form) {
+  if (form.dataset.waiting) return;
+  form.dataset.waiting = '1';
+  let last = 0;
+  const go = () => {
+    if (document.hidden || !form.isConnected || Date.now() - last < 5000) return;
+    const button = form.querySelector('button.primary'); if (!button || button.disabled) return;
+    last = Date.now(); form.requestSubmit(button);
+  };
+  document.addEventListener('visibilitychange', go);
+  window.addEventListener('focus', go);
+  const timer = setInterval(() => { if (!form.isConnected) { clearInterval(timer); document.removeEventListener('visibilitychange', go); window.removeEventListener('focus', go); } }, 3000);
+}
 function showAccountError(selector, error) { showAccountMessage(selector,error.message,error.code==='VERIFY_EMAIL'); }
 // Быстрый запуск: что было известно о входе в прошлый раз. Показываем сразу, а сервер подтверждает в фоне.
 const AUTH_HINT_KEY = "noeon-auth-hint";
@@ -305,8 +319,8 @@ function renderAccountLogin() {
   app.innerHTML=`${accountNotice()}<div class="reading account-login"><div class="eyebrow">Личный кабинет Grammar NOEON</div><h1>${setup?"Создать кабинет учителя":"Войти"}</h1><p>${setup?"Первый кабинет принадлежит учителю. Для учеников вы сможете создавать приглашения.":"Войдите по своей почте и паролю. Ученики создают аккаунт по приглашению учителя."}</p><form id="account-login-form">${setup?'<div class="field"><label for="account-name">Ваше имя</label><input id="account-name" name="name" required autocomplete="name"></div><div class="field"><label for="account-code">Код создания кабинета</label><input id="account-code" name="code" required autocomplete="off"><small>Используйте код, выданный вам при подготовке приложения.</small></div>':""}<div class="field"><label for="account-email">Почта</label><input id="account-email" name="email" type="email" required autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false"></div><div class="field"><label for="account-password">${setup ? "Пароль — не менее 12 символов" : "Пароль"}</label><input id="account-password" name="password" type="password" required ${setup?'minlength="12" ':""}maxlength="256" autocomplete="${setup?"new-password":"current-password"}"></div><p id="account-error" role="alert"></p><button class="button primary">${setup?"Создать кабинет":"Войти"}</button></form>${account.demo?'<div class="demo-accounts"><p>Посмотреть вымышленные кабинеты:</p><button class="button" data-demo-role="teacher">Войти как учитель</button><button class="button" data-demo-role="student">Войти как Анна</button><button class="button" data-demo-role="other">Войти как Миша</button></div>':""}<p><a href="#theory/foundations">Изучать теорию без входа</a></p></div>`;
   document.querySelector('#account-login-form').addEventListener('submit',async event=>{
     event.preventDefault();const form=event.currentTarget;const button=form.querySelector('button');button.disabled=true;
-    try{await accountSignedIn(await accountRequest(setup?'auth/setup':'auth/login',{name:form.elements.name?.value,code:form.elements.code?.value,email:form.elements.email.value,password:form.elements.password.value}));}
-    catch(error){showAccountError('#account-error',error);button.disabled=false;}
+    try{await accountSignedIn(await accountRequest(setup?'auth/setup':'auth/login',{name:form.elements.name?.value,code:form.elements.code?.value,email:form.elements.email.value,password:form.elements.password.value,resend:!form.dataset.sent}));}
+    catch(error){if(error.code==='VERIFY_EMAIL')form.dataset.sent='1';showAccountError('#account-error',error);button.disabled=false;if(error.code==='VERIFY_EMAIL')retryAfterVerification(form);}
   });
   if(account.authProvider==='firebase') {
     const reset=document.createElement('button');reset.type='button';reset.className='button';reset.textContent='Забыли пароль?';
@@ -331,8 +345,8 @@ async function renderJoin(token) {
   app.innerHTML=`${accountNotice()}<div class="reading account-login"><h1>Кабинет ученика</h1><p>Введите своё имя, почту и придумайте пароль. После регистрации вы появитесь в кабинете пригласившего вас учителя.</p><form id="join-form"><div class="field"><label for="join-name">Ваше имя</label><input id="join-name" name="name" required maxlength="200" autocomplete="name"></div><div class="field"><label for="join-email">Ваша почта</label><input id="join-email" name="email" type="email" required maxlength="254" autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false"></div><div class="field"><label for="join-password">Новый пароль — не менее 12 символов</label><input id="join-password" name="password" type="password" required minlength="12" maxlength="256" autocomplete="new-password"></div><p id="join-error" role="alert"></p><button class="button primary">Создать аккаунт</button></form></div>`;
   document.querySelector('#join-form').addEventListener('submit',async event=>{
     event.preventDefault();const form=event.currentTarget;const button=form.querySelector('button');button.disabled=true;
-    try{await accountSignedIn(await accountRequest('auth/join',{token,name:form.elements.name.value,email:form.elements.email.value,password:form.elements.password.value}));}
-    catch(error){showAccountError('#join-error',error);button.disabled=false;}
+    try{await accountSignedIn(await accountRequest('auth/join',{token,name:form.elements.name.value,email:form.elements.email.value,password:form.elements.password.value,resend:!form.dataset.sent}));}
+    catch(error){if(error.code==='VERIFY_EMAIL')form.dataset.sent='1';showAccountError('#join-error',error);button.disabled=false;if(error.code==='VERIFY_EMAIL')retryAfterVerification(form);}
   });
   if(account.authProvider==='firebase'){
     const reset=document.createElement('button');reset.type='button';reset.className='button';reset.textContent='Уже есть пароль NOEON? Восстановить';

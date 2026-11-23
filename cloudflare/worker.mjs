@@ -71,7 +71,7 @@ async function firebase(env, action, payload) {
   if (!response.ok) throw new FirebaseProblem(String(result.error?.message || 'AUTH_ERROR').split(' : ')[0], response.status);
   return result;
 }
-async function authenticate(env, address, password, signup = false) {
+async function authenticate(env, address, password, signup = false, resend = true) {
   if (typeof password !== 'string' || !password || password.length > 256) throw new Problem('Введите пароль.');
   const payload = { email: address, password, returnSecureToken: true };
   let signed;
@@ -99,8 +99,8 @@ async function authenticate(env, address, password, signup = false) {
   const identity = lookup.users?.[0];
   if (!identity || identity.localId !== signed.localId || identity.email?.toLowerCase() !== address || identity.disabled) throw new Problem('Вход недоступен.', 403);
   if (!identity.emailVerified) {
-    await firebase(env, 'sendOobCode', { requestType: 'VERIFY_EMAIL', idToken: signed.idToken });
-    const pending = new Problem('Письмо подтверждения отправлено на вашу почту. Подтвердите адрес, вернитесь в это окно и повторите отправку формы.', 403);
+    if (resend) await firebase(env, 'sendOobCode', { requestType: 'VERIFY_EMAIL', idToken: signed.idToken });
+    const pending = new Problem(resend ? 'Мы отправили письмо со ссылкой на вашу почту. Откройте его, подтвердите адрес и вернитесь сюда: вход продолжится сам. Не пришло — проверьте «Спам».' : 'Почта ещё не подтверждена. Откройте ссылку из письма и вернитесь сюда.', 403);
     pending.code = 'VERIFY_EMAIL';
     throw pending;
   }
@@ -377,9 +377,11 @@ async function route(db, env, request, url, data, responseHeaders) {
       return [{ ok: true, message: 'Если аккаунт с этой почтой существует, письмо для восстановления пароля отправлено.' }, {}];
     }
     if (path.endsWith('/login')) {
-      const user = await one(db, 'SELECT * FROM users WHERE email=? AND active=1', [email(data.email)]);
-      if (!user) throw new Problem(CREDENTIALS_HELP, 401);
-      const identity = await authenticate(env, user.email, data.password);
+      const address = email(data.email);
+      const user = await one(db, 'SELECT * FROM users WHERE email=? AND active=1', [address]);
+      const identity = await authenticate(env, address, data.password, false, data.resend !== false);
+      // Пароль верный, но в Grammar профиля нет: единый аккаунт NOEON уже есть, не хватает связи с учителем.
+      if (!user) throw Object.assign(new Problem('Ваш аккаунт NOEON найден, но в Grammar вас ещё нет. Откройте ссылку-приглашение от учителя и войдите по ней с тем же паролем.', 403), { code: 'NO_PROFILE' });
       if (identity.id !== user.id) throw new Problem(CREDENTIALS_HELP, 401);
       return login(db, user);
     }
@@ -399,7 +401,7 @@ async function route(db, env, request, url, data, responseHeaders) {
     const studentEmail = email(invite.email || data.email);
     if (invite.email && data.email && email(data.email)!==studentEmail) throw new Problem('Эта ссылка приглашения выдана для другой почты. Получите новую ссылку у учителя.');
     if (await one(db,'SELECT id FROM users WHERE email=?',[studentEmail])) throw new Problem('Эта почта уже зарегистрирована. Войдите в свой кабинет.',409);
-    const { id } = await authenticate(env, studentEmail, data.password, true);
+    const { id } = await authenticate(env, studentEmail, data.password, true, data.resend !== false);
     // Batch is one transaction. The conditional insert prevents two uses of one invite.
     const result = await db.batch([
       prepare(db, `INSERT INTO users(id,email,name,role,teacher_id,active,created)
@@ -954,7 +956,7 @@ export default {
       let message = error instanceof Problem ? error.message : 'Не удалось выполнить действие.';
       if (!(error instanceof Problem) && /UNIQUE constraint failed/.test(error.message)) { status = 409; message = 'Этот аккаунт или запись уже существует.'; }
       if (status === 500) console.error('Grammar API error', error.name); // No submitted data, secrets or query values.
-      return new Response(JSON.stringify({ error: message, ...(error.code === 'VERIFY_EMAIL' ? { code: 'VERIFY_EMAIL' } : {}) }), { status, headers });
+      return new Response(JSON.stringify({ error: message, ...(['VERIFY_EMAIL', 'NO_PROFILE'].includes(error.code) ? { code: error.code } : {}) }), { status, headers });
     }
   }
 };

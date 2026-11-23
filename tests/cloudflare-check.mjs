@@ -126,7 +126,12 @@ try{
     assert.equal(login.user.email,'legacy@example.test');
     const nobody=await new Client().call('auth/login',{email:'nobody@example.test',password:'FictionalPassword!2026'});
     assert.equal(nobody.status,401);assert.match(nobody.data.error,/ссылку-приглашение/);
-    await teacher.ok('teacher/students/'+legacy.user.id+'/remove',{}).catch(()=>{});
+    identities.set('elsewhere@example.test',{id:'firebase-elsewhere-1',email:'elsewhere@example.test',password:'FictionalPassword!2026',token:'fictional-token-elsewhere',verified:true});
+    const noProfile=await new Client().call('auth/login',{email:'elsewhere@example.test',password:'FictionalPassword!2026'});
+    assert.equal(noProfile.status,403);assert.equal(noProfile.data.code,'NO_PROFILE');assert.match(noProfile.data.error,/аккаунт NOEON найден/);
+    identities.set('waiting@example.test',{id:'firebase-waiting-1',email:'waiting@example.test',password:'FictionalPassword!2026',token:'fictional-token-waiting',verified:false});
+    const quiet=await new Client().call('auth/login',{email:'waiting@example.test',password:'FictionalPassword!2026',resend:false});
+    assert.equal(quiet.data.code,'VERIFY_EMAIL');assert.match(quiet.data.error,/ещё не подтверждена/);
   }
   const openOne=await teacher.ok('teacher/invite',{}),openTwo=await teacher.ok('teacher/invite',{});
   const openClient=new Client(),openPayload={token:openOne.token,name:'Self-registered pupil',password:'FictionalPassword!2026',role:'teacher',teacher_id:'forged'};
