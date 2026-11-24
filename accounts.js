@@ -308,21 +308,25 @@ function renderAccountLogin() {
     try{await accountSignedIn(await accountRequest(setup?'auth/setup':'auth/login',{name:form.elements.name?.value,code:form.elements.code?.value,email:form.elements.email.value,password:form.elements.password.value}));}
     catch(error){showAccountError('#account-error',error);button.disabled=false;}
   });
-  if(account.authProvider==='firebase') {
-    const reset=document.createElement('button');reset.type='button';reset.className='button';reset.textContent='Забыли пароль?';
-    document.querySelector('#account-login-form').append(reset);
-    reset.addEventListener('click',async()=>{
-      const email=document.querySelector('#account-email');
-      if(!email.reportValidity() || !email.value.trim())return;
-      reset.disabled=true;
-      try {const result=await accountRequest('auth/reset',{email:email.value});showAccountMessage('#account-error',result.message,true);}
-      catch(error){showAccountError('#account-error',error);}
-      finally{reset.disabled=false;}
-    });
+  if(!setup) {
+    const forgot=document.createElement('button');forgot.type='button';forgot.className='button';forgot.textContent='Забыли пароль?';
+    document.querySelector('#account-login-form').append(forgot);
+    forgot.addEventListener('click',()=>showAccountMessage('#account-error','Напишите своему учителю: он пришлёт ссылку, по которой вы зададите новый пароль за полминуты.',true));
   }
   app.querySelectorAll('[data-demo-role]').forEach(button=>button.addEventListener('click',async()=>{
     button.disabled=true;try{await accountSignedIn(await accountRequest('auth/demo',{role:button.dataset.demoRole}));}catch(error){showAccountError('#account-error',error);button.disabled=false;}
   }));
+}
+async function renderReset(token) {
+  syncRouteNav();
+  if(!account.available){app.innerHTML='<p>Откройте приложение с сервером кабинетов.</p>';return;}
+  app.innerHTML=`${accountNotice()}<div class="reading account-login"><h1>Новый пароль</h1><p>Придумайте новый пароль. После этого вы сразу войдёте в кабинет.</p><form id="reset-form"><div class="field"><label for="reset-password">Новый пароль (не менее 8 символов)</label><input id="reset-password" name="password" type="password" required minlength="8" maxlength="256" autocomplete="new-password"></div><label class="show-password"><input type="checkbox" id="reset-show"> Показать пароль</label><p id="reset-error" role="alert"></p><button class="button primary">Сохранить пароль</button></form></div>`;
+  document.querySelector('#reset-show').addEventListener('change',event=>{document.querySelector('#reset-password').type=event.target.checked?'text':'password';});
+  document.querySelector('#reset-form').addEventListener('submit',async event=>{
+    event.preventDefault();const form=event.currentTarget;const button=form.querySelector('button');button.disabled=true;
+    try{await accountSignedIn(await accountRequest('auth/reset',{token,password:form.elements.password.value}));}
+    catch(error){showAccountError('#reset-error',error);button.disabled=false;}
+  });
 }
 async function renderJoin(token) {
   syncRouteNav();
@@ -421,7 +425,7 @@ async function renderActiveInvites() {
   }catch(error){if(container.isConnected&&account.user?.id===owner)container.textContent=error.message;}
 }
 function studentManagement(student) {
-  return `<details class="student-management"><summary>Управление учеником</summary><form id="student-rename"><label for="student-display-name">Имя, видимое учителю</label><input id="student-display-name" name="name" maxlength="200" required value="${escapeHtml(student.name)}"><button class="button" type="submit">Сохранить имя</button></form><button class="button" type="button" id="student-active">${student.active===false?'Включить ученика':'Отключить ученика'}</button><p id="student-manage-message" role="status"></p></details>`;
+  return `<details class="student-management"><summary>Управление учеником</summary><form id="student-rename"><label for="student-display-name">Имя, видимое учителю</label><input id="student-display-name" name="name" maxlength="200" required value="${escapeHtml(student.name)}"><button class="button" type="submit">Сохранить имя</button></form><button class="button" type="button" id="student-password">Ссылка для нового пароля</button><div id="student-password-link" role="status"></div><button class="button" type="button" id="student-active">${student.active===false?'Включить ученика':'Отключить ученика'}</button><p id="student-manage-message" role="status"></p></details>`;
 }
 function confirmStudentDisable(name) {
   return new Promise(resolve=>{
@@ -436,6 +440,16 @@ function bindStudentManagement(student) {
     event.preventDefault();const button=event.currentTarget.querySelector('button');button.disabled=true;
     try{await accountRequest(prefix+'/rename',{name:new FormData(event.currentTarget).get('name')});if(account.user?.id===owner&&location.hash===routeAtStart)await renderStudentAccount(student.id);}
     catch(error){if(button.isConnected){button.disabled=false;app.querySelector('#student-manage-message').textContent=error.message;}}
+  });
+  app.querySelector('#student-password').addEventListener('click',async event=>{
+    const button=event.currentTarget,box=app.querySelector('#student-password-link');button.disabled=true;
+    try{
+      const result=await accountRequest(prefix+'/password-reset',{});const url=location.origin+'/#reset/'+result.token;
+      box.innerHTML=`<p>Отправьте ученику эту ссылку. Она действует ${result.expires_in_days} дня и срабатывает один раз.</p><input readonly value="${escapeHtml(url)}" aria-label="Ссылка для нового пароля"><button class="button" type="button">Скопировать</button>`;
+      const input=box.querySelector('input'),copy=box.querySelector('button');input.addEventListener('focus',()=>input.select());
+      copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(url);copy.textContent='Скопировано';}catch{input.select();}});
+    }catch(error){app.querySelector('#student-manage-message').textContent=error.message;}
+    finally{if(button.isConnected)button.disabled=false;}
   });
   app.querySelector('#student-active').addEventListener('click',async event=>{
     const button=event.currentTarget,active=student.active===false;button.disabled=true;

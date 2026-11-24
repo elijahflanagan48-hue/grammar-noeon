@@ -110,25 +110,38 @@ try{
   assert.equal(quickJoin.user.role,'student');
   assert.equal((await teacher.ok('teacher/students')).students.length,3);
   {
-    // Почта уже есть в общем Firebase (например, из другого приложения NOEON) — понятные ответы вместо общего «неверный пароль».
-    identities.set('legacy@example.test',{id:'firebase-legacy-1',email:'legacy@example.test',password:'short1',token:'fictional-token-legacy',verified:true});
-    const clash=await teacher.ok('teacher/invite',{name:'Старый аккаунт',email:'legacy@example.test'});
-    const wrongOld=await new Client().call('auth/join',{token:clash.token,name:'Старый аккаунт',password:'AnotherFictional!2026'});
-    assert.equal(wrongOld.status,401);assert.match(wrongOld.data.error,/уже зарегистрирована в Grammar/);
-    const tooShort=await new Client().call('auth/join',{token:clash.token,name:'Старый аккаунт',password:'short2'});
-    assert.equal(tooShort.status,400);assert.match(tooShort.data.error,/не менее 8.*прежний пароль/);
-    const fresh=await teacher.ok('teacher/invite',{name:'Новый',email:'fresh@example.test'});
-    const weak=await new Client().call('auth/join',{token:fresh.token,name:'Новый',password:'short'});
+    // Собственные пароли: слабый пароль, занятая почта, неверный вход и одноразовая ссылка восстановления от учителя.
+    const fresh=await teacher.ok('teacher/invite',{});
+    const weak=await new Client().call('auth/join',{token:fresh.token,name:'Новый',email:'fresh@example.test',password:'short'});
     assert.equal(weak.status,400);assert.match(weak.data.error,/не менее 8/);
-    const legacy=await new Client().ok('auth/join',{token:clash.token,name:'Старый аккаунт',password:'short1'});
-    assert.equal(legacy.user.email,'legacy@example.test');
-    const login=await new Client().ok('auth/login',{email:'Legacy@Example.test ',password:'short1'});
-    assert.equal(login.user.email,'legacy@example.test');
+    const taken=await new Client().call('auth/join',{token:fresh.token,name:'Новый',email:'anna@example.test',password:'FictionalPassword!2026'});
+    assert.equal(taken.status,409);assert.match(taken.data.error,/Войти/);
+    const created=await new Client().ok('auth/join',{token:fresh.token,name:'Новый',email:'Fresh@Example.test ',password:'eight888'});
+    assert.equal(created.user.email,'fresh@example.test');
+    const stored=await db.prepare('SELECT id,pass_hash,pass_salt,pass_iter FROM users WHERE email=?').bind('fresh@example.test').first();
+    assert.ok(stored.pass_hash&&stored.pass_salt&&stored.pass_iter===100000&&!JSON.stringify(stored).includes('eight888'));
+    assert.equal((await new Client().call('auth/login',{email:'fresh@example.test',password:'eight888x'})).status,401);
+    assert.equal((await new Client().ok('auth/login',{email:' FRESH@example.test',password:'eight888'})).user.id,stored.id);
     const nobody=await new Client().call('auth/login',{email:'nobody@example.test',password:'FictionalPassword!2026'});
     assert.equal(nobody.status,401);assert.match(nobody.data.error,/ссылку-приглашение/);
-    identities.set('elsewhere@example.test',{id:'firebase-elsewhere-1',email:'elsewhere@example.test',password:'FictionalPassword!2026',token:'fictional-token-elsewhere',verified:true});
-    const noProfile=await new Client().call('auth/login',{email:'elsewhere@example.test',password:'FictionalPassword!2026'});
-    assert.equal(noProfile.status,403);assert.equal(noProfile.data.code,'NO_PROFILE');assert.match(noProfile.data.error,/аккаунт NOEON найден/);
+    // Ученик, созданный до перехода на собственные пароли, входит старым паролем один раз и переносится.
+    await db.prepare("INSERT INTO users(id,email,name,role,teacher_id,active,created) SELECT 'firebase-legacy-1','legacy@example.test','Старый','student',id,1,0 FROM users WHERE role='teacher'").run();
+    identities.set('legacy@example.test',{id:'firebase-legacy-1',email:'legacy@example.test',password:'short1',token:'fictional-token-legacy',verified:false});
+    assert.equal((await new Client().call('auth/login',{email:'legacy@example.test',password:'wrong-one'})).status,401);
+    assert.equal((await new Client().ok('auth/login',{email:'legacy@example.test',password:'short1'})).user.id,'firebase-legacy-1');
+    identities.delete('legacy@example.test');
+    assert.equal((await new Client().ok('auth/login',{email:'legacy@example.test',password:'short1'})).user.id,'firebase-legacy-1','после переноса Firebase не нужен');
+    // Забытый пароль: учитель присылает одноразовую ссылку.
+    assert.equal((await student.call('teacher/students/'+stored.id+'/password-reset',{})).status,403);
+    const link=await teacher.ok('teacher/students/'+stored.id+'/password-reset',{});
+    assert.ok(link.token&&link.expires_in_days===3);
+    assert.equal((await new Client().call('auth/reset',{token:link.token,password:'short'})).status,400);
+    const reset=await new Client().ok('auth/reset',{token:link.token,password:'NewFictional!2026'});
+    assert.equal(reset.user.id,stored.id);
+    assert.equal((await new Client().call('auth/reset',{token:link.token,password:'AnotherFictional!2026'})).status,410);
+    assert.equal((await new Client().call('auth/login',{email:'fresh@example.test',password:'eight888'})).status,401);
+    assert.equal((await new Client().ok('auth/login',{email:'fresh@example.test',password:'NewFictional!2026'})).user.id,stored.id);
+    assert.equal((await new Client().call('auth/reset',{token:'forged',password:'NewFictional!2026'})).status,410);
   }
   const openOne=await teacher.ok('teacher/invite',{}),openTwo=await teacher.ok('teacher/invite',{});
   const openClient=new Client(),openPayload={token:openOne.token,name:'Self-registered pupil',password:'FictionalPassword!2026',role:'teacher',teacher_id:'forged'};
@@ -384,7 +397,10 @@ try{
   assert.ok((await db.prepare('SELECT expires FROM sessions WHERE token=?').bind(sessionHash).first()).expires<seconds(),'An expired session must not be revived');
 
   assert.equal((await anonymous.call('auth/login',{email:'anna@example.test',password:'IncorrectPassword!2026'})).status,401);
-  await anonymous.ok('auth/reset',{email:'anna@example.test'});
+  assert.equal((await anonymous.call('auth/reset',{email:'anna@example.test'})).status,400,'без ссылки учителя пароль не сбросить');
+  assert.equal((await anonymous.call('auth/reset',{code:'wrong-code',email:'teacher@example.test',password:'NewFictional!2026'})).status,403);
+  assert.equal((await anonymous.ok('auth/reset',{code:'fictional-owner-code',email:'teacher@example.test',password:'OwnerNew!2026'})).user.role,'teacher');
+  assert.equal((await anonymous.ok('auth/login',{email:'teacher@example.test',password:'OwnerNew!2026'})).user.role,'teacher');
   for(let n=0;n<12;n++)await anonymous.call('auth/login',{email:'rate@example.test',password:'wrong'},{ip:'192.0.2.99'});
   assert.equal((await anonymous.call('auth/login',{email:'rate@example.test',password:'wrong'},{ip:'192.0.2.99'})).status,429);
   console.log('Local D1 checks passed: roles, ownership, invitations, CSRF, drafts, concurrent replay, trusted scoring, history pagination, sessions and login limits.');

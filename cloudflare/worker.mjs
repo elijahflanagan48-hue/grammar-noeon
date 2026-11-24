@@ -45,7 +45,7 @@ function equal(a, b) {
 function validatePassword(value) {
   if (typeof value !== 'string' || value.length < 8 || value.length > 256) throw new Problem('Пароль должен содержать от 8 до 256 символов.');
 }
-const CREDENTIALS_HELP = 'Неверная почта или пароль. Если вы ещё не регистрировались, откройте ссылку-приглашение от учителя. Если забыли пароль, нажмите «Забыли пароль?».';
+const CREDENTIALS_HELP = 'Неверная почта или пароль. Проверьте почту и пароль. Если вы ещё не регистрировались, откройте ссылку-приглашение от учителя. Если забыли пароль, попросите учителя прислать ссылку для нового.';
 class FirebaseProblem extends Problem {
   constructor(code, status) {
     const limited = /TOO_MANY|QUOTA_EXCEEDED/.test(code);
@@ -71,38 +71,32 @@ async function firebase(env, action, payload) {
   if (!response.ok) throw new FirebaseProblem(String(result.error?.message || 'AUTH_ERROR').split(' : ')[0], response.status);
   return result;
 }
-async function authenticate(env, address, password, signup = false, resend = true) {
-  if (typeof password !== 'string' || !password || password.length > 256) throw new Problem('Введите пароль.');
-  const payload = { email: address, password, returnSecureToken: true };
-  let signed;
-  // Минимум в 8 символов действует только при создании пароля. Войти можно с любым уже существующим
-  // (например, созданным раньше в другом приложении NOEON), иначе такие ученики не смогут даже попробовать.
-  const weak = password.length < 8;
-  if (signup) {
-    if (weak) {
-      try { signed = await firebase(env, 'signInWithPassword', payload); }
-      catch (error) { if (error.status === 429 || error.status === 503) throw error; throw new Problem('Пароль слишком короткий: нужно не менее 8 символов. Если вы уже регистрировались здесь, введите прежний пароль.'); }
-    } else {
-      try { signed = await firebase(env, 'signUp', payload); }
-      catch (error) {
-        // A verified identity may already exist after a retry or email confirmation.
-        if (error.code !== 'EMAIL_EXISTS') throw error;
-        try { signed = await firebase(env, 'signInWithPassword', payload); }
-        catch (inner) {
-          if (inner.status !== 401) throw inner;
-          throw new Problem('Эта почта уже зарегистрирована в Grammar с другим паролем. Введите прежний пароль или нажмите «Забыли пароль?» на странице входа.', 401);
-        }
-      }
-    }
-  } else signed = await firebase(env, 'signInWithPassword', payload);
-  const lookup = await firebase(env, 'lookup', { idToken: signed.idToken });
-  const identity = lookup.users?.[0];
-  if (!identity || identity.localId !== signed.localId || identity.email?.toLowerCase() !== address || identity.disabled) throw new Problem('Вход недоступен.', 403);
-  // Подтверждение почты не обязательно: доступ даёт ссылка-приглашение учителя. Для восстановления пароля письмо
-  // всё же отправляем один раз при создании аккаунта (без ожидания и без ошибок для ученика).
-  if (!identity.emailVerified && signup && resend) { try { await firebase(env, 'sendOobCode', { requestType: 'VERIFY_EMAIL', idToken: signed.idToken }); } catch {} }
-  return { id: identity.localId, email: identity.email.toLowerCase() };
+// Пароли хранит сам Worker: PBKDF2-SHA256 (100 000 итераций — максимум в Workers) + случайная соль.
+const PBKDF2_ITERATIONS = 100000;
+const b64 = bytes => btoa(String.fromCharCode(...new Uint8Array(bytes)));
+const unb64 = text => Uint8Array.from(atob(text), c => c.charCodeAt(0));
+async function derive(password, salt, iterations) {
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits']);
+  return new Uint8Array(await crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt, iterations }, key, 256));
 }
+async function hashPassword(password) {
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  return { pass_hash: b64(await derive(password, salt, PBKDF2_ITERATIONS)), pass_salt: b64(salt), pass_iter: PBKDF2_ITERATIONS };
+}
+async function checkPassword(row, password) {
+  const salt = row?.pass_salt ? unb64(row.pass_salt) : new Uint8Array(16);
+  const actual = await derive(String(password), salt, row?.pass_iter || PBKDF2_ITERATIONS);
+  const expected = row?.pass_hash ? unb64(row.pass_hash) : new Uint8Array(32);
+  let diff = actual.length ^ expected.length;
+  for (let i = 0; i < actual.length; i++) diff |= actual[i] ^ (expected[i] || 0);
+  return !!row?.pass_hash && diff === 0;
+}
+function newPassword(value) {
+  if (typeof value !== 'string' || value.length < 8) throw new Problem('Пароль слишком короткий: нужно не менее 8 символов.');
+  if (value.length > 256) throw new Problem('Пароль слишком длинный.');
+  return value;
+}
+const credentialsError = () => new Problem(CREDENTIALS_HELP, 401);
 const prepare = (db, sql, values = []) => db.prepare(sql).bind(...values);
 const one = (db, sql, values) => prepare(db, sql, values).first();
 const all = async (db, sql, values) => (await prepare(db, sql, values).all()).results;
@@ -361,35 +355,59 @@ async function route(db, env, request, url, data, responseHeaders) {
     return [{ ok: true }, {}];
   }
   if (path === '/api/auth/info' && method === 'GET') return [{ demo: false, local: false,
-    ready: !!(await one(db, "SELECT id FROM users WHERE role='teacher'")), authProvider: 'firebase', setupAvailable: !!env.OWNER_SETUP_CODE && !!env.FIREBASE_API_KEY }, {}];
+    ready: !!(await one(db, "SELECT id FROM users WHERE role='teacher'")), authProvider: 'password', setupAvailable: !!env.OWNER_SETUP_CODE }, {}];
   if (['/api/auth/login', '/api/auth/setup', '/api/auth/join', '/api/auth/reset'].includes(path) && method === 'POST') {
     const address = request.headers.get('CF-Connecting-IP') || 'local';
     await rateLimit(db, 'auth-global:' + digest(address), 60);
     const subject = path.endsWith('/login') || path.endsWith('/reset') ? data.email : path.endsWith('/join') ? data.token : 'owner';
     await rateLimit(db, 'auth-target:' + digest(address + ':' + path + ':' + String(subject).toLowerCase()), 12);
     if (path.endsWith('/reset')) {
-      const target = email(data.email);
-      try { await firebase(env, 'sendOobCode', { requestType: 'PASSWORD_RESET', email: target }); }
-      catch (error) { if (error.code !== 'EMAIL_NOT_FOUND') throw error; }
-      return [{ ok: true, message: 'Если аккаунт с этой почтой существует, письмо для восстановления пароля отправлено.' }, {}];
+      // Забытый пароль восстанавливает учитель (ссылка) или владелец по коду кабинета.
+      if (data.code) {
+        if (!env.OWNER_SETUP_CODE || !equal(data.code, env.OWNER_SETUP_CODE)) throw new Problem('Неверный код кабинета.', 403);
+        const teacher = await one(db, "SELECT * FROM users WHERE role='teacher' AND email=?", [email(data.email)]);
+        if (!teacher) throw credentialsError();
+        await run(db, 'UPDATE users SET pass_hash=?,pass_salt=?,pass_iter=? WHERE id=?', [...Object.values(await hashPassword(newPassword(data.password))), teacher.id]);
+        await run(db, 'DELETE FROM sessions WHERE user_id=?', [teacher.id]);
+        return login(db, teacher);
+      }
+      const hash = digest(clean(data.token)), time = now();
+      const reset = await one(db, 'SELECT r.user_id FROM password_resets r JOIN users u ON u.id=r.user_id WHERE r.token=? AND r.used=0 AND r.expires>? AND u.active=1', [hash, time]);
+      if (!reset) throw new Problem('Ссылка для нового пароля уже использована или устарела. Попросите учителя прислать новую.', 410);
+      const fields = await hashPassword(newPassword(data.password));
+      await db.batch([
+        prepare(db, 'UPDATE users SET pass_hash=?,pass_salt=?,pass_iter=? WHERE id=?', [fields.pass_hash, fields.pass_salt, fields.pass_iter, reset.user_id]),
+        prepare(db, 'UPDATE password_resets SET used=1 WHERE token=?', [hash]),
+        prepare(db, 'DELETE FROM sessions WHERE user_id=?', [reset.user_id])
+      ]);
+      return login(db, await one(db, 'SELECT * FROM users WHERE id=?', [reset.user_id]));
     }
     if (path.endsWith('/login')) {
       const address = email(data.email);
-      const row = await one(db, 'SELECT * FROM users WHERE email=?', [address]), user = row?.active ? row : null;
-      const identity = await authenticate(env, address, data.password, false, data.resend !== false);
-      // Пароль верный, но в Grammar профиля нет: единый аккаунт NOEON уже есть, не хватает связи с учителем.
-      if (row && !row.active) throw new Problem('Этот аккаунт отключён. Напишите учителю.', 401);
-      if (!user) throw Object.assign(new Problem('Ваш аккаунт NOEON найден, но в Grammar вас ещё нет. Откройте ссылку-приглашение от учителя и войдите по ней с тем же паролем.', 403), { code: 'NO_PROFILE' });
-      if (identity.id !== user.id) throw new Problem(CREDENTIALS_HELP, 401);
-      return login(db, user);
+      const row = await one(db, 'SELECT * FROM users WHERE email=?', [address]);
+      if (typeof data.password !== 'string' || !data.password || data.password.length > 256) throw new Problem('Введите пароль.');
+      let ok = await checkPassword(row, data.password);
+      // Аккаунты, созданные до перехода на собственные пароли, проверяем в Firebase один раз и переносим пароль сюда.
+      if (!ok && row && !row.pass_hash && env.FIREBASE_API_KEY) {
+        try {
+          const legacy = await firebase(env, 'signInWithPassword', { email: address, password: data.password, returnSecureToken: true });
+          if (legacy.localId === row.id) {
+            const fields = await hashPassword(data.password);
+            await run(db, 'UPDATE users SET pass_hash=?,pass_salt=?,pass_iter=? WHERE id=?', [fields.pass_hash, fields.pass_salt, fields.pass_iter, row.id]);
+            ok = true;
+          }
+        } catch (error) { if (error.status === 429 || error.status === 503) throw error; }
+      }
+      if (!ok) throw credentialsError();
+      if (!row.active) throw new Problem('Этот аккаунт отключён. Напишите учителю.', 401);
+      return login(db, row);
     }
     if (path.endsWith('/setup')) {
       if (!env.OWNER_SETUP_CODE || !equal(data.code, env.OWNER_SETUP_CODE)) throw new Problem('Неверный код создания кабинета.', 403);
       if (await one(db, "SELECT id FROM users WHERE role='teacher'")) throw new Problem('Кабинет учителя уже создан.', 409);
-      const address = email(data.email), name = clean(data.name);
-      const identity = await authenticate(env, address, data.password, true);
-      const user = { id: identity.id, email: address, name, role: 'teacher' };
-      await run(db, 'INSERT INTO users(id,email,name,role,teacher_id,active,created) VALUES(?,?,?,?,NULL,1,?)', [user.id, user.email, user.name, user.role, now()]);
+      const address = email(data.email), name = clean(data.name), fields = await hashPassword(newPassword(data.password));
+      const user = { id: crypto.randomUUID(), email: address, name, role: 'teacher' };
+      await run(db, 'INSERT INTO users(id,email,name,role,teacher_id,active,created,pass_hash,pass_salt,pass_iter) VALUES(?,?,?,?,NULL,1,?,?,?,?)', [user.id, user.email, user.name, user.role, now(), fields.pass_hash, fields.pass_salt, fields.pass_iter]);
       return login(db, user);
     }
     const inviteHash = digest(clean(data.token)), time = now();
@@ -398,13 +416,13 @@ async function route(db, env, request, url, data, responseHeaders) {
     const name = clean(data.name || invite.name);
     const studentEmail = email(invite.email || data.email);
     if (invite.email && data.email && email(data.email)!==studentEmail) throw new Problem('Эта ссылка приглашения выдана для другой почты. Получите новую ссылку у учителя.');
-    if (await one(db,'SELECT id FROM users WHERE email=?',[studentEmail])) throw new Problem('Эта почта уже зарегистрирована. Войдите в свой кабинет.',409);
-    const { id } = await authenticate(env, studentEmail, data.password, true, data.resend !== false);
+    if (await one(db,'SELECT id FROM users WHERE email=?',[studentEmail])) throw new Problem('Эта почта уже зарегистрирована. Нажмите «Войти» под формой.',409);
+    const fields = await hashPassword(newPassword(data.password)), id = crypto.randomUUID();
     // Batch is one transaction. The conditional insert prevents two uses of one invite.
     const result = await db.batch([
-      prepare(db, `INSERT INTO users(id,email,name,role,teacher_id,active,created)
-        SELECT ?,?,?,'student',i.teacher_id,1,? FROM invites i
-        WHERE i.token=? AND i.used=0 AND i.revoked=0 AND i.expires>? AND EXISTS(SELECT 1 FROM users u WHERE u.id=i.teacher_id AND u.active=1)`, [id, studentEmail, name, time, inviteHash, now()]),
+      prepare(db, `INSERT INTO users(id,email,name,role,teacher_id,active,created,pass_hash,pass_salt,pass_iter)
+        SELECT ?,?,?,'student',i.teacher_id,1,?,?,?,? FROM invites i
+        WHERE i.token=? AND i.used=0 AND i.revoked=0 AND i.expires>? AND EXISTS(SELECT 1 FROM users u WHERE u.id=i.teacher_id AND u.active=1)`, [id, studentEmail, name, time, fields.pass_hash, fields.pass_salt, fields.pass_iter, inviteHash, now()]),
       prepare(db, 'UPDATE invites SET used=1 WHERE token=? AND EXISTS(SELECT 1 FROM users WHERE id=?)', [inviteHash, id])
     ]);
     if (!result[0].meta.changes) throw new Problem('Эта ссылка уже использована или устарела. Если вы уже регистрировались, просто войдите. Если нет, попросите у учителя новую ссылку.', 410);
@@ -677,6 +695,15 @@ async function route(db, env, request, url, data, responseHeaders) {
       await db.batch(commands);
     }
     return [{ok:true},{}];
+  }
+  const resetStudent=path.match(/^\/api\/teacher\/students\/([\w-]+)\/password-reset$/);
+  if(resetStudent&&method==='POST') {
+    const student=await ownStudent(db,user,resetStudent[1]), raw=token();
+    await db.batch([
+      prepare(db,'UPDATE password_resets SET used=1 WHERE user_id=?',[student.id]),
+      prepare(db,'INSERT INTO password_resets(token,user_id,expires,used) VALUES(?,?,?,0)',[digest(raw),student.id,now()+3*86400])
+    ]);
+    return [{token:raw,expires_in_days:3},{}];
   }
   if (path === '/api/teacher/invite' && method === 'POST') {
     if (user.role !== 'teacher') throw new Problem('Доступ только преподавателю.', 403);

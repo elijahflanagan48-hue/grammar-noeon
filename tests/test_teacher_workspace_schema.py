@@ -13,7 +13,7 @@ class TeacherWorkspaceSchemaTest(unittest.TestCase):
         upgraded.executescript(previous)
         upgraded.execute("INSERT INTO users(id,email,name,role,created) VALUES('teacher','teacher@example.test','Teacher','teacher',1)")
         upgraded.execute("INSERT INTO practice(id,user_id,items,answers,created,completed,score,max_score) VALUES('old','teacher','[]','[]',1,2,7,10)")
-        for name in ['0010_teacher_library.sql', '0011_task_issues.sql']:
+        for name in ['0010_teacher_library.sql', '0011_task_issues.sql', '0012_local_passwords.sql']:
             upgraded.executescript((ROOT / 'cloudflare/migrations' / name).read_text())
         self.assertEqual(upgraded.execute('SELECT score,max_score,completed FROM practice WHERE id=?', ['old']).fetchone(), (7, 10, 2))
         fresh = sqlite3.connect(':memory:')

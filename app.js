@@ -246,7 +246,7 @@ function setNav(section) {
 const ROUTE_NAV = {
   students: "students", home: "home", grammar: "theory", theory: "theory", practice: "theory",
   tests:"theory", "test-preview":"theory", "test-attempt":"theory", session: "theory", assign: "theory", edit: "theory", results: "results",
-  report: "results", profile: "profile", student: "profile", join: "profile",
+  report: "results", profile: "profile", student: "profile", join: "profile", reset: "profile",
   "teacher-library":"profile", "task-issues":"profile", notifications: "profile", work: "results", "student-work": "profile", "review-queue":"students",
 };
 function syncRouteNav() {
@@ -1991,7 +1991,7 @@ async function route() {
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   const parts = location.hash.replace(/^#/, "").split("/").filter(Boolean);
   const section = parts[0] || "home";
-  const titles = {"teacher-library":"Библиотека наборов","task-issues":"Сообщения о заданиях",tests:"Тесты","test-preview":"Просмотр теста","test-attempt":"Проверочный тест",home:"Сегодня",grammar:"Темы",practice:"Практика",session:"Задание",results:"Результаты",report:"Отчёт",student:"Ученик",notifications:"Уведомления","review-queue":"Проверка переводов",students:"Ученики",profile:"Профиль",join:"Приглашение",assign:"Назначить задание",edit:"Редактировать задание"};
+  const titles = {"teacher-library":"Библиотека наборов","task-issues":"Сообщения о заданиях",tests:"Тесты","test-preview":"Просмотр теста","test-attempt":"Проверочный тест",home:"Сегодня",grammar:"Темы",practice:"Практика",session:"Задание",results:"Результаты",report:"Отчёт",student:"Ученик",notifications:"Уведомления","review-queue":"Проверка переводов",students:"Ученики",profile:"Профиль",join:"Приглашение",reset:"Новый пароль",assign:"Назначить задание",edit:"Редактировать задание"};
   document.title = `${titles[section] || "Grammar NOEON"} — Grammar NOEON`;
   // Анимация входа стартует сразу (на заглушке), а не после загрузки данных, иначе готовый экран «подпрыгивает».
   app.classList.remove('viewin');void app.offsetWidth;app.classList.add('viewin');
@@ -2015,6 +2015,7 @@ async function route() {
     else if (section === "results") { if (account.user && parts[1]) await renderOwnReport(parts[1]); else if (account.user) await renderAccountResults(); else renderResults(); }
     else if (section === "profile") await renderProfile();
     else if (section === "join") await renderJoin(parts[1] || "");
+    else if (section === "reset") await renderReset(parts[1] || "");
     else if (section === "student") await renderStudentAccount(parts[1] || "");
     else if (section === "assign") await renderAssignmentForm(parts[1] || "", parts[2]);
     else if (section === "edit") await renderAssignmentEditor(parts[1] || "",parts[2] || "");
@@ -2070,7 +2071,7 @@ function syncScreenChrome() {
   document.getElementById('screen-back').hidden=root;
   document.querySelector('.site-header .brand').hidden=route!=='home';
   title.hidden=route==='home';
-  const names={'teacher-library':'Библиотека наборов','task-issues':'Сообщения о заданиях',tests:'Тесты','test-preview':'Просмотр теста','test-attempt':'Проверочный тест',home:'Сегодня',grammar:'Темы',results:'Результаты',profile:'Профиль',students:'Ученики',student:'Ученик',theory:'Теория',practice:'Практика',report:'Отчёт',work:'Работа','student-work':'Работа ученика',notifications:'Уведомления','review-queue':'Проверка переводов',assign:'Назначить задание',edit:'Изменить задание',join:'Приглашение'};
+  const names={'teacher-library':'Библиотека наборов','task-issues':'Сообщения о заданиях',tests:'Тесты','test-preview':'Просмотр теста','test-attempt':'Проверочный тест',home:'Сегодня',grammar:'Темы',results:'Результаты',profile:'Профиль',students:'Ученики',student:'Ученик',theory:'Теория',practice:'Практика',report:'Отчёт',work:'Работа','student-work':'Работа ученика',notifications:'Уведомления','review-queue':'Проверка переводов',assign:'Назначить задание',edit:'Изменить задание',join:'Приглашение',reset:"Новый пароль"};
   const short={reported:'Косвенная речь',foundations:'Основы',present:'Present',past:'Past',future:'Future',contrasts:'Сопоставления',comparison:'Сравнения',passive:'Пассив',modals:'Модальные глаголы',conditionals:'Conditionals'};
   const text=route==='session'?document.title.replace(' — Grammar NOEON',''):route==='theory'?short[parts[1]]||'Теория':route==='results'&&parts[1]?'Отчёт':route==='grammar'&&parts[1]?GRAMMAR_SECTIONS[parts[1]]?.title||'Грамматика':names[route]||'Grammar NOEON';
   if(title.textContent!==text)title.textContent=text;
