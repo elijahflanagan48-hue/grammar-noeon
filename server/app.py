@@ -44,6 +44,8 @@ CREATE TABLE IF NOT EXISTS practice_format_events(id TEXT PRIMARY KEY,practice_i
 
 def learner_item(item):
     visible={key:item[key] for key in ('id','type','prompt','title','options','cefr_estimate','content_version') if key in item}
+    if item.get('bankgen_id'):
+        visible.update({key:item[key] for key in ('topic','level','instruction_ru','response_contract','layout','practice_group') if key in item})
     if item.get('topic') == 'conditionals':
         visible.update({key:item[key] for key in ('topic','level','instruction_ru','source_format','blocks','starts','endings','groups','sort_items','word_bank','sentences') if key in item})
     if 'blanks' in item:visible['blanks']=[{key:blank[key] for key in ('id','base_verb','base_adjective','supplied_words') if key in blank} for blank in item['blanks']]
@@ -154,7 +156,7 @@ class GrammarApp:
         return [self.practice_view(r) for r in db.execute('SELECT *,EXISTS(SELECT 1 FROM assignments a JOIN assignment_controls c ON c.assignment_id=a.id WHERE a.practice_id=practice.id AND c.cancelled=1) AS cancelled FROM practice WHERE user_id=? ORDER BY created DESC',(ident,))]
     def practice_view(self,row):
         items=json.loads(row['items']);answers=json.loads(row['answers']);fields=[f for a in answers for f in a['fields']]
-        return {'id':row['id'],'date':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime(row['completed'] or row['created'])),'status':'completed' if row['completed'] else 'cancelled' if 'cancelled' in row.keys() and row['cancelled'] else 'draft','total':len(items),'correct':sum(a['correct'] for a in answers),'score':sum(f['correct'] for f in fields),'maxScore':sum(f['verified'] for f in fields),'pending':sum(not f['verified'] for f in fields),'levels':list(dict.fromkeys(i['cefr_estimate'] for i in items)),'types':list(dict.fromkeys(i['type'] for i in items)),'answers':answers,'index':len(answers),'revision':row['revision'],'draft':json.loads(row['draft']) if row['draft'] else None}
+        return {'id':row['id'],'date':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime(row['completed'] or row['created'])),'status':'completed' if row['completed'] else 'cancelled' if 'cancelled' in row.keys() and row['cancelled'] else 'draft','total':len(items),'correct':sum(a['correct'] for a in answers),'score':sum(f['correct'] for f in fields),'maxScore':sum(f['verified'] for f in fields),'pending':sum(not f['verified'] for f in fields),'levels':list(dict.fromkeys(i.get('level') or i.get('cefr_estimate','unrated') for i in items)),'types':list(dict.fromkeys(i['type'] for i in items)),'answers':answers,'index':len(answers),'revision':row['revision'],'draft':json.loads(row['draft']) if row['draft'] else None}
     def assigned_sentences(self,db,student_id):
         used={}
         for row in db.execute('SELECT a.id,p.items FROM assignments a JOIN practice p ON p.id=a.practice_id WHERE a.student_id=? ORDER BY a.created,a.id',(student_id,)):

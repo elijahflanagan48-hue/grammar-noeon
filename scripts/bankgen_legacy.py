@@ -22,8 +22,10 @@ CELL_OF = {
               'noun_dual_meaning': 'N3', 'noun_collective': 'N3', 'noun_possessive': 'N4',
               'noun_quantifiers': 'N5', 'noun_compound': 'N6', 'noun_attributive': 'N6',
               'noun_text': 'N7', 'noun_mixed': 'N7'},
+    'comparison': {'cmp_forms': ['C1', 'C2', 'C6', 'C7'], 'cmp_development': ['C5', 'C9'],
+                   'cmp_equality': ['C3', 'C9'], 'cmp_precision': ['C4', 'C7'], 'cmp_superlatives': ['C8', 'C1']},
 }
-SEED_PREFIX = {'nouns': 'nl'}
+SEED_PREFIX = {'nouns': 'nl', 'comparison': 'cl'}
 
 
 def key(t):
@@ -54,6 +56,8 @@ def main():
     picked, taken = collections.defaultdict(list), []
     for x in sorted(old, key=lambda x: (rank[x['level']], x['id'])):
         cell = next((cmap[t] for t in x.get('tags', []) if t in cmap), None)
+        if isinstance(cell, list):
+            cell = cell[int(re.findall(r'\d+', x['id'])[-1]) % len(cell)]
         if not cell or x['type'] == 'translation_ru_en':
             continue
         if la.over_limit(x, la.hard_words(x, names_pool)):

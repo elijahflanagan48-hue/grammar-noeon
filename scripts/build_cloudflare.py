@@ -30,7 +30,7 @@ def build():
     stamp_service_worker(PUBLIC / 'sw.js', PUBLIC, release_tag(PUBLIC))
     source = (ROOT / 'app.js').read_text()
     (GENERATED / 'assignment-keys.mjs').write_text(source[source.index('function assignmentSentenceKeys('):source.index('\nfunction uniqueAssignmentPool(')] + '\nexport { assignmentSentenceKeys };\n')
-    selection = source[source.index('const TENSE_MAP ='):source.index('const account =')] + source[source.index('const COMPARISON_TARGETS ='):source.index('function practiceSettings(')]
+    selection = source[source.index('const TENSE_MAP ='):source.index('const account =')] + source[source.index('const COMPARISON_LEGACY_TARGETS ='):source.index('function practiceSettings(')]
     (GENERATED / 'selection.mjs').write_text(selection + '\nexport { updatedPracticeSettings, diversifyOrder, varietySkeleton, balancedPractice, exerciseTenses, PRACTICE_TENSES, exerciseSection, targetSection, supportedResponseContract };\n')
     normalise = source[source.index('const normalise ='):source.index('\nfunction inlineMarkdown')]
     accepted = source[source.index('function acceptedFor('):source.index('\nfunction answerControls(')]

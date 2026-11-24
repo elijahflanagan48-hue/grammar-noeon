@@ -1,0 +1,5273 @@
+[
+  {
+    "id": "cp-C6-009",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-09",
+    "bankgen_format": "gap",
+    "prompt": "Do adults who keep their phones beside the bed sleep (badly) than people who switch them off?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречие badly имеет неправильную сравнительную степень worse (формы more badly не существует).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "health",
+    "seed_id": "cp-0328",
+    "skeleton": "do w who w their w the w G than w who w them w ?",
+    "practice_tenses": [
+      "cp_irregular"
+    ],
+    "tags": [
+      "cp_irregular"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-009-b1",
+        "answer": "worse",
+        "accepted_answers": [
+          "worse"
+        ],
+        "base_verb": "badly",
+        "supplied_words": [
+          "badly"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Наречие badly имеет неправильную сравнительную степень worse (формы more badly не существует).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Do adults who keep their phones beside the bed sleep worse than people who switch them off?"
+  },
+  {
+    "id": "cp-C6-010",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-10",
+    "bankgen_format": "gap",
+    "prompt": "Heavy rain turned the dig into mud, and we have (few) clean brushes than we ordered.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "С исчисляемым существительным brushes во множественном числе используется fewer, а не less.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "history",
+    "seed_id": "cp-0409",
+    "skeleton": "w the w into w , and we have G w than we w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-010-b1",
+        "answer": "fewer",
+        "accepted_answers": [
+          "fewer"
+        ],
+        "base_verb": "few",
+        "supplied_words": [
+          "few"
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "С исчисляемым существительным brushes во множественном числе используется fewer, а не less.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Heavy rain turned the dig into mud, and we have fewer clean brushes than we ordered."
+  },
+  {
+    "id": "cp-C6-011",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-11",
+    "bankgen_format": "gap",
+    "prompt": "Weekend beginners in Lola's art class pick bright green paint (often) than pale colours.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречие частотности often образует сравнительную степень с помощью more: more often.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "arts",
+    "seed_id": "cp-0806",
+    "skeleton": "w in w G than w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-011-b1",
+        "answer": "more often",
+        "accepted_answers": [
+          "more often"
+        ],
+        "base_verb": "often",
+        "supplied_words": [
+          "often"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие частотности often образует сравнительную степень с помощью more: more often.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Weekend beginners in Lola's art class pick bright green paint more often than pale colours."
+  },
+  {
+    "id": "cp-C6-012",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-12",
+    "bankgen_format": "gap",
+    "prompt": "Walking pupils reach the village school gate (safely) than before thanks to the new crossing.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол reach описывается наречием safely; его сравнительная степень строится через more: more safely.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "school",
+    "seed_id": "cp-1043",
+    "skeleton": "w the w G than before w to the w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-012-b1",
+        "answer": "more safely",
+        "accepted_answers": [
+          "more safely"
+        ],
+        "base_verb": "safely",
+        "supplied_words": [
+          "safely"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Глагол reach описывается наречием safely; его сравнительная степень строится через more: more safely.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Walking pupils reach the village school gate more safely than before thanks to the new crossing."
+  },
+  {
+    "id": "cp-C6-013",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-13",
+    "bankgen_format": "gap",
+    "prompt": "Why do my overseas book parcels arrive (slowly) this autumn, while the boxes look thinner?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречие на -ly образует сравнительную степень с more (more slowly); в неформальной речи встречается и slower.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-0635",
+    "skeleton": "why do my w G this w , while the w ?",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-013-b1",
+        "answer": "more slowly",
+        "accepted_answers": [
+          "more slowly",
+          "slower"
+        ],
+        "base_verb": "slowly",
+        "supplied_words": [
+          "slowly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие на -ly образует сравнительную степень с more (more slowly); в неформальной речи встречается и slower.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Why do my overseas book parcels arrive more slowly this autumn, while the boxes look thinner?"
+  },
+  {
+    "id": "cp-C6-014",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-14",
+    "bankgen_format": "gap",
+    "prompt": "Although the solar sea sensors are smaller than the heavy old cables, they report tide heights (reliably) during winter storms.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Действие глагола report характеризуется наречием reliably, сравнительная степень которого — more reliably.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "science",
+    "seed_id": "cp-0815",
+    "skeleton": "w the w are w than the w , they w G w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-014-b1",
+        "answer": "more reliably",
+        "accepted_answers": [
+          "more reliably"
+        ],
+        "base_verb": "reliably",
+        "supplied_words": [
+          "reliably"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Действие глагола report характеризуется наречием reliably, сравнительная степень которого — more reliably.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Although the solar sea sensors are smaller than the heavy old cables, they report tide heights more reliably during winter storms."
+  },
+  {
+    "id": "cp-C6-015",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-15",
+    "bankgen_format": "gap",
+    "prompt": "Cooking warm oats before morning lectures isn't hard, and it helps me listen (well) and work (steadily) until lunch.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Неправильное наречие well меняется на better (не more good), а наречие на -ly steadily требует more steadily.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-0605",
+    "skeleton": "w before w , and it w me w G and w G until w .",
+    "practice_tenses": [
+      "cp_irregular",
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_irregular",
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-015-b1",
+        "answer": "better",
+        "accepted_answers": [
+          "better"
+        ],
+        "base_verb": "well",
+        "supplied_words": [
+          "well"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Неправильное наречие well меняется на better (не more good), а наречие на -ly steadily требует more steadily.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-015-b2",
+        "answer": "more steadily",
+        "accepted_answers": [
+          "more steadily"
+        ],
+        "base_verb": "steadily",
+        "supplied_words": [
+          "steadily"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Неправильное наречие well меняется на better (не more good), а наречие на -ly steadily требует more steadily.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Cooking warm oats before morning lectures isn't hard, and it helps me listen better and work more steadily until lunch."
+  },
+  {
+    "id": "cp-C6-016",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-16",
+    "bankgen_format": "gap",
+    "prompt": "Because the city replaced the bumpy bricks with smooth paths, my bike rolls (gently) on rainy mornings than it used to.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол rolls требует наречия образа действия в сравнительной степени — more gently.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "travel",
+    "seed_id": "cp-0711",
+    "skeleton": "because the w the w with w , my w G on w than it w to .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-016-b1",
+        "answer": "more gently",
+        "accepted_answers": [
+          "more gently"
+        ],
+        "base_verb": "gently",
+        "supplied_words": [
+          "gently"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Глагол rolls требует наречия образа действия в сравнительной степени — more gently.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Because the city replaced the bumpy bricks with smooth paths, my bike rolls more gently on rainy mornings than it used to."
+  },
+  {
+    "id": "cp-C6-017",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-17",
+    "bankgen_format": "gap",
+    "prompt": "Urska noticed that pale morning fog stays (long) over the cold lake in November and doesn't clear (quickly) as it does in July.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Короткое наречие long образует форму longer, а в отрицательном сравнении с as используется not as quickly as.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "nature",
+    "seed_id": "cp-1006",
+    "skeleton": "w that w G over the w in w and w G as it does in w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_as_as"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_as_as"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-017-b1",
+        "answer": "longer",
+        "accepted_answers": [
+          "longer"
+        ],
+        "base_verb": "long",
+        "supplied_words": [
+          "long"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Короткое наречие long образует форму longer, а в отрицательном сравнении с as используется not as quickly as.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-017-b2",
+        "answer": "as quickly",
+        "accepted_answers": [
+          "as quickly",
+          "so quickly"
+        ],
+        "base_verb": "quickly",
+        "supplied_words": [
+          "quickly"
+        ],
+        "tense_or_construction": "cp_as_as",
+        "explanation_ru": "Короткое наречие long образует форму longer, а в отрицательном сравнении с as используется not as quickly as.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Urska noticed that pale morning fog stays longer over the cold lake in November and doesn't clear as quickly as it does in July."
+  },
+  {
+    "id": "cp-C6-018",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-18",
+    "bankgen_format": "mini",
+    "prompt": "Our town choir meets on Thursdays in the hall. After slow warm-ups, we sing (well) than in autumn. We don't shout, and everyone listens (carefully) than before.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "После глаголов sing и listen нужны наречия: well имеет неправильную форму better, а carefully образует more carefully.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "arts",
+    "seed_id": "cp-0736",
+    "skeleton": "our w on w in the w . after w , we w G than in w . we w , and w G than before .",
+    "practice_tenses": [
+      "cp_irregular",
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_irregular",
+      "cp_adverb"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-018-b1",
+        "answer": "better",
+        "accepted_answers": [
+          "better"
+        ],
+        "base_verb": "well",
+        "supplied_words": [
+          "well"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "После глаголов sing и listen нужны наречия: well имеет неправильную форму better, а carefully образует more carefully.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-018-b2",
+        "answer": "more carefully",
+        "accepted_answers": [
+          "more carefully"
+        ],
+        "base_verb": "carefully",
+        "supplied_words": [
+          "carefully"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "После глаголов sing и listen нужны наречия: well имеет неправильную форму better, а carefully образует more carefully.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Our town choir meets on Thursdays in the hall. After slow warm-ups, we sing better than in autumn. We don't shout, and everyone listens more carefully than before."
+  },
+  {
+    "id": "cp-C6-019",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-19",
+    "bankgen_format": "mini",
+    "prompt": "Spiros loves baking lemon biscuits in his sunny kitchen. He puts the mix in the fridge before he rolls it. Then the biscuits bake (lightly) and keep their shape (long) than before.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Наречие на -ly lightly принимает more (more lightly), а короткое наречие long образует форму на -er (longer).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "food",
+    "seed_id": "cp-1535",
+    "skeleton": "w in his w . he w the w in the w before he w it . w the w G and w their w G than before .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-019-b1",
+        "answer": "more lightly",
+        "accepted_answers": [
+          "more lightly"
+        ],
+        "base_verb": "lightly",
+        "supplied_words": [
+          "lightly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие на -ly lightly принимает more (more lightly), а короткое наречие long образует форму на -er (longer).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-019-b2",
+        "answer": "longer",
+        "accepted_answers": [
+          "longer"
+        ],
+        "base_verb": "long",
+        "supplied_words": [
+          "long"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие на -ly lightly принимает more (more lightly), а короткое наречие long образует форму на -er (longer).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Spiros loves baking lemon biscuits in his sunny kitchen. He puts the mix in the fridge before he rolls it. Then the biscuits bake more lightly and keep their shape longer than before."
+  },
+  {
+    "id": "cp-C6-020",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-20",
+    "bankgen_format": "mini",
+    "prompt": "Strong winds delayed four afternoon flights at our small airport. The staff don't have (many) chairs as there are passengers waiting here. Nobody seems to have (much) patience as they did at noon, either! Can't the wind drop a bit (soon)?",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "С исчисляемым chairs перед as нужно as many, с неисчисляемым patience — as much, а короткое наречие soon даёт sooner.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-0149",
+    "skeleton": "w at our w . the w have G w as there are w here . w to have G w as they did at w , w ! w the w a w G ?",
+    "practice_tenses": [
+      "cp_as_many_much",
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_as_many_much",
+      "cp_adverb"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-020-b1",
+        "answer": "as many",
+        "accepted_answers": [
+          "as many",
+          "so many"
+        ],
+        "base_verb": "many",
+        "supplied_words": [
+          "many"
+        ],
+        "tense_or_construction": "cp_as_many_much",
+        "explanation_ru": "С исчисляемым chairs перед as нужно as many, с неисчисляемым patience — as much, а короткое наречие soon даёт sooner.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-020-b2",
+        "answer": "as much",
+        "accepted_answers": [
+          "as much",
+          "so much"
+        ],
+        "base_verb": "much",
+        "supplied_words": [
+          "much"
+        ],
+        "tense_or_construction": "cp_as_many_much",
+        "explanation_ru": "С исчисляемым chairs перед as нужно as many, с неисчисляемым patience — as much, а короткое наречие soon даёт sooner.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-020-b3",
+        "answer": "sooner",
+        "accepted_answers": [
+          "sooner"
+        ],
+        "base_verb": "soon",
+        "supplied_words": [
+          "soon"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "С исчисляемым chairs перед as нужно as many, с неисчисляемым patience — as much, а короткое наречие soon даёт sooner.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Strong winds delayed four afternoon flights at our small airport. The staff don't have as many chairs as there are passengers waiting here. Nobody seems to have as much patience as they did at noon, either! Can't the wind drop a bit sooner?"
+  },
+  {
+    "id": "cp-C6-021",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-21",
+    "bankgen_format": "mini",
+    "prompt": "I started practising slow turns at the local pool on Tuesdays. At first my coach shook his head because I rushed every wall. Since I slowed down, I breathe (calmly), push off (hard), and finish each lap (fast) than in winter.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Наречие calmly требует more calmly, а короткие наречия hard и fast образуют формы на -er: harder (не hardlier) и faster.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "sport",
+    "seed_id": "cp-0721",
+    "skeleton": "i w at the w on w . at w my w his w because i w EVERY_WALL . SINCE i w , i w G , w G , and w each w G than in w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_verb_comparison"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_verb_comparison"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-021-b1",
+        "answer": "more calmly",
+        "accepted_answers": [
+          "more calmly"
+        ],
+        "base_verb": "calmly",
+        "supplied_words": [
+          "calmly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие calmly требует more calmly, а короткие наречия hard и fast образуют формы на -er: harder (не hardlier) и faster.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-021-b2",
+        "answer": "harder",
+        "accepted_answers": [
+          "harder"
+        ],
+        "base_verb": "hard",
+        "supplied_words": [
+          "hard"
+        ],
+        "tense_or_construction": "cp_verb_comparison",
+        "explanation_ru": "Наречие calmly требует more calmly, а короткие наречия hard и fast образуют формы на -er: harder (не hardlier) и faster.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-021-b3",
+        "answer": "faster",
+        "accepted_answers": [
+          "faster"
+        ],
+        "base_verb": "fast",
+        "supplied_words": [
+          "fast"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие calmly требует more calmly, а короткие наречия hard и fast образуют формы на -er: harder (не hardlier) и faster.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "I started practising slow turns at the local pool on Tuesdays. At first my coach shook his head because I rushed every wall. Since I slowed down, I breathe more calmly, push off harder, and finish each lap faster than in winter."
+  },
+  {
+    "id": "cp-C6-022",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-22",
+    "bankgen_format": "mini",
+    "prompt": "Your spotted puppy arrived at the rescue centre looking very shy. After three quiet weeks, he walks (happily) on his lead than on day one. He also runs (far) across the grass before coming back to nap on my warm slippers.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Наречие на -ly happily образует форму more happily, а неправильное наречие far — further или farther.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-1512",
+    "skeleton": "your w at the w . after w , he w G on his w than on w . he w G w the w before w to w on my w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_irregular"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_irregular"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-022-b1",
+        "answer": "more happily",
+        "accepted_answers": [
+          "more happily"
+        ],
+        "base_verb": "happily",
+        "supplied_words": [
+          "happily"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие на -ly happily образует форму more happily, а неправильное наречие far — further или farther.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-022-b2",
+        "answer": "further",
+        "accepted_answers": [
+          "further",
+          "farther"
+        ],
+        "base_verb": "far",
+        "supplied_words": [
+          "far"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Наречие на -ly happily образует форму more happily, а неправильное наречие far — further или farther.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Your spotted puppy arrived at the rescue centre looking very shy. After three quiet weeks, he walks more happily on his lead than on day one. He also runs further across the grass before coming back to nap on my warm slippers."
+  },
+  {
+    "id": "cp-C6-023",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-23",
+    "bankgen_format": "mini",
+    "prompt": "Irene checked our studio page to see what local readers enjoy. Short voice videos travel (far) across town than long photo albums ever did. Viewers reply (quickly) in the comments, too, and ask smart questions.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Наречие far имеет неправильную сравнительную степень further/farther, а наречие quickly образует форму more quickly.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "tech",
+    "seed_id": "cp-0834",
+    "skeleton": "w our w to w what w . w G w than w ever did . w G in the w , w , and w .",
+    "practice_tenses": [
+      "cp_irregular",
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_irregular",
+      "cp_adverb"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-023-b1",
+        "answer": "further",
+        "accepted_answers": [
+          "further",
+          "farther"
+        ],
+        "base_verb": "far",
+        "supplied_words": [
+          "far"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Наречие far имеет неправильную сравнительную степень further/farther, а наречие quickly образует форму more quickly.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-023-b2",
+        "answer": "more quickly",
+        "accepted_answers": [
+          "more quickly",
+          "quicker"
+        ],
+        "base_verb": "quickly",
+        "supplied_words": [
+          "quickly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие far имеет неправильную сравнительную степень further/farther, а наречие quickly образует форму more quickly.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Irene checked our studio page to see what local readers enjoy. Short voice videos travel further across town than long photo albums ever did. Viewers reply more quickly in the comments, too, and ask smart questions."
+  },
+  {
+    "id": "cp-C6-024",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-24",
+    "bankgen_format": "mini",
+    "prompt": "When our furniture office introduced flexible Fridays, some managers feared results would go (badly) than usual. Instead, staff work (hard) from Monday to Thursday and plan meetings (carefully) than before. Almost nobody calls in sick anymore.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Неправильное наречие badly меняется на worse, короткое hard — на harder, а длинное carefully — на more carefully.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "report",
+    "seed_id": "cp-0612",
+    "skeleton": "when our w , some w would w G than w . w , w G from w to w and w G than before . w in w .",
+    "practice_tenses": [
+      "cp_irregular",
+      "cp_verb_comparison",
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_irregular",
+      "cp_verb_comparison",
+      "cp_adverb"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-024-b1",
+        "answer": "worse",
+        "accepted_answers": [
+          "worse"
+        ],
+        "base_verb": "badly",
+        "supplied_words": [
+          "badly"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Неправильное наречие badly меняется на worse, короткое hard — на harder, а длинное carefully — на more carefully.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-024-b2",
+        "answer": "harder",
+        "accepted_answers": [
+          "harder"
+        ],
+        "base_verb": "hard",
+        "supplied_words": [
+          "hard"
+        ],
+        "tense_or_construction": "cp_verb_comparison",
+        "explanation_ru": "Неправильное наречие badly меняется на worse, короткое hard — на harder, а длинное carefully — на more carefully.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-024-b3",
+        "answer": "more carefully",
+        "accepted_answers": [
+          "more carefully"
+        ],
+        "base_verb": "carefully",
+        "supplied_words": [
+          "carefully"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Неправильное наречие badly меняется на worse, короткое hard — на harder, а длинное carefully — на more carefully.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "When our furniture office introduced flexible Fridays, some managers feared results would go worse than usual. Instead, staff work harder from Monday to Thursday and plan meetings more carefully than before. Almost nobody calls in sick anymore."
+  },
+  {
+    "id": "cp-C6-025",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-25",
+    "bankgen_format": "mini",
+    "prompt": "Locking our back garden alleys together took one short meeting with the neighbours. Although we didn't buy cameras, thieves can't reach our sheds (easily) as they did in winter. Everyone checks the side gates (closely) than before, and the street feels safe.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В отрицательном сравнении с as используется (not) as easily as, а перед than наречие closely принимает more: more closely.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "report",
+    "seed_id": "cp-1342",
+    "skeleton": "w our w with the w . w we w , w our w G as they did in w . w the w G than before , and the w .",
+    "practice_tenses": [
+      "cp_as_as",
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_as_as",
+      "cp_adverb"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-025-b1",
+        "answer": "as easily",
+        "accepted_answers": [
+          "as easily",
+          "so easily"
+        ],
+        "base_verb": "easily",
+        "supplied_words": [
+          "easily"
+        ],
+        "tense_or_construction": "cp_as_as",
+        "explanation_ru": "В отрицательном сравнении с as используется (not) as easily as, а перед than наречие closely принимает more: more closely.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-025-b2",
+        "answer": "more closely",
+        "accepted_answers": [
+          "more closely"
+        ],
+        "base_verb": "closely",
+        "supplied_words": [
+          "closely"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "В отрицательном сравнении с as используется (not) as easily as, а перед than наречие closely принимает more: more closely.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Locking our back garden alleys together took one short meeting with the neighbours. Although we didn't buy cameras, thieves can't reach our sheds as easily as they did in winter. Everyone checks the side gates more closely than before, and the street feels safe."
+  },
+  {
+    "id": "cp-C6-026",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-26",
+    "bankgen_format": "mini",
+    "prompt": "I met Callum at Brisbane Airport after a year apart, and I almost didn't recognise him. Does a teenager really grow that much? He carries heavy suitcases (easily) than his dad, though he doesn't pack (neatly) as he used to. At least he still bends down to give me a huge hug.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "С than наречие easily образует форму more easily, а в отрицательном сравнении с as требуется as neatly.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-0150",
+    "skeleton": "i w at w after a w , and i w him . does a w that w ? he w G than his w , w he w G as he w to . at w he still w to w me a w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_as_as"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_as_as"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-026-b1",
+        "answer": "more easily",
+        "accepted_answers": [
+          "more easily"
+        ],
+        "base_verb": "easily",
+        "supplied_words": [
+          "easily"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "С than наречие easily образует форму more easily, а в отрицательном сравнении с as требуется as neatly.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-026-b2",
+        "answer": "as neatly",
+        "accepted_answers": [
+          "as neatly",
+          "so neatly"
+        ],
+        "base_verb": "neatly",
+        "supplied_words": [
+          "neatly"
+        ],
+        "tense_or_construction": "cp_as_as",
+        "explanation_ru": "С than наречие easily образует форму more easily, а в отрицательном сравнении с as требуется as neatly.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "I met Callum at Brisbane Airport after a year apart, and I almost didn't recognise him. Does a teenager really grow that much? He carries heavy suitcases more easily than his dad, though he doesn't pack as neatly as he used to. At least he still bends down to give me a huge hug."
+  },
+  {
+    "id": "cp-C6-027",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-27",
+    "bankgen_format": "mc",
+    "prompt": "Sorry, the print shop sent ___ song booklets than we ordered.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Booklets — исчисляемое существительное во множественном числе, поэтому нужно fewer; частая ошибка — ставить less.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "notice",
+    "seed_id": "cp-0238",
+    "skeleton": "w , the w G w than we w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "less",
+      "fewer",
+      "fewest",
+      "more few"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "fewer",
+    "summary": "Sorry, the print shop sent fewer song booklets than we ordered.",
+    "answer_text": "Sorry, the print shop sent fewer song booklets than we ordered."
+  },
+  {
+    "id": "cp-C6-028",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-28",
+    "bankgen_format": "mc",
+    "prompt": "After the sharpener broke, our table has ___ sharp pencils than yours.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Перед исчисляемым существительным pencils в сравнении с than употребляется fewer, а не less.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "school",
+    "seed_id": "cp-0549",
+    "skeleton": "after the w , our w has G w than w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "less",
+      "few",
+      "fewer",
+      "more little"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "fewer",
+    "summary": "After the sharpener broke, our table has fewer sharp pencils than yours.",
+    "answer_text": "After the sharpener broke, our table has fewer sharp pencils than yours."
+  },
+  {
+    "id": "cp-C6-029",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-29",
+    "bankgen_format": "mc",
+    "prompt": "These olive oil bottles look the same height, yet they hold ___ oil than last winter.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Oil — неисчисляемое существительное, поэтому для значения «меньше» используется less, а не fewer.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "shopping",
+    "seed_id": "cp-0139",
+    "skeleton": "these w the w , YET they w G w than LAST_WINTER .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "less",
+      "fewer",
+      "little",
+      "not many"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "less",
+    "summary": "These olive oil bottles look the same height, yet they hold less oil than last winter.",
+    "answer_text": "These olive oil bottles look the same height, yet they hold less oil than last winter."
+  },
+  {
+    "id": "cp-C6-030",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-30",
+    "bankgen_format": "mc",
+    "prompt": "Strong harbour winds gave our rowing teams ___ calm mornings to practise than we planned.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Mornings — исчисляемое существительное, поэтому верно fewer; типичная ошибка — использовать less или not much.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "sport",
+    "seed_id": "cp-0230",
+    "skeleton": "w our w G w to w than we w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "less",
+      "not much",
+      "more few",
+      "fewer"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "fewer",
+    "summary": "Strong harbour winds gave our rowing teams fewer calm mornings to practise than we planned.",
+    "answer_text": "Strong harbour winds gave our rowing teams fewer calm mornings to practise than we planned."
+  },
+  {
+    "id": "cp-C6-031",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-31",
+    "bankgen_format": "mc",
+    "prompt": "Light winter snow meant the valley canals do not carry ___ cool water as the grape farms need.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "С неисчисляемым существительным water в конструкции not… as используется as much; as many подходит только для исчисляемых.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "news",
+    "seed_id": "cp-0447",
+    "skeleton": "w NOW w the w do not w G w as the w .",
+    "practice_tenses": [
+      "cp_as_many_much"
+    ],
+    "tags": [
+      "cp_as_many_much"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "as much",
+      "as many",
+      "so fewer",
+      "more much"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "as much",
+    "summary": "Light winter snow meant the valley canals do not carry as much cool water as the grape farms need.",
+    "answer_text": "Light winter snow meant the valley canals do not carry as much cool water as the grape farms need."
+  },
+  {
+    "id": "cp-C6-032",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-32",
+    "bankgen_format": "mc",
+    "prompt": "Bright new roadside lamps shine all night, so local star watchers get ___ dark hours to spot shooting stars than before.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Hours — исчисляемое существительное, поэтому нужно far fewer; типичные ошибки — ставить less или добавлять лишнее more.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "science",
+    "seed_id": "cp-0318",
+    "skeleton": "w all w , so w G w to w than before .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "much less",
+      "far less",
+      "far fewer",
+      "more fewer"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "far fewer",
+    "summary": "Bright new roadside lamps shine all night, so local star watchers get far fewer dark hours to spot shooting stars than before.",
+    "answer_text": "Bright new roadside lamps shine all night, so local star watchers get far fewer dark hours to spot shooting stars than before."
+  },
+  {
+    "id": "cp-C6-033",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-33",
+    "bankgen_format": "fix",
+    "prompt": "A dry winter left the ducks with fewer rainwater than before.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Rainwater — неисчисляемое существительное, поэтому вместо fewer нужно less.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "nature",
+    "seed_id": "cp-0508",
+    "skeleton": "a w the w with w than before .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "A dry winter left the ducks with less rainwater than before.",
+    "accepted_answers": [
+      "A dry winter left the ducks with less rainwater than before."
+    ],
+    "answer_text": "A dry winter left the ducks with less rainwater than before.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C6-034",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-34",
+    "bankgen_format": "fix",
+    "prompt": "Drivers find less free spaces on the top deck after eight.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Spaces — исчисляемое существительное во множественном числе, поэтому правильно fewer, а не less.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "notice",
+    "seed_id": "cp-0219",
+    "skeleton": "w on the w after w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Drivers find fewer free spaces on the top deck after eight.",
+    "accepted_answers": [
+      "Drivers find fewer free spaces on the top deck after eight."
+    ],
+    "answer_text": "Drivers find fewer free spaces on the top deck after eight.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C6-035",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-35",
+    "bankgen_format": "fix",
+    "prompt": "Warm July evenings bring far more film fans to the square than chilly spring nights do.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Ошибки нет: far more film fans… than… do грамматически верно сочетает усилитель far с more и исчисляемым существительным.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "arts",
+    "seed_id": "cp-0245",
+    "skeleton": "w to the w than w do .",
+    "practice_tenses": [
+      "cp_fix_mixed"
+    ],
+    "tags": [
+      "cp_fix_mixed"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Warm July evenings bring far more film fans to the square than chilly spring nights do.",
+    "accepted_answers": [
+      "Warm July evenings bring far more film fans to the square than chilly spring nights do."
+    ],
+    "answer_text": "Warm July evenings bring far more film fans to the square than chilly spring nights do.",
+    "has_error": false
+  },
+  {
+    "id": "cp-C6-036",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-36",
+    "bankgen_format": "fix",
+    "prompt": "Workers who take a real lunch break feel rested and work more good in the afternoon.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После глагола work нужно наречие well в сравнительной степени — better; форма more good является ошибкой.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "health",
+    "seed_id": "cp-0828",
+    "skeleton": "w who w a w and w in the w .",
+    "practice_tenses": [
+      "cp_irregular"
+    ],
+    "tags": [
+      "cp_irregular"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Workers who take a real lunch break feel rested and work better in the afternoon.",
+    "accepted_answers": [
+      "Workers who take a real lunch break feel rested and work better in the afternoon."
+    ],
+    "answer_text": "Workers who take a real lunch break feel rested and work better in the afternoon.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C6-037",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-37",
+    "bankgen_format": "fix",
+    "prompt": "This weather app runs slower than my old one, and my phone battery works hardlier just to load giant moving adverts.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Наречие «усерднее / с большей нагрузкой» — harder; формы hardlier не существует, а hardly означает «едва».",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "review",
+    "seed_id": "cp-0838",
+    "skeleton": "this w than my w , and my w JUST to w .",
+    "practice_tenses": [
+      "cp_verb_comparison"
+    ],
+    "tags": [
+      "cp_verb_comparison"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "This weather app runs slower than my old one, and my phone battery works harder just to load giant moving adverts.",
+    "accepted_answers": [
+      "This weather app runs slower than my old one, and my phone battery works harder just to load giant moving adverts."
+    ],
+    "answer_text": "This weather app runs slower than my old one, and my phone battery works harder just to load giant moving adverts.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C6-038",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-38",
+    "bankgen_format": "which",
+    "prompt": "Extra relatives arrived early for the wedding dinner, so Catarina ran short of folding chairs. Which message makes sense?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Стульев не хватает, а chairs — исчисляемое существительное, поэтому грамматически и по смыслу подходит только fewer chairs than guests.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-0429",
+    "skeleton": "w for the w , so w of w . which w ?",
+    "practice_tenses": [
+      "cp_choice"
+    ],
+    "tags": [
+      "cp_choice"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "We have as many chairs as guests, so nobody needs to stand.",
+      "We have fewer chairs than guests, so please bring ten more from the store.",
+      "We have less chairs than guests, so please bring ten more from the store.",
+      "We have more chairs than guests, so put the extra ones back outside."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "We have fewer chairs than guests, so please bring ten more from the store.",
+    "summary": "We have fewer chairs than guests, so please bring ten more from the store.",
+    "answer_text": "We have fewer chairs than guests, so please bring ten more from the store."
+  },
+  {
+    "id": "cp-C6-039",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-39",
+    "bankgen_format": "which",
+    "prompt": "Manolo warned his neighbours that scam bank messages arrive much more often during busy summer holidays than in quiet months. Which sentence matches his warning?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Третий вариант верно передаёт смысл предупреждения и правильно строит сравнительную степень наречия: far more frequently.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-0846",
+    "skeleton": "w his w that w than in w . which w his w ?",
+    "practice_tenses": [
+      "cp_choice"
+    ],
+    "tags": [
+      "cp_choice"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Scam texts arrive as rarely in July as they do during quiet winter weeks.",
+      "Neighbours receive fewer fake bank texts during the summer break than in winter.",
+      "Fake bank messages land far more frequently in summer than during quiet months.",
+      "Residents get less fake bank alerts in summer because scammers go on holiday."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "Fake bank messages land far more frequently in summer than during quiet months.",
+    "summary": "Fake bank messages land far more frequently in summer than during quiet months.",
+    "answer_text": "Fake bank messages land far more frequently in summer than during quiet months."
+  },
+  {
+    "id": "cp-C6-040",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-40",
+    "bankgen_format": "which",
+    "prompt": "Toby put a funny sign on the print-room cupboard because blue pens keep disappearing and staff can barely find one to sign forms. Which sign fits?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Ручек меньше, чем бланков, и pens — исчисляемое существительное, поэтому верна только форма fewer blue pens.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "notice",
+    "seed_id": "cp-0618",
+    "skeleton": "w a w on the w because w and w can w to w . which w ?",
+    "practice_tenses": [
+      "cp_choice"
+    ],
+    "tags": [
+      "cp_choice"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "We have fewer blue pens left in this cupboard than we have delivery slips to sign.",
+      "We have less blue pens left in this cupboard than we have delivery slips to sign.",
+      "Blue pens disappear more slowly this week, so everyone can take three home.",
+      "There are as many blue pens on the shelf as we need for the whole year."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "We have fewer blue pens left in this cupboard than we have delivery slips to sign.",
+    "summary": "We have fewer blue pens left in this cupboard than we have delivery slips to sign.",
+    "answer_text": "We have fewer blue pens left in this cupboard than we have delivery slips to sign."
+  },
+  {
+    "id": "cp-C6-041",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-41",
+    "bankgen_format": "transform",
+    "prompt": "We don't have as many clean trainers as we had on Monday. → We have …",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "Отрицательное сравнение not as many + исчисляемое существительное перефразируется с помощью fewer… than.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-0918",
+    "skeleton": "we w have as w as we had on w . we have",
+    "practice_tenses": [
+      "cp_rewrite"
+    ],
+    "tags": [
+      "cp_rewrite"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "We have fewer clean trainers than we had on Monday.",
+    "blanks": [
+      {
+        "id": "cp-C6-041-b1",
+        "answer": "We have fewer clean trainers than we had on Monday.",
+        "accepted_answers": [
+          "We have fewer clean trainers than we had on Monday.",
+          "We have fewer clean trainers than on Monday."
+        ],
+        "tense_or_construction": "cp_rewrite",
+        "explanation_ru": "Отрицательное сравнение not as many + исчисляемое существительное перефразируется с помощью fewer… than.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cp-C6-042",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP12-42",
+    "bankgen_format": "transform",
+    "prompt": "The crowded pancake porch has less space between tables than our local cafe. → The crowded pancake porch doesn't have …",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "Сравнение less + неисчисляемое существительное (space) перестраивается в конструкцию doesn't have as much… as.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-1027",
+    "skeleton": "the w has w than our w . the w have",
+    "practice_tenses": [
+      "cp_rewrite"
+    ],
+    "tags": [
+      "cp_rewrite"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "The crowded pancake porch doesn't have as much space between tables as our local cafe.",
+    "blanks": [
+      {
+        "id": "cp-C6-042-b1",
+        "answer": "The crowded pancake porch doesn't have as much space between tables as our local cafe.",
+        "accepted_answers": [
+          "The crowded pancake porch doesn't have as much space between tables as our local cafe.",
+          "The crowded pancake porch doesn't have so much space between tables as our local cafe."
+        ],
+        "tense_or_construction": "cp_rewrite",
+        "explanation_ru": "Сравнение less + неисчисляемое существительное (space) перестраивается в конструкцию doesn't have as much… as.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cp-C6-043",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-01",
+    "bankgen_format": "gap",
+    "prompt": "After the cold rain, the swans have (little) open water than before.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "С неисчисляемым существительным water в сравнительной степени используется форма less (от little), а не fewer.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-1518",
+    "skeleton": "after the w , the w have G w than before .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-043-b1",
+        "answer": "less",
+        "accepted_answers": [
+          "less"
+        ],
+        "base_verb": "little",
+        "supplied_words": [
+          "little"
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "С неисчисляемым существительным water в сравнительной степени используется форма less (от little), а не fewer.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "After the cold rain, the swans have less open water than before."
+  },
+  {
+    "id": "cp-C6-044",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-02",
+    "bankgen_format": "mc",
+    "prompt": "With the new bike offer, ___ cyclists park here than in winter.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "С исчисляемым существительным во множественном числе (cyclists) усилитель перед more — many (many more), а не much more.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "notice",
+    "seed_id": "cp-1435",
+    "skeleton": "with the w , G w here than in w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "much more",
+      "many more",
+      "more many",
+      "very more"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "many more",
+    "summary": "With the new bike offer, many more cyclists park here than in winter.",
+    "answer_text": "With the new bike offer, many more cyclists park here than in winter."
+  },
+  {
+    "id": "cp-C6-045",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-03",
+    "bankgen_format": "gap",
+    "prompt": "\"We don't have (many) sweet biscuits as we need for our guests.\"",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Конструкция (not) as/so many + исчисляемое существительное + as выражает нехватку количества по сравнению с нужным.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "dialogue",
+    "seed_id": "cp-1538",
+    "skeleton": "we w have G w as we w for our w .",
+    "practice_tenses": [
+      "cp_as_many_much"
+    ],
+    "tags": [
+      "cp_as_many_much"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-045-b1",
+        "answer": "as many",
+        "accepted_answers": [
+          "as many",
+          "so many"
+        ],
+        "base_verb": "many",
+        "supplied_words": [
+          "many"
+        ],
+        "tense_or_construction": "cp_as_many_much",
+        "explanation_ru": "Конструкция (not) as/so many + исчисляемое существительное + as выражает нехватку количества по сравнению с нужным.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "\"We don't have as many sweet biscuits as we need for our guests.\""
+  },
+  {
+    "id": "cp-C6-046",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-04",
+    "bankgen_format": "fix",
+    "prompt": "Our building got less fake phone messages in May than in August.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Messages — исчисляемое существительное во множественном числе, поэтому вместо less нужно употребить fewer.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-1346",
+    "skeleton": "our w in may than in w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Our building got fewer fake phone messages in May than in August.",
+    "accepted_answers": [
+      "Our building got fewer fake phone messages in May than in August."
+    ],
+    "answer_text": "Our building got fewer fake phone messages in May than in August.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C6-047",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-05",
+    "bankgen_format": "gap",
+    "prompt": "Because winter snow was thin on the high peaks, valley farms have (little / water) than usual for growing melons.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Water — неисчисляемое существительное, поэтому в сравнении с than используется форма less water.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "news",
+    "seed_id": "cp-1447",
+    "skeleton": "because w NOW was w on the w , w have G than w for w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-047-b1",
+        "answer": "less water",
+        "accepted_answers": [
+          "less water"
+        ],
+        "base_verb": "little / water",
+        "supplied_words": [
+          "little",
+          "water"
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "Water — неисчисляемое существительное, поэтому в сравнении с than используется форма less water.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Because winter snow was thin on the high peaks, valley farms have less water than usual for growing melons."
+  },
+  {
+    "id": "cp-C6-048",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-06",
+    "bankgen_format": "gap",
+    "prompt": "Our young garden tree grew (fast) than I expected, and its branches shade the whole veranda.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречие fast совпадает по форме с прилагательным и образует сравнительную степень при помощи суффикса -er (faster), а не more fast.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-1413",
+    "skeleton": "our w G than i w , and its w the w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-048-b1",
+        "answer": "faster",
+        "accepted_answers": [
+          "faster"
+        ],
+        "base_verb": "fast",
+        "supplied_words": [
+          "fast"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие fast совпадает по форме с прилагательным и образует сравнительную степень при помощи суффикса -er (faster), а не more fast.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Our young garden tree grew faster than I expected, and its branches shade the whole veranda."
+  },
+  {
+    "id": "cp-C6-049",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-07",
+    "bankgen_format": "mini",
+    "prompt": "Warm August evenings bring big crowds to our open-air cinema in Lucca. Tonight, (many) families came than the staff expected. Everyone wanted a good seat near the big screen. The helpers worked (hard) than usual, but they still ran out of chairs.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Сравнительная степень от many — more (more families); наречие hard образует сравнительную степень с помощью -er (worked harder), а не more hard.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "arts",
+    "seed_id": "cp-1245",
+    "skeleton": "w to our w in w . TONIGHT , G w than the w . w a w the w . the w G than w , but they still w of w .",
+    "practice_tenses": [
+      "cp_fewer_less",
+      "cp_verb_comparison"
+    ],
+    "tags": [
+      "cp_fewer_less",
+      "cp_verb_comparison"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-049-b1",
+        "answer": "more",
+        "accepted_answers": [
+          "more"
+        ],
+        "base_verb": "many",
+        "supplied_words": [
+          "many"
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "Сравнительная степень от many — more (more families); наречие hard образует сравнительную степень с помощью -er (worked harder), а не more hard.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-049-b2",
+        "answer": "harder",
+        "accepted_answers": [
+          "harder"
+        ],
+        "base_verb": "hard",
+        "supplied_words": [
+          "hard"
+        ],
+        "tense_or_construction": "cp_verb_comparison",
+        "explanation_ru": "Сравнительная степень от many — more (more families); наречие hard образует сравнительную степень с помощью -er (worked harder), а не more hard.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Warm August evenings bring big crowds to our open-air cinema in Lucca. Tonight, more families came than the staff expected. Everyone wanted a good seat near the big screen. The helpers worked harder than usual, but they still ran out of chairs."
+  },
+  {
+    "id": "cp-C6-050",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-08",
+    "bankgen_format": "which",
+    "prompt": "Jukka's local bakery charges the same price, but its sweet rolls weigh less than in autumn.",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "С неисчисляемым food используется less; в остальных вариантах нарушено правило fewer/less или построение сравнительной степени.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-1526",
+    "skeleton": "w the w , but its w than in w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Jukka gets fewer cake for the same money.",
+      "The bakery sells less sweet rolls than before.",
+      "Jukka gets less food for his money than before.",
+      "The bakery makes more small rolls as in autumn."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "Jukka gets less food for his money than before.",
+    "summary": "Jukka gets less food for his money than before.",
+    "answer_text": "Jukka gets less food for his money than before."
+  },
+  {
+    "id": "cp-C6-051",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-09",
+    "bankgen_format": "gap",
+    "prompt": "Without long speeches, our classmates laughed and talked (easily) than before.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречия на -ly (easily) образуют сравнительную степень при помощи more (more easily).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-1426",
+    "skeleton": "w , our w and w G than before .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-051-b1",
+        "answer": "more easily",
+        "accepted_answers": [
+          "more easily"
+        ],
+        "base_verb": "easily",
+        "supplied_words": [
+          "easily"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречия на -ly (easily) образуют сравнительную степень при помощи more (more easily).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Without long speeches, our classmates laughed and talked more easily than before."
+  },
+  {
+    "id": "cp-C6-052",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-10",
+    "bankgen_format": "gap",
+    "prompt": "Have the morning balance classes helped your neighbours climb the stairs (steadily) than last winter?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После глагола climb нужно наречие steadily в сравнительной степени — more steadily.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "health",
+    "seed_id": "cp-1324",
+    "skeleton": "have the w your w the w G than LAST_WINTER ?",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-052-b1",
+        "answer": "more steadily",
+        "accepted_answers": [
+          "more steadily"
+        ],
+        "base_verb": "steadily",
+        "supplied_words": [
+          "steadily"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "После глагола climb нужно наречие steadily в сравнительной степени — more steadily.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Have the morning balance classes helped your neighbours climb the stairs more steadily than last winter?"
+  },
+  {
+    "id": "cp-C6-053",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-11",
+    "bankgen_format": "mini",
+    "prompt": "Torben spent two months fixing an old oak boat at the Ribe yard. After his team fitted a wider sail, the boat moved (smoothly) across the bay than before. It did not turn (slowly) in strong winds as it used to. In fact, the crew steered it (well) than any modern boat in the harbour.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Наречие smoothly требует more (more smoothly); в отрицательном сравнении с as используется as/so slowly; сравнительная степень наречия well — исключение better.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "history",
+    "seed_id": "cp-1406",
+    "skeleton": "w an w at the w . after his w a w , the w G w the w than before . it did not w G in w as it w to . in w , the w it G than any w in the w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_not_as_as",
+      "cp_irregular"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_not_as_as",
+      "cp_irregular"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-053-b1",
+        "answer": "more smoothly",
+        "accepted_answers": [
+          "more smoothly"
+        ],
+        "base_verb": "smoothly",
+        "supplied_words": [
+          "smoothly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие smoothly требует more (more smoothly); в отрицательном сравнении с as используется as/so slowly; сравнительная степень наречия well — исключение better.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-053-b2",
+        "answer": "as slowly",
+        "accepted_answers": [
+          "as slowly",
+          "so slowly"
+        ],
+        "base_verb": "slowly",
+        "supplied_words": [
+          "slowly"
+        ],
+        "tense_or_construction": "cp_not_as_as",
+        "explanation_ru": "Наречие smoothly требует more (more smoothly); в отрицательном сравнении с as используется as/so slowly; сравнительная степень наречия well — исключение better.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-053-b3",
+        "answer": "better",
+        "accepted_answers": [
+          "better"
+        ],
+        "base_verb": "well",
+        "supplied_words": [
+          "well"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Наречие smoothly требует more (more smoothly); в отрицательном сравнении с as используется as/so slowly; сравнительная степень наречия well — исключение better.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Torben spent two months fixing an old oak boat at the Ribe yard. After his team fitted a wider sail, the boat moved more smoothly across the bay than before. It did not turn as slowly in strong winds as it used to. In fact, the crew steered it better than any modern boat in the harbour."
+  },
+  {
+    "id": "cp-C6-054",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-12",
+    "bankgen_format": "mc",
+    "prompt": "Stjepan told us that tourists visit his quiet island bay ___ in October than they did a decade ago.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Сравнительная степень наречия often — more often, усиленная словом far (far more often); формы oftenly в английском не существует.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "travel",
+    "seed_id": "cp-1205",
+    "skeleton": "w us that w his w G in w than they did a w AGO .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "much often",
+      "more oftenly",
+      "far more often",
+      "most often"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "far more often",
+    "summary": "Stjepan told us that tourists visit his quiet island bay far more often in October than they did a decade ago.",
+    "answer_text": "Stjepan told us that tourists visit his quiet island bay far more often in October than they did a decade ago."
+  },
+  {
+    "id": "cp-C6-055",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-13",
+    "bankgen_format": "gap",
+    "prompt": "Are there (few) part-time museum jobs in Canterbury this autumn than in summer?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "С исчисляемым существительным во множественном числе (jobs) используется сравнительная степень fewer.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-0630",
+    "skeleton": "are there G w in w this w than in w ?",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-055-b1",
+        "answer": "fewer",
+        "accepted_answers": [
+          "fewer"
+        ],
+        "base_verb": "few",
+        "supplied_words": [
+          "few"
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "С исчисляемым существительным во множественном числе (jobs) используется сравнительная степень fewer.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Are there fewer part-time museum jobs in Canterbury this autumn than in summer?"
+  },
+  {
+    "id": "cp-C6-056",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-14",
+    "bankgen_format": "fix",
+    "prompt": "There are less dry hangers in the hall because everyone brought a wet coat.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Hangers — исчисляемое существительное во множественном числе, поэтому вместо less требуется fewer.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-0809",
+    "skeleton": "there are w in the w because w a w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "There are fewer dry hangers in the hall because everyone brought a wet coat.",
+    "accepted_answers": [
+      "There are fewer dry hangers in the hall because everyone brought a wet coat."
+    ],
+    "answer_text": "There are fewer dry hangers in the hall because everyone brought a wet coat.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C6-057",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-15",
+    "bankgen_format": "gap",
+    "prompt": "We apologise that the box office printed (few) song sheets than we had visitors, so please share with your neighbour.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Song sheets можно посчитать, поэтому в сравнении с than используется форма fewer.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "notice",
+    "seed_id": "cp-0738",
+    "skeleton": "we w that the w G w than we had w , so w with your w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-057-b1",
+        "answer": "fewer",
+        "accepted_answers": [
+          "fewer"
+        ],
+        "base_verb": "few",
+        "supplied_words": [
+          "few"
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "Song sheets можно посчитать, поэтому в сравнении с than используется форма fewer.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "We apologise that the box office printed fewer song sheets than we had visitors, so please share with your neighbour."
+  },
+  {
+    "id": "cp-C6-058",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-16",
+    "bankgen_format": "gap",
+    "prompt": "Our table doesn't have (much) paint as the other group for these paper lamps.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "С неисчисляемым существительным paint в отрицательном сравнении используется конструкция not as/so much ... as.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "school",
+    "seed_id": "cp-1049",
+    "skeleton": "our w have G w as the w for these w .",
+    "practice_tenses": [
+      "cp_as_many_much"
+    ],
+    "tags": [
+      "cp_as_many_much"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-058-b1",
+        "answer": "as much",
+        "accepted_answers": [
+          "as much",
+          "so much"
+        ],
+        "base_verb": "much",
+        "supplied_words": [
+          "much"
+        ],
+        "tense_or_construction": "cp_as_many_much",
+        "explanation_ru": "С неисчисляемым существительным paint в отрицательном сравнении используется конструкция not as/so much ... as.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Our table doesn't have as much paint as the other group for these paper lamps."
+  },
+  {
+    "id": "cp-C6-059",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-17",
+    "bankgen_format": "mini",
+    "prompt": "Dear Council Members, I am writing on behalf of our local stargazing club in Albuquerque. Since those bright road signs went up, we cannot see faint stars (clearly) as we used to. Our club members also spend (much) time driving outside the town to find a dark hill. Could the city dim the lights after midnight so people can study the night sky (easily)?",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В отрицательном сравнении с as используется as/so clearly; для большего количества времени — more (от much); наречие easily в сравнительной степени имеет форму more easily.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "science",
+    "seed_id": "cp-0818",
+    "skeleton": "w , i am w on w of our w in w . SINCE those w , we w G as we w to . our w G w the w to w a w . could the w the w after w so w can w the w G ?",
+    "practice_tenses": [
+      "cp_not_as_as",
+      "cp_fewer_less",
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_not_as_as",
+      "cp_fewer_less",
+      "cp_adverb"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-059-b1",
+        "answer": "as clearly",
+        "accepted_answers": [
+          "as clearly",
+          "so clearly"
+        ],
+        "base_verb": "clearly",
+        "supplied_words": [
+          "clearly"
+        ],
+        "tense_or_construction": "cp_not_as_as",
+        "explanation_ru": "В отрицательном сравнении с as используется as/so clearly; для большего количества времени — more (от much); наречие easily в сравнительной степени имеет форму more easily.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-059-b2",
+        "answer": "more",
+        "accepted_answers": [
+          "more"
+        ],
+        "base_verb": "much",
+        "supplied_words": [
+          "much"
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "В отрицательном сравнении с as используется as/so clearly; для большего количества времени — more (от much); наречие easily в сравнительной степени имеет форму more easily.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-059-b3",
+        "answer": "more easily",
+        "accepted_answers": [
+          "more easily"
+        ],
+        "base_verb": "easily",
+        "supplied_words": [
+          "easily"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "В отрицательном сравнении с as используется as/so clearly; для большего количества времени — more (от much); наречие easily в сравнительной степени имеет форму more easily.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Dear Council Members, I am writing on behalf of our local stargazing club in Albuquerque. Since those bright road signs went up, we cannot see faint stars as clearly as we used to. Our club members also spend more time driving outside the town to find a dark hill. Could the city dim the lights after midnight so people can study the night sky more easily?"
+  },
+  {
+    "id": "cp-C6-060",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-18",
+    "bankgen_format": "gap",
+    "prompt": "Do your online craft parcels also arrive (late) this winter than they did in autumn, Cheryl?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречие late образует сравнительную степень при помощи суффикса -er (later), без слова more.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "shopping",
+    "seed_id": "cp-1135",
+    "skeleton": "do your w G this w than they did in w , w ?",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-060-b1",
+        "answer": "later",
+        "accepted_answers": [
+          "later"
+        ],
+        "base_verb": "late",
+        "supplied_words": [
+          "late"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие late образует сравнительную степень при помощи суффикса -er (later), без слова more.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Do your online craft parcels also arrive later this winter than they did in autumn, Cheryl?"
+  },
+  {
+    "id": "cp-C6-061",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-19",
+    "bankgen_format": "fix",
+    "prompt": "Fast spring water meant that beginners paddled more careful than usual on the river.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После глагола paddled требуется наречие (more carefully), а не прилагательное (more careful).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "sport",
+    "seed_id": "cp-0730",
+    "skeleton": "w that w than w on the w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Fast spring water meant that beginners paddled more carefully than usual on the river.",
+    "accepted_answers": [
+      "Fast spring water meant that beginners paddled more carefully than usual on the river."
+    ],
+    "answer_text": "Fast spring water meant that beginners paddled more carefully than usual on the river.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C6-062",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-20",
+    "bankgen_format": "gap",
+    "prompt": "Cristina's report showed that short forty-second gardening videos are shared much (widely) online than the office's long printed newsletters ever were.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречие на -ly (widely) в сравнительной степени требует вспомогательного слова more (more widely).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "tech",
+    "seed_id": "cp-1334",
+    "skeleton": "w that w are w G w than the w ever were .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-062-b1",
+        "answer": "more widely",
+        "accepted_answers": [
+          "more widely"
+        ],
+        "base_verb": "widely",
+        "supplied_words": [
+          "widely"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие на -ly (widely) в сравнительной степени требует вспомогательного слова more (more widely).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Cristina's report showed that short forty-second gardening videos are shared much more widely online than the office's long printed newsletters ever were."
+  },
+  {
+    "id": "cp-C6-063",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-21",
+    "bankgen_format": "mc",
+    "prompt": "Please arrive early because ___ shaded spaces are free at four than at noon.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Spaces — исчисляемое существительное, и в предложении есть сравнение с than, поэтому верный вариант — fewer.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "notice",
+    "seed_id": "cp-0719",
+    "skeleton": "w because G w are w at w than at w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "less",
+      "fewer",
+      "little",
+      "fewest"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "fewer",
+    "summary": "Please arrive early because fewer shaded spaces are free at four than at noon.",
+    "answer_text": "Please arrive early because fewer shaded spaces are free at four than at noon."
+  },
+  {
+    "id": "cp-C6-064",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-22",
+    "bankgen_format": "gap",
+    "prompt": "Thanks to the bright new signs at Atlanta Airport, I changed terminals (quickly) than on my previous visit.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречие quickly образует сравнительную степень с помощью more (more quickly).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "travel",
+    "seed_id": "cp-0648",
+    "skeleton": "w to the w at w , i w G than on my w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-064-b1",
+        "answer": "more quickly",
+        "accepted_answers": [
+          "more quickly"
+        ],
+        "base_verb": "quickly",
+        "supplied_words": [
+          "quickly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие quickly образует сравнительную степень с помощью more (more quickly).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Thanks to the bright new signs at Atlanta Airport, I changed terminals more quickly than on my previous visit."
+  },
+  {
+    "id": "cp-C6-065",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-23",
+    "bankgen_format": "which",
+    "prompt": "Dozens of students came to print essays on a rainy afternoon, so Nolan's copy shop almost ran out of paper.",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Paper в значении «бумага» неисчисляемо, поэтому верно far less white paper; варианты с many paper, fewer paper и more fast грамматически ошибочны.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "school",
+    "seed_id": "cp-0610",
+    "skeleton": "w of w to w on a w , so w of w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The copy shop has never used as many paper in one afternoon.",
+      "The copy shop has fewer paper left than it had in the morning.",
+      "Students printed more fast than the old machine could handle.",
+      "The copy shop has far less white paper left than it had at noon."
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "The copy shop has far less white paper left than it had at noon.",
+    "summary": "The copy shop has far less white paper left than it had at noon.",
+    "answer_text": "The copy shop has far less white paper left than it had at noon."
+  },
+  {
+    "id": "cp-C6-066",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-24",
+    "bankgen_format": "transform",
+    "prompt": "The cliff pools do not hold as much fresh water this autumn as they held in spring. → The cliff pools hold …",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "Конструкцию not as much + неисчисляемое существительное + as можно заменить на сравнительную степень less ... than.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "nature",
+    "seed_id": "cp-1008",
+    "skeleton": "the w do not w as w this w as they w in w . the w",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "The cliff pools hold less fresh water this autumn than they held in spring.",
+    "blanks": [
+      {
+        "id": "cp-C6-066-b1",
+        "answer": "The cliff pools hold less fresh water this autumn than they held in spring.",
+        "accepted_answers": [
+          "The cliff pools hold less fresh water this autumn than they held in spring.",
+          "The cliff pools hold less fresh water this autumn than in spring."
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "Конструкцию not as much + неисчисляемое существительное + as можно заменить на сравнительную степень less ... than.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cp-C6-067",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-25",
+    "bankgen_format": "mini",
+    "prompt": "Sofie shared her office update with the Kortrijk team on Monday. With online timetables, staff organise weekly shifts (carefully) than they did in spring. Nobody wastes paper on printed charts anymore. Everyone also answers client emails (fast) and finishes Friday work (early) than before.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Наречие carefully требует more (more carefully), короткое наречие fast — суффикса -er (faster), а early меняет -y на -ier (earlier).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "work",
+    "seed_id": "cp-1112",
+    "skeleton": "w her w with the w on w . with w , w G than they did in w . w on w . w G and w G than before .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-067-b1",
+        "answer": "more carefully",
+        "accepted_answers": [
+          "more carefully"
+        ],
+        "base_verb": "carefully",
+        "supplied_words": [
+          "carefully"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие carefully требует more (more carefully), короткое наречие fast — суффикса -er (faster), а early меняет -y на -ier (earlier).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-067-b2",
+        "answer": "faster",
+        "accepted_answers": [
+          "faster"
+        ],
+        "base_verb": "fast",
+        "supplied_words": [
+          "fast"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие carefully требует more (more carefully), короткое наречие fast — суффикса -er (faster), а early меняет -y на -ier (earlier).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-067-b3",
+        "answer": "earlier",
+        "accepted_answers": [
+          "earlier"
+        ],
+        "base_verb": "early",
+        "supplied_words": [
+          "early"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие carefully требует more (more carefully), короткое наречие fast — суффикса -er (faster), а early меняет -y на -ier (earlier).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Sofie shared her office update with the Kortrijk team on Monday. With online timetables, staff organise weekly shifts more carefully than they did in spring. Nobody wastes paper on printed charts anymore. Everyone also answers client emails faster and finishes Friday work earlier than before."
+  },
+  {
+    "id": "cp-C6-068",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-26",
+    "bankgen_format": "gap",
+    "prompt": "Annelies reported that neighbours sleep much (calmly) and worry far less about garden sheds since the street added soft porch lights.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После глагола sleep стоит наречие calmly, которое в сравнительной степени принимает форму more calmly.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "city",
+    "seed_id": "cp-1842",
+    "skeleton": "w that w G and w about w SINCE the w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-068-b1",
+        "answer": "more calmly",
+        "accepted_answers": [
+          "more calmly"
+        ],
+        "base_verb": "calmly",
+        "supplied_words": [
+          "calmly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "После глагола sleep стоит наречие calmly, которое в сравнительной степени принимает форму more calmly.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Annelies reported that neighbours sleep much more calmly and worry far less about garden sheds since the street added soft porch lights."
+  },
+  {
+    "id": "cp-C6-069",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-27",
+    "bankgen_format": "fix",
+    "prompt": "After five wet mornings, we have fewer dry gloves in the hallway than children in the house.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Ошибки нет: с исчисляемым существительным gloves правильно использовано fewer и союз than.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "home",
+    "seed_id": "cp-1418",
+    "skeleton": "after w , we have w in the w than w in the w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "After five wet mornings, we have fewer dry gloves in the hallway than children in the house.",
+    "accepted_answers": [
+      "After five wet mornings, we have fewer dry gloves in the hallway than children in the house."
+    ],
+    "answer_text": "After five wet mornings, we have fewer dry gloves in the hallway than children in the house.",
+    "has_error": false
+  },
+  {
+    "id": "cp-C6-070",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-28",
+    "bankgen_format": "mini",
+    "prompt": "Garth fitted soft wall panels inside our small recording studio in Nanaimo. Street traffic does not leak into the microphones anymore. Voice actors speak (softly) than before because there is no room echo. They finish each episode (early) and act (well) than they did in the noisy old room.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Softly образует сравнительную степень через more (more softly), early — через -ier (earlier), а well имеет неправильную форму better.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "work",
+    "seed_id": "cp-1246",
+    "skeleton": "w our w in w . w does not w into the w . w G than before because there is no w . they w each w G and w G than they did in the w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_irregular"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_irregular"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-070-b1",
+        "answer": "more softly",
+        "accepted_answers": [
+          "more softly"
+        ],
+        "base_verb": "softly",
+        "supplied_words": [
+          "softly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Softly образует сравнительную степень через more (more softly), early — через -ier (earlier), а well имеет неправильную форму better.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-070-b2",
+        "answer": "earlier",
+        "accepted_answers": [
+          "earlier"
+        ],
+        "base_verb": "early",
+        "supplied_words": [
+          "early"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Softly образует сравнительную степень через more (more softly), early — через -ier (earlier), а well имеет неправильную форму better.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-070-b3",
+        "answer": "better",
+        "accepted_answers": [
+          "better"
+        ],
+        "base_verb": "well",
+        "supplied_words": [
+          "well"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Softly образует сравнительную степень через more (more softly), early — через -ier (earlier), а well имеет неправильную форму better.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Garth fitted soft wall panels inside our small recording studio in Nanaimo. Street traffic does not leak into the microphones anymore. Voice actors speak more softly than before because there is no room echo. They finish each episode earlier and act better than they did in the noisy old room."
+  },
+  {
+    "id": "cp-C6-071",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-29",
+    "bankgen_format": "mc",
+    "prompt": "Tanya wrote that the live band drew so many people that the tiny porch had ___ space than a crowded bus.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Space в значении «место, пространство» неисчисляемо, поэтому перед ним в сравнении с than нужно слово less.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "food",
+    "seed_id": "cp-1527",
+    "skeleton": "w that the w so w that the w had G w than a w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "fewer",
+      "less",
+      "least",
+      "not many"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "less",
+    "summary": "Tanya wrote that the live band drew so many people that the tiny porch had less space than a crowded bus.",
+    "answer_text": "Tanya wrote that the live band drew so many people that the tiny porch had less space than a crowded bus."
+  },
+  {
+    "id": "cp-C6-072",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-30",
+    "bankgen_format": "gap",
+    "prompt": "Our extra guests arrived (soon) than we planned, so we need more spoons!",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Односложное наречие soon образует сравнительную степень с помощью суффикса -er (sooner).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "chat",
+    "seed_id": "cp-1429",
+    "skeleton": "our w G than we w , so we w !",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-072-b1",
+        "answer": "sooner",
+        "accepted_answers": [
+          "sooner"
+        ],
+        "base_verb": "soon",
+        "supplied_words": [
+          "soon"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Односложное наречие soon образует сравнительную степень с помощью суффикса -er (sooner).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Our extra guests arrived sooner than we planned, so we need more spoons!"
+  },
+  {
+    "id": "cp-C6-073",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-31",
+    "bankgen_format": "mini",
+    "prompt": "Carla's health notice in Olympia warns night-shift staff about using bright tablets in bed. Workers who read on screens before sleep fall asleep (slowly) than those who read printed books. They also wake up more often during the night and recover (badly) from long shifts than people who put phones away. Turning devices off an hour before bed helps adults rest (deeply) and wake up calmer.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Наречия slowly и deeply образуют сравнительную степень с more (more slowly, more deeply), а наречие badly имеет неправильную форму worse.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "health",
+    "seed_id": "cp-1328",
+    "skeleton": "w in w about w in w . w who w on w before w G than those who w . they w the w and w G from w than w who w . w an w before w G and w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_irregular"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_irregular"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-073-b1",
+        "answer": "more slowly",
+        "accepted_answers": [
+          "more slowly"
+        ],
+        "base_verb": "slowly",
+        "supplied_words": [
+          "slowly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречия slowly и deeply образуют сравнительную степень с more (more slowly, more deeply), а наречие badly имеет неправильную форму worse.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-073-b2",
+        "answer": "worse",
+        "accepted_answers": [
+          "worse"
+        ],
+        "base_verb": "badly",
+        "supplied_words": [
+          "badly"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Наречия slowly и deeply образуют сравнительную степень с more (more slowly, more deeply), а наречие badly имеет неправильную форму worse.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-073-b3",
+        "answer": "more deeply",
+        "accepted_answers": [
+          "more deeply"
+        ],
+        "base_verb": "deeply",
+        "supplied_words": [
+          "deeply"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречия slowly и deeply образуют сравнительную степень с more (more slowly, more deeply), а наречие badly имеет неправильную форму worse.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Carla's health notice in Olympia warns night-shift staff about using bright tablets in bed. Workers who read on screens before sleep fall asleep more slowly than those who read printed books. They also wake up more often during the night and recover worse from long shifts than people who put phones away. Turning devices off an hour before bed helps adults rest more deeply and wake up calmer."
+  },
+  {
+    "id": "cp-C6-074",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-32",
+    "bankgen_format": "gap",
+    "prompt": "Because the mountain wind turned bitterly cold after dusk, our little cabin stove burned through the dry wood much (quickly) than we had expected.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол burned описывается наречием quickly, сравнительная степень которого — more quickly.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "travel",
+    "seed_id": "cp-1210",
+    "skeleton": "because the w after w , our w the w G than we had w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-074-b1",
+        "answer": "more quickly",
+        "accepted_answers": [
+          "more quickly"
+        ],
+        "base_verb": "quickly",
+        "supplied_words": [
+          "quickly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Глагол burned описывается наречием quickly, сравнительная степень которого — more quickly.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Because the mountain wind turned bitterly cold after dusk, our little cabin stove burned through the dry wood much more quickly than we had expected."
+  },
+  {
+    "id": "cp-C6-075",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-33",
+    "bankgen_format": "mc",
+    "prompt": "Szymon's autumn report confirmed that part-time library posts did not attract ___ applicants in spring as they do this season.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Applicants — исчисляемое существительное во множественном числе, поэтому в конструкции с as требуется as many, а не as much.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "work",
+    "seed_id": "cp-1125",
+    "skeleton": "w that w did not w G w in w as they do this w .",
+    "practice_tenses": [
+      "cp_as_many_much"
+    ],
+    "tags": [
+      "cp_as_many_much"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "as much",
+      "more many",
+      "as many",
+      "so much"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "as many",
+    "summary": "Szymon's autumn report confirmed that part-time library posts did not attract as many applicants in spring as they do this season.",
+    "answer_text": "Szymon's autumn report confirmed that part-time library posts did not attract as many applicants in spring as they do this season."
+  },
+  {
+    "id": "cp-C6-076",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-34",
+    "bankgen_format": "gap",
+    "prompt": "In Estela's painting class, adult beginners choose bright orange skies (often) than pale grey ones.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Сравнительная степень наречия often — more often.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "arts",
+    "seed_id": "cp-1306",
+    "skeleton": "in w , w G than w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-076-b1",
+        "answer": "more often",
+        "accepted_answers": [
+          "more often"
+        ],
+        "base_verb": "often",
+        "supplied_words": [
+          "often"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Сравнительная степень наречия often — more often.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "In Estela's painting class, adult beginners choose bright orange skies more often than pale grey ones."
+  },
+  {
+    "id": "cp-C6-077",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-35",
+    "bankgen_format": "mini",
+    "prompt": "Hi Aunt Astrid, our choir in Molde has started doing short warm-ups on Mondays. Nobody sings (loudly) as they used to in autumn. We practise (hard) than before, and the whole group sounds much nicer. You must come to our winter concert!",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "С отрицательным подлежащим nobody и союзом as используется as/so loudly; глагол practise с наречием hard образует сравнение practise harder.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-1236",
+    "skeleton": "w , our w in w has w on w . w G as they w to in w . we w G than before , and the w . you must w to our w !",
+    "practice_tenses": [
+      "cp_not_as_as",
+      "cp_verb_comparison"
+    ],
+    "tags": [
+      "cp_not_as_as",
+      "cp_verb_comparison"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-077-b1",
+        "answer": "as loudly",
+        "accepted_answers": [
+          "as loudly",
+          "so loudly"
+        ],
+        "base_verb": "loudly",
+        "supplied_words": [
+          "loudly"
+        ],
+        "tense_or_construction": "cp_not_as_as",
+        "explanation_ru": "С отрицательным подлежащим nobody и союзом as используется as/so loudly; глагол practise с наречием hard образует сравнение practise harder.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-077-b2",
+        "answer": "harder",
+        "accepted_answers": [
+          "harder"
+        ],
+        "base_verb": "hard",
+        "supplied_words": [
+          "hard"
+        ],
+        "tense_or_construction": "cp_verb_comparison",
+        "explanation_ru": "С отрицательным подлежащим nobody и союзом as используется as/so loudly; глагол practise с наречием hard образует сравнение practise harder.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Hi Aunt Astrid, our choir in Molde has started doing short warm-ups on Mondays. Nobody sings as loudly as they used to in autumn. We practise harder than before, and the whole group sounds much nicer. You must come to our winter concert!"
+  },
+  {
+    "id": "cp-C6-078",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-36",
+    "bankgen_format": "gap",
+    "prompt": "Jodie noted that the small solar sensors measure light showers far (reliably) than the rusty metal buckets the station used before.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наречие reliably образует сравнительную степень при помощи more (more reliably), а слово far усиливает сравнение.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "science",
+    "seed_id": "cp-1315",
+    "skeleton": "w that the w G than the w the w before .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C6-078-b1",
+        "answer": "more reliably",
+        "accepted_answers": [
+          "more reliably"
+        ],
+        "base_verb": "reliably",
+        "supplied_words": [
+          "reliably"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие reliably образует сравнительную степень при помощи more (more reliably), а слово far усиливает сравнение.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Jodie noted that the small solar sensors measure light showers far more reliably than the rusty metal buckets the station used before."
+  },
+  {
+    "id": "cp-C6-079",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-37",
+    "bankgen_format": "transform",
+    "prompt": "The honey jar does not contain as much honey as it contained last year, even though the glass looks identical. → The honey jar contains …",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "Отрицательное сравнение does not contain as much honey as передаётся через утвердительное contains less honey than.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "shopping",
+    "seed_id": "cp-1139",
+    "skeleton": "the w does not w as w as it w LAST_YEAR , w the w . the w",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "The honey jar contains less honey than it contained last year, even though the glass looks identical.",
+    "blanks": [
+      {
+        "id": "cp-C6-079-b1",
+        "answer": "The honey jar contains less honey than it contained last year, even though the glass looks identical.",
+        "accepted_answers": [
+          "The honey jar contains less honey than it contained last year, even though the glass looks identical.",
+          "The honey jar contains less honey than last year, even though the glass looks identical."
+        ],
+        "tense_or_construction": "cp_fewer_less",
+        "explanation_ru": "Отрицательное сравнение does not contain as much honey as передаётся через утвердительное contains less honey than.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cp-C6-080",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-38",
+    "bankgen_format": "mini",
+    "prompt": "Hi Uncle Paul, I wanted to tell you how my swimming is going in Leicester. Since January, I have trained (regularly) than I did during the autumn term. My coach fixed my kicking technique, so I do not breathe (heavily) as I used to at the end of a length. Last Tuesday I swam (far) than anyone else in my lane without stopping for a rest.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Regularly образует форму more regularly; после do not и перед as нужно as/so heavily; наречие far имеет неправильную форму further/farther.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "sport",
+    "seed_id": "cp-1221",
+    "skeleton": "w , i w to w you how my w is w in w . SINCE w , i have w G than i did w the w . my w my w , so i do not w G as i w to at the w of a w . LAST_TUESDAY i w G than w in my w for a w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_not_as_as",
+      "cp_irregular"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_not_as_as",
+      "cp_irregular"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-080-b1",
+        "answer": "more regularly",
+        "accepted_answers": [
+          "more regularly"
+        ],
+        "base_verb": "regularly",
+        "supplied_words": [
+          "regularly"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Regularly образует форму more regularly; после do not и перед as нужно as/so heavily; наречие far имеет неправильную форму further/farther.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-080-b2",
+        "answer": "as heavily",
+        "accepted_answers": [
+          "as heavily",
+          "so heavily"
+        ],
+        "base_verb": "heavily",
+        "supplied_words": [
+          "heavily"
+        ],
+        "tense_or_construction": "cp_not_as_as",
+        "explanation_ru": "Regularly образует форму more regularly; после do not и перед as нужно as/so heavily; наречие far имеет неправильную форму further/farther.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-080-b3",
+        "answer": "further",
+        "accepted_answers": [
+          "further",
+          "farther"
+        ],
+        "base_verb": "far",
+        "supplied_words": [
+          "far"
+        ],
+        "tense_or_construction": "cp_irregular",
+        "explanation_ru": "Regularly образует форму more regularly; после do not и перед as нужно as/so heavily; наречие far имеет неправильную форму further/farther.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Hi Uncle Paul, I wanted to tell you how my swimming is going in Leicester. Since January, I have trained more regularly than I did during the autumn term. My coach fixed my kicking technique, so I do not breathe as heavily as I used to at the end of a length. Last Tuesday I swam further than anyone else in my lane without stopping for a rest."
+  },
+  {
+    "id": "cp-C6-081",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-39",
+    "bankgen_format": "fix",
+    "prompt": "Because of the huge flashing ads, this train app leaves fewer space on screen for platform numbers than the old version.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Space (свободное место на экране) — неисчисляемое существительное, поэтому вместо fewer нужно less.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "tech",
+    "seed_id": "cp-1338",
+    "skeleton": "because of the w , this w on w for w than the w .",
+    "practice_tenses": [
+      "cp_fewer_less"
+    ],
+    "tags": [
+      "cp_fewer_less"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Because of the huge flashing ads, this train app leaves less space on screen for platform numbers than the old version.",
+    "accepted_answers": [
+      "Because of the huge flashing ads, this train app leaves less space on screen for platform numbers than the old version."
+    ],
+    "answer_text": "Because of the huge flashing ads, this train app leaves less space on screen for platform numbers than the old version.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C6-082",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-40",
+    "bankgen_format": "mini",
+    "prompt": "Cycling along the canal in Alkmaar used to feel stressful on wet mornings. With the wider bike crossings, I ride (safely) past the busy buses than before. My morning commute also does not take (long) as it did in winter. You should bring your bike when you visit.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Наречие safely образует сравнительную степень через more (more safely), а отрицательная конструкция с as требует as/so long.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "email",
+    "seed_id": "cp-1211",
+    "skeleton": "w the w in w to w on w . with the w , i w G w the w than before . my w does not w G as it did in w . you should w your w when you w .",
+    "practice_tenses": [
+      "cp_adverb",
+      "cp_not_as_as"
+    ],
+    "tags": [
+      "cp_adverb",
+      "cp_not_as_as"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C6-082-b1",
+        "answer": "more safely",
+        "accepted_answers": [
+          "more safely"
+        ],
+        "base_verb": "safely",
+        "supplied_words": [
+          "safely"
+        ],
+        "tense_or_construction": "cp_adverb",
+        "explanation_ru": "Наречие safely образует сравнительную степень через more (more safely), а отрицательная конструкция с as требует as/so long.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C6-082-b2",
+        "answer": "as long",
+        "accepted_answers": [
+          "as long",
+          "so long"
+        ],
+        "base_verb": "long",
+        "supplied_words": [
+          "long"
+        ],
+        "tense_or_construction": "cp_not_as_as",
+        "explanation_ru": "Наречие safely образует сравнительную степень через more (more safely), а отрицательная конструкция с as требует as/so long.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Cycling along the canal in Alkmaar used to feel stressful on wet mornings. With the wider bike crossings, I ride more safely past the busy buses than before. My morning commute also does not take as long as it did in winter. You should bring your bike when you visit."
+  },
+  {
+    "id": "cp-C6-083",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-41",
+    "bankgen_format": "which",
+    "prompt": "Tapio writes short notes after every lecture instead of studying all night, so he handles exams much better than in his first term.",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Верный вариант использует правильное наречие more effectively и глагольное сравнение worries far less; в других вариантах есть ошибки more hard, the most well и fewer time.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "school",
+    "seed_id": "cp-1105",
+    "skeleton": "w after EVERY_LECTURE w of w all w , so he w than in his w .",
+    "practice_tenses": [
+      "cp_verb_comparison"
+    ],
+    "tags": [
+      "cp_verb_comparison"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Tapio studies more hard now, so he feels more calm before exams.",
+      "Tapio prepares more organisedly and sleeps the most well in his flat.",
+      "Tapio revises more effectively than before and worries far less during exam weeks.",
+      "Tapio spends fewer time reading notes than he spent in his first term."
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "Tapio revises more effectively than before and worries far less during exam weeks.",
+    "summary": "Tapio revises more effectively than before and worries far less during exam weeks.",
+    "answer_text": "Tapio revises more effectively than before and worries far less during exam weeks."
+  },
+  {
+    "id": "cp-C6-084",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP13-42",
+    "bankgen_format": "mc",
+    "prompt": "Nika noticed during her morning swims in Koper that the sea mist lingers ___ over the bay in November than in September.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Сравнительная степень наречия late — later, а для усиления используется far (far later); слово very со сравнительной степенью не сочетается.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C6",
+    "genre": "nature",
+    "seed_id": "cp-1506",
+    "skeleton": "w her w in w that the w G over the w in w than in w .",
+    "practice_tenses": [
+      "cp_adverb"
+    ],
+    "tags": [
+      "cp_adverb"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "much more late",
+      "far later",
+      "very later",
+      "the latest"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "far later",
+    "summary": "Nika noticed during her morning swims in Koper that the sea mist lingers far later over the bay in November than in September.",
+    "answer_text": "Nika noticed during her morning swims in Koper that the sea mist lingers far later over the bay in November than in September."
+  },
+  {
+    "id": "cp-C7-001",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-01",
+    "bankgen_format": "gap",
+    "prompt": "The corner lot looks nicer than (we / expect) after neighbours planted flowers.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После союза than идёт придаточное предложение с подлежащим и глаголом в прошедшем времени (we expected / we had expected).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "city",
+    "seed_id": "cp-1934",
+    "skeleton": "the w than G after w .",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-001-b1",
+        "answer": "we expected",
+        "accepted_answers": [
+          "we expected",
+          "we had expected"
+        ],
+        "base_verb": "we / expect",
+        "supplied_words": [
+          "we",
+          "expect"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "После союза than идёт придаточное предложение с подлежащим и глаголом в прошедшем времени (we expected / we had expected).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "The corner lot looks nicer than we expected after neighbours planted flowers."
+  },
+  {
+    "id": "cp-C7-002",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-02",
+    "bankgen_format": "mc",
+    "prompt": "The harbour officer found Carl's lost bag much faster ___ expected.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После сравнительной степени (faster) используется союз than, а не then («затем») и не that.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "travel",
+    "seed_id": "cp-1843",
+    "skeleton": "the w G w .",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "that he",
+      "than he",
+      "then he",
+      "as he"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "than he",
+    "summary": "The harbour officer found Carl's lost bag much faster than he expected.",
+    "answer_text": "The harbour officer found Carl's lost bag much faster than he expected."
+  },
+  {
+    "id": "cp-C7-003",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-03",
+    "bankgen_format": "gap",
+    "prompt": "Up close, the satellite model looks quite (different) the pictures in our book.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В британском английском после прилагательного different используется предлог from (или to).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "science",
+    "seed_id": "cp-1943",
+    "skeleton": "w , the w G the w in our w .",
+    "practice_tenses": [
+      "cp_similar_different"
+    ],
+    "tags": [
+      "cp_similar_different"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-003-b1",
+        "answer": "different from",
+        "accepted_answers": [
+          "different from",
+          "different to"
+        ],
+        "base_verb": "different",
+        "supplied_words": [
+          "different"
+        ],
+        "tense_or_construction": "cp_similar_different",
+        "explanation_ru": "В британском английском после прилагательного different используется предлог from (или to).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Up close, the satellite model looks quite different from the pictures in our book."
+  },
+  {
+    "id": "cp-C7-004",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-04",
+    "bankgen_format": "fix",
+    "prompt": "Putting up the kitchen shelf took much longer then Clement planned.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Типичная ошибка — путать союз сравнения than («чем») с наречием времени then («потом»).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "home",
+    "seed_id": "cp-1414",
+    "skeleton": "w the w .",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Putting up the kitchen shelf took much longer than Clement planned.",
+    "accepted_answers": [
+      "Putting up the kitchen shelf took much longer than Clement planned."
+    ],
+    "answer_text": "Putting up the kitchen shelf took much longer than Clement planned.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C7-005",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-05",
+    "bankgen_format": "gap",
+    "prompt": "Didn't you laugh much louder at that old farm film than (I / do)?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После than для сравнения с действием в Past Simple (Didn't you laugh) используется вспомогательный глагол did (than I did).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "arts",
+    "seed_id": "cp-1242",
+    "skeleton": "w you w at that w than G ?",
+    "practice_tenses": [
+      "cp_than_pronoun"
+    ],
+    "tags": [
+      "cp_than_pronoun"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-005-b1",
+        "answer": "I did",
+        "accepted_answers": [
+          "I did"
+        ],
+        "base_verb": "I / do",
+        "supplied_words": [
+          "I",
+          "do"
+        ],
+        "tense_or_construction": "cp_than_pronoun",
+        "explanation_ru": "После than для сравнения с действием в Past Simple (Didn't you laugh) используется вспомогательный глагол did (than I did).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Didn't you laugh much louder at that old farm film than I did?"
+  },
+  {
+    "id": "cp-C7-006",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-06",
+    "bankgen_format": "mini",
+    "prompt": "I stopped at a tiny cave bakery in Matera for a cheap loaf of bread. The crust was far crisper (than / expect), and the bread tasted better than anything at our hotel. Its price was (similar) a plain supermarket roll back home. In fact, we paid (less / three) euros for the whole loaf!",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Устойчивый оборот — than expected; после similar ставится предлог to; перед числительным используется конструкция less than + число.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "review",
+    "seed_id": "cp-1521",
+    "skeleton": "i w at a w in w for a w of w . the w was w G , and the w than w at our w . its w was G a w . in w , we w G w for the w !",
+    "practice_tenses": [
+      "cp_than_expected",
+      "cp_similar_different",
+      "cp_more_than_number"
+    ],
+    "tags": [
+      "cp_than_expected",
+      "cp_similar_different",
+      "cp_more_than_number"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C7-006-b1",
+        "answer": "than expected",
+        "accepted_answers": [
+          "than expected"
+        ],
+        "base_verb": "than / expect",
+        "supplied_words": [
+          "than",
+          "expect"
+        ],
+        "tense_or_construction": "cp_than_expected",
+        "explanation_ru": "Устойчивый оборот — than expected; после similar ставится предлог to; перед числительным используется конструкция less than + число.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-006-b2",
+        "answer": "similar to",
+        "accepted_answers": [
+          "similar to"
+        ],
+        "base_verb": "similar",
+        "supplied_words": [
+          "similar"
+        ],
+        "tense_or_construction": "cp_similar_different",
+        "explanation_ru": "Устойчивый оборот — than expected; после similar ставится предлог to; перед числительным используется конструкция less than + число.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-006-b3",
+        "answer": "less than three",
+        "accepted_answers": [
+          "less than three",
+          "less than 3"
+        ],
+        "base_verb": "less / three",
+        "supplied_words": [
+          "less",
+          "three"
+        ],
+        "tense_or_construction": "cp_more_than_number",
+        "explanation_ru": "Устойчивый оборот — than expected; после similar ставится предлог to; перед числительным используется конструкция less than + число.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "I stopped at a tiny cave bakery in Matera for a cheap loaf of bread. The crust was far crisper than expected, and the bread tasted better than anything at our hotel. Its price was similar to a plain supermarket roll back home. In fact, we paid less than three euros for the whole loaf!"
+  },
+  {
+    "id": "cp-C7-007",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-07",
+    "bankgen_format": "gap",
+    "prompt": "Jurgen expected two guests, but (more / fifteen) regular customers came to celebrate.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Перед числительным «больше пятнадцати» передаётся конструкцией more than fifteen.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "email",
+    "seed_id": "cp-1422",
+    "skeleton": "w , but G w to w .",
+    "practice_tenses": [
+      "cp_more_than_number"
+    ],
+    "tags": [
+      "cp_more_than_number"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-007-b1",
+        "answer": "more than fifteen",
+        "accepted_answers": [
+          "more than fifteen",
+          "more than 15"
+        ],
+        "base_verb": "more / fifteen",
+        "supplied_words": [
+          "more",
+          "fifteen"
+        ],
+        "tense_or_construction": "cp_more_than_number",
+        "explanation_ru": "Перед числительным «больше пятнадцати» передаётся конструкцией more than fifteen.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Jurgen expected two guests, but more than fifteen regular customers came to celebrate."
+  },
+  {
+    "id": "cp-C7-008",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-08",
+    "bankgen_format": "which",
+    "prompt": "Ciara thought the new dental clinic would feel cold and scary, but it felt warm and calm.",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "После сравнительной степени friendlier нужен союз than; варианты с then, as и the same like содержат типичные ошибки.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "health",
+    "seed_id": "cp-1321",
+    "skeleton": "w the w would w and w , but it w and w .",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The clinic was much friendlier than Ciara thought.",
+      "The clinic was much friendlier then Ciara thought.",
+      "The clinic was more friendly as Ciara thought.",
+      "The clinic was the same like the old scary one."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "The clinic was much friendlier than Ciara thought.",
+    "summary": "The clinic was much friendlier than Ciara thought.",
+    "answer_text": "The clinic was much friendlier than Ciara thought."
+  },
+  {
+    "id": "cp-C7-009",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-09",
+    "bankgen_format": "gap",
+    "prompt": "Although Giulio hoped to uncover shiny silver coins at Ostia, the old clay spoon he found turned out to be far more interesting to visitors than (he / imagine).",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После than идёт придаточное предложение о более раннем ожидании — he had imagined (также допустимо he imagined).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "history",
+    "seed_id": "cp-1401",
+    "skeleton": "w to w at w , the w he w to be w to w than G .",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-009-b1",
+        "answer": "he had imagined",
+        "accepted_answers": [
+          "he had imagined",
+          "he imagined"
+        ],
+        "base_verb": "he / imagine",
+        "supplied_words": [
+          "he",
+          "imagine"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "После than идёт придаточное предложение о более раннем ожидании — he had imagined (также допустимо he imagined).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Although Giulio hoped to uncover shiny silver coins at Ostia, the old clay spoon he found turned out to be far more interesting to visitors than he had imagined."
+  },
+  {
+    "id": "cp-C7-010",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-10",
+    "bankgen_format": "gap",
+    "prompt": "My room in Rovinj wasn't cramped at all; the balcony was actually much quieter than (they / show) in the photos.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После than ставится полное придаточное предложение в прошедшем времени (they showed / they had shown).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "chat",
+    "seed_id": "cp-1203",
+    "skeleton": "my w in w at all ; the w was w than G in the w .",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-010-b1",
+        "answer": "they showed",
+        "accepted_answers": [
+          "they showed",
+          "they had shown"
+        ],
+        "base_verb": "they / show",
+        "supplied_words": [
+          "they",
+          "show"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "После than ставится полное придаточное предложение в прошедшем времени (they showed / they had shown).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "My room in Rovinj wasn't cramped at all; the balcony was actually much quieter than they showed in the photos."
+  },
+  {
+    "id": "cp-C7-011",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-11",
+    "bankgen_format": "mc",
+    "prompt": "Dan's job interview at the garden cafe was completely different ___ the strict technical test he had prepared for.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Прилагательное different сочетается с предлогом from (different from), а не с as, of или with.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "work",
+    "seed_id": "cp-1123",
+    "skeleton": "w at the w was w G the w he had w for .",
+    "practice_tenses": [
+      "cp_similar_different"
+    ],
+    "tags": [
+      "cp_similar_different"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "as",
+      "from",
+      "of",
+      "with"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "from",
+    "summary": "Dan's job interview at the garden cafe was completely different from the strict technical test he had prepared for.",
+    "answer_text": "Dan's job interview at the garden cafe was completely different from the strict technical test he had prepared for."
+  },
+  {
+    "id": "cp-C7-012",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-12",
+    "bankgen_format": "mini",
+    "prompt": "We took our children to the cheese museum in Gouda on Saturday. It was much more fun than (we / think) it would be. A friendly guide let our kids weigh real cheeses on old wooden scales. My younger son enjoyed it even more than (his sister / do).",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом пропуске после than нужно прошедшее время we thought; во втором вспомогательный глагол did заменяет глагол enjoyed в Past Simple.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "review",
+    "seed_id": "cp-1301",
+    "skeleton": "we w our w to the w in w on w . it was w than G it would be . a w our w on w . my w it w than G .",
+    "practice_tenses": [
+      "cp_than_clause",
+      "cp_than_pronoun"
+    ],
+    "tags": [
+      "cp_than_clause",
+      "cp_than_pronoun"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C7-012-b1",
+        "answer": "we thought",
+        "accepted_answers": [
+          "we thought",
+          "we had thought"
+        ],
+        "base_verb": "we / think",
+        "supplied_words": [
+          "we",
+          "think"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "В первом пропуске после than нужно прошедшее время we thought; во втором вспомогательный глагол did заменяет глагол enjoyed в Past Simple.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-012-b2",
+        "answer": "his sister did",
+        "accepted_answers": [
+          "his sister did"
+        ],
+        "base_verb": "his sister / do",
+        "supplied_words": [
+          "his sister",
+          "do"
+        ],
+        "tense_or_construction": "cp_than_pronoun",
+        "explanation_ru": "В первом пропуске после than нужно прошедшее время we thought; во втором вспомогательный глагол did заменяет глагол enjoyed в Past Simple.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "We took our children to the cheese museum in Gouda on Saturday. It was much more fun than we thought it would be. A friendly guide let our kids weigh real cheeses on old wooden scales. My younger son enjoyed it even more than his sister did."
+  },
+  {
+    "id": "cp-C7-013",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-13",
+    "bankgen_format": "gap",
+    "prompt": "The visiting violin teacher jokes much more than (you / tell) me, Pia!",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После союза than идёт придаточное предложение в Past Simple (you told), чтобы сравнить реальность с прежними словами.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "chat",
+    "seed_id": "cp-1234",
+    "skeleton": "the w than G me , w !",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-013-b1",
+        "answer": "you told",
+        "accepted_answers": [
+          "you told",
+          "you had told"
+        ],
+        "base_verb": "you / tell",
+        "supplied_words": [
+          "you",
+          "tell"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "После союза than идёт придаточное предложение в Past Simple (you told), чтобы сравнить реальность с прежними словами.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "The visiting violin teacher jokes much more than you told me, Pia!"
+  },
+  {
+    "id": "cp-C7-014",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-14",
+    "bankgen_format": "transform",
+    "prompt": "The new reading room is not like the grey old classroom at all. → The new reading room is completely …",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "Смысл not like передаётся конструкцией different from (в британском английском также возможно different to).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "school",
+    "seed_id": "cp-1544",
+    "skeleton": "the w is not w the w at all . the w is w",
+    "practice_tenses": [
+      "cp_similar_different"
+    ],
+    "tags": [
+      "cp_similar_different"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "The new reading room is completely different from the grey old classroom.",
+    "blanks": [
+      {
+        "id": "cp-C7-014-b1",
+        "answer": "The new reading room is completely different from the grey old classroom.",
+        "accepted_answers": [
+          "The new reading room is completely different from the grey old classroom.",
+          "The new reading room is completely different to the grey old classroom.",
+          "The new reading room is completely different from the old grey classroom.",
+          "The new reading room is completely different to the old grey classroom."
+        ],
+        "tense_or_construction": "cp_similar_different",
+        "explanation_ru": "Смысл not like передаётся конструкцией different from (в британском английском также возможно different to).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cp-C7-015",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-15",
+    "bankgen_format": "gap",
+    "prompt": "Through the small telescope in Sedona, we counted (more / twenty) bright craters on the moon.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Перед числом используется связка more than + числительное (more than twenty).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "review",
+    "seed_id": "cp-1312",
+    "skeleton": "w the w in w , we w G w on the w .",
+    "practice_tenses": [
+      "cp_more_than_number"
+    ],
+    "tags": [
+      "cp_more_than_number"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-015-b1",
+        "answer": "more than twenty",
+        "accepted_answers": [
+          "more than twenty",
+          "more than 20"
+        ],
+        "base_verb": "more / twenty",
+        "supplied_words": [
+          "more",
+          "twenty"
+        ],
+        "tense_or_construction": "cp_more_than_number",
+        "explanation_ru": "Перед числом используется связка more than + числительное (more than twenty).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Through the small telescope in Sedona, we counted more than twenty bright craters on the moon."
+  },
+  {
+    "id": "cp-C7-016",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-16",
+    "bankgen_format": "fix",
+    "prompt": "The wooden shelf that arrived in the post wasn't the same size like the one in the online photo.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После the same всегда используется союз as (the same ... as), а не like.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "shopping",
+    "seed_id": "cp-1131",
+    "skeleton": "the w that w in the w the w the w in the w .",
+    "practice_tenses": [
+      "cp_same_as"
+    ],
+    "tags": [
+      "cp_same_as"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "The wooden shelf that arrived in the post wasn't the same size as the one in the online photo.",
+    "accepted_answers": [
+      "The wooden shelf that arrived in the post wasn't the same size as the one in the online photo."
+    ],
+    "answer_text": "The wooden shelf that arrived in the post wasn't the same size as the one in the online photo.",
+    "has_error": true
+  },
+  {
+    "id": "cp-C7-017",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-17",
+    "bankgen_format": "mini",
+    "prompt": "Bongani joined the early charity fun run along the beach in Port Elizabeth. Thanks to cheerful drummers near the tower, the final stretch felt easier than (he / fear). The route was (similar) a park jog rather than a hard race. In fact, Bongani finished three minutes sooner than (his cousin / can).",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "После than ставится придаточное в прошедшем времени (he feared, his cousin could), а прилагательное similar требует предлога to.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "sport",
+    "seed_id": "cp-1224",
+    "skeleton": "w the w the w in w . w to w the w , the w than G . the w was G a w than a w . in w , w than G .",
+    "practice_tenses": [
+      "cp_than_clause",
+      "cp_similar_different"
+    ],
+    "tags": [
+      "cp_than_clause",
+      "cp_similar_different"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C7-017-b1",
+        "answer": "he feared",
+        "accepted_answers": [
+          "he feared",
+          "he had feared"
+        ],
+        "base_verb": "he / fear",
+        "supplied_words": [
+          "he",
+          "fear"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "После than ставится придаточное в прошедшем времени (he feared, his cousin could), а прилагательное similar требует предлога to.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-017-b2",
+        "answer": "similar to",
+        "accepted_answers": [
+          "similar to"
+        ],
+        "base_verb": "similar",
+        "supplied_words": [
+          "similar"
+        ],
+        "tense_or_construction": "cp_similar_different",
+        "explanation_ru": "После than ставится придаточное в прошедшем времени (he feared, his cousin could), а прилагательное similar требует предлога to.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-017-b3",
+        "answer": "his cousin could",
+        "accepted_answers": [
+          "his cousin could"
+        ],
+        "base_verb": "his cousin / can",
+        "supplied_words": [
+          "his cousin",
+          "can"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "После than ставится придаточное в прошедшем времени (he feared, his cousin could), а прилагательное similar требует предлога to.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Bongani joined the early charity fun run along the beach in Port Elizabeth. Thanks to cheerful drummers near the tower, the final stretch felt easier than he feared. The route was similar to a park jog rather than a hard race. In fact, Bongani finished three minutes sooner than his cousin could."
+  },
+  {
+    "id": "cp-C7-018",
+    "topic": "comparison",
+    "level": "basic",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-18",
+    "bankgen_format": "mc",
+    "prompt": "Nobody in our group expected the retired nurses to finish faster ___.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После than перед глаголом did требуется подлежащая форма местоимения we (than we did), а не us и не союз then/as.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "tech",
+    "seed_id": "cp-1333",
+    "skeleton": "w in our w the w to w G .",
+    "practice_tenses": [
+      "cp_than_pronoun"
+    ],
+    "tags": [
+      "cp_than_pronoun"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "then we did",
+      "than us did",
+      "than we did",
+      "as we did"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "than we did",
+    "summary": "Nobody in our group expected the retired nurses to finish faster than we did.",
+    "answer_text": "Nobody in our group expected the retired nurses to finish faster than we did."
+  },
+  {
+    "id": "cp-C7-019",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-19",
+    "bankgen_format": "gap",
+    "prompt": "After reading worried travel posts online, Daichi found that boarding the mountain bus in Takayama was far simpler than (online posts / suggest).",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Придаточное после than описывает прежнее впечатление из отзывов, поэтому используется Past Perfect (had suggested) или Past Simple (suggested).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "travel",
+    "seed_id": "cp-1215",
+    "skeleton": "after w , w that w the w in w was w than G .",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-019-b1",
+        "answer": "online posts had suggested",
+        "accepted_answers": [
+          "online posts had suggested",
+          "online posts suggested"
+        ],
+        "base_verb": "online posts / suggest",
+        "supplied_words": [
+          "online posts",
+          "suggest"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "Придаточное после than описывает прежнее впечатление из отзывов, поэтому используется Past Perfect (had suggested) или Past Simple (suggested).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "After reading worried travel posts online, Daichi found that boarding the mountain bus in Takayama was far simpler than online posts had suggested."
+  },
+  {
+    "id": "cp-C7-020",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-20",
+    "bankgen_format": "gap",
+    "prompt": "Why is the paid bag-drop queue moving slower than (the free one / be) right beside us?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Во второй части сравнения вспомогательный глагол повторяет время главного предложения (is moving → the free one is).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "chat",
+    "seed_id": "cp-1642",
+    "skeleton": "why is the w than G w us ?",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "cp-C7-020-b1",
+        "answer": "the free one is",
+        "accepted_answers": [
+          "the free one is"
+        ],
+        "base_verb": "the free one / be",
+        "supplied_words": [
+          "the free one",
+          "be"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "Во второй части сравнения вспомогательный глагол повторяет время главного предложения (is moving → the free one is).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Why is the paid bag-drop queue moving slower than the free one is right beside us?"
+  },
+  {
+    "id": "cp-C7-021",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-21",
+    "bankgen_format": "mini",
+    "prompt": "Hi Mum, I just finished my first history presentation at Aberystwyth University. It went much better (than / plan), and everyone clapped at the end. My classmates asked far more questions than (I / be) ready for, all about the old town map! The whole seminar felt (different) our quiet school lessons back home.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "После сравнительной степени используются сокращённый оборот than planned и придаточное than I was; после different ставится предлог from (или to).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "email",
+    "seed_id": "cp-1103",
+    "skeleton": "w , i JUST w my w at w . it w G , and w at the w . my w than G w for , all about the w ! the w G our w .",
+    "practice_tenses": [
+      "cp_than_expected",
+      "cp_than_clause",
+      "cp_similar_different"
+    ],
+    "tags": [
+      "cp_than_expected",
+      "cp_than_clause",
+      "cp_similar_different"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C7-021-b1",
+        "answer": "than planned",
+        "accepted_answers": [
+          "than planned",
+          "than I planned",
+          "than I had planned"
+        ],
+        "base_verb": "than / plan",
+        "supplied_words": [
+          "than",
+          "plan"
+        ],
+        "tense_or_construction": "cp_than_expected",
+        "explanation_ru": "После сравнительной степени используются сокращённый оборот than planned и придаточное than I was; после different ставится предлог from (или to).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-021-b2",
+        "answer": "I was",
+        "accepted_answers": [
+          "I was"
+        ],
+        "base_verb": "I / be",
+        "supplied_words": [
+          "I",
+          "be"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "После сравнительной степени используются сокращённый оборот than planned и придаточное than I was; после different ставится предлог from (или to).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-021-b3",
+        "answer": "different from",
+        "accepted_answers": [
+          "different from",
+          "different to"
+        ],
+        "base_verb": "different",
+        "supplied_words": [
+          "different"
+        ],
+        "tense_or_construction": "cp_similar_different",
+        "explanation_ru": "После сравнительной степени используются сокращённый оборот than planned и придаточное than I was; после different ставится предлог from (или to).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Hi Mum, I just finished my first history presentation at Aberystwyth University. It went much better than planned, and everyone clapped at the end. My classmates asked far more questions than I was ready for, all about the old town map! The whole seminar felt different from our quiet school lessons back home."
+  },
+  {
+    "id": "cp-C7-022",
+    "topic": "comparison",
+    "level": "medium",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-22",
+    "bankgen_format": "which",
+    "prompt": "The weather forecast promised cold rain on the mountain path, but Bryn enjoyed clear blue skies all afternoon.",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Правильное сравнение строится с союзом than и полным придаточным (than the forecast had promised); в других вариантах ошибки then, different as и лишнее it.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "nature",
+    "seed_id": "cp-1502",
+    "skeleton": "the w on the w , but w all w .",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The mountain weather was much better then the forecast had promised.",
+      "The mountain weather was different as what the forecast had promised.",
+      "The mountain weather was more warm than expected it.",
+      "The mountain weather was much better than the forecast had promised."
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "The mountain weather was much better than the forecast had promised.",
+    "summary": "The mountain weather was much better than the forecast had promised.",
+    "answer_text": "The mountain weather was much better than the forecast had promised."
+  },
+  {
+    "id": "cp-C7-023",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-23",
+    "bankgen_format": "mini",
+    "prompt": "Ruta walked into her new harbour office in Kaunas expecting a quiet, awkward first Monday. Instead, her desk was decorated with bright paper stars and a slice of warm apple cake. Her colleagues made her feel far more welcome than (she / dare) to hope. The friendly atmosphere wasn't (same) her previous, strict workplace at all. It took (less / ten) minutes for her nerves to disappear.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом пропуске после than стоит придаточное (she had dared); во втором — устойчивая связка the same as; перед числом минут используется less than ten.",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "work",
+    "seed_id": "cp-1114",
+    "skeleton": "w into her w in w a w , w . w , her w was w with w and a w of w . her w her w than G to w . the w G her w , w at all . it w G w for her w to w .",
+    "practice_tenses": [
+      "cp_than_clause",
+      "cp_same_as",
+      "cp_more_than_number"
+    ],
+    "tags": [
+      "cp_than_clause",
+      "cp_same_as",
+      "cp_more_than_number"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "cp-C7-023-b1",
+        "answer": "she had dared",
+        "accepted_answers": [
+          "she had dared",
+          "she dared"
+        ],
+        "base_verb": "she / dare",
+        "supplied_words": [
+          "she",
+          "dare"
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "В первом пропуске после than стоит придаточное (she had dared); во втором — устойчивая связка the same as; перед числом минут используется less than ten.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-023-b2",
+        "answer": "the same as",
+        "accepted_answers": [
+          "the same as"
+        ],
+        "base_verb": "same",
+        "supplied_words": [
+          "same"
+        ],
+        "tense_or_construction": "cp_same_as",
+        "explanation_ru": "В первом пропуске после than стоит придаточное (she had dared); во втором — устойчивая связка the same as; перед числом минут используется less than ten.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      },
+      {
+        "id": "cp-C7-023-b3",
+        "answer": "less than ten",
+        "accepted_answers": [
+          "less than ten",
+          "less than 10"
+        ],
+        "base_verb": "less / ten",
+        "supplied_words": [
+          "less",
+          "ten"
+        ],
+        "tense_or_construction": "cp_more_than_number",
+        "explanation_ru": "В первом пропуске после than стоит придаточное (she had dared); во втором — устойчивая связка the same as; перед числом минут используется less than ten.",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ],
+    "answer_text": "Ruta walked into her new harbour office in Kaunas expecting a quiet, awkward first Monday. Instead, her desk was decorated with bright paper stars and a slice of warm apple cake. Her colleagues made her feel far more welcome than she had dared to hope. The friendly atmosphere wasn't the same as her previous, strict workplace at all. It took less than ten minutes for her nerves to disappear."
+  },
+  {
+    "id": "cp-C7-024",
+    "topic": "comparison",
+    "level": "advanced",
+    "content_version": "comparison-2026-11-24.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "CP14-24",
+    "bankgen_format": "transform",
+    "prompt": "Antoine expected the pine bookcase to take an hour to build, not three hours. → The pine bookcase took two hours longer …",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "После сравнительной степени longer вводится придаточное ожидания через союз than (than Antoine expected / had expected).",
+    "rule_refs": [
+      "content/theory/06-comparison.md#degrees-of-comparison"
+    ],
+    "cell": "C7",
+    "genre": "home",
+    "seed_id": "cp-1914",
+    "skeleton": "w the w to w an w to w , not w . the w",
+    "practice_tenses": [
+      "cp_than_clause"
+    ],
+    "tags": [
+      "cp_than_clause"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "The pine bookcase took two hours longer than Antoine expected.",
+    "blanks": [
+      {
+        "id": "cp-C7-024-b1",
+        "answer": "The pine bookcase took two hours longer than Antoine expected.",
+        "accepted_answers": [
+          "The pine bookcase took two hours longer than Antoine expected.",
+          "The pine bookcase took two hours longer than Antoine had expected.",
+          "The pine bookcase took two hours longer than expected."
+        ],
+        "tense_or_construction": "cp_than_clause",
+        "explanation_ru": "После сравнительной степени longer вводится придаточное ожидания через союз than (than Antoine expected / had expected).",
+        "rule_refs": [
+          "content/theory/06-comparison.md#degrees-of-comparison"
+        ]
+      }
+    ]
+  }
+]

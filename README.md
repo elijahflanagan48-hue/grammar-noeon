@@ -2,7 +2,7 @@
 
 Веб-приложение для практики английской грамматики для русскоязычных учеников A1–C2. Интерфейс — русский, учебный контент — British English. [Рабочий сайт](https://grammar-noeon.grammar-noeon.workers.dev).
 
-Банк: **14860 задания / 19771 полей**, 16 форматов.
+Банк: **15860 задания / 21334 полей**, 16 форматов.
 
 | Формат | Название | Заданий |
 |---|---|---|
@@ -10,24 +10,24 @@
 | `bank` | Слова из банка | 15 |
 | `context_cloze` | Пропуски в контекстном тексте | 557 |
 | `direct_to_reported` | Direct → Reported | 837 |
-| `error_fix` | Исправить ошибку | 468 |
+| `error_fix` | Исправить ошибку | 599 |
 | `hunt` | Найти неверные предложения | 23 |
 | `match` | Соединить половинки | 19 |
 | `modal_fix` | Исправление предложения | 50 |
 | `modal_gap` | Пропуск: модальная форма | 700 |
 | `modal_meaning` | Выбор значения в контексте | 50 |
-| `multiple_choice` | Выбор формы / предложения | 2165 |
-| `open_brackets` | Раскрытие скобок | 9418 |
+| `multiple_choice` | Выбор формы / предложения | 2372 |
+| `open_brackets` | Раскрытие скобок | 10007 |
 | `sort` | Распределить по группам | 27 |
-| `transformation` | Перефразирование | 140 |
+| `transformation` | Перефразирование | 213 |
 | `translation_ru_en` | Перевод | 267 |
 | `word_order` | Сборка цепочки | 24 |
 
-Сложность: basic — 4879, medium — 6540, advanced — 3441.
+Сложность: basic — 5189, medium — 6942, advanced — 3729.
 
-Разделы: comparison — 1000, tenses — 4379, passive — 1935, modals — 1040, reported — 2000, nouns — 2000, speaking — 500, infinitive — 1000, conditionals — 1006.
+Разделы: comparison — 2000, tenses — 4379, passive — 1935, modals — 1040, reported — 2000, nouns — 2000, speaking — 500, infinitive — 1000, conditionals — 1006.
 
-Версии: `tenses-2026-11-09.1`, `comparison-2026-11-01.5`, `passive-2026-11-22.2`, `modals-2026-11-05.1`, `reported-2026-11-23.1`, `nouns-2026-11-23.1`, `speaking-2026-11-09.1`, `infinitive-2026-11-13.1`, `conditionals-2026-11-23.3`.
+Версии: `tenses-2026-11-09.1`, `comparison-2026-11-24.1`, `passive-2026-11-22.2`, `modals-2026-11-05.1`, `reported-2026-11-23.1`, `nouns-2026-11-23.1`, `speaking-2026-11-09.1`, `infinitive-2026-11-13.1`, `conditionals-2026-11-23.3`.
 
 Локально подготовлены изменения банка; они ещё не опубликованы. [Отчёт о проверке](docs/review/V8-FINAL-2026-10-30/REPORT.md).
 

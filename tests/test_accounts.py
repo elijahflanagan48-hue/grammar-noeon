@@ -32,6 +32,7 @@ class AccountsTest(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory(prefix='grammar-accounts-test-')
         self.app=GrammarApp(self.temp.name,demo=True)
+        self.comparison=next(i for i in self.app.bank.values() if i.get('topic')=='comparison' and not i.get('retired') and i['type']=='open_brackets' and len(i['blanks'])==1)
         self.teacher,self.student,self.other,self.anon=[Client(self.app) for _ in range(4)]
         for client,role in [(self.teacher,'teacher'),(self.student,'student'),(self.other,'other')]:self.ok(client.post('/api/auth/demo',{'role':role}))
     def tearDown(self):self.temp.cleanup()
@@ -55,10 +56,10 @@ class AccountsTest(unittest.TestCase):
         with self.app.connect() as db:db.execute('UPDATE practice SET answers=?,completed=?,revision=1 WHERE id=?',(json.dumps([answer]),time.time(),practice_id))
         return answer
     def test_own_completed_report_is_private_and_server_graded(self):
-        p=self.start_practice(ids=['cmp-0001']);url='/api/reports/'+p['id']
+        p=self.start_practice(ids=[self.comparison['id']]);url='/api/reports/'+p['id']
         self.assertEqual(self.anon.get(url)[0],401)
         self.assertEqual(self.student.get(url)[0],404)
-        self.ok(self.student.post('/api/practice/'+p['id']+'/check',{'index':0,'revision':0,'submitted':['taller'],'score':999}))
+        self.ok(self.student.post('/api/practice/'+p['id']+'/check',{'index':0,'revision':0,'submitted':[self.comparison['blanks'][0]['answer']],'score':999}))
         self.assertEqual(self.other.get(url)[0],404)
         self.assertEqual(self.teacher.get(url)[0],404)
         report=self.ok(self.student.get(url))
@@ -69,7 +70,7 @@ class AccountsTest(unittest.TestCase):
         self.assertEqual(self.ok(self.teacher.get(historical))['attempt']['score'],1)
         self.assertEqual(self.other.get('/api/reports/historical-completed-fixture')[0],404)
     def test_compact_work_details_hide_unanswered_items_and_enforce_owner(self):
-        p=self.start_practice(ids=['src-u02-020','cmp-0001']);url='/api/attempts/'+p['id']
+        p=self.start_practice(ids=['src-u02-020',self.comparison['id']]);url='/api/attempts/'+p['id']
         self.assertEqual(self.anon.get(url)[0],401)
         self.assertEqual(self.other.get(url)[0],404)
         self.assertEqual(self.teacher.get(url)[0],404)
@@ -83,13 +84,13 @@ class AccountsTest(unittest.TestCase):
         self.ok(self.student.post('/api/practice/'+p['id']+'/check',{'index':0,'revision':0,'submitted':['had already translated']}))
         partial=self.ok(self.student.get(url))
         self.assertEqual(partial['attempt']['index'],1);self.assertEqual(len(partial['attempt']['answers']),1)
-        self.assertNotIn('At 180 cm',json.dumps(partial))
+        self.assertNotIn(self.comparison['prompt'],json.dumps(partial))
         assignment=teacher['assignment']
         self.ok(self.teacher.post('/api/teacher/students/student-demo/assignments/'+assignment['id']+'/cancel',{'version':assignment['version']}))
         cancelled=self.ok(self.student.get(url));self.assertFalse(cancelled['canResume'])
         self.assertEqual(cancelled['attempt']['status'],'cancelled');self.assertEqual(cancelled['attempt']['score'],1)
     def test_explicit_automatic_upgrade_preserves_original_and_checked_answers(self):
-        p=self.start_practice(ids=['cmp-0001','new-translation-001'])
+        p=self.start_practice(ids=[self.comparison['id'],'new-translation-001'])
         self.ok(self.student.post('/api/practice/'+p['id']+'/check',{'index':0,'revision':0,'submitted':['wrong']}))
         with self.app.connect() as db:
             row=db.execute('SELECT * FROM practice WHERE id=?',(p['id'],)).fetchone()
@@ -122,7 +123,7 @@ class AccountsTest(unittest.TestCase):
     def test_assignment_notifications_and_private_completion_report(self):
         self.assertEqual(self.anon.get('/api/notifications')[0],401)
         self.assertEqual(self.ok(self.teacher.get('/api/notifications'))['unreadCount'],0)
-        made=self.ok(self.teacher.post('/api/teacher/students/student-demo/assignments',{'title':'Новая подборка','ids':['cmp-0001']}))
+        made=self.ok(self.teacher.post('/api/teacher/students/student-demo/assignments',{'title':'Новая подборка','ids':[self.comparison['id']]}))
         notice=self.ok(self.student.get('/api/notifications'))
         self.assertEqual(notice['unreadCount'],1)
         event=notice['items'][0]
@@ -137,7 +138,7 @@ class AccountsTest(unittest.TestCase):
         self.assertEqual(self.ok(self.student.get('/api/notifications'))['unreadCount'],0)
         report='/api/teacher/students/student-demo/reports/'+made['practiceId']
         self.assertEqual(self.teacher.get(report)[0],404)
-        request={'index':0,'revision':0,'submitted':['taller'],'score':999}
+        request={'index':0,'revision':0,'submitted':[self.comparison['blanks'][0]['answer']],'score':999}
         self.ok(self.student.post('/api/practice/'+made['practiceId']+'/check',request))
         # Network replay cannot create a second completion notice.
         self.ok(self.student.post('/api/practice/'+made['practiceId']+'/check',request))
@@ -157,19 +158,22 @@ class AccountsTest(unittest.TestCase):
         self.assertEqual(self.ok(self.student.get('/api/notifications'))['items'],[])
         self.assertEqual(self.ok(self.teacher.get('/api/notifications'))['unreadCount'],0)
     def test_comparison_assignment_uses_private_server_grading(self):
-        item=self.app.bank['cmp-0001']
+        item=self.app.bank[self.comparison['id']]
         self.assertEqual(item['topic'],'comparison')
         self.assertEqual(self.student.get('/data/exercises/part-13.json')[0],403)
         self.assertEqual(self.anon.get('/data/exercises/part-13.json')[0],401)
         practice=self.start_practice(ids=[item['id']])
         attempt=self.ok(self.student.get('/api/practice/'+practice['id']))
+        self.assertEqual(attempt['items'][0]['topic'],'comparison')
+        self.assertEqual(attempt['items'][0]['level'],item['level'])
+        self.assertEqual(attempt['items'][0]['instruction_ru'],item['instruction_ru'])
         # Existing attempts are snapshots, including this module's own version.
         self.assertNotIn('answer',json.dumps(attempt.get('items',[])))
-        self.assertEqual(attempt['items'][0]['blanks'][0]['base_adjective'],'tall')
+        self.assertEqual((attempt['items'][0]['blanks'][0].get('base_verb') or attempt['items'][0]['blanks'][0].get('base_adjective')),(item['blanks'][0].get('base_verb') or item['blanks'][0].get('base_adjective')))
         self.assertTrue(grade(item,[item['blanks'][0]['answer']])['correct'])
-        self.assertFalse(grade(item,['tallest'])['correct'])
+        self.assertFalse(grade(item,['deliberately wrong'])['correct'])
         checked=self.ok(self.student.post('/api/practice/'+practice['id']+'/check',
-            {'index':0,'revision':0,'submitted':['taller'],'score':999}))
+            {'index':0,'revision':0,'submitted':[self.comparison['blanks'][0]['answer']],'score':999}))
         self.assertTrue(checked['answer']['correct'])
         self.assertEqual(checked['answer']['item']['rule_refs'],item['rule_refs'])
 

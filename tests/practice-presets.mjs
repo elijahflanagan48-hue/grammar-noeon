@@ -28,7 +28,7 @@ const expected = {
     ['passive-traps', ['pv_D9','pv_D10','pv_D11'], 10, ['basic','medium']],
     ['short', ['pv_D1', 'pv_D2'], 5, ['basic']],
   ],
-  comparison: [['short', ['cmp_forms', 'cmp_superlatives'], 5, ['basic']]],
+  comparison: [['short', ['cp_comparative', 'cp_superlative', 'cp_er_est', 'cp_more_most'], 5, ['basic']]],
 };
 let seed = 29117, selections = 0;
 const random = () => ((seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0) / 2**32);

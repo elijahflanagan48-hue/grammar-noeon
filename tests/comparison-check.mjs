@@ -7,7 +7,9 @@ const ctx = { module: { exports: {} }, document: { querySelector() { return {}; 
 vm.createContext(ctx);
 vm.runInContext(source.replace(/initialise\(\);/, ''), ctx);
 const manifest = JSON.parse(fs.readFileSync(new URL('data/exercises/index.json', root), 'utf8'));
-const bank = manifest.parts.flatMap(p => JSON.parse(fs.readFileSync(new URL(p.file, root), 'utf8'))).filter(i => i.topic === 'comparison');
+const bank = manifest.parts.flatMap(p => JSON.parse(fs.readFileSync(new URL(p.file, root), 'utf8'))).filter(i => i.topic === 'comparison' && !i.bankgen_id).map(({retired, ...snapshot}) => snapshot);
+// Historical assignment snapshots retain their original keys after retirement.
+// The active factory bank is covered by bankgen-comparison.mjs.
 const markdown = fs.readFileSync(new URL('content/theory/06-comparison.md', root), 'utf8');
 const anchors = new Set(markdown.split('\n').filter(line => /^#{1,6} /.test(line)).map(line => ctx.module.exports.slugify(line.replace(/^#+ /, ''))));
 assert.equal(bank.length, 1000);
@@ -58,4 +60,4 @@ assert.equal(vm.runInContext('filteredExercises(form).length', ctx), 300);
 assert.ok(vm.runInContext('filteredExercises(form).every(i => i.level === "advanced" && i.type === "open_brackets")', ctx));
 form.elements.topic.value = 'tenses';
 assert.equal(vm.runInContext('filteredExercises(form).length', ctx), 0);
-console.log('Comparison: 1000 keys, 3 populated levels, 3 practice formats, variants, anchors, adjective placeholders and section isolation passed.');
+console.log('Historical comparison: 1000 keys, 3 populated levels, 3 practice formats, variants, anchors, adjective placeholders and section isolation passed.');

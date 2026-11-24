@@ -300,6 +300,7 @@ function todayRuleLink(topicId) {
   if(topicId.startsWith('mv_'))return '#theory/modals';
   if(/^rs(?:\d|_)/.test(topicId))return '#theory/reported/'+(topicId==='rs_mixed'?'rs-check':topicId);
   if(topicId.startsWith('pv_'))return '#theory/passive';
+  if(topicId.startsWith('cp_'))return '#theory/comparison/'+(comparisons[COMPARISON_RULE_TARGETS[topicId]]||'карта-раздела');
   return topicId.startsWith('cmp_')?'#theory/comparison/'+(comparisons[topicId]||'карта-раздела'):'#theory/contrasts';
 }
 function todayList(title,page,render,empty) {
@@ -798,13 +799,17 @@ async function loadExercises() {
   return state.exercises;
 }
 
-const COMPARISON_TARGETS = [
+const COMPARISON_LEGACY_TARGETS = [
   { id: "cmp_forms", label: "Формы, орфография и исключения" },
   { id: "cmp_superlatives", label: "Превосходная степень и группа" },
   { id: "cmp_equality", label: "Сравнение, равенство и меньшая степень" },
   { id: "cmp_development", label: "Усилители, кратность и изменение" },
   { id: "cmp_precision", label: "Точность, контекст и смысловые ограничения" },
 ];
+const COMPARISON_TARGETS = [{"id": "cp_comparative", "label": "Сравнительная степень"}, {"id": "cp_superlative", "label": "Превосходная степень"}, {"id": "cp_choice", "label": "Выбор степени сравнения"}, {"id": "cp_er_est", "label": "Короткие формы: -er / -est"}, {"id": "cp_more_most", "label": "Длинные формы: more / most"}, {"id": "cp_spelling", "label": "Орфография сравнительных форм"}, {"id": "cp_irregular", "label": "Исключения: good, bad, far, old"}, {"id": "cp_as_as", "label": "Равенство: as … as"}, {"id": "cp_not_as_as", "label": "Неравенство: not as … as"}, {"id": "cp_multiples", "label": "Кратность: twice as … as"}, {"id": "cp_same_as", "label": "The same as"}, {"id": "cp_similar_different", "label": "Similar to / different from"}, {"id": "cp_modifier_comparative", "label": "Усилители: much, far, a bit"}, {"id": "cp_modifier_superlative", "label": "By far / easily + превосходная степень"}, {"id": "cp_even_still", "label": "Even / still + сравнительная степень"}, {"id": "cp_the_the", "label": "Чем … тем …"}, {"id": "cp_double_comparative", "label": "Всё больше: more and more"}, {"id": "cp_adverb", "label": "Сравнение наречий"}, {"id": "cp_fewer_less", "label": "Fewer или less"}, {"id": "cp_as_many_much", "label": "As many / as much"}, {"id": "cp_verb_comparison", "label": "Сравнение действий"}, {"id": "cp_than_pronoun", "label": "Местоимения после than"}, {"id": "cp_than_clause", "label": "Придаточное после than"}, {"id": "cp_than_expected", "label": "Than expected / than usual"}, {"id": "cp_more_than_number", "label": "More than + число"}, {"id": "cp_superlative_ever", "label": "Превосходная степень + ever"}, {"id": "cp_one_of_the", "label": "One of the + превосходная степень"}, {"id": "cp_least", "label": "Наименьшая степень: the least"}, {"id": "cp_ordinal_superlative", "label": "Порядковые числительные: the second largest"}, {"id": "cp_rewrite", "label": "Перефразирование сравнений"}, {"id": "cp_fix_mixed", "label": "Исправление ошибок в сравнениях"}];
+const COMPARISON_TARGET_MIGRATION = {"cmp_forms": ["cp_comparative", "cp_choice", "cp_er_est", "cp_more_most", "cp_spelling", "cp_irregular"], "cmp_superlatives": ["cp_superlative", "cp_superlative_ever", "cp_one_of_the", "cp_least", "cp_ordinal_superlative"], "cmp_equality": ["cp_as_as", "cp_not_as_as", "cp_same_as", "cp_similar_different", "cp_fewer_less", "cp_as_many_much"], "cmp_development": ["cp_modifier_comparative", "cp_modifier_superlative", "cp_even_still", "cp_multiples", "cp_the_the", "cp_double_comparative"], "cmp_precision": ["cp_adverb", "cp_verb_comparison", "cp_than_pronoun", "cp_than_clause", "cp_than_expected", "cp_more_than_number", "cp_rewrite", "cp_fix_mixed"]};
+const COMPARISON_RULE_TARGETS = {"cp_comparative": "cmp_forms", "cp_choice": "cmp_forms", "cp_er_est": "cmp_forms", "cp_more_most": "cmp_forms", "cp_spelling": "cmp_forms", "cp_irregular": "cmp_forms", "cp_superlative": "cmp_superlatives", "cp_superlative_ever": "cmp_superlatives", "cp_one_of_the": "cmp_superlatives", "cp_least": "cmp_superlatives", "cp_ordinal_superlative": "cmp_superlatives", "cp_as_as": "cmp_equality", "cp_not_as_as": "cmp_equality", "cp_same_as": "cmp_equality", "cp_similar_different": "cmp_equality", "cp_fewer_less": "cmp_equality", "cp_as_many_much": "cmp_equality", "cp_modifier_comparative": "cmp_development", "cp_modifier_superlative": "cmp_development", "cp_even_still": "cmp_development", "cp_multiples": "cmp_development", "cp_the_the": "cmp_development", "cp_double_comparative": "cmp_development", "cp_adverb": "cmp_precision", "cp_verb_comparison": "cmp_precision", "cp_than_pronoun": "cmp_precision", "cp_than_clause": "cmp_precision", "cp_than_expected": "cmp_precision", "cp_more_than_number": "cmp_precision", "cp_rewrite": "cmp_precision", "cp_fix_mixed": "cmp_precision"};
+function comparisonPracticeTargets(ids) { return [...new Set(ids.flatMap(id=>COMPARISON_TARGET_MIGRATION[id]||[id]))]; }
 const MODAL_TARGETS = [{"id": "mv_S00", "label": "Смешанный выбор: все модальные", "rule": "R11"}, {"id": "mv_S01", "label": "Форма: без -s, без to", "rule": "R1"}, {"id": "mv_S02", "label": "Вопрос и отрицание без do", "rule": "R2"}, {"id": "mv_S03", "label": "Два модальных подряд нельзя", "rule": "R1"}, {"id": "mv_S04", "label": "Умение сейчас: can / be able to", "rule": "R3"}, {"id": "mv_S05", "label": "Разрешение: can / could / may", "rule": "R3"}, {"id": "mv_S06", "label": "Просьбы и предложения", "rule": "R3"}, {"id": "mv_S07", "label": "Предложение-идея: could / might", "rule": "R3"}, {"id": "mv_S08", "label": "Совет: should / ought to", "rule": "R3"}, {"id": "mv_S09", "label": "Вывод о настоящем", "rule": "R4"}, {"id": "mv_S10", "label": "Вывод о прошлом: modal + have V3", "rule": "R4"}, {"id": "mv_S11", "label": "Умение в прошлом", "rule": "R5"}, {"id": "mv_S12", "label": "Обязанность и умение в прошлом и будущем", "rule": "R5"}, {"id": "mv_S13", "label": "Упрёк и сожаление: should have V3", "rule": "R5"}, {"id": "mv_S14", "label": "Needn't have и didn't need to", "rule": "R5"}, {"id": "mv_S15", "label": "Не использованная возможность: could have V3", "rule": "R5"}, {"id": "mv_S16", "label": "Нереальное прошлое: would have V3", "rule": "R5"}, {"id": "mv_S17", "label": "Must и have to", "rule": "R6"}, {"id": "mv_S18", "label": "Сила обязанности: must / need to / should / ought to", "rule": "R6"}, {"id": "mv_S19", "label": "Mustn't и don't have to", "rule": "R7"}, {"id": "mv_S20", "label": "Needn't и don't need to", "rule": "R7"}, {"id": "mv_S21", "label": "Запрет: can't / mustn't / not allowed", "rule": "R7"}, {"id": "mv_S22", "label": "Have to и need to как обычные глаголы", "rule": "R8"}, {"id": "mv_S23", "label": "Be allowed to", "rule": "R8"}, {"id": "mv_S24", "label": "Be supposed to", "rule": "R8"}, {"id": "mv_S25", "label": "Had better", "rule": "R8"}, {"id": "mv_S26", "label": "Would rather", "rule": "R8"}, {"id": "mv_S27", "label": "Will: прогноз и решение", "rule": "R9"}, {"id": "mv_S28", "label": "Won't / wouldn't: отказ", "rule": "R9"}, {"id": "mv_S29", "label": "Would: вежливость и гипотеза", "rule": "R9"}, {"id": "mv_S30", "label": "Shall: предложения с I / we", "rule": "R9"}];
 const PASSIVE_LEGACY_TARGETS = [{"id": "pv_simple", "label": "Основные формы"}, {"id": "pv_process", "label": "Действие в процессе"}, {"id": "pv_perfect", "label": "Завершённость и предшествование"}, {"id": "pv_modals", "label": "Модальные и going to"}, {"id": "pv_questions", "label": "Вопросы и отрицания"}, {"id": "pv_patterns", "label": "Особые конструкции"}, {"id": "pv_nonfinite", "label": "Инфинитив, -ing и reporting passive"}];
 const PASSIVE_TENSE_TARGETS = [{"id": "pv_present_simple", "label": "Present Simple"}, {"id": "pv_past_simple", "label": "Past Simple"}, {"id": "pv_future_simple", "label": "Future Simple"}, {"id": "pv_present_continuous", "label": "Present Continuous"}, {"id": "pv_present_perfect", "label": "Present Perfect"}, {"id": "pv_past_continuous", "label": "Past Continuous"}, {"id": "pv_past_perfect", "label": "Past Perfect"}, {"id": "pv_future_perfect", "label": "Future Perfect"}];
@@ -828,13 +833,13 @@ function exerciseSection(item) {
   if(item?.topic==='reported'||item?.id?.startsWith('rs-'))return 'reported';
   if(item?.topic==='modals'||item?.id?.startsWith('MV-'))return 'modals';
   if(item?.topic==='passive'||/^pv\d?-/.test(item?.id||''))return 'passive';
-  return item?.id?.startsWith('cmp-')?'comparison':'tenses';
+  return item?.topic==='comparison'||item?.id?.startsWith('cmp-')?'comparison':'tenses';
 }
-function targetSection(id) { return id.startsWith('cd_')?'conditionals':id.startsWith('ig_')?'infinitive':id.startsWith('sv_')?'speaking':(id.startsWith('noun_')||id.startsWith('nn_'))?'nouns':(/^(?:rs(?:\d|_)|rp_)/.test(id))?'reported':id.startsWith('mv_')?'modals':id.startsWith('pv_')?'passive':id.startsWith('cmp_')?'comparison':'tenses'; }
+function targetSection(id) { return id.startsWith('cd_')?'conditionals':id.startsWith('ig_')?'infinitive':id.startsWith('sv_')?'speaking':(id.startsWith('noun_')||id.startsWith('nn_'))?'nouns':(/^(?:rs(?:\d|_)|rp_)/.test(id))?'reported':id.startsWith('mv_')?'modals':id.startsWith('pv_')?'passive':(id.startsWith('cmp_')||id.startsWith('cp_'))?'comparison':'tenses'; }
 function supportedResponseContract(item) {return !item.retired&&(item.response_contract==='bounded-v1'||(['equivalents-review-v1','manual-review-v1'].includes(item.response_contract)&&item.type==='translation_ru_en'&&item.blanks?.length===1));}
 const PRACTICE_TENSES = TENSE_MAP.flatMap(row => row.items.map(item => ({
   id: item.name.toLowerCase().replaceAll(" ", "_"), label: item.name,
-}))).concat({ id: "other_constructions", label: "Другие конструкции" }, COMPARISON_TARGETS, PASSIVE_LEGACY_TARGETS, PASSIVE_TENSE_TARGETS, PASSIVE_TARGETS, MODAL_TARGETS, REPORTED_LEGACY_TARGETS, REPORTED_TARGETS, NOUN_LEGACY_TARGETS, NOUN_TARGETS, SPEAKING_TARGETS, INFINITIVE_TARGETS, CONDITIONALS_TARGETS);
+}))).concat({ id: "other_constructions", label: "Другие конструкции" }, COMPARISON_LEGACY_TARGETS, COMPARISON_TARGETS, PASSIVE_LEGACY_TARGETS, PASSIVE_TENSE_TARGETS, PASSIVE_TARGETS, MODAL_TARGETS, REPORTED_LEGACY_TARGETS, REPORTED_TARGETS, NOUN_LEGACY_TARGETS, NOUN_TARGETS, SPEAKING_TARGETS, INFINITIVE_TARGETS, CONDITIONALS_TARGETS);
 
 function exerciseTenses(item) {
   if(exerciseSection(item)==='passive'){
@@ -934,6 +939,7 @@ function balancedPractice(pool, count, random = Math.random) {
 }
 
 function updatedPracticeSettings(saved,topic){
+  if(topic==='comparison')return {...saved,...(Array.isArray(saved.tenses)?{tenses:comparisonPracticeTargets(saved.tenses)}:{})};
   if(topic==='nouns')return {...saved,...(Array.isArray(saved.tenses)?{tenses:nounPracticeTargets(saved.tenses)}:{})};
   if(topic==='reported')return {...saved,...(Array.isArray(saved.tenses)?{tenses:reportedPracticeTargets(saved.tenses)}:{})};
   if(topic!=='passive')return saved;
@@ -1013,7 +1019,7 @@ function practicePresets(topic) {
   if(topic==='modals')return [{id:'modals-short',title:'Смешанная тренировка',description:'Пять заданий на разные значения модальных глаголов.',tenses:MODAL_TARGETS.map(x=>x.id),levels:['basic','medium'],type:'modal_gap',count:5}];
   const common = {type:'open_brackets', levels:['basic','medium'], count:10};
   const simplePassive = ['pv_D1','pv_D2'];
-  const shortTopics = {tenses:['present_simple','past_simple','future_simple'], passive:simplePassive, comparison:['cmp_forms','cmp_superlatives'], nouns:['nn_uncountable','nn_plural_regular','nn_article_first_mention'], speaking:['sv_say_tell','sv_speak_talk','sv_speak_language'], infinitive:['ig_verb_to','ig_verb_ing','ig_prep']};
+  const shortTopics = {tenses:['present_simple','past_simple','future_simple'], passive:simplePassive, comparison:['cp_comparative','cp_superlative','cp_er_est','cp_more_most'], nouns:['nn_uncountable','nn_plural_regular','nn_article_first_mention'], speaking:['sv_say_tell','sv_speak_talk','sv_speak_language'], infinitive:['ig_verb_to','ig_verb_ing','ig_prep']};
   if (!shortTopics[topic]) return [];
   const presets = topic === 'tenses' ? [
     {...common,id:'present-pair',title:'Present Simple vs Present Continuous',description:'Привычки и факты или действие сейчас.',tenses:['present_simple','present_continuous']},
@@ -1180,7 +1186,7 @@ function renderPractice(student = null, topic = location.hash.split("/")[1], stu
     form.querySelectorAll('[name="tense"], [name="level"]').forEach(input=>input.checked=!input.disabled);setPracticeFormats(form,'all');
   }
   if(PRACTICE_TENSES.some(t=>t.id===requested)&&targetSection(requested)===topic) {
-    form.querySelectorAll('[name="tense"]').forEach(input=>input.checked=topic==='reported'?reportedPracticeTargets([requested]).includes(input.value):topic==='nouns'?nounPracticeTargets([requested]).includes(input.value):input.value===requested);
+    form.querySelectorAll('[name="tense"]').forEach(input=>input.checked=topic==='comparison'?comparisonPracticeTargets([requested]).includes(input.value):topic==='reported'?reportedPracticeTargets([requested]).includes(input.value):topic==='nouns'?nounPracticeTargets([requested]).includes(input.value):input.value===requested);
     form.querySelectorAll('[name="level"]').forEach(input=>input.checked=!input.disabled);
     setPracticeFormats(form,'all');
   }

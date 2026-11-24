@@ -151,7 +151,7 @@ try {
   await teacher.ok(permission,{allowed:true});
   const comparison={topic:'comparison',tenses:['cmp_forms'],levels:['basic','medium'],type:'all',count:5};
   const cmp=await student.ok('practice/start',comparison),cmpView=await student.ok('practice/'+cmp.id);
-  ok(cmpView.items.length<=5&&cmpView.items.every(i=>i.id.startsWith('cmp-')),'Comparison filters honoured');noAnswers(cmpView.items);
+  ok(cmpView.items.length<=5&&cmpView.items.every(i=>/^(cmp-|cp-C)/.test(i.id)),'Comparison filters honoured');noAnswers(cmpView.items);
   const passiveTargets=['present_simple','past_simple','future_simple','present_continuous','present_perfect','past_continuous','past_perfect','future_perfect'].map(t=>'pv_'+t);
   for(const topic of ['tenses','comparison','passive']){
     const types=topic==='passive'?['open_brackets','active_to_passive']:['open_brackets','multiple_choice'];
@@ -265,8 +265,10 @@ try {
   console.log(JSON.stringify({checks,errors,studentRequests},null,2));
   } else console.log('Browser scenarios: run npm run test:browser.');
   for(const format of ['multiple_choice','context_cloze','question','mixed']){
-    // Earlier random free practice in this run may already have shown the first candidate to the pupil
-    // (no-repeat rule → 409), so take the first reviewed item of this format that is still new to them.
+    const student=new Client(),invite=await teacher.ok('teacher/invite',{});
+    await student.ok('auth/join',{token:invite.token,name:'format-'+format,email:'format-'+format+'@example.test',password:'FictionalPassword!2026'});
+    const sid=(await student.ok('auth/me')).user.id;
+    // A fresh learner keeps fixed grading fixtures independent of random free practice.
     const candidates=fixtures.filter(i=>/^(?:bal|ext|mix)-20261030-/.test(i.id)&&(format==='question'?i.id==='bal-20261030-present-simple-015':format==='mixed'?i.id==='mix-20261030-001':i.type===format));
     assert(candidates.length,'Missing reviewed format '+format);
     let fresh,work;
@@ -279,6 +281,11 @@ try {
     const report=(await teacher.ok('teacher/students/'+sid+'/reports/'+work.practiceId)).attempt;
     ok(report.answers[0].correct,'Reviewed '+format+' report retains grade');
   }
+  {
+  // Isolate fixed diagnostic/history fixtures from earlier random practice.
+  const student=new Client(),invite=await teacher.ok('teacher/invite',{});
+  await student.ok('auth/join',{token:invite.token,name:'diagnostic',email:'diagnostic@example.test',password:'FictionalPassword!2026'});
+  const sid=(await student.ok('auth/me')).user.id;
   // Diagnostics are trusted stored feedback, not client-supplied grading data.
   const diagnosticItem=fixtures.find(i=>i.id==='src-u08-010');
   const diagnosticWork=await teacher.ok('teacher/students/'+sid+'/assignments',{title:'Конкретная причина ошибки',ids:[diagnosticItem.id]});
@@ -307,6 +314,8 @@ try {
   const oldView=await student.ok('practice/'+legacyWork.practiceId);
   const oldResult=await student.ok('practice/'+legacyWork.practiceId+'/check',{index:0,revision:oldView.revision,submitted:['finishes']});
   ok(oldResult.answer.correct,'Stored historical src-u01-099 keeps its own accepted finishes');
+
+  }
 
 } catch(error) {
   for(const {page,address} of browserDiagnostics)if(!page.isClosed()){

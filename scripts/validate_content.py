@@ -23,7 +23,7 @@ def main() -> None:
         items.extend(chunk)
 
     passive = [item for item in items if item.get('topic')=='passive']
-    tenses = [item for item in items if not item['id'].startswith('cmp-') and item.get('topic') not in {'passive','modals','reported','nouns','speaking','infinitive','conditionals'}]
+    tenses = [item for item in items if not item['id'].startswith('cmp-') and item.get('topic') not in {'passive','modals','reported','nouns','speaking','infinitive','conditionals','comparison'}]
     modals = [item for item in items if item.get('topic') == 'modals']
     assert len(modals) == manifest['sections']['modals'] == 1040
     if (SOURCE / 'data/modal-verbs.exercises.jsonl').exists():
@@ -38,7 +38,7 @@ def main() -> None:
     assert len(speaking)==manifest['sections']['speaking']==500
     infinitive=[i for i in items if i.get('topic')=='infinitive']
     assert len(infinitive)==manifest['sections']['infinitive']==1000
-    comparisons = [item for item in items if item['id'].startswith('cmp-')]
+    comparisons = [item for item in items if item.get('topic')=='comparison' or item['id'].startswith('cmp-')]
     assert len(tenses) == manifest["sections"]["tenses"]
     assert len(comparisons) == manifest["sections"]["comparison"]
     assert len(passive)==manifest['sections']['passive']
@@ -55,7 +55,9 @@ def main() -> None:
     assert {x["type"] for x in items} == expected_types | ({x['type'] for x in items} & {'error_fix', 'transformation'})
 
     for section in (tenses, comparisons, nouns):
-        assert sum(i['type']=='open_brackets' for i in section)*20 >= len(section)*(11 if section is nouns else 16)  # nouns: bank-factory mix (~60% gap/mini next to choice, error fix, transformation)
+        active = [i for i in section if not i.get('retired')]
+        minimum = 11 if section is nouns or section is comparisons else 16
+        assert sum(i['type']=='open_brackets' for i in active)*20 >= len(active)*minimum  # nouns: bank-factory mix (~60% gap/mini next to choice, error fix, transformation)
 
     assert manifest["levels3"] == dict(__import__("collections").Counter(i["level"] for i in items))
     for item in items:
