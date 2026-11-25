@@ -1,6 +1,7 @@
 """Build a strict public asset directory and the trusted checker from app.js."""
 import json
 import shutil
+import subprocess
 from pathlib import Path
 
 from stamp_versions import release_tag, stamp_index, stamp_service_worker
@@ -53,6 +54,7 @@ export function grade(item, submitted) {
     bank = [item for file in sorted((ROOT / 'data/exercises').glob('part-*.json'))
             for item in json.loads(file.read_text())]
     (GENERATED / 'bank.json').write_text(json.dumps(bank, ensure_ascii=False))
+    subprocess.run(['node', str(ROOT / 'scripts/build_bank_key_index.mjs')], check=True)
     assessment_source=(ROOT/'assessments.js').read_text()
     config=assessment_source[assessment_source.index('const ASSESSMENT_SECTIONS ='):assessment_source.index('let disposeAssessment =')]
     (GENERATED/'assessment-config.mjs').write_text(config+'\nexport { ASSESSMENT_SECTIONS, assessmentSection, assessmentTitle };\n')

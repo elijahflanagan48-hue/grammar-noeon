@@ -4,6 +4,7 @@ import { handleTaskIssues } from './task-issues.mjs';
 import { assessmentTitle } from './generated/assessment-config.mjs';
 import { randomBytes, timingSafeEqual, createHash } from 'node:crypto';
 import exercises from './generated/bank.json';
+import bankKeyIndex from './generated/bank-keys.json';
 import assessments from './generated/assessments.json' with {type:'json'};
 import { updatedPracticeSettings, balancedPractice, exerciseTenses, PRACTICE_TENSES, exerciseSection, targetSection, supportedResponseContract } from './generated/selection.mjs';
 import { grade } from './generated/checker.mjs';
@@ -22,6 +23,15 @@ const bankSentenceKeys = { get(id) {
   if (!keys) { const item = bank.get(id); if (!item) return undefined; keys = assignmentSentenceKeys(item).map(digest); sentenceKeyMemo.set(id, keys); }
   return keys;
 } };
+// Индекс ключей предложений банка строится при сборке (scripts/build_bank_key_index.mjs): 16-символьные префиксы sha256, подряд.
+// Так /assignment-pool не хеширует весь банк и не держит кэш на ~25 МБ (иначе Worker выходил за 128 МБ: Error 1102).
+const KEY_PREFIX = 16;
+const bankKeyPrefixes = id => bankKeyIndex[id] ?? bankSentenceKeys.get(id)?.map(key => key.slice(0, KEY_PREFIX)).join('') ?? '';
+function bankKeyHas(id, test) {
+  const packed = bankKeyPrefixes(id);
+  for (let i = 0; i < packed.length; i += KEY_PREFIX) if (test(packed.slice(i, i + KEY_PREFIX))) return true;
+  return false;
+}
 const SESSION_SECONDS = 30 * 86400;
 const SESSION_RENEW_WINDOW = SESSION_SECONDS - 86400;
 const sessionCookie = raw => `grammar_session=${raw}; HttpOnly; SameSite=Lax; Secure; Path=/; Max-Age=${SESSION_SECONDS}`;
@@ -737,7 +747,8 @@ async function route(db, env, request, url, data, responseHeaders) {
   if (poolMatch && method === 'GET') {
     const student = await ownStudent(db,user,poolMatch[1]);
     const used = await unavailableSentences(db,student.id);
-    return [{ availableIds: exercises.filter(item => !item.retired && bankSentenceKeys.get(item.id).every(key => !used.has(key))).map(item => item.id) }, {}];
+    const usedPrefixes = new Set([...used.keys()].map(key => key.slice(0, KEY_PREFIX)));
+    return [{ availableIds: exercises.filter(item => !item.retired && !bankKeyHas(item.id, prefix => usedPrefixes.has(prefix))).map(item => item.id) }, {}];
   }
   const manageMatch = path.match(/^\/api\/teacher\/students\/([\w-]+)\/assignments\/([\w-]+)(?:\/(edit|cancel|restore))?$/);
   if (manageMatch) {
@@ -751,8 +762,10 @@ async function route(db, env, request, url, data, responseHeaders) {
     const editableContent = !items[0]?.assessment_id && !row.cancelled && !row.completed && !JSON.parse(row.answers).length && row.draft === null;
     const used = await unavailableSentences(db,student.id);
     const allowed = key => !used.has(key) || (used.get(key)===row.assignment_id && currentKeys.has(key));
+    const usedByPrefix = new Map([...used].map(([key,id])=>[key.slice(0,KEY_PREFIX),id])), currentPrefixes = new Set([...currentKeys].map(key=>key.slice(0,KEY_PREFIX)));
+    const blockedPrefix = prefix => usedByPrefix.has(prefix) && !(usedByPrefix.get(prefix)===row.assignment_id && currentPrefixes.has(prefix));
     if (method==='GET' && !manageMatch[3]) return [{id:row.assignment_id,title:row.title,version:row.version,assessmentId:items[0]?.assessment_id,editableContent,items,
-      availableIds:exercises.filter(item=>!item.retired&&bankSentenceKeys.get(item.id).every(allowed)).map(item=>item.id)},{}];
+      availableIds:exercises.filter(item=>!item.retired&&!bankKeyHas(item.id,blockedPrefix)).map(item=>item.id)},{}];
     const action=manageMatch[3];
     if(action==='restore'&&!student.active)throw new Problem('Кабинет ученика отключён.',409);
     if (method!=='POST' || !action) throw new Problem('Метод не поддерживается.',405);
