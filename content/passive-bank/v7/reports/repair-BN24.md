@@ -1,0 +1,12 @@
+# Repair batch BN24
+
+Below are the problems found by the automatic check. Rewrite **only** the listed tasks, keeping `id`, `cell`, `format`, `level`. Stay inside the level contract: simpler words, shorter sentence, allowed forms only. Reply with JSONL only (the corrected lines).
+
+- BN24-05: level contract: labelled medium but is advanced: words above the level: cheerful, riverside
+  {"id": "BN24-05", "seed_id": "BN24-05", "cell": "D10", "format": "mc", "genre": "news", "level": "medium", "prompt": "Our cheerful riverside town is known ___ its sunny summer music nights and boat rides.", "explanation_ru": "Выражение known for употребляется в значении «известен чем-либо» (своими событиями или особенностями): known for.", "options": ["as", "from", "for", "in"], "correct_option_index": 2, "construction": "pv_agent"}
+- BN24-08: level contract: labelled medium but is advanced: words above the level: bedside, seaside
+  {"id": "BN24-08", "seed_id": "BN24-08", "cell": "D10", "format": "mc", "genre": "travel", "level": "medium", "prompt": "Every strong bedside table in this seaside hotel is made ___ solid light oak wood.", "options": ["of", "from", "by", "with"], "correct_option_index": 0, "construction": "pv_state", "explanation_ru": "Когда исходный материал не меняет своей природы при изготовлении предмета (стол из дерева), используется предлог of: made of."}
+- BN24-10: level contract: labelled medium but is advanced: words above the level: swept, broom
+  {"id": "BN24-10", "seed_id": "BN24-10", "cell": "D10", "format": "fix", "genre": "city", "level": "medium", "prompt": "Fallen autumn leaves on the park path were swept up by a wide garden broom.", "answer": "Fallen autumn leaves on the park path were swept up with a wide garden broom.", "accepted_answers": ["Fallen autumn leaves on the park path were swept up with a wide garden broom."], "has_error": true, "construction": "pv_agent", "explanation_ru": "Инструмент, при помощи которого выполнили действие (метла), вводится предлогом with, а не by: with a wide garden broom."}
+- BN24-15: level contract: labelled medium but is advanced: words above the level: jen, noisy
+  {"id": "BN24-15", "seed_id": "BN24-15", "cell": "D10", "format": "mc", "genre": "tech", "level": "medium", "prompt": "Jen is tired ___ receiving noisy game messages on her phone every single evening.", "explanation_ru": "Устойчивое сочетание tired of означает «устать от чего-либо, надоело»: tired of receiving.", "options": ["by", "at", "of", "with"], "correct_option_index": 2, "construction": "pv_agent"}

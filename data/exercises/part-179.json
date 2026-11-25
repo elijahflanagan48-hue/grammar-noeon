@@ -1,0 +1,4463 @@
+[
+  {
+    "id": "pv7-D7-111",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Diners should watch their bags closely so they do not have their wallets (to steal).",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После конструкции have their wallets требуется третья форма неправильного глагола steal (stolen): stolen.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-get",
+      "content/passive/07-passive.md#pv-causative"
+    ],
+    "cell": "D7",
+    "genre": "food",
+    "seed_id": "BN20-38",
+    "skeleton": "w should w their w so they do not have their w G .",
+    "practice_tenses": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "tags": [
+      "pv_D7",
+      "pv_causative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D7-111-b1",
+        "answer": "stolen",
+        "accepted_answers": [
+          "stolen"
+        ],
+        "base_verb": "to steal",
+        "supplied_words": [],
+        "tense_or_construction": "pv_causative",
+        "voice": "passive",
+        "explanation_ru": "После конструкции have their wallets требуется третья форма неправильного глагола steal (stolen): stolen.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-get",
+          "content/passive/07-passive.md#pv-causative"
+        ]
+      }
+    ],
+    "answer_text": "Diners should watch their bags closely so they do not have their wallets stolen."
+  },
+  {
+    "id": "pv7-D8-048",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Festival fans (to expect) to arrive at the park gate before noon.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "От гостей фестиваля ожидают, что они придут к воротам до полудня — в Present Simple Passive используется конструкция are expected + to-инфинитив.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "arts",
+    "seed_id": "BN21-01",
+    "skeleton": "w G to w at the w before w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-048-b1",
+        "answer": "are expected",
+        "accepted_answers": [
+          "are expected",
+          "'re expected"
+        ],
+        "base_verb": "to expect",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "От гостей фестиваля ожидают, что они придут к воротам до полудня — в Present Simple Passive используется конструкция are expected + to-инфинитив.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Festival fans are expected to arrive at the park gate before noon."
+  },
+  {
+    "id": "pv7-D8-049",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Large delivery trucks ___ the narrow town centre during the day.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После пассивной конструкции are not allowed обязательно ставится инфинитив с частицей to: are not allowed to enter.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "city",
+    "seed_id": "BN21-02",
+    "skeleton": "w G the w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "are not allowed to enter",
+      "are not allowed enter",
+      "are not allow to enter",
+      "not allowed to enter"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "are not allowed to enter",
+    "summary": "Large delivery trucks are not allowed to enter the narrow town centre during the day.",
+    "answer_text": "Large delivery trucks are not allowed to enter the narrow town centre during the day."
+  },
+  {
+    "id": "pv7-D8-050",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "A young man ___ a warm winter coat from the shop window late last night.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В пассивном залоге после глагола восприятия see перед инфинитивом обязательно возвращается частица to: was seen to take.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "shopping",
+    "seed_id": "BN21-03",
+    "skeleton": "a w G a w from the w LAST_NIGHT .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "was seen to take",
+      "was seen take",
+      "was saw to take",
+      "seen to take"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "was seen to take",
+    "summary": "A young man was seen to take a warm winter coat from the shop window late last night.",
+    "answer_text": "A young man was seen to take a warm winter coat from the shop window late last night."
+  },
+  {
+    "id": "pv7-D8-051",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our fitness trainer (to make) us run ten extra laps around the sports hall.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Тренер сам заставил нас пробежать десять кругов (активный залог в прошлом), поэтому используется форма made.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "sport",
+    "seed_id": "BN21-04",
+    "skeleton": "our w G us w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_other"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-051-b1",
+        "answer": "made",
+        "accepted_answers": [
+          "made"
+        ],
+        "base_verb": "to make",
+        "supplied_words": [],
+        "tense_or_construction": "active_other",
+        "voice": "active",
+        "explanation_ru": "Тренер сам заставил нас пробежать десять кругов (активный залог в прошлом), поэтому используется форма made.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Our fitness trainer made us run ten extra laps around the sports hall."
+  },
+  {
+    "id": "pv7-D8-052",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "When you were young, you were let to stay up late for family films.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Глагол let (разрешать) не употребляется в пассивном залоге; вместо него используется конструкция be allowed to: you were allowed to stay.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "home",
+    "seed_id": "BN21-05",
+    "skeleton": "when you were w , you were w to w for w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "When you were young, you were allowed to stay up late for family films.",
+    "accepted_answers": [
+      "When you were young, you were allowed to stay up late for family films."
+    ],
+    "answer_text": "When you were young, you were allowed to stay up late for family films.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D8-053",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "After the system crash, you ___ the whole monthly sales report from the beginning.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В пассивном залоге после глагола make перед инфинитивом обязательно ставится частица to: were made to write.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "work",
+    "seed_id": "BN21-06",
+    "skeleton": "after the w , you G the w from the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "were made to write",
+      "were made write",
+      "made to write",
+      "were make to write"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "were made to write",
+    "summary": "After the system crash, you were made to write the whole monthly sales report from the beginning.",
+    "answer_text": "After the system crash, you were made to write the whole monthly sales report from the beginning."
+  },
+  {
+    "id": "pv7-D8-054",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Anna (to invite) to join the friendly weekend reading club at the town library.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Анну пригласили вступить в читательский клуб (пассивный залог в прошлом), поэтому используется форма was invited.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "school",
+    "seed_id": "BN21-07",
+    "skeleton": "w G to w the w at the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-054-b1",
+        "answer": "was invited",
+        "accepted_answers": [
+          "was invited"
+        ],
+        "base_verb": "to invite",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Анну пригласили вступить в читательский клуб (пассивный залог в прошлом), поэтому используется форма was invited.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Anna was invited to join the friendly weekend reading club at the town library."
+  },
+  {
+    "id": "pv7-D8-055",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Local drivers (to ask) to use the new river road from next Monday.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Указание from next Monday относится к будущему, поэтому в пассивном залоге используется Future Simple Passive: will be asked.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "news",
+    "seed_id": "BN21-08",
+    "skeleton": "w G to w the w from NEXT_MONDAY .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-055-b1",
+        "answer": "will be asked",
+        "accepted_answers": [
+          "will be asked",
+          "'ll be asked",
+          "are asked",
+          "'re asked"
+        ],
+        "base_verb": "to ask",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Указание from next Monday относится к будущему, поэтому в пассивном залоге используется Future Simple Passive: will be asked.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Local drivers will be asked to use the new river road from next Monday."
+  },
+  {
+    "id": "pv7-D8-056",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our kind history teacher (to let) us finish the group project at home.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Учитель сам разрешил нам закончить проект дома (подлежащее выполняет действие), поэтому нужен активный залог: let.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "school",
+    "seed_id": "BN21-09",
+    "skeleton": "our w G us w the w at w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_other"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-056-b1",
+        "answer": "let",
+        "accepted_answers": [
+          "let"
+        ],
+        "base_verb": "to let",
+        "supplied_words": [],
+        "tense_or_construction": "active_other",
+        "voice": "active",
+        "explanation_ru": "Учитель сам разрешил нам закончить проект дома (подлежащее выполняет действие), поэтому нужен активный залог: let.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Our kind history teacher let us finish the group project at home."
+  },
+  {
+    "id": "pv7-D8-057",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Two noisy guests (to ask) to leave the small coffee shop by the manager.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Двух шумных посетителей попросили уйти (множественное число guests), поэтому используется Past Simple Passive: were asked.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "food",
+    "seed_id": "BN21-10",
+    "skeleton": "w G to w the w by the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-057-b1",
+        "answer": "were asked",
+        "accepted_answers": [
+          "were asked"
+        ],
+        "base_verb": "to ask",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Двух шумных посетителей попросили уйти (множественное число guests), поэтому используется Past Simple Passive: were asked.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Two noisy guests were asked to leave the small coffee shop by the manager."
+  },
+  {
+    "id": "pv7-D8-058",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At the hotel desk, we (to tell) to leave our room key before going out.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Нам сказали оставлять ключ на стойке (пассивный залог в прошлом для местоимения we): were told.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "travel",
+    "seed_id": "BN21-11",
+    "skeleton": "at the w , we G to w our w before w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-058-b1",
+        "answer": "were told",
+        "accepted_answers": [
+          "were told"
+        ],
+        "base_verb": "to tell",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Нам сказали оставлять ключ на стойке (пассивный залог в прошлом для местоимения we): were told.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "At the hotel desk, we were told to leave our room key before going out."
+  },
+  {
+    "id": "pv7-D8-059",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Strong winds blew all night, and branches (to hear) hitting the glass until morning.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В пассивном залоге после глагола восприятия hear перед причастием на -ing используется Past Simple Passive: were heard.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "nature",
+    "seed_id": "BN21-12",
+    "skeleton": "w all w , and w G w the w until w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_perception"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-059-b1",
+        "answer": "were heard",
+        "accepted_answers": [
+          "were heard"
+        ],
+        "base_verb": "to hear",
+        "supplied_words": [],
+        "tense_or_construction": "pv_perception",
+        "voice": "passive",
+        "explanation_ru": "В пассивном залоге после глагола восприятия hear перед причастием на -ing используется Past Simple Passive: were heard.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Strong winds blew all night, and branches were heard hitting the glass until morning."
+  },
+  {
+    "id": "pv7-D8-060",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Dog owners are not allowed walk their pets near the children's play area.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "После пассивной формы are not allowed нельзя пропускать частицу to перед инфинитивом: правильно are not allowed to walk.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "city",
+    "seed_id": "BN21-13",
+    "skeleton": "w are not w their w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "Dog owners are not allowed to walk their pets near the children's play area.",
+    "accepted_answers": [
+      "Dog owners are not allowed to walk their pets near the children's play area."
+    ],
+    "answer_text": "Dog owners are not allowed to walk their pets near the children's play area.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D8-061",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Store staff (to teach) to pack glass jars carefully at the front counter.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Персонал обучают аккуратно упаковывать стеклянные банки (регулярное правило в настоящем), поэтому нужен Present Simple Passive: are taught.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "shopping",
+    "seed_id": "BN21-14",
+    "skeleton": "w G to w at the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-061-b1",
+        "answer": "are taught",
+        "accepted_answers": [
+          "are taught",
+          "'re taught"
+        ],
+        "base_verb": "to teach",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Персонал обучают аккуратно упаковывать стеклянные банки (регулярное правило в настоящем), поэтому нужен Present Simple Passive: are taught.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Store staff are taught to pack glass jars carefully at the front counter."
+  },
+  {
+    "id": "pv7-D8-062",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "At the local bank, I (to ask) the friendly clerk to check my balance.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Я сам попросил сотрудника банка проверить мой баланс (активное действие в прошлом), поэтому используется форма asked.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "work",
+    "seed_id": "BN21-15",
+    "skeleton": "at the w , i G the w to w my w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_other"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-062-b1",
+        "answer": "asked",
+        "accepted_answers": [
+          "asked"
+        ],
+        "base_verb": "to ask",
+        "supplied_words": [],
+        "tense_or_construction": "active_other",
+        "voice": "active",
+        "explanation_ru": "Я сам попросил сотрудника банка проверить мой баланс (активное действие в прошлом), поэтому используется форма asked.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "At the local bank, I asked the friendly clerk to check my balance."
+  },
+  {
+    "id": "pv7-D8-063",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "According to the wall sign, guests ___ their wet umbrellas near the main entrance.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Разрешение в пассивном залоге передаётся конструкцией be allowed + to-инфинитив: are allowed to leave.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "notice",
+    "seed_id": "BN21-17",
+    "skeleton": "w to the w , w G their w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "are allowed to leave",
+      "are allowed leave",
+      "are let to leave",
+      "allowed to leave"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "are allowed to leave",
+    "summary": "According to the wall sign, guests are allowed to leave their wet umbrellas near the main entrance.",
+    "answer_text": "According to the wall sign, guests are allowed to leave their wet umbrellas near the main entrance."
+  },
+  {
+    "id": "pv7-D8-064",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I (to tell) to update my language app to get the free voice lessons.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Мне посоветовали обновить приложение (действие направлено на подлежащее I), поэтому используется пассив: was told.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "tech",
+    "seed_id": "BN21-18",
+    "skeleton": "i G to w my w to w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-064-b1",
+        "answer": "was told",
+        "accepted_answers": [
+          "was told",
+          "have been told",
+          "'ve been told"
+        ],
+        "base_verb": "to tell",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Мне посоветовали обновить приложение (действие направлено на подлежащее I), поэтому используется пассив: was told.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "I was told to update my language app to get the free voice lessons."
+  },
+  {
+    "id": "pv7-D8-065",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Every job candidate ___ to bring a printed copy of their short work history.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "От каждого кандидата ожидают, что он принесёт резюме; для единственного числа (candidate) нужен Present Simple Passive: is expected.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "work",
+    "seed_id": "BN21-19",
+    "skeleton": "EVERY_JOB w G to w a w of their w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "is expected",
+      "is expected that",
+      "expects",
+      "are expected"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "is expected",
+    "summary": "Every job candidate is expected to bring a printed copy of their short work history.",
+    "answer_text": "Every job candidate is expected to bring a printed copy of their short work history."
+  },
+  {
+    "id": "pv7-D8-066",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "After our winning goal, we (to hear) the whole crowd cheer from the stands.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Мы сами слышали, как ликуют трибуны (активный залог в прошлом), поэтому используется форма heard.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "sport",
+    "seed_id": "BN21-20",
+    "skeleton": "after our w , we G the w from the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_other"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-066-b1",
+        "answer": "heard",
+        "accepted_answers": [
+          "heard"
+        ],
+        "base_verb": "to hear",
+        "supplied_words": [],
+        "tense_or_construction": "active_other",
+        "voice": "active",
+        "explanation_ru": "Мы сами слышали, как ликуют трибуны (активный залог в прошлом), поэтому используется форма heard.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "After our winning goal, we heard the whole crowd cheer from the stands."
+  },
+  {
+    "id": "pv7-D8-067",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Standing on the cold platform, I (to see) the last evening train pull away.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Я сам видел, как уходит последний поезд (подлежащее I выполняет действие в прошлом), поэтому нужен актив: saw.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "travel",
+    "seed_id": "BN21-22",
+    "skeleton": "w on the w , i G the LAST_EVENING w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_other"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-067-b1",
+        "answer": "saw",
+        "accepted_answers": [
+          "saw"
+        ],
+        "base_verb": "to see",
+        "supplied_words": [],
+        "tense_or_construction": "active_other",
+        "voice": "active",
+        "explanation_ru": "Я сам видел, как уходит последний поезд (подлежащее I выполняет действие в прошлом), поэтому нужен актив: saw.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Standing on the cold platform, I saw the last evening train pull away."
+  },
+  {
+    "id": "pv7-D8-068",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Mia and Pete were made carry all the heavy boxes down the stairs alone.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "В пассивном залоге после глагола make перед инфинитивом обязательно ставится частица to: were made to carry.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "home",
+    "seed_id": "BN21-23",
+    "skeleton": "w and w were w all the w the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "Mia and Pete were made to carry all the heavy boxes down the stairs alone.",
+    "accepted_answers": [
+      "Mia and Pete were made to carry all the heavy boxes down the stairs alone."
+    ],
+    "answer_text": "Mia and Pete were made to carry all the heavy boxes down the stairs alone.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D8-069",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Nina (to force) to close her bedroom window because loud music played next door.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Нине пришлось закрыть окно из-за громкой музыки (пассивный залог в прошлом): was forced.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "home",
+    "seed_id": "BN21-24",
+    "skeleton": "w G to w her w because w NEXT_DOOR .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-069-b1",
+        "answer": "was forced",
+        "accepted_answers": [
+          "was forced"
+        ],
+        "base_verb": "to force",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "Нине пришлось закрыть окно из-за громкой музыки (пассивный залог в прошлом): was forced.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Nina was forced to close her bedroom window because loud music played next door."
+  },
+  {
+    "id": "pv7-D8-070",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Office workers must (to tell) to change their weak email passwords every three months.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После модального глагола must в пассивном залоге ставится инфинитив be + третья форма глагола: be told.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "tech",
+    "seed_id": "BN21-25",
+    "skeleton": "w must G to w their w EVERY_THREE w .",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-070-b1",
+        "answer": "be told",
+        "accepted_answers": [
+          "be told"
+        ],
+        "base_verb": "to tell",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "После модального глагола must в пассивном залоге ставится инфинитив be + третья форма глагола: be told.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Office workers must be told to change their weak email passwords every three months."
+  },
+  {
+    "id": "pv7-D8-071",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Have you ever (to ask) to switch off your phone inside a quiet theatre?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В вопросе Present Perfect Passive после Have и подлежащего ставится been + третья форма глагола: been asked.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "arts",
+    "seed_id": "BN21-26",
+    "skeleton": "have you ever G to w your w a w ?",
+    "practice_tenses": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "tags": [
+      "pv_D8",
+      "pv_make_allow"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D8-071-b1",
+        "answer": "been asked",
+        "accepted_answers": [
+          "been asked"
+        ],
+        "base_verb": "to ask",
+        "supplied_words": [],
+        "tense_or_construction": "pv_make_allow",
+        "voice": "passive",
+        "explanation_ru": "В вопросе Present Perfect Passive после Have и подлежащего ставится been + третья форма глагола: been asked.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-patterns"
+        ]
+      }
+    ],
+    "answer_text": "Have you ever been asked to switch off your phone inside a quiet theatre?"
+  },
+  {
+    "id": "pv7-D8-072",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "During the museum tour, the guide ___ the pupils to look closely at the old map.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Экскурсовод сам предложил ученикам рассмотреть старую карту (подлежащее the guide выполняет действие), поэтому нужен активный залог: invited.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-patterns"
+    ],
+    "cell": "D8",
+    "genre": "school",
+    "seed_id": "BN21-28",
+    "skeleton": "w the w , the w G the w to w at the w .",
+    "practice_tenses": [
+      "pv_D8",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D8",
+      "active_other"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "invited",
+      "was invited",
+      "were invited",
+      "is invited"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "invited",
+    "summary": "During the museum tour, the guide invited the pupils to look closely at the old map.",
+    "answer_text": "During the museum tour, the guide invited the pupils to look closely at the old map."
+  },
+  {
+    "id": "pv7-D9-047",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Your holiday gift boxes ___ with bright ribbon at the post office counter right now.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Действие происходит прямо сейчас (right now — процесс, а не готовое состояние), поэтому нужен Present Continuous Passive: are being tied.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "home",
+    "seed_id": "BN22-01",
+    "skeleton": "your w G with w at the w RIGHT_NOW .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "are being tied",
+      "are tied",
+      "have been tie",
+      "are tying"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "are being tied",
+    "summary": "Your holiday gift boxes are being tied with bright ribbon at the post office counter right now.",
+    "answer_text": "Your holiday gift boxes are being tied with bright ribbon at the post office counter right now."
+  },
+  {
+    "id": "pv7-D9-048",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Anna (to bear) in a small seaside town, so she loves holidays by the sea.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Выражение «родиться» в английском всегда употребляется в прошедшем времени пассивного залога: was born.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "travel",
+    "seed_id": "BN22-02",
+    "skeleton": "w G in a w , so she w by the w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_born"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_born"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-048-b1",
+        "answer": "was born",
+        "accepted_answers": [
+          "was born"
+        ],
+        "base_verb": "to bear",
+        "supplied_words": [],
+        "tense_or_construction": "pv_born",
+        "voice": "passive",
+        "explanation_ru": "Выражение «родиться» в английском всегда употребляется в прошедшем времени пассивного залога: was born.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "Anna was born in a small seaside town, so she loves holidays by the sea."
+  },
+  {
+    "id": "pv7-D9-049",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Great news from the online store: your winter jacket (already / to pack) and is ready for delivery.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Куртка уже упакована и готова к отправке — результат к настоящему моменту или текущее состояние передаётся через has already been packed (или is already packed).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "shopping",
+    "seed_id": "BN22-03",
+    "skeleton": "w from the w : your w G and is w for w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-049-b1",
+        "answer": "has already been packed",
+        "accepted_answers": [
+          "has already been packed",
+          "'s already been packed",
+          "is already packed",
+          "'s already packed"
+        ],
+        "base_verb": "already / to pack",
+        "supplied_words": [
+          "already"
+        ],
+        "tense_or_construction": "pv_state",
+        "voice": "passive",
+        "explanation_ru": "Куртка уже упакована и готова к отправке — результат к настоящему моменту или текущее состояние передаётся через has already been packed (или is already packed).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "Great news from the online store: your winter jacket has already been packed and is ready for delivery."
+  },
+  {
+    "id": "pv7-D9-050",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "That heavy blue notebook on the lecture desk is belonged to Tom.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Глагол belong (принадлежать) не употребляется в пассивном залоге; для единственного числа (notebook) нужен актив: belongs to.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "school",
+    "seed_id": "BN22-04",
+    "skeleton": "that w on the w is w to w .",
+    "practice_tenses": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "That heavy blue notebook on the lecture desk belongs to Tom.",
+    "accepted_answers": [
+      "That heavy blue notebook on the lecture desk belongs to Tom."
+    ],
+    "answer_text": "That heavy blue notebook on the lecture desk belongs to Tom.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D9-051",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My old reading glasses are scratched, so they really ___ before my next eye test.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После глагола need в значении необходимости действия над предметом ставится герундий (need replacing) или пассивный инфинитив (need to be replaced).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "health",
+    "seed_id": "BN22-05",
+    "skeleton": "my w are w , so they w G before my NEXT_EYE w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_need_ing"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_need_ing"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "need replacing",
+      "need replace",
+      "are needing replaced",
+      "need to replacing"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "need replacing",
+    "summary": "My old reading glasses are scratched, so they really need replacing before my next eye test.",
+    "answer_text": "My old reading glasses are scratched, so they really need replacing before my next eye test."
+  },
+  {
+    "id": "pv7-D9-052",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We cannot walk into the flower garden because the wooden gate (to close) for the night.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Речь о текущем состоянии ворот (они уже заперты на ночь), поэтому используется связка be + причастие состояния: is closed.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "nature",
+    "seed_id": "BN22-06",
+    "skeleton": "we w into the w because the w G for the w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-052-b1",
+        "answer": "is closed",
+        "accepted_answers": [
+          "is closed",
+          "'s closed"
+        ],
+        "base_verb": "to close",
+        "supplied_words": [],
+        "tense_or_construction": "pv_state",
+        "voice": "passive",
+        "explanation_ru": "Речь о текущем состоянии ворот (они уже заперты на ночь), поэтому используется связка be + причастие состояния: is closed.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "We cannot walk into the flower garden because the wooden gate is closed for the night."
+  },
+  {
+    "id": "pv7-D9-053",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Mia arrived late for evening tennis, and the main club gate (already / to lock) for the night.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Ворота оказались заперты ещё до прихода Мии в прошлом (arrived), поэтому используется Past Perfect Passive (had already been locked) или состояние в прошлом (was already locked).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "sport",
+    "seed_id": "BN22-07",
+    "skeleton": "w for w , and the w G for the w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-053-b1",
+        "answer": "had already been locked",
+        "accepted_answers": [
+          "had already been locked",
+          "'d already been locked",
+          "was already locked"
+        ],
+        "base_verb": "already / to lock",
+        "supplied_words": [
+          "already"
+        ],
+        "tense_or_construction": "pv_state",
+        "voice": "passive",
+        "explanation_ru": "Ворота оказались заперты ещё до прихода Мии в прошлом (arrived), поэтому используется Past Perfect Passive (had already been locked) или состояние в прошлом (was already locked).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "Mia arrived late for evening tennis, and the main club gate had already been locked for the night."
+  },
+  {
+    "id": "pv7-D9-054",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Sorry I missed your call, Jo—my cousin ___ in a tiny village church this afternoon.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Для обозначения самого события свадьбы (в отличие от состояния в браке) используется конструкция got married.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "chat",
+    "seed_id": "BN22-08",
+    "skeleton": "w i w your w , w — my w G in a w this w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_get"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_get"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "got married",
+      "was married to",
+      "got marry",
+      "has married to"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "got married",
+    "summary": "Sorry I missed your call, Jo—my cousin got married in a tiny village church this afternoon.",
+    "answer_text": "Sorry I missed your call, Jo—my cousin got married in a tiny village church this afternoon."
+  },
+  {
+    "id": "pv7-D9-055",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "You will be pleased to hear that the sound check for tonight's concert (finally / to finish).",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Проверка звука уже завершена и готова к началу концерта — состояние передаётся через is finally finished (также возможны has finally finished / has finally been finished).",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "arts",
+    "seed_id": "BN22-11",
+    "skeleton": "you will be w to w that the w for TONIGHT 's w G .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-055-b1",
+        "answer": "is finally finished",
+        "accepted_answers": [
+          "is finally finished",
+          "'s finally finished",
+          "has finally finished",
+          "has finally been finished",
+          "'s finally been finished"
+        ],
+        "base_verb": "finally / to finish",
+        "supplied_words": [
+          "finally"
+        ],
+        "tense_or_construction": "pv_state",
+        "voice": "passive",
+        "explanation_ru": "Проверка звука уже завершена и готова к началу концерта — состояние передаётся через is finally finished (также возможны has finally finished / has finally been finished).",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "You will be pleased to hear that the sound check for tonight's concert is finally finished."
+  },
+  {
+    "id": "pv7-D9-056",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "No cars can drive through the valley today because the mountain road is closing after heavy rain.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Дорога уже перекрыта для движения (состояние, а не процесс закрытия), поэтому нужно is closed, а не is closing.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "city",
+    "seed_id": "BN22-12",
+    "skeleton": "no w can w the w because the w is w after w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "No cars can drive through the valley today because the mountain road is closed after heavy rain.",
+    "accepted_answers": [
+      "No cars can drive through the valley today because the mountain road is closed after heavy rain."
+    ],
+    "answer_text": "No cars can drive through the valley today because the mountain road is closed after heavy rain.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D9-057",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Situation: A tailor is shortening Nina's new coat sleeves in the back room right now. Which sentence matches the situation?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Действие происходит прямо сейчас (процесс), поэтому используется Present Continuous Passive: are being shortened.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "shopping",
+    "seed_id": "BN22-13",
+    "skeleton": "w : a w is w in the w RIGHT_NOW . which w the w ?",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Nina's new coat sleeves are being shortened in the back room right now.",
+      "Nina's new coat sleeves are shortened in the back room right now.",
+      "Nina's new coat sleeves are shortening in the back room right now.",
+      "Nina's new coat sleeves have been shorten in the back room right now."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "Nina's new coat sleeves are being shortened in the back room right now.",
+    "summary": "Nina's new coat sleeves are being shortened in the back room right now.",
+    "answer_text": "Nina's new coat sleeves are being shortened in the back room right now."
+  },
+  {
+    "id": "pv7-D9-058",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Make sure your running shoes (to fit) comfortably before you start a long session.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол fit (подходить по размеру) не используется в пассивном залоге; для множественного числа (shoes) нужен актив: fit.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "sport",
+    "seed_id": "BN22-14",
+    "skeleton": "w your w G w before you w a w .",
+    "practice_tenses": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-058-b1",
+        "answer": "fit",
+        "accepted_answers": [
+          "fit"
+        ],
+        "base_verb": "to fit",
+        "supplied_words": [],
+        "tense_or_construction": "active_present_simple",
+        "voice": "active",
+        "explanation_ru": "Глагол fit (подходить по размеру) не используется в пассивном залоге; для множественного числа (shoes) нужен актив: fit.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "Make sure your running shoes fit comfortably before you start a long session."
+  },
+  {
+    "id": "pv7-D9-059",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I always hurry after class because our local library (to close) at six sharp.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Регулярное действие по расписанию передаётся активным залогом в Present Simple: closes.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "school",
+    "seed_id": "BN22-17",
+    "skeleton": "i w after w because our w G at w .",
+    "practice_tenses": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-059-b1",
+        "answer": "closes",
+        "accepted_answers": [
+          "closes"
+        ],
+        "base_verb": "to close",
+        "supplied_words": [],
+        "tense_or_construction": "active_present_simple",
+        "voice": "active",
+        "explanation_ru": "Регулярное действие по расписанию передаётся активным залогом в Present Simple: closes.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "I always hurry after class because our local library closes at six sharp."
+  },
+  {
+    "id": "pv7-D9-060",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our quiet riverside town ___ a popular weekend spot for families from nearby cities.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол become (становиться) не употребляется в пассивном залоге; для описания результата к настоящему моменту нужен актив: has become.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "news",
+    "seed_id": "BN22-18",
+    "skeleton": "our w G a w for w from w .",
+    "practice_tenses": [
+      "pv_D9",
+      "active_other"
+    ],
+    "tags": [
+      "pv_D9",
+      "active_other"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "has become",
+      "is become",
+      "was become",
+      "has been become"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "has become",
+    "summary": "Our quiet riverside town has become a popular weekend spot for families from nearby cities.",
+    "answer_text": "Our quiet riverside town has become a popular weekend spot for families from nearby cities."
+  },
+  {
+    "id": "pv7-D9-061",
+    "topic": "passive",
+    "level": "advanced",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Customers could not order hot drinks because the coffee machine ___ by mistake earlier that morning.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Кофемашину отключили ещё до того, как пришли посетители в прошлом (could not order), поэтому требуется Past Perfect Passive: had been unplugged.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "food",
+    "seed_id": "BN22-20",
+    "skeleton": "w could not w because the w G by w that w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "had been unplugged",
+      "was being unplugged",
+      "has been unplugged",
+      "is unplugged"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "had been unplugged",
+    "summary": "Customers could not order hot drinks because the coffee machine had been unplugged by mistake earlier that morning.",
+    "answer_text": "Customers could not order hot drinks because the coffee machine had been unplugged by mistake earlier that morning."
+  },
+  {
+    "id": "pv7-D9-062",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Guests smiled when they saw that fresh fruit and cold water (to place) in their room.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Фрукты и воду поставили в номер ещё до того, как гости вошли (saw), поэтому используется Past Perfect Passive: had been placed.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "travel",
+    "seed_id": "BN22-21",
+    "skeleton": "w when they w that w and w G in their w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-062-b1",
+        "answer": "had been placed",
+        "accepted_answers": [
+          "had been placed",
+          "'d been placed",
+          "were placed"
+        ],
+        "base_verb": "to place",
+        "supplied_words": [],
+        "tense_or_construction": "pv_state",
+        "voice": "passive",
+        "explanation_ru": "Фрукты и воду поставили в номер ещё до того, как гости вошли (saw), поэтому используется Past Perfect Passive: had been placed.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "Guests smiled when they saw that fresh fruit and cold water had been placed in their room."
+  },
+  {
+    "id": "pv7-D9-063",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Cool autumn weather really (to suit) you when you go hiking in the hills.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол suit (подходить, идти кому-либо) не употребляется в пассивном залоге; для единственного числа (weather) нужен актив: suits.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "nature",
+    "seed_id": "BN22-22",
+    "skeleton": "w G you when you w in the w .",
+    "practice_tenses": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-063-b1",
+        "answer": "suits",
+        "accepted_answers": [
+          "suits"
+        ],
+        "base_verb": "to suit",
+        "supplied_words": [],
+        "tense_or_construction": "active_present_simple",
+        "voice": "active",
+        "explanation_ru": "Глагол suit (подходить, идти кому-либо) не употребляется в пассивном залоге; для единственного числа (weather) нужен актив: suits.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "Cool autumn weather really suits you when you go hiking in the hills."
+  },
+  {
+    "id": "pv7-D9-064",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I walked along Oak Street while fallen autumn leaves (to collect) into large bags.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Союз while указывает на действие в процессе в прошлом (листья убирали в тот момент), поэтому нужен Past Continuous Passive: were being collected.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "city",
+    "seed_id": "BN22-23",
+    "skeleton": "i w while w G into w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-064-b1",
+        "answer": "were being collected",
+        "accepted_answers": [
+          "were being collected"
+        ],
+        "base_verb": "to collect",
+        "supplied_words": [],
+        "tense_or_construction": "pv_state",
+        "voice": "passive",
+        "explanation_ru": "Союз while указывает на действие в процессе в прошлом (листья убирали в тот момент), поэтому нужен Past Continuous Passive: were being collected.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "I walked along Oak Street while fallen autumn leaves were being collected into large bags."
+  },
+  {
+    "id": "pv7-D9-065",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Situation: The local food store locked its doors ten minutes ago, so nobody can enter now. Which sentence matches the situation?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Магазин уже заперт и не работает (текущее состояние, а не процесс закрытия), поэтому правильно is closed now.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "shopping",
+    "seed_id": "BN22-24",
+    "skeleton": "w : the w its w AGO , so w can w NOW . which w the w ?",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The local food store is closed now.",
+      "The local food store is closing now.",
+      "The local food store is being closed now.",
+      "The local food store closes now."
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "The local food store is closed now.",
+    "summary": "The local food store is closed now.",
+    "answer_text": "The local food store is closed now."
+  },
+  {
+    "id": "pv7-D9-066",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "This small local bank branch ___ a late evening service for busy office workers.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол lack (не хватать, не иметь) не употребляется в пассивном залоге; для единственного числа (branch) нужен актив: lacks.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "work",
+    "seed_id": "BN22-25",
+    "skeleton": "this w G a w for w .",
+    "practice_tenses": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "lacks",
+      "is lacked",
+      "is lacking by",
+      "was lacked"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "lacks",
+    "summary": "This small local bank branch lacks a late evening service for busy office workers.",
+    "answer_text": "This small local bank branch lacks a late evening service for busy office workers."
+  },
+  {
+    "id": "pv7-D9-067",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I found a silver key near the station bench, and it is belonged to my friend.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Глагол belong (принадлежать) не имеет формы пассивного залога: правильно it belongs to my friend.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "city",
+    "seed_id": "BN22-26",
+    "skeleton": "i w a w the w , and it is w to my w .",
+    "practice_tenses": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "I found a silver key near the station bench, and it belongs to my friend.",
+    "accepted_answers": [
+      "I found a silver key near the station bench, and it belongs to my friend."
+    ],
+    "answer_text": "I found a silver key near the station bench, and it belongs to my friend.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D9-068",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We read the town sign saying that two famous writers (to bear) on this quiet street.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Конструкция «родились» для множественного числа (writers) в английском всегда строится через Past Simple Passive: were born.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "notice",
+    "seed_id": "BN22-27",
+    "skeleton": "we w the w that w G on this w .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_born"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_born"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-068-b1",
+        "answer": "were born",
+        "accepted_answers": [
+          "were born"
+        ],
+        "base_verb": "to bear",
+        "supplied_words": [],
+        "tense_or_construction": "pv_born",
+        "voice": "passive",
+        "explanation_ru": "Конструкция «родились» для множественного числа (writers) в английском всегда строится через Past Simple Passive: were born.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "We read the town sign saying that two famous writers were born on this quiet street."
+  },
+  {
+    "id": "pv7-D9-069",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I opened my phone gallery and saw that my whole holiday album (to delete).",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Альбом был удалён ещё до того, как я открыл галерею в прошлом (opened, saw), поэтому требуется Past Perfect Passive: had been deleted.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "tech",
+    "seed_id": "BN22-28",
+    "skeleton": "i w my w and w that my w G .",
+    "practice_tenses": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D9",
+      "pv_state"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D9-069-b1",
+        "answer": "had been deleted",
+        "accepted_answers": [
+          "had been deleted",
+          "'d been deleted",
+          "was deleted"
+        ],
+        "base_verb": "to delete",
+        "supplied_words": [],
+        "tense_or_construction": "pv_state",
+        "voice": "passive",
+        "explanation_ru": "Альбом был удалён ещё до того, как я открыл галерею в прошлом (opened, saw), поэтому требуется Past Perfect Passive: had been deleted.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-boundaries"
+        ]
+      }
+    ],
+    "answer_text": "I opened my phone gallery and saw that my whole holiday album had been deleted."
+  },
+  {
+    "id": "pv7-D9-070",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Good candidates for this teaching role usually ___ strong communication skills and plenty of patience.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол have в значении «иметь, обладать» не употребляется в пассивном залоге; для множественного числа нужен актив: have.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-boundaries"
+    ],
+    "cell": "D9",
+    "genre": "work",
+    "seed_id": "BN22-29",
+    "skeleton": "w for this w G w and w of w .",
+    "practice_tenses": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D9",
+      "active_present_simple"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "have",
+      "are had",
+      "were had",
+      "are having by"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "have",
+    "summary": "Good candidates for this teaching role usually have strong communication skills and plenty of patience.",
+    "answer_text": "Good candidates for this teaching role usually have strong communication skills and plenty of patience."
+  },
+  {
+    "id": "pv7-D10-036",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The winning goal in Sunday's match was scored ___ Bob.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Исполнитель действия (человек — Боб) вводится предлогом by: was scored by Bob.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "sport",
+    "seed_id": "BN23-01",
+    "skeleton": "the w in w was w G w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "from",
+      "in",
+      "by",
+      "with"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "by",
+    "summary": "The winning goal in Sunday's match was scored by Bob.",
+    "answer_text": "The winning goal in Sunday's match was scored by Bob."
+  },
+  {
+    "id": "pv7-D10-037",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "All the train doors ___ just before departure.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Исполнитель или инструмент действия не указаны, поэтому предлоги by или with после глагола не нужны: were closed.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "travel",
+    "seed_id": "BN23-03",
+    "skeleton": "all the w G JUST before w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "were closed",
+      "were closed by",
+      "were closed with",
+      "closed by"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "were closed",
+    "summary": "All the train doors were closed just before departure.",
+    "answer_text": "All the train doors were closed just before departure."
+  },
+  {
+    "id": "pv7-D10-038",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Your travel blog is widely known ___ its helpful city guides and clear photos.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Устойчивое выражение known for означает «известен чем-либо» (за какие-то качества или заслуги): known for.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "tech",
+    "seed_id": "BN23-06",
+    "skeleton": "your w is w NOW w G its w and w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "for",
+      "with",
+      "at",
+      "in"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "for",
+    "summary": "Your travel blog is widely known for its helpful city guides and clear photos.",
+    "answer_text": "Your travel blog is widely known for its helpful city guides and clear photos."
+  },
+  {
+    "id": "pv7-D10-039",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "That popular comedy play was written ___ a young local writer.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Автор произведения (человек, совершивший действие) вводится предлогом by: written by a young local writer.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "arts",
+    "seed_id": "BN23-07",
+    "skeleton": "that w was w G a w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "by",
+      "with",
+      "from",
+      "in"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "by",
+    "summary": "That popular comedy play was written by a young local writer.",
+    "answer_text": "That popular comedy play was written by a young local writer."
+  },
+  {
+    "id": "pv7-D10-040",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Every large travel bag is checked ___ an airport officer.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Сотрудник, выполняющий проверку (исполнитель действия), вводится предлогом by: by an airport officer.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "travel",
+    "seed_id": "BN23-08",
+    "skeleton": "EVERY_LARGE w is w G an w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "in",
+      "from",
+      "by",
+      "with"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "by",
+    "summary": "Every large travel bag is checked by an airport officer.",
+    "answer_text": "Every large travel bag is checked by an airport officer."
+  },
+  {
+    "id": "pv7-D10-041",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "During the winter class trip, the whole hill was covered ___ soft white snow.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Для описания состояния поверхности, покрытой снегом, используется выражение covered with (или covered in): covered with soft white snow.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "school",
+    "seed_id": "BN23-09",
+    "skeleton": "w the w , the w was w G w NOW .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "from",
+      "in",
+      "with",
+      "by"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "with",
+    "summary": "During the winter class trip, the whole hill was covered with soft white snow.",
+    "answer_text": "During the winter class trip, the whole hill was covered with soft white snow."
+  },
+  {
+    "id": "pv7-D10-042",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My grandmother's gift box was tied ___ a bright red ribbon.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Материал или предмет, которым перевязали коробку (лента), вводится предлогом with: with a bright red ribbon.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "home",
+    "seed_id": "BN23-10",
+    "skeleton": "my w was w G a w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "with",
+      "by",
+      "in",
+      "from"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "with",
+    "summary": "My grandmother's gift box was tied with a bright red ribbon.",
+    "answer_text": "My grandmother's gift box was tied with a bright red ribbon."
+  },
+  {
+    "id": "pv7-D10-043",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "All the sunny beach photos were taken ___ Joe.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Человек, сделавший фотографии (Джо), вводится предлогом by: taken by Joe.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "travel",
+    "seed_id": "BN23-11",
+    "skeleton": "all the w were w G w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "with",
+      "by",
+      "from",
+      "in"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "by",
+    "summary": "All the sunny beach photos were taken by Joe.",
+    "answer_text": "All the sunny beach photos were taken by Joe."
+  },
+  {
+    "id": "pv7-D10-044",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My online order box was closed by strong brown tape.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "Материал или средство, с помощью которого заклеили коробку (скотч), вводится предлогом with, а не by: with strong brown tape.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "shopping",
+    "seed_id": "BN23-12",
+    "skeleton": "my w was w by w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "My online order box was closed with strong brown tape.",
+    "accepted_answers": [
+      "My online order box was closed with strong brown tape."
+    ],
+    "answer_text": "My online order box was closed with strong brown tape.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D10-045",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The wet lecture notes were dried ___ a small paper towel.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Предмет, которым вытерли конспекты (бумажное полотенце), вводится предлогом with: with a small paper towel.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "school",
+    "seed_id": "BN23-13",
+    "skeleton": "the w were w G a w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "in",
+      "with",
+      "from",
+      "by"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "with",
+    "summary": "The wet lecture notes were dried with a small paper towel.",
+    "answer_text": "The wet lecture notes were dried with a small paper towel."
+  },
+  {
+    "id": "pv7-D10-046",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The doctor's bright waiting room ___ early this morning.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Исполнитель действия в предложении не назван, поэтому предлоги by и with после глагола не нужны: was cleaned.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "health",
+    "seed_id": "BN23-14",
+    "skeleton": "the w G w this w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "was cleaned",
+      "was cleaned by",
+      "was cleaned with",
+      "cleaned by"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "was cleaned",
+    "summary": "The doctor's bright waiting room was cleaned early this morning.",
+    "answer_text": "The doctor's bright waiting room was cleaned early this morning."
+  },
+  {
+    "id": "pv7-D10-047",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our morning running group is led ___ Liv.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Человек, который ведёт группу (Лив), вводится предлогом by: is led by Liv.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "sport",
+    "seed_id": "BN23-16",
+    "skeleton": "our w is w G w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "in",
+      "by",
+      "from",
+      "with"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "by",
+    "summary": "Our morning running group is led by Liv.",
+    "answer_text": "Our morning running group is led by Liv."
+  },
+  {
+    "id": "pv7-D10-048",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Hi Ed, my bedroom window was broken ___ a heavy ball.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Предмет, который сам совершил действие и разбил окно (тяжёлый мяч), вводится предлогом by: broken by a heavy ball.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "chat",
+    "seed_id": "BN23-17",
+    "skeleton": "w , my w was w G a w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "by",
+      "with",
+      "in",
+      "from"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "by",
+    "summary": "Hi Ed, my bedroom window was broken by a heavy ball.",
+    "answer_text": "Hi Ed, my bedroom window was broken by a heavy ball."
+  },
+  {
+    "id": "pv7-D10-049",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We were all really surprised ___ the huge crowd at the free park concert.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После причастия surprised для указания причины удивления используется предлог by (или at): surprised by the huge crowd.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "arts",
+    "seed_id": "BN23-20",
+    "skeleton": "we were all w G the w at the w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_prepositional"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_prepositional"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "by",
+      "with",
+      "of",
+      "from"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "by",
+    "summary": "We were all really surprised by the huge crowd at the free park concert.",
+    "answer_text": "We were all really surprised by the huge crowd at the free park concert."
+  },
+  {
+    "id": "pv7-D10-050",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Busy city crossings are watched ___ traffic officers.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Люди, выполняющие действие (инспекторы дорожного движения), вводятся предлогом by: by traffic officers.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "city",
+    "seed_id": "BN23-21",
+    "skeleton": "w are w G w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "from",
+      "with",
+      "in",
+      "by"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "by",
+    "summary": "Busy city crossings are watched by traffic officers.",
+    "answer_text": "Busy city crossings are watched by traffic officers."
+  },
+  {
+    "id": "pv7-D10-051",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "If you need a warm winter scarf, this soft one is made ___ pure wool.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Когда материал изделия не меняет своих свойств при изготовлении (шарф из шерсти), используется предлог of: made of pure wool.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "shopping",
+    "seed_id": "BN23-22",
+    "skeleton": "if you w a w , this w is w G w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_state"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_state"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "of",
+      "by",
+      "with",
+      "at"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "of",
+    "summary": "If you need a warm winter scarf, this soft one is made of pure wool.",
+    "answer_text": "If you need a warm winter scarf, this soft one is made of pure wool."
+  },
+  {
+    "id": "pv7-D10-052",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I am glad the heavy weights in our sports club ___ after the evening class.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Исполнитель или инструмент действия не указаны, поэтому предлоги by или with после глагола не нужны: have been put away.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "sport",
+    "seed_id": "BN24-01",
+    "skeleton": "i am w the w in our w G after the w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "have been put away",
+      "have been put away by",
+      "have been put away with",
+      "put away by"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "have been put away",
+    "summary": "I am glad the heavy weights in our sports club have been put away after the evening class.",
+    "answer_text": "I am glad the heavy weights in our sports club have been put away after the evening class."
+  },
+  {
+    "id": "pv7-D10-053",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Ann felt upset because her favourite glass cup ___ while her little brother was playing.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В предложении не назван ни исполнитель, ни инструмент действия, поэтому предлоги by и with не требуются: had been broken.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "home",
+    "seed_id": "BN24-02",
+    "skeleton": "w because her w G while her w was w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "had been broken",
+      "had been broken by",
+      "had been broken with",
+      "broke by"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "had been broken",
+    "summary": "Ann felt upset because her favourite glass cup had been broken while her little brother was playing.",
+    "answer_text": "Ann felt upset because her favourite glass cup had been broken while her little brother was playing."
+  },
+  {
+    "id": "pv7-D10-054",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Old study books in this quiet reading room are filled ___ helpful notes from students.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Содержимое или наполнение предмета вводится предлогом with (filled with): filled with helpful notes.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "school",
+    "seed_id": "BN24-04",
+    "skeleton": "w in this w are w G w from w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "by",
+      "with",
+      "in",
+      "from"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "with",
+    "summary": "Old study books in this quiet reading room are filled with helpful notes from students.",
+    "answer_text": "Old study books in this quiet reading room are filled with helpful notes from students."
+  },
+  {
+    "id": "pv7-D10-055",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Tim and Liv are really interested of science after today's fun water experiment in class.",
+    "instruction_ru": "Если в предложении есть ошибка, перепишите его правильно. Если ошибки нет, перепишите без изменений.",
+    "explanation_ru": "После причастия interested всегда используется предлог in, а не of: правильно interested in science.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "school",
+    "seed_id": "BN24-06",
+    "skeleton": "w and w are w of w after w in w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_prepositional"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_prepositional"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 7,
+    "type": "error_fix",
+    "answer": "Tim and Liv are really interested in science after today's fun water experiment in class.",
+    "accepted_answers": [
+      "Tim and Liv are really interested in science after today's fun water experiment in class."
+    ],
+    "answer_text": "Tim and Liv are really interested in science after today's fun water experiment in class.",
+    "has_error": true
+  },
+  {
+    "id": "pv7-D10-056",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Hot coffee and sweet tea ___ every morning at that small corner coffee shop.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Исполнитель действия не упомянут, поэтому предлоги by или with после глагола не ставятся: are served.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "food",
+    "seed_id": "BN24-07",
+    "skeleton": "w and w G EVERY_MORNING at that w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "are served",
+      "are served by",
+      "are served with",
+      "served by"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "are served",
+    "summary": "Hot coffee and sweet tea are served every morning at that small corner coffee shop.",
+    "answer_text": "Hot coffee and sweet tea are served every morning at that small corner coffee shop."
+  },
+  {
+    "id": "pv7-D10-057",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Bob must have been pleasantly surprised ___ how quickly his new bank card arrived in the mail.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После причастия surprised для указания причины удивления употребляется предлог by (или at): surprised by.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "work",
+    "seed_id": "BN24-12",
+    "skeleton": "w must have been w G how w his w in the w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "by",
+      "with",
+      "from",
+      "in"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "by",
+    "summary": "Bob must have been pleasantly surprised by how quickly his new bank card arrived in the mail.",
+    "answer_text": "Bob must have been pleasantly surprised by how quickly his new bank card arrived in the mail."
+  },
+  {
+    "id": "pv7-D10-058",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Joe smiled when his lost blue umbrella was found ___ a kind bus driver.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Человек, совершивший действие (водитель автобуса), вводится предлогом by: was found by a kind bus driver.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "city",
+    "seed_id": "BN24-13",
+    "skeleton": "w when his w was w G a w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "from",
+      "by",
+      "in",
+      "with"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "by",
+    "summary": "Joe smiled when his lost blue umbrella was found by a kind bus driver.",
+    "answer_text": "Joe smiled when his lost blue umbrella was found by a kind bus driver."
+  },
+  {
+    "id": "pv7-D10-059",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "According to the wall sign, your wet umbrella must be covered ___ a plastic bag inside.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В пассивном залоге выражение covered with (или covered in) указывает, чем покрыт предмет: covered with a plastic bag.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "notice",
+    "seed_id": "BN24-14",
+    "skeleton": "w to the w , your w must be w G a w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "by",
+      "with",
+      "from",
+      "in"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "with",
+    "summary": "According to the wall sign, your wet umbrella must be covered with a plastic bag inside.",
+    "answer_text": "According to the wall sign, your wet umbrella must be covered with a plastic bag inside."
+  },
+  {
+    "id": "pv7-D10-060",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Your short work history is being reviewed ___ the hiring manager before your afternoon talk.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Исполнитель действия в Present Continuous Passive (менеджер по найму) вводится предлогом by: is being reviewed by.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "work",
+    "seed_id": "BN24-16",
+    "skeleton": "your w is being w G the w before your w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "from",
+      "in",
+      "by",
+      "with"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "by",
+    "summary": "Your short work history is being reviewed by the hiring manager before your afternoon talk.",
+    "answer_text": "Your short work history is being reviewed by the hiring manager before your afternoon talk."
+  },
+  {
+    "id": "pv7-D10-061",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our coach was worried ___ the wet grass before our Saturday morning football match.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Устойчивое выражение worried about переводится как «обеспокоен чем-либо»: was worried about.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "sport",
+    "seed_id": "BN24-17",
+    "skeleton": "our w was w G the w before our w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "about",
+      "by",
+      "from",
+      "in"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "about",
+    "summary": "Our coach was worried about the wet grass before our Saturday morning football match.",
+    "answer_text": "Our coach was worried about the wet grass before our Saturday morning football match."
+  },
+  {
+    "id": "pv7-D10-062",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Cold milk is usually mixed ___ warm tea in a tall glass cup.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Соединение или смешивание компонентов передаётся предлогом with (mixed with): mixed with warm tea.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "recipe",
+    "seed_id": "BN24-18",
+    "skeleton": "w is w G w in a w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "from",
+      "in",
+      "with",
+      "by"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "with",
+    "summary": "Cold milk is usually mixed with warm tea in a tall glass cup.",
+    "answer_text": "Cold milk is usually mixed with warm tea in a tall glass cup."
+  },
+  {
+    "id": "pv7-D10-063",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Sorry for the delay, Rick—the main train line has been blocked ___ a fallen tree.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Объект, который сам послужил причиной действия и перекрыл пути (упавшее дерево), вводится предлогом by: blocked by a fallen tree.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "travel",
+    "seed_id": "BN24-19",
+    "skeleton": "w for the w , w — the w has been w G a w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "from",
+      "with",
+      "by",
+      "in"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "by",
+    "summary": "Sorry for the delay, Rick—the main train line has been blocked by a fallen tree.",
+    "answer_text": "Sorry for the delay, Rick—the main train line has been blocked by a fallen tree."
+  },
+  {
+    "id": "pv7-D10-064",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We are thrilled because our heavy oak desk has been carried upstairs ___ two strong friends.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Люди, выполнившие действие в Present Perfect Passive (двое друзей), вводятся предлогом by: carried upstairs by two strong friends.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "home",
+    "seed_id": "BN24-20",
+    "skeleton": "we are w because our w has been w G w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "from",
+      "with",
+      "in",
+      "by"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "by",
+    "summary": "We are thrilled because our heavy oak desk has been carried upstairs by two strong friends.",
+    "answer_text": "We are thrilled because our heavy oak desk has been carried upstairs by two strong friends."
+  },
+  {
+    "id": "pv7-D10-065",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Vera lives next door and is married ___ a friendly music teacher from York.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В английском языке выражение «быть женатым / замужем за кем-либо» требует предлога to: married to.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "home",
+    "seed_id": "BN24-21",
+    "skeleton": "w NEXT_DOOR and is w G a w from w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "for",
+      "in",
+      "to",
+      "of"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "to",
+    "summary": "Vera lives next door and is married to a friendly music teacher from York.",
+    "answer_text": "Vera lives next door and is married to a friendly music teacher from York."
+  },
+  {
+    "id": "pv7-D10-066",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I could not send the file because our office network was being checked ___ an engineer.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Исполнитель действия в Past Continuous Passive (инженер) вводится предлогом by: was being checked by an engineer.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-agent"
+    ],
+    "cell": "D10",
+    "genre": "tech",
+    "seed_id": "BN24-22",
+    "skeleton": "i could not w the w because our w was being w G an w .",
+    "practice_tenses": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "tags": [
+      "pv_D10",
+      "pv_agent"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "with",
+      "from",
+      "in",
+      "by"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "by",
+    "summary": "I could not send the file because our office network was being checked by an engineer.",
+    "answer_text": "I could not send the file because our office network was being checked by an engineer."
+  },
+  {
+    "id": "pv7-D11-036",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "When (this funny film / to make)?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В вопросе Past Simple Passive вспомогательный глагол was ставится перед подлежащим: was this funny film made.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "arts",
+    "seed_id": "BN25-01",
+    "skeleton": "when G ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-036-b1",
+        "answer": "was this funny film made",
+        "accepted_answers": [
+          "was this funny film made"
+        ],
+        "base_verb": "this funny film / to make",
+        "supplied_words": [
+          "this funny film"
+        ],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "В вопросе Past Simple Passive вспомогательный глагол was ставится перед подлежащим: was this funny film made.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "When was this funny film made?"
+  },
+  {
+    "id": "pv7-D11-037",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Will Ann's heavy bags (to carry) onto the plane?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В вопросе Future Simple Passive после Will и подлежащего ставится be + третья форма глагола: be carried.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "travel",
+    "seed_id": "BN25-02",
+    "skeleton": "will w G w the w ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-037-b1",
+        "answer": "be carried",
+        "accepted_answers": [
+          "be carried"
+        ],
+        "base_verb": "to carry",
+        "supplied_words": [],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "В вопросе Future Simple Passive после Will и подлежащего ставится be + третья форма глагола: be carried.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "Will Ann's heavy bags be carried onto the plane?"
+  },
+  {
+    "id": "pv7-D11-038",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Where ___ during the class museum trip?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В специальном вопросе Past Simple Passive для множественного числа (photos) вспомогательный глагол were идёт перед подлежащим: were the class photos taken.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "school",
+    "seed_id": "BN25-03",
+    "skeleton": "where G w the w ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "were the class photos taken",
+      "the class photos were taken",
+      "was the class photos taken",
+      "were took the class photos"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "were the class photos taken",
+    "summary": "Where were the class photos taken during the class museum trip?",
+    "answer_text": "Where were the class photos taken during the class museum trip?"
+  },
+  {
+    "id": "pv7-D11-039",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Big gift boxes (not / to send) on Sundays.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Для регулярного действия в отрицании Present Simple Passive используется are not + V3 (для множественного числа boxes): are not sent.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "home",
+    "seed_id": "BN25-04",
+    "skeleton": "w G on w .",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-039-b1",
+        "answer": "are not sent",
+        "accepted_answers": [
+          "are not sent",
+          "'re not sent",
+          "aren't sent"
+        ],
+        "base_verb": "not / to send",
+        "supplied_words": [
+          "not"
+        ],
+        "tense_or_construction": "pv_negative",
+        "voice": "passive",
+        "explanation_ru": "Для регулярного действия в отрицании Present Simple Passive используется are not + V3 (для множественного числа boxes): are not sent.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "Big gift boxes are not sent on Sundays."
+  },
+  {
+    "id": "pv7-D11-040",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "___ the island boat tickets online before the trip?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Вы сами купили билеты на паром (активный залог), поэтому в вопросе Past Simple нужен глагол Did и начальная форма buy: Did you buy.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "travel",
+    "seed_id": "BN25-05",
+    "skeleton": "G the w before the w ?",
+    "practice_tenses": [
+      "pv_D11",
+      "active_past_simple"
+    ],
+    "tags": [
+      "pv_D11",
+      "active_past_simple"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Did you buy",
+      "Were you buy",
+      "Did you bought",
+      "Were bought you"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "Did you buy",
+    "summary": "Did you buy the island boat tickets online before the trip?",
+    "answer_text": "Did you buy the island boat tickets online before the trip?"
+  },
+  {
+    "id": "pv7-D11-041",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "___ by a local driver from the food shop?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В общем вопросе Present Simple Passive для множественного числа (boxes) глагол Are ставится перед подлежащим: Are these boxes brought.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "shopping",
+    "seed_id": "BN25-06",
+    "skeleton": "G by a w from the w ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Are these boxes brought",
+      "Are brought these boxes",
+      "Do these boxes brought",
+      "Is these boxes brought"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "Are these boxes brought",
+    "summary": "Are these boxes brought by a local driver from the food shop?",
+    "answer_text": "Are these boxes brought by a local driver from the food shop?"
+  },
+  {
+    "id": "pv7-D11-042",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Exam marks (not / to show) on the wall today.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В отрицании Future Simple Passive используется форма will not be + третья форма глагола show (shown): will not be shown.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "school",
+    "seed_id": "BN25-07",
+    "skeleton": "w G on the w .",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-042-b1",
+        "answer": "will not be shown",
+        "accepted_answers": [
+          "will not be shown",
+          "'ll not be shown",
+          "won't be shown"
+        ],
+        "base_verb": "not / to show",
+        "supplied_words": [
+          "not"
+        ],
+        "tense_or_construction": "pv_negative",
+        "voice": "passive",
+        "explanation_ru": "В отрицании Future Simple Passive используется форма will not be + третья форма глагола show (shown): will not be shown.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "Exam marks will not be shown on the wall today."
+  },
+  {
+    "id": "pv7-D11-043",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "I felt sick, so I (to help) by a kind doctor.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Первая часть стоит в прошлом (felt), а действие выполнил врач (by a kind doctor), поэтому нужен Past Simple Passive: was helped.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "health",
+    "seed_id": "BN25-08",
+    "skeleton": "i w , so i G by a w .",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_past_simple"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_past_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-043-b1",
+        "answer": "was helped",
+        "accepted_answers": [
+          "was helped"
+        ],
+        "base_verb": "to help",
+        "supplied_words": [],
+        "tense_or_construction": "pv_past_simple",
+        "voice": "passive",
+        "explanation_ru": "Первая часть стоит в прошлом (felt), а действие выполнил врач (by a kind doctor), поэтому нужен Past Simple Passive: was helped.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "I felt sick, so I was helped by a kind doctor."
+  },
+  {
+    "id": "pv7-D11-044",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "We (not / to water) our garden flowers in winter.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Мы сами не поливаем цветы зимой (подлежащее we выполняет действие), поэтому используется отрицание в Present Simple Active: do not water.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "nature",
+    "seed_id": "BN25-09",
+    "skeleton": "we G our w in w .",
+    "practice_tenses": [
+      "pv_D11",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D11",
+      "active_present_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-044-b1",
+        "answer": "do not water",
+        "accepted_answers": [
+          "do not water",
+          "don't water"
+        ],
+        "base_verb": "not / to water",
+        "supplied_words": [
+          "not"
+        ],
+        "tense_or_construction": "active_present_simple",
+        "voice": "active",
+        "explanation_ru": "Мы сами не поливаем цветы зимой (подлежащее we выполняет действие), поэтому используется отрицание в Present Simple Active: do not water.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "We do not water our garden flowers in winter."
+  },
+  {
+    "id": "pv7-D11-045",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Our broken tennis net (not / to replace) at the club yet.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Слово yet в отрицании указывает на отсутствие результата к настоящему моменту — нужен Present Perfect Passive: has not been replaced.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "sport",
+    "seed_id": "BN25-10",
+    "skeleton": "our w G at the w YET .",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-045-b1",
+        "answer": "has not been replaced",
+        "accepted_answers": [
+          "has not been replaced",
+          "'s not been replaced",
+          "hasn't been replaced"
+        ],
+        "base_verb": "not / to replace",
+        "supplied_words": [
+          "not"
+        ],
+        "tense_or_construction": "pv_negative",
+        "voice": "passive",
+        "explanation_ru": "Слово yet в отрицании указывает на отсутствие результата к настоящему моменту — нужен Present Perfect Passive: has not been replaced.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "Our broken tennis net has not been replaced at the club yet."
+  },
+  {
+    "id": "pv7-D11-046",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Has Bob's lost phone (to find) on the school bus yet?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В вопросе Present Perfect Passive после Has и подлежащего ставится been + третья форма глагола find (found): been found.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "chat",
+    "seed_id": "BN25-11",
+    "skeleton": "has w G on the w YET ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-046-b1",
+        "answer": "been found",
+        "accepted_answers": [
+          "been found"
+        ],
+        "base_verb": "to find",
+        "supplied_words": [],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "В вопросе Present Perfect Passive после Has и подлежащего ставится been + третья форма глагола find (found): been found.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "Has Bob's lost phone been found on the school bus yet?"
+  },
+  {
+    "id": "pv7-D11-047",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Check your email, Kim: all the party invitations (already / to send)!",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В утверждении Present Perfect Passive наречие already ставится сразу после первого вспомогательного глагола have: have already been sent.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "home",
+    "seed_id": "BN25-12",
+    "skeleton": "w your w , w : all the w G !",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_present_perfect"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_present_perfect"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-047-b1",
+        "answer": "have already been sent",
+        "accepted_answers": [
+          "have already been sent",
+          "'ve already been sent"
+        ],
+        "base_verb": "already / to send",
+        "supplied_words": [
+          "already"
+        ],
+        "tense_or_construction": "pv_present_perfect",
+        "voice": "passive",
+        "explanation_ru": "В утверждении Present Perfect Passive наречие already ставится сразу после первого вспомогательного глагола have: have already been sent.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "Check your email, Kim: all the party invitations have already been sent!"
+  },
+  {
+    "id": "pv7-D11-048",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Are you (to invite) to Joe's summer music show?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В общем вопросе Present Simple Passive после Are и подлежащего you ставится третья форма глагола (V3): invited.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "arts",
+    "seed_id": "BN25-14",
+    "skeleton": "are you G to w ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-048-b1",
+        "answer": "invited",
+        "accepted_answers": [
+          "invited"
+        ],
+        "base_verb": "to invite",
+        "supplied_words": [],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "В общем вопросе Present Simple Passive после Are и подлежащего you ставится третья форма глагола (V3): invited.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "Are you invited to Joe's summer music show?"
+  },
+  {
+    "id": "pv7-D11-049",
+    "topic": "passive",
+    "level": "medium",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Look at those traffic cones: ___ for the town race now?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В вопросе Present Continuous Passive вспомогательный глагол is выносится перед подлежащим, а за ним следует being + V3: is the main street being closed.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "city",
+    "seed_id": "BN25-15",
+    "skeleton": "w at those w : G for the w NOW ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "is the main street being closed",
+      "is the main street been closed",
+      "does the main street being closed",
+      "the main street is being closed"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "is the main street being closed",
+    "summary": "Look at those traffic cones: is the main street being closed for the town race now?",
+    "answer_text": "Look at those traffic cones: is the main street being closed for the town race now?"
+  },
+  {
+    "id": "pv7-D11-050",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "Do we (to need) clean shoes for the sports hall?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Нам нужна чистая обувь (активный залог в Present Simple); после Do и подлежащего ставится начальная форма глагола: need.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "sport",
+    "seed_id": "BN25-17",
+    "skeleton": "do we G w for the w ?",
+    "practice_tenses": [
+      "pv_D11",
+      "active_present_simple"
+    ],
+    "tags": [
+      "pv_D11",
+      "active_present_simple"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-050-b1",
+        "answer": "need",
+        "accepted_answers": [
+          "need"
+        ],
+        "base_verb": "to need",
+        "supplied_words": [],
+        "tense_or_construction": "active_present_simple",
+        "voice": "active",
+        "explanation_ru": "Нам нужна чистая обувь (активный залог в Present Simple); после Do и подлежащего ставится начальная форма глагола: need.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "Do we need clean shoes for the sports hall?"
+  },
+  {
+    "id": "pv7-D11-051",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "___ a bigger bedroom in your family's new flat?",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В вопросе Future Simple Passive вспомогательный глагол Will стоит перед подлежащим you, а be + V3 — после него: Will you be given.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "home",
+    "seed_id": "BN25-18",
+    "skeleton": "G a w in your w ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "Will you be given",
+      "Will be you given",
+      "Will you given",
+      "Are you be given"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "Will you be given",
+    "summary": "Will you be given a bigger bedroom in your family's new flat?",
+    "answer_text": "Will you be given a bigger bedroom in your family's new flat?"
+  },
+  {
+    "id": "pv7-D11-052",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "My office desk (not / to clean) on Saturday afternoons.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Регулярное действие в отрицании Present Simple Passive для единственного числа (desk) строится как is not cleaned.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "work",
+    "seed_id": "BN25-19",
+    "skeleton": "my w G on w .",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-052-b1",
+        "answer": "is not cleaned",
+        "accepted_answers": [
+          "is not cleaned",
+          "'s not cleaned",
+          "isn't cleaned"
+        ],
+        "base_verb": "not / to clean",
+        "supplied_words": [
+          "not"
+        ],
+        "tense_or_construction": "pv_negative",
+        "voice": "passive",
+        "explanation_ru": "Регулярное действие в отрицании Present Simple Passive для единственного числа (desk) строится как is not cleaned.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "My office desk is not cleaned on Saturday afternoons."
+  },
+  {
+    "id": "pv7-D11-053",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "On which shelf (old study books / to keep)?",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В специальном вопросе Present Simple Passive для множественного числа (books) глагол are ставится перед подлежащим: are old study books kept.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "school",
+    "seed_id": "BN25-20",
+    "skeleton": "on which w G ?",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_question"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-053-b1",
+        "answer": "are old study books kept",
+        "accepted_answers": [
+          "are old study books kept",
+          "'re old study books kept"
+        ],
+        "base_verb": "old study books / to keep",
+        "supplied_words": [
+          "old study books"
+        ],
+        "tense_or_construction": "pv_question",
+        "voice": "passive",
+        "explanation_ru": "В специальном вопросе Present Simple Passive для множественного числа (books) глагол are ставится перед подлежащим: are old study books kept.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "On which shelf are old study books kept?"
+  },
+  {
+    "id": "pv7-D11-054",
+    "topic": "passive",
+    "level": "basic",
+    "content_version": "passive-2026-11-25.2",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "prompt": "The old town clock (not / to fix) last week.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Слова last week указывают на Past Simple Passive; для единственного числа (clock) нужно was not fixed.",
+    "rule_refs": [
+      "content/passive/07-passive.md#pv-questions"
+    ],
+    "cell": "D11",
+    "genre": "news",
+    "seed_id": "BN25-21",
+    "skeleton": "the w G LAST_WEEK .",
+    "practice_tenses": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "tags": [
+      "pv_D11",
+      "pv_negative"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "pv7-D11-054-b1",
+        "answer": "was not fixed",
+        "accepted_answers": [
+          "was not fixed",
+          "wasn't fixed"
+        ],
+        "base_verb": "not / to fix",
+        "supplied_words": [
+          "not"
+        ],
+        "tense_or_construction": "pv_negative",
+        "voice": "passive",
+        "explanation_ru": "Слова last week указывают на Past Simple Passive; для единственного числа (clock) нужно was not fixed.",
+        "rule_refs": [
+          "content/passive/07-passive.md#pv-questions"
+        ]
+      }
+    ],
+    "answer_text": "The old town clock was not fixed last week."
+  }
+]

@@ -1,0 +1,54 @@
+NOEON BATCH BN20
+Cell D7. Write exactly 38 tasks, one per slot, same order. Formats: gap 21, which 3, mc 9, fix 5. Levels: medium 17, advanced 21.
+
+## D7. get-passive and have something done (medium and advanced)
+
+- **medium:** only the `get`-passive: `My phone got broken on the bus.` → **got broken**; `He got hurt at football.` → **got hurt**; `They get paid on Fridays.` → **get paid**. Never `get` with a long agent.
+- **advanced:** `have/get + object + V3`: `We had the roof repaired.` / `She's going to get her hair cut.`; the choice between `I repaired it`, `I had it repaired`, `it was repaired`.
+- Include `have` and `get` in `accepted_answers` when both are natural.
+- **Mistakes:** `I cut my hair` (when a hairdresser did it), `have repaired the car`, `had repair the car`.
+
+Slots (id|level|format|domain|pov|tone):
+BN20-01|medium|gap|concert or festival|3P|neutral
+BN20-02|advanced|which|traffic and roads|1P|neutral
+BN20-03|advanced|gap|clothes shop|3P|neutral
+BN20-04|advanced|gap|gym|1P|neutral
+BN20-05|advanced|mc|home and family|3P|bad news (small, everyday)
+BN20-06|advanced|fix|office work|3P|neutral
+BN20-07|medium|gap|library|1P|light and friendly
+BN20-08|advanced|gap|a news item about a town|IM|neutral
+BN20-09|advanced|gap|school lessons|3P|bad news (small, everyday)
+BN20-10|advanced|gap|café|2P|neutral
+BN20-11|advanced|gap|hotel|IM|neutral
+BN20-12|medium|mc|weather|1P|bad news (small, everyday)
+BN20-13|advanced|gap|park and street|3P|good news
+BN20-14|advanced|mc|supermarket|2P|good news
+BN20-15|advanced|gap|bank|IM|good news
+BN20-16|medium|gap|lost and found|2P|neutral
+BN20-17|medium|which|a notice on a wall|3P|bad news (small, everyday)
+BN20-18|advanced|gap|phone and apps|1P|neutral
+BN20-19|medium|gap|a job interview|1P|neutral
+BN20-20|medium|gap|football or basketball match|IM|light and friendly
+BN20-21|advanced|mc|cooking at home|IM|good news
+BN20-22|medium|fix|bus or train|3P|neutral
+BN20-23|advanced|which|moving house|1P|neutral
+BN20-24|medium|mc|neighbours|IM|good news
+BN20-25|medium|gap|internet and email|1P|good news
+BN20-26|medium|fix|cinema or theatre|2P|neutral
+BN20-27|advanced|mc|airport and flights|1P|neutral
+BN20-28|advanced|fix|a school trip|3P|neutral
+BN20-29|medium|mc|post office and parcels|1P|neutral
+BN20-30|advanced|fix|holiday trip|3P|neutral
+BN20-31|advanced|gap|online shopping|2P|neutral
+BN20-32|medium|gap|university|3P|light and friendly
+BN20-33|medium|gap|clinic or pharmacy|3P|light and friendly
+BN20-34|medium|gap|garden|1P|bad news (small, everyday)
+BN20-35|medium|mc|sports club|3P|neutral
+BN20-36|advanced|mc|a text message to a friend|IM|neutral
+BN20-37|medium|gap|birthday or party|3P|light and friendly
+BN20-38|advanced|gap|restaurant|IM|bad news (small, everyday)
+
+Avoid:
+- Openings (first two words): a big, a friendly, a large, a loud, a new, a small, according to, after a, after breakfast, after checking, after my, after our, after the, alice had, all classroom, all fitness, all fresh, all hot, all international, all loan, all museum, all office, all our, all rare, all school, all students, all the, all these, all young, all your, almond croissants, although i, amy's red, anna smiled, any customer, are winter, are you, at our, at the, at this, ava and, bad news, bank customers, because of, before friday, before i, before our, before the, before we, beth asked, both injured, bright sunshine, busy office, by the, caleb sent, careful drivers, carl feels, carla refused, cash only, catch the, check the, cheer up, chloe's party, chopped herbs, claire's younger, click here, cold milk, critics expect, customers love, damaged mail, dark clouds, dark storm, dean forgot, did you, dina's dream, dinner did, dinner orders, dirty family, don't worry, dora to, drivers are, drivers told, during busy, during our, during the, during tomorrow's, elena smiled, ella was, emma makes, empty coffee, enjoy your, eric is, even after, every class, every evening, every international, every large, every morning, every new, every registered, every summer, everyone in, everyone was, farmers watched, fast food, faster evening, faye planned, felix needed, first year, five clever, five people, fog covered, free apples, free family, free gifts, free paper, free study, free sweet, fresh bread, fresh daily, fresh fish, fresh orange, friday evening, gavin goes, gina slipped, good news, grace was, grammar rules, grandpa's clock, great news, guests are, gus and, gwen could, had your, hana smiled, hank coaches, happy shoppers, have we, have you, having told, he arrived, he waited, heavy boxes, heavy fog, heavy rain, heavy snow, her big, her phone, hey alex, hey lina, hey nell, hey to, hey toby, hey tony, hi dan's, hi julia, hi kate, hi liam, hi molly, hi neil, hi pete, hi sam, history tests, holly's sweet, hot coffee, hotel notice, how many, how the, hundreds of, hurry up, i always, i am, i called, i came, i check, i checked, i crossed, i downloaded, i dropped, i feel, i felt, i hate, i have, i left, i like, i liked, i love, i never, i opened, i ordered, i prefer, i refused, i sent, i stood, i to, i took, i tried, i walk, i walked, i wanted, i was, i went, ian saw, if the, if we, if you, important letters, in marta's, in our, in this, in yesterday's, it to, jane looked, jill uses, jo to, join our, junior swimmers, kira is, last sunday's, last weekend, late visitors, leila arrived, lena and, library study, lily smiled, liz added, local families, local fans, local people, local residents, look at, look near, lost bags, loud flat, loud rock, lucas moved, main sports, many fast, many lost, many residents, mark was, max was, meg saw, mia and, mila works, milo's online, mina's friendly, mind the, mobile phones, morning train, morning trains, most boxes, moving day, music fans, my favourite, my grandmother's, my job, my little, my office, my old, my phone, my sister, nadia and, nate orders, new apple, new library, new members, new running, new swimming, next year, nick ran, nina and, noah smiled, nobody could, nobody has, nobody knows, notice to, oh no, old magazines, old mobile, omar went, on my, on this, on your, one bus, online shoe, our back, our beach, our big, our building, our class, our colourful, our family, our flight, our holiday, our hotel, our indoor, our local, our manager, our museum, our neighbours, our new, our old, our original, our outdoor, our school, our shared, our short, our small, our sports, our street, our study, our town, outdoor boots, passengers are, passengers on, passengers waited, patients at, paul trained, people next, pete walked, phil manages, play well, please buy, please do, please keep, please read, please take, please use, poor karl, poor little, press send, priya's team, pupils will, rain flooded, rain is, ray saw, read this, readers are, remember that, rose is, roy and, ruby's garden, ruth and, ryan's favourite, sam finished, sara flew, scene hugo, science experiments, seth could, several candidates, several exciting, several regular, shared tennis, she smiled, sign this, simon looked, situation diana, situation ground, situation jade, situation jake, situation the, situation we, situation workers, small pet, sofia wants, soft cotton, sonia runs, sorry for, sorry luke, sorry the, sorry to, sorry you, strange links, strong eye, strong medicine, strong pain, strong winds, students are, students enjoy, sue found, sweet cakes, sweet garden, sweet strawberries, take the, take your, talia had, tara and, ten songs, tess finished, that blue, the backyard, the bank, the best, the big, the black, the boxes, the boy, the broken, the cinema, the class, the driver, the family, the flight, the fresh, the front, the good, the grammar, the great, the hiring, the history, the interview, the kind, the kitchen, the main, the missing, the morning, the new, the old, the online, the park, the people, the police, the printer, the quiet, the rare, the signed, the teacher, the website, the wide, the wind, their hotel, their new, these liquid, thick fog, this free, this online, this shop, this simple, this sunny, tickets for, tina expects, today our, tom is, tomorrow we, top science, tour guests, traffic stopped, turn left, twenty close, two friendly, two hungry, two injured, two tired, uncle sven, unfortunately our, unfortunately winter, unfortunately you, unfortunately your, victor's big, visit our, wait a, wait at, wait one, wait ten, warm rain, warm spring, was my, watch through, water leaked, we always, we are, we arrived, we bought, we buy, we danced, we felt, we have, we looked, we love, we often, we only, we packed, we played, we prefer, we read, we spend, we stayed, we take, we waited, we want, we welcome, we were, we worked, we would, welcome to, when i, when iris, when the, when we, when you, where all, where large, where the, while the, white rice, why french, why i, why these, why this, why was, wide new, will the, will we, will you, winter coats, without a, without his, workers finished, you always, you are, you entered, you looked, you might, you never, you should, you the, you to, you took, you were, young apple, young fruit, young runners, your film, your final, your new, your sales, zara waited, zoe had
+- Verbs already used 4+ times in the bank (avoid): move, fix, show, meet, teach, check, call, choose, lose, invite, sell, bring, eat, keep, find, build, carry, help, send, win, film, cook, deliver, write, read, give, return, take, break, close, plant, paint, serve, stop, buy, print, put, make, use, pick, mix, pack, cut, play, clean, clear, sign, ask, prepare, see, share, weigh, open, repair, wash, leave, remove, tell, add, hear, replace, offer, welcome, record, polish, place, hold, reserve, arrive, disappear, order, stay, fall, answer, wait, swim, press, work, burn, fill, delay, water, ship, allow, pay, say, believe, understand, report, listen, look, talk
+- Names: Ada, Adam, Alex, Anna, Ben, Bob, Boris, Bram, Cole, David, Diana, Europe, Eva, Fred, Green, Ground, Harbour, Henry, Hope, Hotel, Hugh, Hugo, Iris, Ivan, Jack, Jade, Jake, Joel, John, Jonas, Julia, Karl, Kate, Leo, Liam, Lina, Luke, Mara, Marta, Mary, Maya, Mia, Molly, Mondays, Neil, Nell, Nina, Nora, Oak, Oscar, Owen, Park, Pete, Phil, Rob, Rome, Rosa, Sam, Sea, Spain, Street, Sundays, Sven, Tara, The, Theo, Tim, Toby, Tom, Tony, Uncle, Val, Vera, View, Workers

@@ -111,6 +111,8 @@ def build(args):
     new = convert(rows,mapping,version,[i['id'] for chunk in parts.values() for i in chunk if i['id'].startswith('pv7-')])
     old=[i for chunk in parts.values() for i in chunk if i.get('topic')=='passive' and not i['id'].startswith('pv7-')]
     keep={l.strip() for l in (BANK/'keep-v6.txt').read_text().splitlines() if l.strip() and not l.startswith('#')}
+    levels_path=BANK/'levels-v6.json'
+    levels_v6=json.loads(levels_path.read_text()) if levels_path.exists() else {}
     unknown=keep-{i['id'] for i in old}
     if unknown: raise ValueError('Unknown retained IDs: '+', '.join(sorted(unknown)))
     for item in old:
@@ -118,6 +120,7 @@ def build(args):
         else:
             item.pop('retired',None)
             item['cell']='D1'
+            if item['id'] in levels_v6: item['level']=levels_v6[item['id']]
             for field in ('practice_tenses','tags'): item[field]=list(dict.fromkeys(['pv_D1']+item.get(field,[])))
             group=item.get('practice_group','sentence')
             item['practice_weight']=WEIGHTS.get(group,4)
