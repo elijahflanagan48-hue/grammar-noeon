@@ -2,30 +2,30 @@
 
 Веб-приложение для практики английской грамматики для русскоязычных учеников A1–C2. Интерфейс — русский, учебный контент — British English. [Рабочий сайт](https://grammar-noeon.grammar-noeon.workers.dev).
 
-Банк: **17662 задания / 23634 полей**, 16 форматов.
+Банк: **17805 задания / 23777 полей**, 16 форматов.
 
 | Формат | Название | Заданий |
 |---|---|---|
-| `active_to_passive` | Active → Passive | 100 |
-| `bank` | Слова из банка | 15 |
+| `open_brackets` | Раскрытие скобок | 11147 |
+| `multiple_choice` | Выбор формы / предложения | 2895 |
 | `context_cloze` | Пропуски в контекстном тексте | 557 |
-| `direct_to_reported` | Direct → Reported | 837 |
-| `error_fix` | Исправить ошибку | 828 |
-| `hunt` | Найти неверные предложения | 23 |
-| `match` | Соединить половинки | 19 |
-| `modal_fix` | Исправление предложения | 50 |
-| `modal_gap` | Пропуск: модальная форма | 700 |
-| `modal_meaning` | Выбор значения в контексте | 50 |
-| `multiple_choice` | Выбор формы / предложения | 2856 |
-| `open_brackets` | Раскрытие скобок | 11069 |
-| `sort` | Распределить по группам | 27 |
-| `transformation` | Перефразирование | 240 |
 | `translation_ru_en` | Перевод | 267 |
+| `active_to_passive` | Active → Passive | 100 |
+| `modal_gap` | Пропуск: модальная форма | 700 |
+| `modal_fix` | Исправление предложения | 50 |
+| `modal_meaning` | Выбор значения в контексте | 50 |
+| `direct_to_reported` | Direct → Reported | 837 |
+| `error_fix` | Исправить ошибку | 854 |
+| `sort` | Распределить по группам | 27 |
+| `match` | Соединить половинки | 19 |
+| `transformation` | Перефразирование | 240 |
 | `word_order` | Сборка цепочки | 24 |
+| `bank` | Слова из банка | 15 |
+| `hunt` | Найти неверные предложения | 23 |
 
-Сложность: basic — 5793, medium — 7710, advanced — 4159.
+Сложность: basic — 5793, medium — 7727, advanced — 4285.
 
-Разделы: comparison — 2000, tenses — 4379, passive — 2737, modals — 1040, reported — 2000, nouns — 2000, speaking — 1500, infinitive — 1000, conditionals — 1006.
+Разделы: comparison — 2000, tenses — 4379, passive — 2880, modals — 1040, reported — 2000, nouns — 2000, speaking — 1500, infinitive — 1000, conditionals — 1006.
 
 Версии: `tenses-2026-11-09.1`, `comparison-2026-11-24.1`, `passive-2026-11-25.2`, `modals-2026-11-05.1`, `reported-2026-11-23.1`, `nouns-2026-11-23.1`, `speaking-2026-11-25.1`, `infinitive-2026-11-13.1`, `conditionals-2026-11-23.3`.
 

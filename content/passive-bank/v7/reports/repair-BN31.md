@@ -1,0 +1,8 @@
+# Repair batch BN31
+
+Below are the problems found by the automatic check. Rewrite **only** the listed tasks, keeping `id`, `cell`, `format`, `level`. Stay inside the level contract: simpler words, shorter sentence, allowed forms only. Reply with JSONL only (the corrected lines).
+
+- BN31-03: level contract: labelled advanced but is beyond: words above the level: loaves, needn
+  {"id": "BN31-03", "seed_id": "BN31-03", "cell": "D3", "format": "gap", "genre": "recipe", "level": "advanced", "prompt": "Plenty of fresh bread was already on the table, so two extra loaves (needn't / to buy).", "blanks": [{"cue": "needn't / to buy", "answer": "needn't have been bought", "accepted_answers": ["needn't have been bought", "need not have been bought"], "voice": "passive", "construction": "pv_modal_perfect"}], "explanation_ru": "Для обозначения действия в прошлом, которое было совершено напрасно, в пассивном залоге используется needn't have been + V3: needn't have been bought."}
+- BN31-22: level contract: labelled advanced but is beyond: words above the level: ike, postcode
+  {"id": "BN31-22", "seed_id": "BN31-22", "cell": "D3", "format": "gap", "genre": "home", "level": "advanced", "prompt": "Ike never received his birthday letter, so it (may / not / to send) with the right postcode.", "blanks": [{"cue": "may / not / to send", "answer": "may not have been sent", "accepted_answers": ["may not have been sent"], "voice": "passive", "construction": "pv_modal_perfect"}], "explanation_ru": "Предположение о том, что письмо могли не отправить с верным индексом, в пассиве передаётся через may not have been + V3: may not have been sent."}

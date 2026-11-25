@@ -1,0 +1,8 @@
+# Repair batch BN36
+
+Below are the problems found by the automatic check. Rewrite **only** the listed tasks, keeping `id`, `cell`, `format`, `level`. Stay inside the level contract: simpler words, shorter sentence, allowed forms only. Reply with JSONL only (the corrected lines).
+
+- BN36-13: level contract: labelled advanced but is beyond: words above the level: mopped, soapy, (to mop)
+  {"id": "BN36-13", "seed_id": "BN36-13", "cell": "D10", "format": "gap", "genre": "travel", "level": "advanced", "prompt": "Long before the morning train leaves the station, every carriage floor (to mop) clean soapy water.", "blanks": [{"cue": "to mop", "answer": "will have been mopped with", "accepted_answers": ["will have been mopped with"], "voice": "passive", "construction": "pv_future_perfect"}], "explanation_ru": "Уборка завершится к моменту отправления поезда в будущем (Future Perfect Passive: will have been mopped), а средство для мытья вводится предлогом with."}
+- BN36-14: level contract: labelled advanced but is beyond: words above the level: (to decorate)
+  {"id": "BN36-14", "seed_id": "BN36-14", "cell": "D10", "format": "gap", "genre": "food", "level": "advanced", "prompt": "Stepping into our favourite coffee shop, we saw that every wooden table (to decorate) fresh spring flowers.", "blanks": [{"cue": "to decorate", "answer": "had been decorated with", "accepted_answers": ["had been decorated with", "'d been decorated with"], "voice": "passive", "construction": "pv_past_perfect"}], "explanation_ru": "Столы украсили ещё до того, как мы вошли в кофейню в прошлом (saw → had been decorated), а предметы украшения вводятся предлогом with."}

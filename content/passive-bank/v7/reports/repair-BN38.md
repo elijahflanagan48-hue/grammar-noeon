@@ -1,0 +1,8 @@
+# Repair batch BN38
+
+Below are the problems found by the automatic check. Rewrite **only** the listed tasks, keeping `id`, `cell`, `format`, `level`. Stay inside the level contract: simpler words, shorter sentence, allowed forms only. Reply with JSONL only (the corrected lines).
+
+- BN38-01: level contract: labelled advanced but is beyond: words above the level: (to shorten)
+  {"id": "BN38-01", "seed_id": "BN38-01", "cell": "D7", "format": "gap", "genre": "shopping", "level": "advanced", "prompt": "Online buyers who order long trousers can easily (to have / to shorten) them at a local tailor shop.", "blanks": [{"cue": "to have / to shorten", "answer": "have them shortened", "accepted_answers": ["have them shortened", "get them shortened"], "voice": "passive", "construction": "pv_causative"}], "explanation_ru": "После модального глагола can для выражения услуги, которую выполняют мастера, используется каузативная конструкция have/get + дополнение + V3: have them shortened (или get them shortened)."}
+- BN38-05: level contract: labelled advanced but is beyond: words above the level: mended, (to mend)
+  {"id": "BN38-05", "seed_id": "BN38-05", "cell": "D7", "format": "gap", "genre": "food", "level": "advanced", "prompt": "Sitting in our corner coffee shop, I realized my scarf was torn, so I must (to have / to mend) it soon.", "blanks": [{"cue": "to have / to mend", "answer": "have it mended", "accepted_answers": ["have it mended", "get it mended"], "voice": "passive", "construction": "pv_causative"}], "explanation_ru": "После модального глагола must для заказа услуги используется конструкция have/get + дополнение + V3: have it mended (или get it mended)."}
