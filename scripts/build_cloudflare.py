@@ -1,5 +1,6 @@
 """Build a strict public asset directory and the trusted checker from app.js."""
 import json
+import os
 import shutil
 import subprocess
 from pathlib import Path
@@ -54,6 +55,20 @@ export function grade(item, submitted) {
     bank = [item for file in sorted((ROOT / 'data/exercises').glob('part-*.json'))
             for item in json.loads(file.read_text())]
     (GENERATED / 'bank.json').write_text(json.dumps(bank, ensure_ascii=False))
+    # Боевой деплой (NOEON_BANK_FROM_ASSETS=1): банк не вшивается в код Worker, а читается из статических ресурсов частями.
+    # Иначе исходник банка (31 МБ, UTF-16) + разобранные данные занимают ~125 МБ кучи при лимите 128 МБ (Error 1102).
+    # Файлы лежат под /data/exercises/, который Worker отдаёт только учителю. Тесты и CI собирают без этой переменной.
+    if os.environ.get('NOEON_BANK_FROM_ASSETS') == '1':
+        step = 1500
+        chunks = [bank[start:start + step] for start in range(0, len(bank), step)]
+        target = PUBLIC / 'data/exercises'
+        target.mkdir(parents=True, exist_ok=True)
+        for number, chunk in enumerate(chunks):
+            (target / f'worker-bank-{number:02d}.json').write_text(json.dumps(chunk, ensure_ascii=False))
+        bank_source = f'export const BANK_CHUNKS = {len(chunks)};\nexport const preloaded = null;\n'
+    else:
+        bank_source = "import bank from './bank.json';\nexport const BANK_CHUNKS = 0;\nexport const preloaded = bank;\n"
+    (GENERATED / 'bank-source.mjs').write_text(bank_source)
     subprocess.run(['node', str(ROOT / 'scripts/build_bank_key_index.mjs')], check=True)
     assessment_source=(ROOT/'assessments.js').read_text()
     config=assessment_source[assessment_source.index('const ASSESSMENT_SECTIONS ='):assessment_source.index('let disposeAssessment =')]

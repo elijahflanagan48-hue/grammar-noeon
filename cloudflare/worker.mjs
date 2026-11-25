@@ -3,7 +3,7 @@ import { handleTeacherLibrary } from './teacher-library.mjs';
 import { handleTaskIssues } from './task-issues.mjs';
 import { assessmentTitle } from './generated/assessment-config.mjs';
 import { randomBytes, timingSafeEqual, createHash } from 'node:crypto';
-import exercises from './generated/bank.json';
+import { BANK_CHUNKS, preloaded } from './generated/bank-source.mjs';
 import bankKeyIndex from './generated/bank-keys.json';
 import assessments from './generated/assessments.json' with {type:'json'};
 import { updatedPracticeSettings, balancedPractice, exerciseTenses, PRACTICE_TENSES, exerciseSection, targetSection, supportedResponseContract } from './generated/selection.mjs';
@@ -11,7 +11,21 @@ import { grade } from './generated/checker.mjs';
 import { reportFieldTopics, storedTopicSummary, reviewableTranslationField } from './generated/topics.mjs';
 import { assignmentSentenceKeys } from './generated/assignment-keys.mjs';
 
+// Банк либо вшит в сборку (тесты, локально), либо при первом запросе читается частями из ASSETS (боевой деплой, см. build_cloudflare.py).
+const exercises = preloaded ? preloaded : [];
 const bank = new Map(exercises.map(item => [item.id, item]));
+let bankLoading = preloaded ? Promise.resolve() : null;
+function ensureBank(env, origin) {
+  return bankLoading ??= (async () => {
+    const loaded = [];
+    for (let number = 0; number < BANK_CHUNKS; number++) {
+      const response = await env.ASSETS.fetch(new Request(`${origin}/data/exercises/worker-bank-${String(number).padStart(2, '0')}.json`));
+      if (!response.ok) throw new Error('Не удалось загрузить банк заданий.');
+      loaded.push(...await response.json());
+    }
+    for (const item of loaded) { exercises.push(item); bank.set(item.id, item); }
+  })().catch(error => { bankLoading = null; throw error; });
+}
 const now = () => Date.now() / 1000;
 const token = () => randomBytes(32).toString('hex');
 const digest = value => createHash('sha256').update(value).digest('hex');
@@ -984,6 +998,7 @@ export default {
         try { data = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(body)); } catch { throw new Problem('Некорректный JSON.'); }
         if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Problem('Требуется объект JSON.');
       }
+      await ensureBank(env, url.origin);
       const db = env.DB.withSession('first-primary');
       const marker = await one(db, "SELECT value FROM app_meta WHERE name='application'");
       if (marker?.value !== 'grammar-noeon') throw new Problem('База приложения не готова.', 503);
