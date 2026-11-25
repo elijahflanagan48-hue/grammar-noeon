@@ -43,6 +43,8 @@ if(process.argv.includes('--live')) {
   run(python,['-B','scripts/lexical_audit.py','nouns','--gate','0.05']);
   run(python,['-B','scripts/audit_variety.py','--gate','docs/variety/comparison-gates.json']);
   run(python,['-B','scripts/lexical_audit.py','comparison','--gate','0.05']);
+  run(python,['-B','scripts/audit_variety.py','--gate','docs/variety/speaking-gates.json']);
+  run(python,['-B','scripts/lexical_audit.py','speaking','--gate','0.05']);
   run(python,['-B','-m','unittest','discover','-s','tests','-p','test_*.py']);
   let miniflare=true;
   try {require.resolve('miniflare');}catch(error){if(error.code==='MODULE_NOT_FOUND')miniflare=false;else throw error;}

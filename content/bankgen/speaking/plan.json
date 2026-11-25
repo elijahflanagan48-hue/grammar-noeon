@@ -1,7 +1,7 @@
 {
  "topic": "speaking",
  "version": "speaking-v8",
- "target_total": 250,
+ "target_total": 1000,
  "batches": [
   {
    "batch": "SP01",
@@ -189,6 +189,451 @@
     "basic": 6,
     "medium": 7,
     "advanced": 6
+   }
+  },
+  {
+   "batch": "SP12",
+   "cell": "S1",
+   "size": 34,
+   "formats": {
+    "gap": 14,
+    "mini": 7,
+    "mc": 5,
+    "fix": 4,
+    "which": 2,
+    "transform": 2
+   },
+   "levels": {
+    "basic": 10,
+    "medium": 14,
+    "advanced": 10
+   }
+  },
+  {
+   "batch": "SP13",
+   "cell": "S1",
+   "size": 34,
+   "formats": {
+    "gap": 14,
+    "mini": 7,
+    "mc": 5,
+    "fix": 4,
+    "which": 2,
+    "transform": 2
+   },
+   "levels": {
+    "basic": 10,
+    "medium": 14,
+    "advanced": 10
+   }
+  },
+  {
+   "batch": "SP14",
+   "cell": "S1",
+   "size": 33,
+   "formats": {
+    "gap": 13,
+    "mini": 7,
+    "mc": 5,
+    "fix": 4,
+    "which": 2,
+    "transform": 2
+   },
+   "levels": {
+    "basic": 10,
+    "medium": 13,
+    "advanced": 10
+   }
+  },
+  {
+   "batch": "SP15",
+   "cell": "S2",
+   "size": 30,
+   "formats": {
+    "gap": 12,
+    "mini": 7,
+    "mc": 4,
+    "fix": 4,
+    "which": 2,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 9,
+    "medium": 12,
+    "advanced": 9
+   }
+  },
+  {
+   "batch": "SP16",
+   "cell": "S2",
+   "size": 29,
+   "formats": {
+    "gap": 12,
+    "mini": 6,
+    "mc": 4,
+    "fix": 4,
+    "which": 2,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 9,
+    "medium": 11,
+    "advanced": 9
+   }
+  },
+  {
+   "batch": "SP17",
+   "cell": "S3",
+   "size": 25,
+   "formats": {
+    "gap": 10,
+    "mini": 6,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 8,
+    "medium": 10,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP18",
+   "cell": "S3",
+   "size": 25,
+   "formats": {
+    "gap": 10,
+    "mini": 6,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 8,
+    "medium": 10,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP19",
+   "cell": "S3",
+   "size": 25,
+   "formats": {
+    "gap": 10,
+    "mini": 6,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 8,
+    "medium": 10,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP20",
+   "cell": "S4",
+   "size": 31,
+   "formats": {
+    "mc": 12,
+    "fix": 8,
+    "which": 6,
+    "gap": 5
+   },
+   "levels": {
+    "basic": 9,
+    "medium": 13,
+    "advanced": 9
+   }
+  },
+  {
+   "batch": "SP21",
+   "cell": "S4",
+   "size": 31,
+   "formats": {
+    "mc": 12,
+    "fix": 8,
+    "which": 6,
+    "gap": 5
+   },
+   "levels": {
+    "basic": 9,
+    "medium": 13,
+    "advanced": 9
+   }
+  },
+  {
+   "batch": "SP22",
+   "cell": "S5",
+   "size": 34,
+   "formats": {
+    "mini": 24,
+    "mc": 5,
+    "fix": 5
+   },
+   "levels": {
+    "basic": 10,
+    "medium": 14,
+    "advanced": 10
+   }
+  },
+  {
+   "batch": "SP23",
+   "cell": "S5",
+   "size": 33,
+   "formats": {
+    "mini": 23,
+    "mc": 5,
+    "fix": 5
+   },
+   "levels": {
+    "basic": 10,
+    "medium": 13,
+    "advanced": 10
+   }
+  },
+  {
+   "batch": "SP24",
+   "cell": "S5",
+   "size": 33,
+   "formats": {
+    "mini": 23,
+    "mc": 5,
+    "fix": 5
+   },
+   "levels": {
+    "basic": 10,
+    "medium": 13,
+    "advanced": 10
+   }
+  },
+  {
+   "batch": "SP25",
+   "cell": "S1",
+   "size": 30,
+   "formats": {
+    "gap": 12,
+    "mini": 7,
+    "mc": 4,
+    "fix": 4,
+    "which": 2,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 9,
+    "medium": 12,
+    "advanced": 9
+   }
+  },
+  {
+   "batch": "SP26",
+   "cell": "S1",
+   "size": 29,
+   "formats": {
+    "gap": 12,
+    "mini": 6,
+    "mc": 4,
+    "fix": 4,
+    "which": 2,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 9,
+    "medium": 11,
+    "advanced": 9
+   }
+  },
+  {
+   "batch": "SP27",
+   "cell": "S1",
+   "size": 29,
+   "formats": {
+    "gap": 12,
+    "mini": 6,
+    "mc": 4,
+    "fix": 4,
+    "which": 2,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 9,
+    "medium": 11,
+    "advanced": 9
+   }
+  },
+  {
+   "batch": "SP28",
+   "cell": "S2",
+   "size": 24,
+   "formats": {
+    "gap": 10,
+    "mini": 5,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 7,
+    "medium": 10,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP29",
+   "cell": "S2",
+   "size": 24,
+   "formats": {
+    "gap": 10,
+    "mini": 5,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 7,
+    "medium": 10,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP30",
+   "cell": "S2",
+   "size": 23,
+   "formats": {
+    "gap": 9,
+    "mini": 5,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 7,
+    "medium": 9,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP31",
+   "cell": "S3",
+   "size": 24,
+   "formats": {
+    "gap": 10,
+    "mini": 5,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 7,
+    "medium": 10,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP32",
+   "cell": "S3",
+   "size": 24,
+   "formats": {
+    "gap": 10,
+    "mini": 5,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 7,
+    "medium": 10,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP33",
+   "cell": "S3",
+   "size": 23,
+   "formats": {
+    "gap": 9,
+    "mini": 5,
+    "mc": 4,
+    "fix": 3,
+    "which": 1,
+    "transform": 1
+   },
+   "levels": {
+    "basic": 7,
+    "medium": 9,
+    "advanced": 7
+   }
+  },
+  {
+   "batch": "SP34",
+   "cell": "S4",
+   "size": 35,
+   "formats": {
+    "mc": 14,
+    "fix": 9,
+    "which": 7,
+    "gap": 5
+   },
+   "levels": {
+    "basic": 11,
+    "medium": 14,
+    "advanced": 10
+   }
+  },
+  {
+   "batch": "SP35",
+   "cell": "S4",
+   "size": 35,
+   "formats": {
+    "mc": 14,
+    "fix": 9,
+    "which": 7,
+    "gap": 5
+   },
+   "levels": {
+    "basic": 11,
+    "medium": 14,
+    "advanced": 10
+   }
+  },
+  {
+   "batch": "SP36",
+   "cell": "S5",
+   "size": 27,
+   "formats": {
+    "mini": 19,
+    "mc": 4,
+    "fix": 4
+   },
+   "levels": {
+    "basic": 8,
+    "medium": 11,
+    "advanced": 8
+   }
+  },
+  {
+   "batch": "SP37",
+   "cell": "S5",
+   "size": 26,
+   "formats": {
+    "mini": 18,
+    "mc": 4,
+    "fix": 4
+   },
+   "levels": {
+    "basic": 8,
+    "medium": 10,
+    "advanced": 8
    }
   }
  ]

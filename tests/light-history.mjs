@@ -146,7 +146,7 @@ try {
  await teacher.ok(prefix+'/rename',{name:'Имя для учителя <img>'});
  assert.equal((await teacher.ok(prefix)).user.name,'Имя для учителя <img>');assert.equal((await student.ok('auth/me')).user.name,'anna');
  ok(true,'Ownership/CSRF guards; teacher-only alias preserves learner name');
- const pending=await teacher.ok(prefix+'/assignments',{title:'Невыполнено',ids:[fixtures.at(-1).id]});
+ const pending=await teacher.ok(prefix+'/assignments',{title:'Невыполнено',ids:[fixtures.findLast(i=>!i.retired).id]});
  let list=await teacher.ok('teacher/students');let row=list.students.find(s=>s.id===sid);
  assert.equal(row.unfinished,1);assert(row.lastActive);assert.equal(row.stats.sessions,25);assert.equal(row.stats.score,score*25);
  await teacher.ok(prefix+'/assignments/'+pending.id+'/cancel',{version:0});

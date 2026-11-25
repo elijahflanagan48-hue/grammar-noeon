@@ -160,7 +160,7 @@ Across the {per} seeds no hook may be used in more than 25% of them.
 
 ## Format (JSONL, one line per seed)
 ```
-{{"seed_id":"{code}-{part:02d}01","domain":"school life","place":"a primary school in Leeds","who":"a class of nine-year-olds","situation":"…","hooks":["a question someone asked"],"tone":"funny","register":"dialogue"}}
+{{"seed_id":"{code}-{part:02d}01","domain":"school life","place":"a primary school in Leeds","who":"a class of nine-year-olds","situation":"…","hooks":["{example_hook}"],"tone":"funny","register":"dialogue"}}
 ```
 - `seed_id`: `{code}-{part:02d}NN` (NN = 01…{per})
 - `hooks`: 1–2 of the list above (copy the wording exactly)
@@ -182,7 +182,7 @@ def cmd_seed_prompts(topic, per=50):
         each = per // 5
         (d / f"seeds-{part:02d}.md").write_text(SEED_TEMPLATE.format(
             title=sp["title"], topic=topic, part=part, parts=parts, per=per, each=each, each2=each + 2, domains=" · ".join(doms),
-            hooks=" | ".join(f"`{h}`" for h in sp["hooks"]), banned=sp["banned"], code=sp["code"]))
+            hooks=" | ".join(f"`{h}`" for h in sp["hooks"]), example_hook=sp["hooks"][0], banned=sp["banned"], code=sp["code"]))
     (base(topic) / "seeds").mkdir(parents=True, exist_ok=True)
     print(f"seed prompts: {parts} files x {per} seeds = {parts*per} (need {need}) -> {d}")
 

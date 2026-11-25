@@ -55,9 +55,10 @@ export function subjectBefore(prefix){
  if(last){const tail=text.slice(last.index+last[0].length);if(!/[.!?;]/.test(tail)&&/\band\s+[A-Z][a-z]+$/.test(tail))return legacySubjectBefore(tail.split(/\band\s+/).at(-1));if(!/[.!?;]/.test(tail)&&/(?:,|\band|\bor)\s*$/.test(tail))return subjectBefore(text.slice(0,last.index));}
  return legacySubjectBefore(text);
 }
-function questionSubject(marker){
+function questionSubject(marker,topic){
  const cue=marker.replace(/^\{\{\d+:|}}$|^\(|\)$/g,'');const parts=cue.split('/').map(s=>s.trim());if(parts.length<2)return null;
  const candidate=parts[0];
+ if(topic==='speaking'&&/^(?:say|says|said|saying|tell|tells|told|telling|speak|speaks|spoke|spoken|speaking|talk|talks|talked|talking)$/i.test(candidate))return null;
  const explicit=/^(?:I|you|he|she|it|we|they|anyone|anybody|everyone|everybody|someone|somebody|nobody|no one|people|children|men|women|police|(?:the|my|your|his|her|our|their|this|that|these|those) .+)$/i;
  const proper=/^[A-Z][a-z]+(?: [A-Z][a-z]+)*$/;
  const pluralNoun=/^[a-z]+s$/;
@@ -70,7 +71,7 @@ function questionSubject(marker){
 export function checkItems(items){const findings=[];
  for(const i of items){const markers=[...i.prompt.matchAll(/\{\{\d+:[^}]+}}|\([^()]*\)/g)];if(markers.length!==(i.blanks||[]).length)continue;
  for(const [k,b] of (i.blanks||[]).entries()){
-  const prefix=i.prompt.slice(0,markers[k].index),q=questionSubject(markers[k][0]),subject=q?subjectBefore(q):subjectBefore(prefix);
+  const prefix=i.prompt.slice(0,markers[k].index),q=questionSubject(markers[k][0],i.topic),subject=q?subjectBefore(q):subjectBefore(prefix);
   for(const answer of new Set([b.answer,...b.accepted_answers||[]])){
    const a=answer.toLowerCase().replace(/’/g,"'");const scoped=prefix.slice(Math.max(prefix.lastIndexOf(','),prefix.lastIndexOf('.'),prefix.lastIndexOf(';'))+1);
    

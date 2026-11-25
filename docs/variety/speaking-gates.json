@@ -1,0 +1,23 @@
+{
+  "topic": "speaking",
+  "exclude_retired": true,
+  "max_opening_share": 0.034,
+  "max_by_the_share": 0,
+  "max_verb_uses": 75,
+  "max_time_marker_share": 0.3333333333333333,
+  "cell_shares": {
+    "S1": 0.251,
+    "S2": 0.18,
+    "S3": 0.196,
+    "S4": 0.182,
+    "S5": 0.191
+  },
+  "cell_tolerance": 0.005,
+  "max_near_duplicate_pairs": 0,
+  "verb_exempt": [
+    "say / tell",
+    "speak / talk",
+    "said / told"
+  ],
+  "_note": "Opening and time-cue limits follow the Comparison gate. The three exempt cues are recurring contrasts explicitly taught in Speaking. Cell shares follow the 1000-task plan."
+}

@@ -75,7 +75,7 @@ try {
   equal((await guest.call('teacher/reviews')).status,401,'Guest cannot read queue');
   equal((await student.call('teacher/reviews')).status,403,'Student cannot read queue');
   equal((await teacher.ok('teacher/reviews')).total,0,'Empty queue');
-  const manual=fixtures.find(i=>i.grading_mode==='teacher');assert(manual);
+  const manual=fixtures.find(i=>i.grading_mode==='teacher'&&!i.retired);assert(manual);
   const work=await teacher.ok('teacher/students/'+sid+'/assignments',{title:'A manual translation',ids:[manual.id]});
   const view=await student.ok('practice/'+work.practiceId);
   const result=await student.ok('practice/'+work.practiceId+'/check',{revision:view.revision,index:0,submitted:['A student translation.']});

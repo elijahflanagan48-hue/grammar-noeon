@@ -17,6 +17,9 @@ from bankgen_specs import SPECS
 
 ROOT = Path(__file__).resolve().parents[1]
 CELL_OF = {
+    'speaking': {'sv_say_tell': ['S1','S3'], 'sv_tell_fixed':'S1',
+                 'sv_say_fixed':'S1', 'sv_speak_talk':['S2','S4'],
+                 'sv_speak_language':'S2', 'sv_phrases':['S3','S4'], 'sv_mixed':'S5'},
     'nouns': {'noun_count_uncount': 'N1', 'noun_partitives': 'N1', 'noun_articles': 'N2',
               'noun_plural_regular': 'N3', 'noun_plural_irregular': 'N3', 'noun_number_only': 'N3',
               'noun_dual_meaning': 'N3', 'noun_collective': 'N3', 'noun_possessive': 'N4',
@@ -25,7 +28,7 @@ CELL_OF = {
     'comparison': {'cmp_forms': ['C1', 'C2', 'C6', 'C7'], 'cmp_development': ['C5', 'C9'],
                    'cmp_equality': ['C3', 'C9'], 'cmp_precision': ['C4', 'C7'], 'cmp_superlatives': ['C8', 'C1']},
 }
-SEED_PREFIX = {'nouns': 'nl', 'comparison': 'cl'}
+SEED_PREFIX = {'nouns': 'nl', 'comparison': 'cl', 'speaking':'sl'}
 
 
 def key(t):

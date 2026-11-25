@@ -1,5 +1,5 @@
 "use strict";
-const CACHE = 'grammar-v106-comparison';
+const CACHE = 'grammar-v107-speaking';
 const FILES = [
   "./",
   "styles.css",

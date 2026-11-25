@@ -35,7 +35,8 @@ def main() -> None:
     nouns=[i for i in items if i.get('topic')=='nouns' and not i.get('retired')]
     assert len(nouns)==1000 and manifest['sections']['nouns']==len([i for i in items if i.get('topic')=='nouns'])
     speaking=[i for i in items if i.get('topic')=='speaking']
-    assert len(speaking)==manifest['sections']['speaking']==500
+    assert len(speaking)==manifest['sections']['speaking']
+    assert sum(not i.get('retired') for i in speaking)==1000
     infinitive=[i for i in items if i.get('topic')=='infinitive']
     assert len(infinitive)==manifest['sections']['infinitive']==1000
     comparisons = [item for item in items if item.get('topic')=='comparison' or item['id'].startswith('cmp-')]

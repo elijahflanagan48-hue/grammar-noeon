@@ -17,6 +17,7 @@ assert(!disagrees(subjectBefore('The speaker told us Mars '),'has'));
 assert(disagrees(subjectBefore('The speaker told us Mars '),'have'));
 const broken=[{id:'fixture',prompt:'I (to work). It {{2:test}}.',blanks:[{answer:'has worked',accepted_answers:[]},{answer:'have tested',accepted_answers:[]}]}];assert.equal(checkItems(broken).length,2);
 assert(checkItems([{id:'name',prompt:'(Emily / to work) here?',blanks:[{answer:'Has Emily worked',accepted_answers:['Has worked']}]}]).some(x=>x.kind==='question_subject_missing'));
+assert.deepEqual(checkItems([{id:'speaking',topic:'speaking',prompt:'Mira (says / tells) us about her day.',blanks:[{answer:'tells'}]}]),[]);
 // This subject heuristic was authored for the original active-tense bank.
 const items=loadBank().filter(i=>i.topic!=='passive'&&i.topic!=='conditionals');assert.deepEqual(checkItems(items),[]);
 const item=items.find(i=>i.id==='src-u03-092');

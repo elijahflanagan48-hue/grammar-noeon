@@ -1,0 +1,4720 @@
+[
+  {
+    "id": "sp-S2-175",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP30-18",
+    "bankgen_format": "mc",
+    "prompt": "When his soup turned bright purple from the red cabbage, the flatmate called his mom to ___ about the kitchen disaster.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол talk сочетается с предлогом about (talk about something) для описания неформального разговора.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S2",
+    "genre": "food",
+    "seed_id": "sp-1533",
+    "skeleton": "when his w from the w , the w his w to G about the w .",
+    "practice_tenses": [
+      "sp_prepositions"
+    ],
+    "tags": [
+      "sp_prepositions"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "say",
+      "talk",
+      "tell",
+      "told"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "talk",
+    "summary": "When his soup turned bright purple from the red cabbage, the flatmate called his mom to talk about the kitchen disaster.",
+    "answer_text": "When his soup turned bright purple from the red cabbage, the flatmate called his mom to talk about the kitchen disaster."
+  },
+  {
+    "id": "sp-S2-176",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP30-19",
+    "bankgen_format": "fix",
+    "prompt": "A police officer called our house and talked with my dad about my lost skateboard.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Ошибки нет: конструкция talk with someone about something грамматически правильна.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S2",
+    "genre": "home",
+    "seed_id": "sp-1348",
+    "skeleton": "a w our w and w with my w about my w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "A police officer called our house and talked with my dad about my lost skateboard.",
+    "accepted_answers": [
+      "A police officer called our house and talked with my dad about my lost skateboard.",
+      "A police officer called our house and spoke with my dad about my lost skateboard."
+    ],
+    "answer_text": "A police officer called our house and talked with my dad about my lost skateboard.",
+    "has_error": false
+  },
+  {
+    "id": "sp-S2-177",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP30-20",
+    "bankgen_format": "fix",
+    "prompt": "Last night, the astronomer talked us about why Saturn's rings seem to disappear.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Глагол talk не используется с прямым дополнением без предлога; необходимо добавить предлог to или with (talked to us).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S2",
+    "genre": "science",
+    "seed_id": "sp-1442",
+    "skeleton": "LAST_NIGHT , the w us about why w to w .",
+    "practice_tenses": [
+      "sp_prepositions"
+    ],
+    "tags": [
+      "sp_prepositions"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Last night, the astronomer talked to us about why Saturn's rings seem to disappear.",
+    "accepted_answers": [
+      "Last night, the astronomer talked to us about why Saturn's rings seem to disappear.",
+      "Last night, the astronomer talked with us about why Saturn's rings seem to disappear.",
+      "Last night, the astronomer spoke to us about why Saturn's rings seem to disappear.",
+      "Last night, the astronomer spoke with us about why Saturn's rings seem to disappear."
+    ],
+    "answer_text": "Last night, the astronomer talked to us about why Saturn's rings seem to disappear.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S2-178",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP30-21",
+    "bankgen_format": "fix",
+    "prompt": "After the toy show, the artist spoke the children about how thin strings make the dragon fly.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После глагола speak перед адресатом речи обязательно ставится предлог to или with (spoke to the children).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S2",
+    "genre": "arts",
+    "seed_id": "sp-1250",
+    "skeleton": "after the w , the w the w about how w the w AGO w .",
+    "practice_tenses": [
+      "sp_prepositions"
+    ],
+    "tags": [
+      "sp_prepositions"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "After the toy show, the artist spoke to the children about how thin strings make the dragon fly.",
+    "accepted_answers": [
+      "After the toy show, the artist spoke to the children about how thin strings make the dragon fly.",
+      "After the toy show, the artist spoke with the children about how thin strings make the dragon fly.",
+      "After the toy show, the artist talked to the children about how thin strings make the dragon fly.",
+      "After the toy show, the artist talked with the children about how thin strings make the dragon fly."
+    ],
+    "answer_text": "After the toy show, the artist spoke to the children about how thin strings make the dragon fly.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S2-179",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP30-22",
+    "bankgen_format": "which",
+    "prompt": "A tourist in Rome tries to order a cheese-free pizza using the local language, which shocks the waiter. Which sentence describes this best?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Для обозначения речи на иностранном языке используется только глагол speak (spoke Italian).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S2",
+    "genre": "food",
+    "seed_id": "sp-1523",
+    "skeleton": "a w in w to w a w the w , which w the w . which w this w ?",
+    "practice_tenses": [
+      "sp_language"
+    ],
+    "tags": [
+      "sp_language"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The tourist talked Italian to order a pizza without cheese, and the server looked shocked.",
+      "The tourist spoke Italian to order a pizza without cheese, and the server looked shocked.",
+      "The tourist said Italian to order a pizza without cheese, and the server looked shocked.",
+      "The tourist told Italian to order a pizza without cheese, and the server looked shocked."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "The tourist spoke Italian to order a pizza without cheese, and the server looked shocked.",
+    "summary": "The tourist spoke Italian to order a pizza without cheese, and the server looked shocked.",
+    "answer_text": "The tourist spoke Italian to order a pizza without cheese, and the server looked shocked."
+  },
+  {
+    "id": "sp-S2-180",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP30-23",
+    "bankgen_format": "transform",
+    "prompt": "Rewrite the sentence using 'speak' instead of 'talk': The groom called the bakery to talk to the manager about the missing wedding cake.",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "Глагол talk to в официальном контексте легко заменяется на более формальный синоним speak to.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S2",
+    "genre": "dialogue",
+    "seed_id": "sp-1422",
+    "skeleton": "w the w 'speak' w of 'talk' : the w the w to w to the w about the w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "The groom called the bakery to speak to the manager about the missing wedding cake.",
+    "blanks": [
+      {
+        "id": "sp-S2-180-b1",
+        "answer": "The groom called the bakery to speak to the manager about the missing wedding cake.",
+        "accepted_answers": [
+          "The groom called the bakery to speak to the manager about the missing wedding cake.",
+          "The groom called the bakery to speak with the manager about the missing wedding cake."
+        ],
+        "tense_or_construction": "sp_speak_talk",
+        "explanation_ru": "Глагол talk to в официальном контексте легко заменяется на более формальный синоним speak to.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sp-S3-126",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-01",
+    "bankgen_format": "gap",
+    "prompt": "The farmer (say / tell) his cousin how to call the farm dog using three short sounds.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После глагола tell используется прямое дополнение (his cousin) и придаточное с вопросительным словом (how to call).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "nature",
+    "seed_id": "sp-1013",
+    "skeleton": "the w G his w how to w the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-126-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told",
+          "tells"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "После глагола tell используется прямое дополнение (his cousin) и придаточное с вопросительным словом (how to call).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The farmer told his cousin how to call the farm dog using three short sounds."
+  },
+  {
+    "id": "sp-S3-127",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-02",
+    "bankgen_format": "gap",
+    "prompt": "While waiting at the stop, commuters repeated what the radio presenter had (say / tell) about the roadworks blocking the downtown avenue.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол say не требует личного дополнения после себя и употребляется с конструкцией what + subject + say.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "city",
+    "seed_id": "sp-0931",
+    "skeleton": "while w at the w , w what the w had G about the w the w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-127-b1",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "Глагол say не требует личного дополнения после себя и употребляется с конструкцией what + subject + say.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "While waiting at the stop, commuters repeated what the radio presenter had said about the roadworks blocking the downtown avenue."
+  },
+  {
+    "id": "sp-S3-128",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-03",
+    "bankgen_format": "gap",
+    "prompt": "Refusing to write anything down, my aunt (say / tell) me to add a pinch of oregano only after tasting the sauce.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Для передачи инструкции или побуждения к действию используется модель tell + дополнение (me) + инфинитив с частицей to.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "recipe",
+    "seed_id": "sp-1031",
+    "skeleton": "w to w , my w G me to w a w of w after w the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-128-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Для передачи инструкции или побуждения к действию используется модель tell + дополнение (me) + инфинитив с частицей to.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Refusing to write anything down, my aunt told me to add a pinch of oregano only after tasting the sauce."
+  },
+  {
+    "id": "sp-S3-129",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-04",
+    "bankgen_format": "gap",
+    "prompt": "During the interview, the gardener (say / tell) the police officer that a white van had been parked outside her neighbor's gate all afternoon.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Когда сразу после глагола речи указан адресат (the police officer), используется глагол tell, а не say.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "report",
+    "seed_id": "sp-0842",
+    "skeleton": "w the w , the w G the w that a w had been w her w all w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-129-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Когда сразу после глагола речи указан адресат (the police officer), используется глагол tell, а не say.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "During the interview, the gardener told the police officer that a white van had been parked outside her neighbor's gate all afternoon."
+  },
+  {
+    "id": "sp-S3-130",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-05",
+    "bankgen_format": "gap",
+    "prompt": "Before the harvest began, the orchard owner (say / tell) the seasonal workers how to twist ripe apples gently without damaging next year's buds.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол tell сочетается с прямым дополнением (the seasonal workers) и вопросительной конструкцией how to do something.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "instructions",
+    "seed_id": "sp-0941",
+    "skeleton": "before the w , the w G the w how to w NEXT_YEAR 's w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-130-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Глагол tell сочетается с прямым дополнением (the seasonal workers) и вопросительной конструкцией how to do something.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Before the harvest began, the orchard owner told the seasonal workers how to twist ripe apples gently without damaging next year's buds."
+  },
+  {
+    "id": "sp-S3-131",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-06",
+    "bankgen_format": "gap",
+    "prompt": "The handwritten note taped to the front door (say / tell) that we should hide the birthday parcel behind the garden shed before Dad got home.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "С неодушевленными источниками текста (a note) без указания адресата используется глагол say в конструкции say that...",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "home",
+    "seed_id": "sp-0914",
+    "skeleton": "the w to the w G that we should w the w the w before w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-131-b1",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "С неодушевленными источниками текста (a note) без указания адресата используется глагол say в конструкции say that...",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The handwritten note taped to the front door said that we should hide the birthday parcel behind the garden shed before Dad got home."
+  },
+  {
+    "id": "sp-S3-132",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-07",
+    "bankgen_format": "gap",
+    "prompt": "During the commercial break, the floor manager used hand signals and quickly (say / tell) the host to wrap up her next segment early.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Модель tell + somebody + to do something применяется для передачи распоряжений и указаний конкретному человеку.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "work",
+    "seed_id": "sp-1243",
+    "skeleton": "w the w , the w and w G the w to w her NEXT_SEGMENT w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-132-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Модель tell + somebody + to do something применяется для передачи распоряжений и указаний конкретному человеку.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "During the commercial break, the floor manager used hand signals and quickly told the host to wrap up her next segment early."
+  },
+  {
+    "id": "sp-S3-133",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-08",
+    "bankgen_format": "gap",
+    "prompt": "Sending back the cold steak, the diner angrily repeated what the waiter had (say / tell) him about the dish being freshly grilled.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Наличие личного местоимения him сразу после глагола требует употребления формы told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "food",
+    "seed_id": "sp-1024",
+    "skeleton": "w the w , the w what the w had G him about the w being w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-133-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Наличие личного местоимения him сразу после глагола требует употребления формы told.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Sending back the cold steak, the diner angrily repeated what the waiter had told him about the dish being freshly grilled."
+  },
+  {
+    "id": "sp-S3-134",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-09",
+    "bankgen_format": "gap",
+    "prompt": "With only ten minutes before the graduation dinner, Leo texted and (say / tell) me which exit to take from the subway station.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После tell следует прямое дополнение (me) и придаточное с союзным словом which.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "chat",
+    "seed_id": "sp-0927",
+    "skeleton": "with w before the w , w and G me which w to w from the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-134-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "После tell следует прямое дополнение (me) и придаточное с союзным словом which.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "With only ten minutes before the graduation dinner, Leo texted and told me which exit to take from the subway station."
+  },
+  {
+    "id": "sp-S3-135",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-10",
+    "bankgen_format": "gap",
+    "prompt": "To keep the nervous donor calm, the nurse cracked a joke and (say / tell) him to rest for ten minutes and drink plenty of orange juice.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Для передачи совета или медицинской рекомендации конкретному лицу используется конструкция tell + him + to-infinitive.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "health",
+    "seed_id": "sp-0823",
+    "skeleton": "to w the w , the w a w and G him to w for w and w of w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-135-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Для передачи совета или медицинской рекомендации конкретному лицу используется конструкция tell + him + to-infinitive.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "To keep the nervous donor calm, the nurse cracked a joke and told him to rest for ten minutes and drink plenty of orange juice."
+  },
+  {
+    "id": "sp-S3-136",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-11",
+    "bankgen_format": "mini",
+    "prompt": "Ahead of next week's archive workshop, the local historian sent an email to all participants. First, she (say / tell) everyone to wear cotton gloves when touching the nineteenth-century family albums. She also (say / tell) that direct sunlight could fade the ink within minutes, so guests should keep the folders closed until scanning.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом пропуске есть адресат и инфинитив (told everyone to wear), во втором адресат не указан и сразу идет придаточное с that (said that).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "history",
+    "seed_id": "sp-0908",
+    "skeleton": "w of NEXT_WEEK 's w , the w an w to all w . w , she G w to w when w the w . she w G that w could w the w , so w should w the w until w .",
+    "practice_tenses": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-136-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "В первом пропуске есть адресат и инфинитив (told everyone to wear), во втором адресат не указан и сразу идет придаточное с that (said that).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-136-b2",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом пропуске есть адресат и инфинитив (told everyone to wear), во втором адресат не указан и сразу идет придаточное с that (said that).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Ahead of next week's archive workshop, the local historian sent an email to all participants. First, she told everyone to wear cotton gloves when touching the nineteenth-century family albums. She also said that direct sunlight could fade the ink within minutes, so guests should keep the folders closed until scanning."
+  },
+  {
+    "id": "sp-S3-137",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-12",
+    "bankgen_format": "mini",
+    "prompt": "The lifeguard walked over to the parents unloading giant inflatable flamingos by the diving lanes. She politely (say / tell) to them that large floats were banned in the main pool before noon. Then she (say / tell) them to use the shallow family pool on the other side of the deck instead.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Глагол say требует предлога to перед адресатом (said to them that), тогда как tell присоединяет дополнение без предлога (told them to use).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "sport",
+    "seed_id": "sp-1203",
+    "skeleton": "the w over to the w by the w . she w G to them that w were w in the w before w . w she G them to w the w on the w of the w .",
+    "practice_tenses": [
+      "sp_say_that",
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_say_that",
+      "sp_tell_pattern"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-137-b1",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "Глагол say требует предлога to перед адресатом (said to them that), тогда как tell присоединяет дополнение без предлога (told them to use).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-137-b2",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Глагол say требует предлога to перед адресатом (said to them that), тогда как tell присоединяет дополнение без предлога (told them to use).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The lifeguard walked over to the parents unloading giant inflatable flamingos by the diving lanes. She politely said to them that large floats were banned in the main pool before noon. Then she told them to use the shallow family pool on the other side of the deck instead."
+  },
+  {
+    "id": "sp-S3-138",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-13",
+    "bankgen_format": "mini",
+    "prompt": "During the morning test shift, the head cook checked whether the new worker could handle the busy time. He (say / tell) the young cook how to roll the cold pastry into tight shapes without warming the butter. After watching the first pan, he (say / tell) that the speed was great for a beginner.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом случае после глагола стоит дополнение (told the young cook how to roll), а во втором сразу следует придаточное предложение (said that).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "work",
+    "seed_id": "sp-1125",
+    "skeleton": "w the w , the w the w could w the w . he G the w how to w the w into w the w . after w the w , he G that the w was w for a w .",
+    "practice_tenses": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-138-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "В первом случае после глагола стоит дополнение (told the young cook how to roll), а во втором сразу следует придаточное предложение (said that).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-138-b2",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом случае после глагола стоит дополнение (told the young cook how to roll), а во втором сразу следует придаточное предложение (said that).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "During the morning test shift, the head cook checked whether the new worker could handle the busy time. He told the young cook how to roll the cold pastry into tight shapes without warming the butter. After watching the first pan, he said that the speed was great for a beginner."
+  },
+  {
+    "id": "sp-S3-139",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-14",
+    "bankgen_format": "mini",
+    "prompt": "Mistaking a stacked cardboard installation for a bench, a tired tourist sat right down on the corner of it. A security guard rushed over and (say / tell) him to stand up immediately. When the visitor apologized, the guard (say / tell) that the piece was actually worth forty thousand euros.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом пропуске используется tell + him + to-infinitive для команды; во втором после глагола нет адресата, поэтому нужен глагол said.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "arts",
+    "seed_id": "sp-0801",
+    "skeleton": "w a w for a w , a w on the w of it . a w over and G him to w . when the w , the w G that the w was w .",
+    "practice_tenses": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-139-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "В первом пропуске используется tell + him + to-infinitive для команды; во втором после глагола нет адресата, поэтому нужен глагол said.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-139-b2",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом пропуске используется tell + him + to-infinitive для команды; во втором после глагола нет адресата, поэтому нужен глагол said.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Mistaking a stacked cardboard installation for a bench, a tired tourist sat right down on the corner of it. A security guard rushed over and told him to stand up immediately. When the visitor apologized, the guard said that the piece was actually worth forty thousand euros."
+  },
+  {
+    "id": "sp-S3-140",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-15",
+    "bankgen_format": "mini",
+    "prompt": "A tourist picked up a rare 1962 jazz LP from behind the counter and asked for the price. The shop owner (speak / talk) in slow, simple English so the customer could follow easily. He (say / tell) the buyer that a regular collector had already reserved the record by phone that morning.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Для обозначения языка общения используется глагол speak (spoke in simple English), а для передачи информации конкретному собеседнику — told the buyer that.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "shopping",
+    "seed_id": "sp-1240",
+    "skeleton": "a w a w 1962 w from w the w and w for the w . the w G in w , w so the w could w . he G the w that a w had ALREADY w the w by w that w .",
+    "practice_tenses": [
+      "sp_language",
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_language",
+      "sp_tell_pattern"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-140-b1",
+        "answer": "spoke",
+        "accepted_answers": [
+          "spoke"
+        ],
+        "base_verb": "speak / talk",
+        "supplied_words": [
+          "speak",
+          "talk"
+        ],
+        "tense_or_construction": "sp_language",
+        "explanation_ru": "Для обозначения языка общения используется глагол speak (spoke in simple English), а для передачи информации конкретному собеседнику — told the buyer that.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-140-b2",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Для обозначения языка общения используется глагол speak (spoke in simple English), а для передачи информации конкретному собеседнику — told the buyer that.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "A tourist picked up a rare 1962 jazz LP from behind the counter and asked for the price. The shop owner spoke in slow, simple English so the customer could follow easily. He told the buyer that a regular collector had already reserved the record by phone that morning."
+  },
+  {
+    "id": "sp-S3-141",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-16",
+    "bankgen_format": "mc",
+    "prompt": "At the school gate, Maya ___ the other parents to bring old family photographs for tomorrow's history project.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Только глагол tell (told) используется в конструкции «глагол + дополнение (the other parents) + to-infinitive».",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "school",
+    "seed_id": "sp-1050",
+    "skeleton": "at the w , w G the w to w for TOMORROW 's w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "told",
+      "said",
+      "spoke",
+      "talked"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "told",
+    "summary": "At the school gate, Maya told the other parents to bring old family photographs for tomorrow's history project.",
+    "answer_text": "At the school gate, Maya told the other parents to bring old family photographs for tomorrow's history project."
+  },
+  {
+    "id": "sp-S3-142",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-17",
+    "bankgen_format": "mc",
+    "prompt": "A printed sign at the cinema entrance ___ that the main projector is broken and explains how guests can claim a full refund.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Когда речь идет о содержании вывески или объявления без указания адресата, используется глагол say (says that).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "notice",
+    "seed_id": "sp-0817",
+    "skeleton": "a w at the w G that the w is w and w how w can w a w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "tells",
+      "says",
+      "speaks",
+      "talks"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "says",
+    "summary": "A printed sign at the cinema entrance says that the main projector is broken and explains how guests can claim a full refund.",
+    "answer_text": "A printed sign at the cinema entrance says that the main projector is broken and explains how guests can claim a full refund."
+  },
+  {
+    "id": "sp-S3-143",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-18",
+    "bankgen_format": "mc",
+    "prompt": "The customer leaned over the counter and ___ the florist exactly what words to print on the anniversary card.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После глагола идет прямое дополнение (the florist) и вопросительное слово (what), что требует употребления глагола told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "dialogue",
+    "seed_id": "sp-1135",
+    "skeleton": "the w over the w and G the w what w to w on the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "told",
+      "spoke",
+      "talked"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "told",
+    "summary": "The customer leaned over the counter and told the florist exactly what words to print on the anniversary card.",
+    "answer_text": "The customer leaned over the counter and told the florist exactly what words to print on the anniversary card."
+  },
+  {
+    "id": "sp-S3-144",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-19",
+    "bankgen_format": "mc",
+    "prompt": "Before the race started, the cycling judge ___ the repair worker that the rider's bike bars were a little too wide.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Поскольку сразу после глагола указан получатель сообщения (the repair worker), правильный вариант — told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "sport",
+    "seed_id": "sp-1227",
+    "skeleton": "before the w , the w G the w that the w were a w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "spoke",
+      "talked",
+      "told"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "told",
+    "summary": "Before the race started, the cycling judge told the repair worker that the rider's bike bars were a little too wide.",
+    "answer_text": "Before the race started, the cycling judge told the repair worker that the rider's bike bars were a little too wide."
+  },
+  {
+    "id": "sp-S3-145",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-20",
+    "bankgen_format": "fix",
+    "prompt": "During lunch, Dan said his work friends that the new chat app makes a loud sound even when his phone is on silent.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После глагола say нельзя ставить личное дополнение без предлога to; правильно использовать told his work friends или said to his work friends.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "tech",
+    "seed_id": "sp-0833",
+    "skeleton": "w , w his w that the w a w when his w is on w .",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "During lunch, Dan told his work friends that the new chat app makes a loud sound even when his phone is on silent.",
+    "accepted_answers": [
+      "During lunch, Dan told his work friends that the new chat app makes a loud sound even when his phone is on silent.",
+      "During lunch, Dan said to his work friends that the new chat app makes a loud sound even when his phone is on silent."
+    ],
+    "answer_text": "During lunch, Dan told his work friends that the new chat app makes a loud sound even when his phone is on silent.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S3-146",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-21",
+    "bankgen_format": "fix",
+    "prompt": "The ticket officer softly woke the sleeping student and told her that her train car would be left behind at the next station.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Предложение грамматически верно: использована правильная модель told + дополнение (her) + придаточное с that.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "travel",
+    "seed_id": "sp-1212",
+    "skeleton": "the w the w and w her that her w would be w at the NEXT_STATION .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "The ticket officer softly woke the sleeping student and told her that her train car would be left behind at the next station.",
+    "accepted_answers": [
+      "The ticket officer softly woke the sleeping student and told her that her train car would be left behind at the next station."
+    ],
+    "answer_text": "The ticket officer softly woke the sleeping student and told her that her train car would be left behind at the next station.",
+    "has_error": false
+  },
+  {
+    "id": "sp-S3-147",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-22",
+    "bankgen_format": "fix",
+    "prompt": "Hearing a strange noise under the floor, a passenger called a worker on the plane, who calmly said him what the engine was doing.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Глагол say не сочетается с прямым личным дополнением (him); для передачи объяснения конкретному человеку нужен глагол told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "travel",
+    "seed_id": "sp-1146",
+    "skeleton": "w a w the w , a w a w on the w , who w him what the w was w .",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Hearing a strange noise under the floor, a passenger called a worker on the plane, who calmly told him what the engine was doing.",
+    "accepted_answers": [
+      "Hearing a strange noise under the floor, a passenger called a worker on the plane, who calmly told him what the engine was doing."
+    ],
+    "answer_text": "Hearing a strange noise under the floor, a passenger called a worker on the plane, who calmly told him what the engine was doing.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S3-148",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-23",
+    "bankgen_format": "which",
+    "prompt": "A student in the library whispers to ask where the quiet zone is, not realizing she is already sitting in it. Which response is grammatically correct?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "После глагола tell сразу ставится прямое дополнение без предлога (told her), тогда как say и speak так не употребляются.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "school",
+    "seed_id": "sp-1103",
+    "skeleton": "a w in the w to w where the w is , not w she is ALREADY w in it . which w is w ?",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The librarian smiled and said her she was already in the quiet zone.",
+      "The librarian smiled and told her she was already in the quiet zone.",
+      "The librarian smiled and told to her she was already in the quiet zone.",
+      "The librarian smiled and spoke her she was already in the quiet zone."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "The librarian smiled and told her she was already in the quiet zone.",
+    "summary": "The librarian smiled and told her she was already in the quiet zone.",
+    "answer_text": "The librarian smiled and told her she was already in the quiet zone."
+  },
+  {
+    "id": "sp-S3-149",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP31-24",
+    "bankgen_format": "transform",
+    "prompt": "Rewrite the sentence using 'said' instead of 'told me': As heavy rain began to fall, Mark told me that the morning forecast had promised clear skies.",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "При замене told me на said личное дополнение убирается (или присоединяется через предлог to), и после глагола сразу следует придаточное предложение.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "news",
+    "seed_id": "sp-1001",
+    "skeleton": "w the w 'said' w of 'told w : as w to w , w me that the w had w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "As heavy rain began to fall, Mark said that the morning forecast had promised clear skies.",
+    "blanks": [
+      {
+        "id": "sp-S3-149-b1",
+        "answer": "As heavy rain began to fall, Mark said that the morning forecast had promised clear skies.",
+        "accepted_answers": [
+          "As heavy rain began to fall, Mark said that the morning forecast had promised clear skies.",
+          "As heavy rain began to fall, Mark said the morning forecast had promised clear skies.",
+          "As heavy rain began to fall, Mark said to me that the morning forecast had promised clear skies."
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "При замене told me на said личное дополнение убирается (или присоединяется через предлог to), и после глагола сразу следует придаточное предложение.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sp-S3-150",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-01",
+    "bankgen_format": "gap",
+    "prompt": "The note on the door (says / tells) that the driver could not leave the box because a big dog was standing by the gate.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После глагола say не нужно прямое дополнение-адресат перед придаточным с that (say that...), тогда как tell требует указания, кому именно сообщается информация.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "notice",
+    "seed_id": "sp-1513",
+    "skeleton": "the w on the w G that the w could not w the w because a w was w by the w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-150-b1",
+        "answer": "says",
+        "accepted_answers": [
+          "says"
+        ],
+        "base_verb": "says / tells",
+        "supplied_words": [
+          "says",
+          "tells"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "После глагола say не нужно прямое дополнение-адресат перед придаточным с that (say that...), тогда как tell требует указания, кому именно сообщается информация.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The note on the door says that the driver could not leave the box because a big dog was standing by the gate."
+  },
+  {
+    "id": "sp-S3-151",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-02",
+    "bankgen_format": "gap",
+    "prompt": "The park ranger politely (said / told) the dog owner that the city council required all pets to stay on leashes near the duck pond.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "В конструкции с прямым дополнением (the dog owner) и придаточным предложением используется глагол tell (tell someone that...).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "nature",
+    "seed_id": "sp-0939",
+    "skeleton": "the w G the w that the w all w to w on w the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-151-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "В конструкции с прямым дополнением (the dog owner) и придаточным предложением используется глагол tell (tell someone that...).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The park ranger politely told the dog owner that the city council required all pets to stay on leashes near the duck pond."
+  },
+  {
+    "id": "sp-S3-152",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-03",
+    "bankgen_format": "gap",
+    "prompt": "In her cookbook, the author notes that a famous chef once (said / told) her to let pancake batter rest for thirty minutes for a lighter texture.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол tell используется в модели tell + дополнение + инфинитив с to (told her to let...) для передачи совета или инструкции.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "recipe",
+    "seed_id": "sp-1040",
+    "skeleton": "in her w , the w that a w G her to w for w for a w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-152-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Глагол tell используется в модели tell + дополнение + инфинитив с to (told her to let...) для передачи совета или инструкции.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "In her cookbook, the author notes that a famous chef once told her to let pancake batter rest for thirty minutes for a lighter texture."
+  },
+  {
+    "id": "sp-S3-153",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-04",
+    "bankgen_format": "gap",
+    "prompt": "While their dogs played, the two neighbors (said / told) each other that garden gnomes had been disappearing from yards across town.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После глагола tell сразу ставится прямое дополнение-адресат (each other) без предлога перед придаточным с that.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "chat",
+    "seed_id": "sp-0847",
+    "skeleton": "while their w , the w G each w that w had been w from w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-153-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "После глагола tell сразу ставится прямое дополнение-адресат (each other) без предлога перед придаточным с that.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "While their dogs played, the two neighbors told each other that garden gnomes had been disappearing from yards across town."
+  },
+  {
+    "id": "sp-S3-154",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-05",
+    "bankgen_format": "gap",
+    "prompt": "In his email, the supervisor (said / told) the staff what the city inspector had recommended regarding the safe disposal of batteries and glass.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После глагола tell сразу следует адресат (the staff), а затем косвенный вопрос с what (tell someone what...).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "email",
+    "seed_id": "sp-0947",
+    "skeleton": "in his w , the w G the w what the w had w the w of w and w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-154-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "После глагола tell сразу следует адресат (the staff), а затем косвенный вопрос с what (tell someone what...).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "In his email, the supervisor told the staff what the city inspector had recommended regarding the safe disposal of batteries and glass."
+  },
+  {
+    "id": "sp-S3-155",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-06",
+    "bankgen_format": "gap",
+    "prompt": "Liam (said / told) his flatmate that the landlord had sent a message promising to fix the broken washing machine tomorrow morning.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Поскольку сразу после глагола указан собеседник (his flatmate) без предлога to, требуется глагол told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "home",
+    "seed_id": "sp-0916",
+    "skeleton": "w G his w that the w had w a w to w the w TOMORROW w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-155-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Поскольку сразу после глагола указан собеседник (his flatmate) без предлога to, требуется глагол told.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Liam told his flatmate that the landlord had sent a message promising to fix the broken washing machine tomorrow morning."
+  },
+  {
+    "id": "sp-S3-156",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-07",
+    "bankgen_format": "gap",
+    "prompt": "When the parent apologized for the child's sudden laughter during a quiet scene, the usher kindly (said / told) that the whole row seemed to enjoy it.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Адресат не указан сразу после глагола, поэтому используется конструкция said that...",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "arts",
+    "seed_id": "sp-1248",
+    "skeleton": "when the w for the w a w , the w G that the w to w it .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-156-b1",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "Адресат не указан сразу после глагола, поэтому используется конструкция said that...",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "When the parent apologized for the child's sudden laughter during a quiet scene, the usher kindly said that the whole row seemed to enjoy it."
+  },
+  {
+    "id": "sp-S3-157",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-08",
+    "bankgen_format": "gap",
+    "prompt": "At lunch, Claire (said / told) her colleague which dish the chef had recommended as the freshest fish of the day.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Конструкция tell + адресат (her colleague) + придаточное с which используется для передачи конкретной информации собеседнику.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "food",
+    "seed_id": "sp-1522",
+    "skeleton": "at w , w G her w which w the w had w as the w of the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-157-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Конструкция tell + адресат (her colleague) + придаточное с which используется для передачи конкретной информации собеседнику.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "At lunch, Claire told her colleague which dish the chef had recommended as the freshest fish of the day."
+  },
+  {
+    "id": "sp-S3-158",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-09",
+    "bankgen_format": "gap",
+    "prompt": "During the family dinner, Mark (said / told) us that Aunt Clara had promised to pay for everyone's late-night taxi rides home.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После глагола стоит прямое дополнение us без предлога, поэтому необходимо выбрать told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "dialogue",
+    "seed_id": "sp-0928",
+    "skeleton": "w the w , w G us that w had w to w for w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-158-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "После глагола стоит прямое дополнение us без предлога, поэтому необходимо выбрать told.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "During the family dinner, Mark told us that Aunt Clara had promised to pay for everyone's late-night taxi rides home."
+  },
+  {
+    "id": "sp-S3-159",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-10",
+    "bankgen_format": "gap",
+    "prompt": "A printed sign on the clinic's main door (says / tells) patients that the elevator is under repair and stair assistance is available at reception.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Объявление обращается непосредственно к адресату (patients), поэтому используется переходный глагол tells (tell someone that...).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "health",
+    "seed_id": "sp-0827",
+    "skeleton": "a w on the w G w that the w is w and w is w at w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-159-b1",
+        "answer": "tells",
+        "accepted_answers": [
+          "tells"
+        ],
+        "base_verb": "says / tells",
+        "supplied_words": [
+          "says",
+          "tells"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Объявление обращается непосредственно к адресату (patients), поэтому используется переходный глагол tells (tell someone that...).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "A printed sign on the clinic's main door tells patients that the elevator is under repair and stair assistance is available at reception."
+  },
+  {
+    "id": "sp-S3-160",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-11",
+    "bankgen_format": "mini",
+    "prompt": "A tourist stood too close to a fragile barrier next to platform four. The station inspector walked over and (said / told) him not to lean against the ancient stone wall. He then (spoke / talked) to the crowd about preserving historic railway buildings.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом пропуске используется модель tell someone not to do something (told him not to lean). Во втором для официального обращения к аудитории используется глагол spoke (spoke to the crowd).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "travel",
+    "seed_id": "sp-1408",
+    "skeleton": "a w to a w NEXT_TO w . the w over and G him not to w the w . he w G to the w about w .",
+    "practice_tenses": [
+      "sp_tell_pattern",
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_tell_pattern",
+      "sp_speak_talk"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-160-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "В первом пропуске используется модель tell someone not to do something (told him not to lean). Во втором для официального обращения к аудитории используется глагол spoke (spoke to the crowd).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-160-b2",
+        "answer": "spoke",
+        "accepted_answers": [
+          "spoke"
+        ],
+        "base_verb": "spoke / talked",
+        "supplied_words": [
+          "spoke",
+          "talked"
+        ],
+        "tense_or_construction": "sp_speak_talk",
+        "explanation_ru": "В первом пропуске используется модель tell someone not to do something (told him not to lean). Во втором для официального обращения к аудитории используется глагол spoke (spoke to the crowd).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "A tourist stood too close to a fragile barrier next to platform four. The station inspector walked over and told him not to lean against the ancient stone wall. He then spoke to the crowd about preserving historic railway buildings."
+  },
+  {
+    "id": "sp-S3-161",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-12",
+    "bankgen_format": "mini",
+    "prompt": "Elena walked out of the interview room looking relieved. She immediately (said / told) the next candidate what questions the panel had asked her inside. She also (said / told) that the interviewers were friendly and wanted practical examples.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом случае после глагола идет адресат (the next candidate), поэтому нужен глагол told. Во втором адресат не указан перед that, поэтому используется said.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "work",
+    "seed_id": "sp-1126",
+    "skeleton": "w of the w . she w G the NEXT_CANDIDATE what w the w had w her w . she w G that the w were w and w .",
+    "practice_tenses": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-161-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "В первом случае после глагола идет адресат (the next candidate), поэтому нужен глагол told. Во втором адресат не указан перед that, поэтому используется said.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-161-b2",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом случае после глагола идет адресат (the next candidate), поэтому нужен глагол told. Во втором адресат не указан перед that, поэтому используется said.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Elena walked out of the interview room looking relieved. She immediately told the next candidate what questions the panel had asked her inside. She also said that the interviewers were friendly and wanted practical examples."
+  },
+  {
+    "id": "sp-S3-162",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-13",
+    "bankgen_format": "mini",
+    "prompt": "At the museum entrance, a father complained loudly when the scanner rejected his passes. The clerk calmly (said / told) that his online tickets were valid only for next month. She then (spoke / talked) very slowly so he could understand the refund policy.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом пропуске перед придаточным с that нет адресата, поэтому ставится said. Во втором описывается манера речи и произнесения слов (spoke slowly), где используется глагол speak.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "arts",
+    "seed_id": "sp-0806",
+    "skeleton": "at the w , a w when the w his w . the w G that his w were w for NEXT_MONTH . she w G w so he could w the w .",
+    "practice_tenses": [
+      "sp_say_that",
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_say_that",
+      "sp_speak_talk"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-162-b1",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом пропуске перед придаточным с that нет адресата, поэтому ставится said. Во втором описывается манера речи и произнесения слов (spoke slowly), где используется глагол speak.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-162-b2",
+        "answer": "spoke",
+        "accepted_answers": [
+          "spoke"
+        ],
+        "base_verb": "spoke / talked",
+        "supplied_words": [
+          "spoke",
+          "talked"
+        ],
+        "tense_or_construction": "sp_speak_talk",
+        "explanation_ru": "В первом пропуске перед придаточным с that нет адресата, поэтому ставится said. Во втором описывается манера речи и произнесения слов (spoke slowly), где используется глагол speak.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "At the museum entrance, a father complained loudly when the scanner rejected his passes. The clerk calmly said that his online tickets were valid only for next month. She then spoke very slowly so he could understand the refund policy."
+  },
+  {
+    "id": "sp-S3-163",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-14",
+    "bankgen_format": "mini",
+    "prompt": "Before anyone lit a Bunsen burner, the chemistry teacher gathered the class around the front bench. She (said / told) the students how to adjust the gas valves safely. Finally, she (said / told) everyone to put on their protective goggles.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Оба пропуска требуют глагола told: сначала в конструкции tell someone how to do something, а затем в конструкции tell someone to do something.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "school",
+    "seed_id": "sp-1544",
+    "skeleton": "before w a w , the w the w the w . she G the w how to w JUST the w . w , she G w to w on their w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-163-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Оба пропуска требуют глагола told: сначала в конструкции tell someone how to do something, а затем в конструкции tell someone to do something.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-163-b2",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Оба пропуска требуют глагола told: сначала в конструкции tell someone how to do something, а затем в конструкции tell someone to do something.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Before anyone lit a Bunsen burner, the chemistry teacher gathered the class around the front bench. She told the students how to adjust the gas valves safely. Finally, she told everyone to put on their protective goggles."
+  },
+  {
+    "id": "sp-S3-164",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-15",
+    "bankgen_format": "mini",
+    "prompt": "The biologist reviewed the overnight footage from the forest trail. In her field report, she (said / told) that a camera trap had captured a wild cat crossing a stream on a fallen tree. She later (spoke / talked) with her research team about moving two more cameras upstream.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "Для передачи содержания отчета без указания адресата используется said that. Для обсуждения планов с коллегами подходит talked with (или spoke with).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "science",
+    "seed_id": "sp-0818",
+    "skeleton": "the w the w from the w . in her w , she G that a w had w a w a w on a w . she w G with her w about w .",
+    "practice_tenses": [
+      "sp_say_that",
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_say_that",
+      "sp_speak_talk"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-164-b1",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "said / told",
+        "supplied_words": [
+          "said",
+          "told"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "Для передачи содержания отчета без указания адресата используется said that. Для обсуждения планов с коллегами подходит talked with (или spoke with).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-164-b2",
+        "answer": "talked",
+        "accepted_answers": [
+          "talked",
+          "spoke"
+        ],
+        "base_verb": "spoke / talked",
+        "supplied_words": [
+          "spoke",
+          "talked"
+        ],
+        "tense_or_construction": "sp_speak_talk",
+        "explanation_ru": "Для передачи содержания отчета без указания адресата используется said that. Для обсуждения планов с коллегами подходит talked with (или spoke with).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The biologist reviewed the overnight footage from the forest trail. In her field report, she said that a camera trap had captured a wild cat crossing a stream on a fallen tree. She later talked with her research team about moving two more cameras upstream."
+  },
+  {
+    "id": "sp-S3-165",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-16",
+    "bankgen_format": "mc",
+    "prompt": "The store assistant clearly ___ how to reach aisle fourteen in the self-service pickup zone.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Только глагол tell может принимать прямое дополнение-адресат (the customer) без предлога перед вопросительным словом how.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "shopping",
+    "seed_id": "sp-1137",
+    "skeleton": "the w G how to w in the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "talked the customer",
+      "said the customer",
+      "spoke the customer",
+      "told the customer"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "told the customer",
+    "summary": "The store assistant clearly told the customer how to reach aisle fourteen in the self-service pickup zone.",
+    "answer_text": "The store assistant clearly told the customer how to reach aisle fourteen in the self-service pickup zone."
+  },
+  {
+    "id": "sp-S3-166",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-17",
+    "bankgen_format": "mc",
+    "prompt": "When the team captain politely questioned the low score, the judge ___ that stepping out of bounds carried an automatic deduction.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол say требует предлога to перед адресатом (said to him), тогда как tell используется без предлога (told him).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "sport",
+    "seed_id": "sp-1230",
+    "skeleton": "when the w the w , the w G that w of w an w .",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said to him",
+      "told to him",
+      "spoke him",
+      "said him"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "said to him",
+    "summary": "When the team captain politely questioned the low score, the judge said to him that stepping out of bounds carried an automatic deduction.",
+    "answer_text": "When the team captain politely questioned the low score, the judge said to him that stepping out of bounds carried an automatic deduction."
+  },
+  {
+    "id": "sp-S3-167",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-18",
+    "bankgen_format": "mc",
+    "prompt": "The repair worker ___ that dirt was blocking the charging port and did not ask for any money to clean it.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Перед придаточным предложением с that прямое дополнение me без предлога употребляется только после глагола told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "tech",
+    "seed_id": "sp-0834",
+    "skeleton": "the w G that w was w the w and did not w for any w to w it .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "told me",
+      "said me",
+      "talked me",
+      "spoke me"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "told me",
+    "summary": "The repair worker told me that dirt was blocking the charging port and did not ask for any money to clean it.",
+    "answer_text": "The repair worker told me that dirt was blocking the charging port and did not ask for any money to clean it."
+  },
+  {
+    "id": "sp-S3-168",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-19",
+    "bankgen_format": "mc",
+    "prompt": "The passenger claimed the desk worker ___ that his guitar could go on the plane with him, so the gate worker called her manager to check.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "В конструкции с прямым дополнением him и придаточным с that правильным выбором является глагол tell (had told him).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "travel",
+    "seed_id": "sp-1214",
+    "skeleton": "the w the w G that his w could w on the w with him , so the w her w to w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "had talked him",
+      "had said him",
+      "had spoken him",
+      "had told him"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "had told him",
+    "summary": "The passenger claimed the desk worker had told him that his guitar could go on the plane with him, so the gate worker called her manager to check.",
+    "answer_text": "The passenger claimed the desk worker had told him that his guitar could go on the plane with him, so the gate worker called her manager to check."
+  },
+  {
+    "id": "sp-S3-169",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-20",
+    "bankgen_format": "fix",
+    "prompt": "A friendly local bus driver said us about a quiet hidden beach just outside the city.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Глагол say не употребляется с прямым дополнением us без предлога; для передачи информации кому-либо используется конструкция tell someone about something.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "travel",
+    "seed_id": "sp-1149",
+    "skeleton": "a w us about a w JUST w the w .",
+    "practice_tenses": [
+      "sp_fix_mixed"
+    ],
+    "tags": [
+      "sp_fix_mixed"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "A friendly local bus driver told us about a quiet hidden beach just outside the city.",
+    "accepted_answers": [
+      "A friendly local bus driver told us about a quiet hidden beach just outside the city."
+    ],
+    "answer_text": "A friendly local bus driver told us about a quiet hidden beach just outside the city.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S3-170",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-21",
+    "bankgen_format": "fix",
+    "prompt": "The strict history tutor told to each student when the final research essay was due.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После глагола tell предлог to перед адресатом не ставится (told each student, а не told to each student).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "school",
+    "seed_id": "sp-1104",
+    "skeleton": "the w to each w when the w was w .",
+    "practice_tenses": [
+      "sp_fix_mixed"
+    ],
+    "tags": [
+      "sp_fix_mixed"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "The strict history tutor told each student when the final research essay was due.",
+    "accepted_answers": [
+      "The strict history tutor told each student when the final research essay was due."
+    ],
+    "answer_text": "The strict history tutor told each student when the final research essay was due.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S3-171",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-22",
+    "bankgen_format": "fix",
+    "prompt": "As thick fog rolled down the mountain, the ranger told us which trail to take back to the lodge.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Предложение построено верно: использована правильная модель tell + прямое дополнение (us) + вопросительное слово с инфинитивом (which trail to take).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "nature",
+    "seed_id": "sp-1002",
+    "skeleton": "as w the w , the w us which w to w to the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "As thick fog rolled down the mountain, the ranger told us which trail to take back to the lodge.",
+    "accepted_answers": [
+      "As thick fog rolled down the mountain, the ranger told us which trail to take back to the lodge."
+    ],
+    "answer_text": "As thick fog rolled down the mountain, the ranger told us which trail to take back to the lodge.",
+    "has_error": false
+  },
+  {
+    "id": "sp-S3-172",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-23",
+    "bankgen_format": "which",
+    "prompt": "The warehouse manager is upset because the delivery driver arrived at the wrong loading gate despite receiving a clear map earlier. Which sentence describes this situation accurately?",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Глагол tell требует прямого дополнения без предлога to (told the driver), тогда как глаголы say и speak так не употребляются.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "work",
+    "seed_id": "sp-1117",
+    "skeleton": "the w is w because the w at the w a w . which w this w ?",
+    "practice_tenses": [
+      "sp_structure_mixed"
+    ],
+    "tags": [
+      "sp_structure_mixed"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The manager spoke the driver that he had arrived at the wrong loading gate.",
+      "The manager said the driver that he had arrived at the wrong loading gate.",
+      "The manager told to the driver that he had arrived at the wrong loading gate.",
+      "The manager told the driver that he had arrived at the wrong loading gate."
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "The manager told the driver that he had arrived at the wrong loading gate.",
+    "summary": "The manager told the driver that he had arrived at the wrong loading gate.",
+    "answer_text": "The manager told the driver that he had arrived at the wrong loading gate."
+  },
+  {
+    "id": "sp-S3-173",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP32-24",
+    "bankgen_format": "transform",
+    "prompt": "Rewrite the sentence using 'told' instead of 'explained to': The librarian explained to the new visitor how to get a free library card and use the printers.",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "При замене explained to на told предлог to опускается, так как глагол tell присоединяет прямое дополнение (the new visitor) напрямую.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "instructions",
+    "seed_id": "sp-1434",
+    "skeleton": "w the w 'told' w of 'explained w : the w to the w how to w a w and w the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "The librarian told the new visitor how to get a free library card and use the printers.",
+    "blanks": [
+      {
+        "id": "sp-S3-173-b1",
+        "answer": "The librarian told the new visitor how to get a free library card and use the printers.",
+        "accepted_answers": [
+          "The librarian told the new visitor how to get a free library card and use the printers."
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "При замене explained to на told предлог to опускается, так как глагол tell присоединяет прямое дополнение (the new visitor) напрямую.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sp-S3-174",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-01",
+    "bankgen_format": "gap",
+    "prompt": "The crying boy (say / tell) the shopkeeper that his lost gray parrot had a red ring on its left leg.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "После глагола tell (в прошедшем времени told) обязательно ставится прямое дополнение — адресат сообщения (told the shopkeeper that...).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "shopping",
+    "seed_id": "sp-1438",
+    "skeleton": "the w G the w that his w had a w on its w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-174-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "После глагола tell (в прошедшем времени told) обязательно ставится прямое дополнение — адресат сообщения (told the shopkeeper that...).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The crying boy told the shopkeeper that his lost gray parrot had a red ring on its left leg."
+  },
+  {
+    "id": "sp-S3-175",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-02",
+    "bankgen_format": "gap",
+    "prompt": "The printed recipe (say / tell) that the roasted chicken should rest under foil for ten minutes before slicing.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Для передачи содержания письменного текста или инструкции без указания конкретного адресата используется глагол say (the recipe says that...).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "recipe",
+    "seed_id": "sp-1540",
+    "skeleton": "the w G that the w should w for w before w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-175-b1",
+        "answer": "says",
+        "accepted_answers": [
+          "says",
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "Для передачи содержания письменного текста или инструкции без указания конкретного адресата используется глагол say (the recipe says that...).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The printed recipe says that the roasted chicken should rest under foil for ten minutes before slicing."
+  },
+  {
+    "id": "sp-S3-176",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-03",
+    "bankgen_format": "gap",
+    "prompt": "The officer thanked the resident for turning in the lost wallet and asked her to (say / tell) him her phone number.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Конструкция tell + лицо + прямой объект (tell him her phone number) требует глагола tell, так как указан адресат.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "city",
+    "seed_id": "sp-1341",
+    "skeleton": "the w the w for w in the w and w her to G him her w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-176-b1",
+        "answer": "tell",
+        "accepted_answers": [
+          "tell"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Конструкция tell + лицо + прямой объект (tell him her phone number) требует глагола tell, так как указан адресат.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The officer thanked the resident for turning in the lost wallet and asked her to tell him her phone number."
+  },
+  {
+    "id": "sp-S3-177",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-04",
+    "bankgen_format": "gap",
+    "prompt": "The driver stopped our car and (say / tell) that the forest ranger had spotted a wild boar family near the river trail.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Если сразу после глагола речи идет придаточное с that без указания слушателя, используется глагол say (said that...).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "nature",
+    "seed_id": "sp-1449",
+    "skeleton": "the w our w and G that the w had w a w the w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-177-b1",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "Если сразу после глагола речи идет придаточное с that без указания слушателя, используется глагол say (said that...).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The driver stopped our car and said that the forest ranger had spotted a wild boar family near the river trail."
+  },
+  {
+    "id": "sp-S3-178",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-05",
+    "bankgen_format": "gap",
+    "prompt": "My uncle carefully (say / tell) me how to oil the rusty bicycle chain without getting grease on my hands.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Глагол tell используется в модели tell + лицо + вопросительное слово + инфинитив (told me how to oil).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "instructions",
+    "seed_id": "sp-0918",
+    "skeleton": "my w G me how to w the w on my w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-178-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Глагол tell используется в модели tell + лицо + вопросительное слово + инфинитив (told me how to oil).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "My uncle carefully told me how to oil the rusty bicycle chain without getting grease on my hands."
+  },
+  {
+    "id": "sp-S3-179",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-06",
+    "bankgen_format": "gap",
+    "prompt": "In her online review, the food blogger (say / tell) that the mango sticky rice stall near the river entrance serves the best dessert in town.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Когда приводится содержание отзыва без упоминания конкретного адресата, употребляется глагол say с придаточным that.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "review",
+    "seed_id": "sp-1526",
+    "skeleton": "in her w , the w G that the w the w the w in w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-179-b1",
+        "answer": "says",
+        "accepted_answers": [
+          "says",
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "Когда приводится содержание отзыва без упоминания конкретного адресата, употребляется глагол say с придаточным that.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "In her online review, the food blogger says that the mango sticky rice stall near the river entrance serves the best dessert in town."
+  },
+  {
+    "id": "sp-S3-180",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-07",
+    "bankgen_format": "gap",
+    "prompt": "Our roommate just messaged me and (say / tell) us to bring extra ice and paper cups to the party.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Для передачи просьбы или распоряжения с указанием получателя используется модель tell + дополнение + to-инфинитив (told us to bring).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "chat",
+    "seed_id": "sp-1426",
+    "skeleton": "our w JUST w me and G us to w and w to the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-180-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Для передачи просьбы или распоряжения с указанием получателя используется модель tell + дополнение + to-инфинитив (told us to bring).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Our roommate just messaged me and told us to bring extra ice and paper cups to the party."
+  },
+  {
+    "id": "sp-S3-181",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-08",
+    "bankgen_format": "gap",
+    "prompt": "Seeing the tourist's hand gestures, the helpful pharmacist began to (speak / talk) English and found the right eye drops.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "С названиями иностранных языков (English) в значении «владеть/говорить на языке» употребляется только глагол speak.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "travel",
+    "seed_id": "sp-1322",
+    "skeleton": "w the w , the w to G w and w the w .",
+    "practice_tenses": [
+      "sp_language"
+    ],
+    "tags": [
+      "sp_language"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-181-b1",
+        "answer": "speak",
+        "accepted_answers": [
+          "speak"
+        ],
+        "base_verb": "speak / talk",
+        "supplied_words": [
+          "speak",
+          "talk"
+        ],
+        "tense_or_construction": "sp_language",
+        "explanation_ru": "С названиями иностранных языков (English) в значении «владеть/говорить на языке» употребляется только глагол speak.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Seeing the tourist's hand gestures, the helpful pharmacist began to speak English and found the right eye drops."
+  },
+  {
+    "id": "sp-S3-182",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-09",
+    "bankgen_format": "gap",
+    "prompt": "The pottery expert (say / tell) the junior restorer to dry the wet wooden bowl slowly in a shaded room.",
+    "instruction_ru": "Раскройте скобки.",
+    "explanation_ru": "Конструкция «велеть/посоветовать кому-либо сделать что-либо» требует глагола tell с прямым дополнением и инфинитивом (told the junior restorer to dry).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "arts",
+    "seed_id": "sp-1410",
+    "skeleton": "the w G the w to w the w in a w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "sentence",
+    "practice_weight": 40,
+    "type": "open_brackets",
+    "layout": "sentence",
+    "blanks": [
+      {
+        "id": "sp-S3-182-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "Конструкция «велеть/посоветовать кому-либо сделать что-либо» требует глагола tell с прямым дополнением и инфинитивом (told the junior restorer to dry).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "The pottery expert told the junior restorer to dry the wet wooden bowl slowly in a shaded room."
+  },
+  {
+    "id": "sp-S3-183",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-10",
+    "bankgen_format": "mini",
+    "prompt": "I bought three postcards in the museum gift shop yesterday. My review (say / tell) that the printed colors look nothing like the real paintings upstairs. I even (speak / talk) to the manager about the poor print quality before leaving.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом пропуске содержание текста передается через say (says that...) без адресата. Во втором — для разговора с человеком с предлогом to подходят глаголы speak и talk.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "review",
+    "seed_id": "sp-0808",
+    "skeleton": "i w in the w YESTERDAY . my w G that the w the w . i w G to the w about the w before w .",
+    "practice_tenses": [
+      "sp_say_that",
+      "sp_prepositions"
+    ],
+    "tags": [
+      "sp_say_that",
+      "sp_prepositions"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-183-b1",
+        "answer": "says",
+        "accepted_answers": [
+          "says",
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом пропуске содержание текста передается через say (says that...) без адресата. Во втором — для разговора с человеком с предлогом to подходят глаголы speak и talk.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-183-b2",
+        "answer": "spoke",
+        "accepted_answers": [
+          "spoke",
+          "talked"
+        ],
+        "base_verb": "speak / talk",
+        "supplied_words": [
+          "speak",
+          "talk"
+        ],
+        "tense_or_construction": "sp_prepositions",
+        "explanation_ru": "В первом пропуске содержание текста передается через say (says that...) без адресата. Во втором — для разговора с человеком с предлогом to подходят глаголы speak и talk.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "I bought three postcards in the museum gift shop yesterday. My review says that the printed colors look nothing like the real paintings upstairs. I even spoke to the manager about the poor print quality before leaving."
+  },
+  {
+    "id": "sp-S3-184",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-11",
+    "bankgen_format": "mini",
+    "prompt": "Before lighting the Bunsen burners, the chemistry teacher (say / tell) us to put on our safety glasses. He also (say / tell) that loose hair must be tied back near an open flame. Everyone listened carefully because safety rules in the lab are strict.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом предложении есть прямое дополнение и инфинитив (told us to put on), поэтому нужен глагол tell. Во втором сразу идет придаточное that без адресата, поэтому используется said.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "school",
+    "seed_id": "sp-1548",
+    "skeleton": "before w the w , the w G us to w on our w . he w G that w must be w an w . w because w in the w are w .",
+    "practice_tenses": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-184-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "В первом предложении есть прямое дополнение и инфинитив (told us to put on), поэтому нужен глагол tell. Во втором сразу идет придаточное that без адресата, поэтому используется said.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-184-b2",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом предложении есть прямое дополнение и инфинитив (told us to put on), поэтому нужен глагол tell. Во втором сразу идет придаточное that без адресата, поэтому используется said.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Before lighting the Bunsen burners, the chemistry teacher told us to put on our safety glasses. He also said that loose hair must be tied back near an open flame. Everyone listened carefully because safety rules in the lab are strict."
+  },
+  {
+    "id": "sp-S3-185",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-12",
+    "bankgen_format": "mini",
+    "prompt": "During the lab experiment, Leo noticed the liquid in their beaker had turned bright pink instead of clear. He quickly (say / tell) his lab partner not to panic before the professor walked over. Then Leo (say / tell) to the professor that they had added one extra drop of indicator.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "С прямым дополнением и инфинитивом (told his lab partner not to panic) ставится tell, а с предлогом to перед адресатом (said to the professor) используется say.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "science",
+    "seed_id": "sp-1311",
+    "skeleton": "w the w , w the w in their w had w of w . he w G his w not to w before the w over . w G to the w that they had w of w .",
+    "practice_tenses": [
+      "sp_tell_pattern",
+      "sp_prepositions"
+    ],
+    "tags": [
+      "sp_tell_pattern",
+      "sp_prepositions"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-185-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "С прямым дополнением и инфинитивом (told his lab partner not to panic) ставится tell, а с предлогом to перед адресатом (said to the professor) используется say.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-185-b2",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_prepositions",
+        "explanation_ru": "С прямым дополнением и инфинитивом (told his lab partner not to panic) ставится tell, а с предлогом to перед адресатом (said to the professor) используется say.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "During the lab experiment, Leo noticed the liquid in their beaker had turned bright pink instead of clear. He quickly told his lab partner not to panic before the professor walked over. Then Leo said to the professor that they had added one extra drop of indicator."
+  },
+  {
+    "id": "sp-S3-186",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-13",
+    "bankgen_format": "mini",
+    "prompt": "Dad wanted to buy a pair of cheap wireless headphones online. His teenage son read the top customer review aloud, which (say / tell) that the bass sounds muddy and the battery dies fast. After hearing that, Dad agreed to (speak / talk) about better models with the store clerk.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом случае отзыв цитируется через конструкцию say + that. Во втором для обсуждения темы с предлогом about используются talk или speak.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "tech",
+    "seed_id": "sp-1140",
+    "skeleton": "w to w a w of w . his w the w , which G that the w and the w . after w that , w to G about w with the w .",
+    "practice_tenses": [
+      "sp_say_that",
+      "sp_prepositions"
+    ],
+    "tags": [
+      "sp_say_that",
+      "sp_prepositions"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-186-b1",
+        "answer": "said",
+        "accepted_answers": [
+          "said",
+          "says"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом случае отзыв цитируется через конструкцию say + that. Во втором для обсуждения темы с предлогом about используются talk или speak.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-186-b2",
+        "answer": "talk",
+        "accepted_answers": [
+          "talk",
+          "speak"
+        ],
+        "base_verb": "speak / talk",
+        "supplied_words": [
+          "speak",
+          "talk"
+        ],
+        "tense_or_construction": "sp_prepositions",
+        "explanation_ru": "В первом случае отзыв цитируется через конструкцию say + that. Во втором для обсуждения темы с предлогом about используются talk или speak.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Dad wanted to buy a pair of cheap wireless headphones online. His teenage son read the top customer review aloud, which said that the bass sounds muddy and the battery dies fast. After hearing that, Dad agreed to talk about better models with the store clerk."
+  },
+  {
+    "id": "sp-S3-187",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-14",
+    "bankgen_format": "mini",
+    "prompt": "Grandpa added a bad photo of his thumb as his new profile picture by mistake. His granddaughter laughed and (say / tell) him how to delete it from his phone. Grandpa (say / tell) that screen buttons are still hard for him to use.",
+    "instruction_ru": "Раскройте скобки в тексте.",
+    "explanation_ru": "В первом пропуске используется структура tell + лицо + how to (told him how to delete), а во втором — say + придаточное that без указания слушателя.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "home",
+    "seed_id": "sp-1332",
+    "skeleton": "w a w of his w as his w by w . his w and G him how to w it from his w . w G that w are still w for him to w .",
+    "practice_tenses": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_tell_pattern",
+      "sp_say_that"
+    ],
+    "practice_group": "mini_text",
+    "practice_weight": 25,
+    "type": "open_brackets",
+    "layout": "mini_text",
+    "blanks": [
+      {
+        "id": "sp-S3-187-b1",
+        "answer": "told",
+        "accepted_answers": [
+          "told"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_tell_pattern",
+        "explanation_ru": "В первом пропуске используется структура tell + лицо + how to (told him how to delete), а во втором — say + придаточное that без указания слушателя.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      },
+      {
+        "id": "sp-S3-187-b2",
+        "answer": "said",
+        "accepted_answers": [
+          "said"
+        ],
+        "base_verb": "say / tell",
+        "supplied_words": [
+          "say",
+          "tell"
+        ],
+        "tense_or_construction": "sp_say_that",
+        "explanation_ru": "В первом пропуске используется структура tell + лицо + how to (told him how to delete), а во втором — say + придаточное that без указания слушателя.",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ],
+    "answer_text": "Grandpa added a bad photo of his thumb as his new profile picture by mistake. His granddaughter laughed and told him how to delete it from his phone. Grandpa said that screen buttons are still hard for him to use."
+  },
+  {
+    "id": "sp-S3-188",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-15",
+    "bankgen_format": "mc",
+    "prompt": "Stuck in heavy gridlock on the bridge, the passenger phoned his office and ___ his manager that he would arrive twenty minutes late.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После глагола сразу следует прямое дополнение без предлога (his manager) и придаточное that, что требует глагола told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "work",
+    "seed_id": "sp-1220",
+    "skeleton": "w in w on the w , the w his w and G his w that he would w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "told",
+      "said",
+      "spoke",
+      "talked"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "told",
+    "summary": "Stuck in heavy gridlock on the bridge, the passenger phoned his office and told his manager that he would arrive twenty minutes late.",
+    "answer_text": "Stuck in heavy gridlock on the bridge, the passenger phoned his office and told his manager that he would arrive twenty minutes late."
+  },
+  {
+    "id": "sp-S3-189",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-16",
+    "bankgen_format": "mc",
+    "prompt": "The wooden sign near the park entrance ___ that the river path is closed because a fallen oak tree blocks the bridge.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Для передачи содержания надписи или объявления (the sign says that...) используется глагол say.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "notice",
+    "seed_id": "sp-1010",
+    "skeleton": "the w the w G that the w is w because a w the w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "tells",
+      "says",
+      "speaks",
+      "talks"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "says",
+    "summary": "The wooden sign near the park entrance says that the river path is closed because a fallen oak tree blocks the bridge.",
+    "answer_text": "The wooden sign near the park entrance says that the river path is closed because a fallen oak tree blocks the bridge."
+  },
+  {
+    "id": "sp-S3-190",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-17",
+    "bankgen_format": "mc",
+    "prompt": "In his morning email, the client ___ the contractor to change the roof color back to the original grey.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Конструкция с прямым дополнением и инфинитивом (told the contractor to change) требует глагола tell.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "email",
+    "seed_id": "sp-1119",
+    "skeleton": "in his w , the w G the w to w the w to the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "spoke",
+      "told",
+      "talked"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "told",
+    "summary": "In his morning email, the client told the contractor to change the roof color back to the original grey.",
+    "answer_text": "In his morning email, the client told the contractor to change the roof color back to the original grey."
+  },
+  {
+    "id": "sp-S3-191",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-18",
+    "bankgen_format": "mc",
+    "prompt": "The man came to the police station and ___ the officer that someone had stolen his garden statue during the night.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Поскольку сразу после глагола без предлога указан собеседник (the officer), необходимо выбрать told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "city",
+    "seed_id": "sp-1342",
+    "skeleton": "the w to the w and G the w that w had w his w the w .",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "told",
+      "said",
+      "spoke",
+      "talked"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "told",
+    "summary": "The man came to the police station and told the officer that someone had stolen his garden statue during the night.",
+    "answer_text": "The man came to the police station and told the officer that someone had stolen his garden statue during the night."
+  },
+  {
+    "id": "sp-S3-192",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-19",
+    "bankgen_format": "fix",
+    "prompt": "At midnight, the tired parents talked quietly about what the doctor had said them to do about the baby's sleep.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Ошибка в выборе глагола: перед прямым дополнением и инфинитивом (them to do) вместо said используется told.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "health",
+    "seed_id": "sp-0920",
+    "skeleton": "at w , the w about what the w had w them to do about the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "At midnight, the tired parents talked quietly about what the doctor had told them to do about the baby's sleep.",
+    "accepted_answers": [
+      "At midnight, the tired parents talked quietly about what the doctor had told them to do about the baby's sleep."
+    ],
+    "answer_text": "At midnight, the tired parents talked quietly about what the doctor had told them to do about the baby's sleep.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S3-193",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-20",
+    "bankgen_format": "fix",
+    "prompt": "The office manager sent an email that told to all staff members to label their lunch boxes before Friday evening.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После глагола tell предлог to перед адресатом не ставится: правильно told all staff members to label.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "email",
+    "seed_id": "sp-1530",
+    "skeleton": "the w an w that w to all w to w their w before w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "The office manager sent an email that told all staff members to label their lunch boxes before Friday evening.",
+    "accepted_answers": [
+      "The office manager sent an email that told all staff members to label their lunch boxes before Friday evening."
+    ],
+    "answer_text": "The office manager sent an email that told all staff members to label their lunch boxes before Friday evening.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S3-194",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-21",
+    "bankgen_format": "fix",
+    "prompt": "The host sent a clear message that told us how to find the hidden garden gate behind the tall blue garage.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Предложение построено верно: использована правильная конструкция told + прямое дополнение + how to find.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "chat",
+    "seed_id": "sp-1429",
+    "skeleton": "the w a w that w us how to w the w the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "The host sent a clear message that told us how to find the hidden garden gate behind the tall blue garage.",
+    "accepted_answers": [
+      "The host sent a clear message that told us how to find the hidden garden gate behind the tall blue garage."
+    ],
+    "answer_text": "The host sent a clear message that told us how to find the hidden garden gate behind the tall blue garage.",
+    "has_error": false
+  },
+  {
+    "id": "sp-S3-195",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-22",
+    "bankgen_format": "which",
+    "prompt": "A blood donor feels dizzy after giving blood and drops his juice box, so the nurse reacts immediately.",
+    "instruction_ru": "Выберите предложение, которое подходит к ситуации.",
+    "explanation_ru": "Единственно верная модель для выражения распоряжения или совета с адресатом — tell + прямое дополнение без предлога + to-инфинитив (told him to sit down).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "health",
+    "seed_id": "sp-1323",
+    "skeleton": "a w after w and w his w , so the w .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "The nurse said him to sit down on the chair and brought another snack.",
+      "The nurse told him to sit down on the chair and brought another snack.",
+      "The nurse told to him to sit down on the chair and brought another snack.",
+      "The nurse spoke him to sit down on the chair and brought another snack."
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "The nurse told him to sit down on the chair and brought another snack.",
+    "summary": "The nurse told him to sit down on the chair and brought another snack.",
+    "answer_text": "The nurse told him to sit down on the chair and brought another snack."
+  },
+  {
+    "id": "sp-S3-196",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP33-23",
+    "bankgen_format": "transform",
+    "prompt": "Rewrite using told instead of said to: The gallery guard said to the visitor that the blank white canvas was an expensive painting.",
+    "instruction_ru": "Преобразуйте исходное предложение. Напишите новое предложение целиком.",
+    "explanation_ru": "При замене said to на told предлог to опускается, так как глагол tell требует прямого дополнения (told the visitor that...).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S3",
+    "genre": "arts",
+    "seed_id": "sp-1301",
+    "skeleton": "w of w to : the w to the w that the w was an w .",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "transformation",
+    "practice_weight": 5,
+    "type": "transformation",
+    "answer_text": "The gallery guard told the visitor that the blank white canvas was an expensive painting.",
+    "blanks": [
+      {
+        "id": "sp-S3-196-b1",
+        "answer": "The gallery guard told the visitor that the blank white canvas was an expensive painting.",
+        "accepted_answers": [
+          "The gallery guard told the visitor that the blank white canvas was an expensive painting."
+        ],
+        "tense_or_construction": "sp_say_tell",
+        "explanation_ru": "При замене said to на told предлог to опускается, так как глагол tell требует прямого дополнения (told the visitor that...).",
+        "rule_refs": [
+          "content/theory/10-speaking-verbs-rule.html#sv-root"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sp-S4-113",
+    "topic": "speaking",
+    "level": "basic",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-01",
+    "bankgen_format": "mc",
+    "prompt": "I knocked on my neighbor's door to ___ him that his loud bird wakes me up at six every morning.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "После глагола tell сразу идет прямое дополнение (him), обозначающее собеседника.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "dialogue",
+    "seed_id": "sp-1012",
+    "skeleton": "i w on my w to G him that his w me w at w EVERY_MORNING .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "say",
+      "tell",
+      "speak",
+      "talk"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "tell",
+    "summary": "I knocked on my neighbor's door to tell him that his loud bird wakes me up at six every morning.",
+    "answer_text": "I knocked on my neighbor's door to tell him that his loud bird wakes me up at six every morning."
+  },
+  {
+    "id": "sp-S4-114",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-02",
+    "bankgen_format": "mc",
+    "prompt": "The shop owner stepped outside to ___ to the delivery driver about blocking the crosswalk during rush hour.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Speak to someone about something используется для серьезного разговора с кем-либо; остальные глаголы (say, tell, explain) не сочетаются напрямую с предлогом to в таком значении.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "city",
+    "seed_id": "sp-0934",
+    "skeleton": "the w to G to the w about w the w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "say",
+      "speak",
+      "tell",
+      "explain"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "speak",
+    "summary": "The shop owner stepped outside to speak to the delivery driver about blocking the crosswalk during rush hour.",
+    "answer_text": "The shop owner stepped outside to speak to the delivery driver about blocking the crosswalk during rush hour."
+  },
+  {
+    "id": "sp-S4-115",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-03",
+    "bankgen_format": "mc",
+    "prompt": "While decorating cinnamon buns, we ___ about our weekend plans and favorite childhood sweets.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Talk about something передает непринужденную дружескую беседу на разные темы.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "food",
+    "seed_id": "sp-1035",
+    "skeleton": "while w , we G about our w and w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "told",
+      "talked",
+      "spoke"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "talked",
+    "summary": "While decorating cinnamon buns, we talked about our weekend plans and favorite childhood sweets.",
+    "answer_text": "While decorating cinnamon buns, we talked about our weekend plans and favorite childhood sweets."
+  },
+  {
+    "id": "sp-S4-116",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-04",
+    "bankgen_format": "mc",
+    "prompt": "The driver apologized and ___ the officer that his navigation app had sent him down the one-way street.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Tell используется с указанием адресата без предлога (told the officer that...).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "city",
+    "seed_id": "sp-1346",
+    "skeleton": "the w and G the w that his w had w him w the w .",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "talked",
+      "spoke",
+      "told"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "told",
+    "summary": "The driver apologized and told the officer that his navigation app had sent him down the one-way street.",
+    "answer_text": "The driver apologized and told the officer that his navigation app had sent him down the one-way street."
+  },
+  {
+    "id": "sp-S4-117",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-05",
+    "bankgen_format": "mc",
+    "prompt": "As they collected plastic bottles along the shore, the volunteers ___ about sea turtles and weekend litter.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Для описания неформального общения во время совместного дела лучше всего подходит talk about.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "nature",
+    "seed_id": "sp-0943",
+    "skeleton": "as they w the w , the w G about w and w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "talked",
+      "told",
+      "spoke",
+      "said"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "talked",
+    "summary": "As they collected plastic bottles along the shore, the volunteers talked about sea turtles and weekend litter.",
+    "answer_text": "As they collected plastic bottles along the shore, the volunteers talked about sea turtles and weekend litter."
+  },
+  {
+    "id": "sp-S4-118",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-06",
+    "bankgen_format": "mc",
+    "prompt": "Mom ___ us to take out the recycling before she got home, so stop arguing whose turn it is.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Конструкция tell someone to do something используется для передачи просьбы или указания.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "home",
+    "seed_id": "sp-0912",
+    "skeleton": "w G us to w the w before she w , so w whose w it is .",
+    "practice_tenses": [
+      "sp_tell_pattern"
+    ],
+    "tags": [
+      "sp_tell_pattern"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "spoke",
+      "told",
+      "talked"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "told",
+    "summary": "Mom told us to take out the recycling before she got home, so stop arguing whose turn it is.",
+    "answer_text": "Mom told us to take out the recycling before she got home, so stop arguing whose turn it is."
+  },
+  {
+    "id": "sp-S4-119",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-07",
+    "bankgen_format": "mc",
+    "prompt": "The production assistant brought a box of pastries to ___ thank you to the shopkeeper for moving his noisy van during filming.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Выражение благодарности передается устойчивым сочетанием say thank you (to someone).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "arts",
+    "seed_id": "sp-1244",
+    "skeleton": "the w a w of w to G w you to the w for w his w .",
+    "practice_tenses": [
+      "sp_say_collocation"
+    ],
+    "tags": [
+      "sp_say_collocation"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "say",
+      "tell",
+      "speak",
+      "talk"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "say",
+    "summary": "The production assistant brought a box of pastries to say thank you to the shopkeeper for moving his noisy van during filming.",
+    "answer_text": "The production assistant brought a box of pastries to say thank you to the shopkeeper for moving his noisy van during filming."
+  },
+  {
+    "id": "sp-S4-120",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-08",
+    "bankgen_format": "mc",
+    "prompt": "While slicing salmon for the rolls, the chef ___ casually with the guest about last night's rainy baseball game.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Talk with someone about something подчеркивает легкую, непринужденную беседу.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "food",
+    "seed_id": "sp-1026",
+    "skeleton": "while w for the w , the w G w with the w about LAST_NIGHT 's w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "told",
+      "spoke",
+      "talked"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "talked",
+    "summary": "While slicing salmon for the rolls, the chef talked casually with the guest about last night's rainy baseball game.",
+    "answer_text": "While slicing salmon for the rolls, the chef talked casually with the guest about last night's rainy baseball game."
+  },
+  {
+    "id": "sp-S4-121",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-09",
+    "bankgen_format": "mc",
+    "prompt": "We bumped into each other after five years and ___ about our jobs and pets while waiting for our drinks.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Talk about используется, когда люди делятся новостями и болтают при встрече.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "chat",
+    "seed_id": "sp-0922",
+    "skeleton": "we w into each w after w and G about our w and w while w for our w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "talked",
+      "spoke",
+      "told"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "talked",
+    "summary": "We bumped into each other after five years and talked about our jobs and pets while waiting for our drinks.",
+    "answer_text": "We bumped into each other after five years and talked about our jobs and pets while waiting for our drinks."
+  },
+  {
+    "id": "sp-S4-122",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-10",
+    "bankgen_format": "mc",
+    "prompt": "While waiting for their appointments, the retired postman ___ the student stories about his worst childhood dentist visits.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Рассказывать истории — это устойчивое сочетание tell stories (tell someone stories).",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "health",
+    "seed_id": "sp-0821",
+    "skeleton": "while w for their w , the w G the w about his w .",
+    "practice_tenses": [
+      "sp_tell_collocation"
+    ],
+    "tags": [
+      "sp_tell_collocation"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "talked",
+      "spoke",
+      "told"
+    ],
+    "correct_option_index": 3,
+    "accepted_option_indices": [
+      3
+    ],
+    "answer": "told",
+    "summary": "While waiting for their appointments, the retired postman told the student stories about his worst childhood dentist visits.",
+    "answer_text": "While waiting for their appointments, the retired postman told the student stories about his worst childhood dentist visits."
+  },
+  {
+    "id": "sp-S4-123",
+    "topic": "speaking",
+    "level": "advanced",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-11",
+    "bankgen_format": "mc",
+    "prompt": "The restorers ___ politely about whether to preserve the faded 18th-century wall drawing found behind the wardrobe.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Speak about уместно в более серьезном, профессиональном обсуждении исторической находки, хотя в речи также возможен вариант talked about.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "history",
+    "seed_id": "sp-0906",
+    "skeleton": "the w G w about w to w the w 18 w the w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "said",
+      "told",
+      "spoke",
+      "talked"
+    ],
+    "correct_option_index": 2,
+    "accepted_option_indices": [
+      2
+    ],
+    "answer": "spoke",
+    "summary": "The restorers spoke politely about whether to preserve the faded 18th-century wall drawing found behind the wardrobe.",
+    "answer_text": "The restorers spoke politely about whether to preserve the faded 18th-century wall drawing found behind the wardrobe."
+  },
+  {
+    "id": "sp-S4-124",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-12",
+    "bankgen_format": "mc",
+    "prompt": "When the cowbells woke them at dawn, she ___ that pitching the tent in the dark had been his idea.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол say используется перед придаточным с that, когда собеседник не указан сразу после глагола.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "travel",
+    "seed_id": "sp-1202",
+    "skeleton": "when the w them at w , she G that w the w in the w had been his w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "told",
+      "said",
+      "spoke",
+      "talked"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "said",
+    "summary": "When the cowbells woke them at dawn, she said that pitching the tent in the dark had been his idea.",
+    "answer_text": "When the cowbells woke them at dawn, she said that pitching the tent in the dark had been his idea."
+  },
+  {
+    "id": "sp-S4-125",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-13",
+    "bankgen_format": "mc",
+    "prompt": "Arriving twenty minutes early, the candidate ___ with the barista, unaware that he was actually the hiring manager.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Talk with someone означает вести светскую беседу или болтать с кем-либо.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "work",
+    "seed_id": "sp-1121",
+    "skeleton": "w , the w G with the w , w that he was w the w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "talked",
+      "told",
+      "spoke",
+      "said"
+    ],
+    "correct_option_index": 0,
+    "accepted_option_indices": [
+      0
+    ],
+    "answer": "talked",
+    "summary": "Arriving twenty minutes early, the candidate talked with the barista, unaware that he was actually the hiring manager.",
+    "answer_text": "Arriving twenty minutes early, the candidate talked with the barista, unaware that he was actually the hiring manager."
+  },
+  {
+    "id": "sp-S4-126",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-14",
+    "bankgen_format": "mc",
+    "prompt": "Looking at the old street photo, she couldn't ___ for sure whether the man in the background was their former neighbor.",
+    "instruction_ru": "Выберите правильный вариант.",
+    "explanation_ru": "Глагол tell в сочетании can't tell означает «не мочь определить / понять наверняка».",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "arts",
+    "seed_id": "sp-0805",
+    "skeleton": "w at the w , she w G for w the w in the w was their w .",
+    "practice_tenses": [
+      "sp_tell_collocation"
+    ],
+    "tags": [
+      "sp_tell_collocation"
+    ],
+    "practice_group": "choice",
+    "practice_weight": 20,
+    "type": "multiple_choice",
+    "options": [
+      "say",
+      "tell",
+      "speak",
+      "talk"
+    ],
+    "correct_option_index": 1,
+    "accepted_option_indices": [
+      1
+    ],
+    "answer": "tell",
+    "summary": "Looking at the old street photo, she couldn't tell for sure whether the man in the background was their former neighbor.",
+    "answer_text": "Looking at the old street photo, she couldn't tell for sure whether the man in the background was their former neighbor."
+  },
+  {
+    "id": "sp-S4-127",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-15",
+    "bankgen_format": "fix",
+    "prompt": "During the intermission, the usher said the guest that she had left her glasses on the seat.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После say нельзя ставить прямое дополнение (the guest) без предлога to; правильно использовать told the guest.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "arts",
+    "seed_id": "sp-1232",
+    "skeleton": "w the w , the w the w that she had w her w on the w .",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "During the intermission, the usher told the guest that she had left her glasses on the seat.",
+    "accepted_answers": [
+      "During the intermission, the usher told the guest that she had left her glasses on the seat.",
+      "During the intermission, the usher said to the guest that she had left her glasses on the seat."
+    ],
+    "answer_text": "During the intermission, the usher told the guest that she had left her glasses on the seat.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S4-128",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-16",
+    "bankgen_format": "fix",
+    "prompt": "Over lunch, the teachers talked about their summer holiday plans while watching students queue for pizza.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Ошибки нет: talked about правильно передает непринужденный разговор о планах.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "school",
+    "seed_id": "sp-1046",
+    "skeleton": "over w , the w about their w while w for w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Over lunch, the teachers talked about their summer holiday plans while watching students queue for pizza.",
+    "accepted_answers": [
+      "Over lunch, the teachers talked about their summer holiday plans while watching students queue for pizza."
+    ],
+    "answer_text": "Over lunch, the teachers talked about their summer holiday plans while watching students queue for pizza.",
+    "has_error": false
+  },
+  {
+    "id": "sp-S4-129",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-17",
+    "bankgen_format": "fix",
+    "prompt": "The scientists spoke whether a sudden storm was coming or a sea bird had landed on the wind meter.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "После глаголов speak и talk перед темой обсуждения необходим предлог about.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "science",
+    "seed_id": "sp-0812",
+    "skeleton": "the w a w was w or a w had w on the w .",
+    "practice_tenses": [
+      "sp_prepositions"
+    ],
+    "tags": [
+      "sp_prepositions"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "The scientists talked about whether a sudden storm was coming or a sea bird had landed on the wind meter.",
+    "accepted_answers": [
+      "The scientists talked about whether a sudden storm was coming or a sea bird had landed on the wind meter.",
+      "The scientists spoke about whether a sudden storm was coming or a sea bird had landed on the wind meter."
+    ],
+    "answer_text": "The scientists talked about whether a sudden storm was coming or a sea bird had landed on the wind meter.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S4-130",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-18",
+    "bankgen_format": "fix",
+    "prompt": "The customer told that the warranty covered a cracked screen, but the clerk pointed to the receipt.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Глагол tell требует указания собеседника; без него перед придаточным с that используется said.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "shopping",
+    "seed_id": "sp-1134",
+    "skeleton": "the w that the w a w , but the w to the w .",
+    "practice_tenses": [
+      "sp_say_that"
+    ],
+    "tags": [
+      "sp_say_that"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "The customer said that the warranty covered a cracked screen, but the clerk pointed to the receipt.",
+    "accepted_answers": [
+      "The customer said that the warranty covered a cracked screen, but the clerk pointed to the receipt."
+    ],
+    "answer_text": "The customer said that the warranty covered a cracked screen, but the clerk pointed to the receipt.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S4-131",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-19",
+    "bankgen_format": "fix",
+    "prompt": "After losing the match, the doubles partners spoke quietly by the net about who should have covered the back line.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Ошибки нет: spoke quietly ... about грамматически верно и уместно в ситуации обсуждения игры.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "sport",
+    "seed_id": "sp-1222",
+    "skeleton": "after w the w , the w by the w about who should have w the w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "After losing the match, the doubles partners spoke quietly by the net about who should have covered the back line.",
+    "accepted_answers": [
+      "After losing the match, the doubles partners spoke quietly by the net about who should have covered the back line."
+    ],
+    "answer_text": "After losing the match, the doubles partners spoke quietly by the net about who should have covered the back line.",
+    "has_error": false
+  },
+  {
+    "id": "sp-S4-132",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-20",
+    "bankgen_format": "fix",
+    "prompt": "I am writing to tell thank you to the seller for packing this vintage camera so carefully and adding extra batteries.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Поблагодарить кого-либо по-английски — say thank you to someone, а не tell thank you.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "review",
+    "seed_id": "sp-0839",
+    "skeleton": "i am w to w you to the w for w this w so w and w .",
+    "practice_tenses": [
+      "sp_say_collocation"
+    ],
+    "tags": [
+      "sp_say_collocation"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "I am writing to say thank you to the seller for packing this vintage camera so carefully and adding extra batteries.",
+    "accepted_answers": [
+      "I am writing to say thank you to the seller for packing this vintage camera so carefully and adding extra batteries."
+    ],
+    "answer_text": "I am writing to say thank you to the seller for packing this vintage camera so carefully and adding extra batteries.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S4-133",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-21",
+    "bankgen_format": "fix",
+    "prompt": "Standing by the ferry railing, the passengers talked about how their pets handle sea travel.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Ошибки нет: talked about естественно звучит для беседы попутчиков.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "travel",
+    "seed_id": "sp-1215",
+    "skeleton": "w by the w , the w about how their w .",
+    "practice_tenses": [
+      "sp_speak_talk"
+    ],
+    "tags": [
+      "sp_speak_talk"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Standing by the ferry railing, the passengers talked about how their pets handle sea travel.",
+    "accepted_answers": [
+      "Standing by the ferry railing, the passengers talked about how their pets handle sea travel."
+    ],
+    "answer_text": "Standing by the ferry railing, the passengers talked about how their pets handle sea travel.",
+    "has_error": false
+  },
+  {
+    "id": "sp-S4-134",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-22",
+    "bankgen_format": "fix",
+    "prompt": "The woman stopped him and said him that their red suitcases were identical except for the luggage tags.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Сочетание said him неверно; с прямым дополнением him нужно использовать told him.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "travel",
+    "seed_id": "sp-1142",
+    "skeleton": "the w him and w him that their w were w for the w .",
+    "practice_tenses": [
+      "sp_say_tell"
+    ],
+    "tags": [
+      "sp_say_tell"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "The woman stopped him and told him that their red suitcases were identical except for the luggage tags.",
+    "accepted_answers": [
+      "The woman stopped him and told him that their red suitcases were identical except for the luggage tags.",
+      "The woman stopped him and said to him that their red suitcases were identical except for the luggage tags."
+    ],
+    "answer_text": "The woman stopped him and told him that their red suitcases were identical except for the luggage tags.",
+    "has_error": true
+  },
+  {
+    "id": "sp-S4-135",
+    "topic": "speaking",
+    "level": "medium",
+    "content_version": "speaking-2026-11-25.1",
+    "response_contract": "bounded-v1",
+    "answer_profile": "english-standard-v2",
+    "bankgen_id": "SP34-23",
+    "bankgen_format": "fix",
+    "prompt": "Outside the oral exam room, the nervous students talked their weekend plans to stay calm.",
+    "instruction_ru": "Исправьте ошибку. Если ошибки нет, перепишите предложение без изменений.",
+    "explanation_ru": "Глагол talk непереходный: перед темой разговора (their weekend plans) нужен предлог about.",
+    "rule_refs": [
+      "content/theory/10-speaking-verbs-rule.html#sv-root"
+    ],
+    "cell": "S4",
+    "genre": "school",
+    "seed_id": "sp-1106",
+    "skeleton": "w the w , the w their w to w .",
+    "practice_tenses": [
+      "sp_prepositions"
+    ],
+    "tags": [
+      "sp_prepositions"
+    ],
+    "practice_group": "error_fix",
+    "practice_weight": 10,
+    "type": "error_fix",
+    "answer": "Outside the oral exam room, the nervous students talked about their weekend plans to stay calm.",
+    "accepted_answers": [
+      "Outside the oral exam room, the nervous students talked about their weekend plans to stay calm."
+    ],
+    "answer_text": "Outside the oral exam room, the nervous students talked about their weekend plans to stay calm.",
+    "has_error": true
+  }
+]
