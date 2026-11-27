@@ -3,11 +3,14 @@
 async function accountRequest(path, data) {
   // Запись (POST) ждёт, пока при запуске подтвердится вход: только тогда известен CSRF-токен.
   if (data !== undefined && account.verifying) { try { await account.verifying; } catch {} }
-  const response = await fetch(`/api/${path}`, {
+  const send = () => fetch(`/api/${path}`, {
     method: data === undefined ? "GET" : "POST",
     headers: data === undefined ? {} : { "Content-Type": "application/json", "X-CSRF-Token": account.csrf || "" },
     body: data === undefined ? undefined : JSON.stringify(data),
   });
+  let response = await send();
+  // Чтение безопасно повторить: кратковременный сбой сервера не должен превращаться в ошибку на экране.
+  if (data === undefined && response.status >= 500) { await new Promise(resolve => setTimeout(resolve, 600)); response = await send(); }
   let result;
   try { result = await response.json(); } catch { throw new Error("Сервер кабинетов недоступен. Попробуйте позже."); }
   if (!response.ok) { const error = new Error(result.error || "Не удалось выполнить действие."); error.status = response.status; error.code = result.code; throw error; }

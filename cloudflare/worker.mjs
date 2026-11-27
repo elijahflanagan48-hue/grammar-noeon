@@ -122,8 +122,14 @@ function newPassword(value) {
 }
 const credentialsError = () => new Problem(CREDENTIALS_HELP, 401);
 const prepare = (db, sql, values = []) => db.prepare(sql).bind(...values);
-const one = (db, sql, values) => prepare(db, sql, values).first();
-const all = async (db, sql, values) => (await prepare(db, sql, values).all()).results;
+// Кратковременные сбои D1 (обрыв соединения и т. п.) один раз повторяем, но только для чтения: запись могла уже выполниться.
+const transientDbError = error => /network connection lost|connection reset|timed? ?out|overloaded|temporarily|internal error|unavailable/i.test(String(error?.message || ''));
+const readOnly = sql => /^\s*(?:SELECT|WITH)\b/i.test(sql);
+async function retriedRead(sql, action) {
+  try { return await action(); } catch (error) { if (!readOnly(sql) || !transientDbError(error)) throw error; return action(); }
+}
+const one = (db, sql, values) => retriedRead(sql, () => prepare(db, sql, values).first());
+const all = (db, sql, values) => retriedRead(sql, async () => (await prepare(db, sql, values).all()).results);
 const run = (db, sql, values) => prepare(db, sql, values).run();
 function cookieToken(request) {
   return request.headers.get('Cookie')?.match(/(?:^|;\s*)grammar_session=([a-f0-9]{64})(?:;|$)/)?.[1] || '';
@@ -1008,7 +1014,8 @@ export default {
       let status = error instanceof Problem ? error.status : 500;
       let message = error instanceof Problem ? error.message : 'Не удалось выполнить действие.';
       if (!(error instanceof Problem) && /UNIQUE constraint failed/.test(error.message)) { status = 409; message = 'Этот аккаунт или запись уже существует.'; }
-      if (status === 500) console.error('Grammar API error', error.name); // No submitted data, secrets or query values.
+      // Имя и текст исключения (не данные запроса) попадают в Workers Logs: так видно, почему был 500.
+      if (status === 500) console.error('Grammar API error', url.pathname.replace(/[A-Za-z0-9_-]{20,}/g, ':id'), error?.name, String(error?.message || '').slice(0, 300));
       return new Response(JSON.stringify({ error: message, ...(['VERIFY_EMAIL', 'NO_PROFILE'].includes(error.code) ? { code: error.code } : {}) }), { status, headers });
     }
   }
